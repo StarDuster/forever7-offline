@@ -1,0 +1,63 @@
+{
+  "scope": "640 static client source scan and matching original marshal hash inventory; no server, runtime or private profile",
+  "evidence": [
+    {
+      "field": "jzr",
+      "source": "entity/avatar_attrs/LuckyDrawData.py:24-26,32-41; entity/avatar_members/LuckyDrawMember.py:1723-1734",
+      "observed": "pairs to dict on load and whole replacement on sync; no other jiaozhi_rewards reader found within scanned 640 Python source",
+      "unknown": [
+        "key identity",
+        "value type and meaning",
+        "relation to rewards, claim status, thresholds, target hero, item",
+        "server writes and timing"
+      ]
+    },
+    {
+      "field": "rc",
+      "source": "cocos/comps/card_common/tips.py:316-347",
+      "observed": "replace_count.get(target_hero,0)>0 AND target hero not owned controls blessing visible and bless_action.play; target_hero is value of first sorted chouka_jiaozhi row for current draw type",
+      "unknown": [
+        "exact integer meaning",
+        "upper bound",
+        "whether count means pending or remaining uses",
+        "authoritative update/consumption order",
+        "non-target or other keys"
+      ]
+    },
+    {
+      "field": "jzc",
+      "source": "card_jiaozhi.py:254-317; card_jiaozhi_2.py:194-272; cocos/comps/card_common/jiaozhi_info.py:21-46",
+      "observed": "threshold list sorting and reached status from hero keyed jzc against row.jiaozhi_count; row tuple key, target_item and show_rewards are config keys, not shown to be jzr keys"
+    },
+    {
+      "field": "result.jiaozhi",
+      "source": "entity/avatar_members/LuckyDrawMember.py:445-474,518-536",
+      "observed": "per-result jiaozhi.item and jiaozhi.treasure merged into settlement display; no proven mapping to jzr"
+    }
+  ],
+  "projection": {
+    "jzr": "preserve opaque original pairs for existing state; do not manufacture threshold or item pairs. Empty for fresh isolated data only as documented offline choice, not historical reconstruction. Sync with nonempty i replaces it; omitted jzr resets to empty.",
+    "rc": "if explicit offline policy chooses UI-only projection, use target hero key with 0 or 1 only to denote false/true blessing predicate, keep authoritative FIFO separate, label synthetic and prove UI interpretation only; do not overwrite unknown keys",
+    "sync": "ensure activity_data exists; supply current complete jzc/jzr/rc for nonempty info because omitted fields reset to empty; iuc omitted preserves old; no callback refresh event emitted by sync itself",
+    "animation": "bless_action.play is UI rendering on predicate, not evidence that FIFO consumed; jzc threshold status and reward display are distinct"
+  },
+  "limits": [
+    "static source negative search is scoped; cannot prove absent in native or server",
+    "no no-gameplay claim about server or full UI acceptance",
+    "no reconstructed jzr key/value semantics"
+  ],
+  "sha256": {
+    "analysis/original-py-640/entity/avatar_attrs/LuckyDrawData.py": "fb45be303751e65cd9f455d0fec5c32637116195e1aff4f6e7059824d77ea45c",
+    "analysis/original-py-640/entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996",
+    "analysis/original-py-640/cocos/comps/card_common/tips.py": "a4e3300c4712835f043d2ddfc9c98558942b27aed6f5cd24adf1756ea0205988",
+    "analysis/original-py-640/cocos/comps/card_common/jiaozhi_info.py": "e269f0c7e3088fbc10f9b7e95026b503d4d8563a2efb69c8b2f204903b56f2e5",
+    "analysis/original-py-640/cocos/panels/card_jiaozhi.py": "c5b784d78ac6f3308d4be6ef0ef40794237839c05c98385b09605255b8d0514f",
+    "analysis/original-py-640/cocos/panels/card_jiaozhi_2.py": "fa793e11e91609768f200e8a842479464d01340e04c33f9c7707a68309d292bd",
+    "analysis/original-py-640/cocos/panels/card_box.py": "57078c55db56f96e983381346fe79d50116318f96e7b2a2c4dc4c4e9c1952194",
+    "analysis/android640-scripts/entity/avatar_attrs/LuckyDrawData.marshal": "b229ea252a54f9d4864192c1ea48bea348b462508131eb6c07185b332a089a32",
+    "analysis/android640-scripts/entity/avatar_members/LuckyDrawMember.marshal": "ae2ca88c2d7ca4e2f1c5d54801132d64792e61a3d9501153ab5e5c7187ed49d4",
+    "analysis/android640-scripts/cocos/comps/card_common/tips.marshal": "af005140e370840c00eb0ab3b3101cb99c6b8b17063d154f6946c1c0c38e0d2c",
+    "analysis/android640-scripts/cocos/comps/card_common/jiaozhi_info.marshal": "aefc99df61de00afaa2854ea72e79792002c4e7cc326775558fbe7d659ce20a6",
+    "analysis/android640-scripts/cocos/panels/card_jiaozhi.marshal": "aa23bc45c5f8088cfef7082d9ee26aad1c71ebf36510f214b598123657d8a984"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "schema": "project7-dynamic-draw-backend-implementation-v1",
+  "status": "backend-pilot485-frozen; public-ui-not-ready",
+  "frozen": true,
+  "backend_pilot_ids": [
+    485
+  ],
+  "public_dynamic_ready_ids": [],
+  "existing_public_ready_count": 385,
+  "manager_sha256": "1be1a7e09c5a2e42d31f9deff54c1d942657fca695c1a996579eefecf365e6fa",
+  "tests": {
+    "actual_original_engine_and_Store": 52,
+    "actual_original_consumers": 20,
+    "selector484_regression_with_dynamic_prepared": 767,
+    "python_fixed_data_slot": 9,
+    "pure_plan_reducer_host": "PASS",
+    "jvm_verifier": "-Xverify:all; no verifier disabled",
+    "source_only_combined_classes": 29,
+    "dynamic_classes": 14,
+    "runtime_api_stubs": false
+  },
+  "files": {
+    "tools/project7_dynamic_catalog.py": {
+      "sha256": "dfb69963008890cef1a4d004148e8634ddb0fb06576f39ff6e7a435fb1b7b904",
+      "size": 9022
+    },
+    "tests/test_project7_dynamic_catalog.py": {
+      "sha256": "3511a1301a20c13c4e3711000ee737e0fb309e6605629341a93ee4ffbe2285ed",
+      "size": 3273
+    },
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": {
+      "sha256": "2b9ff7bca1d31c3897390f259e02952301b60949b145ed9725ce4c450e3bf998",
+      "size": 18389
+    },
+    "runtime/android_dynamic_draw/compile_stubs/com/project7/localmanager/DynamicApiStubs.java": {
+      "sha256": "8cedb8432b1b727a62fc9b092eaa961dfbfc624c1a64ac6808262cab77e98194",
+      "size": 5973
+    },
+    "runtime/android_dynamic_draw/host_tests/DynamicSlotPlanHost.java": {
+      "sha256": "348a832d66d77b13da0bc32cd1719b90f7e75264cc1f3f55b1330ee763cf1ab7",
+      "size": 1293
+    },
+    "runtime/android_dynamic_draw/host_tests/DynamicTransitionHost.java": {
+      "sha256": "6a10e4f9e7ede97b81bef000709d08436493570ecf468541ba0bbb3347f45d45",
+      "size": 2833
+    },
+    "runtime/android_dynamic_draw/host_tests/com/project7/localmanager/DynamicEngineHost.java": {
+      "sha256": "183176358e302b6b046cb30a9ad2b85e8224e8ad81c4d127a4dbae668e5b624c",
+      "size": 22377
+    },
+    "runtime/android_dynamic_draw/host_tests/com/project7/localmanager/DynamicSelectorRegressionHost.java": {
+      "sha256": "4b04fab38eb5ac82673395ac97cee8fb2e971ac0caa76633c54d3f242805b216",
+      "size": 371
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicCatalog.java": {
+      "sha256": "cea31d9a61de89776ad6980e11cf765e9fccc6ee5067b18738405989c117c153",
+      "size": 6894
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java": {
+      "sha256": "d1d1da6bf10c78a08f5811b5a8eaf9269da6eb539edb2ef08e0bafee73d90a6a",
+      "size": 23985
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java": {
+      "sha256": "8153178711e66bcc14f27ae92e9d4744ed5b6329aac32e5ae8b79315320eddd1",
+      "size": 2027
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java": {
+      "sha256": "a3b3c0dd70f68378f6a7912d9f1c7353dd3030b9c08aeecfe5cc8d4a66bc7305",
+      "size": 5861
+    },
+    "runtime/android_dynamic_draw/host_tests/consumers.py": {
+      "sha256": "1f7c3203bf214bd26fbbda49257a0551fd07e1f3a4d783f7ec8a539fda706740",
+      "size": 4980
+    },
+    "runtime/android_dynamic_draw/host_tests/verify_slot_projection.py": {
+      "sha256": "4dcce3d66bbb0ca380963056660676cd2a0c180d2755a5f7638f676381b8e028",
+      "size": 3163
+    },
+    "runtime/android_dynamic_draw/verify_engine_host.py": {
+      "sha256": "bf5cb59a2745344cf329850b7a3dfe5e9bfafd72d84a637a8763be1d0fe81374",
+      "size": 4620
+    },
+    "runtime/android_dynamic_draw/verify_host.py": {
+      "sha256": "78072271eec0cb3ffcf1789610ceff9e07d9e0466bdcde406ebfa716b2380f63",
+      "size": 1820
+    },
+    "runtime/project7_dynamic_catalog/catalog-v1.json.gz": {
+      "sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+      "size": 69029
+    },
+    "runtime/project7_dynamic_catalog/contract.json": {
+      "sha256": "f1eb9e7d1110ed6b288537e6d32370d96cdc42f995c04e39bea2aaa3f46fa209",
+      "size": 1164
+    }
+  },
+  "evidence": {
+    "reports/project7-dynamic-original-engine-host-final.json": {
+      "sha256": "e3cfbc70b375929ab93cd050e17ddc56e29ff6d78425a7fe0c78494524f5c23e",
+      "size": 49194
+    },
+    "reports/project7-dynamic-selector-regression-host-final.json": {
+      "sha256": "4b662dd9dd3e3c5fb279c58dd8d9974ab1fd01ef0eb226ce8e4bed8cc4aae92f",
+      "size": 5337
+    },
+    "reports/project7-dynamic-preflight-host-v2.json": {
+      "sha256": "85826dd26a3110d321647ddee0534494cd04e401521f3ab26db8f82d7a2dc922",
+      "size": 1447
+    },
+    "analysis/project7/dynamic-compile-final/inventory.json": {
+      "sha256": "e999a979873122f0852252e4fac9b153e3d32bdf0b80bbbc87627ae46d0169fe",
+      "size": 4760
+    }
+  },
+  "asset": {
+    "project_path": "runtime/project7_dynamic_catalog/catalog-v1.json.gz",
+    "android_path": "project7_dynamic/catalog-v1.json.gz",
+    "sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+    "size": 69029,
+    "expanded_size": 675947,
+    "expanded_sha256": "611cf669764f3287cd245f48f5a14678891b343701dbcab4b21e98559ce41a7a",
+    "contract_sha256": "f1eb9e7d1110ed6b288537e6d32370d96cdc42f995c04e39bea2aaa3f46fa209",
+    "base_graph_sha256": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "data_capability_note": "asset runtime_ready_ids remains empty for public readiness; phase-A missing labels retain source inventory baseline; this versioned implementation report defines backend progress only"
+  },
+  "public_marshal_pins": {
+    "chouka_info": "b0c2d54fabf49da649a1102d65e3417acfd9d25e94fb91ff603ebfd7f5eecc32",
+    "chouka_leiji_reward_index": "7fcecd1fc0ef1169249f365b24a4422622b0ed614bb1ceb6c93561a45806bec8",
+    "chouka_leiji_reward": "01245f95726f807eca4f3519ddebab39b0120d974d1ab75eff14bcf6e9181a72",
+    "chouka_jiaozhi": "d460c1c0c21338b663b8634a8d4d3f5cba5a99803717cba3222a13139e30f574",
+    "reward_random": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+    "reward_common": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29",
+    "item_data": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+    "hero_treasure_generate": "771ceb6415660c9b9650b458f5b988ffb48c4cbf1344d059723a8affbd92b6b6",
+    "rule_info_data": "e62704f6169a8aac3b969a14ecfbb4ad0803638bdcf589ef150ab17319570832"
+  },
+  "counts": {
+    "specs": 55,
+    "charge_pools": 35,
+    "jiaozhi_pools": 28,
+    "extra_pools": 42,
+    "common_bundles": 303,
+    "RR": 144,
+    "designs": 26,
+    "base_leaves": 1177
+  },
+  "source_anomalies": [
+    282,
+    283,
+    288
+  ],
+  "api": {
+    "prepare": "com.project7.localmanager.DynamicDrawPolicy.prepare(android.content.Context):void throws Exception",
+    "shape": [
+      "makeFile(LocalResourceCatalog,LocalResourceCatalog.Pool,byte[],java.util.Random):byte[]",
+      "reveal(LocalResourceEngine.Result,LocalResourceCatalog,byte[]):byte[]",
+      "stateForSave(byte[],int):byte[]"
+    ],
+    "order": "CoreDrawPolicy.prepare -> HistoryDrawPolicy.prepare(includes furniture) -> SelectorPolicy.prepare -> DynamicDrawPolicy.prepare, all before first Catalog/profile bootstrap",
+    "shared_file": "HistoryDrawPolicy.java only: dynamic factory/reveal/stateForSave branch and 3 package helper accessors; no change to existing base/gift/selector methods",
+    "manager_dex_new_seams": [],
+    "reflection": "exact own LocalHomeEngine.private static pendant(Result,Catalog,byte[],long):void, modifiers/return/descriptor checked; original body called once",
+    "compile_source_dirs": [
+      "runtime/android_history_draw/src",
+      "runtime/android_selector_draw/src",
+      "runtime/android_dynamic_draw/src"
+    ],
+    "compile_classpath": [
+      "Android32 android.jar",
+      "compile-only superset compiled from runtime/android_dynamic_draw/compile_stubs/com/project7/localmanager/DynamicApiStubs.java"
+    ],
+    "stub_notes": "original and cross-group API declarations only; no HistoryCatalog/HistoryBson/SelectorPolicy/DynamicPolicy own declarations. Existing CoreDrawPolicy stub is cross-group compile-only and must remain filtered from program output. Adds Result.heroRewards/treasureRewards and 7arg grant ABI, checked against actual jar via javap.",
+    "prod_source_files": [
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicCatalog.java"
+    ]
+  },
+  "capability_gate": {
+    "pilot_scope": "explicit immutable pilot configuration {485}, not reward/weight switch",
+    "needs": [
+      "prepared pinned immutable catalog",
+      "owned stock Pool identity",
+      "base graph exact SHA and epoch match",
+      "six-slot source",
+      "one target extra mapping",
+      "no wish/replace/self_choose/UP capabilities",
+      "all base leaves and charge/jiaozhi/extra references stock-valid",
+      "all jiaozhi file refs match target",
+      "no recursive jiaozhi hero reward",
+      "count/receipt/hash/epoch/source bounds"
+    ],
+    "other54": "new factory remains original History spec disabled -> typed failure, not static default fallthrough",
+    "old_pending": "untagged original pending uses original normalize/resume/reveal; static v1/v2 archived tags unchanged; existing dynamic entropy/source retained on reload",
+    "old_progress": "seed actual ct/jzc once; thresholds already below baseline considered consumed, no retroactive rewards; nonzero opaque legacy target rc rejects new dynamic migration rather than inventing blessing counts"
+  },
+  "transaction": {
+    "group": "persist six entropy plans/hash/epoch/reservation; no primary selected, grant or actual count advanced",
+    "resolve": "first reveal uses persisted entropy and current same-candidate facts; known original graph/default normal->RR, no duplicate roll",
+    "primary": "original LocalDrawEngine.reveal exactly once; actual currency balance delta mapped only to original currency item",
+    "post": "charge+1 per actual primary; target hero source+3/memory+1; charge hero+3 but no recursive draw; thresholds once; bounded FIFO future-only blessing; first ownership extra includes final memory and charge origin",
+    "grant_owner": "original grant/pendant and Result ledgers, UUID not synthesized/copied from template",
+    "commit": "original Store one atomic file publish; six transient candidate saves remain memory only",
+    "projection": "primary stays top-level once; real charge/extra -> activityReward, real jiaozhi -> jiaozhi; original gift and unknown reward fields retained; exact BSON nested array types preserved",
+    "state": "same profile per-t q7DynamicState; epoch/policy/hash/draws/points/charge receipts/jiaozhi receipts/blessing FIFO. jzc targetHero, rc only offline0/1 predicate. Opaque jzr/foreign rc/jzc/iuc fields copied without interpretation",
+    "sync_order": "ensure original syncLuckyDrawActivityData(t,candidate state) once before first dynamic sync; then syncJiaozhiData; original typed reply and original final sync remain original order. Tested from empty activity_data final ct6, no dropped dynamic sync."
+  },
+  "finite_cases": [
+    "closed generic-mask/no visible primary and opened actual-primary source consumers",
+    "new group ct0/free cost/no ledger advance",
+    "entropy byte-identical relogin",
+    "12 charge plus4 blessing",
+    "180 charge hero plus3 jiaozhi without extra draw",
+    "cross 4/5/6 thresholds and pendant pa18",
+    "owned pendant original conversion10052x220, no virtual double display",
+    "first extra UUID matches actual inventory and typed reward",
+    "duplicate hero no first-extra replay",
+    "final memory original completion plus1 point and extra once",
+    "existing blessing removes duplicate fragment from actual missing set, threshold5 retains both RR bundles",
+    "existing nested reward arrays/unknown fields exact preservation",
+    "single Store commit/rename fault/cancel/mid-six typed failure rollback",
+    "old untagged original pending resume/reveal",
+    "normal1/static229 original path with dynamic prepared",
+    "five selector and original484 regression767"
+  ],
+  "limits": [
+    "no public485 entry or dynamic UI ready policy yet",
+    "485 checkJiaozhiInTime archived epoch and leiji274-277 rotation UI view pending independent next phase",
+    "no full native scene/CSB/render/animation acceptance",
+    "no full Gateway transport integration of dynamic frames yet; original Store plus finite consumer pipeline only",
+    "no shared UP/wish/replacement/special cost/other missing families implemented",
+    "finite deterministic fixture entropy search is not probability sampling or probability-equivalence claim",
+    "no APK/D8/ART/VM/device/sign/install"
+  ],
+  "next_ui_contract": "reports/terra-p7-dynamic485-ui-contract.md/.json",
+  "supersedes_scope_note": "phase-A data-slot report preserved as earlier implementation checkpoint; this report is current source freeze"
+}

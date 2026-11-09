@@ -1,0 +1,22 @@
+{
+  "added_methods": [],
+  "changed_methods": [
+    "LocalDrawEngine.applyCurrent"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-selector-seams-v1",
+  "patch": {
+    "bytes": 991920,
+    "sha256": "b87d4b186fcfee4d1a4dcfdb749c2ee4fea22e38009c1d77e8af6ee87722d612"
+  },
+  "scope": "One same-descriptor invoke-static redirects to owned SelectorPolicy.choose; original private chooser and all grants/reveals remain unchanged. Independent helper/UI/catalog preparation and finite verification required.",
+  "source": {
+    "bytes": 1158180,
+    "sha256": "b461f49531efd2ab7fb09eb71e22ade0085e92f7567d5fddcff1c534fc68b257"
+  },
+  "target": {
+    "bytes": 1158240,
+    "sha256": "bcffb77c8370f640ac6c9728855ba738b78029deacf8dd41fe1e3aa957df5515"
+  }
+}

@@ -1,0 +1,3211 @@
+{
+  "source": "Original Android640 restricted static literals; no game script execution",
+  "sha256": {
+    "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+    "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+    "../../const": "7183a7977bc2686fffd6fa28fd0ed6b7ef99e186bbd0e67c51a4bc186e5a7f52"
+  },
+  "missions": {
+    "101": {
+      "release": 1,
+      "ch": 1,
+      "system_type": 1,
+      "nextstagenums": [
+        1101
+      ],
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 1,
+      "monsterLvSecondWeek": 1,
+      "map_path": [
+        "scene/pve/g58_zyt_pve.scn"
+      ]
+    },
+    "1107": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        2101,
+        3101,
+        12101,
+        13101,
+        23001,
+        23004,
+        23007,
+        320,
+        32101,
+        32107
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 5,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_hlxs_pve.scn"
+      ]
+    },
+    "1101": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        1102,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 1,
+      "monsterLvSecondWeek": 26,
+      "map_path": [
+        "scene/pve/g58_xy_pve.scn"
+      ]
+    },
+    "1102": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        1103,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 1,
+      "monsterLvSecondWeek": 26,
+      "map_path": [
+        "scene/pve/g58_hhxs_pve.scn"
+      ]
+    },
+    "1103": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        1104,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 2,
+      "monsterLvSecondWeek": 26,
+      "map_path": [
+        "scene/pve/g58_tyg_pve.scn"
+      ]
+    },
+    "1104": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        1105,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 3,
+      "monsterLvSecondWeek": 26,
+      "map_path": [
+        "scene/pve/g58_hlxs_pve.scn"
+      ]
+    },
+    "1105": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        1106,
+        1107,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 4,
+      "monsterLvSecondWeek": 26,
+      "map_path": [
+        "scene/pve/g58_xyhm_pve.scn"
+      ]
+    },
+    "1106": {
+      "release": 1,
+      "ch": 2,
+      "system_type": 1,
+      "nextstagenums": [
+        2101,
+        3101,
+        12101,
+        13101,
+        23001,
+        23004,
+        23007,
+        320,
+        32101,
+        32107
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 5,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_hlxs_pve.scn"
+      ]
+    },
+    "2101": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        2102,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 6,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_khdq_pve.scn"
+      ]
+    },
+    "2102": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        2103,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 6,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_wd_pve_01.scn"
+      ]
+    },
+    "2103": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        2104,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 7,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_wtqg_pve.scn"
+      ]
+    },
+    "2104": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        2105,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 7,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_zgd_pve.scn"
+      ]
+    },
+    "2105": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        2106,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 8,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_wd_pve_02.scn"
+      ]
+    },
+    "2106": {
+      "release": 1,
+      "ch": 3,
+      "system_type": 1,
+      "nextstagenums": [
+        13101,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 8,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_wx_pve.scn"
+      ]
+    },
+    "3101": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        3102,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 6,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_pqgc_pve.scn"
+      ]
+    },
+    "3102": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        3103,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 6,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_gjtq_pve.scn"
+      ]
+    },
+    "3103": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        3104,
+        23001,
+        23004,
+        23007,
+        3113
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 7,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_ld_pve.scn"
+      ]
+    },
+    "3104": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        3105,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 7,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_fhj_pve.scn"
+      ]
+    },
+    "3105": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        3106,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 8,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_qgx_pve.scn"
+      ]
+    },
+    "3106": {
+      "release": 1,
+      "ch": 4,
+      "system_type": 1,
+      "nextstagenums": [
+        12101,
+        23001,
+        23004,
+        23007,
+        4101
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 10,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 8,
+      "monsterLvSecondWeek": 27,
+      "map_path": [
+        "scene/pve/g58_jdqg_pve.scn"
+      ]
+    },
+    "4101": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        4102,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 12,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_yjs01_pve.scn"
+      ]
+    },
+    "4102": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        4103,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 12,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_qts_pve.scn"
+      ]
+    },
+    "4103": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        4104,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 12,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_hdyjs04_pve.scn"
+      ]
+    },
+    "4104": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        4105,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 13,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_hdyjs05_pve.scn"
+      ]
+    },
+    "4105": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        4106,
+        23001,
+        23004,
+        23007,
+        4113
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 13,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_hxkzs_pve.scn"
+      ]
+    },
+    "4106": {
+      "release": 1,
+      "ch": 5,
+      "system_type": 1,
+      "nextstagenums": [
+        5101,
+        23001,
+        23004,
+        23007
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 20,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 13,
+      "monsterLvSecondWeek": 29,
+      "map_path": [
+        "scene/pve/g58_cl_pve.scn"
+      ]
+    },
+    "5101": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        5102
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 15,
+      "monsterLvSecondWeek": 30,
+      "map_path": [
+        "scene/pve/g58_dwt_pve.scn"
+      ]
+    },
+    "5102": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        5103
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 15,
+      "monsterLvSecondWeek": 30,
+      "map_path": [
+        "scene/pve/g58_dtz_pve.scn"
+      ]
+    },
+    "5103": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        5104
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 15,
+      "monsterLvSecondWeek": 30,
+      "map_path": [
+        "scene/pve/g58_ggt_pve.scn"
+      ]
+    },
+    "5104": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        5105
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 15,
+      "monsterLvSecondWeek": 30,
+      "map_path": [
+        "scene/pve/g58_ck_pve.scn"
+      ]
+    },
+    "5105": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        5106
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 16,
+      "monsterLvSecondWeek": 31,
+      "map_path": [
+        "scene/pve/g58_ck_01_pve.scn"
+      ]
+    },
+    "5106": {
+      "release": 1,
+      "ch": 6,
+      "system_type": 1,
+      "nextstagenums": [
+        6101,
+        16101
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 50,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 16,
+      "monsterLvSecondWeek": 31,
+      "map_path": [
+        "scene/pve/g58_tcc_pve.scn"
+      ]
+    },
+    "6101": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        6102
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 18,
+      "monsterLvSecondWeek": 31,
+      "map_path": [
+        "scene/pve/g58_fxtsg_pve.scn"
+      ]
+    },
+    "6102": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        6103
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 18,
+      "monsterLvSecondWeek": 32,
+      "map_path": [
+        "scene/pve/g58_sd_pve.scn"
+      ]
+    },
+    "6103": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        6104,
+        16104
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 19,
+      "monsterLvSecondWeek": 32,
+      "map_path": [
+        "scene/pve/g58_sd01_pve.scn"
+      ]
+    },
+    "6104": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        6105
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 19,
+      "monsterLvSecondWeek": 32,
+      "map_path": [
+        "scene/pve/g58_sdkc_pve.scn"
+      ]
+    },
+    "6105": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        16106,
+        6106
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 19,
+      "monsterLvSecondWeek": 32,
+      "map_path": [
+        "scene/pve/g58_yls_pve.scn"
+      ]
+    },
+    "6106": {
+      "release": 1,
+      "ch": 7,
+      "system_type": 1,
+      "nextstagenums": [
+        7101,
+        17101
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 100,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 19,
+      "monsterLvSecondWeek": 32,
+      "map_path": [
+        "scene/pve/g58_hxtsg_pve.scn"
+      ]
+    },
+    "7101": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "nextstagenums": [
+        7102
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 21,
+      "monsterLvSecondWeek": 33,
+      "map_path": [
+        "scene/pve/g58_gwq05_pve.scn"
+      ]
+    },
+    "7102": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "nextstagenums": [
+        7103
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 21,
+      "monsterLvSecondWeek": 33,
+      "map_path": [
+        "scene/pve/g58_gangwanqu_02_pve.scn"
+      ]
+    },
+    "7103": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "nextstagenums": [
+        7104
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 21,
+      "monsterLvSecondWeek": 33,
+      "map_path": [
+        "scene/pve/g58_scgc_pve.scn"
+      ]
+    },
+    "7104": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "nextstagenums": [
+        7105
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 22,
+      "monsterLvSecondWeek": 33,
+      "map_path": [
+        "scene/pve/g58_fzck_pve.scn"
+      ]
+    },
+    "7105": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "nextstagenums": [
+        7106
+      ],
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 22,
+      "monsterLvSecondWeek": 33,
+      "map_path": [
+        "scene/pve/g58_xh_pve.scn"
+      ]
+    },
+    "7106": {
+      "release": 1,
+      "ch": 8,
+      "system_type": 1,
+      "va": 2,
+      "fatigue": 5,
+      "overFatigue": 25,
+      "force_recommend": 150,
+      "least_hero_num": 1,
+      "max_hero_num": 3,
+      "monsterLvFirstWeek": 22,
+      "monsterLvSecondWeek": 34,
+      "map_path": [
+        "scene/pve/g58_hl_pve.scn"
+      ]
+    }
+  },
+  "city_data": {
+    "1": {
+      "area_require": {}
+    },
+    "2": {
+      "area_require": {
+        "27-1": [
+          10003
+        ],
+        "25": [
+          0
+        ],
+        "26": [
+          0
+        ],
+        "23": [
+          1
+        ],
+        "5": [
+          0
+        ],
+        "6": [
+          1
+        ],
+        "-1": [
+          1
+        ],
+        "5-5": [
+          0
+        ],
+        "5-4": [
+          0
+        ],
+        "5-6": [
+          1
+        ],
+        "5-1": [
+          0
+        ],
+        "5-3": [
+          0
+        ],
+        "5-2": [
+          0
+        ],
+        "33": [
+          0
+        ],
+        "32": [
+          0
+        ],
+        "20-3": [
+          3,
+          0
+        ],
+        "20-2": [
+          3,
+          0
+        ],
+        "20-5": [
+          3,
+          0
+        ],
+        "20-4": [
+          3,
+          0
+        ],
+        "20-6": [
+          3,
+          0
+        ],
+        "20-1": [
+          3,
+          0
+        ],
+        "21-8": [
+          3,
+          0
+        ],
+        "21-9": [
+          3,
+          0
+        ],
+        "21-4": [
+          3,
+          0
+        ],
+        "21-5": [
+          3,
+          0
+        ],
+        "21-6": [
+          3,
+          0
+        ],
+        "21-7": [
+          3,
+          0
+        ],
+        "21-1": [
+          3,
+          0
+        ],
+        "21-2": [
+          3,
+          0
+        ],
+        "21-3": [
+          3,
+          0
+        ]
+      }
+    },
+    "3": {
+      "area_require": {
+        "5-4": [
+          0
+        ],
+        "5-6": [
+          2
+        ],
+        "5-5": [
+          0
+        ],
+        "25": [
+          0
+        ],
+        "27": [
+          0
+        ],
+        "5-1": [
+          0
+        ],
+        "5-3": [
+          0
+        ],
+        "5-2": [
+          0
+        ],
+        "33": [
+          4
+        ],
+        "32": [
+          0
+        ],
+        "23": [
+          2
+        ],
+        "-1": [
+          2
+        ],
+        "6": [
+          2
+        ],
+        "5": [
+          0
+        ]
+      }
+    },
+    "4": {
+      "area_require": {
+        "5-4": [
+          0
+        ],
+        "5-6": [
+          2
+        ],
+        "5-5": [
+          0
+        ],
+        "25": [
+          0
+        ],
+        "27": [
+          10001
+        ],
+        "5-1": [
+          0
+        ],
+        "5-3": [
+          0
+        ],
+        "5-2": [
+          0
+        ],
+        "33": [
+          2
+        ],
+        "32": [
+          0
+        ],
+        "23": [
+          3
+        ],
+        "-1": [
+          2
+        ],
+        "6": [
+          3
+        ],
+        "5": [
+          0
+        ]
+      }
+    },
+    "5": {
+      "area_require": {
+        "25": [
+          0
+        ],
+        "26": [
+          0
+        ],
+        "27": [
+          3
+        ],
+        "-1": [
+          3,
+          4
+        ],
+        "23": [
+          4
+        ],
+        "33": [
+          6
+        ],
+        "32": [
+          0
+        ],
+        "6": [
+          4
+        ]
+      }
+    },
+    "6": {
+      "area_require": {
+        "25": [
+          0
+        ],
+        "26": [
+          3,
+          4
+        ],
+        "27": [
+          10000
+        ],
+        "-1": [
+          5
+        ],
+        "23": [
+          4,
+          5
+        ],
+        "33": [
+          3
+        ],
+        "30-2": [
+          7
+        ],
+        "6": [
+          5
+        ],
+        "30-1": [
+          7
+        ],
+        "32": [
+          0
+        ]
+      }
+    },
+    "7": {
+      "area_require": {
+        "22-7": [
+          0
+        ],
+        "22-10": [
+          0
+        ],
+        "23": [
+          6
+        ],
+        "33": [
+          0
+        ],
+        "32": [
+          0
+        ],
+        "6": [
+          6
+        ],
+        "22-9": [
+          0
+        ],
+        "25": [
+          0
+        ],
+        "11-5": [
+          5,
+          6
+        ],
+        "22-6": [
+          0
+        ],
+        "22-5": [
+          0
+        ],
+        "22-4": [
+          0
+        ],
+        "-1": [
+          6
+        ],
+        "22-2": [
+          0
+        ],
+        "22-1": [
+          0
+        ],
+        "11-2": [
+          5,
+          6
+        ],
+        "11-1": [
+          5,
+          6
+        ],
+        "22-8": [
+          0
+        ],
+        "10-6": [
+          5,
+          6
+        ],
+        "22-3": [
+          0
+        ]
+      }
+    },
+    "8": {
+      "area_require": {
+        "25": [
+          0
+        ],
+        "22-10": [
+          6
+        ],
+        "23": [
+          7
+        ],
+        "33": [
+          0
+        ],
+        "32": [
+          0
+        ],
+        "27": [
+          5
+        ],
+        "6": [
+          7
+        ],
+        "30-2": [
+          6,
+          7
+        ],
+        "22-7": [
+          6
+        ],
+        "22-6": [
+          6
+        ],
+        "22-5": [
+          6
+        ],
+        "22-4": [
+          6
+        ],
+        "-1": [
+          7
+        ],
+        "22-2": [
+          6
+        ],
+        "22-1": [
+          6
+        ],
+        "30-1": [
+          6,
+          7
+        ],
+        "22-3": [
+          6
+        ],
+        "22-9": [
+          6
+        ],
+        "22-8": [
+          6
+        ]
+      }
+    }
+  },
+  "fight_reward_level1": {
+    "show_items": [
+      320
+    ],
+    "not_green_show_items": [
+      320,
+      320
+    ],
+    "green_show_items": [
+      321,
+      320
+    ],
+    "money": 3267,
+    "empty_show_items": [
+      321,
+      320,
+      320
+    ],
+    "lv": 1,
+    "exp": 2000,
+    "items": [
+      304
+    ],
+    "friendly": 1
+  },
+  "reward_pool304": {
+    "weights": [
+      [
+        0,
+        147000
+      ],
+      [
+        833,
+        389
+      ],
+      [
+        834,
+        389
+      ],
+      [
+        835,
+        389
+      ],
+      [
+        836,
+        389
+      ],
+      [
+        837,
+        389
+      ],
+      [
+        838,
+        389
+      ],
+      [
+        839,
+        389
+      ],
+      [
+        840,
+        389
+      ],
+      [
+        841,
+        389
+      ],
+      [
+        842,
+        389
+      ],
+      [
+        843,
+        389
+      ],
+      [
+        844,
+        389
+      ],
+      [
+        845,
+        389
+      ],
+      [
+        846,
+        389
+      ],
+      [
+        847,
+        389
+      ],
+      [
+        848,
+        389
+      ],
+      [
+        849,
+        389
+      ],
+      [
+        850,
+        389
+      ],
+      [
+        851,
+        389
+      ],
+      [
+        852,
+        389
+      ],
+      [
+        853,
+        389
+      ],
+      [
+        854,
+        389
+      ],
+      [
+        856,
+        389
+      ],
+      [
+        857,
+        389
+      ],
+      [
+        858,
+        389
+      ],
+      [
+        859,
+        389
+      ],
+      [
+        860,
+        389
+      ],
+      [
+        862,
+        389
+      ],
+      [
+        863,
+        389
+      ],
+      [
+        864,
+        389
+      ],
+      [
+        865,
+        389
+      ],
+      [
+        866,
+        389
+      ],
+      [
+        867,
+        389
+      ],
+      [
+        868,
+        389
+      ],
+      [
+        869,
+        389
+      ],
+      [
+        870,
+        389
+      ],
+      [
+        871,
+        389
+      ],
+      [
+        872,
+        389
+      ],
+      [
+        874,
+        389
+      ],
+      [
+        875,
+        389
+      ],
+      [
+        876,
+        389
+      ],
+      [
+        877,
+        389
+      ],
+      [
+        878,
+        389
+      ],
+      [
+        880,
+        389
+      ],
+      [
+        881,
+        389
+      ],
+      [
+        5756,
+        195
+      ],
+      [
+        5757,
+        195
+      ],
+      [
+        5758,
+        195
+      ],
+      [
+        5759,
+        195
+      ],
+      [
+        5760,
+        195
+      ],
+      [
+        5761,
+        195
+      ],
+      [
+        882,
+        126
+      ],
+      [
+        883,
+        126
+      ],
+      [
+        884,
+        126
+      ],
+      [
+        885,
+        126
+      ],
+      [
+        886,
+        126
+      ],
+      [
+        887,
+        126
+      ],
+      [
+        888,
+        126
+      ],
+      [
+        889,
+        126
+      ],
+      [
+        890,
+        126
+      ],
+      [
+        891,
+        126
+      ],
+      [
+        892,
+        126
+      ],
+      [
+        893,
+        126
+      ],
+      [
+        894,
+        126
+      ],
+      [
+        895,
+        126
+      ],
+      [
+        896,
+        126
+      ],
+      [
+        897,
+        126
+      ],
+      [
+        898,
+        126
+      ],
+      [
+        899,
+        126
+      ],
+      [
+        900,
+        126
+      ],
+      [
+        901,
+        126
+      ],
+      [
+        902,
+        126
+      ],
+      [
+        903,
+        126
+      ],
+      [
+        905,
+        126
+      ],
+      [
+        906,
+        126
+      ],
+      [
+        907,
+        126
+      ],
+      [
+        908,
+        126
+      ],
+      [
+        909,
+        126
+      ],
+      [
+        911,
+        126
+      ],
+      [
+        912,
+        126
+      ],
+      [
+        913,
+        126
+      ],
+      [
+        914,
+        126
+      ],
+      [
+        915,
+        126
+      ],
+      [
+        916,
+        126
+      ],
+      [
+        917,
+        126
+      ],
+      [
+        918,
+        126
+      ],
+      [
+        919,
+        126
+      ],
+      [
+        920,
+        126
+      ],
+      [
+        921,
+        126
+      ],
+      [
+        923,
+        126
+      ],
+      [
+        924,
+        126
+      ],
+      [
+        925,
+        126
+      ],
+      [
+        926,
+        126
+      ],
+      [
+        927,
+        126
+      ],
+      [
+        929,
+        126
+      ],
+      [
+        930,
+        126
+      ],
+      [
+        5762,
+        67
+      ],
+      [
+        5763,
+        67
+      ],
+      [
+        5764,
+        67
+      ],
+      [
+        5765,
+        67
+      ],
+      [
+        5766,
+        67
+      ],
+      [
+        5767,
+        67
+      ],
+      [
+        931,
+        49
+      ],
+      [
+        932,
+        49
+      ],
+      [
+        933,
+        49
+      ],
+      [
+        934,
+        49
+      ],
+      [
+        935,
+        49
+      ],
+      [
+        936,
+        49
+      ],
+      [
+        937,
+        49
+      ],
+      [
+        938,
+        49
+      ],
+      [
+        939,
+        49
+      ],
+      [
+        940,
+        49
+      ],
+      [
+        941,
+        49
+      ],
+      [
+        942,
+        49
+      ],
+      [
+        943,
+        49
+      ],
+      [
+        944,
+        49
+      ],
+      [
+        945,
+        49
+      ],
+      [
+        946,
+        49
+      ],
+      [
+        947,
+        49
+      ],
+      [
+        948,
+        49
+      ],
+      [
+        949,
+        49
+      ],
+      [
+        950,
+        49
+      ],
+      [
+        951,
+        49
+      ],
+      [
+        952,
+        49
+      ],
+      [
+        954,
+        49
+      ],
+      [
+        955,
+        49
+      ],
+      [
+        956,
+        49
+      ],
+      [
+        957,
+        49
+      ],
+      [
+        958,
+        49
+      ],
+      [
+        960,
+        49
+      ],
+      [
+        961,
+        49
+      ],
+      [
+        962,
+        49
+      ],
+      [
+        963,
+        49
+      ],
+      [
+        964,
+        49
+      ],
+      [
+        965,
+        49
+      ],
+      [
+        966,
+        49
+      ],
+      [
+        967,
+        49
+      ],
+      [
+        968,
+        49
+      ],
+      [
+        969,
+        49
+      ],
+      [
+        970,
+        49
+      ],
+      [
+        972,
+        49
+      ],
+      [
+        973,
+        49
+      ],
+      [
+        974,
+        49
+      ],
+      [
+        975,
+        49
+      ],
+      [
+        976,
+        49
+      ],
+      [
+        978,
+        49
+      ],
+      [
+        979,
+        49
+      ],
+      [
+        5768,
+        22
+      ],
+      [
+        5769,
+        22
+      ],
+      [
+        5770,
+        22
+      ],
+      [
+        5771,
+        22
+      ],
+      [
+        5772,
+        22
+      ],
+      [
+        5773,
+        22
+      ]
+    ],
+    "id": 304,
+    "shows": [
+      [
+        0,
+        0
+      ],
+      [
+        833,
+        0
+      ],
+      [
+        834,
+        0
+      ],
+      [
+        835,
+        0
+      ],
+      [
+        836,
+        0
+      ],
+      [
+        837,
+        0
+      ],
+      [
+        838,
+        0
+      ],
+      [
+        839,
+        0
+      ],
+      [
+        840,
+        0
+      ],
+      [
+        841,
+        0
+      ],
+      [
+        842,
+        0
+      ],
+      [
+        843,
+        0
+      ],
+      [
+        844,
+        0
+      ],
+      [
+        845,
+        0
+      ],
+      [
+        846,
+        0
+      ],
+      [
+        847,
+        0
+      ],
+      [
+        848,
+        0
+      ],
+      [
+        849,
+        0
+      ],
+      [
+        850,
+        0
+      ],
+      [
+        851,
+        0
+      ],
+      [
+        852,
+        0
+      ],
+      [
+        853,
+        0
+      ],
+      [
+        854,
+        0
+      ],
+      [
+        856,
+        0
+      ],
+      [
+        857,
+        0
+      ],
+      [
+        858,
+        0
+      ],
+      [
+        859,
+        0
+      ],
+      [
+        860,
+        0
+      ],
+      [
+        862,
+        0
+      ],
+      [
+        863,
+        0
+      ],
+      [
+        864,
+        0
+      ],
+      [
+        865,
+        0
+      ],
+      [
+        866,
+        0
+      ],
+      [
+        867,
+        0
+      ],
+      [
+        868,
+        0
+      ],
+      [
+        869,
+        0
+      ],
+      [
+        870,
+        0
+      ],
+      [
+        871,
+        0
+      ],
+      [
+        872,
+        0
+      ],
+      [
+        874,
+        0
+      ],
+      [
+        875,
+        0
+      ],
+      [
+        876,
+        0
+      ],
+      [
+        877,
+        0
+      ],
+      [
+        878,
+        0
+      ],
+      [
+        880,
+        0
+      ],
+      [
+        881,
+        0
+      ],
+      [
+        5756,
+        0
+      ],
+      [
+        5757,
+        0
+      ],
+      [
+        5758,
+        0
+      ],
+      [
+        5759,
+        0
+      ],
+      [
+        5760,
+        0
+      ],
+      [
+        5761,
+        0
+      ],
+      [
+        882,
+        0
+      ],
+      [
+        883,
+        0
+      ],
+      [
+        884,
+        0
+      ],
+      [
+        885,
+        0
+      ],
+      [
+        886,
+        0
+      ],
+      [
+        887,
+        0
+      ],
+      [
+        888,
+        0
+      ],
+      [
+        889,
+        0
+      ],
+      [
+        890,
+        0
+      ],
+      [
+        891,
+        0
+      ],
+      [
+        892,
+        0
+      ],
+      [
+        893,
+        0
+      ],
+      [
+        894,
+        0
+      ],
+      [
+        895,
+        0
+      ],
+      [
+        896,
+        0
+      ],
+      [
+        897,
+        0
+      ],
+      [
+        898,
+        0
+      ],
+      [
+        899,
+        0
+      ],
+      [
+        900,
+        0
+      ],
+      [
+        901,
+        0
+      ],
+      [
+        902,
+        0
+      ],
+      [
+        903,
+        0
+      ],
+      [
+        905,
+        0
+      ],
+      [
+        906,
+        0
+      ],
+      [
+        907,
+        0
+      ],
+      [
+        908,
+        0
+      ],
+      [
+        909,
+        0
+      ],
+      [
+        911,
+        0
+      ],
+      [
+        912,
+        0
+      ],
+      [
+        913,
+        0
+      ],
+      [
+        914,
+        0
+      ],
+      [
+        915,
+        0
+      ],
+      [
+        916,
+        0
+      ],
+      [
+        917,
+        0
+      ],
+      [
+        918,
+        0
+      ],
+      [
+        919,
+        0
+      ],
+      [
+        920,
+        0
+      ],
+      [
+        921,
+        0
+      ],
+      [
+        923,
+        0
+      ],
+      [
+        924,
+        0
+      ],
+      [
+        925,
+        0
+      ],
+      [
+        926,
+        0
+      ],
+      [
+        927,
+        0
+      ],
+      [
+        929,
+        0
+      ],
+      [
+        930,
+        0
+      ],
+      [
+        5762,
+        0
+      ],
+      [
+        5763,
+        0
+      ],
+      [
+        5764,
+        0
+      ],
+      [
+        5765,
+        0
+      ],
+      [
+        5766,
+        0
+      ],
+      [
+        5767,
+        0
+      ],
+      [
+        931,
+        0
+      ],
+      [
+        932,
+        0
+      ],
+      [
+        933,
+        0
+      ],
+      [
+        934,
+        0
+      ],
+      [
+        935,
+        0
+      ],
+      [
+        936,
+        0
+      ],
+      [
+        937,
+        0
+      ],
+      [
+        938,
+        0
+      ],
+      [
+        939,
+        0
+      ],
+      [
+        940,
+        0
+      ],
+      [
+        941,
+        0
+      ],
+      [
+        942,
+        0
+      ],
+      [
+        943,
+        0
+      ],
+      [
+        944,
+        0
+      ],
+      [
+        945,
+        0
+      ],
+      [
+        946,
+        0
+      ],
+      [
+        947,
+        0
+      ],
+      [
+        948,
+        0
+      ],
+      [
+        949,
+        0
+      ],
+      [
+        950,
+        0
+      ],
+      [
+        951,
+        0
+      ],
+      [
+        952,
+        0
+      ],
+      [
+        954,
+        0
+      ],
+      [
+        955,
+        0
+      ],
+      [
+        956,
+        0
+      ],
+      [
+        957,
+        0
+      ],
+      [
+        958,
+        0
+      ],
+      [
+        960,
+        0
+      ],
+      [
+        961,
+        0
+      ],
+      [
+        962,
+        0
+      ],
+      [
+        963,
+        0
+      ],
+      [
+        964,
+        0
+      ],
+      [
+        965,
+        0
+      ],
+      [
+        966,
+        0
+      ],
+      [
+        967,
+        0
+      ],
+      [
+        968,
+        0
+      ],
+      [
+        969,
+        0
+      ],
+      [
+        970,
+        0
+      ],
+      [
+        972,
+        0
+      ],
+      [
+        973,
+        0
+      ],
+      [
+        974,
+        0
+      ],
+      [
+        975,
+        0
+      ],
+      [
+        976,
+        0
+      ],
+      [
+        978,
+        0
+      ],
+      [
+        979,
+        0
+      ],
+      [
+        5768,
+        0
+      ],
+      [
+        5769,
+        0
+      ],
+      [
+        5770,
+        0
+      ],
+      [
+        5771,
+        0
+      ],
+      [
+        5772,
+        0
+      ],
+      [
+        5773,
+        0
+      ]
+    ]
+  },
+  "player_exp": {
+    "1": {
+      "lv_exp": 1300
+    },
+    "2": {
+      "lv_exp": 1700
+    },
+    "3": {
+      "lv_exp": 2100
+    },
+    "4": {
+      "lv_exp": 2500
+    },
+    "5": {
+      "lv_exp": 3000
+    },
+    "6": {
+      "lv_exp": 3500
+    },
+    "7": {
+      "lv_exp": 4000
+    },
+    "8": {
+      "lv_exp": 4200
+    },
+    "9": {
+      "lv_exp": 4500
+    },
+    "10": {
+      "lv_exp": 6100
+    },
+    "11": {
+      "lv_exp": 6300
+    },
+    "12": {
+      "lv_exp": 6500
+    },
+    "13": {
+      "lv_exp": 7300
+    },
+    "14": {
+      "lv_exp": 7500
+    },
+    "15": {
+      "lv_exp": 8800
+    },
+    "16": {
+      "lv_exp": 9100
+    },
+    "17": {
+      "lv_exp": 9400
+    },
+    "18": {
+      "lv_exp": 9700
+    },
+    "19": {
+      "lv_exp": 10000
+    },
+    "20": {
+      "lv_exp": 11300
+    },
+    "21": {
+      "lv_exp": 11600
+    },
+    "22": {
+      "lv_exp": 11900
+    },
+    "23": {
+      "lv_exp": 12200
+    },
+    "24": {
+      "lv_exp": 12500
+    },
+    "25": {
+      "lv_exp": 13900
+    },
+    "26": {
+      "lv_exp": 14400
+    },
+    "27": {
+      "lv_exp": 14900
+    },
+    "28": {
+      "lv_exp": 15400
+    },
+    "29": {
+      "lv_exp": 15900
+    },
+    "30": {
+      "lv_exp": 16400
+    },
+    "31": {
+      "lv_exp": 16900
+    },
+    "32": {
+      "lv_exp": 17400
+    },
+    "33": {
+      "lv_exp": 17900
+    },
+    "34": {
+      "lv_exp": 18400
+    },
+    "35": {
+      "lv_exp": 19400
+    },
+    "36": {
+      "lv_exp": 20400
+    },
+    "37": {
+      "lv_exp": 21400
+    },
+    "38": {
+      "lv_exp": 22400
+    },
+    "39": {
+      "lv_exp": 23400
+    },
+    "40": {
+      "lv_exp": 24400
+    },
+    "41": {
+      "lv_exp": 25400
+    },
+    "42": {
+      "lv_exp": 26400
+    },
+    "43": {
+      "lv_exp": 27400
+    },
+    "44": {
+      "lv_exp": 28400
+    },
+    "45": {
+      "lv_exp": 29400
+    },
+    "46": {
+      "lv_exp": 30400
+    },
+    "47": {
+      "lv_exp": 31400
+    },
+    "48": {
+      "lv_exp": 33200
+    },
+    "49": {
+      "lv_exp": 35300
+    },
+    "50": {
+      "lv_exp": 38700
+    },
+    "51": {
+      "lv_exp": 42400
+    },
+    "52": {
+      "lv_exp": 46300
+    },
+    "53": {
+      "lv_exp": 48300
+    },
+    "54": {
+      "lv_exp": 50300
+    },
+    "55": {
+      "lv_exp": 52300
+    },
+    "56": {
+      "lv_exp": 54300
+    },
+    "57": {
+      "lv_exp": 56300
+    },
+    "58": {
+      "lv_exp": 59300
+    },
+    "59": {
+      "lv_exp": 62600
+    },
+    "60": {
+      "lv_exp": 68200
+    },
+    "61": {
+      "lv_exp": 74100
+    },
+    "62": {
+      "lv_exp": 80200
+    },
+    "63": {
+      "lv_exp": 86700
+    },
+    "64": {
+      "lv_exp": 93500
+    },
+    "65": {
+      "lv_exp": 100600
+    },
+    "66": {
+      "lv_exp": 108000
+    },
+    "67": {
+      "lv_exp": 115700
+    },
+    "68": {
+      "lv_exp": 119700
+    },
+    "69": {
+      "lv_exp": 129200
+    },
+    "70": {
+      "lv_exp": 140700
+    },
+    "71": {
+      "lv_exp": 152200
+    },
+    "72": {
+      "lv_exp": 158200
+    },
+    "73": {
+      "lv_exp": 164200
+    },
+    "74": {
+      "lv_exp": 176200
+    },
+    "75": {
+      "lv_exp": 188200
+    },
+    "76": {
+      "lv_exp": 200200
+    },
+    "77": {
+      "lv_exp": 206200
+    },
+    "78": {
+      "lv_exp": 212200
+    },
+    "79": {
+      "lv_exp": 224200
+    },
+    "80": {
+      "lv_exp": 238200
+    },
+    "81": {
+      "lv_exp": 246200
+    },
+    "82": {
+      "lv_exp": 254200
+    },
+    "83": {
+      "lv_exp": 262200
+    },
+    "84": {
+      "lv_exp": 270200
+    },
+    "85": {
+      "lv_exp": 280200
+    },
+    "86": {
+      "lv_exp": 293200
+    },
+    "87": {
+      "lv_exp": 309200
+    },
+    "88": {
+      "lv_exp": 328200
+    },
+    "89": {
+      "lv_exp": 350200
+    },
+    "90": {
+      "lv_exp": 375200
+    },
+    "91": {
+      "lv_exp": 403200
+    },
+    "92": {
+      "lv_exp": 434200
+    },
+    "93": {
+      "lv_exp": 468200
+    },
+    "94": {
+      "lv_exp": 505200
+    },
+    "95": {
+      "lv_exp": 545200
+    },
+    "96": {
+      "lv_exp": 588200
+    },
+    "97": {
+      "lv_exp": 634200
+    },
+    "98": {
+      "lv_exp": 683200
+    },
+    "99": {
+      "lv_exp": 735200
+    },
+    "100": {
+      "lv_exp": 790200
+    },
+    "101": {
+      "lv_exp": 790200
+    },
+    "102": {
+      "lv_exp": 790200
+    },
+    "103": {
+      "lv_exp": 790200
+    },
+    "104": {
+      "lv_exp": 790200
+    },
+    "105": {
+      "lv_exp": 790200
+    },
+    "106": {
+      "lv_exp": 790200
+    },
+    "107": {
+      "lv_exp": 790200
+    },
+    "108": {
+      "lv_exp": 790200
+    },
+    "109": {
+      "lv_exp": 790200
+    },
+    "110": {
+      "lv_exp": 790200
+    },
+    "111": {
+      "lv_exp": 790200
+    },
+    "112": {
+      "lv_exp": 790200
+    },
+    "113": {
+      "lv_exp": 790200
+    },
+    "114": {
+      "lv_exp": 790200
+    },
+    "115": {
+      "lv_exp": 790200
+    },
+    "116": {
+      "lv_exp": 790200
+    },
+    "117": {
+      "lv_exp": 790200
+    },
+    "118": {
+      "lv_exp": 790200
+    },
+    "119": {
+      "lv_exp": 790200
+    },
+    "120": {
+      "lv_exp": 790200
+    },
+    "121": {
+      "lv_exp": 790200
+    },
+    "122": {
+      "lv_exp": 790200
+    },
+    "123": {
+      "lv_exp": 790200
+    },
+    "124": {
+      "lv_exp": 790200
+    },
+    "125": {
+      "lv_exp": 790200
+    },
+    "126": {
+      "lv_exp": 790200
+    },
+    "127": {
+      "lv_exp": 790200
+    },
+    "128": {
+      "lv_exp": 790200
+    },
+    "129": {
+      "lv_exp": 790200
+    },
+    "130": {
+      "lv_exp": 790200
+    },
+    "131": {
+      "lv_exp": 790200
+    },
+    "132": {
+      "lv_exp": 790200
+    },
+    "133": {
+      "lv_exp": 790200
+    },
+    "134": {
+      "lv_exp": 790200
+    },
+    "135": {
+      "lv_exp": 790200
+    },
+    "136": {
+      "lv_exp": 790200
+    },
+    "137": {
+      "lv_exp": 790200
+    },
+    "138": {
+      "lv_exp": 790200
+    },
+    "139": {
+      "lv_exp": 790200
+    },
+    "140": {
+      "lv_exp": 790200
+    },
+    "141": {
+      "lv_exp": 790200
+    },
+    "142": {
+      "lv_exp": 790200
+    },
+    "143": {
+      "lv_exp": 790200
+    },
+    "144": {
+      "lv_exp": 790200
+    },
+    "145": {
+      "lv_exp": 790200
+    },
+    "146": {
+      "lv_exp": 790200
+    },
+    "147": {
+      "lv_exp": 790200
+    },
+    "148": {
+      "lv_exp": 790200
+    },
+    "149": {
+      "lv_exp": 790200
+    },
+    "150": {
+      "lv_exp": 790200
+    },
+    "151": {
+      "lv_exp": 790200
+    },
+    "152": {
+      "lv_exp": 790200
+    },
+    "153": {
+      "lv_exp": 790200
+    },
+    "154": {
+      "lv_exp": 790200
+    },
+    "155": {
+      "lv_exp": 790200
+    },
+    "156": {
+      "lv_exp": 790200
+    },
+    "157": {
+      "lv_exp": 790200
+    },
+    "158": {
+      "lv_exp": 790200
+    },
+    "159": {
+      "lv_exp": 790200
+    },
+    "160": {
+      "lv_exp": 790200
+    },
+    "161": {
+      "lv_exp": 790200
+    },
+    "162": {
+      "lv_exp": 790200
+    },
+    "163": {
+      "lv_exp": 790200
+    },
+    "164": {
+      "lv_exp": 790200
+    },
+    "165": {
+      "lv_exp": 790200
+    },
+    "166": {
+      "lv_exp": 790200
+    },
+    "167": {
+      "lv_exp": 790200
+    },
+    "168": {
+      "lv_exp": 790200
+    },
+    "169": {
+      "lv_exp": 790200
+    },
+    "170": {
+      "lv_exp": 790200
+    },
+    "171": {
+      "lv_exp": 790200
+    },
+    "172": {
+      "lv_exp": 790200
+    },
+    "173": {
+      "lv_exp": 790200
+    },
+    "174": {
+      "lv_exp": 790200
+    },
+    "175": {
+      "lv_exp": 790200
+    },
+    "176": {
+      "lv_exp": 790200
+    },
+    "177": {
+      "lv_exp": 790200
+    },
+    "178": {
+      "lv_exp": 790200
+    },
+    "179": {
+      "lv_exp": 790200
+    },
+    "180": {
+      "lv_exp": 790200
+    },
+    "181": {
+      "lv_exp": 790200
+    },
+    "182": {
+      "lv_exp": 790200
+    },
+    "183": {
+      "lv_exp": 790200
+    },
+    "184": {
+      "lv_exp": 790200
+    },
+    "185": {
+      "lv_exp": 790200
+    },
+    "186": {
+      "lv_exp": 790200
+    },
+    "187": {
+      "lv_exp": 790200
+    },
+    "188": {
+      "lv_exp": 790200
+    },
+    "189": {
+      "lv_exp": 790200
+    },
+    "190": {
+      "lv_exp": 790200
+    },
+    "191": {
+      "lv_exp": 790200
+    },
+    "192": {
+      "lv_exp": 790200
+    },
+    "193": {
+      "lv_exp": 790200
+    },
+    "194": {
+      "lv_exp": 790200
+    },
+    "195": {
+      "lv_exp": 790200
+    },
+    "196": {
+      "lv_exp": 790200
+    },
+    "197": {
+      "lv_exp": 790200
+    },
+    "198": {
+      "lv_exp": 790200
+    },
+    "199": {
+      "lv_exp": 790200
+    },
+    "200": {
+      "lv_exp": 790200
+    }
+  },
+  "client_day_contract": {
+    "MAX_DAYNUM": 8,
+    "WeekNumData.isFinalDay": "daynum >= MAX_DAYNUM - 1",
+    "ordinary_stage_guard": "stock_day < 7",
+    "source": "com/const.marshal root LOAD_CONST8 STORE_NAME MAX_DAYNUM; WeekNumData.marshal isFinalDay"
+  },
+  "source_literal_types": {
+    "city_data.area_require.keys": "str",
+    "city_data.area_require.values": "tuple",
+    "mission.nextstagenums": "tuple"
+  }
+}

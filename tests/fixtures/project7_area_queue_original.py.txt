@@ -1,0 +1,60 @@
+    def add_settlement(self, panel, func, *args, **kwargs):
+        self._settlement_list.append((panel, func, args, kwargs))
+        return
+
+    def add_settlement_top(self, panel, func, *args, **kwargs):
+        self._settlement_list.insert(0, (panel, func, args, kwargs))
+        return
+
+    def has_settlement(self):
+        return bool(self._settlement_list)
+
+    def enable_settlement(self, enable):
+        if enable:
+            self._settlement_enable = 0
+        else:
+            self._settlement_enable = -1
+        if self._settlement_enable >= 0 and gg.avatar and self.has_settlement():
+            self.proc_settlement()
+        return
+
+    def proc_settlement(self):
+        if not self._procing_settlement and self.has_settlement():
+            self.proc_event_handler(const.GameEvent.SETTLEMTN_START)
+        if not self.has_settlement():
+            self._procing_settlement = False
+
+            def delay_purge():
+                if not self.has_settlement() and not self._procing_settlement:
+                    self.purge_unuse()
+                return
+
+            gg.exec_delay(500, delay_purge)
+            if gg.ui.need_release_ui_memory():
+                cc.cc.Director.getInstance().purgeCachedData()
+            self.proc_event_handler(const.GameEvent.SETTLEMENT_END, None)
+            return
+        else:
+            if self.panels.settlement_fullscreen.valid and self.panels.settlement_fullscreen.visible:
+                return
+            if self.panels.settlement_window.valid and self.panels.settlement_window.visible:
+                return
+            if self.panels.settlement_success_failure.valid and self.panels.settlement_success_failure.visible:
+                return
+            if self.panels.settlement_fullscreen_fashion.is_playing():
+                return
+            check_settlments = ['settlement_break', 'settlement_clear', 'settlement_emoji_accomplish', 'settlement_player_upgrade']
+            for p in check_settlments:
+                if getattr(self.panels, p) and getattr(self.panels, p).valid and getattr(self.panels, p).visible:
+                    return
+
+            if self._settlement_enable < 0:
+                return
+            if not self.panels.dialogue.can_proc_settlement():
+                return
+            if not self._procing_settlement:
+                self._procing_settlement = True
+            panel, func, args, kwargs = self._settlement_list.pop(0)
+            getattr(getattr(self.panels, panel), func)(*args, **kwargs)
+            return
+

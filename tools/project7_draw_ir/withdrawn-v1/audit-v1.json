@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "scope": "readonly outer graph; not an executable reward catalog",
+  "artifact": {
+    "path": "tools/project7_draw_ir/data/outer-ir-v1.json",
+    "size": 1228621,
+    "sha256": "e8e1e7c47e822c90f003b9f311bec7ae858bfa8b51e9af7582cac4dbd4d0ad22"
+  },
+  "source_sha256": {
+    "chouka_default": "6a77e77f139db3f6ed2935b1fa53111cc6d1c97a77c4877aa70c07987ecb27a9",
+    "chouka_normal": "3b4081e40148f15e7ac4dfb91850aa4d9e86c3cfe3a10976e4861211003fff2d"
+  },
+  "counts": {
+    "normal_source_rows": 5242,
+    "default_source_rows": 1558,
+    "positive_wire_pools": 485,
+    "positive_branches": 4795,
+    "explicit_ordinal_overrides": 1028
+  },
+  "missing_evidence": [
+    "reward_random and reward_common specified original-py-640 files contain no literal data assignment",
+    "No reward type classification or ordinary pool full reward probability claim",
+    "No stock adapter/engine mutation or gameplay execution"
+  ],
+  "tests": "5 host unit tests passed"
+}

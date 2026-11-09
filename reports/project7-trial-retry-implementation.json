@@ -1,0 +1,137 @@
+{
+  "schema": 2,
+  "status": "SOURCE_AND_ACTUAL_HANDLER_HOST_PASS",
+  "evidence": "analysis/project7/trial-retry-host-5l0irib2",
+  "hook_frame_sha256": "254af3229089dbd6dd4eb647b0b711184d54551d30f118e0d98b76fed04e5462",
+  "hook_dex_sha256": "7f13c24a613676ee520bf6ed2590a6bf33788cb6955c92f3e9f446dee89c0d82",
+  "source_catalog_sha256": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+  "policies": [
+    "trial-retry-total-attempts-v1: finite failureOutcome, total3 settled accepted attempts, ordinary losses3->2->1->0",
+    "mandatory-trial-rearm-v1: absent failureOutcome, budget1 availability flag, unlimited rearm; true win keeps original dialog gate"
+  ],
+  "sources": {
+    "runtime/android_trial_retry/trial-ui-policy-v1.json": "ab9b166c99b61f4a15791c22b610df9c6fb51969e210cdf630d096e02fa966d7",
+    "runtime/android_trial_retry/verify.py": "f51c04cf93546581248bf4d55f9d3346114e47c5bccc88af544f01e60a018997",
+    "runtime/android_trial_retry/produce_ui_policy.py": "53cadfa24c5f7f31ddc6503c51a2e47c2b6101c5d73863b67ea118cefd8d5da3",
+    "runtime/android_trial_retry/host_tests/consumer.py": "d7b3576a922033d8961de57aab617d2a59c1ade65ccf7e6ea7d58fc20b83e66e",
+    "runtime/android_trial_retry/src/com/project7/localmanager/TrialRetryGateway.java": "3bcaaae0e97fb92f2ea51e88151e6cb82835b5419457f5a3749bdf04ae1c7b11",
+    "runtime/android_trial_retry/compile_stubs/com/project7/localmanager/TrialApiStubs.java": "2ed45b53bba2fb58aa8c41a38e8fa0667d769a0163df3d97d1fe928a3ae481ce",
+    "runtime/android_trial_retry/compile_stubs/com/project7/localmanager/DreamTrialApiStubs.java": "a2ac678f373550369ebaaa0bb0a636a708076446aee2ff35322f62a252b1bfa2",
+    "runtime/android_trial_retry/host_tests/com/project7/localmanager/TrialRetryHost.java": "ffcd69b3078713b4ef1c3ef1e4ac343b34712a8aa21f04251f76d777b5531c67",
+    "runtime/project7_trial_retry_compat.py": "22294936805f6951edf1e37b91bc9bc7ca80dd32255d5f904568270c064990df",
+    "runtime/android_trial_retry/host_tests/com/project7/localmanager/TrialWeekProbe.java": "22c6abae89dae0549784d7fdce91c4a62e0db15e0b2fa2e0b55368047af0722b",
+    "runtime/android_trial_retry/host_tests/com/project7/localmanager/TrialAtomicWeekHost.java": "716563ec4733e1eb55a4fcee4d251c586a2e1bd0d306097696af400fc5f4b803"
+  },
+  "production_classes": [
+    "TrialRetryGateway.class",
+    "TrialRetryGateway$Spec.class",
+    "TrialRetryGateway$Result.class",
+    "TrialRetryGateway$1.class"
+  ],
+  "compile_group": {
+    "production": "runtime/android_trial_retry/src",
+    "manager_api_stubs": [
+      "runtime/android_trial_retry/compile_stubs/com/project7/localmanager/TrialApiStubs.java"
+    ],
+    "standalone_only_stub": "DreamTrialApiStubs.java; Main must exclude it and compile against prior real Dream production",
+    "runtime_dependencies": [
+      "DreamAccess",
+      "DreamStorage",
+      "DreamProgressDelta",
+      "original LocalProfileStore/LocalTutorialStore/LocalEventEngine",
+      "original ProtoLite/BsonLite"
+    ],
+    "asset_dependency": "existing assets/project7_story_missions/catalog-v1.tsv; no new Java asset family"
+  },
+  "abi": {
+    "prepare": "(android.content.Context)void",
+    "begin": "(LocalGatewayServer,String,Progress,LocalEventEngine,int)boolean",
+    "handleFinish": "(LocalGatewayServer,OutputStream,byte[],byte[],String,Progress,LocalEventEngine,Set,Set)boolean",
+    "handleGiveup": "(LocalGatewayServer,OutputStream,byte[],byte[],String,Progress,LocalEventEngine,boolean)boolean",
+    "sync": "(LocalResourceEngine.Result,LocalEventCatalog,Progress)void",
+    "recover": "(LocalGatewayServer,String,Progress,LocalEventEngine)void",
+    "beforeScopeChange": "(LocalGatewayServer,String,Progress,LocalEventEngine)void throws IOException"
+  },
+  "early_ui": {
+    "source": "runtime/project7_trial_retry_compat.py",
+    "policy": "runtime/android_trial_retry/trial-ui-policy-v1.json",
+    "install": "install(member_module, gg, policy_text)",
+    "target": "entity.avatar_members.BattleStageMember.Member",
+    "order": "before install_tutorials, entity.ClientAvatar.Avatar materialization and game_object Member/method cache materialization",
+    "binding": "module sys.modules exact; producer globals.gg/game_object exact; cache objects same generation",
+    "actual_avatar_raw": "state[3]",
+    "scope": "only source mandatory giveup; actual accepted fight_id used for ephemeral same-fight local marker dedupe, never server durable request identity"
+  },
+  "storage": {
+    "budget_owner": "only original profile bs.ab pairs",
+    "ledger": "q7TrialRetry: version/source/weekCommit/event occurrence/owner/ordinal/phase/policy, no duplicate remaining counter",
+    "pending": "q7TrialRetryPending: UUID receipt identity, source/scope/owner/scene/ordinal/phase and original Progress codec before-after delta",
+    "commit_order": "original Store monitor+PROFILE_LOCK+writer via DreamStorage; profile-first pending -> original tutorial save -> profile ack -> live adopt -> typed frames",
+    "recovery": "before begin/finish/giveup and prepareEventEffects; sync keeps receipt-backed budget and never initializes while pending",
+    "progress": "original candidate fork+consumeStoryScene / finishStoryBattle / abandonStoryBattle; no second file owner; no fake completion"
+  },
+  "passed": [
+    "real private Gateway wire handlers, finite315 losses3->2->1->0 and original7146 only at third loss",
+    "finite second-attempt true win retains missionWon/battle and original dialog gate, no failure7146",
+    "active and settled-nonterminal giveup original outcome; duplicate/terminal late win do not debit/grant",
+    "mandatory426 four losses, giveup, reload and original Gateway admission still available; real win only clears entry and preserves dialog gate",
+    "legacy real pending with stockab1 migrates once to source3 then one loss leaves2",
+    "absolute budget setter precedes combatOfflineReply and combatOfflineReward; no forged w1",
+    "original writer precommit, IO postrename, Runtime postrename; Progress save failure, ack failure, disconnected publisher",
+    "ordinary and terminal pending receipts recover after actual original Store.load and a new original Engine, without another decrement",
+    "full original640 set/clear/combatOfflineReward/reset and combat_result.exit_result: retry2/1, no retry0, original cancel gives up",
+    "early shim stale Avatar, failed send, same-fight duplicate, materialized Member cache and Avatar cache negatives",
+    "original pushEvents->tryNotifyEvent->city_event.notify_events->startEventReply/dialog/trace->original default10 t2 producer after mandatory rearm",
+    "original started completion-set cleanup and win triggerPendingNewbees / sync effects retained"
+  ],
+  "limits": [
+    "finite synthetic public profile/processing/battle outcome fixtures, not native combat or full-route acceptance",
+    "wire evidence executes actual original private handlers and emits/parses real framed replies; no socket/device transport test",
+    "strict single-connection ordered active-attempt semantics; original generation guard is reused, not independently re-proven here",
+    "same-scene old finish/giveup after a fresh accepted begin is wire-indistinguishable without a real protocol attempt token; ordinal/UUID/cbid/params hash do not solve this",
+    "UI ephemeral accepted fight_id dedupes same-fight callbacks, not arbitrary stale callbacks after a new fight has already begun",
+    "early bootstrap Member timing verified through source and cache/generation host guards, not native game import execution",
+    "requires existing authoritative nonempty weekCommit for source trial scope; no reset or invented week scope",
+    "original hidden server decrement timing is not claimed; the two named offline policies are explicit"
+  ],
+  "apk_built": false,
+  "native_verified": false,
+  "production_class_count": 4,
+  "root_main_validation": "Root confirmed12 compile groups/224 classes, read-only preflight and actual7f13/254af manager ABI compile PASS; same early installer order with Avatar raw state[3] check",
+  "baseline_week_evidence": "analysis/project7/trial-retry-host-lkjguz70",
+  "main_inputs": "analysis/project7/family-retry-full-prepare-v1/project7-inputs-1a6a568i",
+  "main_production_first": true,
+  "main_trial_class_sha256": "1412a2bda843fd0a9cd69b22572c56aee0fb88852e16087d36863d6bceeee1ad",
+  "audit_fixes": {
+    "durable_terminal_replay": "disconnect before frames; no attempt identity claimed",
+    "admission_negative": "only exact unchanged Profile + Progress and no entry pending; otherwise reconnect",
+    "null_state": "original fallthrough only no durable trial state; otherwise reconnect",
+    "scope": "existing beforeWeek recover-or-block; actual accepted Ask after recover plus fault block verified",
+    "cross_week_p1": "not reproduced with real old beforeWeek; original processing gate denied",
+    "atomic_scope_commit_guard": "PASS actual beforeWeek -> second real original Engine wire receipt -> original Store.updateServices five scope calls block exact images; original downstream callbacks; recover then actual reliable accepted Week transition+callback"
+  },
+  "compiled": "analysis/project7/family-retry-full-prepare-v1/project7-inputs-1a6a568i/compiled-atomic",
+  "atomic_guard": {
+    "owner": "Root",
+    "source_sha256": "e508747b167f17b799ac3707a3e9d1b13b2af64c8ab031be16f543789a2adc6f",
+    "class_sha256": "d8be47aecf9311f9a0beca291c9eef7a07397c89362e477d158ed85052b5e3ff",
+    "methods": [
+      "handleIncWeekAsk",
+      "handleResetWeekAsk",
+      "requestEnterStory",
+      "requestEnterStoryByEnding",
+      "handleResetWeek"
+    ],
+    "excluded_non_scope_writes": [
+      "updateStoryClickFlag",
+      "requestChangeAVGLevel"
+    ],
+    "not_claimed": "complete socket/thread race scheduling; block-path callback is original downstream callback function, actual reliable callback independently verified"
+  },
+  "python_classname_followup": {
+    "evidence": "analysis/project7/trial-retry-ui-classname-v1",
+    "class": "entity.ClientAvatar.ClientAvatar",
+    "status": "PASS consumer.py; Java unchanged",
+    "force_import_constraint": "after all early Member installers; class metaclass materializes caches and updater/RPC registration; native bootstrap not proven"
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "schema": "deepseek-p7-render-bootstrap-policy-v1",
+ "source": "runtime/project7_startup_hook.py",
+ "source_sha256": "670e082df51c0426c2c2e31399208ab904f3e47623a757f224d38f0b3bd60481",
+ "test_sha256": "4705a5adcea001aa129cce48f09d17acb61586229a3ab078da0d215ca32e7179",
+ "default": "astc",
+ "explicit": "png",
+ "insertion": "clean(state) after old_clean before game logic/UIManager",
+ "tests": 28,
+ "native_verified": false,
+ "d8": false,
+ "apk": false,
+ "consumer_test": "fake UIManager.init_astc_modifer writes cocos2; png wrapper last writes cocos",
+ "main_embedded": false,
+ "render_metadata": {
+  "render_mode": "png",
+  "render_loader_option": true,
+  "frida_required": false
+ }
+}

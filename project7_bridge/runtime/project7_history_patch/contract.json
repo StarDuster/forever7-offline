@@ -1,0 +1,28 @@
+{
+  "added_methods": [
+    "LocalResourceCatalog$Pool.<init>(III,List,List,List)",
+    "LocalDrawEngine.q7OriginalSpend"
+  ],
+  "boundary": "Binary seams only; production helpers and startup preparation required. No APK or native acceptance.",
+  "changed_methods": [
+    "LocalResourceCatalog.<init>(InputStream)",
+    "LocalDrawEngine.applyCurrent",
+    "LocalDrawEngine.saveState"
+  ],
+  "classes": 649,
+  "defined_methods": 3703,
+  "format": "project7-history-generic-seams-v1",
+  "patch": {
+    "bytes": 994694,
+    "sha256": "5e0af0a847fae92f6ab718309654a4a9aca078de8d39a3eb381bdecd475109af"
+  },
+  "register_counts_unchanged": true,
+  "source": {
+    "bytes": 1155644,
+    "sha256": "d16990dff71677c55ecd54225cd1fdc82f06c3785c3258e5053e069f24df341f"
+  },
+  "target": {
+    "bytes": 1156044,
+    "sha256": "a71aa19649feaa262332ec03ff1c42254fb21886c1a73767b336f0dbd0c23d3b"
+  }
+}

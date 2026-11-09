@@ -1,0 +1,65 @@
+{
+  "status": "PASS_FINITE_HOST",
+  "tests": 26,
+  "command": ".venv/bin/python -m unittest discover -s tests -p test_project7_tutorial_completion.py -q",
+  "source_sha256": {
+    "runtime/project7_tutorial_completion.py": "d730ae6fcb5d3586ea38e78af035962b6fa97d4f80a26a75076616f63443aee6",
+    "runtime/project7_tutorial_completion/policy-v1.json": "65c759e1eb5bcf3756edf47e7ec98b12192ed7062cdc95afa11a5ac0a12600a8",
+    "tests/test_project7_tutorial_completion.py": "02c44acd905eec0b0992ce9905c9b4603888a13f5474f6eb3a11061ddc3966c3"
+  },
+  "roots": {
+    "implemented_policy": 21,
+    "absent_original_catalog": 1,
+    "underlying_business_automated": false
+  },
+  "interfaces": [
+    "install() after legacy tutorials before all target Member caches",
+    "install_panels() after furniture/friend/selector before live Avatar",
+    "Installation.check_avatar(avatar_cls=None)",
+    "Installation.diagnostics(avatar) readonly"
+  ],
+  "proof": [
+    "actual640 RpcMethod.call and rpc_method outer/metadata positional and named schemas",
+    "actual NewbeeMember server notifications + finish reliable enqueue + original local fn",
+    "original GameObjectMeta copy/registration with explicit Python2 unbound-method and name-prefix fixtures",
+    "actual NewbeeData.initFromDict projected pe safe tick identity/revision guard",
+    "actual City/Room/EventTrigger/LuckyDraw success consumers and negative fields",
+    "actual BBS close root5 retirement, no marker4",
+    "actual Designer refresh/show and original FurnitureMember needresult save callback",
+    "actual decorated furniture close sync/async/oldAvatar/reinitializedPanel guards",
+    "actual frozen furniture installer duplicate validation co-installation",
+    "legacy four bypass methods identities preserved; Python2 grammar",
+    "new typed server pe/single-start invalidates delayed login revision; RPC clear cannot resurrect root and RPC new root cannot be erased",
+    "actual empty-key Furniture constructor -> actual DesignerComp.createEntity UUID branch (model/event platform seam) -> actual add_furniture_data -> target survives selected sort relocation -> actual successful save",
+    "253 enqueue IOException propagates while finally running original cover/layer cleanup; no local fn/stage/event grant and pending retained"
+  ],
+  "limits": [
+    "root startup/embedded loader integration not performed by this owner",
+    "original game entity/network/rendering/platform remain explicit host seams",
+    "GameObjectMeta test models Python2 unbound-method shape and dispatch prefix; no native entity dispatch run",
+    "authoritative server notifications are assumed authenticated original dispatch, not locally forged inputs",
+    "local fn and enqueue are not a server durable ACK; original reliable transport/reconnect handles retry",
+    "action observers do not synthesize operations, rewards, patrol choice, grants, victory or story completion",
+    "TV binding is narrowly actual sorted index4 mapped to public cabinet51/239, no default fallback if unmatched",
+    "74 absent original catalog remains diagnosed, never falsely finished",
+    "no D8/APK/signing/game/VM/device/ART/native acceptance"
+  ],
+  "original640_source_sha256": {
+    "lib/common/rpcdecorator.py": "e91144af8e09d7c1e0f1ce46624c666f47d230410441ba44458acd1b18390633",
+    "com/base/game_object.py": "ae712c30b99e0986e09bc95cb2def7cb0cb6cd4df8f45bd43cda2a09a5e4e5b3",
+    "entity/avatar_members/NewbeeMember.py": "59e26dd6373db1c5147fb8ff36cf1f0538721c5b1b227feef87c78a68c080609",
+    "entity/avatar_attrs/NewbeeData.py": "4865d1986791f8801bc9379b1e21944322ce24aa7a847cbe674122121355c2eb",
+    "entity/avatar_members/CityMember.py": "e851b8de5ba3c1e029cf0248d41ed024fb098b2379ff4cad565c3b20653448a5",
+    "entity/avatar_members/EventTriggerMember.py": "b405087d12242fe1fef944800dafc92f9925ec2e292b5e1345c1a0637e187c5f",
+    "entity/avatar_members/RoomMember.py": "031bc7e3f79cdb724fcf109a9ed04599a7f2c64a6878f5bcd478c2f10b49fb5a",
+    "entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996",
+    "entity/avatar_members/FurnitureMember.py": "58e9fbb4ceb2a0438bd829575174363fdca12265aa871629b4de94162bb112d7",
+    "cocos/panels/bbs_home.py": "137e8f8a1858283bb4af3feee7a6b74d7c5ede94232c78020c89b3fd7dcf45f0",
+    "cocos/panels/city_room_danchi_new.py": "21db16276d9951246d26c63b6d712a5347c1e47eae715da3df5abfa06f8df165",
+    "cocos/panels/city_room_zhuangxiu.py": "4eb5532b9321cfbda26ca36f220849ef3eae399bdd02671cc5415f04f22f9639",
+    "cocos/ui_utils.py": "c2898837cd4e2e53b35c98b59ebf961e9357304b10ca636aa37d0cf35c4407da",
+    "com/utils/FurnitureScheme.py": "57b1cf36a9b3b46141843c056f1c1c8d569b0f7281c3b5a6c37968f6e0b20a3f",
+    "game_scene/components/FurnitureDesignerComp.py": "8648daedad628e3a8f1e694f72136e8ce8eaa10c4fed86b3322bc9b0bf06b469"
+  },
+  "test_output": "----------------------------------------------------------------------\nRan 26 tests in 2.508s\n\nOK\n triggerProcessingEvent [20, 24, 90, 30, 5, 253]\nreplyLuckyDrawFile False 1\nreplyLuckyDrawFile True 1\n triggerProcessingEvent [30, 150, 151, 230, 240, 250]\n=====replyLuckyDrawFurnitureCard False {}\n=====replyLuckyDrawFurnitureCard True {'t': 2, 'ct': 1, 'rwd': {'id': 1}}\ntriggerClientNewbee 10\n triggerProcessingEvent []\ntriggerClientNewbee 10\ntriggerClientNewbee 5\ntriggerClientNewbee 5\n triggerProcessingEvent [20, 24]\ntriggerClientNewbee 253\n triggerProcessingEvent []\ntriggerClientNewbee 253\ntriggerClientNewbee 253\ntriggerClientNewbee 253\ntriggerClientNewbee 211\n triggerProcessingEvent []\ntriggerClientNewbee 10\ntriggerClientNewbee 10\n triggerProcessingEvent [93]\ntriggerClientNewbee 120\n triggerProcessingEvent [1, 10, 93, 120, 160, 260, 284, 292, 302]\n triggerProcessingEvent [1, 10, 93, 120, 160, 260, 284, 292, 302]\ntriggerClientNewbee 10\ntriggerClientNewbee 211\ntriggerClientNewbee 10\ntriggerClientNewbee 93\n triggerProcessingEvent [10]\ntriggerClientNewbee 10\ntriggerClientNewbee 10\ntriggerClientNewbee 10\ntriggerClientNewbee 10\n triggerProcessingEvent [5, 74, 211, 253, 999]\n"
+}

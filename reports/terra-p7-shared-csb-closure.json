@@ -1,0 +1,4506 @@
+{
+  "scope": "bounded static structure only; no game, emulator, native, D8, APK, private data or production logic",
+  "official_sources": [
+    {
+      "name": "3.2 CocoLoader.h",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-3.2/cocos/editor-support/cocostudio/CocoLoader.h",
+      "sha256": "c8288b0ed8bae85e1749a2164d0fe489083481a52beea83022861c6756c19c54"
+    },
+    {
+      "name": "3.2 CocoLoader.cpp",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-3.2/cocos/editor-support/cocostudio/CocoLoader.cpp",
+      "sha256": "fa6412d5fbcdbb0c79c5d8a3dcc3945a00e0efe0fc7c6e205d042c26f5183e3b"
+    },
+    {
+      "name": "3.2 CCSGUIReader.cpp",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-3.2/cocos/editor-support/cocostudio/CCSGUIReader.cpp",
+      "sha256": "a2fffbc3b240fd48129552209b1ac88703ae19c0190c02da2697114e768b0022"
+    },
+    {
+      "name": "2.2.6 CocoLoader.h",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-2.2.6/extensions/CocoStudio/Json/CocoLoader.h",
+      "sha256": "38ad146ec04694179816c0fe1b3b2c56b323165a95d7a670fbb2a1ccfe615bc3"
+    },
+    {
+      "name": "2.2.6 CocoLoader.cpp",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-2.2.6/extensions/CocoStudio/Json/CocoLoader.cpp",
+      "sha256": "d6960722ce95cc313f535847ade9ccd59b404a7261fec7f2693b8cf884923170"
+    },
+    {
+      "name": "2.2.6 GUIReader.cpp",
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-2.2.6/extensions/CocoStudio/Reader/GUIReader.cpp",
+      "sha256": "b47ec7f2335c4f220c79580d5e8a3b53afd3d37eadd818c89d08714085e0729e"
+    }
+  ],
+  "reader": "tools/legacy_csb_reader.py",
+  "offset_convention": "node_offset relative to uncompressed CocoNode region; absolute decompressed offset = header.node_offset + node_offset",
+  "files": [
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/common_frame.csb",
+      "sha256": "c88c0c2a24c82d227e5e1219f6882e07322d95e1759fa4fb358c720c5496df92",
+      "decoded_sha256": "6b729cdbd776cdf39986daa6d5d935d30a85b55199ec2e49f9a461308c904b1f",
+      "header": {
+        "uncompressed": 785982,
+        "compressed": 174895,
+        "object_count": 22,
+        "attribute_offset": 264,
+        "node_offset": 2928,
+        "string_offset": 581216
+      },
+      "node_graph_count": 36143,
+      "widgets": [
+        {
+          "path": "Panel_1",
+          "class": "Panel",
+          "node_offset": 160
+        },
+        {
+          "path": "Panel_1.head_little",
+          "class": "Panel",
+          "node_offset": 122544
+        },
+        {
+          "path": "Panel_1.head_little.bg",
+          "class": "ImageView",
+          "node_offset": 124656
+        },
+        {
+          "path": "Panel_1.head_little.frame_chris",
+          "class": "ImageView",
+          "node_offset": 124672
+        },
+        {
+          "path": "Panel_1.head_little.empty",
+          "class": "ImageView",
+          "node_offset": 124688
+        },
+        {
+          "path": "Panel_1.head_little.img",
+          "class": "ImageView",
+          "node_offset": 124704
+        },
+        {
+          "path": "Panel_1.head_little.captain",
+          "class": "ImageView",
+          "node_offset": 124720
+        },
+        {
+          "path": "Panel_1.head_little.active",
+          "class": "ImageView",
+          "node_offset": 124736
+        },
+        {
+          "path": "Panel_1.head_little.active2_head_player",
+          "class": "Panel",
+          "node_offset": 124752
+        },
+        {
+          "path": "Panel_1.head_little.active2_head_player.hero_head_select_anime",
+          "class": "ImageView",
+          "node_offset": 131104
+        },
+        {
+          "path": "Panel_1.head_little.active2_head_player.frame_selected",
+          "class": "ImageView",
+          "node_offset": 131120
+        },
+        {
+          "path": "Panel_1.head_little.lock_story",
+          "class": "ImageView",
+          "node_offset": 124768
+        },
+        {
+          "path": "Panel_1.head_little.friendhelp",
+          "class": "ImageView",
+          "node_offset": 124784
+        },
+        {
+          "path": "Panel_1.head_little.frame_select",
+          "class": "ImageView",
+          "node_offset": 124800
+        },
+        {
+          "path": "Panel_1.head_little.frame_name",
+          "class": "Label",
+          "node_offset": 124816
+        },
+        {
+          "path": "Panel_1.head_little.super",
+          "class": "ImageView",
+          "node_offset": 124832
+        },
+        {
+          "path": "Panel_1.head_little.super.num",
+          "class": "Label",
+          "node_offset": 136544
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1",
+          "class": "Panel",
+          "node_offset": 124848
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.light_1",
+          "class": "Panel",
+          "node_offset": 138048
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.light_1.light_1",
+          "class": "ImageView",
+          "node_offset": 139600
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.light_2",
+          "class": "Panel",
+          "node_offset": 138064
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.light_2.light_2",
+          "class": "ImageView",
+          "node_offset": 141328
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.light_1_0",
+          "class": "ImageView",
+          "node_offset": 138080
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.effect_1",
+          "class": "ImageView",
+          "node_offset": 138096
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.effect_3",
+          "class": "ImageView",
+          "node_offset": 138112
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.effect_4",
+          "class": "ImageView",
+          "node_offset": 138128
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.effect_5",
+          "class": "ImageView",
+          "node_offset": 138144
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_effect_1.effect_6",
+          "class": "ImageView",
+          "node_offset": 138160
+        },
+        {
+          "path": "Panel_1.head_little.head_frame_spine",
+          "class": "Panel",
+          "node_offset": 124864
+        },
+        {
+          "path": "Panel_1.head_little_square",
+          "class": "Panel",
+          "node_offset": 122560
+        },
+        {
+          "path": "Panel_1.head_little_square.img",
+          "class": "ImageView",
+          "node_offset": 148384
+        },
+        {
+          "path": "Panel_1.head_little_square.board",
+          "class": "ImageView",
+          "node_offset": 148400
+        },
+        {
+          "path": "Panel_1.head_little_square.icon_friend",
+          "class": "ImageView",
+          "node_offset": 148416
+        },
+        {
+          "path": "Panel_1.head",
+          "class": "Panel",
+          "node_offset": 122576
+        },
+        {
+          "path": "Panel_1.head.btn",
+          "class": "Button",
+          "node_offset": 152512
+        },
+        {
+          "path": "Panel_1.head.btn.scale",
+          "class": "Panel",
+          "node_offset": 154864
+        },
+        {
+          "path": "Panel_1.head.btn.scale.level",
+          "class": "Panel",
+          "node_offset": 155808
+        },
+        {
+          "path": "Panel_1.head.btn.scale.level.bg",
+          "class": "ImageView",
+          "node_offset": 158480
+        },
+        {
+          "path": "Panel_1.head.btn.scale.level.nub",
+          "class": "Label",
+          "node_offset": 158496
+        },
+        {
+          "path": "Panel_1.head.btn.scale.forbid_2",
+          "class": "Panel",
+          "node_offset": 155824
+        },
+        {
+          "path": "Panel_1.head.btn.scale.forbid_2.forbid",
+          "class": "ImageView",
+          "node_offset": 161232
+        },
+        {
+          "path": "Panel_1.head.btn.scale.forbid_2.bar",
+          "class": "ImageView",
+          "node_offset": 161248
+        },
+        {
+          "path": "Panel_1.head.btn.scale.forbid_2.txt",
+          "class": "Label",
+          "node_offset": 161264
+        },
+        {
+          "path": "Panel_1.head.btn.scale.all_hero",
+          "class": "Panel",
+          "node_offset": 155840
+        },
+        {
+          "path": "Panel_1.head.btn.scale.all_hero.all",
+          "class": "ImageView",
+          "node_offset": 164800
+        },
+        {
+          "path": "Panel_1.head.btn.scale.all_hero.txt",
+          "class": "Label",
+          "node_offset": 164816
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_lock",
+          "class": "ImageView",
+          "node_offset": 155856
+        },
+        {
+          "path": "Panel_1.head.btn.scale.head",
+          "class": "Button",
+          "node_offset": 155872
+        },
+        {
+          "path": "Panel_1.head.btn.scale.head.img",
+          "class": "ImageView",
+          "node_offset": 168544
+        },
+        {
+          "path": "Panel_1.head.btn.scale.head.empty",
+          "class": "ImageView",
+          "node_offset": 168560
+        },
+        {
+          "path": "Panel_1.head.btn.scale.forbid",
+          "class": "ImageView",
+          "node_offset": 155888
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star",
+          "class": "Panel",
+          "node_offset": 155904
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star.star1",
+          "class": "ImageView",
+          "node_offset": 172432
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star.star2",
+          "class": "ImageView",
+          "node_offset": 172448
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star.star3",
+          "class": "ImageView",
+          "node_offset": 172464
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star.star4",
+          "class": "ImageView",
+          "node_offset": 172480
+        },
+        {
+          "path": "Panel_1.head.btn.scale.star.star5",
+          "class": "ImageView",
+          "node_offset": 172496
+        },
+        {
+          "path": "Panel_1.head.btn.scale.battle",
+          "class": "Panel",
+          "node_offset": 155920
+        },
+        {
+          "path": "Panel_1.head.btn.scale.battle.bg",
+          "class": "ImageView",
+          "node_offset": 177680
+        },
+        {
+          "path": "Panel_1.head.btn.scale.battle.bg.value",
+          "class": "Label",
+          "node_offset": 178752
+        },
+        {
+          "path": "Panel_1.head.btn.scale.battle.fatigue>common_icon.icons",
+          "class": "Panel",
+          "node_offset": 177696
+        },
+        {
+          "path": "Panel_1.head.btn.scale.captain",
+          "class": "ImageView",
+          "node_offset": 155936
+        },
+        {
+          "path": "Panel_1.head.btn.scale.boss",
+          "class": "ImageView",
+          "node_offset": 155952
+        },
+        {
+          "path": "Panel_1.head.btn.scale.active",
+          "class": "ImageView",
+          "node_offset": 155968
+        },
+        {
+          "path": "Panel_1.head.btn.scale.waiting",
+          "class": "ImageView",
+          "node_offset": 155984
+        },
+        {
+          "path": "Panel_1.head.btn.scale.time",
+          "class": "Label",
+          "node_offset": 156000
+        },
+        {
+          "path": "Panel_1.head.btn.scale.lock_story",
+          "class": "ImageView",
+          "node_offset": 156016
+        },
+        {
+          "path": "Panel_1.head.btn.scale.buff",
+          "class": "Panel",
+          "node_offset": 156032
+        },
+        {
+          "path": "Panel_1.head.btn.scale.buff.bg",
+          "class": "ImageView",
+          "node_offset": 187840
+        },
+        {
+          "path": "Panel_1.head.btn.scale.buff.icon",
+          "class": "ImageView",
+          "node_offset": 187856
+        },
+        {
+          "path": "Panel_1.head.btn.scale.buff.arrow",
+          "class": "ImageView",
+          "node_offset": 187872
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements",
+          "class": "Panel",
+          "node_offset": 156048
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.bg",
+          "class": "ImageView",
+          "node_offset": 191456
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.yellow",
+          "class": "ImageView",
+          "node_offset": 191472
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.blue",
+          "class": "ImageView",
+          "node_offset": 191488
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.red",
+          "class": "ImageView",
+          "node_offset": 191504
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.elements>common_frame.elements",
+          "class": "Panel",
+          "node_offset": 191520
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.arrow",
+          "class": "ImageView",
+          "node_offset": 191536
+        },
+        {
+          "path": "Panel_1.head.btn.scale.elements.arrow_0",
+          "class": "ImageView",
+          "node_offset": 191552
+        },
+        {
+          "path": "Panel_1.head.btn.scale.heart",
+          "class": "ImageView",
+          "node_offset": 156064
+        },
+        {
+          "path": "Panel_1.head.btn.scale.friendhelp",
+          "class": "ImageView",
+          "node_offset": 156080
+        },
+        {
+          "path": "Panel_1.head.btn.scale.fushe",
+          "class": "Panel",
+          "node_offset": 156096
+        },
+        {
+          "path": "Panel_1.head.btn.scale.fushe.board",
+          "class": "ImageView",
+          "node_offset": 200496
+        },
+        {
+          "path": "Panel_1.head.btn.scale.fushe.num",
+          "class": "Label",
+          "node_offset": 200512
+        },
+        {
+          "path": "Panel_1.head.btn.scale.fushe.num.icon",
+          "class": "ImageView",
+          "node_offset": 202304
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add",
+          "class": "Panel",
+          "node_offset": 156112
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.block",
+          "class": "ImageView",
+          "node_offset": 204064
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.block_0",
+          "class": "ImageView",
+          "node_offset": 204080
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.block_0_1",
+          "class": "ImageView",
+          "node_offset": 204096
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.light_star",
+          "class": "ImageView",
+          "node_offset": 204112
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.light",
+          "class": "ImageView",
+          "node_offset": 204128
+        },
+        {
+          "path": "Panel_1.head.btn.scale.hero_add.light_1",
+          "class": "ImageView",
+          "node_offset": 204144
+        },
+        {
+          "path": "Panel_1.head.btn.scale.message",
+          "class": "ImageView",
+          "node_offset": 156128
+        },
+        {
+          "path": "Panel_1.head.btn.scale.activityup",
+          "class": "ImageView",
+          "node_offset": 156144
+        },
+        {
+          "path": "Panel_1.head.power",
+          "class": "Panel",
+          "node_offset": 152528
+        },
+        {
+          "path": "Panel_1.head.power.board",
+          "class": "ImageView",
+          "node_offset": 212512
+        },
+        {
+          "path": "Panel_1.head.power.num",
+          "class": "Label",
+          "node_offset": 212528
+        },
+        {
+          "path": "Panel_1.head.power.num.icon",
+          "class": "ImageView",
+          "node_offset": 214320
+        },
+        {
+          "path": "Panel_1.head.hero_leader",
+          "class": "ImageView",
+          "node_offset": 152544
+        },
+        {
+          "path": "Panel_1.head.xiluo",
+          "class": "Panel",
+          "node_offset": 152560
+        },
+        {
+          "path": "Panel_1.head.xiluo.board",
+          "class": "ImageView",
+          "node_offset": 217072
+        },
+        {
+          "path": "Panel_1.head.xiluo.icon_dis",
+          "class": "ImageView",
+          "node_offset": 217088
+        },
+        {
+          "path": "Panel_1.head.xiluo.icon_center",
+          "class": "ImageView",
+          "node_offset": 217104
+        },
+        {
+          "path": "Panel_1.head.a65",
+          "class": "Panel",
+          "node_offset": 152576
+        },
+        {
+          "path": "Panel_1.head.a65.board",
+          "class": "ImageView",
+          "node_offset": 220688
+        },
+        {
+          "path": "Panel_1.head.a65.icon",
+          "class": "ImageView",
+          "node_offset": 220704
+        },
+        {
+          "path": "Panel_1.head.a65.num",
+          "class": "Label",
+          "node_offset": 220720
+        },
+        {
+          "path": "Panel_1.head.a105",
+          "class": "Panel",
+          "node_offset": 152592
+        },
+        {
+          "path": "Panel_1.head.a105.icon",
+          "class": "ImageView",
+          "node_offset": 224256
+        },
+        {
+          "path": "Panel_1.head.a101>activity_common_10.a101_jiantou",
+          "class": "Panel",
+          "node_offset": 152608
+        },
+        {
+          "path": "Panel_1.head.a101>activity_common_10.a101_jiantou.up_max",
+          "class": "ImageView",
+          "node_offset": 226240
+        },
+        {
+          "path": "Panel_1.head.a101>activity_common_10.a101_jiantou.up_min",
+          "class": "ImageView",
+          "node_offset": 226256
+        },
+        {
+          "path": "Panel_1.head.talent",
+          "class": "Panel",
+          "node_offset": 152624
+        },
+        {
+          "path": "Panel_1.head.talent.board",
+          "class": "ImageView",
+          "node_offset": 229040
+        },
+        {
+          "path": "Panel_1.head.talent.icon",
+          "class": "ImageView",
+          "node_offset": 229056
+        },
+        {
+          "path": "Panel_1.head.talent.num",
+          "class": "Label",
+          "node_offset": 229072
+        },
+        {
+          "path": "Panel_1.head.a145",
+          "class": "Panel",
+          "node_offset": 152640
+        },
+        {
+          "path": "Panel_1.head.a145.board",
+          "class": "ImageView",
+          "node_offset": 232608
+        },
+        {
+          "path": "Panel_1.head.a145.icon",
+          "class": "ImageView",
+          "node_offset": 232624
+        },
+        {
+          "path": "Panel_1.head.a145.num",
+          "class": "Label",
+          "node_offset": 232640
+        },
+        {
+          "path": "Panel_1.head.a154",
+          "class": "Panel",
+          "node_offset": 152656
+        },
+        {
+          "path": "Panel_1.head.a154.board",
+          "class": "ImageView",
+          "node_offset": 236176
+        },
+        {
+          "path": "Panel_1.head.a154.num",
+          "class": "Label",
+          "node_offset": 236192
+        },
+        {
+          "path": "Panel_1.head.shoucang",
+          "class": "Panel",
+          "node_offset": 152672
+        },
+        {
+          "path": "Panel_1.head.shoucang.light",
+          "class": "ImageView",
+          "node_offset": 238928
+        },
+        {
+          "path": "Panel_1.head.shoucang.icon",
+          "class": "ImageView",
+          "node_offset": 238944
+        },
+        {
+          "path": "Panel_1.head.xinyuan",
+          "class": "Panel",
+          "node_offset": 152688
+        },
+        {
+          "path": "Panel_1.head.xinyuan.light",
+          "class": "ImageView",
+          "node_offset": 241728
+        },
+        {
+          "path": "Panel_1.head.xinyuan.icon",
+          "class": "ImageView",
+          "node_offset": 241744
+        },
+        {
+          "path": "Panel_1.head.a195",
+          "class": "Panel",
+          "node_offset": 152704
+        },
+        {
+          "path": "Panel_1.head.a195.bg",
+          "class": "ImageView",
+          "node_offset": 244528
+        },
+        {
+          "path": "Panel_1.head.a195.gift",
+          "class": "ImageView",
+          "node_offset": 244544
+        },
+        {
+          "path": "Panel_1.head.a195.num",
+          "class": "Label",
+          "node_offset": 244560
+        },
+        {
+          "path": "Panel_1.head.city_task_gift",
+          "class": "Panel",
+          "node_offset": 152720
+        },
+        {
+          "path": "Panel_1.head.city_task_gift.bg",
+          "class": "ImageView",
+          "node_offset": 248096
+        },
+        {
+          "path": "Panel_1.head.city_task_gift.bg_0",
+          "class": "ImageView",
+          "node_offset": 248112
+        },
+        {
+          "path": "Panel_1.head.city_task_gift.heart",
+          "class": "ImageView",
+          "node_offset": 248128
+        },
+        {
+          "path": "Panel_1.head.city_task_gift.heart_0",
+          "class": "ImageView",
+          "node_offset": 248144
+        },
+        {
+          "path": "Panel_1.head.city_task_gift.num",
+          "class": "Label",
+          "node_offset": 248160
+        },
+        {
+          "path": "Panel_1.head.a233",
+          "class": "Panel",
+          "node_offset": 152736
+        },
+        {
+          "path": "Panel_1.head.a233.yiwancheng",
+          "class": "ImageView",
+          "node_offset": 253296
+        },
+        {
+          "path": "Panel_1.head.check",
+          "class": "Panel",
+          "node_offset": 152752
+        },
+        {
+          "path": "Panel_1.head.check.icon",
+          "class": "ImageView",
+          "node_offset": 255280
+        },
+        {
+          "path": "Panel_1.head.friendhelp",
+          "class": "ImageView",
+          "node_offset": 152768
+        },
+        {
+          "path": "Panel_1.head.a247",
+          "class": "Panel",
+          "node_offset": 152784
+        },
+        {
+          "path": "Panel_1.head.a247.up",
+          "class": "ImageView",
+          "node_offset": 258256
+        },
+        {
+          "path": "Panel_1.elements",
+          "class": "Panel",
+          "node_offset": 122592
+        },
+        {
+          "path": "Panel_1.elements.yellow",
+          "class": "Panel",
+          "node_offset": 260240
+        },
+        {
+          "path": "Panel_1.elements.yellow.yellow_normal",
+          "class": "ImageView",
+          "node_offset": 261392
+        },
+        {
+          "path": "Panel_1.elements.yellow.yellow_available",
+          "class": "ImageView",
+          "node_offset": 261408
+        },
+        {
+          "path": "Panel_1.elements.yellow.yellow_disabled",
+          "class": "ImageView",
+          "node_offset": 261424
+        },
+        {
+          "path": "Panel_1.elements.blue",
+          "class": "Panel",
+          "node_offset": 260256
+        },
+        {
+          "path": "Panel_1.elements.blue.blue_normal",
+          "class": "ImageView",
+          "node_offset": 264752
+        },
+        {
+          "path": "Panel_1.elements.blue.blue_available",
+          "class": "ImageView",
+          "node_offset": 264768
+        },
+        {
+          "path": "Panel_1.elements.blue.blue_disabled",
+          "class": "ImageView",
+          "node_offset": 264784
+        },
+        {
+          "path": "Panel_1.elements.red",
+          "class": "Panel",
+          "node_offset": 260272
+        },
+        {
+          "path": "Panel_1.elements.red.red_normal",
+          "class": "ImageView",
+          "node_offset": 268112
+        },
+        {
+          "path": "Panel_1.elements.red.red_available",
+          "class": "ImageView",
+          "node_offset": 268128
+        },
+        {
+          "path": "Panel_1.elements.red.red_disabled",
+          "class": "ImageView",
+          "node_offset": 268144
+        },
+        {
+          "path": "Panel_1.level",
+          "class": "Panel",
+          "node_offset": 122608
+        },
+        {
+          "path": "Panel_1.level.bg",
+          "class": "ImageView",
+          "node_offset": 271472
+        },
+        {
+          "path": "Panel_1.level.labels",
+          "class": "Panel",
+          "node_offset": 271488
+        },
+        {
+          "path": "Panel_1.level.labels.value",
+          "class": "Label",
+          "node_offset": 273536
+        },
+        {
+          "path": "Panel_1.level.labels.lv",
+          "class": "Label",
+          "node_offset": 273552
+        },
+        {
+          "path": "Panel_1.item",
+          "class": "Panel",
+          "node_offset": 122624
+        },
+        {
+          "path": "Panel_1.item.level",
+          "class": "Panel",
+          "node_offset": 276240
+        },
+        {
+          "path": "Panel_1.item.level.level_1",
+          "class": "ImageView",
+          "node_offset": 281152
+        },
+        {
+          "path": "Panel_1.item.level.level_2",
+          "class": "ImageView",
+          "node_offset": 281168
+        },
+        {
+          "path": "Panel_1.item.level.level_3",
+          "class": "ImageView",
+          "node_offset": 281184
+        },
+        {
+          "path": "Panel_1.item.level.level_4",
+          "class": "ImageView",
+          "node_offset": 281200
+        },
+        {
+          "path": "Panel_1.item.level.level_5",
+          "class": "ImageView",
+          "node_offset": 281216
+        },
+        {
+          "path": "Panel_1.item.level.level_6",
+          "class": "ImageView",
+          "node_offset": 281232
+        },
+        {
+          "path": "Panel_1.item.level.level_7",
+          "class": "ImageView",
+          "node_offset": 281248
+        },
+        {
+          "path": "Panel_1.item.rarity",
+          "class": "ImageView",
+          "node_offset": 276256
+        },
+        {
+          "path": "Panel_1.item.treasure_hide",
+          "class": "Panel",
+          "node_offset": 276272
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.bar_leftcorner",
+          "class": "ImageView",
+          "node_offset": 288512
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.icon_hide",
+          "class": "ImageView",
+          "node_offset": 288528
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.motion_hide_bright",
+          "class": "ImageView",
+          "node_offset": 288544
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.motion_light",
+          "class": "ImageView",
+          "node_offset": 288560
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.motion_light_vertical",
+          "class": "ImageView",
+          "node_offset": 288576
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.motion_light_horizontal",
+          "class": "ImageView",
+          "node_offset": 288592
+        },
+        {
+          "path": "Panel_1.item.treasure_hide.motion_light_2",
+          "class": "ImageView",
+          "node_offset": 288608
+        },
+        {
+          "path": "Panel_1.item.anim_node",
+          "class": "Panel",
+          "node_offset": 276288
+        },
+        {
+          "path": "Panel_1.item.anim_node.block",
+          "class": "ImageView",
+          "node_offset": 295136
+        },
+        {
+          "path": "Panel_1.item.anim_node.block_0",
+          "class": "ImageView",
+          "node_offset": 295152
+        },
+        {
+          "path": "Panel_1.item.anim_node.block_0_1",
+          "class": "ImageView",
+          "node_offset": 295168
+        },
+        {
+          "path": "Panel_1.item.anim_node.light_star",
+          "class": "ImageView",
+          "node_offset": 295184
+        },
+        {
+          "path": "Panel_1.item.anim_node.light",
+          "class": "ImageView",
+          "node_offset": 295200
+        },
+        {
+          "path": "Panel_1.item.anim_node.light_1",
+          "class": "ImageView",
+          "node_offset": 295216
+        },
+        {
+          "path": "Panel_1.item.bg",
+          "class": "ImageView",
+          "node_offset": 276304
+        },
+        {
+          "path": "Panel_1.item.bg.green",
+          "class": "ImageView",
+          "node_offset": 300944
+        },
+        {
+          "path": "Panel_1.item.bg.blue",
+          "class": "ImageView",
+          "node_offset": 300960
+        },
+        {
+          "path": "Panel_1.item.bg.purple",
+          "class": "ImageView",
+          "node_offset": 300976
+        },
+        {
+          "path": "Panel_1.item.bg.golden",
+          "class": "ImageView",
+          "node_offset": 300992
+        },
+        {
+          "path": "Panel_1.item.bg.orange",
+          "class": "ImageView",
+          "node_offset": 301008
+        },
+        {
+          "path": "Panel_1.item.img",
+          "class": "ImageView",
+          "node_offset": 276320
+        },
+        {
+          "path": "Panel_1.item.add",
+          "class": "ImageView",
+          "node_offset": 276336
+        },
+        {
+          "path": "Panel_1.item.none",
+          "class": "ImageView",
+          "node_offset": 276352
+        },
+        {
+          "path": "Panel_1.item.info",
+          "class": "Panel",
+          "node_offset": 276368
+        },
+        {
+          "path": "Panel_1.item.info.bar",
+          "class": "ImageView",
+          "node_offset": 307968
+        },
+        {
+          "path": "Panel_1.item.info.bar_black",
+          "class": "ImageView",
+          "node_offset": 307984
+        },
+        {
+          "path": "Panel_1.item.info.lv",
+          "class": "Label",
+          "node_offset": 308000
+        },
+        {
+          "path": "Panel_1.item.info.lv.Label_16",
+          "class": "Label",
+          "node_offset": 310832
+        },
+        {
+          "path": "Panel_1.item.info.up",
+          "class": "Panel",
+          "node_offset": 308016
+        },
+        {
+          "path": "Panel_1.item.info.up.up",
+          "class": "ImageView",
+          "node_offset": 312288
+        },
+        {
+          "path": "Panel_1.item.info.inner",
+          "class": "Label",
+          "node_offset": 308032
+        },
+        {
+          "path": "Panel_1.item.info.inner.home_arrow",
+          "class": "ImageView",
+          "node_offset": 314016
+        },
+        {
+          "path": "Panel_1.item.info.inner.home_arrow.up",
+          "class": "ImageView",
+          "node_offset": 314784
+        },
+        {
+          "path": "Panel_1.item.info.inner.home_arrow.down",
+          "class": "ImageView",
+          "node_offset": 314800
+        },
+        {
+          "path": "Panel_1.item.info.outter",
+          "class": "Label",
+          "node_offset": 308048
+        },
+        {
+          "path": "Panel_1.item.treasure_star",
+          "class": "Panel",
+          "node_offset": 276384
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_gold",
+          "class": "ImageView",
+          "node_offset": 317840
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_gold.gold",
+          "class": "ImageView",
+          "node_offset": 318992
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang",
+          "class": "Panel",
+          "node_offset": 317856
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_3",
+          "class": "ImageView",
+          "node_offset": 320544
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_3.orange",
+          "class": "ImageView",
+          "node_offset": 321696
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_2",
+          "class": "ImageView",
+          "node_offset": 320560
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_2.orange",
+          "class": "ImageView",
+          "node_offset": 323248
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_1",
+          "class": "ImageView",
+          "node_offset": 320576
+        },
+        {
+          "path": "Panel_1.item.treasure_star.star_orang.orange_1.orange",
+          "class": "ImageView",
+          "node_offset": 324800
+        },
+        {
+          "path": "Panel_1.item.treasure_star.brd",
+          "class": "ImageView",
+          "node_offset": 317872
+        },
+        {
+          "path": "Panel_1.item.piece",
+          "class": "ImageView",
+          "node_offset": 276400
+        },
+        {
+          "path": "Panel_1.item.sel",
+          "class": "ImageView",
+          "node_offset": 276416
+        },
+        {
+          "path": "Panel_1.item.new",
+          "class": "ImageView",
+          "node_offset": 276432
+        },
+        {
+          "path": "Panel_1.item.star_item",
+          "class": "Panel",
+          "node_offset": 276448
+        },
+        {
+          "path": "Panel_1.item.star_item.star1",
+          "class": "ImageView",
+          "node_offset": 329296
+        },
+        {
+          "path": "Panel_1.item.star_item.star2",
+          "class": "ImageView",
+          "node_offset": 329312
+        },
+        {
+          "path": "Panel_1.item.star_item.star3",
+          "class": "ImageView",
+          "node_offset": 329328
+        },
+        {
+          "path": "Panel_1.item.star_item.star4",
+          "class": "ImageView",
+          "node_offset": 329344
+        },
+        {
+          "path": "Panel_1.item.star_item.star5",
+          "class": "ImageView",
+          "node_offset": 329360
+        },
+        {
+          "path": "Panel_1.item.treasure_unknown",
+          "class": "ImageView",
+          "node_offset": 276464
+        },
+        {
+          "path": "Panel_1.item.chest_unknown",
+          "class": "ImageView",
+          "node_offset": 276480
+        },
+        {
+          "path": "Panel_1.item.hero_unknown",
+          "class": "ImageView",
+          "node_offset": 276496
+        },
+        {
+          "path": "Panel_1.item.hero_star",
+          "class": "Panel",
+          "node_offset": 276512
+        },
+        {
+          "path": "Panel_1.item.hero_star.gui_bg_bar",
+          "class": "ImageView",
+          "node_offset": 337776
+        },
+        {
+          "path": "Panel_1.item.hero_star.star1>hero_herolist_common.starlv",
+          "class": "Panel",
+          "node_offset": 337792
+        },
+        {
+          "path": "Panel_1.item.hero_star.star2>hero_herolist_common.star",
+          "class": "Panel",
+          "node_offset": 337808
+        },
+        {
+          "path": "Panel_1.item.hero_star.star3>hero_herolist_common.star",
+          "class": "Panel",
+          "node_offset": 337824
+        },
+        {
+          "path": "Panel_1.item.hero_star.star4>hero_herolist_common.star",
+          "class": "Panel",
+          "node_offset": 337840
+        },
+        {
+          "path": "Panel_1.item.hero_star.star5>hero_herolist_common.star",
+          "class": "Panel",
+          "node_offset": 337856
+        },
+        {
+          "path": "Panel_1.item.cost",
+          "class": "Panel",
+          "node_offset": 276528
+        },
+        {
+          "path": "Panel_1.item.cost.bg",
+          "class": "ImageView",
+          "node_offset": 344464
+        },
+        {
+          "path": "Panel_1.item.cost.num",
+          "class": "Label",
+          "node_offset": 344480
+        },
+        {
+          "path": "Panel_1.item.trade",
+          "class": "Panel",
+          "node_offset": 276544
+        },
+        {
+          "path": "Panel_1.item.trade.gui_lock",
+          "class": "ImageView",
+          "node_offset": 346960
+        },
+        {
+          "path": "Panel_1.item.trade.forbid",
+          "class": "ImageView",
+          "node_offset": 346976
+        },
+        {
+          "path": "Panel_1.item.trade.bar",
+          "class": "ImageView",
+          "node_offset": 346992
+        },
+        {
+          "path": "Panel_1.item.trade.txt",
+          "class": "Label",
+          "node_offset": 347008
+        },
+        {
+          "path": "Panel_1.item.item_lock",
+          "class": "ImageView",
+          "node_offset": 276560
+        },
+        {
+          "path": "Panel_1.item.select",
+          "class": "ImageView",
+          "node_offset": 276576
+        },
+        {
+          "path": "Panel_1.item.bufflock",
+          "class": "Panel",
+          "node_offset": 276592
+        },
+        {
+          "path": "Panel_1.item.bufflock.bg",
+          "class": "Panel",
+          "node_offset": 352560
+        },
+        {
+          "path": "Panel_1.item.bufflock.lock",
+          "class": "ImageView",
+          "node_offset": 352576
+        },
+        {
+          "path": "Panel_1.item.delete",
+          "class": "Panel",
+          "node_offset": 276608
+        },
+        {
+          "path": "Panel_1.item.delete.delete",
+          "class": "Button",
+          "node_offset": 355280
+        },
+        {
+          "path": "Panel_1.item.delete.select_1",
+          "class": "ImageView",
+          "node_offset": 355296
+        },
+        {
+          "path": "Panel_1.item.color",
+          "class": "Panel",
+          "node_offset": 276624
+        },
+        {
+          "path": "Panel_1.item.color.color",
+          "class": "ImageView",
+          "node_offset": 358096
+        },
+        {
+          "path": "Panel_1.item.color.bg",
+          "class": "ImageView",
+          "node_offset": 358112
+        },
+        {
+          "path": "Panel_1.item.yilingqu",
+          "class": "ImageView",
+          "node_offset": 276640
+        },
+        {
+          "path": "Panel_1.item.yilingqu_2",
+          "class": "Panel",
+          "node_offset": 276656
+        },
+        {
+          "path": "Panel_1.item.yilingqu_2.icon",
+          "class": "ImageView",
+          "node_offset": 361376
+        },
+        {
+          "path": "Panel_1.item.spine",
+          "class": "Panel",
+          "node_offset": 276672
+        },
+        {
+          "path": "Panel_1.item.dazhe",
+          "class": "Panel",
+          "node_offset": 276688
+        },
+        {
+          "path": "Panel_1.item.dazhe.board",
+          "class": "ImageView",
+          "node_offset": 364016
+        },
+        {
+          "path": "Panel_1.item.dazhe.num",
+          "class": "Label",
+          "node_offset": 364032
+        },
+        {
+          "path": "Panel_1.item.yizengsong",
+          "class": "Panel",
+          "node_offset": 276704
+        },
+        {
+          "path": "Panel_1.item.yizengsong.bg",
+          "class": "Panel",
+          "node_offset": 366512
+        },
+        {
+          "path": "Panel_1.item.yizengsong.yizengsong",
+          "class": "ImageView",
+          "node_offset": 366528
+        },
+        {
+          "path": "Panel_1.item.head",
+          "class": "Panel",
+          "node_offset": 276720
+        },
+        {
+          "path": "Panel_1.item.head.board",
+          "class": "ImageView",
+          "node_offset": 369232
+        },
+        {
+          "path": "Panel_1.item.head.head",
+          "class": "ImageView",
+          "node_offset": 369248
+        },
+        {
+          "path": "Panel_1.item.head.head.head>common_frame.head_little",
+          "class": "Panel",
+          "node_offset": 371040
+        },
+        {
+          "path": "Panel_1.item.suipian_a",
+          "class": "Panel",
+          "node_offset": 276736
+        },
+        {
+          "path": "Panel_1.item.suipian_a.bg",
+          "class": "ImageView",
+          "node_offset": 372768
+        },
+        {
+          "path": "Panel_1.item.suipian_s",
+          "class": "Panel",
+          "node_offset": 276752
+        },
+        {
+          "path": "Panel_1.item.suipian_s.bg",
+          "class": "ImageView",
+          "node_offset": 374496
+        },
+        {
+          "path": "Panel_1.item.jiaju_num",
+          "class": "Panel",
+          "node_offset": 276768
+        },
+        {
+          "path": "Panel_1.item.jiaju_num.brd",
+          "class": "ImageView",
+          "node_offset": 376224
+        },
+        {
+          "path": "Panel_1.item.jiaju_num.txt",
+          "class": "Label",
+          "node_offset": 376240
+        },
+        {
+          "path": "Panel_1.item.chestview",
+          "class": "Panel",
+          "node_offset": 276784
+        },
+        {
+          "path": "Panel_1.item.chestview.brd",
+          "class": "ImageView",
+          "node_offset": 378720
+        },
+        {
+          "path": "Panel_1.item.chestview.view",
+          "class": "ImageView",
+          "node_offset": 378736
+        },
+        {
+          "path": "Panel_1.item.black",
+          "class": "ImageView",
+          "node_offset": 276800
+        },
+        {
+          "path": "Panel_1.item.tupo",
+          "class": "Panel",
+          "node_offset": 276816
+        },
+        {
+          "path": "Panel_1.item.tupo.num",
+          "class": "Panel",
+          "node_offset": 382000
+        },
+        {
+          "path": "Panel_1.item.tupo.bg",
+          "class": "ImageView",
+          "node_offset": 382016
+        },
+        {
+          "path": "Panel_1.item.prison_buff",
+          "class": "Panel",
+          "node_offset": 276832
+        },
+        {
+          "path": "Panel_1.item.prison_buff.brd",
+          "class": "ImageView",
+          "node_offset": 384720
+        },
+        {
+          "path": "Panel_1.item.prison_buff.icon",
+          "class": "ImageView",
+          "node_offset": 384736
+        },
+        {
+          "path": "Panel_1.item.fetter",
+          "class": "ImageView",
+          "node_offset": 276848
+        },
+        {
+          "path": "Panel_1.item.gift_num",
+          "class": "Panel",
+          "node_offset": 276864
+        },
+        {
+          "path": "Panel_1.item.gift_num.brd",
+          "class": "ImageView",
+          "node_offset": 388000
+        },
+        {
+          "path": "Panel_1.item.gift_num.value",
+          "class": "Label",
+          "node_offset": 388016
+        },
+        {
+          "path": "Panel_1.item.can_break",
+          "class": "Panel",
+          "node_offset": 276880
+        },
+        {
+          "path": "Panel_1.item.can_break.light",
+          "class": "ImageView",
+          "node_offset": 390496
+        },
+        {
+          "path": "Panel_1.item.can_break.text",
+          "class": "Label",
+          "node_offset": 390512
+        },
+        {
+          "path": "Panel_1.item.chongneng",
+          "class": "Panel",
+          "node_offset": 276896
+        },
+        {
+          "path": "Panel_1.item.chongneng.forbid",
+          "class": "ImageView",
+          "node_offset": 392992
+        },
+        {
+          "path": "Panel_1.item.chongneng.bar",
+          "class": "ImageView",
+          "node_offset": 393008
+        },
+        {
+          "path": "Panel_1.item.chongneng.txt",
+          "class": "Label",
+          "node_offset": 393024
+        },
+        {
+          "path": "Panel_1.item.a250_tag",
+          "class": "Panel",
+          "node_offset": 276912
+        },
+        {
+          "path": "Panel_1.item.a250_tag.frame",
+          "class": "ImageView",
+          "node_offset": 396304
+        },
+        {
+          "path": "Panel_1.item.a250_tag.text",
+          "class": "ImageView",
+          "node_offset": 396320
+        },
+        {
+          "path": "Panel_1.item.a250_ani",
+          "class": "Panel",
+          "node_offset": 276928
+        },
+        {
+          "path": "Panel_1.item.a250_ani.brd",
+          "class": "ImageView",
+          "node_offset": 398848
+        },
+        {
+          "path": "Panel_1.item.a250_ani.icon",
+          "class": "ImageView",
+          "node_offset": 398864
+        },
+        {
+          "path": "Panel_1.item.soul_fragment",
+          "class": "ImageView",
+          "node_offset": 276944
+        },
+        {
+          "path": "Panel_1.item.soul_fragment.brd",
+          "class": "ImageView",
+          "node_offset": 401392
+        },
+        {
+          "path": "Panel_1.item.soul_fragment.icon",
+          "class": "ImageView",
+          "node_offset": 401408
+        },
+        {
+          "path": "Panel_1.item.battlepass_buy",
+          "class": "Panel",
+          "node_offset": 276960
+        },
+        {
+          "path": "Panel_1.item.battlepass_buy.tag_1",
+          "class": "ImageView",
+          "node_offset": 403760
+        },
+        {
+          "path": "Panel_1.item.battlepass_buy.tag_2",
+          "class": "ImageView",
+          "node_offset": 403776
+        },
+        {
+          "path": "Panel_1.item.battlepass_task",
+          "class": "Panel",
+          "node_offset": 276976
+        },
+        {
+          "path": "Panel_1.item.battlepass_task.lock",
+          "class": "ImageView",
+          "node_offset": 406304
+        },
+        {
+          "path": "Panel_1.item.battlepass_task.double",
+          "class": "Panel",
+          "node_offset": 406320
+        },
+        {
+          "path": "Panel_1.item.battlepass_task.double.light",
+          "class": "ImageView",
+          "node_offset": 408112
+        },
+        {
+          "path": "Panel_1.item.battlepass_task.double.cheng",
+          "class": "ImageView",
+          "node_offset": 408128
+        },
+        {
+          "path": "Panel_1.item.battlepass_task.double.num",
+          "class": "ImageView",
+          "node_offset": 408144
+        },
+        {
+          "path": "Panel_1.item.fashion_tips",
+          "class": "Panel",
+          "node_offset": 276992
+        },
+        {
+          "path": "Panel_1.item.fashion_tips.icon_color",
+          "class": "ImageView",
+          "node_offset": 411472
+        },
+        {
+          "path": "Panel_1.item.fashion_tips.brd",
+          "class": "ImageView",
+          "node_offset": 411488
+        },
+        {
+          "path": "Panel_1.item.a247_buff",
+          "class": "Panel",
+          "node_offset": 277008
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim",
+          "class": "Panel",
+          "node_offset": 414016
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.light",
+          "class": "ImageView",
+          "node_offset": 415168
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi",
+          "class": "ImageView",
+          "node_offset": 415184
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi",
+          "class": "Panel",
+          "node_offset": 416976
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi.img",
+          "class": "ImageView",
+          "node_offset": 418304
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_0",
+          "class": "Panel",
+          "node_offset": 416992
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_0.img",
+          "class": "ImageView",
+          "node_offset": 420032
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_1",
+          "class": "Panel",
+          "node_offset": 417008
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_1.img",
+          "class": "ImageView",
+          "node_offset": 421760
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_2",
+          "class": "Panel",
+          "node_offset": 417024
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_2.img",
+          "class": "ImageView",
+          "node_offset": 423488
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_3",
+          "class": "Panel",
+          "node_offset": 417040
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_3.img",
+          "class": "ImageView",
+          "node_offset": 425216
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_4",
+          "class": "Panel",
+          "node_offset": 417056
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_4.img",
+          "class": "ImageView",
+          "node_offset": 426944
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_5",
+          "class": "Panel",
+          "node_offset": 417072
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_5.img",
+          "class": "ImageView",
+          "node_offset": 428672
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_6",
+          "class": "Panel",
+          "node_offset": 417088
+        },
+        {
+          "path": "Panel_1.item.a247_buff.anim.lizi.lizi_6.img",
+          "class": "ImageView",
+          "node_offset": 430400
+        },
+        {
+          "path": "Panel_1.item.a247_buff.on",
+          "class": "Panel",
+          "node_offset": 414032
+        },
+        {
+          "path": "Panel_1.item.a247_buff.on.brd",
+          "class": "ImageView",
+          "node_offset": 432176
+        },
+        {
+          "path": "Panel_1.item.a247_buff.on.icon",
+          "class": "ImageView",
+          "node_offset": 432192
+        },
+        {
+          "path": "Panel_1.item.a247_buff.on.light",
+          "class": "ImageView",
+          "node_offset": 432208
+        },
+        {
+          "path": "Panel_1.item.a247_buff.lock",
+          "class": "Panel",
+          "node_offset": 414048
+        },
+        {
+          "path": "Panel_1.item.a247_buff.lock.black",
+          "class": "ImageView",
+          "node_offset": 435536
+        },
+        {
+          "path": "Panel_1.item.a247_buff.lock.brd",
+          "class": "ImageView",
+          "node_offset": 435552
+        },
+        {
+          "path": "Panel_1.item.a247_buff.lock.icon",
+          "class": "ImageView",
+          "node_offset": 435568
+        },
+        {
+          "path": "Panel_1.item.a259_tips",
+          "class": "Panel",
+          "node_offset": 277024
+        },
+        {
+          "path": "Panel_1.item.a259_tips.brd",
+          "class": "ImageView",
+          "node_offset": 438896
+        },
+        {
+          "path": "Panel_1.item.a259_tips.text",
+          "class": "Label",
+          "node_offset": 438912
+        },
+        {
+          "path": "Panel_1.skill",
+          "class": "Panel",
+          "node_offset": 122640
+        },
+        {
+          "path": "Panel_1.skill.frame",
+          "class": "ImageView",
+          "node_offset": 441392
+        },
+        {
+          "path": "Panel_1.skill.battle_frame",
+          "class": "ImageView",
+          "node_offset": 441408
+        },
+        {
+          "path": "Panel_1.skill.img",
+          "class": "ImageView",
+          "node_offset": 441424
+        },
+        {
+          "path": "Panel_1.skill.battle_frame_white",
+          "class": "ImageView",
+          "node_offset": 441440
+        },
+        {
+          "path": "Panel_1.skill.unlock_active",
+          "class": "ImageView",
+          "node_offset": 441456
+        },
+        {
+          "path": "Panel_1.skill.lock_mask",
+          "class": "ImageView",
+          "node_offset": 441472
+        },
+        {
+          "path": "Panel_1.skill.lock_mask.lock",
+          "class": "ImageView",
+          "node_offset": 446624
+        },
+        {
+          "path": "Panel_1.skill.frame_level",
+          "class": "ImageView",
+          "node_offset": 441488
+        },
+        {
+          "path": "Panel_1.skill.frame_level.num",
+          "class": "Label",
+          "node_offset": 448176
+        },
+        {
+          "path": "Panel_1.skill.juexing",
+          "class": "Panel",
+          "node_offset": 441504
+        },
+        {
+          "path": "Panel_1.skill.juexing.light",
+          "class": "Panel",
+          "node_offset": 449680
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_1",
+          "class": "ImageView",
+          "node_offset": 450832
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_2",
+          "class": "ImageView",
+          "node_offset": 450848
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_3",
+          "class": "ImageView",
+          "node_offset": 450864
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_4",
+          "class": "ImageView",
+          "node_offset": 450880
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_5",
+          "class": "ImageView",
+          "node_offset": 450896
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_6",
+          "class": "ImageView",
+          "node_offset": 450912
+        },
+        {
+          "path": "Panel_1.skill.juexing.light.light_7",
+          "class": "ImageView",
+          "node_offset": 450928
+        },
+        {
+          "path": "Panel_1.skill.juexing.juexing_light",
+          "class": "ImageView",
+          "node_offset": 449696
+        },
+        {
+          "path": "Panel_1.skill.juexing.juexing_icon",
+          "class": "ImageView",
+          "node_offset": 449712
+        },
+        {
+          "path": "Panel_1.hero_exp",
+          "class": "Panel",
+          "node_offset": 122656
+        },
+        {
+          "path": "Panel_1.hero_exp.level",
+          "class": "Panel",
+          "node_offset": 458928
+        },
+        {
+          "path": "Panel_1.hero_exp.level.lv",
+          "class": "Label",
+          "node_offset": 460160
+        },
+        {
+          "path": "Panel_1.hero_exp.level.num",
+          "class": "Label",
+          "node_offset": 460176
+        },
+        {
+          "path": "Panel_1.hero_exp.bg_name",
+          "class": "ImageView",
+          "node_offset": 458944
+        },
+        {
+          "path": "Panel_1.hero_exp.bg_name.name",
+          "class": "Label",
+          "node_offset": 463376
+        },
+        {
+          "path": "Panel_1.hero_exp.head>common_frame.head",
+          "class": "ImageView",
+          "node_offset": 458960
+        },
+        {
+          "path": "Panel_1.hero_exp.exp",
+          "class": "Panel",
+          "node_offset": 458976
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.labels",
+          "class": "Panel",
+          "node_offset": 466128
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.labels.delta",
+          "class": "Label",
+          "node_offset": 467280
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.labels.Label_70",
+          "class": "Label",
+          "node_offset": 467296
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.labels.bar_1",
+          "class": "Panel",
+          "node_offset": 467312
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.labels.bar_2",
+          "class": "Panel",
+          "node_offset": 467328
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.bar",
+          "class": "Panel",
+          "node_offset": 466144
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.bar.bar",
+          "class": "LoadingBar",
+          "node_offset": 471968
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.bar.bar_brd",
+          "class": "Panel",
+          "node_offset": 471984
+        },
+        {
+          "path": "Panel_1.hero_exp.exp.icons",
+          "class": "Panel",
+          "node_offset": 466160
+        },
+        {
+          "path": "Panel_1.player_exp",
+          "class": "Panel",
+          "node_offset": 122672
+        },
+        {
+          "path": "Panel_1.player_exp.bar",
+          "class": "ImageView",
+          "node_offset": 476368
+        },
+        {
+          "path": "Panel_1.player_exp.bar.lv",
+          "class": "Label",
+          "node_offset": 477520
+        },
+        {
+          "path": "Panel_1.player_exp.bar.lv_nmb",
+          "class": "Label",
+          "node_offset": 477536
+        },
+        {
+          "path": "Panel_1.player_exp.bar.nmb",
+          "class": "Label",
+          "node_offset": 477552
+        },
+        {
+          "path": "Panel_1.player_exp.bar.expbuff",
+          "class": "Panel",
+          "node_offset": 477568
+        },
+        {
+          "path": "Panel_1.player_exp.bar.expbuff.nmb_1",
+          "class": "Label",
+          "node_offset": 480752
+        },
+        {
+          "path": "Panel_1.player_exp.bar.expbuff.expbuff>expbook_common.text_expbuff",
+          "class": "Panel",
+          "node_offset": 480768
+        },
+        {
+          "path": "Panel_1.player_exp.bar.expbuff.expbuff>expbook_common.text_expbuff.up",
+          "class": "ImageView",
+          "node_offset": 482512
+        },
+        {
+          "path": "Panel_1.player_exp.bar.bar_exp",
+          "class": "Panel",
+          "node_offset": 477584
+        },
+        {
+          "path": "Panel_1.player_exp.bar.bar_exp.bar_brd",
+          "class": "Panel",
+          "node_offset": 484496
+        },
+        {
+          "path": "Panel_1.player_exp.bar.bar_exp.exp_progress",
+          "class": "LoadingBar",
+          "node_offset": 484512
+        },
+        {
+          "path": "Panel_1.player_exp.bar.bar_exp.exp_progress_up",
+          "class": "LoadingBar",
+          "node_offset": 484528
+        },
+        {
+          "path": "Panel_1.player_exp.bar.bar",
+          "class": "ImageView",
+          "node_offset": 477600
+        },
+        {
+          "path": "Panel_1.player_exp.head>common_frame.head_little",
+          "class": "Panel",
+          "node_offset": 476384
+        },
+        {
+          "path": "Panel_1.player_exp.bar_max",
+          "class": "ImageView",
+          "node_offset": 476400
+        },
+        {
+          "path": "Panel_1.player_exp.bar_max.lv",
+          "class": "Label",
+          "node_offset": 489728
+        },
+        {
+          "path": "Panel_1.player_exp.bar_max.lv_nmb",
+          "class": "Label",
+          "node_offset": 489744
+        },
+        {
+          "path": "Panel_1.player_exp.bar_max.max",
+          "class": "ImageView",
+          "node_offset": 489760
+        },
+        {
+          "path": "Panel_1.temp",
+          "class": "Panel",
+          "node_offset": 122688
+        },
+        {
+          "path": "Panel_1.temp.p1",
+          "class": "ImageView",
+          "node_offset": 492816
+        },
+        {
+          "path": "Panel_1.temp.p1_0",
+          "class": "ImageView",
+          "node_offset": 492832
+        },
+        {
+          "path": "Panel_1.player_exp2",
+          "class": "Panel",
+          "node_offset": 122704
+        },
+        {
+          "path": "Panel_1.player_exp2.bar",
+          "class": "ImageView",
+          "node_offset": 495360
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.lv",
+          "class": "Label",
+          "node_offset": 496512
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.lv_nmb",
+          "class": "Label",
+          "node_offset": 496528
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.nmb",
+          "class": "Label",
+          "node_offset": 496544
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.bar_exp",
+          "class": "Panel",
+          "node_offset": 496560
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.bar_exp.bar_brd",
+          "class": "Panel",
+          "node_offset": 499584
+        },
+        {
+          "path": "Panel_1.player_exp2.bar.bar_exp.exp_progress",
+          "class": "LoadingBar",
+          "node_offset": 499600
+        },
+        {
+          "path": "Panel_1.player_exp2.head>common_frame.head_little",
+          "class": "Panel",
+          "node_offset": 495376
+        },
+        {
+          "path": "Panel_1.player_exp2.bar_max",
+          "class": "ImageView",
+          "node_offset": 495392
+        },
+        {
+          "path": "Panel_1.player_exp2.bar_max.lv",
+          "class": "Label",
+          "node_offset": 503264
+        },
+        {
+          "path": "Panel_1.player_exp2.bar_max.lv_nmb",
+          "class": "Label",
+          "node_offset": 503280
+        },
+        {
+          "path": "Panel_1.player_exp2.bar_max.max",
+          "class": "ImageView",
+          "node_offset": 503296
+        },
+        {
+          "path": "Panel_1.head_favor",
+          "class": "Panel",
+          "node_offset": 122720
+        },
+        {
+          "path": "Panel_1.head_favor.bar",
+          "class": "Panel",
+          "node_offset": 506352
+        },
+        {
+          "path": "Panel_1.head_favor.bar.bg",
+          "class": "Panel",
+          "node_offset": 507664
+        },
+        {
+          "path": "Panel_1.head_favor.bar.orange",
+          "class": "LoadingBar",
+          "node_offset": 507680
+        },
+        {
+          "path": "Panel_1.head_favor.friendly",
+          "class": "ImageView",
+          "node_offset": 506368
+        },
+        {
+          "path": "Panel_1.head_favor.nub_1",
+          "class": "Label",
+          "node_offset": 506384
+        },
+        {
+          "path": "Panel_1.head_favor.nub_2",
+          "class": "Label",
+          "node_offset": 506400
+        },
+        {
+          "path": "Panel_1.head_favor.max",
+          "class": "Label",
+          "node_offset": 506416
+        },
+        {
+          "path": "Panel_1.hero_favor",
+          "class": "Panel",
+          "node_offset": 122736
+        },
+        {
+          "path": "Panel_1.hero_favor.bg_1",
+          "class": "ImageView",
+          "node_offset": 513184
+        },
+        {
+          "path": "Panel_1.hero_favor.bg_2",
+          "class": "ImageView",
+          "node_offset": 513200
+        },
+        {
+          "path": "Panel_1.hero_favor.frames",
+          "class": "Panel",
+          "node_offset": 513216
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg1",
+          "class": "ImageView",
+          "node_offset": 516368
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg2",
+          "class": "ImageView",
+          "node_offset": 516384
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg3",
+          "class": "ImageView",
+          "node_offset": 516400
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg4",
+          "class": "ImageView",
+          "node_offset": 516416
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg5",
+          "class": "ImageView",
+          "node_offset": 516432
+        },
+        {
+          "path": "Panel_1.hero_favor.frames.bg6",
+          "class": "ImageView",
+          "node_offset": 516448
+        },
+        {
+          "path": "Panel_1.hero_favor.img_panel",
+          "class": "Panel",
+          "node_offset": 513232
+        },
+        {
+          "path": "Panel_1.hero_favor.img_panel.img",
+          "class": "ImageView",
+          "node_offset": 522176
+        },
+        {
+          "path": "Panel_1.hero_favor.name",
+          "class": "Label",
+          "node_offset": 513248
+        },
+        {
+          "path": "Panel_1.hero_favor.favor",
+          "class": "Panel",
+          "node_offset": 513264
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.bar",
+          "class": "Panel",
+          "node_offset": 524592
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.bar.bg",
+          "class": "Panel",
+          "node_offset": 526144
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.bar.orange",
+          "class": "LoadingBar",
+          "node_offset": 526160
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.friendly",
+          "class": "ImageView",
+          "node_offset": 524608
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.num",
+          "class": "Label",
+          "node_offset": 524624
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.favor",
+          "class": "Label",
+          "node_offset": 524640
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.max",
+          "class": "Label",
+          "node_offset": 524656
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light",
+          "class": "Panel",
+          "node_offset": 524672
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_1",
+          "class": "ImageView",
+          "node_offset": 531664
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_2",
+          "class": "ImageView",
+          "node_offset": 531680
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_3",
+          "class": "ImageView",
+          "node_offset": 531696
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_4",
+          "class": "ImageView",
+          "node_offset": 531712
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_5",
+          "class": "ImageView",
+          "node_offset": 531728
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_6",
+          "class": "ImageView",
+          "node_offset": 531744
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_7",
+          "class": "ImageView",
+          "node_offset": 531760
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_8",
+          "class": "ImageView",
+          "node_offset": 531776
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_light.light_9",
+          "class": "ImageView",
+          "node_offset": 531792
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point",
+          "class": "Panel",
+          "node_offset": 524688
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point",
+          "class": "Panel",
+          "node_offset": 539920
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_1",
+          "class": "ImageView",
+          "node_offset": 540912
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_2",
+          "class": "ImageView",
+          "node_offset": 540928
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_3",
+          "class": "ImageView",
+          "node_offset": 540944
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_4",
+          "class": "ImageView",
+          "node_offset": 540960
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_5",
+          "class": "ImageView",
+          "node_offset": 540976
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_6",
+          "class": "ImageView",
+          "node_offset": 540992
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.pb_point.light_point.light_7",
+          "class": "ImageView",
+          "node_offset": 541008
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.trust",
+          "class": "Panel",
+          "node_offset": 524704
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.trust.trust",
+          "class": "ImageView",
+          "node_offset": 547536
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.trust.text",
+          "class": "Label",
+          "node_offset": 547552
+        },
+        {
+          "path": "Panel_1.hero_favor.favor.trust.num",
+          "class": "Label",
+          "node_offset": 547568
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis",
+          "class": "Panel",
+          "node_offset": 513280
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.bar",
+          "class": "Panel",
+          "node_offset": 550800
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.bar.bg",
+          "class": "Panel",
+          "node_offset": 552192
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.friendly",
+          "class": "ImageView",
+          "node_offset": 550816
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.num",
+          "class": "Label",
+          "node_offset": 550832
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.favor",
+          "class": "Label",
+          "node_offset": 550848
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.icon_lock",
+          "class": "ImageView",
+          "node_offset": 550864
+        },
+        {
+          "path": "Panel_1.hero_favor.favor_dis.mask",
+          "class": "ImageView",
+          "node_offset": 550880
+        },
+        {
+          "path": "Panel_1.hero_favor.diary",
+          "class": "ImageView",
+          "node_offset": 513296
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff",
+          "class": "Panel",
+          "node_offset": 557680
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.light1",
+          "class": "ImageView",
+          "node_offset": 558688
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.light2",
+          "class": "ImageView",
+          "node_offset": 558704
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco1",
+          "class": "ImageView",
+          "node_offset": 558720
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco2",
+          "class": "ImageView",
+          "node_offset": 558736
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco3",
+          "class": "ImageView",
+          "node_offset": 558752
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco4",
+          "class": "ImageView",
+          "node_offset": 558768
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco5",
+          "class": "ImageView",
+          "node_offset": 558784
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.eff.deco6",
+          "class": "ImageView",
+          "node_offset": 558800
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.icon",
+          "class": "ImageView",
+          "node_offset": 557696
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.name",
+          "class": "Label",
+          "node_offset": 557712
+        },
+        {
+          "path": "Panel_1.hero_favor.diary.icon_light",
+          "class": "ImageView",
+          "node_offset": 557728
+        },
+        {
+          "path": "Panel_1.hero_favor.love",
+          "class": "Panel",
+          "node_offset": 513312
+        },
+        {
+          "path": "Panel_1.hero_favor.love.heart_1",
+          "class": "ImageView",
+          "node_offset": 568336
+        },
+        {
+          "path": "Panel_1.hero_favor.love.heart_2",
+          "class": "ImageView",
+          "node_offset": 568352
+        },
+        {
+          "path": "Panel_1.hero_favor.love.heart_3",
+          "class": "ImageView",
+          "node_offset": 568368
+        },
+        {
+          "path": "Panel_1.hero_favor.love.heart_4",
+          "class": "ImageView",
+          "node_offset": 568384
+        },
+        {
+          "path": "Panel_1.hero_favor.bg_select",
+          "class": "ImageView",
+          "node_offset": 513328
+        },
+        {
+          "path": "Panel_1.neirong",
+          "class": "Panel",
+          "node_offset": 122752
+        },
+        {
+          "path": "Panel_1.neirong.pb_board",
+          "class": "ImageView",
+          "node_offset": 573248
+        },
+        {
+          "path": "Panel_1.neirong.pb_red",
+          "class": "LoadingBar",
+          "node_offset": 573264
+        },
+        {
+          "path": "Panel_1.neirong.pb_light",
+          "class": "ImageView",
+          "node_offset": 573280
+        },
+        {
+          "path": "Panel_1.num",
+          "class": "Panel",
+          "node_offset": 122768
+        },
+        {
+          "path": "Panel_1.num.num",
+          "class": "Label",
+          "node_offset": 576608
+        }
+      ]
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/common_property.csb",
+      "sha256": "ba13cb00f9e625fc93f68633890061a564e4bad505ce84692e93a7749f6e6257",
+      "decoded_sha256": "7ecd1ceb4f7e5254a31f6ce89cc7866142d0885d9bc9f2177a4d250d557b7bcb",
+      "header": {
+        "uncompressed": 45347,
+        "compressed": 11850,
+        "object_count": 15,
+        "attribute_offset": 180,
+        "node_offset": 2116,
+        "string_offset": 31716
+      },
+      "node_graph_count": 1850,
+      "widgets": [
+        {
+          "path": "Panel_5",
+          "class": "Panel",
+          "node_offset": 160
+        },
+        {
+          "path": "Panel_5.tips_infographic",
+          "class": "Panel",
+          "node_offset": 432
+        },
+        {
+          "path": "Panel_5.tips_infographic.brd",
+          "class": "ImageView",
+          "node_offset": 1504
+        },
+        {
+          "path": "Panel_5.tips_infographic.line_title_1",
+          "class": "ImageView",
+          "node_offset": 1520
+        },
+        {
+          "path": "Panel_5.tips_infographic.line_title_2",
+          "class": "ImageView",
+          "node_offset": 1536
+        },
+        {
+          "path": "Panel_5.tips_infographic.title",
+          "class": "Label",
+          "node_offset": 1552
+        },
+        {
+          "path": "Panel_5.tips_infographic.infographic",
+          "class": "ImageView",
+          "node_offset": 1568
+        },
+        {
+          "path": "Panel_5.tips_infographic.deco_1",
+          "class": "ImageView",
+          "node_offset": 1584
+        },
+        {
+          "path": "Panel_5.tips_infographic.deco_2",
+          "class": "ImageView",
+          "node_offset": 1600
+        },
+        {
+          "path": "Panel_5.tips_infographic.txt_1",
+          "class": "Label",
+          "node_offset": 1616
+        },
+        {
+          "path": "Panel_5.tips_infographic.nmb_1",
+          "class": "Label",
+          "node_offset": 1632
+        },
+        {
+          "path": "Panel_5.tips_infographic.txt_2",
+          "class": "Label",
+          "node_offset": 1648
+        },
+        {
+          "path": "Panel_5.tips_infographic.nmb_2",
+          "class": "Label",
+          "node_offset": 1664
+        },
+        {
+          "path": "Panel_5.tips_infographic.close",
+          "class": "Button",
+          "node_offset": 1680
+        },
+        {
+          "path": "Panel_5.tips_common",
+          "class": "Panel",
+          "node_offset": 448
+        },
+        {
+          "path": "Panel_5.tips_common.brd",
+          "class": "ImageView",
+          "node_offset": 12240
+        },
+        {
+          "path": "Panel_5.tips_common.line",
+          "class": "ImageView",
+          "node_offset": 12256
+        },
+        {
+          "path": "Panel_5.tips_common.title",
+          "class": "Label",
+          "node_offset": 12272
+        },
+        {
+          "path": "Panel_5.tips_common.element>common_icon.elements",
+          "class": "Panel",
+          "node_offset": 12288
+        },
+        {
+          "path": "Panel_5.tips_common.txt",
+          "class": "Panel",
+          "node_offset": 12304
+        },
+        {
+          "path": "Panel_5.tips_common.own",
+          "class": "Panel",
+          "node_offset": 12320
+        },
+        {
+          "path": "Panel_5.tips_common.own.line",
+          "class": "ImageView",
+          "node_offset": 17696
+        },
+        {
+          "path": "Panel_5.tips_common.own.text_own",
+          "class": "Label",
+          "node_offset": 17712
+        },
+        {
+          "path": "Panel_5.tips_common.own.num_own",
+          "class": "Label",
+          "node_offset": 17728
+        },
+        {
+          "path": "Panel_5.tips_common.remove",
+          "class": "Panel",
+          "node_offset": 12336
+        },
+        {
+          "path": "Panel_5.tips_common.remove.line",
+          "class": "ImageView",
+          "node_offset": 20960
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click",
+          "class": "Panel",
+          "node_offset": 20976
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click.title_1",
+          "class": "Label",
+          "node_offset": 22848
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click.title_1.nub",
+          "class": "Label",
+          "node_offset": 24080
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click.button",
+          "class": "Button",
+          "node_offset": 22864
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click.title_2",
+          "class": "Label",
+          "node_offset": 22880
+        },
+        {
+          "path": "Panel_5.tips_common.remove.click.title_3",
+          "class": "Label",
+          "node_offset": 22896
+        },
+        {
+          "path": "Panel_5.tips_common.remove.unclick",
+          "class": "Panel",
+          "node_offset": 20992
+        },
+        {
+          "path": "Panel_5.tips_common.remove.unclick.title_1",
+          "class": "Label",
+          "node_offset": 27920
+        }
+      ]
+    }
+  ],
+  "contracts": [
+    {
+      "consumer": "analysis/original-py-640/cocos/comps/common_frame/item.py",
+      "sha256": "1bdc5f0e459cd123c15086d498aca6ac9de213ee00c0150a1d0648fff35e3cf7",
+      "root": "Panel_1.item",
+      "entries": [
+        {
+          "consumer_path": "a247_buff",
+          "lines": [
+            168
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a247_buff",
+            "class": "Panel",
+            "node_offset": 277008
+          }
+        },
+        {
+          "consumer_path": "a247_buff.anim",
+          "lines": [
+            166
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a247_buff.anim",
+            "class": "Panel",
+            "node_offset": 414016
+          }
+        },
+        {
+          "consumer_path": "a247_buff.lock",
+          "lines": [
+            166
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a247_buff.lock",
+            "class": "Panel",
+            "node_offset": 414048
+          }
+        },
+        {
+          "consumer_path": "a247_buff.on",
+          "lines": [
+            166
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a247_buff.on",
+            "class": "Panel",
+            "node_offset": 414032
+          }
+        },
+        {
+          "consumer_path": "a250_ani",
+          "lines": [
+            161
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a250_ani",
+            "class": "Panel",
+            "node_offset": 276928
+          }
+        },
+        {
+          "consumer_path": "a250_ani.icon",
+          "lines": [
+            162
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a250_ani.icon",
+            "class": "ImageView",
+            "node_offset": 398864
+          }
+        },
+        {
+          "consumer_path": "a250_tag",
+          "lines": [
+            160
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a250_tag",
+            "class": "Panel",
+            "node_offset": 276912
+          }
+        },
+        {
+          "consumer_path": "a259_tips",
+          "lines": [
+            175
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a259_tips",
+            "class": "Panel",
+            "node_offset": 277024
+          }
+        },
+        {
+          "consumer_path": "a259_tips.text",
+          "lines": [
+            176
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.a259_tips.text",
+            "class": "Label",
+            "node_offset": 438912
+          }
+        },
+        {
+          "consumer_path": "add",
+          "lines": [
+            50
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.add",
+            "class": "ImageView",
+            "node_offset": 276336
+          }
+        },
+        {
+          "consumer_path": "anim_node",
+          "lines": [
+            115
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.anim_node",
+            "class": "Panel",
+            "node_offset": 276288
+          }
+        },
+        {
+          "consumer_path": "battlepass_buy",
+          "lines": [
+            165,
+            169
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_buy",
+            "class": "Panel",
+            "node_offset": 276960
+          }
+        },
+        {
+          "consumer_path": "battlepass_buy.tag_1",
+          "lines": [
+            163
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_buy.tag_1",
+            "class": "ImageView",
+            "node_offset": 403760
+          }
+        },
+        {
+          "consumer_path": "battlepass_buy.tag_2",
+          "lines": [
+            164
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_buy.tag_2",
+            "class": "ImageView",
+            "node_offset": 403776
+          }
+        },
+        {
+          "consumer_path": "battlepass_task",
+          "lines": [
+            87
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_task",
+            "class": "Panel",
+            "node_offset": 276976
+          }
+        },
+        {
+          "consumer_path": "battlepass_task.double",
+          "lines": [
+            85
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_task.double",
+            "class": "Panel",
+            "node_offset": 406320
+          }
+        },
+        {
+          "consumer_path": "battlepass_task.lock",
+          "lines": [
+            83
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.battlepass_task.lock",
+            "class": "ImageView",
+            "node_offset": 406304
+          }
+        },
+        {
+          "consumer_path": "bg",
+          "lines": [
+            27
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg",
+            "class": "ImageView",
+            "node_offset": 276304
+          }
+        },
+        {
+          "consumer_path": "bg.%s",
+          "lines": [
+            1180
+          ],
+          "status": "dynamic_unresolved",
+          "note": "expression requires call-site value; explicit loop expansions separately listed"
+        },
+        {
+          "consumer_path": "bg.blue",
+          "lines": [
+            1175
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg.blue",
+            "class": "ImageView",
+            "node_offset": 300960
+          }
+        },
+        {
+          "consumer_path": "bg.golden",
+          "lines": [
+            1177
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg.golden",
+            "class": "ImageView",
+            "node_offset": 300992
+          }
+        },
+        {
+          "consumer_path": "bg.green",
+          "lines": [
+            1174
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg.green",
+            "class": "ImageView",
+            "node_offset": 300944
+          }
+        },
+        {
+          "consumer_path": "bg.orange",
+          "lines": [
+            1178
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg.orange",
+            "class": "ImageView",
+            "node_offset": 301008
+          }
+        },
+        {
+          "consumer_path": "bg.purple",
+          "lines": [
+            1176
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bg.purple",
+            "class": "ImageView",
+            "node_offset": 300976
+          }
+        },
+        {
+          "consumer_path": "black",
+          "lines": [
+            148
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.black",
+            "class": "ImageView",
+            "node_offset": 276800
+          }
+        },
+        {
+          "consumer_path": "bufflock",
+          "lines": [
+            54
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.bufflock",
+            "class": "Panel",
+            "node_offset": 276592
+          }
+        },
+        {
+          "consumer_path": "chest_unknown",
+          "lines": [
+            74
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.chest_unknown",
+            "class": "ImageView",
+            "node_offset": 276480
+          }
+        },
+        {
+          "consumer_path": "chestview",
+          "lines": [
+            146
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.chestview",
+            "class": "Panel",
+            "node_offset": 276784
+          }
+        },
+        {
+          "consumer_path": "chongneng",
+          "lines": [
+            158
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.chongneng",
+            "class": "Panel",
+            "node_offset": 276896
+          }
+        },
+        {
+          "consumer_path": "color",
+          "lines": [
+            62
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.color",
+            "class": "Panel",
+            "node_offset": 276624
+          }
+        },
+        {
+          "consumer_path": "color.color",
+          "lines": [
+            63
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.color.color",
+            "class": "ImageView",
+            "node_offset": 358096
+          }
+        },
+        {
+          "consumer_path": "cost",
+          "lines": [
+            70
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.cost",
+            "class": "Panel",
+            "node_offset": 276528
+          }
+        },
+        {
+          "consumer_path": "cost.num",
+          "lines": [
+            72
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.cost.num",
+            "class": "Label",
+            "node_offset": 344480
+          }
+        },
+        {
+          "consumer_path": "delete",
+          "lines": [
+            76
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.delete",
+            "class": "Panel",
+            "node_offset": 276608
+          }
+        },
+        {
+          "consumer_path": "delete.delete",
+          "lines": [
+            78
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.delete.delete",
+            "class": "Button",
+            "node_offset": 355280
+          }
+        },
+        {
+          "consumer_path": "fashion_tips",
+          "lines": [
+            172
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.fashion_tips",
+            "class": "Panel",
+            "node_offset": 276992
+          }
+        },
+        {
+          "consumer_path": "fashion_tips.icon_color",
+          "lines": [
+            174
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.fashion_tips.icon_color",
+            "class": "ImageView",
+            "node_offset": 411472
+          }
+        },
+        {
+          "consumer_path": "fetter",
+          "lines": [
+            112
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.fetter",
+            "class": "ImageView",
+            "node_offset": 276848
+          }
+        },
+        {
+          "consumer_path": "gift_num",
+          "lines": [
+            1146
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.gift_num",
+            "class": "Panel",
+            "node_offset": 276864
+          }
+        },
+        {
+          "consumer_path": "gift_num.value",
+          "lines": [
+            1147,
+            1148,
+            1153
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.gift_num.value",
+            "class": "Label",
+            "node_offset": 388016
+          }
+        },
+        {
+          "consumer_path": "head",
+          "lines": [
+            139
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.head",
+            "class": "Panel",
+            "node_offset": 276720
+          }
+        },
+        {
+          "consumer_path": "head.head.head",
+          "lines": [
+            141
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.head.head.head>common_frame.head_little",
+            "class": "Panel",
+            "node_offset": 371040
+          }
+        },
+        {
+          "consumer_path": "hero_star",
+          "lines": [
+            64
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.hero_star",
+            "class": "Panel",
+            "node_offset": 276512
+          }
+        },
+        {
+          "consumer_path": "hero_star.star%d",
+          "lines": [
+            67
+          ],
+          "status": "dynamic_unresolved",
+          "note": "expression requires call-site value; explicit loop expansions separately listed"
+        },
+        {
+          "consumer_path": "hero_star.star1",
+          "lines": [
+            69
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.hero_star.star1>hero_herolist_common.starlv",
+            "class": "Panel",
+            "node_offset": 337792
+          }
+        },
+        {
+          "consumer_path": "hero_star.star2",
+          "lines": [
+            67
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.hero_star.star2>hero_herolist_common.star",
+            "class": "Panel",
+            "node_offset": 337808
+          }
+        },
+        {
+          "consumer_path": "hero_star.star3",
+          "lines": [
+            67
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.hero_star.star3>hero_herolist_common.star",
+            "class": "Panel",
+            "node_offset": 337824
+          }
+        },
+        {
+          "consumer_path": "hero_star.star4",
+          "lines": [
+            67
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.hero_star.star4>hero_herolist_common.star",
+            "class": "Panel",
+            "node_offset": 337840
+          }
+        },
+        {
+          "consumer_path": "hero_star.star5",
+          "lines": [
+            67
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_1.item.hero_star.star5>hero_herolist_common.star",
+            "class": "Panel",
+            "node_offset": 337856
+          }
+        },
+        {
+          "consumer_path": "hero_unknown",
+          "lines": [
+            75
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.hero_unknown",
+            "class": "ImageView",
+            "node_offset": 276496
+          }
+        },
+        {
+          "consumer_path": "img",
+          "lines": [
+            29
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.img",
+            "class": "ImageView",
+            "node_offset": 276320
+          }
+        },
+        {
+          "consumer_path": "info",
+          "lines": [
+            30
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info",
+            "class": "Panel",
+            "node_offset": 276368
+          }
+        },
+        {
+          "consumer_path": "info.bar",
+          "lines": [
+            44
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.bar",
+            "class": "ImageView",
+            "node_offset": 307968
+          }
+        },
+        {
+          "consumer_path": "info.bar_black",
+          "lines": [
+            45
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.bar_black",
+            "class": "ImageView",
+            "node_offset": 307984
+          }
+        },
+        {
+          "consumer_path": "info.inner",
+          "lines": [
+            39
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.inner",
+            "class": "Label",
+            "node_offset": 308032
+          }
+        },
+        {
+          "consumer_path": "info.inner.home_arrow",
+          "lines": [
+            40
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.inner.home_arrow",
+            "class": "ImageView",
+            "node_offset": 314016
+          }
+        },
+        {
+          "consumer_path": "info.inner.home_arrow.down",
+          "lines": [
+            42
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.inner.home_arrow.down",
+            "class": "ImageView",
+            "node_offset": 314800
+          }
+        },
+        {
+          "consumer_path": "info.inner.home_arrow.up",
+          "lines": [
+            41
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.inner.home_arrow.up",
+            "class": "ImageView",
+            "node_offset": 314784
+          }
+        },
+        {
+          "consumer_path": "info.lv",
+          "lines": [
+            31
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.lv",
+            "class": "Label",
+            "node_offset": 308000
+          }
+        },
+        {
+          "consumer_path": "info.lv.Label_16",
+          "lines": [
+            33
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.lv.Label_16",
+            "class": "Label",
+            "node_offset": 310832
+          }
+        },
+        {
+          "consumer_path": "info.outter",
+          "lines": [
+            38
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.outter",
+            "class": "Label",
+            "node_offset": 308048
+          }
+        },
+        {
+          "consumer_path": "info.up",
+          "lines": [
+            34
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.info.up",
+            "class": "Panel",
+            "node_offset": 308016
+          }
+        },
+        {
+          "consumer_path": "item_lock",
+          "lines": [
+            52
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.item_lock",
+            "class": "ImageView",
+            "node_offset": 276560
+          }
+        },
+        {
+          "consumer_path": "jiaju_num",
+          "lines": [
+            150
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.jiaju_num",
+            "class": "Panel",
+            "node_offset": 276768
+          }
+        },
+        {
+          "consumer_path": "jiaju_num.txt",
+          "lines": [
+            152
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.jiaju_num.txt",
+            "class": "Label",
+            "node_offset": 376240
+          }
+        },
+        {
+          "consumer_path": "level",
+          "lines": [
+            531,
+            536,
+            623,
+            661
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level",
+            "class": "Panel",
+            "node_offset": 276240
+          }
+        },
+        {
+          "consumer_path": "level.level_1",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_1",
+            "class": "ImageView",
+            "node_offset": 281152
+          }
+        },
+        {
+          "consumer_path": "level.level_2",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_2",
+            "class": "ImageView",
+            "node_offset": 281168
+          }
+        },
+        {
+          "consumer_path": "level.level_3",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_3",
+            "class": "ImageView",
+            "node_offset": 281184
+          }
+        },
+        {
+          "consumer_path": "level.level_4",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_4",
+            "class": "ImageView",
+            "node_offset": 281200
+          }
+        },
+        {
+          "consumer_path": "level.level_5",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_5",
+            "class": "ImageView",
+            "node_offset": 281216
+          }
+        },
+        {
+          "consumer_path": "level.level_6",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_6",
+            "class": "ImageView",
+            "node_offset": 281232
+          }
+        },
+        {
+          "consumer_path": "level.level_7",
+          "lines": [
+            114
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.level.level_7",
+            "class": "ImageView",
+            "node_offset": 281248
+          }
+        },
+        {
+          "consumer_path": "new",
+          "lines": [
+            48
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.new",
+            "class": "ImageView",
+            "node_offset": 276432
+          }
+        },
+        {
+          "consumer_path": "none",
+          "lines": [
+            56
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.none",
+            "class": "ImageView",
+            "node_offset": 276352
+          }
+        },
+        {
+          "consumer_path": "piece",
+          "lines": [
+            110
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.piece",
+            "class": "ImageView",
+            "node_offset": 276400
+          }
+        },
+        {
+          "consumer_path": "prison_buff",
+          "lines": [
+            1134
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.prison_buff",
+            "class": "Panel",
+            "node_offset": 276832
+          }
+        },
+        {
+          "consumer_path": "rarity",
+          "lines": [
+            111
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.rarity",
+            "class": "ImageView",
+            "node_offset": 276256
+          }
+        },
+        {
+          "consumer_path": "sel",
+          "lines": [
+            46
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.sel",
+            "class": "ImageView",
+            "node_offset": 276416
+          }
+        },
+        {
+          "consumer_path": "select",
+          "lines": [
+            136
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.select",
+            "class": "ImageView",
+            "node_offset": 276576
+          }
+        },
+        {
+          "consumer_path": "soul_fragment",
+          "lines": [
+            1204
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.soul_fragment",
+            "class": "ImageView",
+            "node_offset": 276944
+          }
+        },
+        {
+          "consumer_path": "star_item",
+          "lines": [
+            96
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item",
+            "class": "Panel",
+            "node_offset": 276448
+          }
+        },
+        {
+          "consumer_path": "star_item.star%d",
+          "lines": [
+            99
+          ],
+          "status": "dynamic_unresolved",
+          "note": "expression requires call-site value; explicit loop expansions separately listed"
+        },
+        {
+          "consumer_path": "star_item.star1",
+          "lines": [
+            99
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item.star1",
+            "class": "ImageView",
+            "node_offset": 329296
+          }
+        },
+        {
+          "consumer_path": "star_item.star2",
+          "lines": [
+            99
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item.star2",
+            "class": "ImageView",
+            "node_offset": 329312
+          }
+        },
+        {
+          "consumer_path": "star_item.star3",
+          "lines": [
+            99
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item.star3",
+            "class": "ImageView",
+            "node_offset": 329328
+          }
+        },
+        {
+          "consumer_path": "star_item.star4",
+          "lines": [
+            99
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item.star4",
+            "class": "ImageView",
+            "node_offset": 329344
+          }
+        },
+        {
+          "consumer_path": "star_item.star5",
+          "lines": [
+            99
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.star_item.star5",
+            "class": "ImageView",
+            "node_offset": 329360
+          }
+        },
+        {
+          "consumer_path": "suipian_a",
+          "lines": [
+            142
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.suipian_a",
+            "class": "Panel",
+            "node_offset": 276736
+          }
+        },
+        {
+          "consumer_path": "suipian_s",
+          "lines": [
+            143
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.suipian_s",
+            "class": "Panel",
+            "node_offset": 276752
+          }
+        },
+        {
+          "consumer_path": "trade",
+          "lines": [
+            58
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.trade",
+            "class": "Panel",
+            "node_offset": 276544
+          }
+        },
+        {
+          "consumer_path": "trade.txt",
+          "lines": [
+            60
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.trade.txt",
+            "class": "Label",
+            "node_offset": 347008
+          }
+        },
+        {
+          "consumer_path": "treasure_hide",
+          "lines": [
+            118,
+            128
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_hide",
+            "class": "Panel",
+            "node_offset": 276272
+          }
+        },
+        {
+          "consumer_path": "treasure_star",
+          "lines": [
+            102
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star",
+            "class": "Panel",
+            "node_offset": 276384
+          }
+        },
+        {
+          "consumer_path": "treasure_star.brd",
+          "lines": [
+            104
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.brd",
+            "class": "ImageView",
+            "node_offset": 317872
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_gold",
+          "lines": [
+            106
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_gold",
+            "class": "ImageView",
+            "node_offset": 317840
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_gold.gold",
+          "lines": [
+            107
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_gold.gold",
+            "class": "ImageView",
+            "node_offset": 318992
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_orang",
+          "lines": [
+            108
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_orang",
+            "class": "Panel",
+            "node_offset": 317856
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_orang.orange_1.orange",
+          "lines": [
+            109
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_orang.orange_1.orange",
+            "class": "ImageView",
+            "node_offset": 324800
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_orang.orange_2.orange",
+          "lines": [
+            109
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_orang.orange_2.orange",
+            "class": "ImageView",
+            "node_offset": 323248
+          }
+        },
+        {
+          "consumer_path": "treasure_star.star_orang.orange_3.orange",
+          "lines": [
+            109
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_star.star_orang.orange_3.orange",
+            "class": "ImageView",
+            "node_offset": 321696
+          }
+        },
+        {
+          "consumer_path": "treasure_unknown",
+          "lines": [
+            73
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.treasure_unknown",
+            "class": "ImageView",
+            "node_offset": 276464
+          }
+        },
+        {
+          "consumer_path": "tupo",
+          "lines": [
+            156
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.tupo",
+            "class": "Panel",
+            "node_offset": 276816
+          }
+        },
+        {
+          "consumer_path": "tupo.num",
+          "lines": [
+            441
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.tupo.num",
+            "class": "Panel",
+            "node_offset": 382000
+          }
+        },
+        {
+          "consumer_path": "yilingqu",
+          "lines": [
+            79
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.yilingqu",
+            "class": "ImageView",
+            "node_offset": 276640
+          }
+        },
+        {
+          "consumer_path": "yilingqu_2",
+          "lines": [
+            81
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_1.item.yilingqu_2",
+            "class": "Panel",
+            "node_offset": 276656
+          }
+        }
+      ]
+    },
+    {
+      "consumer": "analysis/original-py-640/cocos/panels/common_property.py",
+      "sha256": "8d2d23033dd6ec7b51fd93b6656b1e1aad06c05c7ab838e9ef4c8ee4d0c2a762",
+      "root": "Panel_5",
+      "entries": [
+        {
+          "consumer_path": "tips_common",
+          "lines": [
+            18
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common",
+            "class": "Panel",
+            "node_offset": 448
+          }
+        },
+        {
+          "consumer_path": "tips_common.brd",
+          "lines": [
+            28
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.brd",
+            "class": "ImageView",
+            "node_offset": 12240
+          }
+        },
+        {
+          "consumer_path": "tips_common.element",
+          "lines": [
+            32
+          ],
+          "status": "component_placeholder",
+          "widget": {
+            "path": "Panel_5.tips_common.element>common_icon.elements",
+            "class": "Panel",
+            "node_offset": 12288
+          }
+        },
+        {
+          "consumer_path": "tips_common.line",
+          "lines": [
+            21
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.line",
+            "class": "ImageView",
+            "node_offset": 12256
+          }
+        },
+        {
+          "consumer_path": "tips_common.own",
+          "lines": [
+            47
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.own",
+            "class": "Panel",
+            "node_offset": 12320
+          }
+        },
+        {
+          "consumer_path": "tips_common.own.num_own",
+          "lines": [
+            50
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.own.num_own",
+            "class": "Label",
+            "node_offset": 17728
+          }
+        },
+        {
+          "consumer_path": "tips_common.own.text_own",
+          "lines": [
+            49
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.own.text_own",
+            "class": "Label",
+            "node_offset": 17712
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove",
+          "lines": [
+            33
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove",
+            "class": "Panel",
+            "node_offset": 12336
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.click",
+          "lines": [
+            35
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.click",
+            "class": "Panel",
+            "node_offset": 20976
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.click.button",
+          "lines": [
+            40
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.click.button",
+            "class": "Button",
+            "node_offset": 22864
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.click.title_1",
+          "lines": [
+            38
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.click.title_1",
+            "class": "Label",
+            "node_offset": 22848
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.click.title_1.nub",
+          "lines": [
+            39
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.click.title_1.nub",
+            "class": "Label",
+            "node_offset": 24080
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.click.title_3",
+          "lines": [
+            37
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.click.title_3",
+            "class": "Label",
+            "node_offset": 22896
+          }
+        },
+        {
+          "consumer_path": "tips_common.remove.unclick",
+          "lines": [
+            36
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.remove.unclick",
+            "class": "Panel",
+            "node_offset": 20992
+          }
+        },
+        {
+          "consumer_path": "tips_common.title",
+          "lines": [
+            29
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.title",
+            "class": "Label",
+            "node_offset": 12272
+          }
+        },
+        {
+          "consumer_path": "tips_common.txt",
+          "lines": [
+            30
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_common.txt",
+            "class": "Panel",
+            "node_offset": 12304
+          }
+        },
+        {
+          "consumer_path": "tips_infographic",
+          "lines": [
+            17
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic",
+            "class": "Panel",
+            "node_offset": 432
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.brd",
+          "lines": [
+            26
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.brd",
+            "class": "ImageView",
+            "node_offset": 1504
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.close",
+          "lines": [
+            22
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.close",
+            "class": "Button",
+            "node_offset": 1680
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.deco_1",
+          "lines": [
+            26
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.deco_1",
+            "class": "ImageView",
+            "node_offset": 1584
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.deco_2",
+          "lines": [
+            27
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.deco_2",
+            "class": "ImageView",
+            "node_offset": 1600
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.nmb_1",
+          "lines": [
+            26
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.nmb_1",
+            "class": "Label",
+            "node_offset": 1632
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.nmb_2",
+          "lines": [
+            27
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.nmb_2",
+            "class": "Label",
+            "node_offset": 1664
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.txt_1",
+          "lines": [
+            26
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.txt_1",
+            "class": "Label",
+            "node_offset": 1616
+          }
+        },
+        {
+          "consumer_path": "tips_infographic.txt_2",
+          "lines": [
+            27
+          ],
+          "status": "structural_match",
+          "widget": {
+            "path": "Panel_5.tips_infographic.txt_2",
+            "class": "Label",
+            "node_offset": 1648
+          }
+        }
+      ]
+    }
+  ],
+  "card_common_item_placeholders": [
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.item.item>common_frame.item",
+      "class": "Panel",
+      "node_offset": 53968
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.exchange.brd.item>common_frame.item",
+      "class": "Panel",
+      "node_offset": 179408
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.buy_item.item>common_frame.item",
+      "class": "Panel",
+      "node_offset": 240928
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd1.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 276464
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd1.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 276480
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd2.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 283312
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd2.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 283328
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd3.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 290944
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.jiaozhi_info.brd3.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 290960
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd1.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 298912
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd1.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 298928
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd2.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 304944
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd2.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 304960
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd3.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 311760
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_1.brd3.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 311776
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_2.item3>common_frame.item",
+      "class": "Panel",
+      "node_offset": 317760
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_2.item2>common_frame.item",
+      "class": "Panel",
+      "node_offset": 317776
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.leichong_info_2.item1>common_frame.item",
+      "class": "Panel",
+      "node_offset": 317792
+    },
+    {
+      "file": "analysis/project7/dynamic-ui-resources-v1/cocos/card_common.csb",
+      "path": "panel.super_libao.item>common_frame.item",
+      "class": "Panel",
+      "node_offset": 407872
+    }
+  ],
+  "limitations": [
+    "Component placeholder means structural declaration, not instantiated .data or verified external target.",
+    "Dynamic formatted paths outside the two statically bounded loops require call-site values.",
+    "Native reader compatibility, replacement success, texture dependencies, interaction and tooltip runtime remain unverified.",
+    "Only these two shared resources were parsed; other nested component packs are outside scope."
+  ],
+  "regression": {
+    "file": "card_activity_61.csb",
+    "prior_widget_tree_equal": true,
+    "prior_node_count_equal": true
+  }
+}

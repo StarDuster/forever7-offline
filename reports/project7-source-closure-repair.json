@@ -1,0 +1,36 @@
+{
+  "format": "project7-source-closure-repair-v1",
+  "status": "seven_tests_pass",
+  "cause": [
+    "Scanner used only top-level names and missed relative/full local package resolution",
+    "Five local dependency sources and two fixed IR data files were not explicitly exported",
+    "Conservative AST includes bytecode27 optional --decompile imports; normal runtime dependency and optional maintainer dependency must be distinguished"
+  ],
+  "repair": [
+    "Full local names, parent package init files, namespace modules and relative imports resolved; missing owned imports rejected",
+    "Function-local imports remain scanned, no branches skipped",
+    "Explicit public IR/helper files exported; original source marshals/analysis still excluded",
+    "Namespace packages without __init__.py are resolved and covered by the fixture test."
+  ],
+  "checks": {
+    "tests": 7,
+    "exit_code": 0,
+    "isolated_export_directory": {
+      "normal_imports": true,
+      "selector_verify_and_policy": true,
+      "selector_five_pool_ir_audit": true,
+      "dynamic55_data_load": true,
+      "analysis_or_originals_present": false,
+      "maintenance_only_imports_blocked": true,
+      "files_unchanged": true,
+      "actual_tools_only_cli_import_path": true
+    },
+    "scope": "Export consumers and fixed-data tooling only; not full prepare, D8, APK or native acceptance"
+  },
+  "sources": {
+    "tests/test_project7_source_export.py": "738c44176792dc0de6f3e90557e5ad41420a3fa41ce542f7b580bce3f6d78c6e",
+    "offline-project-allowlist.json": "319dd1d0fefb836e505380a649c4b0554012c9ce07d794c60db508a0789135bd",
+    "tools/project7_draw_history_ir/data/history-v1/contract.json": "e82923fd40899cc5bd98b51e1a056aefe2c1378d3f9782d6d1aeb8c25b1b66a9",
+    "tools/project7_draw_history_ir/data/history-v1/history-ir.json.gz": "8c88ffd6632c4cd6c8ea681b76901771d2a7c8daa35399c0cd5f945cc1947568"
+  }
+}

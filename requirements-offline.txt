@@ -1,0 +1,4 @@
+lz4==4.4.5
+xdis==6.1.8
+pymongo==4.19.0
+androguard==4.1.4

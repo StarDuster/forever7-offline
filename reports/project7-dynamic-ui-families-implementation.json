@@ -1,0 +1,547 @@
+{
+  "schema": "project7-dynamic-ui-families-implementation-v2",
+  "status": "frozen-46-bounded-source-and-host-verified-native-unverified",
+  "scope": {
+    "candidate_ids": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      32,
+      37,
+      42,
+      47,
+      52,
+      57,
+      62,
+      67,
+      72,
+      81,
+      88,
+      89,
+      101,
+      107,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      362,
+      363,
+      382,
+      425,
+      433,
+      440,
+      485,
+      486,
+      487,
+      488,
+      491
+    ],
+    "backend_scope": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      32,
+      37,
+      42,
+      47,
+      52,
+      57,
+      62,
+      67,
+      72,
+      81,
+      88,
+      89,
+      101,
+      107,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      362,
+      363,
+      382,
+      425,
+      433,
+      440,
+      485,
+      486,
+      487,
+      488,
+      491
+    ],
+    "verified_detail_ids": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      32,
+      37,
+      42,
+      47,
+      52,
+      57,
+      62,
+      67,
+      72,
+      81,
+      88,
+      89,
+      101,
+      107,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      362,
+      363,
+      382,
+      425,
+      433,
+      440,
+      485,
+      486,
+      487,
+      488,
+      491
+    ],
+    "publishable_ids": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      32,
+      37,
+      42,
+      47,
+      52,
+      57,
+      62,
+      67,
+      72,
+      81,
+      88,
+      89,
+      101,
+      107,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      362,
+      363,
+      382,
+      425,
+      433,
+      440,
+      485,
+      486,
+      487,
+      488,
+      491
+    ],
+    "additional_ids_over485": [
+      2,
+      3,
+      4,
+      16,
+      17,
+      32,
+      37,
+      42,
+      47,
+      52,
+      57,
+      62,
+      67,
+      72,
+      81,
+      88,
+      89,
+      101,
+      107,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      362,
+      363,
+      382,
+      425,
+      433,
+      440,
+      486,
+      487,
+      488,
+      491
+    ],
+    "public_ready_ids_in_policy": [],
+    "main_manifest_ready_count": 431,
+    "main_manifest_sha256": "85311d5b6dd88c3d8dad3cd1f35143d63dc7495facd03e03d8859d69e6c722aa",
+    "main_note": "Root owns single-owner Main replacement/public admission. Tests use the current431 manifest. This is not a claim of new Main prepare/APK/native acceptance.",
+    "excluded_wish_ids": [
+      5,
+      119,
+      126,
+      143,
+      154,
+      164,
+      397,
+      426,
+      445
+    ]
+  },
+  "family_counts": {
+    "base_repaired": 7,
+    "charge_only": 11,
+    "jz_charge_four": 23,
+    "jz_charge_six": 1,
+    "legacy_plain": 2,
+    "ticket_only": 2
+  },
+  "api": {
+    "install": "install(policy_text,history_avatar_type=exact_draw_class,friend_owner=exact_friend_install_return) -> owner; replace old485 adapter, never stack",
+    "policy_consumer": "tools.project7_dynamic_ui_family_policy.ui_policy(directory=ROOT/runtime/project7_dynamic_catalog,display_path=None); canonical(value)",
+    "policy_cli": "python tools/project7_dynamic_ui_family_policy.py --output NEW_JSON",
+    "maintainer_display": "maintainer_display(pinned640_cdata_marshal_directory,NEW_GZIP); --maintainer-source DIR --output NEW_GZIP",
+    "maintainer_entry": "maintainer_entry_assets(public_cocos_npk,pinned640_cdata_marshal_directory,NEW_GZIP); --maintainer-entry-archive NPK --maintainer-source DIR --output NEW_GZIP",
+    "before_request": "owner.before_request(t,exact_real_avatar): validate owner/admission+required resources before business; False outside own46",
+    "delegate_register": "owner.register_detail_delegate(wish_owner,ids,wish_owner.invoke_detail)",
+    "delegate_fields": "families_owner=owner;draw_owner=owner.draw_owner;detail_indices=(0,2,6);detail_classes=(owner.classes[0],owner.classes[2],owner.classes[6]);detail_ids=sorted9 tuple;policy=plainJSON;policy_sha256=canonical SHA",
+    "delegate_invoke": "invoke_detail(index,name,raw_original,instance,args,kwargs); unknown matched9 indices0/2/6 return directly before original/clear/rebind. init/load pin family metadata first. Registration/current never call Wish.current; Wish may call families.current once.",
+    "detail_original": "owner.detail_original(index,name) returns exact original callback function only for0.on_yingzhuang_wish_click,2.on_tips_click,6.on_info_click/on_chest_click/on_jiaozhi_click; other access rejected"
+  },
+  "policy": {
+    "schema": "project7-dynamic-ui-families-v1",
+    "size": 270600,
+    "sha256": "d089f495f0549f24c7069fcb386e5bcabd954ff50a06359d71417f1767604f73",
+    "path": "analysis/project7/dynamic-ui-family-policy-phase2.json",
+    "expansion_sha256": "04c2881148468bb2d93f6d5fed15b6db88b0684d53c2c94bcf36048269f872cb",
+    "display_sha256": "b8b1896980d5beed343923d2f780e17be4d55d1b94875583ad4a58a7a77b67b1",
+    "entry_sha256": "bafe6f03ae31043110386e4c51d2f9184fee2433acda29427ca303034bad5573",
+    "per_pool_fields": [
+      "id",
+      "family",
+      "epoch",
+      "info",
+      "charge",
+      "jiaozhi",
+      "required_assets",
+      "cost_policy",
+      "source_level_bounds",
+      "entry_policy",
+      "resource_gate"
+    ]
+  },
+  "data": {
+    "display": {
+      "bytes": 9722,
+      "common": 238,
+      "items": 120,
+      "sha256": "b8b1896980d5beed343923d2f780e17be4d55d1b94875583ad4a58a7a77b67b1",
+      "domain": "source showrewards/show_rewards only, distinct from backend grant closure",
+      "runtime": "Original complete genCommonReward code cloned with readonly source-bound common/item globals; no replacement reward resolver"
+    },
+    "entry": {
+      "bytes": 2937,
+      "ui_comp_rows": 80,
+      "dependency_paths": 137,
+      "sha256": "bafe6f03ae31043110386e4c51d2f9184fee2433acda29427ca303034bad5573",
+      "source_ui_comp_marshal_sha256": "239075bbd0482fe1c63ae98192e9b92de093ddb32c7b85307ec09128ee594661"
+    },
+    "consumer": "Normal projection reads only project fixed bundles and contracts. No analysis/private paths, source marshal decoder, source NPK, P7APK, or network. Explicit directory resolves both UI gzip siblings inside that root.",
+    "producer": "Both producers nonoverwrite and reproduce exact pinned gzip SHA. Entry producer verifies every used public resource payload MD5/size/packed metadata against fixed640 snapshot before use. No full original table/NPK or private data is shipped."
+  },
+  "behavior": {
+    "scope": "One parameterized owner for all46; no per-pool handler copies. Raw source rows and source level limits remain in policy metadata; the same published history-free-v1 and1..110 archive unlock view is used as shared DrawUI.",
+    "shapes": "22 new four-charge/six-JZ +485;283 six charge rows through220;11 original card_leichong;2 legacy plain,7 base-repaired,2 ticket-only.",
+    "tables": "Readonly fixed info/charge/JZ/UI_COMP source views; same-pool rotated extra charge/JZ rows suppressed; other pools delegated. No global table/time/Data/ct/currency changes.",
+    "entry": "Original ActivityBase.real_load transplants activity_1/activity/top_middle into original base shell. Original UIPanel strips _iphonex suffix at load. All41 composed entry pages executed under the new owner; no page is falsely replaced by missing-resource generic7 fallback.",
+    "detail": "All46 original tab components choose their real asset/fallback; all46 original box tips preserve real JZ2/charge-only/no-detail routing. Original charge/JZ lists and original helper conversions retained.",
+    "ownership": "Exact companion markers/class identities, Avatar/Data/UI/lock epoch/instance/parent/rotation pins. Native retained gestures use captured token cleanup; ActivityBase delayed hide captures scope. No new RPC or player save owner."
+  },
+  "shared_draw": {
+    "register": "Explicit exactbound register_request_guard owner+raw method+verified/detail/history scope; idempotent sameowner, conflict rejected.",
+    "before_body": "HistoryAvatar new-group/requestFile/single/all-left; single t=args1/_type; original body and lock are not reached on failure.",
+    "delayed_acquire": "RequestUI optional draw_type defaultsNone; rechecks resources immediately before actual lock, with Avatar/Data/UI/_lock identities pinned.",
+    "cleanup": "Quit and already-bound callbacks do not rerun resource gate; retired old wait cleanup remains resource-only.",
+    "root_change": "Root alone updated _HISTORY_POLICY to431 hash; this agent did not alter that constant."
+  },
+  "tests": {
+    "command": ".venv/bin/python -m unittest tests.test_project7_dynamic_ui_families tests.test_project7_draw_ui -q",
+    "passed": 93,
+    "duration_seconds": 74.545,
+    "log": "analysis/project7/dynamic-family-main431-final-freeze.log",
+    "coverage": [
+      "complete46 literal projection, nonuniform row counts, tamper/duplicates/nonoverwrite/export-root isolation and exact gzip reproduction",
+      "24 original JZ details including283 six rows;11 original charge-only details; nonzero actual display hero",
+      "41 strict real-CSB composed shells execute original owned real_load/on_load/real_load_anim/notify_show/refresh_ui_idxs",
+      "46 original tab render functions including legacy no-tab-image normal fallback; all46 original box tips route to actual detail family",
+      "all46 complete canonical640 request bodies: new group/pending requestFile/single/all-left/quit/AndOpenAll;276 segments;ct/coins do not advance on UI send",
+      "93 includes original51 DrawUI tests, selected485 original consumers and callback-generation tests",
+      "resource absent before original request or delayed confirmation, sameAvatar replacedData, registration/owner conflicts, quit and old callback cleanup",
+      "delegate indices0/2/6 directdispatch, keyword type, unmatched original body, exact raw callbacks, held callback positive/negative and no current cycle"
+    ],
+    "boundaries": "UI native widgets/animation/caches/scene transport are explicit seams. Pending group states are input fixtures, never fabricated successful server replies. Request chains reach transport seam; not joint Python/JVM/native end-to-end. No claim that Wish9 business/UI is complete."
+  },
+  "resources": {
+    "matched_members": 310,
+    "evidence": "reports/project7-dynamic-ui-families-phase2-resource-evidence.json",
+    "card_leichong_widgets": 87,
+    "source_entry_compositions": 41,
+    "metadata": "All used nonempty CSB resourceType1 frame names covered by present mapped plist frames, resourceType0 image paths present; source UI_COMP images/spine JSON+atlas+page textures included. Scalar GetType interpretation/native render remains unverified.",
+    "stale_prefetch": {
+      "path": "cocos/packed/activity_155_yuehui1.plist",
+      "fid": 3134142472,
+      "present_any_fixed640_part": false,
+      "required_card_leichong_frames_missing_from_other4_plists": [],
+      "global_mapping_changed": false,
+      "upstream_32_source_behavior": "Missing dictionary metadata falls back to same-name PNG; null texture path logs and does not call dictionary insertion. This is upstream source inference, not current APK native-binding identity proof.",
+      "native_boundary": "Current APK prefetch/binding behavior remains an explicit final native gate; no claim of observed tolerance."
+    }
+  },
+  "native_unverified": [
+    "actual C_file/SpriteFrameCache/GUIReader bindings and stale-prefetch tolerance",
+    "widget scalar GetType/coordinates/font/texture/animation/live interaction",
+    "actual native scene transitions and performance",
+    "APK assembly/sign/install/ART/VM/device execution"
+  ],
+  "unchanged": [
+    "frozen485 adapter and old policy source remain as comparison; Main selects one adapter only",
+    "backend845 bundle and expansion04c policy, grant/reveal/probabilities/weights/store owner unchanged",
+    "normal1/original484 and existing pending behaviors preserved through original delegates",
+    "startup/build/allowlist/README untouched by this agent"
+  ],
+  "upstream_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-3.2/cocos/2d/CCSpriteFrameCache.cpp",
+      "path": "analysis/project7/dynamic-family-upstream-prefetch-v1/CCSpriteFrameCache.cpp",
+      "sha256": "3bd746eb3b4f2a779ca63ba041dcf65b3129badbcca8dd6e809ee52479214dd6",
+      "size": 13691
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cocos2d/cocos2d-x/cocos2d-x-3.2/cocos/platform/CCFileUtils.cpp",
+      "path": "analysis/project7/dynamic-family-upstream-prefetch-v1/CCFileUtils.cpp",
+      "sha256": "e494bf269f743c3b0df0cc06f7291c7a13fe4d86dfbb0275c6e58f4c2d3ad02d",
+      "size": 26733
+    }
+  ],
+  "files": [
+    {
+      "path": "runtime/project7_dynamic_ui_families.py",
+      "size": 33182,
+      "sha256": "f9c7bbc6394e2cba88f4e4a1c3d6b3f1eaf18643e63b71d597f9b2a3e7a235a1"
+    },
+    {
+      "path": "tools/project7_dynamic_ui_family_policy.py",
+      "size": 12883,
+      "sha256": "c4cad5470b4ed061e99591a279fead39063618df89105e94b39fbad80660a929"
+    },
+    {
+      "path": "tests/test_project7_dynamic_ui_families.py",
+      "size": 30288,
+      "sha256": "169620b2f4a1fd3ee67e73bbc1863023b8356f9e069a2dea74190c46da1b409c"
+    },
+    {
+      "path": "runtime/project7_dynamic_ui_families_data.json.gz",
+      "size": 9722,
+      "sha256": "b8b1896980d5beed343923d2f780e17be4d55d1b94875583ad4a58a7a77b67b1"
+    },
+    {
+      "path": "runtime/project7_dynamic_ui_families_entry_assets.json.gz",
+      "size": 2937,
+      "sha256": "bafe6f03ae31043110386e4c51d2f9184fee2433acda29427ca303034bad5573"
+    },
+    {
+      "path": "runtime/project7_draw_ui.py",
+      "size": 32253,
+      "sha256": "d2aca71df1ca34333a788d386a0f00a0f1cc4a7802ac2962848a07d171042977"
+    },
+    {
+      "path": "runtime/project7_dynamic_ui.py",
+      "size": 24856,
+      "sha256": "001dbd3829b757a3eddeaa957bfc1ac70d3f1bc986f274542c3c6d4423c5c888"
+    },
+    {
+      "path": "tools/project7_dynamic_ui_policy.py",
+      "size": 2571,
+      "sha256": "130265d2bc1e2ad84e99acb32ee36f885e10a26904259b59518ad07c550f5f59"
+    },
+    {
+      "path": "runtime/project7_dynamic_catalog/catalog-v1.json.gz",
+      "size": 69029,
+      "sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e"
+    },
+    {
+      "path": "runtime/project7_dynamic_catalog/expansion-policy-v1.json",
+      "size": 4188,
+      "sha256": "04c2881148468bb2d93f6d5fed15b6db88b0684d53c2c94bcf36048269f872cb"
+    },
+    {
+      "path": "runtime/project7_resources/project7-resource-snapshot.json.gz",
+      "size": 8506817,
+      "sha256": "9ce83088f69bc7480140aef46581e9a8a1748dd3d3d9cf3808d50504a4992da0"
+    },
+    {
+      "path": "tools/project7_feature_assets.py",
+      "size": 7617,
+      "sha256": "187c62394618c5c75760d1c09877d1db3eb65e02ca3b0c8cde766d702ee128c8"
+    },
+    {
+      "path": "analysis/project7/dynamic-ui-family-policy-phase2.json",
+      "size": 270600,
+      "sha256": "d089f495f0549f24c7069fcb386e5bcabd954ff50a06359d71417f1767604f73"
+    },
+    {
+      "path": "analysis/project7/dynamic-family-main431-final-freeze.log",
+      "size": 99,
+      "sha256": "0f41530c13be8c8a9de1aef8c25e2789481fb0aeba38ded6753464b3bbde7413"
+    },
+    {
+      "path": "reports/project7-dynamic-ui-families-phase2-resource-evidence.json",
+      "size": 178015,
+      "sha256": "0003b038459ccca373d0f7e88ef52774f0402b6803054f8b4f6491cce9bbf7c2"
+    },
+    {
+      "path": "reports/terra-p7-dynamic-ui-expansion-contract.json",
+      "size": 234925,
+      "sha256": "a663654d537f31c621d93c50ee0491461d9cfd2023fa81b1d4f0ddf737ffccaf"
+    },
+    {
+      "path": "reports/terra-p7-shared-csb-closure.json",
+      "size": 122097,
+      "sha256": "9330c2488a5bc1b7535f9c3a763788a4664da8cee027ee6836264fd0c3dcbe8e"
+    },
+    {
+      "path": "tools/legacy_csb_reader.py",
+      "size": 3302,
+      "sha256": "ef68ecec3a134e2abb83d24767196359b5f1684cc7780ff6fe804083ce4acf37"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/panels/card_activity_base.py",
+      "size": 20003,
+      "sha256": "e369b2c28d06c89d7c7f1a5006773c1aecbbb4161e88318548f1646da77b4b32"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/ui_panel.py",
+      "size": 23068,
+      "sha256": "a6e314f100b17ca3abf8f6b15cf6a16db2862954fdf8924894b29b457705ba75"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/ui_manager.py",
+      "size": 33842,
+      "sha256": "42e886830f1d6e6720aa332b1cb1267981a2a8d913c91fbfb47edf5f776ca0ac"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/ui_comp.py",
+      "size": 9333,
+      "sha256": "11a904742099d98be253825e6fafc344b2f6efc528fc43d91ebbe1d18721f880"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/panels/card_tab.py",
+      "size": 45135,
+      "sha256": "e96641e377aa0dddb0f33b31b2bc80e6739c6365f688d4ea74b328f18ec37201"
+    },
+    {
+      "path": "analysis/original-py-640/cocos/comps/card_common/tab.py",
+      "size": 6775,
+      "sha256": "da8e8d685083b90d2695f2d1854991098e75e2d1ce7cdfbe6586718f2e86b483"
+    },
+    {
+      "path": "analysis/original-py-640/entity/avatar_members/LuckyDrawMember.py",
+      "size": 94752,
+      "sha256": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996"
+    },
+    {
+      "path": "analysis/original-py-640/entity/avatar_attrs/LuckyDrawData.py",
+      "size": 63679,
+      "sha256": "fb45be303751e65cd9f455d0fec5c32637116195e1aff4f6e7059824d77ea45c"
+    },
+    {
+      "path": "analysis/android640-scripts/com/data/cdata/ui_comp_data.marshal",
+      "size": 46380,
+      "sha256": "239075bbd0482fe1c63ae98192e9b92de093ddb32c7b85307ec09128ee594661"
+    },
+    {
+      "path": "analysis/android640-scripts/com/data/cdata/item_data.marshal",
+      "size": 2895925,
+      "sha256": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6"
+    },
+    {
+      "path": "analysis/android640-scripts/com/data/cdata/reward_common.marshal",
+      "size": 1785728,
+      "sha256": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29"
+    },
+    {
+      "path": "analysis/original-py-640/com/data/cdata/huodong_main.py",
+      "size": 253766,
+      "sha256": "7cb43800b03e61a2e1135babebaa6af2e129040a9202911df0652569433a91dd"
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "assets": {
+    "catalog-v1.tsv": {
+      "bytes": 23192,
+      "sha256": "d81437791c78dfc309a6db2b96412d3c7ffe141e88b5492256b1fc77db8a8864"
+    },
+    "economy-extra.tsv": {
+      "bytes": 6075,
+      "sha256": "79474d999f2e796213a61207bed5cc1d4a2faae1a2ab62ec555e9af649ad2f85"
+    },
+    "special-selector-v1.json": {
+      "changed": false,
+      "sha256": "5b9d6b01f7fd77ed63f1f301b39ef31db4d7b8fb644383aa28aadcec000404aa"
+    },
+    "suppression-extra.tsv": {
+      "changed": false,
+      "sha256": "80ae9aa4824b766d332d15bc40f0d5d0c871b874ac0cf12af929e9fe2176e3c7"
+    }
+  },
+  "counts": {
+    "candidate": {
+      "area_rows": 182,
+      "chapter_keys": 619,
+      "classes": {
+        "existing-city-owner": 1,
+        "existing-dedicated-primitive": 9,
+        "shared-table-driven-chapter": 13,
+        "unknown-normal-city-candidate": 9
+      },
+      "current_scope_menus": [
+        25
+      ],
+      "economy": {
+        "existing_explicit_m_scenes": 25,
+        "g_rows": 150,
+        "m_rows": 173,
+        "missing_after": 0,
+        "missing_before": 148,
+        "scenes": 173
+      },
+      "effect_rows": 100,
+      "menu25_chapter_keys": 46,
+      "menu25_current_catalog_overlap": 39,
+      "menus": 32,
+      "menus_with_chapters": 19,
+      "menus_with_partial_branch_coverage": 16,
+      "menus_without_chapters": 13,
+      "non27_chapter_keys": 573,
+      "original_entry_supported": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        11,
+        13,
+        32
+      ],
+      "scenes": 453,
+      "shared_c_rows": {
+        "a_rows": 172,
+        "area1_menus": [
+          4
+        ],
+        "area1_rows": 6,
+        "area1_scenes": [
+          22010,
+          22011,
+          22012
+        ],
+        "generic_c_rows": 472,
+        "rows_total": 473,
+        "selector11_descriptor_rows": 1
+      },
+      "unclaimed_by_route": {
+        "-1": 15,
+        "23-5": 7,
+        "24-1": 2,
+        "24-2": 1,
+        "24-3": 1,
+        "24-4": 1,
+        "24-5": 2
+      },
+      "unclaimed_chapter_keys": 29,
+      "unclaimed_routes": [
+        "-1",
+        "23-5",
+        "24-1",
+        "24-2",
+        "24-3",
+        "24-4",
+        "24-5"
+      ]
+    },
+    "catalog": {
+      "A": 178,
+      "C": 511,
+      "T": 5,
+      "generic_A_added": 160,
+      "generic_C_added": 472,
+      "route27_A": 18,
+      "route27_C": 39,
+      "selector11_descriptors": 1,
+      "success_events": 62,
+      "success_rows": 64,
+      "success_scenes": 64
+    },
+    "economy": {
+      "candidate_g_covered": 151,
+      "candidate_m_covered": 173,
+      "extra_added_rows": 286,
+      "extra_g_rows": 154,
+      "extra_m_rows": 166,
+      "preserved_extra_rows": 34,
+      "total_g_scenes": 216,
+      "total_m_scenes": 296
+    }
+  },
+  "economy_conflicts": [
+    {
+      "candidate": "G\t320\t0\t5104",
+      "key": [
+        "G",
+        320
+      ],
+      "policy": "existing original economy row wins; no duplicate/override appended",
+      "preserved_base": "G\t320\t0"
+    }
+  ],
+  "gaps": [
+    {
+      "detail": "chapter_mission_data has no proven client-side scene selection consumer; Bridge exact keys feed Gateway area/stages/admission only, client battle render/native completion remains outside this data promotion",
+      "id": "generic-combat-render-non-chapter",
+      "kind": "consumer"
+    },
+    {
+      "detail": "existing base economy G 320 row (no gate) differs from inherited source cond 5104; original asset is preserved to avoid overriding shipped rows",
+      "id": "economy-gate-base-preserved",
+      "kind": "consumer"
+    },
+    {
+      "detail": "the fixed a767 frame's q7OriginalConsumeVictory rejects area<2 at offset17 (if_icmplt -> false) and the host asserts that rejection. The full handleCombatOfflineFinish entry settles/advances area1 via LocalEconomyEngine.finish plus the Gateway battle trace, not via the consumeVictory guard. No guard was removed or relaxed.",
+      "id": "area1-guard-reject",
+      "kind": "consumer"
+    },
+    {
+      "detail": "inherited G gates may reference scenes outside the promoted chapter set or a cond_event outside completedEvents; the economy engine then blocks admission instead of inventing progress. Representative chains seeded 20007 where the source gate requires it.",
+      "id": "economy-gate-cross-route",
+      "kind": "consumer"
+    },
+    {
+      "detail": "29 original chapter keys remain unclaimed: route -1 (15), 23-5 (7), 24-1..24-5 (7); no menu mapping is invented",
+      "id": "unclaimed-29-keys",
+      "kind": "data"
+    },
+    {
+      "detail": "batch S rows are offered on the current exact route only. The host proves the first pushEvents frame after handleCombatOfflineFinish and reload carry 10006/20058, loss emits nothing, duplicate finish is inert, same-week route switch claims only when the route owns the scene, new-week reset emits nothing, and a completed mutex peer suppresses.",
+      "id": "success-offer-trigger",
+      "kind": "consumer"
+    },
+    {
+      "detail": "row [6,0,10-6,11] stays the four-token special-selector-v1 descriptor, not a C row; menu10 selector/COC source is unchanged",
+      "id": "selector11-descriptor-external",
+      "kind": "data"
+    }
+  ],
+  "pins": {
+    "bytes": 4025,
+    "sha256": "2cbbfde2fb9edb818d2ea67b7d9588a0e10417ad20d71626089db3c90e85ce6b"
+  },
+  "policy": "append-only exact-key promotion; no -1 fallback; no dedicated-owner override; selector11 descriptor preserved; entry still closed",
+  "preserved": {
+    "entry_enablement": false,
+    "non_27_data": true,
+    "ready_ids": [],
+    "route27_rows": true,
+    "scope_menus": [],
+    "special_selector": true
+  },
+  "previous": {
+    "catalog-v1.tsv": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+    "catalog_was_preexisting": false,
+    "economy-extra.tsv": "22ecd8625063e4d75165c928e2b3443c37f1a64dfa6d6ac0268e6e23be2ea529"
+  },
+  "schema": "project7-mainline32-production-promotion-v1",
+  "source_evidence": {
+    "candidate_asset": "runtime/project7_mainline32_data_candidate/catalog-v1.json.gz",
+    "candidate_asset_sha256": "d7328eb0789098e2d420e6e3a85851ce133f555b7620b532001656ca8fba5483",
+    "candidate_contract": "runtime/project7_mainline32_data_candidate/contract-v1.json",
+    "candidate_contract_sha256": "c68b0396af4e8af5a56d038daf1f43fbc380afff8badabda25aaf8fff67f8493",
+    "candidate_expanded_sha256": "bf9a13b4b22ebc3f941f6d5b5c2e60f9ab58867d591e71323bc3d67cbf72ad60",
+    "claimed_rows": 619,
+    "root": "reports/root-mainline32-key-correction-verification.json",
+    "root_result": "PASS",
+    "root_sha256": "20f8c1a0233e74793c88d3265ab2a2a17b72547bd5dcd76f1fbf48a1289b38ce",
+    "unclaimed_source_count": 29
+  },
+  "source_pins": {
+    "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+    "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+    "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+    "mainline_mutex": "703e64835f5235d6c2d79fd5b7b1513b44f99eebbfcb0a2c1582efee4f9bd350",
+    "mainline_score_info": "dbab43659cd8a4c2983bc3ae46b340465b51b7b227c472523e4ac7d89a79ccff",
+    "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+    "story_route": "53f3161471d82c9abe562c41982b51f5d01a1651400d3c6fd58433b2629614b1",
+    "story_target": "db10e54c07f8f446b10cd5a9c1e357849fe065f0f6a5c306c689547171d9db0d"
+  },
+  "status": "production-exact-key",
+  "success_outcomes": {
+    "examples": {
+      "1114": [
+        20058
+      ],
+      "22012": [
+        10006
+      ],
+      "320": [
+        1132
+      ]
+    },
+    "policy": "batch original mission successEvent projection; current exact-route owner only; existing dedicated owners unchanged",
+    "scenes": {
+      "1114": [
+        20058
+      ],
+      "1115": [
+        20059
+      ],
+      "1116": [
+        20060
+      ],
+      "1117": [
+        20061
+      ],
+      "1118": [
+        20062
+      ],
+      "1119": [
+        20063
+      ],
+      "1120": [
+        20058
+      ],
+      "1130": [
+        20091
+      ],
+      "1131": [
+        20092
+      ],
+      "1132": [
+        20093
+      ],
+      "1133": [
+        20094
+      ],
+      "1134": [
+        20095
+      ],
+      "2113": [
+        30096
+      ],
+      "2114": [
+        30097
+      ],
+      "2115": [
+        30100
+      ],
+      "2116": [
+        30101
+      ],
+      "2117": [
+        30102
+      ],
+      "2119": [
+        30096
+      ],
+      "22003": [
+        40039
+      ],
+      "22006": [
+        30041
+      ],
+      "22009": [
+        20036
+      ],
+      "22012": [
+        10006
+      ],
+      "23001": [
+        50030
+      ],
+      "23002": [
+        50031
+      ],
+      "23003": [
+        50032
+      ],
+      "23004": [
+        70033
+      ],
+      "23005": [
+        70034
+      ],
+      "23006": [
+        70035
+      ],
+      "23007": [
+        80020
+      ],
+      "23008": [
+        80021
+      ],
+      "23009": [
+        80022
+      ],
+      "3115": [
+        40070
+      ],
+      "3116": [
+        40071
+      ],
+      "3117": [
+        40072
+      ],
+      "3118": [
+        40075
+      ],
+      "3119": [
+        40076
+      ],
+      "320": [
+        1132
+      ],
+      "4114": [
+        60084
+      ],
+      "4115": [
+        60086
+      ],
+      "4116": [
+        60087
+      ],
+      "4126": [
+        60091
+      ],
+      "4127": [
+        60092
+      ],
+      "4128": [
+        60094
+      ],
+      "4141": [
+        60099
+      ],
+      "4142": [
+        60100
+      ],
+      "4143": [
+        60101
+      ],
+      "5113": [
+        50067
+      ],
+      "5114": [
+        50068
+      ],
+      "5115": [
+        50069
+      ],
+      "5116": [
+        50070
+      ],
+      "5117": [
+        50071
+      ],
+      "5118": [
+        50073
+      ],
+      "6113": [
+        70067
+      ],
+      "6114": [
+        70068
+      ],
+      "6115": [
+        70069
+      ],
+      "6116": [
+        70072
+      ],
+      "6117": [
+        70073
+      ],
+      "6118": [
+        70075
+      ],
+      "7113": [
+        80050
+      ],
+      "7114": [
+        80051
+      ],
+      "7115": [
+        80054
+      ],
+      "7116": [
+        80056
+      ],
+      "7117": [
+        80057
+      ],
+      "7118": [
+        80059
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "apk_built": false,
+  "class_definitions": 649,
+  "defined_methods": 3701,
+  "delta": {
+    "bytes": 996331,
+    "sha256": "0f958f1d20821da1a98a3b3193632290b8049a35f4799098caaa34fb96da1c80"
+  },
+  "format": "project7-newbie354-new-group-block-v1",
+  "modified_existing_methods": 1,
+  "modified_invokes": [
+    [
+      299,
+      [
+        "invoke-static",
+        "v8, v2, v3, Lcom/project7/localmanager/LocalNewbieDrawEngine;->makeFile(Lcom/project7/localmanager/LocalResourceCatalog; I Ljava/util/Random;)[B"
+      ],
+      [
+        "invoke-static",
+        "v8, v2, v3, Lcom/project7/localmanager/CoreDrawPolicy;->newbieFile(Lcom/project7/localmanager/LocalResourceCatalog; I Ljava/util/Random;)[B"
+      ]
+    ]
+  ],
+  "native_verified": false,
+  "no_faked_ct": true,
+  "no_register_increase": true,
+  "other_original_instructions_unchanged": true,
+  "policy_helper_required": true,
+  "resume_reveal_quit_unchanged": true,
+  "source": {
+    "bytes": 1155616,
+    "sha256": "20f19471d1e73f3b32b4cc28300973eb3168cdfea8ddb1c46fe1ccd1e1306eae"
+  },
+  "target": {
+    "bytes": 1155644,
+    "sha256": "d16990dff71677c55ecd54225cd1fdc82f06c3785c3258e5053e069f24df341f"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "project7-friend-ui-implementation-v1",
+  "status": "frozen-source-finite-host-pass",
+  "api": {
+    "install": "install(history_avatar_type=None)",
+    "integration": "after draw/furniture installers, before login and card_box construction; pass exact trusted draw module _HistoryAvatar class for co-installation",
+    "assets": []
+  },
+  "production_sources": {
+    "runtime/project7_friend_ui.py": {
+      "sha256": "d279d5f08fab2363be8514a71b7acb9255b4fde359f6934152a99f6030f93fdd",
+      "size": 15359
+    },
+    "tests/test_project7_friend_ui.py": {
+      "sha256": "eb3516333f0d0dcad1993f94944f13b43568db94fe1268b5bc3fec9cf0742b34",
+      "size": 13776
+    }
+  },
+  "changed_surface": [
+    "actual entity.ClientAvatar.ClientAvatar four friend request methods only",
+    "card_box.Panel.on_init only, plus three instance callback guards; class-level frozen draw wrappers unchanged"
+  ],
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p test_project7_friend_ui.py",
+    "result": "PASS",
+    "tests": 17,
+    "python2_ascii_grammar": true,
+    "actual_source_bodies": [
+      "four LuckyDrawMember friendship requests and four typedreply bodies",
+      "chelpers.limitcall",
+      "ClientAvatar.callServerMethod",
+      "card_box on_init and three friend entry functions",
+      "UIManager.lock/unlock/reset_lock",
+      "RpcMethod/RpcMethodArgs/rpc_method/serverCallbackCarrier"
+    ],
+    "actual_engine_fixture_report": "reports/project7-friend-draw-original-host.json",
+    "engine_fixture_manager_sha256": "2ed4ab9dea04f1b90947415da5ebd405f44f20512b157d74805130603accbb0a",
+    "co_installation": "actual frozen drawUI historical policy install with trusted _HistoryAvatar and ten click; same draw install remains idempotent"
+  },
+  "ownership": [
+    "real Avatar and LuckyDrawData identities pinned per request",
+    "exact trusted view type plus installed draw marker owner/_source/_state/current identities; no duck unwrapping",
+    "panel init Avatar/Data/UI identity guards; stale friend clicks cannot use new Avatar",
+    "UI and _lock dict captured at scope creation, checked before deferred confirmation lock",
+    "one claim/release lease per original key, same-key counter ownership, cleanup independent of expired business",
+    "retired UI or gg: only captured old scheduler handles cancelled and valid old node hidden; no destroy/unlock on current UI",
+    "definite transport failure removes only exact owned callback registration and releases lease, including original swallowed AttributeError"
+  ],
+  "preserved": [
+    "stock friend engine and probability data",
+    "original firstfree, cost, daily cap, limitcall and real methodPoolBase",
+    "original typed single dict/ten list and callback registration maps",
+    "original primary rewards/scene/animation routes",
+    "startup tutorial method identities; no method outside four friend requests changed on ClientAvatar"
+  ],
+  "limits": [
+    "No native scene/model/render/animation/device acceptance",
+    "No socket loop proof; existing engine host invokes original resource dispatcher and callback completion segment",
+    "Official640-to-fixed-F probability projection audit remains separate pending contract",
+    "No production backend/DEX/Main/build changes; Root integration not yet run"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "actual_manager_sha256": "248375abc553e42def8906ad43e4364e81bba13df694dbb355c61ebfbde90ce4",
+  "sources": {
+    "runtime/android_story_basics/src/com/project7/localmanager/StoryBasicsGateway.java": "3a8403032f69293b200fdbb58f65e31046f4e4e4d9225876eae7a6f5a677c1c0",
+    "runtime/android_story_basics/compile_stubs/com/project7/localmanager/StoryApiStubs.java": "2ed45b53bba2fb58aa8c41a38e8fa0667d769a0163df3d97d1fe928a3ae481ce",
+    "runtime/android_story_basics/host_tests/com/project7/localmanager/StoryBasicsHost.java": "e47c262a045fa28671951f3b5cb4677c1187f0d5b2d4484c0df2b436bbb8f19c",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeCatalog.java": "caf73a8c6c08c2b600965c6d0de7863da90b728fea3413241190b312a5b8052e",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeTransactions.java": "13e6a9ff2ac01cc0c0291b57beb3548e3ef73c195f0438be5097653630f88ae0",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeGateway.java": "d2388ed4cb0a0951a8bf7e21c31b25974158979fb970145f4fbebd4913026f14",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragmentRules.java": "23a000a3719eca4915e84f1d4eeae0b93ed44a2feafeaeeb924f4358781e0f29",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragments.java": "01ed6932c9478eda64188261f8ef28a40324c7e12d0c05a437ca79166d49d968"
+  },
+  "limits": [
+    "host original Store only; no D8/APK/game/ART/device",
+    "direct/reliable gateway ABI tested outside networking",
+    "share unavailable with original empty Str reply"
+  ],
+  "host_evidence": "analysis/project7/story-basics-host-46l64pwn",
+  "abi": {
+    "checked": 70,
+    "mismatches": []
+  },
+  "implemented": [
+    "getShareLink -> replyShareLink(l=\"\") and visible offline unsupported message",
+    "readDailyWish -> original Store transaction only std.dwr=true + syncDailyWish(dw,dwh,dwr)"
+  ],
+  "original_generic_probe": "actual LocalGatewayServer.handleResourceRpc returns false with no frame or disk delta for both requests",
+  "production_dependency": "runtime/android_baiye_transactions BaiyeTransactions owner/atomic writer classification; BaiyeGateway digest",
+  "not_changed": [
+    "ending progress",
+    "rewards",
+    "inventory",
+    "mainline routing",
+    "shared OfflineMechanismGateway/Main"
+  ],
+  "failure_note": "read producer optimistically sets client read=true; definite save failure emits explicit failure and no success sync; reconnect original std remains authoritative",
+  "consumer_scope": "original producer and consumer function bodies executed; network/render/RPC dispatch are explicit host seams",
+  "apk_built": false,
+  "native_verified": false
+}

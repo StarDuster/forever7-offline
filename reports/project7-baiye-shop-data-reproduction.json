@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SOURCE_REPRODUCTION",
+  "rows": 8,
+  "files": {
+    "catalog-v1.tsv": {
+      "bytes": 1302,
+      "sha256": "ae6523fd78136fa7a1ef893911ca191ff764a1fe7866d9101b62a518216a0501"
+    },
+    "contract-v1.json": {
+      "bytes": 3084,
+      "sha256": "25ba6ebc952a2ce9862f89194036f2ca5debe9c90f62e4036c9cb01f7a07df7b"
+    }
+  },
+  "source_scope": "3 pinned official640 literal tables; compilation only, no game bytecode executed",
+  "designs_include_source_uuid": false,
+  "transaction_or_ui_completion_proven": false,
+  "note": "Root data snapshot before shop implementation; later source/policy revisions require their own evidence.",
+  "apk_built": false
+}

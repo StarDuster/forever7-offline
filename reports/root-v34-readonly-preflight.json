@@ -1,0 +1,7 @@
+{
+  "scope": "read-only v34 preflight; subprocess forbidden; no D8/APK/native",
+  "stage": "analysis/project7/story-city-coc-gateway-v34/project7-inputs-cocgateway/stage",
+  "classes7_actual": "ddaa9ca9e9468d52340d209185f829c330c439bbe50c6f20c3ab7b0cefb89179",
+  "matches_freeze": true,
+  "status": "PASS"
+}

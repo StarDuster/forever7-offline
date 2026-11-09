@@ -1,0 +1,23 @@
+{
+  "added_methods": [],
+  "changed_methods": [
+    "LocalGatewayServer.handleReliableRpc"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-reliable-scope-seams-v1",
+  "patch": {
+    "bytes": 1001143,
+    "sha256": "bf499d1aef4aa925946f1e3f9405852408c35013a77273ba8f522b17bd85e24e"
+  },
+  "registers": 58,
+  "scope": "One existing authenticated dispatch expanded from9 to11arguments; forwards original Integer seq(v4) and per-connection seen(v47) using v30/v31. ACK, stock seen gate, all other instructions/branches/exception ranges retained. Production bridge delegates unchanged until a reviewed sequenced business handler is integrated. No new wish/UP or native acceptance claim.",
+  "source": {
+    "bytes": 1158240,
+    "sha256": "bcffb77c8370f640ac6c9728855ba738b78029deacf8dd41fe1e3aa957df5515"
+  },
+  "target": {
+    "bytes": 1158280,
+    "sha256": "9506b09dc71f90e257ad99c371bb396d411e885a8dbc2dcc17a2d2e824aadd7b"
+  }
+}

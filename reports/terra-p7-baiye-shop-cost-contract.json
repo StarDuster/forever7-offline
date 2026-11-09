@@ -1,0 +1,629 @@
+{
+  "scope": "static literal and client/dis comparison only; no server gameplay/dex/apk/private profile",
+  "item_store_raw": {
+    "8": {
+      "sort": 11,
+      "consume_items": {},
+      "name": "小鱼干",
+      "lipinquan": 1,
+      "item_sort": 1,
+      "num": 8,
+      "use_now": false,
+      "item_num": 224,
+      "open": 1,
+      "buy_limit": 50
+    },
+    "157": {
+      "sort": 100,
+      "consume_items": {},
+      "name": "小丑面",
+      "lipinquan": 30,
+      "item_sort": 1,
+      "treasure_class": 3,
+      "num": 157,
+      "design_treasure": 74,
+      "use_now": false,
+      "item_num": 1223,
+      "open": 1,
+      "buy_limit": 1
+    },
+    "158": {
+      "sort": 101,
+      "consume_items": {},
+      "name": "乌帕扭蛋",
+      "lipinquan": 30,
+      "item_sort": 1,
+      "treasure_class": 3,
+      "num": 158,
+      "design_treasure": 80,
+      "use_now": false,
+      "item_num": 1229,
+      "open": 1,
+      "buy_limit": 1
+    },
+    "478": {
+      "sort": 21,
+      "consume_items": {},
+      "name": "S级记忆结晶",
+      "item_sort": 1,
+      "num": 478,
+      "use_now": false,
+      "item_num": 4256,
+      "hdItemNum": 100,
+      "open": 1,
+      "hdItemid": 4253
+    },
+    "480": {
+      "sort": 23,
+      "consume_items": {},
+      "name": "A级记忆结晶",
+      "item_sort": 1,
+      "num": 480,
+      "use_now": false,
+      "item_num": 4255,
+      "hdItemNum": 60,
+      "open": 1,
+      "hdItemid": 4253
+    },
+    "540": {
+      "sort": 12,
+      "consume_items": {},
+      "name": "命运·线团",
+      "lipinquan": 1,
+      "item_sort": 1,
+      "num": 540,
+      "use_now": false,
+      "item_num": 3735,
+      "open": 1,
+      "buy_limit": 40
+    },
+    "595": {
+      "sort": 16,
+      "consume_items": {},
+      "diamond": 100,
+      "name": "管理读本",
+      "item_sort": 1,
+      "weekly_num": 7,
+      "num": 595,
+      "use_now": false,
+      "item_num": 10002,
+      "less_week": 3,
+      "open": 1
+    },
+    "617": {
+      "sort": 99,
+      "consume_items": {},
+      "name": "夜之蝶",
+      "lipinquan": 15,
+      "item_sort": 1,
+      "treasure_class": 3,
+      "num": 617,
+      "design_treasure": 155,
+      "use_now": false,
+      "item_num": 1302,
+      "open": 1,
+      "buy_limit": 1
+    },
+    "1934": {
+      "sort": 900010,
+      "gift_suggestion_type": 4,
+      "consume_items": {},
+      "rewards": [
+        12447,
+        12448,
+        12449,
+        12450,
+        12451
+      ],
+      "name": "每日补给",
+      "open": 1,
+      "item_sort": 36,
+      "num": 1934,
+      "use_now": false,
+      "item_num": 11413,
+      "gift_image": "cocos/image/recharge/gui_gifts/22.png",
+      "rewards_show": [
+        50867,
+        50869,
+        50870,
+        50871,
+        50872
+      ],
+      "daily_num": 1
+    }
+  },
+  "item_data_raw": {
+    "4253": {
+      "desc": "可作为初始星级为C级的神器使的觉醒材料，同时可兑换为10个灵魂碎片。",
+      "heroid": 2,
+      "icon": "10357",
+      "id": 4253,
+      "name": "C级记忆结晶",
+      "release": true,
+      "sort_level": 21,
+      "star": 3,
+      "tradeType": 3,
+      "type": 17,
+      "ui_class": 4,
+      "ui_subclass": 25,
+      "use_type": 4,
+      "wrap": 10000
+    },
+    "10047": {
+      "desc": "可用来购买指定礼包的珍贵票券。",
+      "icon": "10504",
+      "id": 10047,
+      "name": "礼包券",
+      "release": true,
+      "sort_level": 2,
+      "star": 5,
+      "sync_cbg": 1,
+      "tradeType": 3,
+      "type": 1,
+      "ui_class": 1,
+      "ui_subclass": 6,
+      "wrap": 100000
+    },
+    "1223": {
+      "desc": "小丑的面具，可提升物理攻击强度与连斩率。影装达到蓝色品级后，每次普通攻击有几率立刻在当前位置生成画地为圆技能，画地为圆效果不会叠加，每15秒最多触发一次。",
+      "icon": "1223",
+      "id": 1223,
+      "name": "小丑面",
+      "reget_trans": [
+        3045,
+        10
+      ],
+      "release": true,
+      "sort_level": 80,
+      "star": 5,
+      "subbag": 2,
+      "sync_cbg": 1,
+      "tdesc": "面具的背后，是喜是悲呢？",
+      "tdesc2": "面具的背后，是喜是悲呢？",
+      "tradeType": 3,
+      "treasure_sub_type": 2,
+      "type": 5,
+      "wrap": 1
+    },
+    "1229": {
+      "desc": "装着乌帕的扭蛋，可提升物理攻击强度与连斩率。影装达到蓝色品级后，乌帕每次进行普攻命中敌方单位有几率重置乌帕生气技能冷却时间，每10秒最多触发一次。",
+      "icon": "1229",
+      "id": 1229,
+      "name": "乌帕扭蛋",
+      "reget_trans": [
+        3051,
+        10
+      ],
+      "release": true,
+      "sort_level": 80,
+      "star": 5,
+      "subbag": 2,
+      "sync_cbg": 1,
+      "tdesc": "好想把每一种颜色的乌帕集齐！",
+      "tdesc2": "好想把每一种颜色的乌帕集齐！",
+      "tradeType": 3,
+      "treasure_sub_type": 2,
+      "type": 5,
+      "wrap": 1
+    },
+    "1302": {
+      "desc": "夜之蝶，黑夜女神之力所化，可提升物理攻击强度与连发率。一阶时激活特技，每次技能造成伤害时会为1次普攻叠加1层额外伤害，最高可累计10次充能。",
+      "icon": "1302",
+      "id": 1302,
+      "name": "夜之蝶",
+      "reget_trans": [
+        4337,
+        10
+      ],
+      "release": true,
+      "sort_level": 80,
+      "star": 5,
+      "subbag": 2,
+      "sync_cbg": 1,
+      "tdesc": "我将永远守护你，若黑夜中燃起的天火。",
+      "tdesc2": "我将永远守护你，若黑夜中燃起的天火。",
+      "tradeType": 3,
+      "treasure_sub_type": 2,
+      "type": 5,
+      "wrap": 1
+    }
+  },
+  "hero_treasure_raw": {
+    "1223": {
+      "rebound_rate": [
+        0.0,
+        0.0
+      ],
+      "noRemove": 1,
+      "thridAttrsLow": {
+        "attack_twice_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "noCompound": 1,
+      "class": 3,
+      "cost": 4,
+      "id": 1223,
+      "decomposeMoney": 6000,
+      "validHeroes": [
+        51
+      ],
+      "name": "小丑面",
+      "sync_cbg": 1,
+      "hiddenAttrGroup": 18,
+      "attrCost": 3.0,
+      "tuijian": 2,
+      "secondAttrsLow": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "rarity": 1,
+      "showTrick": [
+        148
+      ],
+      "secondAttrs": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "thridAttrs": {
+        "attack_twice_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "fixTrick": [
+        148
+      ]
+    },
+    "1229": {
+      "rebound_rate": [
+        0.0,
+        0.0
+      ],
+      "noRemove": 1,
+      "thridAttrsLow": {
+        "attack_twice_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "noCompound": 1,
+      "class": 3,
+      "cost": 4,
+      "id": 1229,
+      "decomposeMoney": 6000,
+      "validHeroes": [
+        60
+      ],
+      "name": "乌帕扭蛋",
+      "sync_cbg": 1,
+      "hiddenAttrGroup": 18,
+      "attrCost": 3.0,
+      "tuijian": 2,
+      "secondAttrsLow": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "rarity": 1,
+      "showTrick": [
+        178
+      ],
+      "secondAttrs": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "thridAttrs": {
+        "attack_twice_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "fixTrick": [
+        178
+      ]
+    },
+    "1302": {
+      "rebound_rate": [
+        0.0,
+        0.0
+      ],
+      "noRemove": 1,
+      "thridAttrsLow": {
+        "cd_reset_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "noCompound": 1,
+      "class": 3,
+      "cost": 4,
+      "id": 1302,
+      "decomposeMoney": 6000,
+      "validHeroes": [
+        87
+      ],
+      "name": "夜之蝶",
+      "sync_cbg": 1,
+      "hiddenAttrGroup": 18,
+      "attrCost": 3.0,
+      "tuijian": 2,
+      "secondAttrsLow": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "rarity": 1,
+      "showTrick": [
+        470
+      ],
+      "secondAttrs": {
+        "_phy_str_delta": [
+          15.0,
+          15.0
+        ]
+      },
+      "thridAttrs": {
+        "cd_reset_rate": [
+          6.0,
+          6.0
+        ]
+      },
+      "fixTrick": [
+        470
+      ]
+    }
+  },
+  "design_treasure_raw": {
+    "74": {
+      "dumps_info": "{\"i\": 1223, \"tr\": {\"rt\": [0, 0], \"ft\": [148], \"attr\": [{\"v\": 91.0, \"n\": \"a36\"}, {\"v\": 15.0, \"n\": \"f30\"}, {\"v\": 6.0, \"n\": \"t10\"}], \"rr\": [0, 0], \"cl\": 3, \"st\": 0, \"r\": 1, \"ha\": 0, \"cost\": 4}, \"tt\": 3, \"u\": {\"$oid\": \"5adca41dbdf7db2cfe8f100b\"}, \"w\": 1}",
+      "id": 74,
+      "itemid": 1223,
+      "secondAttrInfo": {
+        "_phy_str_delta": 15.0
+      },
+      "thirdAttrInfo": {
+        "attack_twice_rate": 6.0
+      },
+      "tradeType": 3,
+      "treasureClass": 3
+    },
+    "80": {
+      "dumps_info": "{\"i\": 1229, \"tr\": {\"rt\": [0, 0], \"ft\": [178], \"attr\": [{\"v\": 91.0, \"n\": \"a36\"}, {\"v\": 15.0, \"n\": \"f30\"}, {\"v\": 6.0, \"n\": \"t10\"}], \"rr\": [0, 0], \"cl\": 3, \"st\": 0, \"r\": 1, \"ha\": 0, \"cost\": 4}, \"tt\": 3, \"u\": {\"$oid\": \"5adca42cbdf7db2cfe8f1011\"}, \"w\": 1}",
+      "id": 80,
+      "itemid": 1229,
+      "secondAttrInfo": {
+        "_phy_str_delta": 15.0
+      },
+      "thirdAttrInfo": {
+        "attack_twice_rate": 6.0
+      },
+      "tradeType": 3,
+      "treasureClass": 3
+    },
+    "155": {
+      "dumps_info": "{\"i\": 1302, \"tr\": {\"rt\": [0, 0], \"ft\": [470], \"attr\": [{\"v\": 91.0, \"n\": \"a36\"}, {\"v\": 15.0, \"n\": \"f30\"}, {\"v\": 6.0, \"n\": \"t13\"}], \"rr\": [0, 0], \"cl\": 3, \"st\": 0, \"r\": 1, \"ha\": 0, \"cost\": 4}, \"tt\": 3, \"u\": {\"$oid\": \"5c2493c6bdf7db7d7b3c2eb2\"}, \"w\": 1}",
+      "id": 155,
+      "itemid": 1302,
+      "secondAttrInfo": {
+        "_phy_str_delta": 15.0
+      },
+      "thirdAttrInfo": {
+        "cd_reset_rate": 6.0
+      },
+      "tradeType": 3,
+      "treasureClass": 3
+    }
+  },
+  "reward_random_raw": {
+    "12447": {
+      "id": 12447,
+      "shows": [
+        [
+          41698,
+          0
+        ],
+        [
+          41699,
+          0
+        ],
+        [
+          41700,
+          0
+        ]
+      ],
+      "weights": [
+        [
+          41698,
+          10
+        ],
+        [
+          41699,
+          10
+        ],
+        [
+          41700,
+          10
+        ]
+      ]
+    },
+    "12448": {
+      "id": 12448,
+      "shows": [
+        [
+          50869,
+          0
+        ]
+      ],
+      "weights": [
+        [
+          50869,
+          10
+        ]
+      ]
+    },
+    "12449": {
+      "id": 12449,
+      "shows": [
+        [
+          50870,
+          0
+        ]
+      ],
+      "weights": [
+        [
+          50870,
+          10
+        ]
+      ]
+    },
+    "12450": {
+      "id": 12450,
+      "shows": [
+        [
+          50871,
+          0
+        ]
+      ],
+      "weights": [
+        [
+          50871,
+          10
+        ]
+      ]
+    },
+    "12451": {
+      "id": 12451,
+      "shows": [
+        [
+          50868,
+          0
+        ]
+      ],
+      "weights": [
+        [
+          50868,
+          10
+        ]
+      ]
+    }
+  },
+  "reward_common_raw": {
+    "41698": {
+      "id": 41698,
+      "items": [
+        494
+      ],
+      "itemsNum": [
+        1
+      ],
+      "tradeType": 3
+    },
+    "41699": {
+      "id": 41699,
+      "items": [
+        495
+      ],
+      "itemsNum": [
+        1
+      ],
+      "tradeType": 3
+    },
+    "41700": {
+      "id": 41700,
+      "items": [
+        496
+      ],
+      "itemsNum": [
+        1
+      ],
+      "tradeType": 3
+    },
+    "50867": {
+      "id": 50867,
+      "items": [
+        10226
+      ],
+      "itemsNum": [
+        1
+      ],
+      "tradeType": 3
+    },
+    "50868": {
+      "id": 50868,
+      "money": 10000,
+      "tradeType": 3
+    },
+    "50869": {
+      "id": 50869,
+      "items": [
+        488
+      ],
+      "itemsNum": [
+        3
+      ],
+      "tradeType": 3
+    },
+    "50870": {
+      "id": 50870,
+      "items": [
+        489
+      ],
+      "itemsNum": [
+        3
+      ],
+      "tradeType": 3
+    },
+    "50871": {
+      "id": 50871,
+      "items": [
+        490
+      ],
+      "itemsNum": [
+        3
+      ],
+      "tradeType": 3
+    },
+    "50872": {
+      "id": 50872,
+      "items": [
+        102
+      ],
+      "itemsNum": [
+        10000
+      ],
+      "tradeType": 3
+    }
+  },
+  "interpretation": {
+    "lipinquan": "item_store cost field / icon name for VirtualItem.GIFTCOIN=105 and avatar.giftCoin; distinct libaoquan=10047",
+    "treasure_goods": "157/158/617 specify purchased item/quality/design; no selected UUID or item-specific ext in stock client; original server hidden",
+    "1934": "five IDs resolve as five reward_random rows, each one weighted distribution; UI shows separate common list; server combination semantics not proven. Stock grants one 494-496 plus 488,489,490 each 3 and money10000, consistent with one selection per row."
+  },
+  "sha256": {
+    "analysis/android640-scripts/com/data/cdata/item_store.marshal": "7555873fde108da083ef7c05c5891b847388b188c3a553d09264bcdf4dd573ff",
+    "analysis/android640-scripts/com/data/cdata/hero_treasure.marshal": "670c26a82b7632845550b50ed5c28c78401210412efaca21980612c4f9e89c9a",
+    "analysis/android640-scripts/com/data/cdata/item_data.marshal": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+    "analysis/android640-scripts/com/data/cdata/hero_treasure_generate.marshal": "771ceb6415660c9b9650b458f5b988ffb48c4cbf1344d059723a8affbd92b6b6",
+    "analysis/android640-scripts/com/data/cdata/reward_random.marshal": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+    "analysis/android640-scripts/com/data/cdata/reward_common.marshal": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29",
+    "analysis/original-py-640/cocos/comps/card_common/item.py": "514943bcd0e935a0f7ed4035a469884f58e94980c5ff7147ba807a190bb868f6",
+    "analysis/original-py-640/cocos/panels/card_buy.py": "6a2dfd6d4f3a65872508af83551fed66e676f2a49f82f4de3e072f03113ec8e0",
+    "analysis/original-py-640/cocos/panels/card_main.py": "2317c3e6eadec399f8f4ac4b285aa65883e197c3cf25803cf23d2ebb2d14ec04",
+    "analysis/original-py-640/entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996",
+    "analysis/original-py-640/entity/avatar_members/InvMember.py": "b35cf286f374ee39eb1f29e9600e7f4c28aaaa25f41e9b86ba4136e2561c8e12",
+    "analysis/original-py-640/com/const.py": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a",
+    "analysis/project7/manager/com.project7.localmanager.LocalResourceEngine.dis": "1ba409f0c98c573e06b42a8c9d7ca76aa8452370791f12fd961bc6577ce5a561",
+    "analysis/project7/manager/com.project7.localmanager.LocalCommerceEngine.dis": "6504b1978f49f618ba29b0c149fe7c01a704fe2bb0dc7899defdb144403bf6ed",
+    "analysis/project7/manager/com.project7.localmanager.LocalAccountFeatures.dis": "622d4f4e3aad858331414edee9c464a28c2b936f605a23e2a2b4c2a835a95b9b"
+  }
+}

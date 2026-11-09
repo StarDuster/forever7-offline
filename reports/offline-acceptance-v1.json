@@ -1,0 +1,120 @@
+{
+  "schema": "forever7-offline-accepted-android-v1",
+  "checked_on": "2026-11-07",
+  "delivery": "Official original APK transformed by tools/build_offline_project.py into one installable Android APK; original remains read-only.",
+  "apk": {
+    "filename": "forever7-offline-v22-20261107.apk",
+    "sha256": "36c26e6617ee9d15c0acdbeddc2ea725babd6e5cfc95ed11604d5b402357948e",
+    "package": "com.netease.qrzd",
+    "original_version": "1.96.455",
+    "original_version_code": 10960455,
+    "signature_schemes": [
+      "v2",
+      "v3"
+    ],
+    "certificate_sha256": "52893d575ae8e51b860ed744d6b5c36db3a2928d96100b0b6ac711630bbbee6b",
+    "zipalign_16k": true
+  },
+  "original_input": {
+    "bytes": 1277771744,
+    "sha256": "12e57f77059f7f3964585f3a615410f3f9625101d885883cd4de4397f490c503"
+  },
+  "fixed_component": {
+    "bytes": 57258978,
+    "sha256": "ccbde188251c68eb23a4af1d0b6aef1946236d527d2a70f30058277e5a7b7a0d",
+    "source_export_includes_component": false,
+    "dependency_ready_bundle_includes_verified_component": true
+  },
+  "native_validation": {
+    "environment": "Android11 ARM64,3072MiB,4cores,HVF and host GPU",
+    "true_offline_no_default_route": true,
+    "automatic_existing_identity_login_city": true,
+    "virgin_identity_automatic_creation_login": true,
+    "virgin_original_hospital_dialogue_and_advance": true,
+    "full_collection_strict_on_actual_virgin_save": {
+      "heroes": 140,
+      "skins": 494,
+      "treasure_pairs": 1900
+    },
+    "original_hero_model_visible": true,
+    "original_wardrobe_equip_and_green_dye_visible": true,
+    "wardrobe_dye_saved_state_preserved_after_upgrade": true,
+    "normal_pool_original_group_single_remaining_bonus_exit_and_next_group": true,
+    "pending_group_same_disk_cold_reboot_recovery": true,
+    "shadow_pool_exact_remaining_five_reveal_reward_exit_save": true,
+    "newbie354_public_menu_hidden": true,
+    "shadow_allleft_manager_replies": 34,
+    "shadow_wish_value_before_after": [
+      20,
+      30
+    ],
+    "shadow_saved_ct_cctd_iof": [
+      6,
+      6,
+      false
+    ],
+    "post_draw_full_collection_strict": {
+      "heroes": 140,
+      "skins": 494,
+      "treasure_pairs": 1900
+    },
+    "representative_mainline": [
+      "original first hospital dialogue",
+      "stage101 win and reward then restart continuation",
+      "stage154 defeat/giveup/ending/week settlement and week choice",
+      "original1031 leave emergency and city/followup events"
+    ]
+  },
+  "mainline_current_code_evidence": {
+    "classes7_sha256": "0b4c41a5461840fb7bdb02529732a2c6849d604893b6a9390b9a9404618d0eb4",
+    "exact_equal_mainline_related_class6_models": 94,
+    "exact_equal_business_asset_hashes": 14,
+    "original_mainline_menu_entries_checked": 32,
+    "host_mechanisms": [
+      "day",
+      "week",
+      "ending",
+      "route entry and selector",
+      "dream and lifecycle",
+      "flashback",
+      "COC actual wrapper159checks"
+    ],
+    "validation_method": "Original640 reference, actual final DEX models/assets, mechanism-level host validation and representative native paths."
+  },
+  "resources": {
+    "npk": 36,
+    "raw": 276,
+    "bytes": 8010923732,
+    "official_cdn_first": true,
+    "size_sha256_cache_validation": true,
+    "native_official_absent_resource_download_and_reconstruction": true,
+    "native_same_size_same_mtime_corrupt_cache_repaired_by_first_zip_import": true,
+    "optional_https_mirror_and_local_zip": true,
+    "third_party_dataset_upload_configured": false
+  },
+  "original_unreleased_asset_facts": {
+    "owned_records_preserved": true,
+    "forbidden_hero_ids": [
+      46,
+      125
+    ],
+    "missing_original_model_ids": [
+      10048,
+      10176
+    ],
+    "unreleased_skin_ids_with_missing_2d_assets": [
+      10080,
+      10081
+    ],
+    "handling": "Preserve owned records and identity; original information/2D fallback where available, guard missing models before actor construction."
+  },
+  "source_export_exclusions": [
+    "original APK",
+    "complete game image/model/voice archives",
+    "private save/account data",
+    "signing keys",
+    "toolchains",
+    "analysis caches"
+  ],
+  "runtime_state": "Own test emulator and temporary awake guard stopped; private original identity/progress retained."
+}

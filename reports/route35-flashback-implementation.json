@@ -1,0 +1,89 @@
+{
+  "status": "verified_static_host_contracts_native_route35_acceptance_pending",
+  "policy": "offline-route35-three-action-round-v1",
+  "claim_boundary": "Bounded executable offline policy anchored to original client/cdata; not reconstruction of unavailable official server.",
+  "canonical": "story.route35_flashback; separate from route31 story.general_value",
+  "entry": "Accepted original7752 special agreement authorizes occurrence; actual7754 route35-3 handoff at normal date/stock_day6 activates round1 once.",
+  "advance": "Actual reliable NEXTDAY_CLICK binds week/entry/index intent; actual corresponding completed terminal plus empty requestFlashbackIncDay consumes once. Index1..7, used_actions0..3. No automatic terminal advance, ordinary day/week change, or city/hero/notes reset.",
+  "wire": {
+    "requestFlashbackIncDay": {},
+    "replyFlashbackIncDay": [
+      "d",
+      "v"
+    ],
+    "syncFlashbackData": "d.ff/fd/fa",
+    "syncRoute": "fbd.ff/fd/fa/fv (fa=fv)",
+    "snapshot": "std.ff/fd/fa/gr"
+  },
+  "actions": {
+    "city": "Actual admitted patrol/build/development consumes1fa, keeps materials/fund/research/capability/fatigue guards and preserves ordinaryav.",
+    "stage": "Original STAGE admission reserves current round unit; accepted actual win consumes1fa; actual loss/replay consumes0.",
+    "event": "Original EVENT battle consumes0fa and preserves ordinaryav; real fatigue and owned/defaultHeroes guards retained."
+  },
+  "persistence_and_publication": "Whole-state atomic save before business callbacks, deferred owner/round binding, persistent terminal/intent/action receipts. Same-owner active rejection or save failure publishes only unchanged reply d/v to let original4000ms city animation unlock; no index/action/collection mutation or syncGeneral success.",
+  "ambiguity": "Original empty wire carries no round id. Requests received after a new real round intent/terminal cannot be distinguished from genuinely new requests; policy binds current actual NEXTDAY_CLICK, consumes exactly once, and never guesses a further advance without that intent.",
+  "tests": "tests/test_route35_flashback.py: original cdata entry, six continue chains including7828, seven exact54 thresholds, actual early decline153, actual EVENT600 admission/accepted finish proof and7792 dialogue requirement,7793->8884; actual deferred gateway NEXTDAY_CLICK/RPC, rollback/replay/restart/avatar replacement; original reply/request/day_night_around bodies with mock4000ms timer prove rejection/savefailure unlock chain; action/STAGE policy fixtures explicitly synthetic combat-result inputs, not native wins.",
+  "target_assets": "Root inspected native retained save:140 owned heroes including mission600 defaultHeroes152,34,28. No additional hero/fatigue grant or trial override implemented. Other saves lacking default party still reject the real owned guard.",
+  "native_unverified": [
+    "Full original native route35 dialogue/choice journey1..7",
+    "Patrol/build/development screens and fa display under actual native input",
+    "Real battle600 gameplay win and subsequent602/ending gameplay",
+    "Actual native4000ms animation and reconnect at every round"
+  ],
+  "source_files": [
+    "runtime/offline_flashback.py",
+    "runtime/local_gateway.py",
+    "runtime/offline_day.py",
+    "runtime/offline_week.py",
+    "runtime/offline_event_effects.py",
+    "runtime/offline_conditions.py",
+    "runtime/offline_city_actions.py",
+    "runtime/offline_stage.py",
+    "runtime/offline_event_battle.py",
+    "runtime/offline_bootstrap.py",
+    "tools/patch_bootstrap.py"
+  ],
+  "export": "New standalone ASCII Python2.7-compatible runtime source embedded in both loaders and source allowlist; no original decompiled script is copied into export.",
+  "validation": {
+    "route35_new_tests": {
+      "run": 8,
+      "passed": 8,
+      "scope": "all original chains through600 and602 to ending152; decline153 original generator tail; lock animation recovery; deferred round fences including capturedNone andactive-to-inactive; host callbacks only"
+    },
+    "final_focused": {
+      "run": 43,
+      "passed": 43,
+      "seconds": 48.66,
+      "modules": [
+        "test_route35_flashback",
+        "test_gateway_integrations",
+        "test_offline_city_actions",
+        "test_offline_stage"
+      ]
+    },
+    "prior_day_week_focused": {
+      "run": 42,
+      "passed": 42,
+      "seconds": 43.443,
+      "modules": [
+        "test_route35_flashback",
+        "test_offline_week",
+        "test_offline_day"
+      ]
+    },
+    "broader_focused_before_final_compat_fix": {
+      "run": 109,
+      "passed": 108,
+      "failure": "Legacy unrelated syncRoute fbd expected{}; fixed to preserve{} when no route35 context, then week/day focused passed"
+    },
+    "ascii": true,
+    "python2_compatible_grammar": "passed lib2to3 grammar parse; not native compile",
+    "embedded_shared_namespace": "Full gateway compiled/executed with all offline_* imports blocked; actual flashback transaction passed",
+    "embedded_source_sha256": "32f56057b4b39eccb618f214b4e40fcac3845d65e3a348678d6eedc5a666bcc0",
+    "full_host": "Not run by feature agent; root coordinates",
+    "native_route35": "Not run by feature agent; root/native agent owns acceptance"
+  },
+  "fd_policy": "fd=round index1..7 is an explicit bounded offline mapping; original field day name does not establish official base.",
+  "decline_liveness": "Executed original city._flashback_next_day generator body through NEXTDAY_CLICK/pullEvents/tryNotifyEvent yield; actual7762/ending153 then resumed tail request. Unchanged original reply plus original day_night_around callback released lock; ending result/date/index unchanged; existing handleIncWeekAsk prepared next week and cleared flashback context. Original UI widgets remain native-unverified.",
+  "action_round_fence": "At receipt direct city and reliable city/STAGE/EVENT admissions capture owner plus token including None. Deferred processing must match both; old admissions never adopt another round or mode."
+}

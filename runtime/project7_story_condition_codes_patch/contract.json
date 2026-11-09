@@ -1,0 +1,219 @@
+{
+  "format": "project7-story-condition-codes-seam-v1",
+  "scope": "Manager LocalStoryConditions bytecode seam for original condition codes 31/45/46/49. New candidate DEX/frame/patch and separate 16-row auto-trigger candidate. v44 stage/freeze, COC Hook, menu10/menu12, D8/APK/native and the 222-row candidate are not touched.",
+  "source": {
+    "path": "analysis/project7/story-city-integration-prepare-v44/project7-inputs-kah2kqvz/stage/classes7.dex",
+    "bytes": 1161220,
+    "sha256": "fee369231e8924923f774cdbda4961f91b6ab87cee237b249cff8229b535f1c6"
+  },
+  "target": {
+    "path": "analysis/project7/story-condition-codes-v1/classes7.dex",
+    "bytes": 1162828,
+    "sha256": "b012f019387db916846ee0531ba6518e1b84271db5fdf356e7af6bd1adbfcf53"
+  },
+  "patch": {
+    "path": "runtime/project7_story_condition_codes_patch/seams.xor-zlib",
+    "codec": "xor-zlib-delta-v1",
+    "bytes": 999865,
+    "sha256": "ea634caa4c563bb55362c6d7da19aa83c012e16e630675ed0988fd76044c2656"
+  },
+  "manager": {
+    "dex_version": 38,
+    "class_count": 649,
+    "translated_jar": {
+      "path": "analysis/project7/story-condition-codes-v1/manager-translated.jar",
+      "sha256": "3c6706eef022e8b1bac0d74fd3bcb3cc38d8e77c248e0d0b1139144a79741ce0",
+      "reproducible": false,
+      "note": "d2j dex2jar writes wall-clock ZIP timestamps; hash is the stored artifact hash, frames jar is byte-reproducible"
+    },
+    "frames_jar": {
+      "path": "analysis/project7/story-condition-codes-v1/manager-translated-frames.jar",
+      "sha256": "95e7f9062d36cc07db5f76713dc08f9cbb3026416a15bfcd638d3ea5b17d457e"
+    },
+    "frames_fix": "FrameFix over 649 classes"
+  },
+  "supported": {
+    "old_count": 35,
+    "old": [
+      5,
+      6,
+      7,
+      12,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      48,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "added": [
+      31,
+      45,
+      46,
+      49
+    ],
+    "new_count": 39,
+    "excluded_unchanged": [
+      20
+    ]
+  },
+  "bindings": {
+    "class": "Lcom/project7/localmanager/LocalStoryConditions;",
+    "changed_methods": [
+      {
+        "method": "<clinit>",
+        "descriptor": "()V",
+        "cfg": [
+          "const/16 v3,39 replaces the original new-array size register; the original v1=35 stays intact because the original clinit also uses v1 as the code-35 entry",
+          "new-array v2,v3,[Ljava/lang/Integer; keeps the original 35-entry body",
+          "four append blocks insert Integer.valueOf(31|45|46|49) at indices 35..38 immediately before Arrays.asList",
+          "LinkedHashSet + Collections.unmodifiableSet tail unchanged"
+        ]
+      },
+      {
+        "method": "matchesValue",
+        "descriptor": "(ILjava/lang/String;[BLcom/project7/localmanager/LocalTutorialStore$Progress;Lcom/project7/localmanager/LocalStoryConditions$Context;)Z",
+        "cfg": [
+          "register prologue v0=code,v1=value,v2=profile,v3=progress,v4=context unchanged",
+          "profile-null guard returns v5=0 unchanged",
+          "entry dispatch: if code==31 goto extra; if code==45 goto extra; if code==46 goto extra; if code==49 goto extra; else goto original",
+          "extra: invoke-static q7ExtraCondition(v0,v1,v2)Z; return result",
+          "original: const/4 v5,0 restores the pre-dispatch scratch value, then the original const/16 v6,54 branch head and every old branch execute unchanged",
+          "old dispatch chain (54,50,32,35,36,41,38..40,53,51,37,33,19,7,6,5,42,48,25,62,61,treasure fallback) is not edited"
+        ]
+      }
+    ],
+    "added_methods": [
+      {
+        "method": "q7ExtraCondition",
+        "descriptor": "(ILjava/lang/String;[B)Z",
+        "cfg": [
+          "code 31 -> q7HeroStar",
+          "code 45 -> q7Huohaihua",
+          "code 46 -> q7Interval(value,q7ThresholdCount(profile,\"ef\",50,false))",
+          "code 49 -> q7Interval(value,q7ThresholdCount(profile,\"cf\",20,true))",
+          "unknown -> false"
+        ]
+      },
+      {
+        "method": "q7HeroStar",
+        "descriptor": "(Ljava/lang/String;[B)Z",
+        "cfg": [
+          "empty literal true",
+          "split literal by '|' and each part by ':' into hero,min,max",
+          "min>max throws IllegalArgumentException",
+          "unowned hero false",
+          "missing/non-integer sl or so throws",
+          "star=Math.addExact(Math.multiplyExact(sl,4),so)",
+          "all listed owned heroes must satisfy min<=star<=max"
+        ]
+      },
+      {
+        "method": "q7Huohaihua",
+        "descriptor": "(Ljava/lang/String;[B)Z",
+        "cfg": [
+          "iterate q7HeroDocuments",
+          "hhh missing=false; hhh present non-boolean throws",
+          "count hhh==true",
+          "return q7Interval(value,count)"
+        ]
+      },
+      {
+        "method": "q7Interval",
+        "descriptor": "(Ljava/lang/String;I)Z",
+        "cfg": [
+          "empty literal true",
+          "split by ','",
+          "exactly two integers",
+          "min>max throws",
+          "return min<=count<max"
+        ]
+      },
+      {
+        "method": "q7ThresholdCount",
+        "descriptor": "([BLjava/lang/String;IZ)I",
+        "cfg": [
+          "iterate q7HeroDocuments",
+          "intValue(field) missing/non-integer throws",
+          "below=true counts value<threshold; below=false counts value>=threshold"
+        ]
+      },
+      {
+        "method": "q7HeroDocuments",
+        "descriptor": "([B)Ljava/util/List;",
+        "cfg": [
+          "heromgr.hrs only (bhrs never participates)",
+          "LocalResourceEngine.array(hrs) yields [0]=id,[1]=hero document entries",
+          "entry without document throws",
+          "returns all owned hero documents"
+        ]
+      }
+    ]
+  },
+  "semantics": {
+    "31": "MinMaxDictCondition over original star encoding sl*4+so; {hero:(min,max)} projected as hero:min:max|...",
+    "45": "IntervalCondition [min,max) over owned heroes with per-hero hhh==true; missing hhh false; ban list excluded",
+    "46": "IntervalCondition [min,max) over owned heroes with ef>=50",
+    "49": "IntervalCondition [min,max) over owned heroes with cf<20",
+    "malformed": "evaluate() catches IllegalArgumentException/ArithmeticException/IndexOutOfBoundsException and returns status=invalid, satisfied=false (the Java owner's unknown/fail-closed form)"
+  },
+  "preservation": {
+    "dex_write": "all 648 other classes are text-identical after d2j-dex2smali",
+    "local_story_conditions": "normalized smali diff has exactly one removed line ('new-array v2, v1, [Ljava/lang/Integer;'); every original condition branch remains",
+    "old_code_differential": "1069 old-code literal evaluations over frozen event_graph.tsv predicates plus synthetic 7/21 coverage are byte-identical between the v43 frozen frame and the new candidate frame",
+    "supported_old_codes": 35
+  },
+  "host": {
+    "source": "analysis/project7/story-condition-codes-v1/host/com/project7/localmanager/ConditionCodesHost.java",
+    "checks": 3703,
+    "positive_negative_malformed": [
+      "31 both literals plus multi-hero pass/fail/malformed",
+      "45 all three literals plus missing-hhh default false",
+      "46 five literals",
+      "49 one literal"
+    ],
+    "catalog": "frozen 3490 + 222 + 16 = 3728 trigger rows parsed by real LocalEventCatalog; 16 condition rows auto+release+target-predicate; frozen rows field-identical",
+    "old_branch_dump": "1069 evaluated predicate literals; dump output identical on frozen and candidate frames",
+    "engine": "events 548/552 (46) and 5058 (49) are matches=true, blocker=null, available=true with an ef=50/cf<20 profile; 548/552 are absent without friendly heroes and 5058 without cf<20"
+  },
+  "candidate": {
+    "asset": "runtime/project7_event_auto_trigger_condition_candidate/trigger-extra-conditions-v1.tsv",
+    "rows": 16,
+    "separate_from_base": "runtime/project7_event_auto_trigger_candidate/trigger-extra-v1.tsv (222 rows, hash pinned)",
+    "combined_rows": 238,
+    "code20_blocked": 17
+  },
+  "residual": {
+    "unsupported_codes": [
+      20
+    ],
+    "unsupported_events": 17,
+    "reason": "no original client producer for actions-after-event; explicit fact only"
+  },
+  "no_prepare_no_d8_no_apk_no_native": true
+}

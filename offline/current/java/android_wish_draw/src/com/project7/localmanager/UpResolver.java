@@ -1,0 +1,12 @@
+package com.project7.localmanager;
+import java.io.*;import java.util.*;
+/** Original positive normal/random hierarchy; exact complement normalization. */
+final class UpResolver {
+ static final class Path {final HistoryCatalog.Edge outer;final HistoryCatalog.Leaf leaf;final WishProbability.Fraction mass;final boolean target;Path(HistoryCatalog.Edge e,HistoryCatalog.Leaf l,WishProbability.Fraction m,boolean t){outer=e;leaf=l;mass=m;target=t;}}
+ final int pool,hero;final List<Path>paths;final WishProbability.Fraction initial;
+ UpResolver(Map<?,?>source,HistoryCatalog graph)throws Exception{pool=DynamicCatalog.num(source.get("pool"));Map<?,?>raw=DynamicCatalog.map(DynamicCatalog.decode(source.get("raw_pool"))),normal=DynamicCatalog.map(DynamicCatalog.decode(source.get("normal")));WishCatalog.need(DynamicCatalog.num(raw.get("inc_up_cnt_type"))==1&&DynamicCatalog.num(raw.get("up_m"))==100&&DynamicCatalog.num(raw.get("up_x"))==6&&DynamicCatalog.num(raw.get("up_n"))==180&&WishProbability.Fraction.decimal(raw.get("up_r")).compare(WishProbability.ONE)==0,"UP parameters");int nid=DynamicCatalog.num(normal.get("id"));List<?>targets=DynamicCatalog.list(raw.get("check_heroes"));WishCatalog.need(targets.size()==1,"UP target");hero=DynamicCatalog.num(targets.get(0));List<Path>p=new ArrayList<>();WishProbability.Fraction u=WishProbability.ZERO;HistoryCatalog.Spec spec=graph.specs.get(pool);WishCatalog.need(spec!=null&&spec.base.total>0,"UP base");
+  for(HistoryCatalog.Edge a:spec.base.edges){HistoryCatalog.Distribution r=graph.random.get(a.target);for(HistoryCatalog.Edge b:r.edges){HistoryCatalog.Leaf l=graph.leaves.get(b.target);WishProbability.Fraction mass=new WishProbability.Fraction(a.weight,spec.base.total).multiply(new WishProbability.Fraction(b.weight,r.total));boolean hit=a.source==nid;WishCatalog.need(!hit||l.kind.equals("hero")&&l.id==hero,"UP positive hero closure");if(hit)u=u.add(mass);p.add(new Path(a,l,mass,hit));}}
+  WishCatalog.need(u.compare(new WishProbability.Fraction(1,100))==0,"UP original one percent");paths=Collections.unmodifiableList(p);initial=u;
+ }
+ Path resolve(int f,Random random){WishProbability.Fraction u=WishProbability.up(f),other=WishProbability.ONE.add(new WishProbability.Fraction(u.n.negate(),u.d));List<WishProbability.Fraction>mass=new ArrayList<>();for(Path p:paths)mass.add(p.mass.multiply(p.target?u.divide(initial):other.divide(WishProbability.ONE.add(new WishProbability.Fraction(initial.n.negate(),initial.d)))));return paths.get(WishProbability.pick(random,mass));}
+}

@@ -1,0 +1,238 @@
+{
+  "status": "source_candidate_frozen",
+  "source_files": {
+    "runtime/project7_wish_ui.py": {
+      "sha256": "b790fcc92253c4c2e9de58e63bd2c5404eb90e0fb9b82484969a76597c3ea5e5",
+      "bytes": 42734
+    },
+    "runtime/project7_wish_transport.py": {
+      "sha256": "cb9b3417579bcdfc3b7c6fec69a3f48c18e69dbfb7193be2219bb0f7e49ef923",
+      "bytes": 9714
+    },
+    "tools/project7_wish_ui_policy.py": {
+      "sha256": "9fd21769688061d8545dd015698f261bc9bd9e1a316570fa4164986e34ed32a9",
+      "bytes": 9305
+    },
+    "runtime/project7_wish_ui_entry_assets.json.gz": {
+      "sha256": "584a2e9abe5b21e2edad9dd4a82be74a697e158b26d55972a51ee8e6ca544905",
+      "bytes": 1158
+    },
+    "tests/test_project7_wish_ui.py": {
+      "sha256": "a82e23316481b920fdab703bc21ea12fc7887dea5ccce47dea949294f4efd08e",
+      "bytes": 9198
+    },
+    "tests/test_project7_wish_transport.py": {
+      "sha256": "2e8e38f9a6a5b31e6b9914595b8d1dd44741a070478604fd0523cbb84f9e8396",
+      "bytes": 13263
+    },
+    "tests/test_project7_wish_choose_guard.py": {
+      "sha256": "8a7219cd79ecf16448727b829d3f6540d9b6e34efb0242f0de7f4e5775c14a45",
+      "bytes": 10878
+    },
+    "tests/test_project7_wish_pages.py": {
+      "sha256": "16f1922ddec0d3489bbd93ede347926f7bcf9f53a1895997facbd9209d75a43f",
+      "bytes": 12203
+    },
+    "tests/test_project7_wish_combined.py": {
+      "sha256": "20fd95c8848352a1f6680e190bb306cee1707f39690cecabb21da2870ecfa5d5",
+      "bytes": 4173
+    }
+  },
+  "host_proof": "analysis/project7/wish-ui-copy-guard-plac8iaw",
+  "tests_exit_code": 0,
+  "test_cases": 47,
+  "test_command": ".venv/bin/python -m unittest tests.test_project7_wish_ui tests.test_project7_wish_transport tests.test_project7_wish_choose_guard tests.test_project7_wish_pages tests.test_project7_wish_combined -v",
+  "policy": {
+    "producer": "tools/project7_wish_ui_policy.py:ui_policy()",
+    "sha256": "72762790a130d0710545a9cb95211acfefd084cea4d05d1fe9c84bd9344427bc",
+    "bytes": 422787,
+    "candidate_verified_detail_ids": [
+      5,
+      119,
+      126,
+      143,
+      154,
+      164,
+      397,
+      426,
+      445
+    ],
+    "public_ready_ids": [],
+    "verification": "finite original source consumers + fixed dependencies; not native rendering"
+  },
+  "entry_asset": {
+    "path": "runtime/project7_wish_ui_entry_assets.json.gz",
+    "sha256": "584a2e9abe5b21e2edad9dd4a82be74a697e158b26d55972a51ee8e6ca544905",
+    "bytes": 1158,
+    "ui_comp_rows": 6,
+    "entry_paths": 92,
+    "all_required_paths": 201,
+    "evidence": "reports/project7-wish-ui-resource-evidence.json"
+  },
+  "original_module_pins": {
+    "lib/client/GateClient": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "692c31d0f90606c6450337110307880b98244b8a3f543b1917769df1b33f743c",
+      "source640_sha256": "692c31d0f90606c6450337110307880b98244b8a3f543b1917769df1b33f743c"
+    },
+    "lib/client/ServerProxy": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "e05b45e34422fe96b7c521c32e7612e75aed47123df047a1d6c928edf47f726f",
+      "source640_sha256": "e05b45e34422fe96b7c521c32e7612e75aed47123df047a1d6c928edf47f726f"
+    },
+    "lib/mobilerpc/ChannelClient": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "9da82603ebd4891ebf360b6e29562b68211db73ff10dd99a207d080fe8b638f7",
+      "source640_sha256": "9da82603ebd4891ebf360b6e29562b68211db73ff10dd99a207d080fe8b638f7"
+    },
+    "lib/mobilerpc/RpcChannel": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "58ac7723d1a0946be0ab83d632d2da015e7956cb97cea09b1e98c8cb57587803",
+      "source640_sha256": "58ac7723d1a0946be0ab83d632d2da015e7956cb97cea09b1e98c8cb57587803"
+    },
+    "lib/common/EntityManager": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "e567df02ec781ead2061a7bf82be0c3e023329f5848add34998eaa804d76af1d",
+      "source640_sha256": "e567df02ec781ead2061a7bf82be0c3e023329f5848add34998eaa804d76af1d"
+    },
+    "logic/logic_state": {
+      "p7_640_byte_exact": false,
+      "p7_sha256": "75765df74e0d7fee39282935157afc1a1a6c6d5c32023a7c1a3918ab636779c4",
+      "source640_sha256": "8d3647db68fdb16614d22dc12a23b5d650feac9f95cd6cb2be3aef1708a3eac7"
+    },
+    "entity/avatar_members/LuckyDrawMember": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "ae2ca88c2d7ca4e2f1c5d54801132d64792e61a3d9501153ab5e5c7187ed49d4",
+      "source640_sha256": "ae2ca88c2d7ca4e2f1c5d54801132d64792e61a3d9501153ab5e5c7187ed49d4"
+    },
+    "entity/avatar_attrs/LuckyDrawData": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "b229ea252a54f9d4864192c1ea48bea348b462508131eb6c07185b332a089a32",
+      "source640_sha256": "b229ea252a54f9d4864192c1ea48bea348b462508131eb6c07185b332a089a32"
+    },
+    "cocos/panels/card_yingzhuang": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "00ccec469e77373aa7424635c7fa7d9f36f4aa517bca89693db09c1efed9c16e",
+      "source640_sha256": "00ccec469e77373aa7424635c7fa7d9f36f4aa517bca89693db09c1efed9c16e"
+    },
+    "cocos/panels/card_jiaozhi": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "aa23bc45c5f8088cfef7082d9ee26aad1c71ebf36510f214b598123657d8a984",
+      "source640_sha256": "aa23bc45c5f8088cfef7082d9ee26aad1c71ebf36510f214b598123657d8a984"
+    },
+    "cocos/panels/card_activity_base": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "5c78d0f5b0592005742f11e6f936374ecbca3b97048f2030f42fd74d18ffc871",
+      "source640_sha256": "5c78d0f5b0592005742f11e6f936374ecbca3b97048f2030f42fd74d18ffc871"
+    },
+    "cocos/panels/card_box": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "d58f62b565b18d79d9bdfe82e4d9391da3026816f53a10c6f836b1b6932e3496",
+      "source640_sha256": "d58f62b565b18d79d9bdfe82e4d9391da3026816f53a10c6f836b1b6932e3496"
+    },
+    "cocos/comps/card_common/tips": {
+      "p7_640_byte_exact": true,
+      "p7_sha256": "af005140e370840c00eb0ab3b3101cb99c6b8b17063d154f6946c1c0c38e0d2c",
+      "source640_sha256": "af005140e370840c00eb0ab3b3101cb99c6b8b17063d154f6946c1c0c38e0d2c"
+    }
+  },
+  "logic_state_exception": {
+    "whole_module_equal": false,
+    "gate_connect_and_reconnect": "selected Code27 code/consts/names/args/flags equal",
+    "gate_disconnect": "P7 only offsets82/85 and107/110 change global GateClient.GateClient to exact local gate.__class__ for two callback constants; original assignment/unregister/disconnect/Avatar sequence unchanged",
+    "host": "p7_disconnect_original verifies exact static instruction delta then two bounded source expression substitutions before finite AST execution; never original NeoX opcode execution"
+  },
+  "installation": {
+    "early_modules": [
+      "project7_wish_transport",
+      "project7_wish_ui"
+    ],
+    "early": "transport_owner=project7_wish_transport.install(); member_owner=project7_wish_ui.install_member_guard(transport_owner), before any Gate, Member cache or actual ClientAvatar class materialization",
+    "avatar": "member_owner.check_avatar(exact_ClientAvatar_class)",
+    "late": "project7_wish_ui.install(policy_text, exact_history_avatar_type, exact_friend_owner, exact_families_owner, member_owner)",
+    "shared_abi": "exact detail_indices=(0,2,6), exact Box/tips/ActivityBase classes; register_detail_delegate and detail_original. No external wrapper around family records. One-way Wish.current -> families.current",
+    "runtime_assets": "fixed Wish backend catalog4abad and entrygzip584a; policy JSON embeds public projection; runtime never reads analysis",
+    "stopped_seed_prerequisite": "FullCollection commit -> WishGateway.prepareStoppedProfile -> bootstrap final validate/READY; two commits explicitly non-atomic"
+  },
+  "business": {
+    "draws": "history-free-v1 for nine; normal1/stock484/old485 untouched",
+    "change": "source yuanbao ladder100/200/300/300/500/500 then500 and ctr-bound scope or fixed1; original validSetChooseTreasure/setChooseTreasure bodies",
+    "group": "five real-ownership read-only f/a/c views, source wish formulas and explicit safe90 override; original animation acknowledgement",
+    "up": "three pools share real startup-seeded iuc; original banner body + projected remaining count",
+    "gift": "existing history-source-gift-daily-cap-v1; no client grant/receipt fiction",
+    "ui_side_effect_boundary": "no wallet/ct/profile/grant/global-table/clock mutation in read-only views; only original business methods called"
+  },
+  "transport": {
+    "authority": "original gg.logic.gate_client exact Gate + controller.rpc_channel + current TCP/connection-attempt identities",
+    "rpc_methods": [
+      "seed_reply",
+      "session_key_ok",
+      "connect_reply",
+      "chat_to_client",
+      "create_entity",
+      "entity_message",
+      "destroy_entity",
+      "reg_md5_index"
+    ],
+    "before_side_effects": true,
+    "stale": "old controller dropped before seq/lookup; old TCP success/failure/timeout dropped; old proxy listener cannot clear replacement owner/stub",
+    "ordinary": "non-Gate ChannelClient original delegation preserved",
+    "dead_reset": "no original callers, mismatched Gate.reset body unchanged; actual disconnect->noarg Channel.reset->new Gate/start_game finite-tested"
+  },
+  "typed": {
+    "server_required": "ACK-only duplicate reliable packet, no repeated typed1882 or callback",
+    "pending": "one logical sent choose per exact connection. Reset does not permit a second fee; stale unique result drains admission, no new data mutation. A different accepted transport can retire old own lease after old-packet gate",
+    "lease": "exact UI + _lock dict identity + once actual acquired contribution; reset/newUI cannot consume a new count; retired oldUI wait only timer cancellation/node hiding",
+    "failure": "validation/resources/prewire failure no pending/lock; postwire ambiguity remains quarantined; wrong t now rejected before consuming pending",
+    "unscoped": "raw original Member producer refuses1882 before lock/send; scoped original page confirmation is the audited paid producer",
+    "schema": "original Int r,Int t,List i; original outer and metadata.call both hit same guarded typed body; no invented seq/hash"
+  },
+  "finite_coverage": [
+    "whole original pool5 page/Comp/fee/confirm and ctr",
+    "all five group probability/list + source animation ACK",
+    "four original old-JZ zero-count pages and six original Box popup branches",
+    "three original UP banners",
+    "original checkMultiClick retained BEGIN/END stale cleanup",
+    "actual frozen draw/friend/selector/families class records and ActivityBase stale hide",
+    "actual Controller/on_request/Gate/EntityManager + original reliable/clientAvatar/typed decorator/UI counter bodies"
+  ],
+  "platform_seams": [
+    "inert native widgets/actions/renderer",
+    "inert timer scheduling/TCP",
+    "protobuf parse seam with actual request/controller bodies",
+    "transport seam in isolated Member tests, actual channel tests separate"
+  ],
+  "unproven": [
+    "native renderer/shader/animation runtime",
+    "final Root embedded-loader/Main/public-nine combination",
+    "original-server hidden probability precedence",
+    "unknown alternate transports outside fixed P7 Gate"
+  ],
+  "backend_frozen": {
+    "gateway_sha256": "a1742eef258066274465d4c6adec3d9a4e713fcb05b51ebe81a9029615713763",
+    "host": "analysis/project7/wish-host-rq13c60u",
+    "asset_sha256": "4abad0f105f6b2088632369e5ff86040791640c9724deb85d75c57660a168c91",
+    "contract_sha256": "b02237e95724ddffcea4f3d7beb9675f917fae3f4127683cd542767dfbe9f8a1",
+    "java_classes": 20,
+    "this_ui_java_class_delta": 0
+  },
+  "review": "reports/astra-p7-wish-ui-transport-review.md; bounded fixed-producer review no blocker, final wrong-t guard and P7 selected disconnect proof sent for annotation",
+  "forbidden_execution": {
+    "D8": false,
+    "APK": false,
+    "signing": false,
+    "game": false,
+    "device": false,
+    "emulator": false
+  },
+  "avatar_copy_guard": {
+    "lookup_only": "check() inspects only already present sys.modules entity.ClientAvatar.ClientAvatar; no import",
+    "exact_raws": [
+      "setChooseTreasure",
+      "replySetChooseTreasure"
+    ],
+    "acyclic": "_check_avatar_copy has no check()/check_avatar() calls; check_avatar first check then helper; transport first check then original transport",
+    "failure_boundary": "wrong either raw rejects choose before lock/send and typed before consuming pending or unlocking",
+    "host": "early absent class valid; late correct copies valid; wrong either copy leaves same pending and original lock contribution intact"
+  }
+}

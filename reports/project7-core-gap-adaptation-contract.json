@@ -1,0 +1,521 @@
+{
+  "format": "project7-core-gap-adaptation-contract-v1",
+  "scope": "static-only; no production/test modification, device, APK, private profile or secret access",
+  "decision": {
+    "cg": "Implement one generic CG claim extension around the stock resource engine and one live BSON transaction; eligible IDs and reward come from pinned official tables, not handwritten route rules.",
+    "ending": "Do not alias to triggerExternalEvent. The two known producers are dormant under current pinned mainline_week_info. Keep missing handler explicit; no positive implementation is justified by this evidence. Future nonzero table entries require separate admission/continuation proof, not per-event translation."
+  },
+  "data_evidence": {
+    "mainline_week_info": {
+      "path": "analysis/android640-scripts/com/data/cdata/mainline_week_info.marshal",
+      "sha256": "4a14531712d43d9b006c716a6364fbec0620f2b765ceb3a68505f8db4540b844",
+      "count": 3,
+      "rows": {
+        "1": {
+          "id": 1,
+          "value": [
+            {
+              "requires": [
+                [
+                  2,
+                  6,
+                  7
+                ]
+              ],
+              "true_client_event": 1,
+              "open_chapters": [
+                2,
+                3,
+                4
+              ],
+              "false_client_event": 0,
+              "false_event": 0
+            }
+          ]
+        },
+        "2": {
+          "id": 2,
+          "value": [
+            {
+              "requires": [
+                [
+                  42,
+                  43
+                ]
+              ],
+              "true_client_event": 2,
+              "open_chapters": [],
+              "false_client_event": 0,
+              "false_event": 0
+            },
+            {
+              "requires": [
+                [
+                  19,
+                  20,
+                  21
+                ]
+              ],
+              "true_client_event": 3,
+              "open_chapters": [],
+              "false_client_event": 0,
+              "false_event": 0
+            },
+            {
+              "requires": [
+                [
+                  28,
+                  29,
+                  30
+                ]
+              ],
+              "true_client_event": 4,
+              "open_chapters": [],
+              "false_client_event": 0,
+              "false_event": 0
+            },
+            {
+              "requires": [
+                [
+                  8,
+                  9
+                ]
+              ],
+              "true_client_event": 6,
+              "open_chapters": [],
+              "false_client_event": 0,
+              "false_event": 0
+            }
+          ]
+        },
+        "3": {
+          "id": 3,
+          "value": [
+            {
+              "requires": "",
+              "true_client_event": 5,
+              "open_chapters": [
+                5
+              ],
+              "false_client_event": 0,
+              "false_event": 0
+            }
+          ]
+        }
+      },
+      "value_count": 6
+    },
+    "mainline_score_info": {
+      "path": "analysis/android640-scripts/com/data/cdata/mainline_score_info.marshal",
+      "sha256": "dbab43659cd8a4c2983bc3ae46b340465b51b7b227c472523e4ac7d89a79ccff",
+      "count": 32,
+      "line_cgs": {
+        "1": [
+          11,
+          13
+        ],
+        "2": [
+          46,
+          47
+        ],
+        "3": [
+          20,
+          21
+        ],
+        "4": [
+          93,
+          94,
+          95
+        ],
+        "5": [
+          104,
+          105
+        ],
+        "6": [
+          125,
+          126,
+          127
+        ],
+        "7": [
+          136,
+          137
+        ],
+        "8": [
+          147,
+          148,
+          149,
+          150
+        ],
+        "9": [
+          159,
+          160,
+          161
+        ],
+        "10": [
+          162,
+          163
+        ],
+        "11": [
+          184,
+          185,
+          186
+        ],
+        "12": [
+          202,
+          203
+        ],
+        "13": [
+          214,
+          215,
+          216
+        ],
+        "14": [
+          226,
+          227
+        ],
+        "15": [
+          240,
+          241,
+          242
+        ],
+        "16": [
+          256,
+          257,
+          258
+        ],
+        "17": [
+          271,
+          272
+        ],
+        "18": [
+          281,
+          282
+        ],
+        "19": [
+          298,
+          299
+        ],
+        "20": [
+          313,
+          312
+        ],
+        "21": [
+          323,
+          324
+        ],
+        "22": [
+          337,
+          338,
+          339
+        ],
+        "23": [
+          356,
+          357
+        ],
+        "24": [
+          371,
+          370
+        ],
+        "25": [
+          382,
+          383
+        ],
+        "26": [
+          398,
+          399
+        ],
+        "27": [
+          413,
+          414
+        ],
+        "28": [
+          417,
+          418
+        ],
+        "29": [
+          432,
+          433
+        ],
+        "30": [
+          442,
+          443
+        ],
+        "31": [
+          450,
+          451
+        ],
+        "32": [
+          465,
+          466
+        ]
+      },
+      "unique_claimable_cgs": 74
+    },
+    "reward_random": {
+      "path": "analysis/android640-scripts/com/data/cdata/reward_random.marshal",
+      "sha256": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+      "count": 22214,
+      "selected": {
+        "weights": [
+          [
+            49770,
+            10
+          ]
+        ],
+        "id": 11523,
+        "shows": [
+          [
+            49770,
+            0
+          ]
+        ]
+      }
+    },
+    "reward_common": {
+      "path": "analysis/android640-scripts/com/data/cdata/reward_common.marshal",
+      "sha256": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29",
+      "count": 31903,
+      "selected": {
+        "items": [
+          329
+        ],
+        "tradeType": 3,
+        "itemsNum": [
+          700
+        ],
+        "id": 49770
+      }
+    },
+    "item_data": {
+      "path": "analysis/android640-scripts/com/data/cdata/item_data.marshal",
+      "sha256": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+      "count": 12421,
+      "selected": {
+        "sort_level": 1,
+        "jump_type": 14,
+        "star": 3,
+        "jump_para": [
+          4
+        ],
+        "type": 8,
+        "wrap": 99999,
+        "desc": "城市纪念券，可在纪念商店兑换物品。",
+        "id": 329,
+        "icon": "10062",
+        "sync_cbg": 1,
+        "tradeType": 3,
+        "ui_subclass": 1,
+        "name": "纪念券",
+        "virtual_sub_type": 17,
+        "subtype": 17,
+        "release": true,
+        "ui_class": 2,
+        "use_type": 14
+      }
+    }
+  },
+  "ending": {
+    "request": {
+      "method": "requestTriggerEventByEnding",
+      "params": {
+        "e": "event integer"
+      },
+      "transport": "callServerMethod, not the existing reliable triggerExternalEvent envelope"
+    },
+    "reply": {
+      "method": "replyTriggerEventByEnding",
+      "params": {
+        "r": "Bool"
+      },
+      "true_effect": "close_story_panel only; does not itself run handleIncWeekCb or increment week"
+    },
+    "written_markers": [
+      "storyData.last_storyline_click",
+      "avatar.handleIncWeekCb",
+      "storyData.change_week"
+    ],
+    "known_producers": [
+      "cocos/panels/ending.py:55",
+      "cocos/panels/city.py:1653"
+    ],
+    "current_table": {
+      "weeks": 3,
+      "rules": 6,
+      "nonzero_false_client_event": 0,
+      "nonzero_false_event": 0,
+      "same_p7_marshal_sha256": "4a14531712d43d9b006c716a6364fbec0620f2b765ceb3a68505f8db4540b844"
+    },
+    "stock_generic": {
+      "method": "LocalEventEngine.triggerExternalEvent(I)Z",
+      "external_ids": [
+        388,
+        389,
+        390,
+        391,
+        395,
+        396,
+        397,
+        602,
+        603,
+        1045,
+        1046,
+        20030,
+        20033,
+        20086,
+        30039,
+        40036
+      ],
+      "admission": [
+        "exists",
+        "release",
+        "in catalog.externalEvents",
+        "not mutex"
+      ],
+      "true_can_mean": [
+        "already completed",
+        "already processing",
+        "added to available",
+        "completed via complete(e,true)"
+      ],
+      "reply": "triggerExternalEventReply is emitted unconditionally and contains no accepted field",
+      "committed_delivery": "tutorialStore.save only when engine returns true, then pushEvents; no triggerClientEvent found in indexed backend",
+      "safe_alias": false
+    },
+    "future_positive_requirements": [
+      "Re-evaluate actual current failed-ending rule from authoritative profile/week; requested e must be the rule result and its client dialogue prerequisite must have a justified continuation contract.",
+      "Prove that event is admitted by the stock generic path without editing @external membership or using reflection to invoke complete/start forcibly.",
+      "Distinguish current request transition/receipt from unrelated preexisting completed/processing state; true alone is not ACK.",
+      "Reuse stock event admission, tutorial persistence, service effects closure and week transition; acknowledge only durable same-session receipt and genuine continuation, never empty reply or pushEvents alone.",
+      "Preserve full engine/Progress state on save failure; no false result after an already committed effect pretending rollback.",
+      "Review actual getMainLineWeekEvent fail_event nested-list shape before enabling future nonzero table data."
+    ],
+    "negative_context_contract": [
+      "Capture pre-original marker presence and exact values; preserve im_func and actual self.",
+      "One active request context bound to avatar/story/week/proxy or backend owner/session and transition generation; record exactly the values written by original body.",
+      "Restore only precommit definite failure and only if all identities, week/day, transition snapshot and written markers still match; delete originally absent attributes.",
+      "Do not invoke callback, enter_emergency, close_story_panel or change business progress on failure.",
+      "Reply has no request token: do not guess late response identity; suppress overlapping requests or use internal dispatch-bound correlation. Ambiguous/disconnected committed outcome must reconcile, not roll back."
+    ]
+  },
+  "cg": {
+    "request": {
+      "method": "requestMainlineCgRewards",
+      "params": {
+        "li": "line_id integer",
+        "cg": "CG integer"
+      },
+      "transport": "callServerMethod"
+    },
+    "reply": {
+      "method": "replyMainlineCgRewards",
+      "params": {
+        "rs": "Bool",
+        "i": {
+          "cg": "integer",
+          "rwd": "stock Result.reward BSON"
+        }
+      }
+    },
+    "eligibility": [
+      "li exists in frozen official mainline_score_info",
+      "cg belongs to that row cgs, not all_cgs",
+      "cg is already owned in authoritative BSON root cgs",
+      "cg is not already claimed in oaed.mcr; claim key is global CG ID, not (line,cg)",
+      "strict numeric shape; no client-supplied reward/count; checked overflow and intact identity"
+    ],
+    "reward": {
+      "source": "MainlineKey.CG_REWARDS=(11523,); random11523→common49770→item329×700",
+      "kind": "souvenir",
+      "amount": 700,
+      "item_id": 329,
+      "stock_grant": "LocalResourceEngine.grant(Result,LocalResourceCatalog,String,int,int,int):void",
+      "arguments": [
+        "result",
+        "store.resources()",
+        "souvenir",
+        329,
+        700,
+        1
+      ],
+      "sync": "LocalResourceEngine.syncCurrencies(Result):void -> updateSouvenirCoin(v)",
+      "no_inventory_329": true,
+      "confidence": "Pinned client constants/table-derived offline policy; absent original server source does not establish undocumented official server modifiers."
+    },
+    "state": {
+      "profile": "same original account .bson",
+      "balance": "root souvenir",
+      "claim": "root oaed.mcr array of (CG integer, true) pairs consumed by dict(initDict.get(\"mcr\",[]))",
+      "proposed_receipt": "versioned extension field in same BSON, CG key + reward-plan hash + exact reward + commit version; name chosen by implementation",
+      "preserve": [
+        "all unrelated BSON fields",
+        "all pre-existing claim entries",
+        "account identity",
+        "Progress and week state"
+      ]
+    },
+    "transaction": [
+      "Authenticate/resolve current account using existing gateway session; never accept filename/account from request.",
+      "Acquire actual LocalProfileStore instance monitor then original static PROFILE_LOCK; no SAVE_ACCESS requirement for live RPC.",
+      "Read current canonical BSON with original private readAll; validate eligibility and existing receipt/claim inside lock.",
+      "Construct one stock Result candidate; grant souvenir and add oaed.mcr + receipt to this same candidate; syncCurrencies and append positive claim reply to a not-yet-emitted reply list.",
+      "Commit exactly once using original writeAtomic(File,byte[]) after complete candidate built; only then emit original Result replies in order with claim reply last.",
+      "Before rename failure: no success/side effects escape; after durable commit but lost reply: receipt supplies deterministic replay without regrant."
+    ],
+    "replay": "Positive replay may return original stored reward receipt to reconcile client claim; no second balance increment. Original consumer repeats cosmetic CG/reward presentation if invoked twice; per-delivery once/dedup is separate from persistent award idempotence and must be tested, not called exactly-once UI.",
+    "legacy_claim": "oaed.mcr already contains CG but no extension receipt: do not grant. Treat as legacy claimed; reconcile claim with empty reward or existing validated projection, do not fabricate a new 700 award.",
+    "failure": "rs=false,i={} executes original UI unlock, no claim/CG/reward mutation. A failure UI message may be additive; no fabricated success.",
+    "atomic_limit": "Original writeAtomic fsyncs temporary file then android.system.Os.rename; no observed parent-directory fsync. One-file transaction only; no cross-file atomicity or hardware power-loss guarantee claimed."
+  },
+  "injection": {
+    "recommended_method": "LocalGatewayServer.handleResourceRpc(Ljava/io/OutputStream;[B[B[BLjava/lang/String;)Z",
+    "change_budget": "One pinned method entry trampoline calls a new same-package source helper for exactly MD5(requestMainlineCgRewards); false/unhandled falls through unchanged stock body. No full DAD class recompile. Both ordinary/reliable stock dispatch already reach handleResourceRpc.",
+    "helper_proposed_not_existing": "CoreGapBridge.handleResourceRpc(LocalGatewayServer,OutputStream,byte[],byte[],byte[],String):boolean",
+    "access_boundary": [
+      "original gateway.profileProvider -> require actual known LocalProfileStore or explicit typed adapter",
+      "original private gateway.writeFrame(OutputStream,int,byte[])",
+      "original static ProtoLite.entityMessage(byte[],byte[],byte[])",
+      "original private LocalProfileStore.PROFILE_LOCK/profilesDirectory/readAll(File)/writeAtomic(File,byte[])"
+    ],
+    "access_strategy": "Explicit compile-time exported seam or exact descriptor-pinned controlled reflection; list and test each member access. No arbitrary reflection, no replacement original class_def. This bridge API is proposed, not already present.",
+    "do_not": [
+      "Simply wrap ProfileProvider without adding dispatcher recognition",
+      "Reuse unrelated known RPC method name",
+      "Call Archive.snapshot/importNew live; those are stopped-save/identity-rewriting paths",
+      "Write JSON mirror or sidecar claim as authoritative",
+      "Hold PROFILE_LOCK then call store synchronized methods; lock order would invert",
+      "Acquire SAVE_ACCESS after store lock",
+      "Hold locks while emitting network/UI callbacks",
+      "Invalidate/change week solely to show reward"
+    ],
+    "event_cache": "CG uses the existing resource path semantics. It does not call start/complete/week or force an effects closure. Any extra immediate event reevaluation must use the original existing service engine path; it is not necessary to construct the currency award."
+  },
+  "acceptance_checklist": [
+    "Static extraction pins all five table hashes, line→CG sets, reward chain and currency mapping; data change fails closed.",
+    "Compile helper against actual manager DEX API visibility; verify one method delta, all unrelated methods/classes unchanged, full DEX verifier.",
+    "Run original CG request+consumer with genuine BSON output: eligible CG success balances+700, mcr set, updateSouvenirCoin before reward; invalid li/cg/unowned cases unlock with false and no writes.",
+    "Concurrent duplicate/reconnect/after-rename-before-reply scenarios produce one award; legacy claim never regrants; stale account/session never writes another profile.",
+    "Actual stock BsonLite/ResourceEngine/writeAtomic synthetic-profile tests: candidate preservation, overflow, failed write, original consumer pair-array reconstruction and week/reset persistence of claim.",
+    "Ending negative controls: all six current rules admit no request; unknown e cannot pass; external false empty reply and already-completed true are not positive ending ACKs.",
+    "Any future ending positive test must prove original event/option/UI completion and actual week continuation. No fake win, synthetic callback or forced complete.",
+    "No device/native acceptance claimed by this contract."
+  ],
+  "remaining_unknowns": [
+    "No original online server implementation proves additional CG eligibility/reward multipliers; the contract uses explicit pinned client data.",
+    "Claim receipt/oaed.mcr survival through all stock profile normalization/week reset must be verified on synthetic original-engine bodies before implementation closure.",
+    "Future nonzero ending rule admission, completion receipt and week continuation equivalence are unproven; current zero-valued data does not supply a positive example.",
+    "The proposed live bridge has not been implemented or DEX-verified.",
+    "Unexpected device filesystem power-loss behavior lies beyond original fsync+rename evidence."
+  ],
+  "source_sha256": {
+    "analysis/original-py-640/entity/avatar_members/StoryMember.py": "add09f1574f3ce103b7ac9f637650e3ec73c2291fec1dee8aabc7cdc70def067",
+    "analysis/original-py-640/entity/avatar_members/OddsAndEndsMember.py": "552d9ae8501619968629477590c45a3b0688da42b864da2eca86566bf902afd5",
+    "analysis/original-py-640/entity/avatar_members/WeekNumMember.py": "38797b364c54be6a14e035e68648d95320b30529111fbbb58781219ce5380627",
+    "analysis/original-py-640/entity/avatar_attrs/OddsAndEndsData.py": "2659774226cad4d3c3899473867200c2bdae769c818c9d600eacb82e9362d985",
+    "analysis/original-py-640/cocos/comps/dangan_common/content.py": "1c775342c4f9384f1239b20901065ad9993daaeb78c2c307edbd164742372069",
+    "analysis/project7/manager/com.project7.localmanager.LocalEventEngine.dis": "364f4e2a17044d9240a51f4f6b50680d3efbd3b9050fddbd305637c41d2fc747",
+    "analysis/project7/manager/com.project7.localmanager.LocalResourceEngine.dis": "1ba409f0c98c573e06b42a8c9d7ca76aa8452370791f12fd961bc6577ce5a561",
+    "analysis/project7/research/readable/offset-dis/LocalProfileStore.dis": "e9e04cd98d2d42a47f3130a30f1749bedcba8825c200408fecd61f9955c0d4f0",
+    "analysis/project7/research/readable/offset-dis/LocalGatewayServer.dis": "743b6e3ac6333dde5e541406f76276f7617779e8358ed723313f3698b7e9476c",
+    "analysis/project7/manager/assets/event_graph.tsv": "7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "added_methods": [
+    "LocalStoryEntryPolicy.q7OriginalSupports",
+    "BsonLite.q7OriginalAllAreaInfoReplyDocument",
+    "LocalGatewayServer.q7QueryAreaId(Ljava/lang/Integer; Z [B)I",
+    "LocalGatewayServer.q7QueryAreaAllowed(Ljava/lang/Integer; [B)Z",
+    "LocalGatewayServer.q7StoryCityCocBegin(Lcom/project7/localmanager/LocalGatewayServer$ProfileProvider;Ljava/lang/String;Ljava/lang/String;[BLcom/project7/localmanager/LocalTutorialStore$Progress;)Lcom/project7/localmanager/LocalEconomyEngine$Result;",
+    "LocalGatewayServer.q7StoryCityCocFinish(Lcom/project7/localmanager/LocalGatewayServer$ProfileProvider;Ljava/lang/String;Ljava/lang/String;[BLcom/project7/localmanager/LocalTutorialStore$Progress;)Lcom/project7/localmanager/LocalEconomyEngine$Result;"
+  ],
+  "bridges_preserve_original_flags_plus_synthetic": true,
+  "changed_methods": [
+    "Lcom/project7/localmanager/LocalGatewayServer;handleClient(Ljava/net/Socket; Lcom/project7/localmanager/LocalGatewayServer$ClientSession;)V",
+    "Lcom/project7/localmanager/LocalGatewayServer;handleCombatAdmission(Ljava/io/OutputStream; [B Ljava/lang/String; Lcom/project7/localmanager/LocalTutorialStore$Progress; Lcom/project7/localmanager/LocalEventEngine; Ljava/util/Set; Ljava/util/Set; I [B)V",
+    "Lcom/project7/localmanager/LocalGatewayServer;handleReliableRpc(Ljava/io/OutputStream; [B [B Ljava/lang/String; Lcom/project7/localmanager/LocalTutorialStore$Progress; Lcom/project7/localmanager/LocalEventEngine; Ljava/util/Set; Ljava/util/Set; Ljava/util/Map; Ljava/util/Set;)V",
+    "Lcom/project7/localmanager/LocalChapterCityEngine;locked([B I)Z",
+    "Lcom/project7/localmanager/LocalChapterCityEngine;state([B I)Ljava/lang/Integer;",
+    "Lcom/project7/localmanager/LocalStoryRuleRegistry$$ExternalSyntheticLambda4;apply(Lcom/project7/localmanager/LocalResourceEngine$Result; Lcom/project7/localmanager/LocalEventCatalog; Lcom/project7/localmanager/LocalTutorialStore$Progress;)V",
+    "Lcom/project7/localmanager/LocalStoryEntryPolicy;supports(I)Z",
+    "Lcom/project7/localmanager/BsonLite;allAreaInfoReplyDocument(Z Lcom/project7/localmanager/LocalTutorialStore$Progress; [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;area(I)I",
+    "Lcom/project7/localmanager/LocalCityProgress;consumeVictory(Lcom/project7/localmanager/LocalTutorialStore$Progress; [B I I)Z",
+    "Lcom/project7/localmanager/LocalCityProgress;mapStages(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;stages(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;status(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)I",
+    "Lcom/project7/localmanager/LocalWeekEngine;resetProfile([B Lcom/project7/localmanager/LocalTutorialStore$Progress; I Lcom/project7/localmanager/LocalWeekCatalog;)[B",
+    "Lcom/project7/localmanager/LocalPuzzleEngine$Room;<init>([Ljava/lang/String;)V",
+    "Lcom/project7/localmanager/LocalPuzzleEngine$Clue;<init>([Ljava/lang/String;)V",
+    "Lcom/project7/localmanager/LocalGatewayServer;handleCombatOfflineFinish(Ljava/io/OutputStream; [B [B Ljava/lang/String; Lcom/project7/localmanager/LocalTutorialStore$Progress; Lcom/project7/localmanager/LocalEventEngine; Ljava/util/Set; Ljava/util/Set;)V"
+  ],
+  "classes": 649,
+  "defined_methods": 3717,
+  "format": "project7-story-city-gateway-puzzle-coc-seams-v6",
+  "helper": "Lcom/project7/localmanager/StoryCityPolicy;",
+  "patch": {
+    "bytes": 1014397,
+    "sha256": "10a840c9f2118dec57bd7f35f12573f4fca312b92aaaf1e6d270b5904bb0736a"
+  },
+  "scope": "Independent candidate. Core StoryCityPolicy ABI, profile-gated Gateway query seam, puzzle bounds, and the COC begin/finish Store-result seam. No D8/APK/native evidence.",
+  "source": {
+    "bytes": 1159096,
+    "sha256": "7f13c24a613676ee520bf6ed2590a6bf33788cb6955c92f3e9f446dee89c0d82"
+  },
+  "target": {
+    "bytes": 1161220,
+    "sha256": "fee369231e8924923f774cdbda4961f91b6ab87cee237b249cff8229b535f1c6"
+  },
+  "query_seam": {
+    "resolver": "LocalGatewayServer.q7QueryAreaId(Ljava/lang/Integer;Z[B)I private static regs5; resolution only, no sentinel",
+    "gate": "LocalGatewayServer.q7QueryAreaAllowed(Ljava/lang/Integer;[B)Z private static regs4; true for non-owned, null, legacy 1..8, catalog 9/10000..10003; false for owned unknown",
+    "profile": "exactly one authoritative load occurs before the gate/resolver (handleClient load, handleReliableRpc snapshot); same register is reused by the BsonLite reply; original post-resolver load removed; no provider call between gate and reply",
+    "non_owned": "allowed=true and q7QueryAreaId delegates to unchanged resolveAreaId(Integer,Z)I; original reply path preserved",
+    "owned_known": "allowed=true; q7 resolves null->strict?1:0, otherwise the requested area (1..8/9/10000..10003)",
+    "owned_unknown": "allowed=false; no areaInfoReplyDocument/areaStagesReplyDocument is called; handler sends existing client stub showMessageStr with message \u8be5\u5730\u533a\u6682\u4e0d\u652f\u6301\u67e5\u8be2; no city state mutation, no fake area entry, no empty ai, no callback-only",
+    "consumer_basis": "CityMember getAreaInfoRequest/getAreaStagesRequest are callback-less typed RPCs; CommonMember.showMessageStr displays a common message only; CityData areas_info/stage are untouched on the reject path",
+    "resolveAreaId": "byte-identical; referenced only inside q7 non-owned delegation",
+    "reject_tail": "reject goto targets the post-log tail assignment (logAt+8: client move-object v11,v9; reliable move-object/from16 v8,v29), skipping the original append(I) log block so reject register types do not merge with the log int path",
+    "translation": "dex2jar+javap entry bodies contain no d2j fail translate; handleReliableRpc is invoked on the host frame at runtime"
+  },
+  "query_only_followup": "Implemented for the two Gateway area query RPCs only, profile-gated; no global 1..8 relaxation.",
+  "puzzle_seam": {
+    "room": "LocalPuzzleEngine$Room.<init> inserts const/4 v4,4 before the upper check and compares id<=4; lower id>=1 unchanged",
+    "clue": "LocalPuzzleEngine$Clue.<init> inserts const/4 v3,4 after the cg iput; upper room check reuses v3 so cg (v5) lower bound is unchanged",
+    "preserved": "rooms 1..3 and clues 1..16 untouched; no unrelated arrays/constants"
+  },
+  "coc_seam": {
+    "begin": "LocalGatewayServer.q7StoryCityCocBegin delegates only catalog COC scenes to StoryCityCocPolicy.begin, persists Progress through the real LocalTutorialStore before returning, and returns Settlement.storeResult; non-COC/foreign providers call the original updateEconomy.",
+    "finish": "LocalGatewayServer.q7StoryCityCocFinish settles only on normal admission, or recovers a durable receipt with persisted pending and missing Progress completion by returning a synthetic win result for the original finishStoryCombat trace/save, with no second Store call and no reward.",
+    "store_result": "StoryCityCocPolicy.Settlement.storeResult exposes the original LocalEconomyEngine.Result so the Gateway cache/control/reward frames are preserved."
+  }
+}

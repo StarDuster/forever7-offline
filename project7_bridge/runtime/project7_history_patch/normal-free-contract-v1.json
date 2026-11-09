@@ -1,0 +1,43 @@
+{
+  "schema": "project7-normal-free-manager-v1",
+  "status": "source-frozen-host-verified-build-pending",
+  "source": "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java",
+  "source_sha256": "b8f4abfd93a69b461a1e533191fb08fb892fa2566542c9dc7deefa11da4ebe61",
+  "class": "com.project7.localmanager.HistoryDrawPolicy",
+  "method": "spend",
+  "descriptor": "(Lcom/project7/localmanager/LocalResourceEngine$Result;ILcom/project7/localmanager/LocalResourceCatalog$Pool;I)V",
+  "change": "type 1 early return before the existing history/original spend path",
+  "dex_scope": [
+    "classes6.dex: Lcom/project7/localmanager/HistoryDrawPolicy;->spend"
+  ],
+  "classes7_manager": {
+    "sha256": "0b4c41a5461840fb7bdb02529732a2c6849d604893b6a9390b9a9404618d0eb4",
+    "changed": false
+  },
+  "unchanged_paths": [
+    "LocalDrawEngine.applyCurrent",
+    "LocalDrawEngine.q7OriginalSpend",
+    "LocalDrawEngine.spend",
+    "LocalProfileStore.updateResources",
+    "grant/random/ct/cctd/weight/pity/typed reply/atomic rename",
+    "other pool and shop/currency paths"
+  ],
+  "guards": {
+    "type1_only": true,
+    "normal_new_group_once_all": "zero spend",
+    "normal_single_left": "zero spend",
+    "non_type1_spend": "original path unchanged",
+    "achievement_free_draw": "not consumed for type1; no replyUseNewAchievementChouka",
+    "ticket_11452": "not consumed",
+    "client_draw_source_frozen": "0cebaecace0fb482384132c85cd348dde23f8b00dbdec212436151cc968b8bef",
+    "core_frozen": "23589c0af07af61bd906ca306709d3ef71bbe266c3e9c71fc81bf27d568a655a",
+    "continuation_frozen": "2e71563c026873045c9516e8f2288142c2250a8220de4615d0377ecc28375272"
+  },
+  "host_evidence": {
+    "public_report": "reports/deepseek-v18-normal-free-manager-host-20261107.md",
+    "private_full_result": "local-checkpoints/v18-normal-free-host-20261107/",
+    "actual_manager": "final classes7 0b4 + patched HistoryDrawPolicy source class",
+    "native_checkpoint": "copy only; checkpoint sha256 0241678aee98b5c8918aa751a32f43443210690d88caba9305cf404032d01e17"
+  },
+  "build_boundary": "Root reviews and performs the unified build; no APK/D8/manager DEX or native checkpoint was modified by this contract."
+}

@@ -1,0 +1,3376 @@
+{
+  "source": "Static original EventCond/cond_table/schema and condition rows; no game script execution",
+  "sha256": {
+    "analysis/android640-scripts/com/const.marshal": "7183a7977bc2686fffd6fa28fd0ed6b7ef99e186bbd0e67c51a4bc186e5a7f52",
+    "analysis/android640-scripts/com/utils/cond_table.marshal": "3b8123109c162bacdd7eb8b9d981348699b1bfe963835ca5d3e5dad7b4426739",
+    "analysis/android640-scripts/com/data/cdata/event_condition.marshal": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+    "analysis/android640-scripts/lib/intervals/parser.marshal": "1f82085c44309280906f8f8274bc27d78728e2681fbb01d8594cc0a748499852"
+  },
+  "schema": {
+    "$f7type": "dict",
+    "items": [
+      [
+        1,
+        "AllSetCondition"
+      ],
+      [
+        17,
+        "AnySetCondition2"
+      ],
+      [
+        3,
+        "AnySetCondition"
+      ],
+      [
+        4,
+        "IntervalCondition"
+      ],
+      [
+        16,
+        "IntervalCondition"
+      ],
+      [
+        5,
+        "MinMaxDictCondition"
+      ],
+      [
+        6,
+        "MinMaxDictCondition"
+      ],
+      [
+        7,
+        "IntervalCondition"
+      ],
+      [
+        8,
+        "AnyInSetDictCondition"
+      ],
+      [
+        9,
+        "AllSetCondition"
+      ],
+      [
+        10,
+        "AllSetCondition"
+      ],
+      [
+        11,
+        "NoneSetCondition"
+      ],
+      [
+        12,
+        "ThresholdCondition"
+      ],
+      [
+        13,
+        "ThresholdCondition"
+      ],
+      [
+        14,
+        "ThresholdCondition"
+      ],
+      [
+        15,
+        "ThresholdCondition"
+      ],
+      [
+        18,
+        "AnySetInSetDictCondition"
+      ],
+      [
+        19,
+        "MinMaxDictCondition"
+      ],
+      [
+        20,
+        "ReversedThresholdDictCondition"
+      ],
+      [
+        21,
+        "IntervalCondition"
+      ],
+      [
+        22,
+        "ReversedThresholdDictCondition"
+      ],
+      [
+        23,
+        "MinMaxDictCondition"
+      ],
+      [
+        24,
+        "AllSetCondition"
+      ],
+      [
+        25,
+        "NoneSetCondition"
+      ],
+      [
+        26,
+        "IntervalCondition"
+      ],
+      [
+        27,
+        "IntervalCondition"
+      ],
+      [
+        28,
+        "IntervalCondition"
+      ],
+      [
+        29,
+        "AnySetCondition2"
+      ],
+      [
+        100,
+        "AnySetCondition"
+      ],
+      [
+        101,
+        "DiscreteCondition"
+      ],
+      [
+        102,
+        "AllSetCondition"
+      ],
+      [
+        30,
+        "IntervalCondition"
+      ],
+      [
+        31,
+        "MinMaxDictCondition"
+      ],
+      [
+        32,
+        "DictCondition"
+      ],
+      [
+        33,
+        "ThresholdCondition"
+      ],
+      [
+        34,
+        "AllSetCondition"
+      ],
+      [
+        35,
+        "AllSetCondition"
+      ],
+      [
+        36,
+        "AllSetCondition"
+      ],
+      [
+        37,
+        "MinMaxDictCondition"
+      ],
+      [
+        38,
+        "ThresholdCondition"
+      ],
+      [
+        39,
+        "ThresholdCondition"
+      ],
+      [
+        40,
+        "ThresholdCondition"
+      ],
+      [
+        41,
+        "AnySetCondition2"
+      ],
+      [
+        42,
+        "AllSetCondition"
+      ],
+      [
+        43,
+        "AllSetCondition"
+      ],
+      [
+        44,
+        "NoneSetCondition"
+      ],
+      [
+        45,
+        "IntervalCondition"
+      ],
+      [
+        46,
+        "IntervalCondition"
+      ],
+      [
+        47,
+        "AllInSetDictCondition"
+      ],
+      [
+        48,
+        "AnySetCondition2"
+      ],
+      [
+        49,
+        "IntervalCondition"
+      ],
+      [
+        50,
+        "IntervalCondition"
+      ],
+      [
+        51,
+        "IntervalCondition"
+      ],
+      [
+        52,
+        "AnySetCondition"
+      ],
+      [
+        53,
+        "IntervalCondition"
+      ],
+      [
+        54,
+        "IntervalCondition"
+      ]
+    ]
+  },
+  "prop_to_idx": {
+    "preEvent1": 1,
+    "preEvent2": 17,
+    "patrolArea": 3,
+    "date": 4,
+    "week": 16,
+    "items": 5,
+    "heroFriendlyValue": 6,
+    "level": 7,
+    "areaState": 8,
+    "battle": 9,
+    "patrolHero": 10,
+    "mutexEvent": 11,
+    "dailyConsumeActionVal": 12,
+    "insightSum": 13,
+    "constructSum": 14,
+    "leadershipSum": 15,
+    "areaBuilding": 18,
+    "timeAfterEvent": 19,
+    "actionAfterEvent": 20,
+    "buildFund": 21,
+    "areaLevel": 22,
+    "blackcore": 23,
+    "heroes": 24,
+    "noHeroes": 25,
+    "cityForce": 26,
+    "cityResearch": 27,
+    "cityDevelop": 28,
+    "patrolBuild": 29,
+    "clickArea": 100,
+    "emergency": 101,
+    "clientOp": 102,
+    "centerConfidence": 30,
+    "heroStar": 31,
+    "artifact": 32,
+    "money": 33,
+    "treasure_equip": 34,
+    "treasure_unequip": 35,
+    "treasure_all": 36,
+    "hero_fatigue": 37,
+    "patrolHeroInsight": 38,
+    "patrolHeroConstruct": 39,
+    "patrolHeroLeadership": 40,
+    "treasure_all_or": 41,
+    "cg": 42,
+    "hero_file": 43,
+    "no_hero_file": 44,
+    "huohaihuaNum": 45,
+    "friendly50Num": 46,
+    "areaStateAnd": 47,
+    "cg_or": 48,
+    "fatigueUnder20Num": 49,
+    "gonglueNum": 50,
+    "baiyuval": 51,
+    "inStoryRoute": 52,
+    "yisakeVal": 53,
+    "generalVal": 54
+  },
+  "rows": {
+    "$f7type": "dict",
+    "items": [
+      [
+        1015808,
+        {
+          "release": true,
+          "ctid": 3731,
+          "name": "听得见的天空",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1015813])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                10,
+                "set([117])"
+              ],
+              [
+                6,
+                "{117:(100,100)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "release": true,
+          "ctid": 1,
+          "name": "起始",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                16,
+                "[0,0]"
+              ],
+              [
+                11,
+                "set([17])"
+              ],
+              [
+                101,
+                "1"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1015810,
+        {
+          "release": true,
+          "ctid": 3733,
+          "name": "天海奏手账2",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1015801])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{117:(40,100)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        9,
+        {
+          "release": true,
+          "ctid": 2,
+          "name": "资源包下载",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                16,
+                "[0,0]"
+              ],
+              [
+                1,
+                "set([1047])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        16,
+        {
+          "release": false,
+          "ctid": 3,
+          "name": "测试用互斥事件",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                16,
+                "[0,0]"
+              ],
+              [
+                11,
+                "set([1])"
+              ],
+              [
+                101,
+                "1"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        31,
+        {
+          "release": false,
+          "ctid": 4,
+          "name": "烟花祭（恢复疲劳值）",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                29,
+                "set([22])"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        34,
+        {
+          "release": false,
+          "ctid": 5,
+          "name": "测试",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                42,
+                "set([15])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        35,
+        {
+          "release": false,
+          "ctid": 6,
+          "name": "睡着的安托涅瓦",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                42,
+                "set([16])"
+              ],
+              [
+                11,
+                "set([34])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        36,
+        {
+          "release": true,
+          "ctid": 7,
+          "name": "忙碌的家政机甲",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                10,
+                "set([31,34])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                28,
+                "[200,300]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        200,
+        {
+          "release": true,
+          "ctid": 9,
+          "name": "闪闪发光的谜之钥",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                35,
+                "set([(1095,2)])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        417,
+        {
+          "release": true,
+          "ctid": 14,
+          "name": "大漩涡",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                42,
+                "set([281])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        463,
+        {
+          "release": true,
+          "ctid": 15,
+          "name": "醒来",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1129,2000])"
+              ],
+              [
+                4,
+                "[1,1]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                11,
+                "set([2059])"
+              ],
+              [
+                17,
+                "set([462])"
+              ],
+              [
+                52,
+                "set(['10','10-6'])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        480,
+        {
+          "release": true,
+          "ctid": 16,
+          "name": "般若之怒",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1129])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                17,
+                "set([479])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        511,
+        {
+          "release": true,
+          "ctid": 17,
+          "name": "育种者之章",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                8,
+                "{2: (0,)}"
+              ],
+              [
+                1,
+                "set([510])"
+              ],
+              [
+                52,
+                "set(['8','8-1'])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        548,
+        {
+          "release": true,
+          "ctid": 22,
+          "name": "1位神器使的认可",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([547])"
+              ],
+              [
+                52,
+                "set(['5-6','5'])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                46,
+                "[1,999)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        549,
+        {
+          "release": true,
+          "ctid": 23,
+          "name": "2位神器使的认可",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([548])"
+              ],
+              [
+                52,
+                "set(['5-6','5'])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                46,
+                "[2,999)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        562,
+        {
+          "release": true,
+          "ctid": 30,
+          "name": "羽翼的起始",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                24,
+                "set([39])"
+              ],
+              [
+                1,
+                "set([526,1023])"
+              ],
+              [
+                52,
+                "set(['7-1','7'])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000105,
+        {
+          "release": true,
+          "ctid": 2448,
+          "name": "般若的记忆",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                32,
+                "{6:1}"
+              ],
+              [
+                17,
+                "set([1000104])"
+              ],
+              [
+                3,
+                "set([6])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{6:(80,100)}"
+              ],
+              [
+                10,
+                "set([6])"
+              ],
+              [
+                11,
+                "set([1139])"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                31,
+                "{6:(20, 999999)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000112,
+        {
+          "release": true,
+          "ctid": 2454,
+          "name": "阿岚手账4",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                32,
+                "{6:1}"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{6:(80,100)}"
+              ],
+              [
+                11,
+                "set([1139])"
+              ],
+              [
+                17,
+                "set([1000114])"
+              ],
+              [
+                31,
+                "{6:(20, 999999)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1005005,
+        {
+          "release": true,
+          "ctid": 3010,
+          "name": "异次元通道",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1005016])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                10,
+                "set([47])"
+              ],
+              [
+                11,
+                "set([1060])"
+              ],
+              [
+                29,
+                "set([32])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000201,
+        {
+          "release": true,
+          "ctid": 2456,
+          "name": "复苏的东方古街",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000215])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{14:(10,100)}"
+              ],
+              [
+                10,
+                "set([14])"
+              ],
+              [
+                22,
+                "{3:4}"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000202,
+        {
+          "release": true,
+          "ctid": 2457,
+          "name": "幼小的挑战者",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{14:(20,100)}"
+              ],
+              [
+                10,
+                "set([14])"
+              ],
+              [
+                17,
+                "set([1000201])"
+              ],
+              [
+                19,
+                "{1000201:(0,0)}"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000207,
+        {
+          "release": true,
+          "ctid": 2461,
+          "name": "不打折",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000204])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{33:(0,20)}"
+              ],
+              [
+                33,
+                "40000"
+              ],
+              [
+                10,
+                "set([33])"
+              ],
+              [
+                11,
+                "set([1000210,1000219,1000220])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000208,
+        {
+          "release": true,
+          "ctid": 2462,
+          "name": "五折",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000204])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{33:(21,50)}"
+              ],
+              [
+                33,
+                "20000"
+              ],
+              [
+                10,
+                "set([33])"
+              ],
+              [
+                11,
+                "set([1000210,1000219,1000220])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000215,
+        {
+          "release": true,
+          "ctid": 2467,
+          "name": "雯梓手账1",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                22,
+                "{3:4}"
+              ],
+              [
+                6,
+                "{14:(10,100)}"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50001,
+        {
+          "release": true,
+          "ctid": 2242,
+          "name": "海湾侧城-序章",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                100,
+                "set(['6:1'])"
+              ],
+              [
+                11,
+                "set([50012,3017,1060,1139,7195,1145,1166,50057,50060,1193,1225,1245,1323,1355,1398,575,1640,1649,1675,1690,1812,1826])"
+              ],
+              [
+                4,
+                "[1,)"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50002,
+        {
+          "release": true,
+          "ctid": 2243,
+          "name": "海湾侧城-阿岚出现",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                9,
+                "set([5101])"
+              ],
+              [
+                11,
+                "set([3017,1060,1139,7195,1166,50058,1225])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50003,
+        {
+          "release": true,
+          "ctid": 2244,
+          "name": "海湾侧城-游戏厅",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                9,
+                "set([5102])"
+              ],
+              [
+                11,
+                "set([3017,1060,1139,7195,1166,50059,1225])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50009,
+        {
+          "release": true,
+          "ctid": 2248,
+          "name": "海湾侧城-完结",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([50011])"
+              ],
+              [
+                11,
+                "set([3017,1060,1139,7195])"
+              ],
+              [
+                44,
+                "set([(6, 1)])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                25,
+                "set([6])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50011,
+        {
+          "release": true,
+          "ctid": 2250,
+          "name": "海湾侧城-获得黑核",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                8,
+                "{6: (0,)}"
+              ],
+              [
+                1,
+                "set([50010])"
+              ],
+              [
+                11,
+                "set([6029,3017,1060,2054,1129,1139,7195,1166,1225,2185,1355,1398,1649,1675,1690,1812,1826])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50012,
+        {
+          "release": false,
+          "ctid": 2251,
+          "name": "海湾侧城",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([6029])"
+              ],
+              [
+                11,
+                "set([50001,3017,1060,1139,7195])"
+              ],
+              [
+                100,
+                "set(['6:1'])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        50026,
+        {
+          "release": true,
+          "ctid": 2261,
+          "name": "幻境之中",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([50011])"
+              ],
+              [
+                3,
+                "set([6])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                11,
+                "set([3017,1060,2054,1129,1139,7195])"
+              ],
+              [
+                17,
+                "set([50024,50023])"
+              ],
+              [
+                18,
+                "{6: (24,)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000300,
+        {
+          "release": false,
+          "ctid": 2471,
+          "name": "测试表情奖励",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                101,
+                "0"
+              ],
+              [
+                7,
+                "6000"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000320,
+        {
+          "release": true,
+          "ctid": 2482,
+          "name": "终于见到了！师父！",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000312])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                41,
+                "set([(1201,3),(1201,4),(1201,5)])"
+              ],
+              [
+                10,
+                "set([12])"
+              ],
+              [
+                11,
+                "set([1000313,1000323,1000326,1000329,1000330])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000323,
+        {
+          "release": true,
+          "ctid": 2483,
+          "name": "终于见到了！师父！",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000312])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                41,
+                "set([(1200,3),(1200,4),(1200,5)])"
+              ],
+              [
+                10,
+                "set([12])"
+              ],
+              [
+                11,
+                "set([1000313,1000320,1000326,1000329,1000330])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000326,
+        {
+          "release": true,
+          "ctid": 2484,
+          "name": "终于见到了！师父！",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000312])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                36,
+                "set([(1200,3)])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                41,
+                "set([(1201,3),(1201,4),(1201,5)])"
+              ],
+              [
+                10,
+                "set([12])"
+              ],
+              [
+                11,
+                "set([1000313,1000320,1000323,1000329,1000330])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        970,
+        {
+          "release": true,
+          "ctid": 34,
+          "name": "记忆碎片·爱缪莎2",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                101,
+                "0"
+              ],
+              [
+                7,
+                "6000"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000401,
+        {
+          "release": true,
+          "ctid": 2488,
+          "name": "募捐",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                8,
+                "{7: (0,)}"
+              ],
+              [
+                24,
+                "set([9])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                22,
+                "{7:2}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1003,
+        {
+          "release": true,
+          "ctid": 41,
+          "name": "研究所哭泣的少女",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                48,
+                "set([11,12,13])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                11,
+                "set([1153])"
+              ],
+              [
+                16,
+                "[2,)"
+              ],
+              [
+                17,
+                "set([1034])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000433,
+        {
+          "release": true,
+          "ctid": 2497,
+          "name": "情报收集完成",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000431])"
+              ],
+              [
+                28,
+                "[50,9999]"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1012,
+        {
+          "release": true,
+          "ctid": 46,
+          "name": "希罗的消息",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                48,
+                "set([20,21])"
+              ],
+              [
+                17,
+                "set([1034])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1044,
+        {
+          "release": true,
+          "ctid": 61,
+          "name": "深夜食堂·一",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                16,
+                "[0,0]"
+              ],
+              [
+                12,
+                "24"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1156,
+        {
+          "release": true,
+          "ctid": 86,
+          "name": "存在的证明",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                5,
+                "{3734:(1,1)}"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000600,
+        {
+          "release": false,
+          "ctid": 2514,
+          "name": "璐璐模型测试",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                10,
+                "set([13])"
+              ],
+              [
+                3,
+                "set([1])"
+              ],
+              [
+                37,
+                "{13:(20,50)}"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1291,
+        {
+          "release": true,
+          "ctid": 136,
+          "name": "黑核回收后",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                52,
+                "set(['20-1','20-5','20-3','20-2','20'])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                23,
+                "{1:(2,8)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000805,
+        {
+          "release": true,
+          "ctid": 2542,
+          "name": "准备工作（巡查）",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000804])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                38,
+                "15"
+              ],
+              [
+                6,
+                "{8:(80,100)}"
+              ],
+              [
+                10,
+                "set([8])"
+              ],
+              [
+                11,
+                "set([1000823,2047,2048])"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000806,
+        {
+          "release": true,
+          "ctid": 2543,
+          "name": "准备工作（建设）",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000805])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{8:(80,100)}"
+              ],
+              [
+                39,
+                "18"
+              ],
+              [
+                10,
+                "set([8])"
+              ],
+              [
+                11,
+                "set([1000823,2047,2048])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000807,
+        {
+          "release": true,
+          "ctid": 2544,
+          "name": "准备工作（开发）",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000806])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{8:(80,100)}"
+              ],
+              [
+                40,
+                "15"
+              ],
+              [
+                10,
+                "set([8])"
+              ],
+              [
+                11,
+                "set([1000823,2047,2048])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000823,
+        {
+          "release": true,
+          "ctid": 2555,
+          "name": "准备工作超时",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                19,
+                "{1000804:(3,3)}"
+              ],
+              [
+                1,
+                "set([1000804])"
+              ],
+              [
+                11,
+                "set([1000808,2047,2048])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001004,
+        {
+          "release": true,
+          "ctid": 2559,
+          "name": "宅居的女孩",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                3,
+                "set([5])"
+              ],
+              [
+                5,
+                "{68:(1,1)}"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                10,
+                "set([39])"
+              ],
+              [
+                11,
+                "set([3134,577])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001022,
+        {
+          "release": true,
+          "ctid": 2571,
+          "name": "希罗的行踪",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([3134])"
+              ],
+              [
+                51,
+                "[0,20]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                17,
+                "set([1001021])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001025,
+        {
+          "release": true,
+          "ctid": 2573,
+          "name": "黑翼的告白",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([3134])"
+              ],
+              [
+                51,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                17,
+                "set([1001024])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001203,
+        {
+          "release": false,
+          "ctid": 2595,
+          "name": "战争间幕",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001202])"
+              ],
+              [
+                3,
+                "set([1])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{15:(70,100)}"
+              ],
+              [
+                10,
+                "set([15])"
+              ],
+              [
+                18,
+                "{5: (7,)}"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001316,
+        {
+          "release": true,
+          "ctid": 2616,
+          "name": "城堡工程开发",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001315])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{16:(30,100)}"
+              ],
+              [
+                40,
+                "14"
+              ],
+              [
+                10,
+                "set([16])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001317,
+        {
+          "release": true,
+          "ctid": 2617,
+          "name": "城堡工程建设",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001316])"
+              ],
+              [
+                3,
+                "set([3])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{16:(30,100)}"
+              ],
+              [
+                39,
+                "15"
+              ],
+              [
+                10,
+                "set([16])"
+              ],
+              [
+                102,
+                "set([2])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        2029,
+        {
+          "release": true,
+          "ctid": 389,
+          "name": "第一封求助信",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1060,1061])"
+              ],
+              [
+                50,
+                "[1,)"
+              ],
+              [
+                11,
+                "set([1087])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        2030,
+        {
+          "release": true,
+          "ctid": 390,
+          "name": "第一封求助信2",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1060,1087])"
+              ],
+              [
+                50,
+                "[1,)"
+              ],
+              [
+                11,
+                "set([1061])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001801,
+        {
+          "release": true,
+          "ctid": 2668,
+          "name": "隐蔽的黑暗",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                32,
+                "{36:1}"
+              ],
+              [
+                3,
+                "set([1])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                10,
+                "set([36])"
+              ],
+              [
+                11,
+                "set([1001823,1001825,1001827,1001829,1001831,1001833,1001835,2155,1640])"
+              ],
+              [
+                47,
+                "{1: (0,), 2: (0,), 3: (0,), 4: (0,), 5: (0,), 6: (0,), 7: (0,), 8: (0,)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001802,
+        {
+          "release": true,
+          "ctid": 2669,
+          "name": "咀嚼",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                32,
+                "{36:1}"
+              ],
+              [
+                1,
+                "set([1001801])"
+              ],
+              [
+                3,
+                "set([1])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                6,
+                "{36:(4,100)}"
+              ],
+              [
+                11,
+                "set([1001824,1001826,1001828,1001830,1001832,1001834,1001836,2155,1640])"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                47,
+                "{1: (0,), 2: (0,), 3: (0,), 4: (0,), 5: (0,), 6: (0,), 7: (0,), 8: (0,)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001818,
+        {
+          "release": true,
+          "ctid": 2677,
+          "name": "暗鬼",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001817])"
+              ],
+              [
+                37,
+                "{36:(0,50)}"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                10,
+                "set([36])"
+              ],
+              [
+                11,
+                "set([2155,1640])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001916,
+        {
+          "release": true,
+          "ctid": 2701,
+          "name": "见鬼私信1",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001901])"
+              ],
+              [
+                20,
+                "{1001901:8}"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1001917,
+        {
+          "release": true,
+          "ctid": 2702,
+          "name": "见鬼私信2",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1001902])"
+              ],
+              [
+                11,
+                "set([1001906,1001907])"
+              ],
+              [
+                20,
+                "{1001902:8}"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1002011,
+        {
+          "release": true,
+          "ctid": 2718,
+          "name": "什么事都没有发生",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1002006])"
+              ],
+              [
+                11,
+                "set([1002008,1060,1145])"
+              ],
+              [
+                4,
+                "[3,3]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                12,
+                "24"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1002204,
+        {
+          "release": true,
+          "ctid": 2769,
+          "name": "狡猾的人",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1002203])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                38,
+                "15"
+              ],
+              [
+                6,
+                "{28:(80,100)}"
+              ],
+              [
+                10,
+                "set([28])"
+              ],
+              [
+                11,
+                "set([1002206,1145])"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        3475,
+        {
+          "release": true,
+          "ctid": 766,
+          "name": "防护服",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                52,
+                "set(['29','29-2'])"
+              ],
+              [
+                27,
+                "[100,999]"
+              ],
+              [
+                4,
+                "[2,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([1129])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        3525,
+        {
+          "release": true,
+          "ctid": 805,
+          "name": "酬金检测",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                52,
+                "set(['31','31-4'])"
+              ],
+              [
+                4,
+                "[2,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                54,
+                "[300,99999]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        3572,
+        {
+          "release": true,
+          "ctid": 822,
+          "name": "黑核检测(废弃)",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                52,
+                "set(['32','32-3'])"
+              ],
+              [
+                4,
+                "[2,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                23,
+                "{1:(7,7)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        20009,
+        {
+          "release": true,
+          "ctid": 2080,
+          "name": "珈儿的感谢",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([20008])"
+              ],
+              [
+                11,
+                "set([3017,1060,7195])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                25,
+                "set([20])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        70009,
+        {
+          "release": true,
+          "ctid": 2355,
+          "name": "旧城区-解放",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([70010])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                11,
+                "set([70023,3017,1060,7195,1166,1225])"
+              ],
+              [
+                44,
+                "set([(21, 1)])"
+              ],
+              [
+                17,
+                "set([70018,70019])"
+              ],
+              [
+                25,
+                "set([21])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        4480,
+        {
+          "release": true,
+          "ctid": 982,
+          "name": "酬金检测",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([4479])"
+              ],
+              [
+                4,
+                "[3,3]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([4])"
+              ],
+              [
+                11,
+                "set([4481])"
+              ],
+              [
+                52,
+                "set(['31','31-4'])"
+              ],
+              [
+                54,
+                "[50,99999]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        5040,
+        {
+          "release": true,
+          "ctid": 1022,
+          "name": "科技值完成",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                27,
+                "[210,)"
+              ],
+              [
+                1,
+                "set([5039])"
+              ],
+              [
+                11,
+                "set([1060])"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        5058,
+        {
+          "release": true,
+          "ctid": 1033,
+          "name": "要主动成为活骸……？",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([5037])"
+              ],
+              [
+                4,
+                "[4,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                17,
+                "set([4015])"
+              ],
+              [
+                11,
+                "set([5012,3050,5009,5012,5057,1060])"
+              ],
+              [
+                49,
+                "[1,999)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1000329,
+        {
+          "release": true,
+          "ctid": 2485,
+          "name": "终于见到了！师父！",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1000312])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                36,
+                "set([(1200,4)])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                41,
+                "set([(1201,3),(1201,4),(1201,5)])"
+              ],
+              [
+                10,
+                "set([12])"
+              ],
+              [
+                11,
+                "set([1000313,1000320,1000323,1000326,1000330])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        5540,
+        {
+          "release": true,
+          "ctid": 1211,
+          "name": "【酬金任务】万事屋的委托",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([4481])"
+              ],
+              [
+                3,
+                "set([8])"
+              ],
+              [
+                4,
+                "[4,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                52,
+                "set(['31','31-4'])"
+              ],
+              [
+                26,
+                "[80,999]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        10000032,
+        {
+          "release": false,
+          "ctid": 3990,
+          "name": "对话图片测试-学院",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                26,
+                "[10,20]"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        7042,
+        {
+          "release": true,
+          "ctid": 1588,
+          "name": "注视着裂缝",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([6046,7038])"
+              ],
+              [
+                11,
+                "set([7041,7046,3050,1060,3134,7094,7105,3160,1145,1166,2164,1193,1225,1231,1242,1245,1323,1345,1355,1374,1398,1454,1649,1675,1690,1812])"
+              ],
+              [
+                4,
+                "[6,6]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                30,
+                "[100,)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        7046,
+        {
+          "release": true,
+          "ctid": 1589,
+          "name": "注视着裂缝",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([6046,7038])"
+              ],
+              [
+                11,
+                "set([7041,7042,3050,1060,3134,7094,7105,3160,1145,1166,2164,1193,1225,1231,1242,1245,1323,1345,1355,1374,1398,1454,1649,1675,1690,1812])"
+              ],
+              [
+                4,
+                "[6,6]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                30,
+                "[0,99]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        7065,
+        {
+          "release": true,
+          "ctid": 1591,
+          "name": "终于找到希罗",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([7067])"
+              ],
+              [
+                3,
+                "set([5])"
+              ],
+              [
+                4,
+                "[6,6]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                17,
+                "set([7076])"
+              ],
+              [
+                23,
+                "{1:(8,8)}"
+              ],
+              [
+                11,
+                "set([3050,7068,7072,7070,1060])"
+              ],
+              [
+                45,
+                "[0,1)"
+              ],
+              [
+                47,
+                "{1: (0,), 2: (0,), 3: (0,), 4: (0,), 5: (0,), 6: (0,), 7: (0,), 8: (0,)}"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        7068,
+        {
+          "release": true,
+          "ctid": 1592,
+          "name": "找到希罗",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([7067])"
+              ],
+              [
+                3,
+                "set([5])"
+              ],
+              [
+                4,
+                "[6,6]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                17,
+                "set([7076])"
+              ],
+              [
+                23,
+                "{1:(8,8)}"
+              ],
+              [
+                11,
+                "set([3050,7065,7070,7072,1060])"
+              ],
+              [
+                45,
+                "[1,9999)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1010110,
+        {
+          "release": true,
+          "ctid": 3257,
+          "name": "伊萨克想去图书馆",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([2054])"
+              ],
+              [
+                3,
+                "set([4])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([2])"
+              ],
+              [
+                52,
+                "set(['9','9-3'])"
+              ],
+              [
+                53,
+                "[20,)"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1010114,
+        {
+          "release": true,
+          "ctid": 3258,
+          "name": "起火",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1010113])"
+              ],
+              [
+                52,
+                "set(['9','9-3'])"
+              ],
+              [
+                53,
+                "[50,)"
+              ],
+              [
+                101,
+                "0"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        80018,
+        {
+          "release": true,
+          "ctid": 2412,
+          "name": "幽桐",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([80009])"
+              ],
+              [
+                43,
+                "set([(38, 1)])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                11,
+                "set([80008,3017,1060,1166,1225])"
+              ],
+              [
+                44,
+                "set([(38, 2)])"
+              ],
+              [
+                25,
+                "set([38])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        520,
+        {
+          "release": true,
+          "ctid": 19,
+          "name": "育种者之章-未去高校",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([510])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([4])"
+              ],
+              [
+                11,
+                "set([512])"
+              ],
+              [
+                52,
+                "set(['8','8-1'])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1023,
+        {
+          "release": true,
+          "ctid": 50,
+          "name": "研究所与古研所",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                4,
+                "[0,1]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                11,
+                "set([3133,2045,2042,2055,2059,1129,1153,1166,1169,1193,1225,1230,1242,1245,1323,1345,1355,1374,1398,1454,1649,1675,1690,1812])"
+              ],
+              [
+                16,
+                "[1,)"
+              ],
+              [
+                17,
+                "set([1028,2046,526])"
+              ],
+              [
+                100,
+                "set(['5:1'])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1126,
+        {
+          "release": true,
+          "ctid": 79,
+          "name": "合作达成·第一步",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                17,
+                "set([1122,497])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                100,
+                "set(['3:1','4:1'])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1131,
+        {
+          "release": true,
+          "ctid": 81,
+          "name": "突袭幻境",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([1140])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                100,
+                "set(['6:1'])"
+              ],
+              [
+                52,
+                "set(['10','10-6'])"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        4481,
+        {
+          "release": true,
+          "ctid": 983,
+          "name": "酬金检测",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([4479])"
+              ],
+              [
+                4,
+                "[3,3]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([4])"
+              ],
+              [
+                11,
+                "set([4480])"
+              ],
+              [
+                52,
+                "set(['31','31-4'])"
+              ],
+              [
+                54,
+                "[0,49]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        5534,
+        {
+          "release": true,
+          "ctid": 1209,
+          "name": "困兽之斗",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                1,
+                "set([5529])"
+              ],
+              [
+                4,
+                "[4,4]"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                102,
+                "set([4])"
+              ],
+              [
+                11,
+                "set([5530])"
+              ],
+              [
+                52,
+                "set(['31','31-4'])"
+              ],
+              [
+                54,
+                "[0,299]"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1006,
+        {
+          "release": true,
+          "ctid": 43,
+          "name": "奇怪的名字",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                16,
+                "[0,0]"
+              ],
+              [
+                1,
+                "set([1000])"
+              ],
+              [
+                4,
+                "[0,0]"
+              ],
+              [
+                101,
+                "1"
+              ]
+            ]
+          }
+        }
+      ],
+      [
+        1007,
+        {
+          "release": true,
+          "ctid": 44,
+          "name": "雷切尔的解说",
+          "conds": {
+            "$f7type": "dict",
+            "items": [
+              [
+                8,
+                "{1: (0,)}"
+              ],
+              [
+                1,
+                "set([10000])"
+              ],
+              [
+                101,
+                "0"
+              ],
+              [
+                16,
+                "[0,0]"
+              ]
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "full_table_occurrences": {
+    "1": 2962,
+    "3": 1419,
+    "101": 3997,
+    "102": 2077,
+    "10": 746,
+    "6": 1242,
+    "16": 93,
+    "11": 1622,
+    "29": 74,
+    "42": 22,
+    "28": 67,
+    "35": 1,
+    "4": 1931,
+    "17": 454,
+    "52": 1915,
+    "8": 297,
+    "46": 6,
+    "24": 14,
+    "32": 19,
+    "31": 3,
+    "22": 23,
+    "19": 17,
+    "33": 7,
+    "100": 86,
+    "9": 186,
+    "44": 8,
+    "25": 19,
+    "18": 81,
+    "7": 9,
+    "41": 7,
+    "36": 3,
+    "48": 20,
+    "12": 4,
+    "5": 15,
+    "37": 8,
+    "23": 41,
+    "38": 3,
+    "39": 2,
+    "40": 2,
+    "51": 12,
+    "50": 48,
+    "47": 19,
+    "20": 17,
+    "27": 17,
+    "54": 39,
+    "49": 1,
+    "26": 10,
+    "30": 2,
+    "45": 6,
+    "53": 6,
+    "43": 1
+  }
+}

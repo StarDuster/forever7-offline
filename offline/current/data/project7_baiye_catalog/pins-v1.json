@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "source_item_data_sha256": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+  "catalog_sha256": "0c2a8199eb0ff9ed2d678fc29128a95e267af94642af471f7050c5d0565e4141",
+  "projection": "exact pinned literal subset, no game execution",
+  "rows": 3
+}

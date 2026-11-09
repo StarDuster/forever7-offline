@@ -1,0 +1,94 @@
+{
+  "format": "forever7-project-progress-final-v2",
+  "updated_at": "2026-11-07T23:20:16.937296+00:00",
+  "goal_complete": true,
+  "overall": "android_single_apk_inventory_v23_accepted",
+  "target": "Official original APK + build project command -> one offline APK",
+  "artifacts": {
+    "apk": {
+      "path": "builds/forever7-offline-inventory-v23-20261108.apk",
+      "bytes": 1296637864,
+      "sha256": "4bdf08e9201c5b0fb025e0d547ee4b9fb080ee8747f6a6a9d16a0ad60a8b0453"
+    },
+    "source": {
+      "path": "builds/forever7-offline-source-layout-20261108.zip",
+      "bytes": 39269259,
+      "sha256": "932533e2a7eb1ec97232ff61dd8cee4950214f31ba9eef9a6ceb0ed9a492b14a"
+    },
+    "dependency_ready_project": {
+      "path": "builds/forever7-offline-project-layout-20261108.zip",
+      "bytes": 107294299,
+      "sha256": "335e96ba0212d7e55d8eca2a7addd1197a632f5a9afff630e48b417a9b8a3046"
+    }
+  },
+  "acceptance": "reports/offline-inventory-v23-acceptance.json",
+  "independent_final_audit": "reports/root-inventory-v23-final-source-20261108.json",
+  "cleanup": "reports/root-inventory-v23-final-cleanup-20261108.json",
+  "original_unchanged": true,
+  "runtime_source_matches_tested_apk": true,
+  "native_device": {
+    "avd": "Forever7V12Late20261107",
+    "serial": "emulator-5562",
+    "ram_mb": 2560,
+    "cores": 3,
+    "gpu": "host",
+    "acceleration": "HVF",
+    "vm_running": false,
+    "app_stopped": true,
+    "resource_policy": "reports/root-emulator-resource-policy-20261107.json",
+    "original_save_restored": true
+  },
+  "completed": [
+    "single APK one-command clean build",
+    "automatic existing and virgin identity offline login",
+    "strict140 heroes/494 skins/1900 treasure pairs",
+    "original hero/wardrobe/dye UI",
+    "normal mixed and shadow pool original draw animation, reward, exit, save and pending recovery",
+    "original64032 mainline entries and mechanism validation, current DEX binding and representative native paths",
+    "official CDN reconstruction, cache validation and ZIP recovery",
+    "source/ready bundle integrity and Git material exclusion",
+    "superseded generated APK/cache cleanup",
+    "Settings inventory editor with original button skins, font, official item icons and qualities",
+    "original Project7 item/currency grants, consumption and atomic Store reuse",
+    "durable edit receipts, exact replay, unknown-commit recovery and original client tombstone consumption",
+    "independent Astra six-interleaving UI audit and actual final DEX host tests",
+    "final native set/add/currency/treasure creation, repeated edit, category/reopen and cold restart",
+    "test state exact restoration and source/runtime byte equivalence with final APK",
+    "physical Project7 bridge/current offline/legacy separation, portable exported 274-class prepare and unchanged native-accepted client overlay"
+  ],
+  "original_unreleased_asset_facts": {
+    "owned_records_preserved": true,
+    "forbidden_hero_ids": [
+      46,
+      125
+    ],
+    "missing_original_model_ids": [
+      10048,
+      10176
+    ],
+    "unreleased_skin_ids_with_missing_2d_assets": [
+      10080,
+      10081
+    ],
+    "handling": "Preserve owned records and identity; original information/2D fallback where available, guard missing models before actor construction."
+  },
+  "next_actions": [],
+  "base_acceptance": "reports/offline-acceptance-v1.json",
+  "code_layout": {
+    "commit": "c5701dfa65ab58903f1af9cf414635f96711b3e6",
+    "current_features": "offline/current",
+    "project7_bridge": "project7_bridge",
+    "fixed_dependency_metadata": "upstream/project7",
+    "legacy_runtime": "offline/runtime",
+    "source_files": 529,
+    "client_overlay_exact_native_accepted_v23": true,
+    "prepare_classes": 274,
+    "root_standard_tests": 22,
+    "ui_host": "PASS",
+    "astra_audit": "PASS",
+    "directory_reference": "README-offline-project.md",
+    "documentation_final_state_only": true,
+    "local_helper_tests": 43
+  },
+  "independent_code_layout_audit": "reports/root-source-separation-final-20261108.json"
+}

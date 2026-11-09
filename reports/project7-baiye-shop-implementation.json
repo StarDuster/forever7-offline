@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "actual_manager_sha256": "1be1a7e09c5a2e42d31f9deff54c1d942657fca695c1a996579eefecf365e6fa",
+  "sources": {
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopCatalog.java": "2bc9510fade4875f47893b11221ed18c7d91e6589ed61e005633aef495457166",
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopGateway.java": "d4a760cf871da2cccd41d502f05003595d11ee66e568fa2cd56efa4019d0e3dd",
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopPolicy.java": "661fc87166ab170d978edcc5045b77b8613e6fe26121e4adff2a7d4c27f90b8a",
+    "runtime/android_baiye_shop/compile_stubs/com/project7/localmanager/BaiyeShopApiStubs.java": "2cb6670b5d74c6b1f854aaf3d3a0622ff728088eac43e3be2cdf3bcd2a5a9b12",
+    "runtime/android_baiye_shop/host_tests/com/project7/localmanager/BaiyeShopHost.java": "107188f0f3950c655905b3db02bf92a25e08911f7f2c3897a2c21e3d93b7f7e1",
+    "runtime/android_baiye_shop/host_tests/android/content/res/AssetManager.java": "39229e4194a8d06119240fae67edc5187efaa07c7b55124ae2cf3ccc1e26ced1",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeCatalog.java": "caf73a8c6c08c2b600965c6d0de7863da90b728fea3413241190b312a5b8052e",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeTransactions.java": "13e6a9ff2ac01cc0c0291b57beb3548e3ef73c195f0438be5097653630f88ae0",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeGateway.java": "d2388ed4cb0a0951a8bf7e21c31b25974158979fb970145f4fbebd4913026f14",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragmentRules.java": "23a000a3719eca4915e84f1d4eeae0b93ed44a2feafeaeeb924f4358781e0f29",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragments.java": "01ed6932c9478eda64188261f8ef28a40324c7e12d0c05a437ca79166d49d968"
+  },
+  "production_classes": [
+    "com/project7/localmanager/BaiyeShopGateway.class",
+    "com/project7/localmanager/BaiyeFragmentRules$Voucher.class",
+    "com/project7/localmanager/BaiyeGateway.class",
+    "com/project7/localmanager/BaiyeShopPolicy.class",
+    "com/project7/localmanager/BaiyeFragments$Rejected.class",
+    "com/project7/localmanager/BaiyeTransactions$Mutation.class",
+    "com/project7/localmanager/BaiyeFragments.class",
+    "com/project7/localmanager/BaiyeShopCatalog.class",
+    "com/project7/localmanager/BaiyeTransactions$Access.class",
+    "com/project7/localmanager/BaiyeShopCatalog$Product.class",
+    "com/project7/localmanager/BaiyeCatalog.class",
+    "com/project7/localmanager/BaiyeFragmentRules.class",
+    "com/project7/localmanager/BaiyeTransactions$UncertainCommit.class",
+    "com/project7/localmanager/BaiyeTransactions.class"
+  ],
+  "limits": [
+    "actual manager and166 own classes, explicit Android platform seams",
+    "no compile API classes on runtime path",
+    "current ownership reget is transparent offline policy",
+    "original calendar now argument is milliseconds",
+    "no D8/APK/game/device/ART"
+  ],
+  "phase": "eight shop transactions implemented; root integration pending",
+  "proof_directory": "analysis/project7/baiye-shop-host-rvolu6ie",
+  "abi": {
+    "checked": 78,
+    "mismatches": []
+  },
+  "now_unit": "milliseconds, directly passed to original Calendar.setTimeInMillis",
+  "public_api": [
+    "BaiyeShopGateway.prepare(Context)",
+    "BaiyeShopGateway.handleDirect8 / handleRequest9 same mechanism signatures",
+    "BaiyeShopPolicy.apply(byte[],LocalResourceCatalog,byte[],long nowMillis):Result throws IOException"
+  ],
+  "store_ids": [
+    8,
+    157,
+    158,
+    478,
+    480,
+    540,
+    595,
+    617
+  ],
+  "transaction_owner": "frozen BaiyeTransactions.transact/Mutation original LocalProfileStore writer; no duplicate owner",
+  "policy": "current bag/equipped same-treasure ownership -> fixed source reget_trans; explicit offline policy, not official hidden server proof",
+  "checks": [
+    "all eight actual successes and insufficient-funds zero-mutation negatives",
+    "original giftCoin/yuanbao spend and cross-stack4253 consume",
+    "three fixed designs preserve original tr and q3 with independent new UUIDs",
+    "actual inventory and heromgr.hrs hero.ti.items ownership duplicate conversion, existing treasure retained",
+    "original calendar refresh milliseconds, story w1 reject/w2 allow, weekly7 reject8, next day retains/week resets independently story week",
+    "original four counter maps and z pair projection; full Done keys and ledger",
+    "original buy producer + Done/currency/negative/rpc carrier UI consumers",
+    "total50 bulk quantity, zero/overflow/cumulative limits",
+    "write before-rename failure untouched; after-rename exception exact committed reconciliation",
+    "1934 passthrough and reliable wrappers typed rejected without charging",
+    "explicit callback string/zero/negative/double/int64 overflow rejected before Mutation: unchanged profile and zero writes/no fake carrier; legal positive int64 callback still succeeds"
+  ],
+  "pending": [
+    "Root shared dispatch/startup/build main integration and preflight"
+  ],
+  "sources_extra": {
+    "tools/project7_baiye_shop_catalog.py": "17f3abe63e5814439100c8e8cd0ad82029b18ffe1c359abf7ac2082dbd2aa195",
+    "runtime/android_baiye_shop/verify.py": "4a84cff10989493590f9ccb646081fbff53832df2dfb9e571af550704e8bbb5c",
+    "runtime/android_baiye_shop/host_tests/consumer.py": "71faf042fd8c6efa2b777d463eb44c22a3ea9200484f78c5acc4866ae8fa5376"
+  },
+  "assets": {
+    "runtime/project7_baiye_shop_catalog/catalog-v1.tsv": "ae6523fd78136fa7a1ef893911ca191ff764a1fe7866d9101b62a518216a0501",
+    "runtime/project7_baiye_shop_catalog/contract-v1.json": "25ba6ebc952a2ce9862f89194036f2ca5debe9c90f62e4036c9cb01f7a07df7b"
+  },
+  "host_stdout": "PASS8 actual shop transactions: item/giftCoin/yuanbao, original designed UUIDs and equipped reget, calendar counters, atomic faults, stock1934/reliable guards\n",
+  "consumer_stdout": "lock , buyCardMallItem True {'buyCardMallItem': 1}\n===========buyCardMallItemDone [[478, 1]] [[478, 1]] 4256 1 {'item': [[4256, 1]], 'hero': [], 'treasure': []}\n===========buyCardMallItemDone [[480, 1]] [[480, 1]] 4255 1 {'item': [[4255, 1]], 'hero': [], 'treasure': []}\n===========buyCardMallItemDone [[617, 1]] [[617, 1]] 1302 1 {'item': [], 'hero': [], 'treasure': [[1302, 3, 1, [{'$oid': 'afaed865f97f46be92148056'}]]]}\n===========buyCardMallItemDone [[540, 1]] [[540, 1]] 3735 1 {'item': [[3735, 1]], 'hero': [], 'treasure': []}\n===========buyCardMallItemDone [[595, 1]] [[595, 1]] 10002 1 {'item': [[10002, 1]], 'hero': [], 'treasure': []}\n===========buyCardMallItemDone [[158, 1]] [[158, 1]] 1229 1 {'item': [], 'hero': [], 'treasure': [[1229, 3, 1, [{'$oid': 'f155d8ca988a414a96530665'}]]]}\n===========buyCardMallItemDone [[8, 1]] [[8, 1]] 224 1 {'item': [[224, 1]], 'hero': [], 'treasure': []}\n===========buyCardMallItemDone [[157, 1]] [[157, 1]] 1223 1 {'item': [], 'hero': [], 'treasure': [[1223, 3, 1, [{'$oid': '553406551f9748409a0e52ee'}]]]}\nunlock , buyCardMallItem True {'buyCardMallItem': 1}\nPASS original8 Done ledgers/counters, real giftCoin immediate update, original request/callback unlock and negative no-reward\noriginal-consumer-platform-setup:6: DeprecationWarning: lib2to3 package is deprecated and may not be able to parse Python 3.10+\n",
+  "source_projection_recheck": "analysis/project7/baiye-shop-source-recheck-p2ijkk97/catalog",
+  "original_source_pins": {
+    "entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996",
+    "entity/avatar_members/CommonMember.py": "96a364eb6c4d865fd75377260bcaa61cb874807d2b9daf20641cabbd5dbd04bb",
+    "entity/avatar_members/InvMember.py": "b35cf286f374ee39eb1f29e9600e7f4c28aaaa25f41e9b86ba4136e2561c8e12",
+    "cocos/ui_manager.py": "42e886830f1d6e6720aa332b1cb1267981a2a8d913c91fbfb47edf5f776ca0ac",
+    "lib/common/rpcdecorator.py": "e91144af8e09d7c1e0f1ce46624c666f47d230410441ba44458acd1b18390633",
+    "entity/avatar_members/ReliableRpcMember.py": "1cd697439c11a61610e64739c0e0afe505b7218d6f25caffab7a7e01237cc145"
+  }
+}

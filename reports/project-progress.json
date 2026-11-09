@@ -1,0 +1,68 @@
+{
+  "format": "forever7-project-progress-final-v1",
+  "updated_at": "2026-11-07T05:18:47.155724+00:00",
+  "goal_complete": true,
+  "overall": "android_single_apk_accepted",
+  "target": "Official original APK + build project command -> one offline APK",
+  "artifacts": {
+    "apk": {
+      "path": "builds/forever7-offline-v22-20261107.apk",
+      "bytes": 1296617384,
+      "sha256": "36c26e6617ee9d15c0acdbeddc2ea725babd6e5cfc95ed11604d5b402357948e"
+    },
+    "source": {
+      "path": "builds/forever7-offline-source-v22-final-20261107.zip",
+      "bytes": 39422475,
+      "sha256": "6264582c1c3485749391aff9e86abcc1f67c882c111fbd957c279d468feb1ed2"
+    },
+    "dependency_ready_project": {
+      "path": "builds/forever7-offline-project-v22-final-20261107.zip",
+      "bytes": 107554932,
+      "sha256": "1133c51c98de22fad9ef288226264b166804ffa2ee9c4a816e65bee432202b9c"
+    }
+  },
+  "acceptance": "reports/offline-acceptance-v1.json",
+  "independent_final_audit": "reports/root-final-delivery-audit-20261107.json",
+  "cleanup": "reports/root-final-generated-cleanup-20261107.json",
+  "original_unchanged": true,
+  "runtime_source_matches_tested_apk": true,
+  "native_device": {
+    "avd": "Forever7V12Late20261107",
+    "serial": "emulator-5562",
+    "ram_mb": 3072,
+    "cores": 4,
+    "gpu": "host",
+    "acceleration": "HVF",
+    "vm_running": false,
+    "app_stopped": true,
+    "resource_policy": "reports/root-emulator-resource-policy-20261107.json"
+  },
+  "completed": [
+    "single APK one-command clean build",
+    "automatic existing and virgin identity offline login",
+    "strict140 heroes/494 skins/1900 treasure pairs",
+    "original hero/wardrobe/dye UI",
+    "normal mixed and shadow pool original draw animation, reward, exit, save and pending recovery",
+    "original64032 mainline entries and mechanism validation, current DEX binding and representative native paths",
+    "official CDN reconstruction, cache validation and ZIP recovery",
+    "source/ready bundle integrity and Git material exclusion",
+    "superseded generated APK/cache cleanup"
+  ],
+  "original_unreleased_asset_facts": {
+    "owned_records_preserved": true,
+    "forbidden_hero_ids": [
+      46,
+      125
+    ],
+    "missing_original_model_ids": [
+      10048,
+      10176
+    ],
+    "unreleased_skin_ids_with_missing_2d_assets": [
+      10080,
+      10081
+    ],
+    "handling": "Preserve owned records and identity; original information/2D fallback where available, guard missing models before actor construction."
+  },
+  "next_actions": []
+}

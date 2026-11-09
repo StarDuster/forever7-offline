@@ -1,0 +1,49 @@
+{
+  "source": "com/data/cdata/event_content.py, script640",
+  "decompiled_source_sha256": "5d8568a9b34512088d7827a6029f21acca2e2b4922acd9d5ae6b304aebcde8e3",
+  "rows": {
+    "1000": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u9192\u6765",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1000
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "notepadId": [
+        10044
+      ],
+      "dialog": 1000,
+      "isEmergencyEvent": true,
+      "release": true,
+      "isLeaveEmergencyEvent": false
+    },
+    "1001": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "rewards": [
+        37
+      ],
+      "name": "\u5f97\u5230\u6218\u672f\u7ec8\u7aef",
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1001
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1001,
+      "release": true
+    }
+  }
+}

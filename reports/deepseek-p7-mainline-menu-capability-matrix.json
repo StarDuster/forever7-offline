@@ -1,0 +1,1162 @@
+{
+ "format": "deepseek-p7-mainline-menu-capability-matrix-v1",
+ "source": "mainline_score_info.py:16; weeks.tsv:375-406; astra-mainline-scope-evidence.json",
+ "warning": "Menu ID is not std.rt label; do not infer routes from equal numbers. route27 plain is not required; exact 27-1..27-12 keys exist.",
+ "counts": {
+  "entries": 32,
+  "supports_true": 9,
+  "supports_false": 23
+ },
+ "universal_families": [
+  "E_week_admission",
+  "C_city_chapter",
+  "P_ui_dialog",
+  "B_battle_terminal_shared",
+  "T_target_clue_reward"
+ ],
+ "entries": [
+  {
+   "menu": 1,
+   "name": "正轨的箱庭",
+   "init_event": 1066,
+   "requires": [],
+   "supports": true,
+   "internal_routes": [],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "non27_stage_catalog_unknown"
+   ]
+  },
+  {
+   "menu": 2,
+   "name": "无垢的人偶",
+   "init_event": 534,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [
+    "4-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "non27_stage_catalog_unknown"
+   ]
+  },
+  {
+   "menu": 3,
+   "name": "避世的方舟",
+   "init_event": 553,
+   "requires": [
+    [
+     8,
+     9
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "non27_stage_catalog_unknown"
+   ]
+  },
+  {
+   "menu": 4,
+   "name": "深渊的步伐",
+   "init_event": 540,
+   "requires": [
+    [
+     1,
+     3
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "5-6"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 5,
+   "name": "飘零的自由者",
+   "init_event": 529,
+   "requires": [],
+   "supports": true,
+   "internal_routes": [
+    "6",
+    "6-3"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered",
+    "special": "daily_wish_source_host"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "daily_wish_native"
+   ]
+  },
+  {
+   "menu": 6,
+   "name": "护佑与毁灭的羽翼",
+   "init_event": 522,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [
+    "7-1"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered",
+    "special": "route7_medicine_source_host"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "medicine_native"
+   ]
+  },
+  {
+   "menu": 7,
+   "name": "育种者之章",
+   "init_event": 508,
+   "requires": [
+    [
+     19,
+     20,
+     21
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "8-1",
+    "8-2"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "missing"
+   },
+   "gaps": [
+    "entry_gate",
+    "special_agreement_5080",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 8,
+   "name": "撕裂血月的猎犬",
+   "init_event": 498,
+   "requires": [
+    [
+     22,
+     23
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "unknown"
+   },
+   "gaps": [
+    "entry_gate",
+    "route_slice_unknown"
+   ]
+  },
+  {
+   "menu": 9,
+   "name": "庭月棋声",
+   "init_event": 490,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "non27_stage_catalog_unknown"
+   ]
+  },
+  {
+   "menu": 10,
+   "name": "般若之怒",
+   "init_event": 477,
+   "requires": [
+    [
+     28,
+     29,
+     30
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "10-6",
+    "10-4",
+    "10-5",
+    "selector11"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+selector11_unknown",
+    "special": "selector11_unknown_system4_source_host"
+   },
+   "gaps": [
+    "entry_gate",
+    "selector11_mapping",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 11,
+   "name": "箱庭之钥",
+   "init_event": 474,
+   "requires": [
+    [
+     5
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [
+    "12"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "covered",
+    "stage_battle": "covered",
+    "special": "chapter_city_engine"
+   },
+   "gaps": []
+  },
+  {
+   "menu": 12,
+   "name": "堕天使的挽歌",
+   "init_event": 460,
+   "requires": [
+    [
+     28,
+     29,
+     30
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "13"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "route13_dispatch_source_host"
+   },
+   "gaps": [
+    "entry_gate",
+    "dispatch_native",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 13,
+   "name": "深渊回声",
+   "init_event": 456,
+   "requires": [
+    [
+     36
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [
+    "14-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "non27_stage_catalog_unknown"
+   ]
+  },
+  {
+   "menu": 14,
+   "name": "黑匣白花",
+   "init_event": 453,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "15-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 15,
+   "name": "破晓之翼",
+   "init_event": 446,
+   "requires": [
+    [
+     42,
+     43
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "16-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 16,
+   "name": "赤贯的陨星",
+   "init_event": 439,
+   "requires": [
+    [
+     47,
+     48,
+     49
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "17-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 17,
+   "name": "终焉的命轮",
+   "init_event": 436,
+   "requires": [
+    [
+     28,
+     29,
+     30
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "18-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 18,
+   "name": "永恒的信标",
+   "init_event": 433,
+   "requires": [
+    [
+     54
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "19-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 19,
+   "name": "漆黑的因果",
+   "init_event": 1245,
+   "requires": [
+    [
+     59
+    ],
+    [
+     36
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "19-1",
+    "19-2",
+    "20-1"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "dream_source_host"
+   },
+   "gaps": [
+    "entry_gate",
+    "dream_native",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 20,
+   "name": "致哀歌以欢笑",
+   "init_event": 1323,
+   "requires": [
+    [
+     63,
+     64
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "21-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 21,
+   "name": "逆光的勋章",
+   "init_event": 429,
+   "requires": [
+    [
+     54
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "22-1"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+fatigue0_unknown",
+    "special": "system4_source_host_fatigue0_unknown"
+   },
+   "gaps": [
+    "entry_gate",
+    "fatigue0_reward_selector",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 22,
+   "name": "浮世的镜影",
+   "init_event": 1355,
+   "requires": [
+    [
+     63,
+     64
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "23-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 23,
+   "name": "风起之时",
+   "init_event": 1398,
+   "requires": [
+    [
+     63,
+     64
+    ],
+    [
+     39,
+     40
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "26-2"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 24,
+   "name": "碧空遥响",
+   "init_event": 575,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "26-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 25,
+   "name": "乱序的夏弥尔",
+   "init_event": 1407,
+   "requires": [
+    [
+     24,
+     25,
+     26,
+     27
+    ],
+    [
+     63,
+     64
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "27-1",
+    "27-2",
+    "27-3",
+    "27-4",
+    "27-5",
+    "27-6",
+    "27-7",
+    "27-8",
+    "27-9",
+    "27-10",
+    "27-11",
+    "27-12"
+   ],
+   "families_extra": [
+    "F",
+    "V",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "missing",
+    "stage_battle": "missing",
+    "special": "virtual_source_catalog_ready_not_main_puzzle_not_consumed_selector0_city_route_missing"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner",
+    "area_kind_model",
+    "puzzle_room4",
+    "selector0_city_route",
+    "main_enable",
+    "virtual_catalog_main_binding",
+    "coc_stage_main_binding",
+    "puzzle4_data"
+   ]
+  },
+  {
+   "menu": 26,
+   "name": "双星的狂想",
+   "init_event": 1454,
+   "requires": [
+    [
+     99
+    ],
+    [
+     100
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "28-1",
+    "28-2",
+    "28-3",
+    "28-5"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 27,
+   "name": "熔金的华宴",
+   "init_event": 1640,
+   "requires": [
+    [
+     2,
+     6,
+     7
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "30-1",
+    "30-2"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 28,
+   "name": "逆势的告免",
+   "init_event": 1649,
+   "requires": [
+    [
+     114,
+     115
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "31-1",
+    "31-2"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "route31_bounty_source_host"
+   },
+   "gaps": [
+    "entry_gate",
+    "bounty_native",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 29,
+   "name": "断虹的谒雨",
+   "init_event": 1675,
+   "requires": [
+    [
+     114,
+     115
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "32-1",
+    "32-2"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 30,
+   "name": "无终的箴言",
+   "init_event": 1690,
+   "requires": [
+    [
+     99,
+     100
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "33-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 31,
+   "name": "默示的穹音",
+   "init_event": 1812,
+   "requires": [
+    [
+     99,
+     100
+    ]
+   ],
+   "supports": false,
+   "internal_routes": [
+    "34-1"
+   ],
+   "families_extra": [
+    "F"
+   ],
+   "coverage": {
+    "entry": "missing",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "none"
+   },
+   "gaps": [
+    "entry_gate",
+    "city_fx_owner"
+   ]
+  },
+  {
+   "menu": 32,
+   "name": "原初的终点",
+   "init_event": 1826,
+   "requires": [
+    [
+     75,
+     76
+    ],
+    [
+     105,
+     106
+    ]
+   ],
+   "supports": true,
+   "internal_routes": [
+    "35-1"
+   ],
+   "families_extra": [
+    "F",
+    "R"
+   ],
+   "coverage": {
+    "entry": "covered",
+    "city_effects": "unknown",
+    "stage_battle": "covered+unknown",
+    "special": "route35_flashback_source_host"
+   },
+   "gaps": [
+    "city_fx_owner",
+    "route35_native"
+   ]
+  }
+ ],
+ "gap_clusters": [
+  {
+   "id": "entry_gate",
+   "affected": [
+    4,
+    7,
+    8,
+    10,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "fix": "capability-catalog-driven supports; never menu->std.rt"
+  },
+  {
+   "id": "city_fx_owner",
+   "affected": "31 non-menu11 rows (proven 25)",
+   "fix": "unique owner + canonical state/locks + area kind + reset cleanup"
+  },
+  {
+   "id": "area_kind_model",
+   "affected": [
+    25
+   ],
+   "fix": "normal/special/virtual/display instead of 1..8 clamp"
+  },
+  {
+   "id": "virtual_area_catalog",
+   "affected": [
+    25
+   ],
+   "fix": "10000..10003 catalog and client area_N projection"
+  },
+  {
+   "id": "coc_stage_admission",
+   "affected": [
+    25
+   ],
+   "fix": "target hero135, wire t=1, exact virtual mission family, separate cost/reward/win"
+  },
+  {
+   "id": "selector0_scene_resolver",
+   "affected": "normal selector0 routes / menu25 area5",
+   "status": "covered_host",
+   "evidence": "reports/project7-story-missions-implementation.json (39 exact chapter keys, 4129 resolver)",
+   "fix": "scene resolver implemented host; menu25 city/virtual route still missing"
+  },
+  {
+   "id": "selector0_city_route",
+   "affected": [
+    25
+   ],
+   "fix": "virtual/area route and city reachability still missing; do not conflate with normal selector0 resolver"
+  },
+  {
+   "id": "system4_trial_retry",
+   "affected": [
+    10,
+    21
+   ],
+   "status": "covered_host",
+   "evidence": "reports/project7-story-missions-implementation.json; reports/project7-trial-retry-implementation.json",
+   "fix": "T5 fixed cast/level + trial retry already implemented host; selector11/fatigue0 remain separate"
+  },
+  {
+   "id": "selector11_mapping",
+   "affected": [
+    10
+   ],
+   "fix": "prove selector11->320; no guessed mapping"
+  },
+  {
+   "id": "puzzle_room4",
+   "affected": [
+    25
+   ],
+   "fix": "data only"
+  },
+  {
+   "id": "fatigue0_reward_selector",
+   "affected": [
+    21
+   ],
+   "fix": "evidence-only selector resolution"
+  },
+  {
+   "id": "special_agreement_5080",
+   "affected": [
+    7
+   ],
+   "fix": "route8/8-1/8-2 agreement producer"
+  },
+  {
+   "id": "native_acceptance",
+   "affected": "all",
+   "fix": "real callbacks/new-week handoff/native route proof"
+  }
+ ],
+ "unknowns": [
+  "official selector0 selection/order",
+  "selector11 official mapping",
+  "system_type4 trial hero ownership/combat construction",
+  "fatigue selector0 meaning",
+  "cityEffects legacy-engine coverage outside 11/25",
+  "city STAGE catalog keys outside route27",
+  "native/full-route acceptance"
+ ],
+ "excluded": [
+  "T5",
+  "trial_retry",
+  "Wish",
+  "white_night"
+ ],
+ "notes": [
+  "supports is a policy allowlist, not capability computation",
+  "@route witnesses are adjacency, not satisfiability",
+  "special source/host coverage is not native acceptance",
+  "shared story_city projector is passive; no menu25 cityEffects producer",
+  "current Main is 12 groups/224 classes; family-atomic snapshot and latest wish-ui prepare are authoritative",
+  "do not scan only analysis/project7/manager/assets old tables: build appends runtime/project7_story_mission_catalog/economy-extra.tsv, suppression-extra.tsv, public-source-v1.json"
+ ],
+ "covered_current_main": [
+  {
+   "id": "family_atomic",
+   "evidence": "reports/project7-family-atomic-integration-snapshot.json",
+   "fact": "12 groups/224 classes; actual 7f13/254af manager ABI compile PASS"
+  },
+  {
+   "id": "m18_39_exact",
+   "evidence": "reports/project7-story-missions-implementation.json",
+   "fact": "39 exact chapter keys, 18 missions, 5 trials; area5 six-stage Store/gateway; append economy/suppression/source helper"
+  },
+  {
+   "id": "t5_fixed_cast_level",
+   "evidence": "reports/project7-story-missions-implementation.json",
+   "fact": "315/316 level60, 426..428 level100/fixed equipment; MH actor"
+  },
+  {
+   "id": "trial_retry",
+   "evidence": "reports/project7-trial-retry-implementation.json",
+   "fact": "finite 3/2/1/0 + mandatory rearm; actual handler/Main Store/original640 consumer host PASS"
+  },
+  {
+   "id": "selector0_scene_resolver",
+   "evidence": "reports/project7-story-missions-implementation.json",
+   "fact": "normal 4129 resolver host PASS; not virtual/COC"
+  },
+  {
+   "id": "story_city_candidate",
+   "evidence": "analysis/project7/story-city-host-va480214/result.json; analysis/project7/story-city-gateway-hook-v1/result.json",
+   "fact": "source catalog 7 COC scenes/46 chapters/25 missions; reducer 108 host checks; query seam 86 checks; not Main-enabled"
+  },
+  {
+   "id": "virtual_data_contract",
+   "evidence": "analysis/project7/story-city-virtual-data-v1/virtual-data-v1.json",
+   "fact": "482..488 areas/cost/party/puzzle4 data source-ready; not consumed by Main"
+  }
+ ],
+ "build_append_assets": {
+  "catalog": "runtime/project7_story_mission_catalog/catalog-v1.tsv",
+  "economy": "runtime/project7_story_mission_catalog/economy-extra.tsv",
+  "suppression": "runtime/project7_story_mission_catalog/suppression-extra.tsv",
+  "source_helper": "runtime/project7_story_mission_catalog/source_calculator.py",
+  "public_source": "runtime/project7_story_mission_catalog/public-source-v1.json",
+  "stage": "analysis/project7/family-retry-full-prepare-v1/project7-inputs-1a6a568i/stage",
+  "compiled": "analysis/project7/family-retry-full-prepare-v1/project7-inputs-1a6a568i/compiled-atomic"
+ },
+ "current_main_baseline": {
+  "snapshot": "reports/project7-family-atomic-integration-snapshot.json",
+  "compilation_groups": 12,
+  "production_classes": 224,
+  "wish_ui_prepare": "reports/project7-wish-ui-implementation.json",
+  "story_missions": "reports/project7-story-missions-implementation.json",
+  "trial_retry": "reports/project7-trial-retry-implementation.json"
+ }
+}

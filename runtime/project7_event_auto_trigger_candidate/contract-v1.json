@@ -1,0 +1,1818 @@
+{
+  "asset": "runtime/project7_event_auto_trigger_candidate/trigger-extra-v1.tsv",
+  "asset_rows": 222,
+  "asset_sha256": "597ddb4cc68503cc0046092a40248defa98bfdd738aecd75de139261f8d9caa7",
+  "asset_size": 10269,
+  "base_event_graph": "analysis/project7/story-city-integration-prepare-v43/project7-inputs-6i2v7gq2/stage/assets/event_graph.tsv",
+  "base_event_graph_sha256": "50d211e2108524dbce10e9babf9de77cf9faf9e331f8a70f8d1a8f6d771f927f",
+  "blocked": [
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 16
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 31
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 34
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 35
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 39
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 548
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 549
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 550
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 551
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 552
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1014
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1053
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1282
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1310
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1316
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1359
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1367
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1369
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1370
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1374
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1435
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1436
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1437
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1438
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1439
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1440
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1441
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1507
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1554
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1555
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1556
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1557
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1558
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1559
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1560
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1625
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1627
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1628
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1629
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2020
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2026
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2247
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2250
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2256
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 2257
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3010
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3013
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3022
+    },
+    {
+      "codes": [
+        46
+      ],
+      "event": 3024
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3031
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3099
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3101
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3102
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3103
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3104
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3105
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3106
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3107
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3108
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3109
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3110
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3111
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3112
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3113
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 3114
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3238
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3261
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3318
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3384
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3386
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3387
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3389
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 3477
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4003
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4074
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4102
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4241
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4397
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4398
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4399
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4401
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 4403
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5006
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5008
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 5042
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5054
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5055
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5056
+    },
+    {
+      "codes": [
+        49
+      ],
+      "event": 5058
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5139
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5140
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5141
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5142
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5143
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5372
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5373
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5375
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5376
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5377
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5382
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5385
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 5386
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6008
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6386
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6454
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6457
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6458
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6460
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6462
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6463
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6464
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6465
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6466
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6470
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7007
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7009
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7019
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7064
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 7065
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 7068
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 7070
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 7072
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 7079
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7115
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7224
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7226
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7228
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7230
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7232
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7468
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7545
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7546
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7550
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7552
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7554
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7556
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7558
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7563
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7565
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7566
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7572
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7573
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 7577
+    },
+    {
+      "codes": [
+        45
+      ],
+      "event": 8014
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8016
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8035
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8036
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8416
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8417
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8730
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 8736
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20004
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20005
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20020
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20022
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20026
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20032
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20073
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20084
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 20085
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 30086
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 30112
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 30122
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 40063
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 40086
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 40093
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 40094
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50012
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50013
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50014
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50015
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50016
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50017
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50018
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50081
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50088
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 50089
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 60089
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 70007
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 70078
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 70089
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 70090
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 80072
+    },
+    {
+      "codes": [
+        31
+      ],
+      "event": 1000105
+    },
+    {
+      "codes": [
+        31
+      ],
+      "event": 1000112
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000300
+    },
+    {
+      "codes": [
+        31
+      ],
+      "event": 1000312
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000316
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000600
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000700
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1000800
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001000
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001201
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001203
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001204
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001206
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001209
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001211
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001212
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001213
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001214
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001215
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001300
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001500
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001600
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001700
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001800
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1001900
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 1001916
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 1001917
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 1001918
+    },
+    {
+      "codes": [
+        20
+      ],
+      "event": 1001919
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002000
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002021
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002500
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002600
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002625
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002700
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002800
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1002900
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1003000
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1003200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1003400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1003500
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004000
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004300
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004401
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004402
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004404
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004414
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004416
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004418
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004419
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004420
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004421
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004422
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004726
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1004728
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1006100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1006200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1009350
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1009351
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1009352
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1009607
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 1010103
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000100
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000200
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000300
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000301
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000305
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000306
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000307
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000308
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000310
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000311
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000312
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000400
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000500
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 6000600
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000027
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000030
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000032
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000033
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000034
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000059
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000061
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000062
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000064
+    },
+    {
+      "codes": [
+        "content-release-false"
+      ],
+      "event": 10000074
+    }
+  ],
+  "blocked_code_counts": {
+    "20": 17,
+    "31": 3,
+    "45": 6,
+    "46": 6,
+    "49": 1,
+    "content-release-false": 247
+  },
+  "consumer": {
+    "append_only": true,
+    "catalog": "com.project7.localmanager.LocalEventCatalog$Trigger",
+    "engine": "com.project7.localmanager.LocalEventEngine.triggerBlocker/triggerMatches/reevaluateLifecycle",
+    "fields": [
+      "preAll",
+      "preAny",
+      "battles",
+      "mutex",
+      "areas",
+      "date",
+      "week",
+      "emergency",
+      "patrolAreas",
+      "clientOps",
+      "areaClicks",
+      "predicates"
+    ],
+    "published_to_prepare": false
+  },
+  "counts": {
+    "auto_events": 3997,
+    "blocked_events": 280,
+    "candidate_rows": 222,
+    "fallback_events": 0,
+    "frozen_rows_mismatch": 0,
+    "frozen_rows_reproduced": 3490,
+    "frozen_trigger_rows": 3490,
+    "unproven_events": 5
+  },
+  "extraction_rule": {
+    "allowed_predicate_codes": [
+      5,
+      6,
+      7,
+      10,
+      12,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      48,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "blocked": "condition code outside structural columns and evaluator support",
+    "candidate": "released, condition row present, no unsupported predicate code; @route key and predecessor edge alone do not exclude",
+    "engine_gated_predicate_codes": [
+      10,
+      35
+    ],
+    "population": "event_content.isAutoTriggerEvent == true",
+    "released": "event_content.release and event_condition.release must be true",
+    "skip": "existing @trigger row",
+    "structural_codes": [
+      1,
+      17,
+      9,
+      11,
+      8,
+      4,
+      16,
+      3,
+      102,
+      100,
+      101
+    ],
+    "unproven": "week starter, or parent-only event without its own route condition; reported rowless",
+    "unreleased": "reported blocked by release, never treated as normal fallback"
+  },
+  "fallback": {
+    "route": [],
+    "successor": [],
+    "week": []
+  },
+  "policy": "event-condition-projection-append-only-v1",
+  "producer": "tools/project7_event_auto_trigger_candidate.py",
+  "schema": "project7-event-auto-trigger-candidate-v1",
+  "source_pins": {
+    "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7"
+  },
+  "unproven": {
+    "entry": [
+      1
+    ],
+    "week": [
+      1245,
+      1323,
+      1355,
+      1398
+    ]
+  },
+  "weeks": "analysis/project7/story-city-integration-prepare-v43/project7-inputs-6i2v7gq2/stage/assets/weeks.tsv",
+  "weeks_sha256": "dbb0a5d64492e18243a332c93c4a855f5572661922bd26b870b48a96b8ffaa55"
+}

@@ -1,0 +1,5950 @@
+{
+ "area_links": [
+  {
+   "area": 7,
+   "id": 1,
+   "link_area": 10000,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area7",
+   "name": "旧城区"
+  },
+  {
+   "area": 10000,
+   "id": 2,
+   "link_area": 6,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area10000",
+   "name": "旧城-侧城",
+   "pre_id": 1
+  },
+  {
+   "area": 6,
+   "id": 3,
+   "link_area": 10001,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area6",
+   "name": "海湾侧城",
+   "pre_id": 2
+  },
+  {
+   "area": 10001,
+   "id": 4,
+   "link_area": 4,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area10001",
+   "name": "侧城-中央",
+   "pre_id": 3
+  },
+  {
+   "area": 4,
+   "id": 5,
+   "link_area": 10002,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area4",
+   "name": "中央城区",
+   "pre_id": 4
+  },
+  {
+   "area": 10002,
+   "id": 6,
+   "link_area": 10003,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area10002",
+   "name": "中央-高校1",
+   "pre_id": 5
+  },
+  {
+   "area": 10003,
+   "id": 7,
+   "link_area": 2,
+   "link_sfx": "fx/scene/qianru/qr_lianxian_01.sfx",
+   "model_name": "area10003",
+   "name": "中央-高校2",
+   "pre_id": 6
+  },
+  {
+   "area": 2,
+   "id": 8,
+   "model_name": "area2",
+   "name": "高校学园",
+   "pre_id": 7
+  }
+ ],
+ "areas": [
+  {
+   "area_require": {
+    "-1": [
+     0
+    ],
+    "27-1": [
+     7
+    ]
+   },
+   "chain_index": 1,
+   "citations": [
+    {
+     "claim": "virtual area 10000 row (virtual=1)",
+     "key": "10000",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+     "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+    },
+    {
+     "claim": "virtual area 10000 projection row",
+     "key": "10000",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+     "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+    },
+    {
+     "claim": "area 10000 link row",
+     "key": "2",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    }
+   ],
+   "city_virtual_area_row": {
+    "area_require": {
+     "-1": [
+      0
+     ],
+     "27-1": [
+      7
+     ]
+    },
+    "desc": "旧城和海湾侧城之间的秘密通道",
+    "id": 10000,
+    "name": "黑棺密道1",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1
+   },
+   "default_requirement": [
+    0
+   ],
+   "desc": "旧城和海湾侧城之间的秘密通道",
+   "id": 10000,
+   "kind": "virtual",
+   "name": "黑棺密道1",
+   "next_area": 6,
+   "original_row": {
+    "area_require": {
+     "-1": [
+      0
+     ],
+     "27-1": [
+      7
+     ]
+    },
+    "desc": "旧城和海湾侧城之间的秘密通道",
+    "id": 10000,
+    "name": "黑棺密道1",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1,
+    "virtual": 1
+   },
+   "pre_area": 7,
+   "route_requirement": [
+    7
+   ],
+   "sfx": {
+    "area": 10000,
+    "id": "27-1",
+    "sock": "fx_root",
+    "state_1": "fx/scene/qianru/qr_jiedian_golw_01.sfx",
+    "state_2": "fx/scene/qianru/qr_jiedian_golw_02.sfx",
+    "state_3": "fx/scene/qianru/qr_jiedian_golw_03.sfx"
+   }
+  },
+  {
+   "area_require": {
+    "-1": [
+     0
+    ]
+   },
+   "chain_index": 3,
+   "citations": [
+    {
+     "claim": "virtual area 10001 row (virtual=1)",
+     "key": "10001",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+     "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+    },
+    {
+     "claim": "virtual area 10001 projection row",
+     "key": "10001",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+     "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+    },
+    {
+     "claim": "area 10001 link row",
+     "key": "4",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    }
+   ],
+   "city_virtual_area_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "海湾侧城和中央城区之间的秘密通道",
+    "id": 10001,
+    "name": "黑棺密道2",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1
+   },
+   "default_requirement": [
+    0
+   ],
+   "desc": "海湾侧城和中央城区之间的秘密通道",
+   "id": 10001,
+   "kind": "virtual",
+   "name": "黑棺密道2",
+   "next_area": 4,
+   "original_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "海湾侧城和中央城区之间的秘密通道",
+    "id": 10001,
+    "name": "黑棺密道2",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1,
+    "virtual": 1
+   },
+   "pre_area": 6,
+   "route_requirement": [],
+   "sfx": {
+    "area": 10001,
+    "id": "27-1",
+    "sock": "fx_root",
+    "state_1": "fx/scene/qianru/qr_jiedian_golw_01.sfx",
+    "state_2": "fx/scene/qianru/qr_jiedian_golw_02.sfx",
+    "state_3": "fx/scene/qianru/qr_jiedian_golw_03.sfx"
+   }
+  },
+  {
+   "area_require": {
+    "-1": [
+     0
+    ]
+   },
+   "chain_index": 5,
+   "citations": [
+    {
+     "claim": "virtual area 10002 row (virtual=1)",
+     "key": "10002",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+     "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+    },
+    {
+     "claim": "virtual area 10002 projection row",
+     "key": "10002",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+     "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+    },
+    {
+     "claim": "area 10002 link row",
+     "key": "6",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    }
+   ],
+   "city_virtual_area_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "中央城区和高校学园之间的秘密通道",
+    "id": 10002,
+    "name": "黑棺密道3",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1
+   },
+   "default_requirement": [
+    0
+   ],
+   "desc": "中央城区和高校学园之间的秘密通道",
+   "id": 10002,
+   "kind": "virtual",
+   "name": "黑棺密道3",
+   "next_area": 10003,
+   "original_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "中央城区和高校学园之间的秘密通道",
+    "id": 10002,
+    "name": "黑棺密道3",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1,
+    "virtual": 1
+   },
+   "pre_area": 4,
+   "route_requirement": [],
+   "sfx": {
+    "area": 10002,
+    "id": "27-1",
+    "sock": "fx_root",
+    "state_1": "fx/scene/qianru/qr_jiedian_golw_01.sfx",
+    "state_2": "fx/scene/qianru/qr_jiedian_golw_02.sfx",
+    "state_3": "fx/scene/qianru/qr_jiedian_golw_03.sfx"
+   }
+  },
+  {
+   "area_require": {
+    "-1": [
+     0
+    ]
+   },
+   "chain_index": 6,
+   "citations": [
+    {
+     "claim": "virtual area 10003 row (virtual=1)",
+     "key": "10003",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+     "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+    },
+    {
+     "claim": "virtual area 10003 projection row",
+     "key": "10003",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+     "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+    },
+    {
+     "claim": "area 10003 link row",
+     "key": "7",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    }
+   ],
+   "city_virtual_area_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "中央城区和高校学园之间的秘密通道",
+    "id": 10003,
+    "name": "黑棺密道4",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1
+   },
+   "default_requirement": [
+    0
+   ],
+   "desc": "中央城区和高校学园之间的秘密通道",
+   "id": 10003,
+   "kind": "virtual",
+   "name": "黑棺密道4",
+   "next_area": 2,
+   "original_row": {
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "desc": "中央城区和高校学园之间的秘密通道",
+    "id": 10003,
+    "name": "黑棺密道4",
+    "res": "",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1,
+    "virtual": 1
+   },
+   "pre_area": 10002,
+   "route_requirement": [],
+   "sfx": {
+    "area": 10003,
+    "id": "27-1",
+    "sock": "fx_root",
+    "state_1": "fx/scene/qianru/qr_jiedian_golw_01.sfx",
+    "state_2": "fx/scene/qianru/qr_jiedian_golw_02.sfx",
+    "state_3": "fx/scene/qianru/qr_jiedian_golw_03.sfx"
+   }
+  }
+ ],
+ "boundaries": {
+  "derived": [
+   "Scene 482 resolves event_anqixian11 directly; 483..488 resolve it through inherit_mission=482 because no event_anqixianNN modules exist for 12..17.",
+   "COC party is exactly [135] because BattleStageMember replaces heroes with list(target_hero) before admission.",
+   "Timeout is failure because the third mission_time value (5) is not CAMP1 (1) and the client compares battle.camp == win_camp."
+  ],
+  "official_policy": [
+   "Mission admission and team selection are client-side; result settlement and drops are server-authoritative in the original game.",
+   "The legacy offline_stage.basic_city_stage_chain 1..8 rejection is a legacy reference only and is not current Main evidence. Main dispatch is fixed DEX/StoryCity/Gateway; the 482..488 family must be admitted through that actual dispatch and remains unproven here.",
+   "Area status/lock effects belong to the CityCoreA cityEffects contract and are not reproduced here; progression events are reference-only.",
+   "Namespace remains q7StoryCity; this contract does not enable Main or menu 25."
+  ],
+  "unknown": [
+   "The objective-complete success trigger lives in the PvE scene asset (g58_*_pve.scn), not in cdata; only timeout failure and battle completion events are table-derivable.",
+   "mission_time[2] literal 5 is not a UnitCamp value; timeout is derived to be a failure from battle.camp == win_camp, not from a documented constant.",
+   "Client dialogue IDs 21491..21495 for clues 17..21 are preserved from cdata; their dialogue-table text still needs a static literal/source join. The clue_des text is available from decompiled puzzle_room_clue and must not be dropped.",
+   "Original server reward/drop rule for MAIN_MISSION scenes is not present in client tables; city_fight_reward is the offline runtime mapping, not proven original policy.",
+   "Event condition kinds 3/4/8/52/100/102 are server-side; the offline runtime mapping is cited only to explain the literal values."
+  ]
+ },
+ "checks": {
+  "count": 602,
+  "failed": 0,
+  "passed": 602
+ },
+ "citation_method": "Each citation points at the decompiled source row line or the client logic line. Data values come from the pinned .marshal tables; the cited .py rows were cross-checked against those pins during authoring and the file sha256 is recorded with every citation.",
+ "citations": [
+  {
+   "claim": "COC_HERO_LIMIT_SCENE = (482,483,484,485,486,486,487,488)",
+   "lines": "2109-2110",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "BattleType.STAGE = 1",
+   "lines": "1921-1922",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "MissionMode.MAIN_MISSION = 2",
+   "lines": "1957-1959",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "MissionType.SURVIVE_TIME = 10",
+   "lines": "860-870",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "TIMEBAR_MISSION includes SURVIVE_TIME",
+   "lines": "918-919",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "CityStatus FREE/FIGHT/FALL/STRIKE",
+   "lines": "3219-3226",
+   "path": "analysis/original-py-640/com/const.py",
+   "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+  },
+  {
+   "claim": "stage action/fatigue cost",
+   "lines": "171-181",
+   "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+   "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+  },
+  {
+   "claim": "virtual area admission and forced COC party",
+   "lines": "86-107",
+   "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+   "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+  },
+  {
+   "claim": "combatOfflineRequest wire",
+   "lines": "72-79",
+   "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+   "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+  },
+  {
+   "claim": "hero button hidden and qianxing shown for COC scenes",
+   "lines": "207-208",
+   "path": "analysis/original-py-640/cocos/panels/battle_stage.py",
+   "sha256": "55aca4485e821aad72949c45916e0ae8c8f0d7ddf474a376c3bbae4e83b27d6e"
+  },
+  {
+   "claim": "dataSource event module, inherit_mission fallback",
+   "lines": "24-45",
+   "path": "analysis/original-py-640/combat/logic/logic/event_logic.py",
+   "sha256": "a5997788136be0351a9191c6f97c5885de012df2df1cb6c1caecbb18e3213dd5"
+  },
+  {
+   "claim": "event_anqixian11 only schedules the minimap",
+   "lines": "8-17",
+   "path": "analysis/original-py-640/combat/logic/logic/events/event_anqixian11.py",
+   "sha256": "89a96a5fae94cdc9f98584c071fc3c4741a84e77c50bc2fc097d7d872df75623"
+  },
+  {
+   "claim": "mission init_events are processed as battle setup events",
+   "lines": "263-266",
+   "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+   "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+  },
+  {
+   "claim": "mission_time timer runs finish_combat(int(mission_succ))",
+   "lines": "272-298",
+   "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+   "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+  },
+  {
+   "claim": "client win flag is battle.camp == win_camp",
+   "lines": "738",
+   "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+   "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+  },
+  {
+   "claim": "virtual area visibility follows predecessor FREE state",
+   "lines": "142-161",
+   "path": "analysis/original-py-640/cocos/members/storyline/storyline_27.py",
+   "sha256": "e39d2840956a0c83e13804646dea9b02cb51b0ba0466b240024d00955df0a7e4"
+  },
+  {
+   "claim": "virtual area click allowed only on route 27-1 with FIGHT status",
+   "lines": "225-231",
+   "path": "analysis/original-py-640/cocos/members/storyline/storyline_27.py",
+   "sha256": "e39d2840956a0c83e13804646dea9b02cb51b0ba0466b240024d00955df0a7e4"
+  },
+  {
+   "claim": "puzzleRoomGetClue contract",
+   "lines": "423-436",
+   "path": "analysis/original-py-640/entity/avatar_members/StoryMember.py",
+   "sha256": "add09f1574f3ce103b7ac9f637650e3ec73c2291fec1dee8aabc7cdc70def067"
+  },
+  {
+   "claim": "puzzle clue click",
+   "lines": "187-190",
+   "path": "analysis/original-py-640/game_scene/city_jiemi.py",
+   "sha256": "dd6952e3f2f0c83ed98628f3dac96cf3d8b03d6818222e5d347547b5ddf09d9a"
+  },
+  {
+   "claim": "current virtual area family is rejected by basic_city_stage_chain",
+   "lines": "88-101",
+   "path": "runtime/offline_stage.py",
+   "sha256": "88c6bd14629ff8b22559e2745e3675eb3ae346e1df12ae9a32f50c67aeda3e16"
+  },
+  {
+   "claim": "offline settlement maps reward_level to city_fight_reward and pool 304",
+   "lines": "204-300",
+   "path": "runtime/offline_battle.py",
+   "sha256": "e2d9e6acc4ebb8b2de1efa1176f026e81041c504f8aa86e17524eb4e7b06c3f8"
+  },
+  {
+   "claim": "base fight reward row",
+   "key": "1",
+   "lines": "15",
+   "path": "analysis/original-py-640/com/data/cdata/city_fight_reward.py",
+   "sha256": "2a49a96517b509bf04837eb7ad8cc9e8030ce8118da4044faaaa9b0f75924532"
+  },
+  {
+   "claim": "weighted drop pool 304",
+   "key": "304",
+   "lines": "key 304",
+   "path": "analysis/project7/scripts/com/data/cdata/reward_random.marshal",
+   "sha256": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262"
+  },
+  {
+   "claim": "event rows 3437/3444/3455 for puzzle room 4",
+   "key": "3437",
+   "lines": "246",
+   "path": "analysis/decompiled/event_content.py",
+   "sha256": "5d8568a9b34512088d7827a6029f21acca2e2b4922acd9d5ae6b304aebcde8e3"
+  },
+  {
+   "claim": "event rows 1435..1452 for COC progression",
+   "key": "1435",
+   "lines": "26",
+   "path": "analysis/decompiled/event_content.py",
+   "sha256": "5d8568a9b34512088d7827a6029f21acca2e2b4922acd9d5ae6b304aebcde8e3"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "482",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[482, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[10000, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "483",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[483, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[6, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "484",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[484, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[10001, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "485",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[485, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[4, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "486",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[486, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[10002, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "487",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[487, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[10003, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "COC mission row",
+   "key": "488",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission.py",
+   "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  },
+  {
+   "claim": "COC hero config row",
+   "key": "[488, 135]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+   "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+  },
+  {
+   "claim": "COC chapter row",
+   "key": "[2, 0, '27-1', 0]",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+  },
+  {
+   "claim": "virtual area row",
+   "key": "10000",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+   "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+  },
+  {
+   "claim": "virtual area projection",
+   "key": "10000",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+   "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+  },
+  {
+   "claim": "virtual area row",
+   "key": "10001",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+   "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+  },
+  {
+   "claim": "virtual area projection",
+   "key": "10001",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+   "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+  },
+  {
+   "claim": "virtual area row",
+   "key": "10002",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+   "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+  },
+  {
+   "claim": "virtual area projection",
+   "key": "10002",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+   "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+  },
+  {
+   "claim": "virtual area row",
+   "key": "10003",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_data.py",
+   "sha256": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8"
+  },
+  {
+   "claim": "virtual area projection",
+   "key": "10003",
+   "lines": "16",
+   "path": "analysis/original-py-640/com/data/cdata/city_virtual_area.py",
+   "sha256": "47d2470729b865e2d5cfa163adb1b5533906d9611a51016ca8c00a92615cc26f"
+  },
+  {
+   "claim": "puzzle room 4 row",
+   "key": "4",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/puzzle_room.py",
+   "sha256": "ba989187991965753ead17af494353f987ca3344a7a8aa91f87a6394356b32b5"
+  },
+  {
+   "claim": "puzzle room 4 clue",
+   "key": "17",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/puzzle_room_clue.py",
+   "sha256": "3ba8da63a6de6d07193587a7c16fba349bbe246a9d9f0192d105ad0c65ff804d"
+  },
+  {
+   "claim": "puzzle room 4 clue",
+   "key": "21",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/puzzle_room_clue.py",
+   "sha256": "3ba8da63a6de6d07193587a7c16fba349bbe246a9d9f0192d105ad0c65ff804d"
+  },
+  {
+   "claim": "puzzle room 4 camera",
+   "key": "9",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/puzzle_room_camera.py",
+   "sha256": "7f52f450043705ef1deba59254c4809cde23122f3fef73ee22122bf3f2e84ce1"
+  },
+  {
+   "claim": "puzzle room 4 camera",
+   "key": "13",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/puzzle_room_camera.py",
+   "sha256": "7f52f450043705ef1deba59254c4809cde23122f3fef73ee22122bf3f2e84ce1"
+  },
+  {
+   "claim": "puzzle room 4 trigger condition",
+   "key": "3437",
+   "lines": "15",
+   "path": "analysis/original-py-640/com/data/cdata/event_condition.py",
+   "sha256": "9965c150c89624b8adca1e23a83c70c6ad833bb7ff15ae384b8d7e41a70c860d"
+  },
+  {
+   "claim": "puzzle room 4 route tip",
+   "key": "['27-2', 5]",
+   "lines": "15",
+   "path": "analysis/original-py-640/com/data/cdata/storyroute_tip.py",
+   "sha256": "49cf8b3f83dc42ec39db26d29563e6aad7df8237ce791a255eb8f00062ee515a"
+  },
+  {
+   "claim": "COC link chain head",
+   "key": "1",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+   "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+  },
+  {
+   "claim": "COC link chain tail",
+   "key": "8",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+   "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+  },
+  {
+   "claim": "route 27-1 virtual area sfx",
+   "key": "['27-1', 10000]",
+   "lines": "14",
+   "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+   "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+  }
+ ],
+ "client_constants": {
+  "BattleType_STAGE": 1,
+  "CityStatus_FALL": 2,
+  "CityStatus_FIGHT": 1,
+  "CityStatus_FREE": 0,
+  "CityStatus_STRIKE": 5,
+  "MissionMode_MAIN_MISSION": 2,
+  "MissionType_SURVIVE_TIME": 10,
+  "ROUTE_27": "27",
+  "ROUTE_27_BRANCH1": "27-1",
+  "ROUTE_27_BRANCH2": "27-2",
+  "UnitCamp_CAMP1": 1,
+  "UnitCamp_MONSTER": 3,
+  "UnitCamp_NEUTRAL": 4
+ },
+ "consumer_namespace": "q7StoryCity",
+ "live_catalog": {
+  "asset_sha256": "af2328b97372c27fd392b5b399d03daa17fa73acdd35d2b1ad5b0a8f07218069",
+  "available": true,
+  "expanded_sha256": "32d20dc25a0559c91df91b009f5d04a8d4752f848ae9f0860a17a998f154ab77",
+  "missing_scenes": [],
+  "mission_hero_override_present": [
+   482,
+   483,
+   484,
+   485,
+   486,
+   487,
+   488
+  ],
+  "present_scenes": [
+   482,
+   483,
+   484,
+   485,
+   486,
+   487,
+   488
+  ],
+  "schema": "project7-story-city-v1",
+  "virtual_areas": [
+   10000,
+   10001,
+   10002,
+   10003
+  ]
+ },
+ "merge": {
+  "areas": "Replace/verify the four virtual rows 10000..10003; pre_area/next_area come from coc_area_link_data.",
+  "chapters": "Verify the four virtual chapter rows and add the three interstitial rows keyed [area,0,\"27-1\",0]; the live catalog omits 483/485/488.",
+  "do_not_consume": [
+   "progression_events (CityCoreA owns cityEffects)",
+   "area status/lock projections"
+  ],
+  "mission_hero_override": "Use mission_hero_override from this contract; the live producer keys mission_hero_attr by (scene,135) but reads an integer, yielding null.",
+  "missions": "Replace/verify 482/484/486/487 and add 483/485/488 with wire=1, party=[135], minimum=maximum=1, economy=[2,0,0,0,1,1,1].",
+  "namespace": "q7StoryCity",
+  "puzzle_room": "Puzzle room 4 needs a new catalog field/version; the live project7-story-city-v1 catalog has no puzzle section.",
+  "target_schema": "project7-story-city-v1"
+ },
+ "missions": [
+  {
+   "area": 10000,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 10000,
+    "area_require": {
+     "-1": [
+      0
+     ],
+     "27-1": [
+      7
+     ]
+    },
+    "family_route_requirement": [],
+    "kind": "virtual",
+    "next_area": 6,
+    "pre_area": 7,
+    "route_requirement": [
+     7
+    ]
+   },
+   "area_kind": "virtual",
+   "chain_index": 1,
+   "chapter": {
+    "group": 0,
+    "key": [
+     10000,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      482
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 482",
+     "key": "482",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 482",
+     "key": "[10000, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 482",
+     "key": "[482, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 482",
+     "key": "2",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 482",
+     "key": "['27-1', 10000]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian11",
+   "desc": "隐藏的通道，通往了幽深的地下隧道之中。",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['10000:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{7: (0,)}"
+     },
+     "ctid": 193,
+     "name": "秘密潜行1",
+     "release": false
+    },
+    "id": 1435,
+    "row": {
+     "completeConds": {
+      "battle": [
+       482
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      482
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 482,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行1",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": null,
+    "name": "event_anqixian11",
+    "resolution": "direct"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 120,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [
+    {
+     "id": 165,
+     "row": {
+      "add_lift": {},
+      "auto_hide_enable": {},
+      "fix_y": {},
+      "model_visible": [
+       "40018_566",
+       false
+      ]
+     }
+    },
+    {
+     "id": 166,
+     "row": {
+      "add_lift": {},
+      "auto_hide_enable": {},
+      "fix_y": {},
+      "model_visible": [
+       "40007_566",
+       false
+      ]
+     }
+    }
+   ],
+   "key": "482",
+   "map": {
+    "angle": 45,
+    "end_position": [
+     -2432,
+     0,
+     -817
+    ],
+    "music": "music/mus_scene/kuangdongyiji",
+    "name": "ditiesuidao",
+    "paths": [
+     "scene/pve/g58_sd_pve.scn"
+    ],
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "sound": "amb_juqingfx/amb/dixiasuidaoditu/dixiasuidaoditu"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 482,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线11",
+   "name": "交界潜行 · 一",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 45,
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 10000,
+    "dataSource": "anqixian11",
+    "desc": "隐藏的通道，通往了幽深的地下隧道之中。",
+    "enable_light": 1,
+    "end_position": [
+     -2432,
+     0,
+     -817
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 482,
+    "ignoreAOI": 1,
+    "init_events": [
+     165,
+     166
+    ],
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "ditiesuidao",
+    "map_path": [
+     "scene/pve/g58_sd_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线11"
+    ],
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "music": "music/mus_scene/kuangdongyiji",
+    "name": "交界潜行 · 一",
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/dixiasuidaoditu/dixiasuidaoditu",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1435,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 482,
+   "sequence": 1,
+   "success": {
+    "completeConds": {
+     "battle": [
+      482
+     ]
+    },
+    "event": 1435,
+    "evidence": "event_content[1435].completeConds.battle contains 482",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 482,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 120
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 10000
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 482,
+    "t": 1
+   }
+  },
+  {
+   "area": 6,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 6,
+    "area_require": {
+     "-1": [
+      5
+     ],
+     "23": [
+      4,
+      5
+     ],
+     "25": [
+      0
+     ],
+     "26": [
+      3,
+      4
+     ],
+     "27": [
+      10000
+     ],
+     "30-1": [
+      7
+     ],
+     "30-2": [
+      7
+     ],
+     "32": [
+      0
+     ],
+     "33": [
+      3
+     ],
+     "6": [
+      5
+     ]
+    },
+    "family_route_requirement": [
+     10000
+    ],
+    "kind": "normal",
+    "next_area": null,
+    "pre_area": null,
+    "route_requirement": []
+   },
+   "area_kind": "normal",
+   "chain_index": 2,
+   "chapter": {
+    "group": 0,
+    "key": [
+     6,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      483
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 483",
+     "key": "483",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 483",
+     "key": "[6, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 483",
+     "key": "[483, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 483",
+     "key": "3",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 483",
+     "key": "['27-1', 6]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian12",
+   "desc": "躲避地铁站中的怪物。",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['6:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{10000: (0,)}"
+     },
+     "ctid": 194,
+     "name": "秘密潜行2",
+     "release": false
+    },
+    "id": 1436,
+    "row": {
+     "completeConds": {
+      "battle": [
+       483
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      483
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 483,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行2",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 120,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [],
+   "key": "483",
+   "map": {
+    "angle": 315,
+    "end_position": [
+     -543,
+     3,
+     -162
+    ],
+    "music": "music/mus_scene/yulejie",
+    "name": "ditiezhan",
+    "paths": [
+     "scene/pve/g58_dtz_pve.scn"
+    ],
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "sound": "amb_juqingfx/amb/ditiezhan/ditiezhan"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 483,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线12",
+   "name": "交界潜行 · 二",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 315,
+    "auto_hide": [
+     "g58_jz003_dtz_01_202",
+     "g58_dj013_dtz_258",
+     "g58_dj003_dtz_201",
+     "g58_dj010_dtz_01_256",
+     "g58_dj010_dtz_01_257",
+     "g58_jz003_dtz_01_204"
+    ],
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 6,
+    "dataSource": "anqixian12",
+    "desc": "躲避地铁站中的怪物。",
+    "enable_light": 1,
+    "end_position": [
+     -543,
+     3,
+     -162
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 483,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "ditiezhan",
+    "map_path": [
+     "scene/pve/g58_dtz_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线12"
+    ],
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "music": "music/mus_scene/yulejie",
+    "name": "交界潜行 · 二",
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/ditiezhan/ditiezhan",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1436,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 483,
+   "sequence": 2,
+   "success": {
+    "completeConds": {
+     "battle": [
+      483
+     ]
+    },
+    "event": 1436,
+    "evidence": "event_content[1436].completeConds.battle contains 483",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 483,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 120
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 6
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 483,
+    "t": 1
+   }
+  },
+  {
+   "area": 10001,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 10001,
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "family_route_requirement": [],
+    "kind": "virtual",
+    "next_area": 4,
+    "pre_area": 6,
+    "route_requirement": []
+   },
+   "area_kind": "virtual",
+   "chain_index": 3,
+   "chapter": {
+    "group": 0,
+    "key": [
+     10001,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      484
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 484",
+     "key": "484",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 484",
+     "key": "[10001, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 484",
+     "key": "[484, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 484",
+     "key": "4",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 484",
+     "key": "['27-1', 10001]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian13",
+   "desc": "地下车库的深处，躲避怪物视线！",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['10001:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{6: (0,)}"
+     },
+     "ctid": 195,
+     "name": "秘密潜行3",
+     "release": false
+    },
+    "id": 1437,
+    "row": {
+     "completeConds": {
+      "battle": [
+       484
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      484
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 484,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行3",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 180,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [],
+   "key": "484",
+   "map": {
+    "angle": 315,
+    "end_position": [
+     560,
+     0,
+     248
+    ],
+    "music": "music/mus_scene/yulejie",
+    "name": "tingchechang2",
+    "paths": [
+     "scene/pve/g58_ck_01_pve.scn"
+    ],
+    "pre_load": [
+     30010
+    ],
+    "sound": "amb_juqingfx/amb/tingchejian/tingchejian"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 484,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线13",
+   "name": "交界潜行 · 三",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 315,
+    "auto_hide": [
+     "g58_ck01_db04_01_397"
+    ],
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 10001,
+    "dataSource": "anqixian13",
+    "desc": "地下车库的深处，躲避怪物视线！",
+    "end_position": [
+     560,
+     0,
+     248
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 484,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "tingchechang2",
+    "map_path": [
+     "scene/pve/g58_ck_01_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线13"
+    ],
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "music": "music/mus_scene/yulejie",
+    "name": "交界潜行 · 三",
+    "pre_load": [
+     30010
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/tingchejian/tingchejian",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1437,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 484,
+   "sequence": 3,
+   "success": {
+    "completeConds": {
+     "battle": [
+      484
+     ]
+    },
+    "event": 1437,
+    "evidence": "event_content[1437].completeConds.battle contains 484",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 484,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 180
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 10001
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 484,
+    "t": 1
+   }
+  },
+  {
+   "area": 4,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 4,
+    "area_require": {
+     "-1": [
+      2
+     ],
+     "23": [
+      3
+     ],
+     "25": [
+      0
+     ],
+     "27": [
+      10001
+     ],
+     "32": [
+      0
+     ],
+     "33": [
+      2
+     ],
+     "5": [
+      0
+     ],
+     "5-1": [
+      0
+     ],
+     "5-2": [
+      0
+     ],
+     "5-3": [
+      0
+     ],
+     "5-4": [
+      0
+     ],
+     "5-5": [
+      0
+     ],
+     "5-6": [
+      2
+     ],
+     "6": [
+      3
+     ]
+    },
+    "family_route_requirement": [
+     10001
+    ],
+    "kind": "normal",
+    "next_area": null,
+    "pre_area": null,
+    "route_requirement": []
+   },
+   "area_kind": "normal",
+   "chain_index": 4,
+   "chapter": {
+    "group": 0,
+    "key": [
+     4,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      485
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 485",
+     "key": "485",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 485",
+     "key": "[4, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 485",
+     "key": "[485, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 485",
+     "key": "5",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 485",
+     "key": "['27-1', 4]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian14",
+   "desc": "躲避轻轨线的怪物。",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['4:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{10001: (0,)}"
+     },
+     "ctid": 196,
+     "name": "秘密潜行4",
+     "release": false
+    },
+    "id": 1438,
+    "row": {
+     "completeConds": {
+      "battle": [
+       485
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      485
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 485,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行4",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 180,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [],
+   "key": "485",
+   "map": {
+    "angle": 315,
+    "end_position": [
+     560,
+     2,
+     697
+    ],
+    "music": "music/mus_scene/xiandaijiequ",
+    "name": "fanhuajie",
+    "paths": [
+     "scene/pve/g58_fhj_pve.scn"
+    ],
+    "pre_load": [
+     30010
+    ],
+    "sound": "amb_juqingfx/amb/fanhuajie/fanhuajie"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 485,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线14",
+   "name": "交界潜行 · 四",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 315,
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 4,
+    "dataSource": "anqixian14",
+    "desc": "躲避轻轨线的怪物。",
+    "enable_light": 1,
+    "end_position": [
+     560,
+     2,
+     697
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 485,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "fanhuajie",
+    "map_path": [
+     "scene/pve/g58_fhj_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线14"
+    ],
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "music": "music/mus_scene/xiandaijiequ",
+    "name": "交界潜行 · 四",
+    "pre_load": [
+     30010
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/fanhuajie/fanhuajie",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1438,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 485,
+   "sequence": 4,
+   "success": {
+    "completeConds": {
+     "battle": [
+      485
+     ]
+    },
+    "event": 1438,
+    "evidence": "event_content[1438].completeConds.battle contains 485",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 485,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 180
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 4
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 485,
+    "t": 1
+   }
+  },
+  {
+   "area": 10002,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 10002,
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "family_route_requirement": [],
+    "kind": "virtual",
+    "next_area": 10003,
+    "pre_area": 4,
+    "route_requirement": []
+   },
+   "area_kind": "virtual",
+   "chain_index": 5,
+   "chapter": {
+    "group": 0,
+    "key": [
+     10002,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      486
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 486",
+     "key": "486",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 486",
+     "key": "[10002, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 486",
+     "key": "[486, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 486",
+     "key": "6",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 486",
+     "key": "['27-1', 10002]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian15",
+   "desc": "市中心的美丽广场，什么时候才能回到人来人往的时候呢？",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['10002:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{4: (0,)}"
+     },
+     "ctid": 197,
+     "name": "秘密潜行5",
+     "release": false
+    },
+    "id": 1439,
+    "row": {
+     "completeConds": {
+      "battle": [
+       486
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      486
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 486,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行5",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 120,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [],
+   "key": "486",
+   "map": {
+    "angle": 270,
+    "end_position": [
+     238,
+     2,
+     -446
+    ],
+    "music": "music/mus_scene/xiandaijiequ_new",
+    "name": "penquanguangchang2",
+    "paths": [
+     "scene/pve/g58_pqgc_pve.scn"
+    ],
+    "pre_load": [
+     30010
+    ],
+    "sound": "amb_juqingfx/amb/penquanguangchang/penquanguangchang"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 486,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线15",
+   "name": "交界潜行 · 五",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 270,
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 10002,
+    "dataSource": "anqixian15",
+    "desc": "市中心的美丽广场，什么时候才能回到人来人往的时候呢？",
+    "end_position": [
+     238,
+     2,
+     -446
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 486,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "penquanguangchang2",
+    "map_path": [
+     "scene/pve/g58_pqgc_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线15"
+    ],
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "music": "music/mus_scene/xiandaijiequ_new",
+    "name": "交界潜行 · 五",
+    "pre_load": [
+     30010
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/penquanguangchang/penquanguangchang",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1439,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 486,
+   "sequence": 5,
+   "success": {
+    "completeConds": {
+     "battle": [
+      486
+     ]
+    },
+    "event": 1439,
+    "evidence": "event_content[1439].completeConds.battle contains 486",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 486,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "120",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 120
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 10002
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 486,
+    "t": 1
+   }
+  },
+  {
+   "area": 10003,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 10003,
+    "area_require": {
+     "-1": [
+      0
+     ]
+    },
+    "family_route_requirement": [],
+    "kind": "virtual",
+    "next_area": 2,
+    "pre_area": 10002,
+    "route_requirement": []
+   },
+   "area_kind": "virtual",
+   "chain_index": 6,
+   "chapter": {
+    "group": 0,
+    "key": [
+     10003,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      487
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 487",
+     "key": "487",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 487",
+     "key": "[10003, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 487",
+     "key": "[487, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 487",
+     "key": "7",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 487",
+     "key": "['27-1', 10003]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian16",
+   "desc": "曾经热闹的学园，如今已经被怪物所占据。",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['10003:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{10002: (0,)}"
+     },
+     "ctid": 198,
+     "name": "秘密潜行6",
+     "release": false
+    },
+    "id": 1440,
+    "row": {
+     "completeConds": {
+      "battle": [
+       487
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      487
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 487,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行6",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 180,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [],
+   "key": "487",
+   "map": {
+    "angle": 45,
+    "end_position": [
+     -166,
+     2,
+     70
+    ],
+    "music": "music/mus_scene/xichengqu",
+    "name": "gaoxiaoxueyuan",
+    "paths": [
+     "scene/pve/g58_xy_pve.scn"
+    ],
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "sound": "amb_juqingfx/amb/gaoxiaoxueyuan/gaoxiaoxueyuan"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 487,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线16",
+   "name": "交界潜行 · 六",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 45,
+    "auto_hide": [
+     "g58_jz005_xy_1046"
+    ],
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 10003,
+    "dataSource": "anqixian16",
+    "desc": "曾经热闹的学园，如今已经被怪物所占据。",
+    "enable_light": 1,
+    "end_position": [
+     -166,
+     2,
+     70
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 487,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "gaoxiaoxueyuan",
+    "map_path": [
+     "scene/pve/g58_xy_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线16"
+    ],
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "music": "music/mus_scene/xichengqu",
+    "name": "交界潜行 · 六",
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/gaoxiaoxueyuan/gaoxiaoxueyuan",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1440,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 487,
+   "sequence": 6,
+   "success": {
+    "completeConds": {
+     "battle": [
+      487
+     ]
+    },
+    "event": 1440,
+    "evidence": "event_content[1440].completeConds.battle contains 487",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 487,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 180
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 10003
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 487,
+    "t": 1
+   }
+  },
+  {
+   "area": 2,
+   "area_chain": [
+    7,
+    10000,
+    6,
+    10001,
+    4,
+    10002,
+    10003,
+    2
+   ],
+   "area_gate": {
+    "area": 2,
+    "area_require": {
+     "-1": [
+      1
+     ],
+     "20-1": [
+      3,
+      0
+     ],
+     "20-2": [
+      3,
+      0
+     ],
+     "20-3": [
+      3,
+      0
+     ],
+     "20-4": [
+      3,
+      0
+     ],
+     "20-5": [
+      3,
+      0
+     ],
+     "20-6": [
+      3,
+      0
+     ],
+     "21-1": [
+      3,
+      0
+     ],
+     "21-2": [
+      3,
+      0
+     ],
+     "21-3": [
+      3,
+      0
+     ],
+     "21-4": [
+      3,
+      0
+     ],
+     "21-5": [
+      3,
+      0
+     ],
+     "21-6": [
+      3,
+      0
+     ],
+     "21-7": [
+      3,
+      0
+     ],
+     "21-8": [
+      3,
+      0
+     ],
+     "21-9": [
+      3,
+      0
+     ],
+     "23": [
+      1
+     ],
+     "25": [
+      0
+     ],
+     "26": [
+      0
+     ],
+     "27-1": [
+      10003
+     ],
+     "32": [
+      0
+     ],
+     "33": [
+      0
+     ],
+     "5": [
+      0
+     ],
+     "5-1": [
+      0
+     ],
+     "5-2": [
+      0
+     ],
+     "5-3": [
+      0
+     ],
+     "5-4": [
+      0
+     ],
+     "5-5": [
+      0
+     ],
+     "5-6": [
+      1
+     ],
+     "6": [
+      1
+     ]
+    },
+    "family_route_requirement": [],
+    "kind": "normal",
+    "next_area": null,
+    "pre_area": null,
+    "route_requirement": [
+     10003
+    ]
+   },
+   "area_kind": "normal",
+   "chain_index": 7,
+   "chapter": {
+    "group": 0,
+    "key": [
+     2,
+     0,
+     "27-1",
+     0
+    ],
+    "section": {
+     "0": [
+      488
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    }
+   },
+   "citations": [
+    {
+     "claim": "mission row 488",
+     "key": "488",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission.py",
+     "sha256": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+    },
+    {
+     "claim": "chapter row for scene 488",
+     "key": "[2, 0, '27-1', 0]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+     "sha256": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962"
+    },
+    {
+     "claim": "hero 135 combat config for scene 488",
+     "key": "[488, 135]",
+     "lines": "16",
+     "path": "analysis/original-py-640/com/data/cdata/mission_hero_attr.py",
+     "sha256": "4b1eb2221e5f83a52cbce07ad29f307b28b2aa2a6d42b1abbe19118afb3a3c05"
+    },
+    {
+     "claim": "area link for scene 488",
+     "key": "8",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/coc_area_link_data.py",
+     "sha256": "e69aa44811482ebd702bfe0c10080ad4de08979b93c0a7a102fe984bdbfab219"
+    },
+    {
+     "claim": "route 27-1 area sfx for scene 488",
+     "key": "['27-1', 2]",
+     "lines": "14",
+     "path": "analysis/original-py-640/com/data/cdata/city_area_sfx_data.py",
+     "sha256": "fdbe103e223cb328110a69f2b8b8e289a73e7651a4de0e5795b93fc0ac509bd4"
+    },
+    {
+     "claim": "COC_HERO_LIMIT_SCENE contains all seven scenes",
+     "lines": "2109-2110",
+     "path": "analysis/original-py-640/com/const.py",
+     "sha256": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a"
+    },
+    {
+     "claim": "stage admission then forces heroes=list(target_hero)",
+     "lines": "86-107",
+     "path": "analysis/original-py-640/entity/avatar_members/BattleStageMember.py",
+     "sha256": "ae9e7617846b34e962583b298dea120ddd8e5947e05037fa4041b340b9603ac9"
+    },
+    {
+     "claim": "wire {'t': type, 's': scene, 'h': heroes, 'd': data}",
+     "lines": "72-79",
+     "path": "analysis/original-py-640/entity/avatar_members/CombatMember.py",
+     "sha256": "af7013f272b623f13d1f3fa7a1662b90552f050b90ea072076a7a7487a01db77"
+    },
+    {
+     "claim": "action=va and fatigue/overFatigue cost fields",
+     "lines": "171-181",
+     "path": "analysis/original-py-640/entity/avatar_attrs/CityData.py",
+     "sha256": "7173256ee6016cad4070aacb14b0a5caf48458cee91c693d7612533d35ca1a58"
+    },
+    {
+     "claim": "mission_time timer and limit_time expiry",
+     "lines": "272-298",
+     "path": "analysis/original-py-640/combat/logic/logic/events/event_base.py",
+     "sha256": "f4054cc1d537c21bab9a0a499257606c891cd98836e5eb20c964820f3b7d4a0a"
+    },
+    {
+     "claim": "win flag is battle.camp == win_camp",
+     "lines": "738",
+     "path": "analysis/original-py-640/combat/view/logic/events/event_base.py",
+     "sha256": "d7b0fd5673995b3d0b85521ae9a232f7946a5298ad5775b91ca6f5c5fc9af36a"
+    }
+   ],
+   "cost": {
+    "action": 2,
+    "fatigue": 0,
+    "force_recommend": 0,
+    "formula": "action=va; fatigue=fatigue if force>=force_recommend else overFatigue",
+    "items": [],
+    "money": 0,
+    "overFatigue": 0,
+    "source_fields": {
+     "fatigue": "absent",
+     "force_recommend": "absent",
+     "overFatigue": "absent",
+     "va": 2
+    },
+    "va": 2
+   },
+   "data_source": "anqixian17",
+   "desc": "学园的后门，接近黑门的中心.",
+   "drop": {
+    "mission_specific": false,
+    "policy": "level-based offline reimplementation; original server authoritative",
+    "pool_ids": [
+     304
+    ],
+    "table": "reward_random"
+   },
+   "economy": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "entry_event": {
+    "condition": {
+     "conds": {
+      "100": "set(['2:1'])",
+      "101": "0",
+      "4": "[0,0]",
+      "52": "set(['27','27-1'])",
+      "8": "{10003: (0,)}"
+     },
+     "ctid": 199,
+     "name": "秘密潜行7",
+     "release": false
+    },
+    "id": 1441,
+    "row": {
+     "completeConds": {
+      "battle": [
+       488
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishBattle": [
+      488
+     ],
+     "emergencyEvent": false,
+     "enterBattle": 488,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "name": "秘密潜行7",
+     "priority": 5,
+     "release": false,
+     "repeatable": false
+    }
+   },
+   "event_module": {
+    "inherit_mission": 482,
+    "name": "event_anqixian11",
+    "resolution": "inherit_mission"
+   },
+   "fail": {
+    "evidence": "mission_time[2] is passed to finish_combat(win_camp) and the client compares battle.camp == win_camp",
+    "failEvent": null,
+    "kind": "timeout",
+    "timer_seconds": 180,
+    "win": false,
+    "win_camp": 5
+   },
+   "family": "coc-stealth",
+   "init_events": [
+    {
+     "id": 409,
+     "row": {
+      "add_lift": {},
+      "auto_hide_enable": {},
+      "building_add": [
+       5
+      ],
+      "fix_y": {},
+      "model_anim": [
+       "40115_1778",
+       "opening",
+       "open"
+      ],
+      "obstacle_del": [
+       "roadxyhm1"
+      ],
+      "traps": [
+       6
+      ]
+     }
+    },
+    {
+     "id": 1731,
+     "row": {
+      "add_lift": {},
+      "auto_hide_enable": {},
+      "fix_y": {},
+      "model_anim": [
+       "40115_1776",
+       "opening",
+       "open"
+      ],
+      "obstacle_del": [
+       "men1731"
+      ]
+     }
+    }
+   ],
+   "key": "488",
+   "map": {
+    "angle": 155,
+    "end_position": [
+     -610,
+     0,
+     -14
+    ],
+    "music": "music/mus_scene/xichengqu",
+    "name": "xueyuanhoumen",
+    "paths": [
+     "scene/pve/g58_xyhm_pve.scn"
+    ],
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "sound": "amb_juqingfx/amb/xueyuanhoumen/xueyuanhoumen"
+   },
+   "mission_hero_override": {
+    "artifact": {
+     "attrs": {
+      "_base_mag_att_str": 180,
+      "_base_mag_def": 0,
+      "_base_max_hp": 45,
+      "_base_phy_att_str": 0,
+      "_base_phy_def": 0
+     },
+     "order": 0
+    },
+    "hero_name": "彼安汀",
+    "heroid": 135,
+    "level": 50,
+    "liberate": 100,
+    "mission_id": 488,
+    "pos_id": 135,
+    "starLevel": 4,
+    "starOrder": 1,
+    "treasure": [
+     {
+      "item_gen_id": 18007
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11008
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11010
+     },
+     {
+      "item_gen_id": 11012
+     },
+     {
+      "item_gen_id": 11018
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13008
+     },
+     {
+      "item_gen_id": 13010
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 13011
+     },
+     {
+      "item_gen_id": 14017
+     },
+     {
+      "item_gen_id": 16009
+     }
+    ]
+   },
+   "mission_path": "暗棋线17",
+   "name": "交界潜行 · 七",
+   "original_row": {
+    "adjust_monster_lv": 50,
+    "angle": 155,
+    "battle_stage_num": 1,
+    "born_buff_ids": [
+     41149
+    ],
+    "ch": 2,
+    "dataSource": "anqixian17",
+    "desc": "学园的后门，接近黑门的中心.",
+    "enable_light": 1,
+    "end_position": [
+     -610,
+     0,
+     -14
+    ],
+    "hero_appear_mode": 1,
+    "hideAutoAI": 1,
+    "id": 488,
+    "ignoreAOI": 1,
+    "inherit_mission": 482,
+    "init_events": [
+     409,
+     1731
+    ],
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "xueyuanhoumen",
+    "map_path": [
+     "scene/pve/g58_xyhm_pve.scn"
+    ],
+    "max_hero_num": 1,
+    "mission_path": [
+     "暗棋线17"
+    ],
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "music": "music/mus_scene/xichengqu",
+    "name": "交界潜行 · 七",
+    "pre_load": [
+     30010,
+     10001
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "躲避怪物的视野到达目标位置！",
+    "sound": "amb_juqingfx/amb/xueyuanhoumen/xueyuanhoumen",
+    "system_type": 2,
+    "target_hero": [
+     135
+    ],
+    "type": 10,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.0,
+    "yushe": 1
+   },
+   "party": {
+    "forced": true,
+    "forced_by": "COC_HERO_LIMIT_SCENE",
+    "maximum": 1,
+    "minimum": 1,
+    "request_heroes": [
+     135
+    ],
+    "target_hero": [
+     135
+    ]
+   },
+   "require": "躲避怪物的视野到达目标位置！",
+   "reward": {
+    "base_key": "player_level_at_admission",
+    "base_table": "city_fight_reward",
+    "completion_event": 1441,
+    "drop_policy": "level-based offline reimplementation; original server authoritative",
+    "drop_pool_ids": [
+     304
+    ],
+    "failEvent": null,
+    "per_mission_reward_id": null,
+    "prize": 1,
+    "successEvent": null
+   },
+   "route": "27-1",
+   "scene": 488,
+   "sequence": 7,
+   "success": {
+    "completeConds": {
+     "battle": [
+      488
+     ]
+    },
+    "event": 1441,
+    "evidence": "event_content[1441].completeConds.battle contains 488",
+    "kind": "event_completion"
+   },
+   "system_type": {
+    "name": "MAIN_MISSION",
+    "value": 2
+   },
+   "target_hero": {
+    "armor_type": 1,
+    "attack_type": 1,
+    "config": {
+     "artifact": {
+      "attrs": {
+       "_base_mag_att_str": 180,
+       "_base_mag_def": 0,
+       "_base_max_hp": 45,
+       "_base_phy_att_str": 0,
+       "_base_phy_def": 0
+      },
+      "order": 0
+     },
+     "hero_name": "彼安汀",
+     "heroid": 135,
+     "level": 50,
+     "liberate": 100,
+     "mission_id": 488,
+     "pos_id": 135,
+     "starLevel": 4,
+     "starOrder": 1,
+     "treasure": [
+      {
+       "item_gen_id": 18007
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11008
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11010
+      },
+      {
+       "item_gen_id": 11012
+      },
+      {
+       "item_gen_id": 11018
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13008
+      },
+      {
+       "item_gen_id": 13010
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 13011
+      },
+      {
+       "item_gen_id": 14017
+      },
+      {
+       "item_gen_id": 16009
+      }
+     ]
+    },
+    "fatigue_value": 100,
+    "hero_type": 5,
+    "id": 135,
+    "name": "彼安汀"
+   },
+   "time": {
+    "limit_seconds": 1800,
+    "mission_time": [
+     "限时",
+     "180",
+     "5"
+    ],
+    "timeout_outcome": "failure",
+    "timeout_win": false,
+    "timeout_win_camp": 5,
+    "timer_seconds": 180
+   },
+   "type": {
+    "name": "SURVIVE_TIME",
+    "value": 10
+   },
+   "wire": {
+    "battle_type": 1,
+    "battle_type_name": "STAGE",
+    "d": {
+     "a": 2
+    },
+    "h": [
+     135
+    ],
+    "protocol": "combatOfflineRequest",
+    "s": 488,
+    "t": 1
+   }
+  }
+ ],
+ "policy": "source-coc-route-27-1-v1",
+ "progression_events": [
+  {
+   "area_effects": {
+    "areaFree": [
+     6
+    ]
+   },
+   "completeConds": {},
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([483])"
+    },
+    "ctid": 190,
+    "name": "行至海湾侧城",
+    "release": true
+   },
+   "consume": false,
+   "events": [],
+   "id": 1432,
+   "name": "行至海湾侧城",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     4
+    ]
+   },
+   "completeConds": {},
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([485])"
+    },
+    "ctid": 191,
+    "name": "行至中央城区",
+    "release": true
+   },
+   "consume": false,
+   "events": [],
+   "id": 1433,
+   "name": "行至中央城区",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     2
+    ]
+   },
+   "completeConds": {},
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([488])"
+    },
+    "ctid": 192,
+    "name": "行至高校学园",
+    "release": true
+   },
+   "consume": false,
+   "events": [],
+   "id": 1434,
+   "name": "行至高校学园",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     482
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['10000:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{7: (0,)}"
+    },
+    "ctid": 193,
+    "name": "秘密潜行1",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1435,
+   "name": "秘密潜行1",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     483
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['6:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{10000: (0,)}"
+    },
+    "ctid": 194,
+    "name": "秘密潜行2",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1436,
+   "name": "秘密潜行2",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     484
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['10001:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{6: (0,)}"
+    },
+    "ctid": 195,
+    "name": "秘密潜行3",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1437,
+   "name": "秘密潜行3",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     485
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['4:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{10001: (0,)}"
+    },
+    "ctid": 196,
+    "name": "秘密潜行4",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1438,
+   "name": "秘密潜行4",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     486
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['10002:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{4: (0,)}"
+    },
+    "ctid": 197,
+    "name": "秘密潜行5",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1439,
+   "name": "秘密潜行5",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     487
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['10003:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{10002: (0,)}"
+    },
+    "ctid": 198,
+    "name": "秘密潜行6",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1440,
+   "name": "秘密潜行6",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {},
+   "completeConds": {
+    "battle": [
+     488
+    ]
+   },
+   "condition": {
+    "conds": {
+     "100": "set(['2:1'])",
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "8": "{10003: (0,)}"
+    },
+    "ctid": 199,
+    "name": "秘密潜行7",
+    "release": false
+   },
+   "consume": false,
+   "events": [],
+   "id": 1441,
+   "name": "秘密潜行7",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     10000
+    ]
+   },
+   "completeConds": {
+    "dialog": [
+     1442
+    ]
+   },
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([482])"
+    },
+    "ctid": 200,
+    "name": "秘密潜行1",
+    "release": true
+   },
+   "consume": false,
+   "events": [
+    1443
+   ],
+   "id": 1442,
+   "name": "秘密潜行1",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     6
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1443,
+   "name": "秘密潜行2",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     10001
+    ]
+   },
+   "completeConds": {
+    "dialog": [
+     1444
+    ]
+   },
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([484])"
+    },
+    "ctid": 201,
+    "name": "秘密潜行3",
+    "release": true
+   },
+   "consume": false,
+   "events": [
+    1445
+   ],
+   "id": 1444,
+   "name": "秘密潜行3",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     4
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1445,
+   "name": "秘密潜行3-1",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     10002
+    ]
+   },
+   "completeConds": {
+    "dialog": [
+     1446
+    ]
+   },
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([486])"
+    },
+    "ctid": 202,
+    "name": "秘密潜行5",
+    "release": true
+   },
+   "consume": false,
+   "events": [
+    1448
+   ],
+   "id": 1446,
+   "name": "秘密潜行5",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFree": [
+     10003
+    ]
+   },
+   "completeConds": {
+    "dialog": [
+     1447
+    ]
+   },
+   "condition": {
+    "conds": {
+     "101": "0",
+     "4": "[0,0]",
+     "52": "set(['27','27-1'])",
+     "9": "set([487])"
+    },
+    "ctid": 203,
+    "name": "秘密潜行6",
+    "release": true
+   },
+   "consume": false,
+   "events": [
+    1449
+   ],
+   "id": 1447,
+   "name": "秘密潜行6",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     10003
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1448,
+   "name": "秘密潜行5",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     2
+    ],
+    "areaUnlock": [
+     2
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1449,
+   "name": "秘密潜行5",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     10001
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1450,
+   "name": "寻找秘密通路 · 一",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     3
+    ],
+    "areaUnlock": [
+     3
+    ]
+   },
+   "completeConds": {
+    "dialog": [
+     1451
+    ]
+   },
+   "condition": null,
+   "consume": false,
+   "events": [
+    1453
+   ],
+   "id": 1451,
+   "name": "圣星庇护",
+   "owner": "CityCoreA"
+  },
+  {
+   "area_effects": {
+    "areaFight": [
+     10002
+    ]
+   },
+   "completeConds": {},
+   "condition": null,
+   "consume": false,
+   "events": [],
+   "id": 1452,
+   "name": "寻找秘密通路 · 二",
+   "owner": "CityCoreA"
+  }
+ ],
+ "puzzle_room": {
+  "cameras": [
+   {
+    "camera_id": 9,
+    "camera_model_name": "g58_jtwj_gz08_114",
+    "camera_name": "jtwj_01",
+    "id": 9,
+    "room_id": 4
+   },
+   {
+    "camera_id": 10,
+    "camera_model_name": "g58_jtwj_gz04_115",
+    "camera_name": "jtwj_03",
+    "id": 10,
+    "room_id": 4
+   },
+   {
+    "camera_id": 11,
+    "camera_model_name": "g58_jz001_shfj_wlx_121",
+    "camera_name": "jtwj_04",
+    "id": 11,
+    "room_id": 4
+   },
+   {
+    "camera_id": 12,
+    "camera_model_name": "g58_dj001_room01_wjzj_85",
+    "camera_name": "jtwj_05",
+    "id": 12,
+    "room_id": 4
+   },
+   {
+    "camera_id": 13,
+    "camera_model_name": "g58_jtwj_gz09_255",
+    "camera_name": "jtwj_02",
+    "id": 13,
+    "room_id": 4
+   }
+  ],
+  "citations": [
+   {
+    "claim": "puzzle room 4 row",
+    "key": "4",
+    "lines": "14",
+    "path": "analysis/original-py-640/com/data/cdata/puzzle_room.py",
+    "sha256": "ba989187991965753ead17af494353f987ca3344a7a8aa91f87a6394356b32b5"
+   },
+   {
+    "claim": "quest clue 17 row",
+    "key": "17",
+    "lines": "14",
+    "path": "analysis/original-py-640/com/data/cdata/puzzle_room_clue.py",
+    "sha256": "3ba8da63a6de6d07193587a7c16fba349bbe246a9d9f0192d105ad0c65ff804d"
+   },
+   {
+    "claim": "quest clue 21 row",
+    "key": "21",
+    "lines": "14",
+    "path": "analysis/original-py-640/com/data/cdata/puzzle_room_clue.py",
+    "sha256": "3ba8da63a6de6d07193587a7c16fba349bbe246a9d9f0192d105ad0c65ff804d"
+   },
+   {
+    "claim": "puzzle camera 9 row",
+    "key": "9",
+    "lines": "14",
+    "path": "analysis/original-py-640/com/data/cdata/puzzle_room_camera.py",
+    "sha256": "7f52f450043705ef1deba59254c4809cde23122f3fef73ee22122bf3f2e84ce1"
+   },
+   {
+    "claim": "puzzle camera 13 row",
+    "key": "13",
+    "lines": "14",
+    "path": "analysis/original-py-640/com/data/cdata/puzzle_room_camera.py",
+    "sha256": "7f52f450043705ef1deba59254c4809cde23122f3fef73ee22122bf3f2e84ce1"
+   },
+   {
+    "claim": "puzzleRoomGetClue request/reply contract",
+    "lines": "423-436",
+    "path": "analysis/original-py-640/entity/avatar_members/StoryMember.py",
+    "sha256": "add09f1574f3ce103b7ac9f637650e3ec73c2291fec1dee8aabc7cdc70def067"
+   },
+   {
+    "claim": "puzzle room clue model selection by room_id",
+    "lines": "78-88",
+    "path": "analysis/original-py-640/game_scene/city_jiemi.py",
+    "sha256": "dd6952e3f2f0c83ed98628f3dac96cf3d8b03d6818222e5d347547b5ddf09d9a"
+   },
+   {
+    "claim": "clue click calls puzzleRoomGetClue(clue_id)",
+    "lines": "187-190",
+    "path": "analysis/original-py-640/game_scene/city_jiemi.py",
+    "sha256": "dd6952e3f2f0c83ed98628f3dac96cf3d8b03d6818222e5d347547b5ddf09d9a"
+   },
+   {
+    "claim": "offline condition mapping: kind 3 patrol area, kind 8 area status, kind 52 route",
+    "lines": "203-238",
+    "path": "runtime/offline_conditions.py",
+    "sha256": "5a151374feee88e8e5cb85945f1a6f17427665168aec7c6c1d9d5a17b6db8227"
+   }
+  ],
+  "clues": [
+   {
+    "camera_name": "jtwj_02",
+    "client_dialogue": 21491,
+    "clue_des": "抽屉中找到的一把锤子，是之前的物主留下的吗，先拿着吧或许可以做点什么。",
+    "clue_id": 17,
+    "clue_model_name": "g58_jtwj_chuizi_35",
+    "clue_ui": "cocos/image/cg/image/100.png",
+    "id": 17,
+    "room_id": 4
+   },
+   {
+    "camera_name": "jtwj_03",
+    "client_dialogue": 21492,
+    "clue_des": "交界都市的城市地图，被反复折叠使用过。上面有几个地方都标注了符号，但似乎在后来又被划掉，增加了新的标点。",
+    "clue_id": 18,
+    "clue_model_name": "g58_jtwj_gz06_146",
+    "clue_ui": "cocos/image/cg/image/99.png",
+    "id": 18,
+    "room_id": 4
+   },
+   {
+    "camera_name": "jtwj_04",
+    "client_dialogue": 21493,
+    "clue_des": "紧闭的门扉，似乎从里边被卡住了。门上印刻着熟悉的符文。",
+    "clue_id": 19,
+    "clue_model_name": "g58_zj05_room03_wjzj_441",
+    "clue_ui": "cocos/image/cg/image/96.png",
+    "id": 19,
+    "room_id": 4
+   },
+   {
+    "camera_name": "jtwj_01",
+    "client_dialogue": 21495,
+    "clue_des": "从翻倒的垃圾桶里捡出来的纸团，散发着奇怪的腐臭味道。展开后纸上面写着一长串意味不明的数字。",
+    "clue_id": 20,
+    "clue_model_name": "g58_jtwj_zhituan_114",
+    "clue_ui": "cocos/image/cg/image/102.png",
+    "id": 20,
+    "room_id": 4
+   },
+   {
+    "camera_name": "jtwj_05",
+    "client_dialogue": 21494,
+    "clue_des": "不明液体干涸后的痕迹。看样是从另外一间屋子里渗出来的。",
+    "clue_id": 21,
+    "clue_model_name": "g58_water_szl_01_382",
+    "clue_ui": "cocos/image/cg/image/101.png",
+    "id": 21,
+    "room_id": 4
+   }
+  ],
+  "events": {
+   "clear": {
+    "id": 3444,
+    "row": {
+     "completeConds": {},
+     "completeEnterMainPanel": false,
+     "emergencyEvent": false,
+     "eventType": 1,
+     "isAutoTriggerEvent": false,
+     "isLeaveEmergencyEvent": false,
+     "mutexEvent": [
+      3455
+     ],
+     "name": "彼安汀的秘密",
+     "notepadId": [
+      20292
+     ],
+     "priority": 2,
+     "release": true,
+     "repeatable": false
+    }
+   },
+   "not_clear": {
+    "id": 3455,
+    "row": {
+     "completeConds": {},
+     "completeEnterMainPanel": false,
+     "emergencyEvent": false,
+     "eventType": 1,
+     "isAutoTriggerEvent": false,
+     "isLeaveEmergencyEvent": false,
+     "mutexEvent": [
+      3444
+     ],
+     "name": "彼安汀的秘密",
+     "priority": 5,
+     "release": true,
+     "repeatable": false
+    }
+   },
+   "trigger": {
+    "condition": {
+     "conds": {
+      "1": "set([3436])",
+      "101": "0",
+      "102": "set([2])",
+      "11": "set([3444])",
+      "3": "set([7])",
+      "4": "[2,2]",
+      "52": "set(['27','27-2'])",
+      "8": "{7: (0,)}"
+     },
+     "ctid": 754,
+     "name": "彼安汀的秘密",
+     "release": true
+    },
+    "id": 3437,
+    "row": {
+     "completeConds": {
+      "dialog": [
+       3437
+      ],
+      "ui": [
+       1
+      ]
+     },
+     "completeEnterMainPanel": false,
+     "contentFinishUI": [
+      1
+     ],
+     "dialog": 3437,
+     "emergencyEvent": false,
+     "eventType": 1,
+     "isAutoTriggerEvent": true,
+     "isLeaveEmergencyEvent": false,
+     "mutexEvent": [
+      3444
+     ],
+     "name": "彼安汀的秘密",
+     "patrolEvent": 1,
+     "priority": 3,
+     "puzzle_room": 4,
+     "release": true,
+     "repeatable": true
+    }
+   }
+  },
+  "linkage": {
+   "note": "Puzzle room 4 is a patrol event on route 27-2 (condition 3437), not gated by areas 10000..10003. It shares the COC/Bianca story line with route 27-1.",
+   "route_family": "27",
+   "target_hero": 135,
+   "target_hero_name": "彼安汀",
+   "virtual_area_dependency": false
+  },
+  "room": {
+   "bgm": "music/mus_emotion/e08",
+   "camera_name": "slfm",
+   "client_dialogue": 21496,
+   "id": 4,
+   "row": {
+    "bgm": "music/mus_emotion/e08",
+    "camera_name": "slfm",
+    "clear_event": 3444,
+    "client_dialogue": 21496,
+    "not_clear_event": 3455,
+    "room_id": 4,
+    "scene_name": "scene2/hd/g58_jtwj_hd.scn"
+   },
+   "scene_name": "scene2/hd/g58_jtwj_hd.scn"
+  },
+  "route": {
+   "family": "27",
+   "id": "27-2",
+   "story_route": {
+    "id": "27",
+    "routes": [
+     "27-1",
+     "27-2",
+     "27-3",
+     "27-4",
+     "27-5",
+     "27-6",
+     "27-7",
+     "27-8",
+     "27-9",
+     "27-10",
+     "27-11",
+     "27-12"
+    ]
+   },
+   "tip": {
+    "key": [
+     "27-2",
+     5
+    ],
+    "row": {
+     "check_paras": [
+      3444
+     ],
+     "check_type": 1,
+     "day": 5,
+     "route": "27-2"
+    }
+   }
+  },
+  "story_clue_context": [
+   {
+    "area_id": 2,
+    "clue_id": 133,
+    "condition_text": "巡查#cb6292b高校学园#C，破坏黑棺的仪式场所。",
+    "long_info_sha256": "87f1bf8ddafc0c0fdf39f6f3be28ce2f810d878d0a2d09486384afe23db0155a",
+    "short_info": "#f2#c125b81【第1条线索】#C#r#f3找到了第一个黑棺的仪式场所，现在就和彼安汀过去吧。"
+   },
+   {
+    "area_id": 3,
+    "clue_id": 134,
+    "condition_text": "巡查#cb6292b东方古街#C，破坏黑棺的仪式场所。",
+    "long_info_sha256": "22e8224c95f9b433aa823c8e0be3413b633d61b3c9838633af500b5bee94c2cd",
+    "short_info": "#f2#c125b81【第2条线索】#C#r#f3找到了第二个黑棺的仪式场所，现在就和彼安汀过去吧，不知道今天他又准备了怎样的故事呢。"
+   },
+   {
+    "area_id": 4,
+    "clue_id": 135,
+    "condition_text": "巡查#cb6292b中央城区#C，破坏黑棺的仪式场所。",
+    "long_info_sha256": "1408cce8162f16d6ad1b4b31e353b1cc5168bab66a555611a8239fefda5db07f",
+    "short_info": "#f2#c125b81【第3条线索】#C#r#f3找到了第三个黑棺的仪式场所，现在就和彼安汀过去吧，不知道今天他又准备了怎样的故事呢。"
+   },
+   {
+    "area_id": 5,
+    "clue_id": 136,
+    "condition_text": "巡查#cb6292b研究所#C，破坏黑棺的仪式场所。",
+    "long_info_sha256": "a8f0beb5ccc9c8d00dc1d9886ccec8362f16b3264ca606db35f05256ac9d4671",
+    "short_info": "#f2#c125b81【第4条线索】#C#r#f3找到了第四个黑棺的仪式场所，现在就和彼安汀过去吧。之前的故事似乎没有讲完，今天会继续吗？"
+   },
+   {
+    "area_id": 6,
+    "clue_id": 137,
+    "condition_text": "巡查#cb6292b海湾侧城#C，破坏黑棺的仪式场所。",
+    "long_info_sha256": "3cd487bb3c9f56dbaf12175ad746ca4c930da97aeaf7e833efff8ab26327a31b",
+    "short_info": "#f2#c125b81【第5条线索】#C#r#f3找到了第五个黑棺的仪式场所，现在就和彼安汀过去吧。之前的故事这次可以迎来终结吗？"
+   }
+  ],
+  "wire": {
+   "args": {
+    "c": "<clue_id>"
+   },
+   "clue_ids": [
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "protocol": "puzzleRoomGetClue",
+   "reply": "puzzleRoomGetClueReturn",
+   "reply_fields": [
+    "r",
+    "c",
+    "g"
+   ],
+   "state": "storyData.puzzle_room_clues"
+  }
+ },
+ "reward_model": {
+  "base_table": {
+   "fields": [
+    "lv",
+    "money",
+    "exp",
+    "friendly",
+    "items",
+    "show_items",
+    "green_show_items",
+    "not_green_show_items",
+    "empty_show_items"
+   ],
+   "levels": [
+    1,
+    200
+   ],
+   "name": "city_fight_reward",
+   "rows": 200,
+   "samples": {
+    "1": {
+     "exp": 2000,
+     "friendly": 1,
+     "items": [
+      304
+     ],
+     "lv": 1,
+     "money": 3267
+    },
+    "100": {
+     "exp": 2000,
+     "friendly": 1,
+     "items": [
+      304
+     ],
+     "lv": 100,
+     "money": 9867
+    },
+    "150": {
+     "exp": 2000,
+     "friendly": 1,
+     "items": [
+      304
+     ],
+     "lv": 150,
+     "money": 13200
+    },
+    "200": {
+     "exp": 2000,
+     "friendly": 1,
+     "items": [
+      304
+     ],
+     "lv": 200,
+     "money": 16533
+    },
+    "50": {
+     "exp": 2000,
+     "friendly": 1,
+     "items": [
+      304
+     ],
+     "lv": 50,
+     "money": 6533
+    }
+   }
+  },
+  "citations": [
+   {
+    "claim": "level-1 fight reward row",
+    "key": "1",
+    "lines": "15",
+    "path": "analysis/original-py-640/com/data/cdata/city_fight_reward.py",
+    "sha256": "2a49a96517b509bf04837eb7ad8cc9e8030ce8118da4044faaaa9b0f75924532"
+   },
+   {
+    "claim": "level-200 fight reward row",
+    "key": "200",
+    "lines": "15",
+    "path": "analysis/original-py-640/com/data/cdata/city_fight_reward.py",
+    "sha256": "2a49a96517b509bf04837eb7ad8cc9e8030ce8118da4044faaaa9b0f75924532"
+   },
+   {
+    "claim": "weighted drop pool 304",
+    "key": "304",
+    "lines": "key 304",
+    "path": "analysis/project7/scripts/com/data/cdata/reward_random.marshal",
+    "sha256": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262"
+   },
+   {
+    "claim": "first treasure definition referenced by pool 304",
+    "key": "833",
+    "lines": "key 833",
+    "path": "analysis/project7/scripts/com/data/cdata/reward_common.marshal",
+    "sha256": "6f60386ce336a186ee01ee606a4d67df43674275272f787f082dbef8582e6fde"
+   },
+   {
+    "claim": "last treasure definition referenced by pool 304",
+    "key": "5773",
+    "lines": "key 5773",
+    "path": "analysis/project7/scripts/com/data/cdata/reward_common.marshal",
+    "sha256": "6f60386ce336a186ee01ee606a4d67df43674275272f787f082dbef8582e6fde"
+   }
+  ],
+  "drop_pool": {
+   "id": 304,
+   "no_drop_reward_id": 0,
+   "no_drop_weight": 147000,
+   "reward_common_rows": 31907,
+   "reward_entries": 153,
+   "weight_total": 174084,
+   "weights_entries": 154,
+   "weights_sha256": "eef5ff8771e170b4fd11263c67968419467b46b3db0b36b5430dda2266a067a2"
+  },
+  "offline_compat_policy": {
+   "action_cost": "mission.va (2) once, same transaction as win",
+   "base_reward": "city_fight_reward[player_level]",
+   "commit": "one Profile/Progress transaction/receipt; replay must not recharge/regrant",
+   "drop": "reward_random[304] -> reward_common; preserve no-drop",
+   "loss_reward": "none",
+   "status": "inferred/offline, not original-server exact",
+   "win_only": true
+  },
+  "per_mission_reward_id": null,
+  "policy": "No mission-scoped reward row exists. The original client forwards the battle result to the server; only a local offline reimplementation maps player level to city_fight_reward and then weighted pool 304 to reward_common.",
+  "prize_field": 1
+ },
+ "route": {
+  "branch": {
+   "id": "27-1",
+   "name": "ROUTE_27_BRANCH1"
+  },
+  "chapters": [
+   "27-1",
+   "27-2",
+   "27-3",
+   "27-4",
+   "27-5",
+   "27-6",
+   "27-7",
+   "27-8",
+   "27-9",
+   "27-10",
+   "27-11",
+   "27-12"
+  ],
+  "id": "27",
+  "puzzle_branch": {
+   "id": "27-2",
+   "name": "ROUTE_27_BRANCH2"
+  }
+ },
+ "schema": "project7-story-city-virtual-data-v1",
+ "scope": {
+  "family": "coc-stealth-route-27-1",
+  "interstitial_scenes": [
+   483,
+   485,
+   488
+  ],
+  "puzzle_rooms": [
+   4
+  ],
+  "route": "27-1",
+  "route_family": "27",
+  "scenes": [
+   482,
+   483,
+   484,
+   485,
+   486,
+   487,
+   488
+  ],
+  "target_hero": 135,
+  "virtual_areas": [
+   10000,
+   10001,
+   10002,
+   10003
+  ],
+  "virtual_scenes": [
+   482,
+   484,
+   486,
+   487
+  ]
+ },
+ "source_pins": {
+  "battle_event": "594b21b0469b8e0d4dcf40a1d5d729c2116f63ac02d3bf852f58a0130abae35f",
+  "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+  "city_area_link_data": "017b12541c4dcab208c6f26f9c44539bb932e7d77cc93d6eae32f8ef71ed768c",
+  "city_area_sfx_data": "3cf373224396ca82cd630a22a5f0450b7b684af26dec4dbc57045b1f6ea19a83",
+  "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+  "city_fight_reward": "3899909239b4c9ab64ee07d341defab5fe87316ad2dc0e0d5161f97934ae5204",
+  "city_virtual_area": "dda839275cf285534e963c4bfac07bf1d1d9beb205b06681273eb9942c3582d3",
+  "coc_area_link_data": "ef14e11a29bce26f5d96bf440245437ee870f5a133e42e05e3acf1a1171e4889",
+  "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+  "event_condition_map": "23b53c490ceb982784bb854d7c8c5fd0fcd637b8419639b35f522551fdbddd0a",
+  "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+  "hero": "5fd8f55649e12030a76ec34d50fcf10b414fc07cb8055437177be8ecf29f771e",
+  "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+  "mission_hero_attr": "25647eaa103bb23bc22c27910e1f119e7ed2f169f52ac440dee69f573a60cc8b",
+  "puzzle_room": "03c4cbbeb686abc956565f552ad57113e083d38f9a0e6e5589c6ba6e53fe9812",
+  "puzzle_room_camera": "17dabc4084df225d28e26ca6fd50e9767d6dee3c683f9309cc25b8e0c48f7b1e",
+  "puzzle_room_clue": "ab6a6e7ff5daf8380216d3bbe45897b6ced36db803eba0e8c14b0d18b52a647e",
+  "reward_common": "6f60386ce336a186ee01ee606a4d67df43674275272f787f082dbef8582e6fde",
+  "reward_random": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+  "story_clue_info": "7fef35f420d888892a4c3f023bd0db017b0858d64f6da4aab19daa7645280882",
+  "story_route": "53f3161471d82c9abe562c41982b51f5d01a1651400d3c6fd58433b2629614b1",
+  "storyroute_tip": "b9dc0588f1bdc64a1937b41c8c771c54fc369cc3e20357d63c22b02f1850748f"
+ }
+}

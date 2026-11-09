@@ -1,0 +1,38 @@
+{
+  "schema": "project7-official-baseline-fixed-v1",
+  "component": "official640-entry-patch.zip",
+  "component_bytes": 7308193,
+  "component_sha256": "30294d1b11b372a7b675880e324e9927555d9f2711d9ff9240f3bfcb274f286f",
+  "official_original_apk_sha256": "12e57f77059f7f3964585f3a615410f3f9625101d885883cd4de4397f490c503",
+  "original_apk_script": {
+    "bytes": 62547912,
+    "sha256": "7a409a0defb6005877b5d325bcd4a5e62ccc6a1f03248a04c32ec5e7be1de1e6"
+  },
+  "target_official640": {
+    "bytes": 62612884,
+    "sha256": "9284e0e00e18a04cb6169e5bbffbec3fd23037fa7dd19893fea3a3510ea1bb06"
+  },
+  "statistics": {
+    "added_fids": [
+      2018333828
+    ],
+    "base_entries": 28753,
+    "changed_payloads": 66,
+    "copied_payloads": 28687,
+    "delta_payload_bytes": 5225307,
+    "metadata_changed": 66,
+    "removed_fids": [],
+    "target_entries": 28754
+  },
+  "consumer_inputs": [
+    "official original APK",
+    "this fixed entry patch"
+  ],
+  "consumer_needs_official640_file": false,
+  "consumer_needs_project7_apk": false,
+  "network": false,
+  "full_script_or_apk_embedded": false,
+  "codec": "per-FID packed-byte XOR+zlib for changed existing; zlib literal only explicit added entry; unchanged bytes copied from original APK",
+  "layout": "complete target28-byte header and exact original ordered index table, compressed; all inter-payload gaps must be zero",
+  "consumer_api": "tools.project7_official_baseline.reconstruct(official_apk,output,component=DEFAULT_COMPONENT)"
+}

@@ -1,0 +1,806 @@
+{
+  "status": "frozen-host-tested-not-native-verified",
+  "module": "runtime/offline_event_battle.py",
+  "focused_tests": 16,
+  "passed": 16,
+  "log": "analysis/event-battle-focused-tests.txt",
+  "wire_contract": "Original BattleType.EVENT=2, data={}, native PVE; mission.system_type is mode not wire type",
+  "gate": "Only original processing event enterBattle creates occurrence-bound setEventBattleStage(s,n), snapshot.bs.ab restores current processing gates; never grant all missions",
+  "identity": "event_id+event_occurrence+fight_id bound; exact live source ID required at finish and callback feeds only matching event occurrence",
+  "default_team": "Exact original defaultHeroes including banned owned snapshots (getHero withBan=True) and original trial party above max; no permanent unban. Self-selected teams enforce availability/max. Original scene500(109,113),max1 regression passes.",
+  "reuse": "Gateway reuses native_stage_combat_data actual native attribute/skill/skin resource checks and settle_stage_economy actual-result table rewards; no city-stage clearance from EVENT",
+  "outcomes": "Only actual accepted w1 creates event_completion; loss no rewards/progress and reopens same gate. No completed_events writes or fake victories. Duplicate finish idempotent only same source fight.",
+  "scope": {
+    "event_enter_scenes": 471,
+    "static_admission_catalog_candidates": 359,
+    "not_supported_by_first_policy": [
+      {
+        "scene": 131,
+        "system_type": 2,
+        "release": 1,
+        "prize": 13,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 166,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 168,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 169,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 170,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 171,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 172,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 175,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 176,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 182,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 185,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 186,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 193,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 194,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 195,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 196,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 197,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 198,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 200,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 201,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 202,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 203,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 204,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 211,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 213,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 214,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 215,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 219,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 220,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 221,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 222,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 223,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 224,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 225,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 278,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 293,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 298,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 299,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 300,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 301,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 302,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 303,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 304,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 305,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 315,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 316,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 355,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 356,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 372,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 426,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 427,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 428,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 528,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 150141,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 150147,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 150149,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 150151,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 400501,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 400502,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401018,
+        "system_type": 4,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401241,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401248,
+        "system_type": 1,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401249,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401250,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401251,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401252,
+        "system_type": 2,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401253,
+        "system_type": 1,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401254,
+        "system_type": 1,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401255,
+        "system_type": 1,
+        "release": null,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401258,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401259,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401260,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401261,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 401504,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 403040,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 610000,
+        "system_type": 8,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 650003,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 650004,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 650005,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 650006,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 650007,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020001,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020002,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020003,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020004,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020005,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020006,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020007,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020008,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020009,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020010,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020011,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020029,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020030,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020031,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020032,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020037,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020038,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020039,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020040,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020065,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020066,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020067,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020068,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020069,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020070,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020071,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020072,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020111,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020112,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020113,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      },
+      {
+        "scene": 4020114,
+        "system_type": 9,
+        "release": 1,
+        "prize": 1,
+        "missing_default_heroes": []
+      }
+    ],
+    "warning": "Static admission eligibility is not resource/native engine coverage or main-story completeness."
+  },
+  "integration_owner": "main Sol gateway/bootstrap/state validator/resume; exact APIs delivered",
+  "native_testing_started": false
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "actual_manager_sha256": "1be1a7e09c5a2e42d31f9deff54c1d942657fca695c1a996579eefecf365e6fa",
+  "sources": {
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeCatalog.java": "caf73a8c6c08c2b600965c6d0de7863da90b728fea3413241190b312a5b8052e",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeTransactions.java": "13e6a9ff2ac01cc0c0291b57beb3548e3ef73c195f0438be5097653630f88ae0",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeGateway.java": "d2388ed4cb0a0951a8bf7e21c31b25974158979fb970145f4fbebd4913026f14",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragmentRules.java": "23a000a3719eca4915e84f1d4eeae0b93ed44a2feafeaeeb924f4358781e0f29",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragments.java": "01ed6932c9478eda64188261f8ef28a40324c7e12d0c05a437ca79166d49d968",
+    "runtime/android_baiye_transactions/compile_stubs/com/project7/localmanager/BaiyeApiStubs.java": "2ed45b53bba2fb58aa8c41a38e8fa0667d769a0163df3d97d1fe928a3ae481ce",
+    "runtime/android_baiye_transactions/host_tests/com/project7/localmanager/BaiyeHost.java": "2c398f847252d2d447ca8000e552c2c7b5f86313eaa9e0db2c9c255e5518f4a1",
+    "runtime/android_baiye_transactions/host_tests/com/project7/localmanager/BaiyeFragmentHost.java": "f579bb82b44a21030a1e1958d0d5fe801a7725a73b92f5e0e7c787f717542535",
+    "runtime/android_baiye_transactions/host_tests/android/content/res/AssetManager.java": "359e5f5408b00ec28f83137c908b711a35fde82f694c54f7904add2f0ab97b6c",
+    "tools/project7_baiye_catalog.py": "288d94c7801b259d8ddd6405f338330e5bcbfbdfd8e8404e238e02ad4e5af34d",
+    "runtime/android_baiye_transactions/host_tests/consumer.py": "0ff1b6b2e5fc89760d12e167f09c1dd22ca3d8bc90dc13aa7edd57b41c556f76",
+    "runtime/android_baiye_transactions/verify.py": "4ed2fe0631d62917965394926f325d0abdf0e253b619e22aaf586619ac988265"
+  },
+  "production_classes": [
+    "com/project7/localmanager/BaiyeFragmentRules$Voucher.class",
+    "com/project7/localmanager/BaiyeGateway.class",
+    "com/project7/localmanager/BaiyeFragments$Rejected.class",
+    "com/project7/localmanager/BaiyeTransactions$Mutation.class",
+    "com/project7/localmanager/BaiyeFragments.class",
+    "com/project7/localmanager/BaiyeTransactions$Access.class",
+    "com/project7/localmanager/BaiyeCatalog.class",
+    "com/project7/localmanager/BaiyeFragmentRules.class",
+    "com/project7/localmanager/BaiyeTransactions$UncertainCommit.class",
+    "com/project7/localmanager/BaiyeTransactions.class"
+  ],
+  "limits": [
+    "original engine with explicit Android host platform seams",
+    "no compile stubs on runtime classpath",
+    "ordinary transactions repeat; no invented request token deduplication",
+    "no D8/APK/game/ART/device",
+    "cost and source admission are transparent offline policy, not official server hidden logic restoration",
+    "no claim of cross-disconnect exactly-once trading; identical ordinary retry may legitimately consume again",
+    "no native entity dispatch/game UI/resource rendering acceptance"
+  ],
+  "phase": "three transactions implemented, finite original-manager host pass; root integration pending",
+  "proof_directory": "analysis/project7/baiye-host-_9plj9em",
+  "abi": {
+    "checked": 70,
+    "mismatches": []
+  },
+  "fixed_assets": {
+    "runtime/project7_baiye_catalog/catalog-v1.tsv": "0c2a8199eb0ff9ed2d678fc29128a95e267af94642af471f7050c5d0565e4141",
+    "runtime/project7_baiye_catalog/pins-v1.json": "0f945a9e066b9911a14e4f9c408d13178c90df93881c3b2b2fc60802496f20d8",
+    "runtime/project7_baiye_catalog/fragments-v1.tsv": "61425f912e2bd5fc613aebc75ab43819b801e0b6a608afd37230bb7a37d4d5f1",
+    "runtime/project7_baiye_catalog/fragment-pins-v1.json": "606a5c5fbdeeff80596cf55605b375c1668de25ca9249a09efdbe71d0d19e231"
+  },
+  "public_api": [
+    "BaiyeGateway.prepare(Context)",
+    "BaiyeGateway.handleDirect(LocalGatewayServer,OutputStream,byte[],byte[],byte[],String,Progress,Engine):boolean",
+    "BaiyeGateway.handleRequest(LocalGatewayServer,OutputStream,byte[],String,byte[],Integer,String,Progress,Engine):boolean",
+    "BaiyeTransactions.Mutation.apply(byte[],LocalResourceCatalog):Result throws IOException",
+    "BaiyeTransactions.transact(LocalProfileStore,String,Mutation):Result throws IOException"
+  ],
+  "offline_policy": "voucher-one-stock-memory-v1: one owned source voucher consumed; no unproven extra item24 fee; not original hidden-server proof",
+  "implemented_methods": [
+    "commonItemFusionAsk",
+    "requestExchangeSuipianWithItem",
+    "invExchangeHeroFragmentAsk"
+  ],
+  "transport": "original producers plain; reliable wrappers explicitly typed-rejected due absent seq/session transaction identity",
+  "checks": [
+    "all three fixed4:1 fusion rules and actual grant ledgers",
+    "source-bound4 named vouchers /17 selection sets /138 original file rows",
+    "real memory new partial writes hfp without invented crystal",
+    "duplicate/owned produce stock one crystal; last bit stock real hero",
+    "fn0 owned named-voucher grants one rank crystal, not hero duplicate multiplier",
+    "full syncProgInfo before typed reply; inv without callback produces no carrier",
+    "one-voucher/no extra24 fee; actual source inventory checked",
+    "stock ct/q7File/ad/unknown fields retained",
+    "same owner original atomic writer; definite failure/no-write and postrename reconciliation",
+    "no parameter-hash dedupe: repeated ordinary operations can consume again",
+    "original plain producer + actual reward/fragment panel/lock/carrier consumers"
+  ],
+  "pending": [
+    "Root shared mechanism/startup/build integration and combined compile/preflight",
+    "Root owns eight shop products and1934; they are not counted as these three transactions"
+  ],
+  "host_stdout": "PASS original Store fusion4:1, actual consume/grant/replies, repeated/concurrent/overflow/failure/aftercommit/reliable-negative\nPASS real stock memory partial/duplicate/last/owned conversion; source eligibility, one-voucher/no24, hfp sync, original atomic faults, no draw state mutation\n",
+  "original_client_consumer_stdout": "lock , commonItemFusion True {'commonItemFusion': 1}\nunlock , commonItemFusion True {'commonItemFusion': 1}\nPASS actual fusion producer/output count, reward/event consumer, original callback unlock; empty failure no reward\nlock , requestExchangeSuipianWithItem True {'commonItemFusion': 0, 'requestExchangeSuipianWithItem': 1}\nunlock , requestExchangeSuipianWithItem True {'commonItemFusion': 0, 'requestExchangeSuipianWithItem': 1}\ninvExchangeHeroFragmentReply True {'reward': {'q7Kind': 'memory', 'other_reward': {'activityReward': {'hero': [], 'item': [], 'treasure': [], 'fragment': [], 'treasure_trans': []}}, 'q7Id': 13, 'is_open': True, 'hero_file': 1, 'get_hero': False}, 'hero': 13, 'file_num': 1}\ninvExchangeHeroFragmentReply False {}\nPASS original named/select producers, typed memory/owned-list rewards, full hfp sync, exact panel close and named carrier; inv has no callback\nruntime/android_baiye_transactions/host_tests/consumer.py:6: DeprecationWarning: lib2to3 package is deprecated and may not be able to parse Python 3.10+\n  from lib2to3.refactor import RefactoringTool\n"
+}

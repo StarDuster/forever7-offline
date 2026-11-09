@@ -1,0 +1,25 @@
+{
+  "format": "project7-bson-refresh-noop-v1",
+  "class": "Lcom/project7/localmanager/BsonLite;",
+  "production": {
+    "smali": "runtime/project7_bson_fast/BsonLite.smali",
+    "smali_sha256": "f9f9893f5944449bc7fd1ffedec789985557e6ac6e69a3557370f86b691427f9",
+    "dex": "runtime/project7_bson_fast/BsonLite-fast.dex",
+    "dex_sha256": "822ce53ed38885b65c75559aa12bde41d40d271fcdc1afb1bb6c162cbe38d381",
+    "contract": "runtime/project7_bson_fast_patch/contract.json",
+    "delta": "runtime/project7_bson_fast_patch/seams.xor-zlib",
+    "target_manager_sha256": "7ea1e95fa9a50bb472e3aa2d83e78052214424010a65a20b181415d4724645eb"
+  },
+  "strict_scan_end": "ByteBuffer.position() == declaredLength - 1 required before no-op",
+  "terminator_counterexample": {
+    "input_hex": "0b000000106b0007000000",
+    "replace": "k/type16/payload 07000000",
+    "required_rebuilt_bytes": 12,
+    "forbidden": "returning the original 11-byte input"
+  },
+  "semantics": {
+    "cache": "none; per-call only",
+    "no_op_result": "fresh Arrays.copyOf(input), never the input reference",
+    "fallback": "legacy streaming rebuild on any uncertainty"
+  }
+}

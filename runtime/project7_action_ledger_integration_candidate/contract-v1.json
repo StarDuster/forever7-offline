@@ -1,0 +1,58 @@
+{
+  "base_candidate": {
+    "asset": "runtime/project7_event_auto_trigger_candidate/trigger-extra-v1.tsv",
+    "asset_sha256": "597ddb4cc68503cc0046092a40248defa98bfdd738aecd75de139261f8d9caa7",
+    "rows": 222
+  },
+  "base_event_graph_sha256": "50d211e2108524dbce10e9babf9de77cf9faf9e331f8a70f8d1a8f6d771f927f",
+  "code10_composite": {
+    "code": 10,
+    "event": 1000105,
+    "non_patrol": "LocalStoryConditions unsupported",
+    "scope": "LocalEventEngine patrolAreas/clientOps context only"
+  },
+  "code20_candidate": {
+    "asset": "runtime/project7_action_ledger_integration_candidate/trigger-extra-code20-v1.tsv",
+    "asset_sha256": "a898aea3ebaa3605bc6b6fcc1a2fd9c3eb2064f7c3bd4c1ac6eea4a8ac795c7a",
+    "events": [
+      3103,
+      3104,
+      3105,
+      3106,
+      3107,
+      3108,
+      3109,
+      3110,
+      3111,
+      3112,
+      3113,
+      3114,
+      5042,
+      1001916,
+      1001917,
+      1001918,
+      1001919
+    ],
+    "rows": 17
+  },
+  "condition_candidate": {
+    "asset": "runtime/project7_event_auto_trigger_condition_candidate/trigger-extra-conditions-v1.tsv",
+    "asset_sha256": "9008d9ef48f96ff15d10feb84c678b45871f7fb28f4bc627e6f4845e3105fb99",
+    "rows": 16
+  },
+  "consumer": {
+    "no_fact": "invalid, satisfied=false; never passed",
+    "published_to_prepare": false,
+    "row_gate": "valid LocalActionLedger baseline and completed event"
+  },
+  "counts": {
+    "code20_provider_gated_rows": 17,
+    "combined_candidate_rows": 255,
+    "content_release_false_blocked": 247,
+    "engine_gated_condition_rows": 1,
+    "fully_usable_condition_rows": 15
+  },
+  "no_d8_no_apk_no_native": true,
+  "policy": "code20-provider-gated-append-only-v1",
+  "schema": "project7-action-ledger-integration-candidate-v1"
+}

@@ -1,0 +1,79 @@
+{
+  "added_methods": [
+    {
+      "class": "Lcom/project7/localmanager/LocalDrawEngine;",
+      "descriptor": "(I)[B",
+      "name": "q7OriginalTutorialCard"
+    }
+  ],
+  "all_other_original_instructions_and_declarations_unchanged": true,
+  "apk_built": false,
+  "apply_current_changed_instructions": [
+    [
+      303,
+      [
+        "invoke-static",
+        "v8, v3, v2, Lcom/project7/localmanager/LocalDrawEngine;->makeFile(Lcom/project7/localmanager/LocalResourceCatalog; Ljava/util/Random; Z)[B"
+      ],
+      [
+        "invoke-static",
+        "v8, v3, v2, v5, Lcom/project7/localmanager/CoreDrawPolicy;->makeFile(Lcom/project7/localmanager/LocalResourceCatalog; Ljava/util/Random; Z [B)[B"
+      ]
+    ],
+    [
+      705,
+      [
+        "invoke-static",
+        "v12, Lcom/project7/localmanager/LocalDrawEngine;->tutorialCard(I)[B"
+      ],
+      [
+        "invoke-static",
+        "v12, v1, Lcom/project7/localmanager/CoreDrawPolicy;->tutorialCandidate(I [B)[B"
+      ]
+    ],
+    [
+      724,
+      [
+        "invoke-static",
+        "v7, v8, v1, Lcom/project7/localmanager/LocalDrawEngine;->reveal(Lcom/project7/localmanager/LocalResourceEngine$Result; Lcom/project7/localmanager/LocalResourceCatalog; [B)[B"
+      ],
+      [
+        "invoke-static",
+        "v7, v8, v1, Lcom/project7/localmanager/CoreDrawPolicy;->reveal(Lcom/project7/localmanager/LocalResourceEngine$Result; Lcom/project7/localmanager/LocalResourceCatalog; [B)[B"
+      ]
+    ]
+  ],
+  "delta": {
+    "bytes": 1002021,
+    "sha256": "1e60415a91e3269b1718d240b2a0c01da44abe4b2c86007cc913e6350678c2f7"
+  },
+  "existing_method_bodies_changed": [
+    {
+      "class": "Lcom/project7/localmanager/LocalDrawEngine;",
+      "descriptor": "([B Lcom/project7/localmanager/LocalResourceCatalog; Ljava/lang/String; [B Ljava/util/Random;)Lcom/project7/localmanager/LocalResourceEngine$Result;",
+      "name": "applyCurrent"
+    },
+    {
+      "class": "Lcom/project7/localmanager/LocalDrawEngine;",
+      "descriptor": "(Lcom/project7/localmanager/LocalResourceEngine$Result; [B I)V",
+      "name": "saveState"
+    }
+  ],
+  "format": "project7-normal-draw-seams-v1",
+  "helpers_required_in_own_dex": true,
+  "native_verified": false,
+  "original_class_definitions": 649,
+  "original_defined_methods": 3700,
+  "original_resource_rpc_prefix_preserved": true,
+  "register_counts_preserved": true,
+  "save_state_prefix_instructions": 2,
+  "source": {
+    "bytes": 1155376,
+    "sha256": "dfb15ecd8e12ff99c3f3595ecc680b014a0233943eacd3aca3c81555709f8e10"
+  },
+  "target": {
+    "bytes": 1155616,
+    "sha256": "20f19471d1e73f3b32b4cc28300973eb3168cdfea8ddb1c46fe1ccd1e1306eae"
+  },
+  "target_defined_methods": 3701
+}

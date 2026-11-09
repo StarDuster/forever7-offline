@@ -1,0 +1,22 @@
+{
+ "schema": "deepseek-regression-pattern-request-v1",
+ "confirmed": 0,
+ "protected": 8,
+ "insufficient": [
+  "gacha_prefix_lock",
+  "story_status_enum"
+ ],
+ "source_hashes": {
+  "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java": "fe101630b2be89050ceb9871086ba0a6b70958f48bb5975a50a12277afd79963",
+  "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "861a0d364d4cce6ec04d0f25ea34765a9f8d6a5a06da448635805a44697d19cf",
+  "runtime/project7_startup_hook.py": "65f7bfa3d9dce9f687ae5bb67a72b0194c21753705ba3004a842752d301477b9",
+  "runtime/android_story_city/src/com/project7/localmanager/StoryCityPolicy.java": "b96707933369e0e62155a72261c8f8826b54f0ef8003188ea00b7b6ab469d254",
+  "runtime/android_story_city/verify.py": "8c72f9c31c91745d636b39dc6e5e346fb023c013fe35441a5c555d9aeafaf512"
+ },
+ "surface": "finite scanned runtime/tools/manager/640 consumers; not whole-library",
+ "main_vs_legacy": {
+  "main": "project7_wish_ui/transport, android_story_missions/trial_retry/week_reset, Java locks",
+  "legacy": "offline_transport/local_gateway/offline_rpc_rejections are legacy reference only"
+ },
+ "trial_nonaccepted": "Current TrialRetry terminal durable path disconnects before publish; source protected, no consumer test"
+}

@@ -1,0 +1,395 @@
+{
+  "format": "project7-startup-coordinator-implementation-v1",
+  "recorded_at": "2026-11-03T23:41:30.052891+08:00",
+  "status": "source_host_tests_and_real_source_android32_compile_frozen_no_android_native_acceptance",
+  "entry_activity": "com.forever7.offline.Project7ResourceInitActivity",
+  "coordinator": "com.project7.localmanager.Project7StartupCoordinator",
+  "production_driver": "com.project7.localmanager.Project7StartupPlatform",
+  "ordered_pipeline": [
+    "Base worker calls reusePreparedGame before ResourceImporter opens; atomically reserve a per-process Attempt or reuse an already healthy HANDED_OFF Attempt.",
+    "Preflight readonly process reservation and stock GatewayService writer/running observations; foreign busy fails before provider replacement, mode or resource/account mutations.",
+    "Fresh path retains base official/HTTPS/ZIP/cache behavior; base closes downloader importer before prepareGame.",
+    "Project7ResourceSnapshot.publish performs fresh full validation and returns a real per-call Receipt. Assets.open strips exactly7 characters only for assets/ prefix; old disk marker is never discovered as ready.",
+    "Owner.start uses explicit resourcesReady=true only after Receipt; same stopped SAVE_ACCESS prehook sets resources mode, runs StableIdentityBootstrap.withPostProfile(FullCollectionInitializer.POLICY,new FullCollectionInitializer(cancellation)), then selects game mode after successful identity/collection validation.",
+    "Await owner future outside SAVE_ACCESS/coordinator locks with50ms cancellation checks. Require own hook execution, live owner READY, exact immutable prepared identity reference, approved post-profile policy and credentials.",
+    "Install AutoLogin SessionProvider once. Each current() rechecks live gates without disk IO. Session.generation is the unique Attempt OBJECT, not a String or equal-valued token.",
+    "Base dispatches Client only through requireHandoff; sticky Client-may-run marker is set before startActivity. Successful handoff disconnects Activity cancellation from process lifetime.",
+    "Base outer worker finally calls preparationWorkerFinished. ThreadLocal captures that exact worker ticket; old finally/abandon cannot complete/cancel a newer job."
+  ],
+  "attempt_vs_ticket": {
+    "attempt": "Process reservation generation and in-memory Receipt/owner/identity/credentials. Preserved across healthy game reuse.",
+    "ticket": "Per-resource-worker capability; retries receive a fresh job ticket under the same never-exposed resource Attempt. It is not the native provider generation.",
+    "readonly_lease": "A new Activity reuses only a healthy handed-off Attempt. It skips importer/publish/bootstrap, never closes that shared owner, and does not replace Receipt/provider generation.",
+    "worker_completion": "Only exact worker-finally ticket marks that resource job finished. Backend==null is not evidence of no importer/publisher writer.",
+    "duplicate_prepare": "A worker ticket may enter prepare once; stale/duplicate entry is rejected without replacing or closing a live backend."
+  },
+  "failure_and_drain": {
+    "abandon": "Idempotently cancel only the current creating worker ticket, invalidate provider and close only if this exact prestart hook executed. UI and worker repeats are safe.",
+    "joined_foreign_session": "No executed hook means no ownership proof; never adopt its credentials or close it. Retry remains blocked until its real drain.",
+    "real_restart_gate": "Resource worker finally completed AND backend drained future completed normally; no readiness or stopped-timeout inference substitutes either proof.",
+    "native_stop_boundary": "Once Client dispatch may have started, unhealthy state blocks all new resource attempts/generations in that process even if Java manager/resource workers drain. Complete application/process restart is required until a real native engine-stop ACK exists.",
+    "no_automatic_repair_claim": "Activity.finish/destroy and manager drained do not prove C_file worker stop. Healthy handed-off game only reuses the original proof; live resource repair is not implemented.",
+    "race_scope": "Readonly probes are observations, not whole-download global locks. Final prestart hookExecuted proof and the final APK single-entry/manifest owner constraint handle cooperative application routing; no all-system or cross-process exclusion is claimed.",
+    "mode": "Use exact stock LocalStartupMode.set(Context,int):0 resources/1 game, then stock get readback. Writes occur only inside the proven stopped owner hook; cleanup does not clobber a possibly newer owner mode.",
+    "credential_privacy": "No journal reread in login/provider, no default/manual identity, no native trigger during bootstrap, fixed user messages omit underlying secret-bearing errors."
+  },
+  "budget": {
+    "reason": "Parent-authorized startup integration: readonly active reservation probe plus trusted bounded FullCollection phased budget; no original manager binary or business initializer change.",
+    "readonly": "SinglePackageGateway.hasActiveProcessReservation() -> synchronized ProcessGatewayOwner.hasActiveReservation(); observation only, not an exclusive lock.",
+    "default_budget": "Existing start(Context,boolean,initializer) keeps its continuous30s deadline.",
+    "trusted_budget": "FullCollection startup explicitly selects StartupBudget.fullCollectionPreparation(): prestart600000ms (worker/lock/claim/hook), then construct/bind30000ms after successful hook. Total policy cap630s excluding prior resource preparation; no mobile completion/performance claim.",
+    "phase_safety": "startupEpoch and startupDecision checked under the same Session monitor; old timers cannot fail the new phase/session.",
+    "cancel_and_drain": "UI/provider cancellation is immediate; individual stock call/fsync cannot be forcibly stopped; actual resource/owner completion remains mandatory before restart.",
+    "updated_source_freeze": [
+      {
+        "path": "runtime/android_single_package/src/com/project7/localmanager/ProcessGatewayOwner.java",
+        "bytes": 13861,
+        "sha256": "73e1529c171fed4d7e764cb6a9d84b79795d161266527bd3e0a3ff943464544e"
+      },
+      {
+        "path": "runtime/android_single_package/src/com/project7/localmanager/SinglePackageGateway.java",
+        "bytes": 4626,
+        "sha256": "903a9ab84feb89bcf2792d79a3a2ed9fdc8ef767de825cc7488f2ab86759ca5b"
+      }
+    ],
+    "owner_host_groups": 22,
+    "bootstrap_host_groups": 14,
+    "actual_manager_api_checks": 38,
+    "compiled_single_package_classes": 24
+  },
+  "parent_hooks": [
+    "reusePreparedGame(AtomicBoolean)",
+    "prepareGame(File,List<Entry>,AtomicBoolean)",
+    "preparationStatus(String)",
+    "gameHandedOff()",
+    "preparationAbandoned()",
+    "preparationWorkerFinished()"
+  ],
+  "base_activity_source": {
+    "path": "runtime/android_resource_init/src/com/forever7/offline/ResourceInitActivity.java",
+    "bytes": 17525,
+    "sha256": "c5f1f603e2758adc12a6ac8669b77329ee26d17b0d5f66199cc6d65918e34ec9"
+  },
+  "verification": {
+    "startup_command": ".venv/bin/python runtime/android_project7_startup/verify.py",
+    "startup_report": "reports/project7-startup-coordinator-verification.json",
+    "startup_log": "reports/project7-startup-coordinator-host-tests.log",
+    "startup_host_groups": 17,
+    "startup_cases": [
+      "fresh_publication_precedes_backend_and_all_ready_gates_precede_provider",
+      "no_receipt_or_profile_only_policy_cannot_publish_game_credentials",
+      "atomic_ticket_blocks_other_activity_and_own_retry_reuses_attempt_object",
+      "handoff_ignores_normal_activity_finish_and_reuses_original_receipt_generation",
+      "cancelled_late_publisher_cannot_start_or_close_new_attempt",
+      "cancel_invalidates_provider_once_and_blocks_restart_until_true_drain",
+      "blocked_resource_reader_and_old_worker_finally_cannot_fake_resource_drain",
+      "duplicate_same_worker_prepare_is_rejected_without_closing_live_backend",
+      "foreign_owner_preflight_and_final_hook_proof_never_adopt_or_close_other_session",
+      "provider_rechecks_live_owner_identity_policy_and_uses_new_attempt_epoch_only_after_drain",
+      "real_activity_subclass_with_finite_base_leaf_preserves_handoff_and_cleans_failed_launch",
+      "uncertain_or_unhealthy_client_handoff_never_infers_native_stop_from_java_drain",
+      "real_autologin_core_allows_new_client_after_dead_pending_with_same_process_attempt",
+      "status_observer_is_advisory_and_asset_manager_prefix_mapping_is_exact",
+      "repair_retains_original_nonce_on_reuse_invalidates_provider_closes_once_and_waits_actual_drain",
+      "cancelled_old_repair_callback_cannot_close_new_owner_and_stopped_watch_cannot_be_reused",
+      "repair_observer_setup_failure_or_request_during_registration_never_hands_off_credentials"
+    ],
+    "real_source_android32_class_count": 104,
+    "combined_sources": "Actual resource Activity/snapshot/importer + process owner/stable bootstrap + real full-collection source + current autologin source + generated trusted contract compile together.",
+    "owner_host_groups": 22,
+    "bootstrap_host_groups": 14,
+    "actual_manager_api_checks": 38,
+    "host_scope": "Finite injected receipt/backend/base-Activity leaves; genuine blocked host PipedInputStream/constructor/writer threads and actual AutoLoginCore. Not original engine, Android lifecycle, JNI, real profile/collection or8GiB resource verification."
+  },
+  "manager_pin": {
+    "manager_sha256": "0dcfbfa15141c0c2fca06ba8cede5b36492c7b1c60985e84b8c21923513c6c01",
+    "manager_dex_sha256": "087656832b8150984c81c997c7c1f3966da22902c5226b0f6ef2f3e71d602325",
+    "manager_class_count": 649,
+    "manager_dex_version": "038",
+    "manager_min_sdk": 26
+  },
+  "review_inputs": [
+    "reports/deepseek-p7-startup-lifecycle.md",
+    "reports/astra-project7-startup-coordinator-review.json"
+  ],
+  "own_source_and_test_freeze": [
+    {
+      "path": "runtime/android_project7_startup/host_stubs/android/app/Activity.java",
+      "sha256": "6de42e1de8da4d12dc4c461f267d3bba62bf7b9b01c0ddf6c45152867b1bce97",
+      "bytes": 79
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/android/content/Context.java",
+      "sha256": "85c0bdd0fb1357425f381343fc94e862b8de4f82de7b227c4967093b11b9cd91",
+      "bytes": 494
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/android/content/res/AssetManager.java",
+      "sha256": "e4ae3c9550bd5f9b8700c18d64ca2fc7236dd32175a12ad740914b1b567f8d6d",
+      "bytes": 207
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/android/os/Looper.java",
+      "sha256": "f192882f4f2d30d2d6a3d0033cf7865d39951b7a65f3be889fa8e3b1c0503ae3",
+      "bytes": 382
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/forever7/offline/Project7BundledResources.java",
+      "sha256": "f24caaa3a2315fac63e787253a5130bb9a169f108272011b08a65be558877829",
+      "bytes": 236
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/forever7/offline/Project7RepairHost.java",
+      "sha256": "4c1f911e2fa5b66f2b044303ac0d403d7bd55d305e2d12ac0208eccd642aeaf7",
+      "bytes": 486
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/forever7/offline/Project7ResourceSnapshot.java",
+      "sha256": "90ceb90970df2a7bf7d5880b03cc88c6f8173b7d332e7c7f0cf69c0f013a6c99",
+      "bytes": 838
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/forever7/offline/ResourceImporter.java",
+      "sha256": "f8d84bd37136cd27144f28c225940cff6c44da35d33d6cd4febc395a6494a70b",
+      "bytes": 335
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/forever7/offline/ResourceInitActivity.java",
+      "sha256": "76b894a30c6c1867d697811f40224657089d3b5e95d20a0ee0bc3cc799c3e860",
+      "bytes": 1116
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/netease/qrzd/Project7LoginDialog.java",
+      "sha256": "18a72c3d924568bd6a44d09aea860aad7433b8b86dd1caf2982bc1561ac704a3",
+      "bytes": 234
+    },
+    {
+      "path": "runtime/android_project7_startup/host_stubs/com/project7/localmanager/FullCollectionInitializer.java",
+      "sha256": "99abb9f2087f4f04bb3799c6975b4668cda58684707dce13815e1a968bbbe586",
+      "bytes": 564
+    },
+    {
+      "path": "runtime/android_project7_startup/host_tests/com/project7/localmanager/StartupHostTests.java",
+      "sha256": "57f91ddafc73f0d496821cb9479ef8270d96fe42ea32719045b6d22839f7fca6",
+      "bytes": 25066
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/forever7/offline/Project7ResourceInitActivity.java",
+      "sha256": "1e964601cbf7e0310f62f4b0e2d445305fe92c8a10e88f25a88ae80ffb9d065d",
+      "bytes": 2332
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupCoordinator.java",
+      "sha256": "98b7f4a60e7dbcccee358b2c324fac25783a46112ae8de2af217b0c98e911029",
+      "bytes": 16855
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupPlatform.java",
+      "sha256": "8d4834977ca98e87374ebbf6c9623972a39f7993a24020bfa24104e9b26fb3cb",
+      "bytes": 5885
+    },
+    {
+      "path": "runtime/android_project7_startup/verify.py",
+      "sha256": "ab8a1660a7565659c6e0e203541fa04569421ce71cd828984bf470add2c6ff82",
+      "bytes": 5318
+    }
+  ],
+  "authorized_single_package_source_and_test_freeze": [
+    {
+      "path": "runtime/android_single_package/compile_stubs/com/project7/localmanager/ManagerApiStubs.java",
+      "bytes": 4221,
+      "sha256": "781e168658a0ae8be1ad19fc49472e4b5292ab369e3708aa9f06f3ce65c91aa3"
+    },
+    {
+      "path": "runtime/android_single_package/host_stubs/android/content/Context.java",
+      "bytes": 485,
+      "sha256": "c7b1d924afc32bd0653efed50550687ad17412424c5c0a2cf2a7294647ac6f48"
+    },
+    {
+      "path": "runtime/android_single_package/host_stubs/com/project7/localmanager/ManagerApiStubs.java",
+      "bytes": 12249,
+      "sha256": "ede25b95ed22299fe3d0fbbc6f68c2768c393b9f5e50096e73327e82641489e5"
+    },
+    {
+      "path": "runtime/android_single_package/host_tests/com/project7/localmanager/ProcessOwnerHostTests.java",
+      "bytes": 30873,
+      "sha256": "0d360e2b400a4dffd3293f456062f793a3d8f6f71c967fc18caa3fc0cb8ac352"
+    },
+    {
+      "path": "runtime/android_single_package/host_tests/com/project7/localmanager/StableBootstrapHostTests.java",
+      "bytes": 22956,
+      "sha256": "3231a30872737d4b43291688b9efb002e40459b49fe3b2b2501088679e4c25d7"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/LifecycleDriver.java",
+      "bytes": 795,
+      "sha256": "6f49f701e87c984de314e94d0b289d941dd0b8861bbc896bb12f8ab57add5415"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/ManagerLifecycleDriver.java",
+      "bytes": 5124,
+      "sha256": "09e48a79fd60569c4f4c14a68efcd5e098dd4769ce69adcb13f4bb786a0f0695"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/ProcessGatewayOwner.java",
+      "bytes": 13861,
+      "sha256": "73e1529c171fed4d7e764cb6a9d84b79795d161266527bd3e0a3ff943464544e"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/SinglePackageGateway.java",
+      "bytes": 4626,
+      "sha256": "903a9ab84feb89bcf2792d79a3a2ed9fdc8ef767de825cc7488f2ab86759ca5b"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/StableIdentityBootstrap.java",
+      "bytes": 22135,
+      "sha256": "5b215b115dbf27088a9f8b3fe7dfe77128e889ab684463c8f1448680686ea79b"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/StockIdentityStorage.java",
+      "bytes": 3235,
+      "sha256": "40d8e5379f762c0546b25db0727ea714294ac5ff594007ea0aebf0fe95929e44"
+    },
+    {
+      "path": "runtime/android_single_package/verify_compile.py",
+      "bytes": 8374,
+      "sha256": "3405f3fcc864f7784587b6a17eb9173a27f9778ffa05cb73fc3ca12569722121"
+    },
+    {
+      "path": "runtime/android_single_package/verify_host_bootstrap.py",
+      "bytes": 2334,
+      "sha256": "b38d503f06ff3ba1990f6e1a14272caafd5ecbd50c49a408079740bd70364b77"
+    },
+    {
+      "path": "runtime/android_single_package/verify_host_lifecycle.py",
+      "bytes": 2309,
+      "sha256": "b60fa8d7ee17d8b273c09f064bce98b249c08270f8d847a181393400d172e3cb"
+    }
+  ],
+  "combined_production_source_freeze": [
+    {
+      "path": "runtime/android_resource_init/src/com/forever7/offline/OfficialResources.java",
+      "sha256": "28cff3ab25c05134796a73289218c894cce96c67022451d901ba2f492267fd6d"
+    },
+    {
+      "path": "runtime/android_resource_init/src/com/forever7/offline/Project7ResourceSnapshot.java",
+      "sha256": "0ba7edf68d24585476e27c596dd8f9bf020d1a63a0adfded645e3c597007345c"
+    },
+    {
+      "path": "runtime/android_resource_init/src/com/forever7/offline/ResourceImporter.java",
+      "sha256": "329f81441eb14cf22a6da4f4348e246e4623f5208606ccb18b8424b49fce4796"
+    },
+    {
+      "path": "runtime/android_resource_init/src/com/forever7/offline/ResourceInitActivity.java",
+      "sha256": "c5f1f603e2758adc12a6ac8669b77329ee26d17b0d5f66199cc6d65918e34ec9"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/LifecycleDriver.java",
+      "sha256": "6f49f701e87c984de314e94d0b289d941dd0b8861bbc896bb12f8ab57add5415"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/ManagerLifecycleDriver.java",
+      "sha256": "09e48a79fd60569c4f4c14a68efcd5e098dd4769ce69adcb13f4bb786a0f0695"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/ProcessGatewayOwner.java",
+      "sha256": "73e1529c171fed4d7e764cb6a9d84b79795d161266527bd3e0a3ff943464544e"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/SinglePackageGateway.java",
+      "sha256": "903a9ab84feb89bcf2792d79a3a2ed9fdc8ef767de825cc7488f2ab86759ca5b"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/StableIdentityBootstrap.java",
+      "sha256": "5b215b115dbf27088a9f8b3fe7dfe77128e889ab684463c8f1448680686ea79b"
+    },
+    {
+      "path": "runtime/android_single_package/src/com/project7/localmanager/StockIdentityStorage.java",
+      "sha256": "40d8e5379f762c0546b25db0727ea714294ac5ff594007ea0aebf0fe95929e44"
+    },
+    {
+      "path": "runtime/android_autologin/src/com/netease/qrzd/AutoLoginCore.java",
+      "sha256": "97b721b75968a73442fb83bef30ccdf8fbbf9ba28c4f9ce59b626f80738a8747"
+    },
+    {
+      "path": "runtime/android_autologin/src/com/netease/qrzd/Project7LoginDialog.java",
+      "sha256": "5ef39dde154667ca10161e71ec8ca5233976df35568cf3d93dad329824980c48"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/CollectionBson.java",
+      "sha256": "ee878bfaba1a97ddc8d42d7920531bd64eab34de7bf34cf69b483ad8c23fa130"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/CollectionLiberateRules.java",
+      "sha256": "15aa65c70f78ea202c41fc18c4b79f48472d37716ce72badbd9639e638aa5210"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/CollectionStockBridge.java",
+      "sha256": "8a2df09181e8e3f9e665e226100a33963338a1729378a27268badef56fdcb55a"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/CollectionTargets.java",
+      "sha256": "ac8849caf9a83475d80f3956795452feeaa1702c891e623a780238528cb58535"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/CollectionValidator.java",
+      "sha256": "a14196bda99188cf74da628f969696490223183f3109a1ef9066a505f63ba851"
+    },
+    {
+      "path": "runtime/android_collection/src/com/project7/localmanager/FullCollectionInitializer.java",
+      "sha256": "6db5d8d3a718794df70ee578df876c6133012b892fe60015b9a52cbc6363c115"
+    },
+    {
+      "path": "runtime/android_project7_repair/src/com/forever7/offline/Project7RepairHost.java",
+      "sha256": "07a43cff4a0eaf55e3c357ff1e5f0124daa3df1d8c0cf50dc60e7210217f0add"
+    },
+    {
+      "path": "runtime/android_project7_repair/src/com/forever7/offline/Project7RepairProtocol.java",
+      "sha256": "174d9350d73a603f6dc0e1ad96aed1bf7757cb434f3d697119031c0a472f39e8"
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/forever7/offline/Project7ResourceInitActivity.java",
+      "sha256": "1e964601cbf7e0310f62f4b0e2d445305fe92c8a10e88f25a88ae80ffb9d065d"
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupCoordinator.java",
+      "sha256": "98b7f4a60e7dbcccee358b2c324fac25783a46112ae8de2af217b0c98e911029"
+    },
+    {
+      "path": "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupPlatform.java",
+      "sha256": "8d4834977ca98e87374ebbf6c9623972a39f7993a24020bfa24104e9b26fb3cb"
+    },
+    {
+      "path": "analysis/project7/official-build-inputs-v3/generated-java/com/forever7/offline/Project7BundledResources.java",
+      "sha256": "fb3878cf546c87bf32ef41028578f7613636fb6c31273410c4217e1698b3f046"
+    }
+  ],
+  "never_package": [
+    "analysis/project7/startup-coordinator-verification/host-only",
+    "analysis/project7/startup-coordinator-verification/compile-only-stubs",
+    "analysis/project7/single-package-adapter/compile-only-stubs",
+    "runtime/android_project7_startup/host_stubs",
+    "runtime/android_project7_startup/host_tests",
+    "runtime/android_single_package/compile_stubs",
+    "runtime/android_single_package/host_stubs"
+  ],
+  "not_run": [
+    "Android/game VM/device/emulator",
+    "native login/engine acceptance",
+    "actual8GiB resource verification in this integration run",
+    "real/private BSON or credential reads",
+    "DEX/D8/APK build/install/signing"
+  ],
+  "remaining": [
+    "Parent final builder/manifest/DEX packaging integration",
+    "Authorised future Android/native acceptance",
+    "No in-process resource repair after Client may have started without a real native-stop contract"
+  ],
+  "resource_repair_amendment": {
+    "report": "reports/project7-resource-repair-implementation.json",
+    "summary": "One original-Attempt repair nonce/watch; provider invalidation and actual drain-gated current Client UI. No native-stop ACK or same-process repair.",
+    "production_class_count": 104,
+    "startup_host_groups": 17,
+    "repair_host_groups": 4
+  }
+}

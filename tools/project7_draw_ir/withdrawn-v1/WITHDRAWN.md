@@ -1,0 +1,1 @@
+Withdrawn evidence. default.pool was incorrectly interpreted as a reward_random ID. Correct chain is default.pool -> chouka_normal row -> random_reward. Do not consume these files. The independent base-weight rank audit remains valid, but use its current copy in data/closure-v2/rank-audit.json.

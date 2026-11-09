@@ -1,0 +1,12 @@
+{
+  "format": "project7-request-events-public-v1",
+  "producer": "reviewed-contract projection, independently read original640 condition literal and fixed graph row; eventType from reviewed original-content extraction",
+  "sources": {
+    "reports/deepseek-p7-storyhuisu-daxuanwo-contract.json": "44947082bb601ed603c86a94ec9928026ed306fb7dd5633e7d7e0c4b26f06f67",
+    "analysis/original-py-640/com/data/cdata/event_condition.py": "9965c150c89624b8adca1e23a83c70c6ad833bb7ff15ae384b8d7e41a70c860d",
+    "analysis/project7/fixed-component-stage/assets/event_graph.tsv": "7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba",
+    "analysis/research-agent/city.py": "78e6e3193c0f0a6f52d85c1d83bce332b4ba69893a18caa4ebabbd866673bd05"
+  },
+  "payload_sha256": "7088dabb1a5b84609f8b23154992660d6239389be0d54316549d2dfa94d7c475",
+  "source_rule": "offline strict original-condition AND original producer week>=3 admission; client scene-only gates are not server facts"
+}

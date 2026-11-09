@@ -1,0 +1,28 @@
+{
+  "added_methods": [
+    "LocalEventBattleEngine.q7OriginalSync"
+  ],
+  "changed_methods": [
+    "LocalGatewayServer.handleCombatAdmission",
+    "LocalGatewayServer.handleCombatOfflineFinish",
+    "LocalGatewayServer.finishAbandonedStory",
+    "LocalGatewayServer.prepareEventEffects",
+    "LocalEventBattleEngine.sync"
+  ],
+  "classes": 649,
+  "defined_methods": 3711,
+  "format": "project7-trial-retry-seams-v1",
+  "patch": {
+    "bytes": 996710,
+    "sha256": "52d0ea5ff9ff4ccc78e0e191a7648ec9d74c960f7ba6bd0a9bb49495b40c51c7"
+  },
+  "scope": "Shared source-family begin, real wire settlement and giveup prefixes, profile receipt recovery before event effects; original paths and original sync body retained. Requires prepared TrialRetryGateway and original Store/consumer proof. Candidate not Main-enabled yet.",
+  "source": {
+    "bytes": 1158744,
+    "sha256": "9339898c6f7f6b3950ef06731b8e18d68fe6b84b5838670a792c4601527a371b"
+  },
+  "target": {
+    "bytes": 1159096,
+    "sha256": "7f13c24a613676ee520bf6ed2590a6bf33788cb6955c92f3e9f446dee89c0d82"
+  }
+}

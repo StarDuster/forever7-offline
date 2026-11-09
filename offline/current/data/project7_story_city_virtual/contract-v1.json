@@ -1,0 +1,125 @@
+{
+ "boundaries": {
+  "derived": [
+   "Scene 482 resolves event_anqixian11 directly; 483..488 resolve it through inherit_mission=482 because no event_anqixianNN modules exist for 12..17.",
+   "COC party is exactly [135] because BattleStageMember replaces heroes with list(target_hero) before admission.",
+   "Timeout is failure because the third mission_time value (5) is not CAMP1 (1) and the client compares battle.camp == win_camp."
+  ],
+  "official_policy": [
+   "Mission admission and team selection are client-side; result settlement and drops are server-authoritative in the original game.",
+   "The legacy offline_stage.basic_city_stage_chain 1..8 rejection is a legacy reference only and is not current Main evidence. Main dispatch is fixed DEX/StoryCity/Gateway; the 482..488 family must be admitted through that actual dispatch and remains unproven here.",
+   "Area status/lock effects belong to the CityCoreA cityEffects contract and are not reproduced here; progression events are reference-only.",
+   "Namespace remains q7StoryCity; this contract does not enable Main or menu 25."
+  ],
+  "unknown": [
+   "The objective-complete success trigger lives in the PvE scene asset (g58_*_pve.scn), not in cdata; only timeout failure and battle completion events are table-derivable.",
+   "mission_time[2] literal 5 is not a UnitCamp value; timeout is derived to be a failure from battle.camp == win_camp, not from a documented constant.",
+   "Client dialogue IDs 21491..21495 for clues 17..21 are preserved from cdata; their dialogue-table text still needs a static literal/source join. The clue_des text is available from decompiled puzzle_room_clue and must not be dropped.",
+   "Original server reward/drop rule for MAIN_MISSION scenes is not present in client tables; city_fight_reward is the offline runtime mapping, not proven original policy.",
+   "Event condition kinds 3/4/8/52/100/102 are server-side; the offline runtime mapping is cited only to explain the literal values."
+  ]
+ },
+ "checks": {
+  "count": 602,
+  "failed": 0,
+  "passed": 602
+ },
+ "consumer_namespace": "q7StoryCity",
+ "counts": {
+  "chapters": 7,
+  "citations": 64,
+  "interstitial_missions": 3,
+  "missions": 7,
+  "progression_events": 21,
+  "puzzle_cameras": 5,
+  "puzzle_clues": 5,
+  "puzzle_rooms": 1,
+  "virtual_areas": 4,
+  "virtual_missions": 4
+ },
+ "data_file": "virtual-data-v1.json",
+ "data_sha256": "68b81e831c083f4e6f711240de18603b589ad568f9881a9e3020ffc36130b54a",
+ "data_size": 133525,
+ "generator": {
+  "path": "tools/project7_story_city_virtual_data.py",
+  "sha256": "35a0b09eb73af78ca2997f79b80f73a5cfd5648b81baa0d69294326a5413ff6a"
+ },
+ "live_catalog": {
+  "asset_sha256": "af2328b97372c27fd392b5b399d03daa17fa73acdd35d2b1ad5b0a8f07218069",
+  "available": true,
+  "expanded_sha256": "32d20dc25a0559c91df91b009f5d04a8d4752f848ae9f0860a17a998f154ab77",
+  "missing_scenes": [],
+  "mission_hero_override_present": [
+   482,
+   483,
+   484,
+   485,
+   486,
+   487,
+   488
+  ],
+  "present_scenes": [
+   482,
+   483,
+   484,
+   485,
+   486,
+   487,
+   488
+  ],
+  "schema": "project7-story-city-v1",
+  "virtual_areas": [
+   10000,
+   10001,
+   10002,
+   10003
+  ]
+ },
+ "merge": {
+  "areas": "Replace/verify the four virtual rows 10000..10003; pre_area/next_area come from coc_area_link_data.",
+  "chapters": "Verify the four virtual chapter rows and add the three interstitial rows keyed [area,0,\"27-1\",0]; the live catalog omits 483/485/488.",
+  "do_not_consume": [
+   "progression_events (CityCoreA owns cityEffects)",
+   "area status/lock projections"
+  ],
+  "mission_hero_override": "Use mission_hero_override from this contract; the live producer keys mission_hero_attr by (scene,135) but reads an integer, yielding null.",
+  "missions": "Replace/verify 482/484/486/487 and add 483/485/488 with wire=1, party=[135], minimum=maximum=1, economy=[2,0,0,0,1,1,1].",
+  "namespace": "q7StoryCity",
+  "puzzle_room": "Puzzle room 4 needs a new catalog field/version; the live project7-story-city-v1 catalog has no puzzle section.",
+  "target_schema": "project7-story-city-v1"
+ },
+ "policy": "source-coc-route-27-1-v1",
+ "schema": "project7-story-city-virtual-data-v1",
+ "section_hashes": {
+  "areas": "5670b4e94192a005837c07ce433222d6e99cc4eb355acff64a36805774f87212",
+  "missions": "0de05fce251c94b687840f2ffe0f988407de8f8a09e6fcfff6563ef72db9fb23",
+  "puzzle_room": "82668ad64cb4ed8a26b6530e4a3a2eaa00949cb10d26e2d9728d8b1750902046",
+  "reward_model": "4ecdb9d0272a08c2cf91604b98123727677b757940d68d4a1a68e4e6f3ba08d8",
+  "route": "fe88883119e11e7995ea21d453f1271efac313fe7765a98ea285481642a9fc7d"
+ },
+ "source_pin_set_sha256": "d5eab4e2fce66026e0cc6c42fe5d4aef81afb2d6683f4a269dd8309fefb8b6e4",
+ "source_pins": {
+  "battle_event": "594b21b0469b8e0d4dcf40a1d5d729c2116f63ac02d3bf852f58a0130abae35f",
+  "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+  "city_area_link_data": "017b12541c4dcab208c6f26f9c44539bb932e7d77cc93d6eae32f8ef71ed768c",
+  "city_area_sfx_data": "3cf373224396ca82cd630a22a5f0450b7b684af26dec4dbc57045b1f6ea19a83",
+  "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+  "city_fight_reward": "3899909239b4c9ab64ee07d341defab5fe87316ad2dc0e0d5161f97934ae5204",
+  "city_virtual_area": "dda839275cf285534e963c4bfac07bf1d1d9beb205b06681273eb9942c3582d3",
+  "coc_area_link_data": "ef14e11a29bce26f5d96bf440245437ee870f5a133e42e05e3acf1a1171e4889",
+  "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+  "event_condition_map": "23b53c490ceb982784bb854d7c8c5fd0fcd637b8419639b35f522551fdbddd0a",
+  "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+  "hero": "5fd8f55649e12030a76ec34d50fcf10b414fc07cb8055437177be8ecf29f771e",
+  "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+  "mission_hero_attr": "25647eaa103bb23bc22c27910e1f119e7ed2f169f52ac440dee69f573a60cc8b",
+  "puzzle_room": "03c4cbbeb686abc956565f552ad57113e083d38f9a0e6e5589c6ba6e53fe9812",
+  "puzzle_room_camera": "17dabc4084df225d28e26ca6fd50e9767d6dee3c683f9309cc25b8e0c48f7b1e",
+  "puzzle_room_clue": "ab6a6e7ff5daf8380216d3bbe45897b6ced36db803eba0e8c14b0d18b52a647e",
+  "reward_common": "6f60386ce336a186ee01ee606a4d67df43674275272f787f082dbef8582e6fde",
+  "reward_random": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+  "story_clue_info": "7fef35f420d888892a4c3f023bd0db017b0858d64f6da4aab19daa7645280882",
+  "story_route": "53f3161471d82c9abe562c41982b51f5d01a1651400d3c6fd58433b2629614b1",
+  "storyroute_tip": "b9dc0588f1bdc64a1937b41c8c771c54fc369cc3e20357d63c22b02f1850748f"
+ }
+}

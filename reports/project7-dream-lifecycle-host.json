@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "actual_manager_sha256": "2ed4ab9dea04f1b90947415da5ebd405f44f20512b157d74805130603accbb0a",
+  "build": "analysis/project7/dream-combined-host-vy3fiivq",
+  "runtime_no_compile_stubs": true,
+  "history_core_production": "analysis/project7/dream-combined-host-vy3fiivq/support-production",
+  "provided_support_compile_only_drift": [
+    {
+      "path": "runtime/android_draw_policy/compile_stubs/com/project7/localmanager/DrawApiStubs.java",
+      "old_sha256": "eb02eb6fdb5d26873cef03b488514f79f5840bbd260cdbbfe3b46ebb94546681",
+      "new_sha256": "98c975348a27fa83cc34b787c465c03fcd8bfee29224e5d4b6ff68c20dd91792"
+    },
+    {
+      "path": "runtime/android_history_draw/compile_stubs/com/project7/localmanager/HistoryApiStubs.java",
+      "old_sha256": "6b49011f651cbbb1065632cf8604ca4d6b17c020f01e40609988bd7559f0e42c",
+      "new_sha256": "1fdb5b0ed8625cfe81f78b6ce4b249a18539d91fa222e21a7edf6965afa83864"
+    }
+  ],
+  "support_recompiled_current": true,
+  "support_host_inputs": "analysis/project7/dream-combined-host-vy3fiivq/support-host-inputs.json",
+  "history_core_classes": {
+    "com/project7/localmanager/HistoryBson.class": "9f848dad4778141764d229f998e3550f0b4430ca6f8223c49c989e38665e3bc0",
+    "com/project7/localmanager/HistoryDrawPolicy.class": "bdc9f522c469d6f370c418428548b5ed0ff0b6209d13fa01b8e810a7f3539a2b",
+    "com/project7/localmanager/DrawPolicyBson$Value.class": "9a959072ac7d7f7a8ed1880969a99e2fee75905bf4352d8774023800595f2989",
+    "com/project7/localmanager/HistoryCatalog$Edge.class": "2a619846db22761a559da59dd57ede0ae93aa63c04e9f9d52aaabbb0ad1f0898",
+    "com/project7/localmanager/DrawPolicyCatalog$Leaf.class": "b2570731b23ac7b1d0dd5a53fa03887054585b348397863615a7d50a2a9e2cc5",
+    "com/project7/localmanager/DrawPolicyCatalog.class": "66d0ebf3cd728d95b9ed8299dd7d839fd31153259239aac2e3e623f1461c13e3",
+    "com/project7/localmanager/HistoryCatalog.class": "ae7c2f7134dc435c8ca27e4f488dbdfae5e07ca02e9f09d343a08fe66cf64346",
+    "com/project7/localmanager/CoreDrawPolicy.class": "ed328e93be8e82e54d928f2f9facbe6b7e3da9c29756fdf6aa7a604cfbe7f058",
+    "com/project7/localmanager/DrawPolicyBson.class": "77308c6ef120e87b847d59241b1e75426c5ff312ca86e82f0b8923538c963acd",
+    "com/project7/localmanager/HistoryCatalog$Spec.class": "3e92c99093612e4776b4ec429eb02079f25352b6ef9e308cb14f27087a73ad95",
+    "com/project7/localmanager/HistoryCatalog$Distribution.class": "89c939e7c76723c2b09cf6b3bae13c901790061311f4a158817bde64a20bf5fd",
+    "com/project7/localmanager/HistoryCatalog$Leaf.class": "196414ab66439f5463d51cd79048aaee594ef968b35d162a77318d392a94c067",
+    "com/project7/localmanager/HistoryFurniturePolicy.class": "f1ff3b090db6c7b743f898d74b43fcbcb510d37e65ea93032945ee6ab7047438",
+    "com/project7/localmanager/DrawPolicyCatalog$Branch.class": "993a7e82d837c7e54251cad4211e32c82284abe869e9e8745909104a34939a1d",
+    "com/project7/localmanager/HistoryBson$Value.class": "ba1aecc8cdcb1953cf40d71b4c7290659165c832e4e6af5a31c9c4ffcbba2a5f",
+    "com/project7/localmanager/HistoryFurniturePolicy$Spec.class": "dccbcf7d5077d43867da6bd0b662b87919c68cdac970dfbf61803c778331f8f7",
+    "com/project7/localmanager/DrawPolicyCatalog$Distribution.class": "35499955401f016819d4461bdc05c6b6a96ceaab72c22b20ad098c3c4a07b99c"
+  },
+  "history_core_inputs": {
+    "production_directory": "analysis/project7/dream-combined-host-vy3fiivq/support-production",
+    "production_classes": 17,
+    "compile_stubs_in_runtime": false,
+    "source_sha256": {
+      "runtime/android_draw_policy/src/com/project7/localmanager/DrawPolicyBson.java": "430b9257206bf62f1ac610790fb0ae68fb3c17716a04889870999a08ae964b1e",
+      "runtime/android_draw_policy/src/com/project7/localmanager/DrawPolicyCatalog.java": "b0b450a89040d15d93157827d0e359705ed2ea3e027c09148892f9dc6561fa58",
+      "runtime/android_draw_policy/src/com/project7/localmanager/CoreDrawPolicy.java": "b4bcf72fe3b72257202f9596f3188ad77eb620359214a45668ca6ebd01751d10",
+      "runtime/android_draw_policy/compile_stubs/com/project7/localmanager/LocalDrawEngine.java": "cfa36eaad40967a9d4e1ba1641aafd2d7a288d3c034c4390f64472c3632a2ffe",
+      "runtime/android_draw_policy/compile_stubs/com/project7/localmanager/DrawApiStubs.java": "98c975348a27fa83cc34b787c465c03fcd8bfee29224e5d4b6ff68c20dd91792",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": "88a9a5aaf0784b0387c3029d6626257fe66370611293bb486ba372f1a80788e1",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryFurniturePolicy.java": "29207ccd6a2860982a7281dbb437eff8af29c0afed324657ccbf298ea2806d28",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryCatalog.java": "dfeaccbcf59542b49d50e59f6229e4ffcd3f52dbf793cfd5a6e0426ba5cc1561",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryBson.java": "e2dfc69f457dc9dd8488f2810ec97a7a9d2dc26789dd0c678c2fe11c97cf83b1",
+      "runtime/android_history_draw/compile_stubs/com/project7/localmanager/HistoryApiStubs.java": "1fdb5b0ed8625cfe81f78b6ce4b249a18539d91fa222e21a7edf6965afa83864"
+    },
+    "assets": {
+      "resources.tsv": "5e716bd9a34cfd678af9aba6385ba3fae92d4b17486ee480f76bd95320268e99",
+      "project7_draw_policy/catalog-v2.tsv": "e250ace8d74eaf87769a709532e5a4e1ae69eb2d1acfedf520b79e0323136319",
+      "project7_history/furniture-v1.tsv": "dd85b09e9f3094a2c5a9f72a3300e04ad85e63b9730c6cdd8ab2a32b54ba4a2d",
+      "project7_history/catalog-v2.tsv": "debbda4a6910947a0843774261971f17d217b120c6bd470ef8572bae53f043b0"
+    },
+    "asset_overlay": "analysis/project7/dream-combined-host-vy3fiivq/support-assets",
+    "production_class_sha256": {
+      "com/project7/localmanager/HistoryBson.class": "9f848dad4778141764d229f998e3550f0b4430ca6f8223c49c989e38665e3bc0",
+      "com/project7/localmanager/HistoryDrawPolicy.class": "bdc9f522c469d6f370c418428548b5ed0ff0b6209d13fa01b8e810a7f3539a2b",
+      "com/project7/localmanager/DrawPolicyBson$Value.class": "9a959072ac7d7f7a8ed1880969a99e2fee75905bf4352d8774023800595f2989",
+      "com/project7/localmanager/HistoryCatalog$Edge.class": "2a619846db22761a559da59dd57ede0ae93aa63c04e9f9d52aaabbb0ad1f0898",
+      "com/project7/localmanager/DrawPolicyCatalog$Leaf.class": "b2570731b23ac7b1d0dd5a53fa03887054585b348397863615a7d50a2a9e2cc5",
+      "com/project7/localmanager/DrawPolicyCatalog.class": "66d0ebf3cd728d95b9ed8299dd7d839fd31153259239aac2e3e623f1461c13e3",
+      "com/project7/localmanager/HistoryCatalog.class": "ae7c2f7134dc435c8ca27e4f488dbdfae5e07ca02e9f09d343a08fe66cf64346",
+      "com/project7/localmanager/CoreDrawPolicy.class": "ed328e93be8e82e54d928f2f9facbe6b7e3da9c29756fdf6aa7a604cfbe7f058",
+      "com/project7/localmanager/DrawPolicyBson.class": "77308c6ef120e87b847d59241b1e75426c5ff312ca86e82f0b8923538c963acd",
+      "com/project7/localmanager/HistoryCatalog$Spec.class": "3e92c99093612e4776b4ec429eb02079f25352b6ef9e308cb14f27087a73ad95",
+      "com/project7/localmanager/HistoryCatalog$Distribution.class": "89c939e7c76723c2b09cf6b3bae13c901790061311f4a158817bde64a20bf5fd",
+      "com/project7/localmanager/HistoryCatalog$Leaf.class": "196414ab66439f5463d51cd79048aaee594ef968b35d162a77318d392a94c067",
+      "com/project7/localmanager/HistoryFurniturePolicy.class": "f1ff3b090db6c7b743f898d74b43fcbcb510d37e65ea93032945ee6ab7047438",
+      "com/project7/localmanager/DrawPolicyCatalog$Branch.class": "993a7e82d837c7e54251cad4211e32c82284abe869e9e8745909104a34939a1d",
+      "com/project7/localmanager/HistoryBson$Value.class": "ba1aecc8cdcb1953cf40d71b4c7290659165c832e4e6af5a31c9c4ffcbba2a5f",
+      "com/project7/localmanager/HistoryFurniturePolicy$Spec.class": "dccbcf7d5077d43867da6bd0b662b87919c68cdac970dfbf61803c778331f8f7",
+      "com/project7/localmanager/DrawPolicyCatalog$Distribution.class": "35499955401f016819d4461bdc05c6b6a96ceaab72c22b20ad098c3c4a07b99c"
+    }
+  },
+  "class_origin": "analysis/project7/dream-combined-host-vy3fiivq/class-origin.log",
+  "checks": [
+    "actual private direct entry no ACK and reliable entry ACK-first+callback",
+    "actual private unknown direct false unchanged",
+    "actual original seq Result cache identity preserved, duplicate no second debit; new seq resumes pending; claim duplicate no business mutation",
+    "actual begin8/claim5 saved nonempty original candidate/terminal claim",
+    "actual Store.updateEconomy policy6 and original handleCalendar refresh seam",
+    "actual night negative same-day updateDay unlock consumer",
+    "actual Store writer failure no half exit",
+    "actual committed day+dream reset and postcommit op reset before reevaluation",
+    "actual original Gateway publication loop single route/hsd/pull",
+    "finite original P7/640 typed client producer/push/processing/start/callback/updateDay consumer",
+    "actual complete8 emits current budget before original callback and cached begin replay",
+    "actual definite-precommit begin false Result uses original callback/reply/cache",
+    "actual claim-null emits message+completion-only carrier, no success tail; same seq retries successfully",
+    "actual matched private WeekRpc recovers old committed claim before updateServices",
+    "actual Store Week.apply creates new same-date transition and clears mode/context/receipt in same image",
+    "current Core7+History10 recompiled with exact new source/stub/asset host-inputs",
+    "original CityMember continuation observes budget, begin-negative/claim-negative callbacks unlock"
+  ],
+  "limitations": [
+    "Android platform filesystem/context seams, not ART",
+    "finite function source projection and widget/network boundaries",
+    "no APK/D8/device/VM/native acceptance"
+  ],
+  "composite_source_sha256": {
+    "runtime/android_mechanism_gateway/src/com/project7/localmanager/OfflineMechanismGateway.java": "86135384a5faec5dcd60c23329a2e35f3fa5b37743c6b81d60885c1ed0a8e792"
+  },
+  "stock_program_definitions_disjoint": true,
+  "request_coregap_source_sha256": {
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventAdmission.java": "675dd349f1a32b32fe41064799b8325bf63a6dccd6bb3eea9b4af55ac1ddadb8",
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventCatalog.java": "e72fb52701f9e6ba45b8b8e79e5adcd114409f2e034a097d50686875513d0a9d",
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventGateway.java": "3fc5aaec681e29c1919282f08a576eaf357060f0d0322bb74ca8f8baa0edc4ba",
+    "runtime/android_core_rpc/src/com/project7/localmanager/CgRewardPlan.java": "e457fab0690f2ffd0840e9cff0936587434cfb007b01ba7004f886b0461c9c19",
+    "runtime/android_core_rpc/src/com/project7/localmanager/CoreGapBridge.java": "ed36fe1b9d1fcc9e186a5055868ebbd2f2267f006dd770097b37ac888da29e73"
+  },
+  "source_sha256": {
+    "runtime/android_dream_mode/verify_combined.py": "ffd1a34ed0bbbc1acf32559084a6522d7c813941d08eced0d36d8a693253d0f8",
+    "runtime/android_dream_mode/verify.py": "29f9c001d1e4bd98cf14e0a1240709743bc129f02c0f69426bb573a8b918834d",
+    "runtime/android_dream_mode/host_tests/entry_consumer.py": "c585bad3305dfde9b941bda7294dca08a8e30821b01c11891d76d542ec31f1b4",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamRequestGateway.java": "aba73ec0deb1e7b6815e9db6dd991408fc1b81e920f620d06ad688588c95df92",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolDelta.java": "129ffb778483ac3e529ef77564b37203a213d1b35f5c6bcfa66fffd5df80884f",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamAccess.java": "651aced761f0b60545c0a35f26e4f53c9b28f88a0d9da3f99cd481a13cb1b7a8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolFailure.java": "3980a8eae071edef9ede4318972eaff311cbfe37608b861161a95e2b3cca72a0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolGatewayHooks.java": "edac07a696d36e30fafc719671a747744bb3eb8e768519c02c66e8729cf14f45",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamEconomyPolicy.java": "aa806c144479f563a2cd141f274a5b3d82ef07642e8dd006b358ab5bd93a7c6b",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamStorage.java": "a32b53e2f854218b4da56a6dd492ce75fedce302e04c43295c4ca75cbb8e8544",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolCandidates.java": "c954ed045c3eb554dc89f844eeecf1155e233138e89a1debdd70664097ca67c0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCoordinator.java": "c30e16b42d7ff547b291536727768df61aa6cb0fd7cc5ae4ea7809b1c9407bc8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCatalog.java": "480f186c42ba6e9a44dd572477b45548d9bf60af86b9e5d72968c5af09f31880",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamProgressDelta.java": "db1b292e28f2ee56ef946d8b24a579d0cc0bec1cda84b999b2dfc5368b55bc4d",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolReply.java": "639d772f6159de9db32272db1181b57ad1c77a11ca4171fd23a40adde71de7f9",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "624fbac139012bb51175b02d53a68b099fa43bd65bd886228852a9c5eb9fbe69",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamState.java": "1937356a4ef0c9e869e7a5b722785077a17c4fcb8bc7dc3d8e7941dd41e96398",
+    "runtime/android_dream_mode/host_stubs/android/system/Os.java": "0a56886d7bcf74eb83325a78aadd7e25aebf942681c22019421603053832714d",
+    "runtime/android_dream_mode/host_stubs/android/content/res/AssetManager.java": "0fb6767f3e46630edab816e00cd8f375986834d6de20aa6aabff11b782de26f5",
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/BsonLite.java": "79d20df9c15d83a009495ee6e6ef291611854f083bfe34f06d7add77128895f7",
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/EngineApiStubs.java": "ae6a337b975aab070ce0a8c3c55e6852858b8ee7bb5dc8f2da5112d3f1565735",
+    "runtime/android_dream_mode/host_tests/com/project7/localmanager/DreamStateHost.java": "c1a7507f695faccd2dc99f7a9c7bd373097718d117f25d03ae8796c75accf85d",
+    "runtime/android_dream_mode/host_tests/com/project7/localmanager/DreamFailureWeekHost.java": "22198c78d4f586c1fd92b5870100b92f694246d363b93d2b1be48dcc02e7e759",
+    "runtime/android_dream_mode/host_tests/com/project7/localmanager/DreamCoordinatorHost.java": "8b05b1a1318b4bc4839b827ab22c3432d246ee55198e48ad13e0c8cd27b2fcd8",
+    "runtime/android_dream_mode/host_tests/com/project7/localmanager/DreamCombinedHost.java": "98796668573605204dfbe02b45fb085c5913b1b7c82c4d402f350d2a7b3c40c6"
+  },
+  "separate_original_engine_writer_fault_proof": "analysis/project7/dream-mode-host-ua0ca9_k/stdout.log"
+}

@@ -1,0 +1,43 @@
+{
+  "target_sha256": "ddaa9ca9e9468d52340d209185f829c330c439bbe50c6f20c3ab7b0cefb89179",
+  "frame_sha256": "8ed37358d634d3d7cec025901ff1e678da4cbc5595c797301bd844d30dcfeb5b",
+  "patch_sha256": "c3a470d51149fe472d6ca17d78c3a4f5b0cf79de56045f4203f4ca8f0effb91f",
+  "production_tree_sha256": "92ef8200df6723ba542e0e758199de520b76f97fc6d5bffd33a27f741d003625",
+  "probe_sha256": "fb86a283d7ae46f7e3ba3227f42b4fbb42ed2d0325915107aacd78c6dfa48539",
+  "result": "success seam connected; post-commit output failure with pending unsaved loses completion on restart fixture",
+  "probe": {
+    "failure": "first finish output throws IOException",
+    "commit": {
+      "money": 6533,
+      "receipt": true,
+      "battle_open": false
+    },
+    "without_saved_pending": {
+      "reloaded_actions": 58,
+      "battle_recovered": true,
+      "completion_after_engine": false,
+      "retry_win": 0,
+      "completion_frames": 0
+    },
+    "with_saved_pending": {
+      "completion_after_engine": true,
+      "retry_win": 0,
+      "disk_completed_without_login_save": false,
+      "login_save": "fixed gateway saves immediately after constructing engine"
+    }
+  },
+  "limits": [
+    "synthetic 482 win",
+    "not native, UI or full login",
+    "same-sequence cache and faults not in original 75 checks",
+    "NOT_PREPARED fallback reachability unproven",
+    "output-first failure might occur before reward frame"
+  ],
+  "evidence": [
+    "tools/Project7StoryCityHook.java:75",
+    "runtime/android_story_city/src/com/project7/localmanager/StoryCityCocPolicy.java:162",
+    "analysis/project7/story-city-coc-gateway-v1/host/com/project7/localmanager/StoryCityCocGatewayHost.java:166",
+    "analysis/project7/research/readable/java/LocalGatewayServer.java:1583",
+    "analysis/project7/manager/com.project7.localmanager.LocalEconomyEngine.dis:1923"
+  ]
+}

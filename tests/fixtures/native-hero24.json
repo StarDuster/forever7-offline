@@ -1,0 +1,79 @@
+{
+  "source": "Android640 original HeroData constructor + verified two-skin migration; ObjectIds/times normalized for tests",
+  "hero": {
+    "ar": {
+      "aao": 0,
+      "fn": 0,
+      "il": 0,
+      "o": 1,
+      "oa": {
+        "_base_mag_att_str": 0,
+        "_base_mag_def": 0,
+        "_base_max_hp": 0,
+        "_base_phy_att_str": 0,
+        "_base_phy_def": 0
+      },
+      "ot": {
+        "_base_mag_att_str": 60,
+        "_base_mag_def": 60,
+        "_base_max_hp": 60,
+        "_base_phy_att_str": 60,
+        "_base_phy_def": 60
+      },
+      "rotc": {
+        "_base_mag_att_str": 0,
+        "_base_mag_def": 0,
+        "_base_max_hp": 0,
+        "_base_phy_att_str": 0,
+        "_base_phy_def": 0
+      },
+      "sl": [],
+      "ss": 3
+    },
+    "ass": false,
+    "cat": null,
+    "cf": 100,
+    "cs": "000000000000000000000002",
+    "ef": 0,
+    "sk": {
+      "000000000000000000000001": {
+        "bd": {},
+        "cd": {},
+        "cr": 0,
+        "cwd": {},
+        "cwi": null,
+        "dst": 0,
+        "fb": false,
+        "i": 24,
+        "ias": false,
+        "pb": [],
+        "pd": {},
+        "pwd": {},
+        "tr": [],
+        "u": "000000000000000000000001"
+      },
+      "000000000000000000000002": {
+        "bd": {},
+        "cd": {},
+        "cr": 0,
+        "cwd": {},
+        "cwi": null,
+        "dst": 0,
+        "fb": false,
+        "i": 10023,
+        "ias": false,
+        "pb": [],
+        "pd": {},
+        "pwd": {},
+        "tr": [],
+        "u": "000000000000000000000002"
+      }
+    },
+    "sl": 1,
+    "so": 1,
+    "ti": {
+      "items": [],
+      "mc": 25
+    }
+  }
+}

@@ -1,0 +1,7 @@
+package android.util;
+
+/** HOST TEST ONLY. No Android runtime; diagnostic logging is discarded. */
+public final class Log {
+    private Log() {}
+    public static int i(String tag, String message) { return 0; }
+}

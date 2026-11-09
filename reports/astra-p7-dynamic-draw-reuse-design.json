@@ -1,0 +1,106 @@
+{
+  "status": "analysis_only_not_implemented",
+  "authoritative_design": "astra-p7-dynamic-draw-reuse-design.md",
+  "inputs": [
+    "terra-p7-remaining-draw-families-current.md",
+    "terra-p7-hero-extra-reward-contract.md"
+  ],
+  "unready_pools": 55,
+  "architecture": {
+    "owner": "original profile BSON and LocalProfileStore transaction",
+    "seams": [
+      "HistoryDrawPolicy.makeFile",
+      "HistoryDrawPolicy.reveal pre-stock",
+      "LocalDrawEngine.reveal unchanged primary grant",
+      "dynamic post-stock settlement",
+      "HistoryDrawPolicy.stateForSave"
+    ],
+    "no_pool_switch": true,
+    "preserve_existing_pending": true,
+    "new_slots": "persist entropy and policy/epoch/source; resolve at first reveal subject to hidden-card ABI proof"
+  },
+  "required_families": [
+    "charge",
+    "jiaozhi",
+    "missing-memory blessing",
+    "shared increasing UP",
+    "single/group wish",
+    "pre/post-acquisition replacement",
+    "first-acquisition treasure",
+    "treasure choice",
+    "cost",
+    "dynamic reward grants"
+  ],
+  "confirmed": {
+    "all_extra34_have_charge": true,
+    "extra34_with_jiaozhi_blessing": 24,
+    "shared_count_type_1": [
+      397,
+      426,
+      445
+    ],
+    "up_rule587": {
+      "hard_draw": 180,
+      "reset_on_target": true,
+      "inherit_next_activity": true
+    },
+    "charge_tables": [
+      "chouka_leiji_reward_index",
+      "chouka_leiji_reward"
+    ],
+    "ui_activity_keys": [
+      "ct",
+      "iof",
+      "cctd",
+      "lt",
+      "tw",
+      "wi",
+      "jzc",
+      "jzr",
+      "rc",
+      "ff",
+      "ch",
+      "ctr"
+    ],
+    "ui_global_keys": [
+      "hfp",
+      "iuc"
+    ]
+  },
+  "explicit_offline_policies": [
+    "reveal-commit chronological dynamic counts",
+    "UP internal failures f, next ordinal n=f+1, UI formula applied to n",
+    "proportional non-target rescaling",
+    "uniform missing-piece selection",
+    "FIFO one-use blessing receipts, newly activated applies next card",
+    "memory completion counts as memory once",
+    "gift origins bounded and do not increment charge",
+    "first ownership extra includes final fragment; no retroactive grants",
+    "archive epochs permanent; no global time mutation or automatic expiry liquidation"
+  ],
+  "blocking_specific_evidence": [
+    "hidden unopened-card projection versus deferred resolve",
+    "exact jzc/jzr/rc key/value consumers",
+    "dynamic reward rewards versus show_rewards ID domain",
+    "charge reward typed projection",
+    "seven missing default normal rows",
+    "pool2/3/4 request/slot shape",
+    "362/488 client cost alignment"
+  ],
+  "readiness": "all attached mechanism capabilities must close; extra reward alone never enables34",
+  "validation": [
+    "source graph mass",
+    "all threshold edges",
+    "UP cross pool and reset",
+    "open/resume/cancel/all-open order",
+    "whole transaction rollback",
+    "real reward UUID and design tr",
+    "typed choice failure unlock",
+    "no duplicate primary display"
+  ],
+  "limitations": [
+    "no production edits",
+    "no game/VM/D8/APK/host execution",
+    "not official-server equivalence"
+  ]
+}

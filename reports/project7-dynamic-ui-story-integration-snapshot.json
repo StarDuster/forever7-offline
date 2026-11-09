@@ -1,0 +1,300 @@
+{
+  "format": "project7-feature-integration-v8",
+  "recorded_at": "2026-11-04T11:20:38+08:00",
+  "status": "dynamic485_ui_story_basics_prepare_preflight_abi_PASS",
+  "original_apk_only_prepare": {
+    "command": "tools/build_offline_project.py originals/forever7-netease-83.apk --prepare-only --offline --build-dir analysis/project7/dynamic-ui-story-integration-prepare-v3",
+    "result_log": "analysis/project7/dynamic-ui-story-prepare-v3.log",
+    "original_unchanged": true
+  },
+  "compilation_groups": 9,
+  "production_classes": 196,
+  "manager_dex_sha256": "9506b09dc71f90e257ad99c371bb396d411e885a8dbc2dcc17a2d2e824aadd7b",
+  "source_hashes": {
+    "runtime/android_autologin/src/com/netease/qrzd/AutoLoginCore.java": "97b721b75968a73442fb83bef30ccdf8fbbf9ba28c4f9ce59b626f80738a8747",
+    "runtime/android_autologin/src/com/netease/qrzd/Project7LoginDialog.java": "5ef39dde154667ca10161e71ec8ca5233976df35568cf3d93dad329824980c48",
+    "runtime/android_collection/src/com/project7/localmanager/CollectionBson.java": "ee878bfaba1a97ddc8d42d7920531bd64eab34de7bf34cf69b483ad8c23fa130",
+    "runtime/android_collection/src/com/project7/localmanager/CollectionLiberateRules.java": "15aa65c70f78ea202c41fc18c4b79f48472d37716ce72badbd9639e638aa5210",
+    "runtime/android_collection/src/com/project7/localmanager/CollectionStockBridge.java": "8a2df09181e8e3f9e665e226100a33963338a1729378a27268badef56fdcb55a",
+    "runtime/android_collection/src/com/project7/localmanager/CollectionTargets.java": "ac8849caf9a83475d80f3956795452feeaa1702c891e623a780238528cb58535",
+    "runtime/android_collection/src/com/project7/localmanager/CollectionValidator.java": "a14196bda99188cf74da628f969696490223183f3109a1ef9066a505f63ba851",
+    "runtime/android_collection/src/com/project7/localmanager/FullCollectionInitializer.java": "6db5d8d3a718794df70ee578df876c6133012b892fe60015b9a52cbc6363c115",
+    "runtime/android_project7_repair/src/com/forever7/offline/Project7RepairHost.java": "07a43cff4a0eaf55e3c357ff1e5f0124daa3df1d8c0cf50dc60e7210217f0add",
+    "runtime/android_project7_repair/src/com/forever7/offline/Project7RepairProtocol.java": "174d9350d73a603f6dc0e1ad96aed1bf7757cb434f3d697119031c0a472f39e8",
+    "runtime/android_project7_startup/src/com/forever7/offline/Project7ResourceInitActivity.java": "1e964601cbf7e0310f62f4b0e2d445305fe92c8a10e88f25a88ae80ffb9d065d",
+    "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupCoordinator.java": "98b7f4a60e7dbcccee358b2c324fac25783a46112ae8de2af217b0c98e911029",
+    "runtime/android_project7_startup/src/com/project7/localmanager/Project7StartupPlatform.java": "dc68f005765e9435681aa8131e87d694ef333213961dee70567f325c40b8dc07",
+    "runtime/android_resource_init/src/com/forever7/offline/OfficialResources.java": "28cff3ab25c05134796a73289218c894cce96c67022451d901ba2f492267fd6d",
+    "runtime/android_resource_init/src/com/forever7/offline/Project7ResourceSnapshot.java": "0ba7edf68d24585476e27c596dd8f9bf020d1a63a0adfded645e3c597007345c",
+    "runtime/android_resource_init/src/com/forever7/offline/ResourceImporter.java": "329f81441eb14cf22a6da4f4348e246e4623f5208606ccb18b8424b49fce4796",
+    "runtime/android_resource_init/src/com/forever7/offline/ResourceInitActivity.java": "c5f1f603e2758adc12a6ac8669b77329ee26d17b0d5f66199cc6d65918e34ec9",
+    "runtime/android_single_package/src/com/project7/localmanager/LifecycleDriver.java": "6f49f701e87c984de314e94d0b289d941dd0b8861bbc896bb12f8ab57add5415",
+    "runtime/android_single_package/src/com/project7/localmanager/ManagerLifecycleDriver.java": "09e48a79fd60569c4f4c14a68efcd5e098dd4769ce69adcb13f4bb786a0f0695",
+    "runtime/android_single_package/src/com/project7/localmanager/ProcessGatewayOwner.java": "73e1529c171fed4d7e764cb6a9d84b79795d161266527bd3e0a3ff943464544e",
+    "runtime/android_single_package/src/com/project7/localmanager/SinglePackageGateway.java": "903a9ab84feb89bcf2792d79a3a2ed9fdc8ef767de825cc7488f2ab86759ca5b",
+    "runtime/android_single_package/src/com/project7/localmanager/StableIdentityBootstrap.java": "5b215b115dbf27088a9f8b3fe7dfe77128e889ab684463c8f1448680686ea79b",
+    "runtime/android_single_package/src/com/project7/localmanager/StockIdentityStorage.java": "40d8e5379f762c0546b25db0727ea714294ac5ff594007ea0aebf0fe95929e44",
+    "analysis/project7/dynamic-ui-story-integration-prepare-v3/project7-inputs-ncua9bzi/stage/generated-java/com/forever7/offline/Project7BundledResources.java": "be913a91dbb9476cd93004aabf9f7fd0eb0a4f831738bc9cc84a87632941aeb5",
+    "runtime/android_single_package/compile_stubs/com/project7/localmanager/ManagerApiStubs.java": "764ce8948f42d02ea5a40e137ed45bd628040225cdebcba638040afc65590244",
+    "runtime/android_autologin/compile_stubs/com/netease/neox/NativeInterface.java": "3fd26dc6b16e1fc4bbf22d34bac65eacb7c2b88f8362dd1afdab5bd54bf16a44",
+    "runtime/android_core_rpc/src/com/project7/localmanager/CgRewardPlan.java": "e457fab0690f2ffd0840e9cff0936587434cfb007b01ba7004f886b0461c9c19",
+    "runtime/android_core_rpc/src/com/project7/localmanager/CoreGapBridge.java": "ed36fe1b9d1fcc9e186a5055868ebbd2f2267f006dd770097b37ac888da29e73",
+    "runtime/android_core_rpc/compile_stubs/com/project7/localmanager/CoreRpcApiStubs.java": "2984eeb557081fcae655316eb7288b4be718e925249d5d40ecdc07726fb444dd",
+    "runtime/android_draw_policy/src/com/project7/localmanager/CoreDrawPolicy.java": "b4bcf72fe3b72257202f9596f3188ad77eb620359214a45668ca6ebd01751d10",
+    "runtime/android_draw_policy/src/com/project7/localmanager/DrawPolicyBson.java": "430b9257206bf62f1ac610790fb0ae68fb3c17716a04889870999a08ae964b1e",
+    "runtime/android_draw_policy/src/com/project7/localmanager/DrawPolicyCatalog.java": "b0b450a89040d15d93157827d0e359705ed2ea3e027c09148892f9dc6561fa58",
+    "runtime/android_draw_policy/compile_stubs/com/project7/localmanager/DrawApiStubs.java": "98c975348a27fa83cc34b787c465c03fcd8bfee29224e5d4b6ff68c20dd91792",
+    "runtime/android_draw_policy/compile_stubs/com/project7/localmanager/LocalDrawEngine.java": "cfa36eaad40967a9d4e1ba1641aafd2d7a288d3c034c4390f64472c3632a2ffe",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicCatalog.java": "552164cf6cc9406d7dfd9690cb595c7a0d2c7ff2d7aa4c7c437e9ef7dd0df0e4",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java": "448c3969f3337029b9db1d84b02f33ba06cb6900ff7e4eb2e08d911c28db7f24",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java": "ab7eead4d63955eb629ef2796cb77f635f3be60e7151e5bab7d2fa6fd7110a67",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java": "67c2d38eeeb3e3eafa6f6104b8431fc97afb4ef0db33a00ee3c7c3cc6b732228",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryBson.java": "e2dfc69f457dc9dd8488f2810ec97a7a9d2dc26789dd0c678c2fe11c97cf83b1",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryCatalog.java": "dfeaccbcf59542b49d50e59f6229e4ffcd3f52dbf793cfd5a6e0426ba5cc1561",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": "e976e935cb32e09bb995b44e222f6037824aae9d6461ff5095145c3cd06e2bf8",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryFurniturePolicy.java": "29207ccd6a2860982a7281dbb437eff8af29c0afed324657ccbf298ea2806d28",
+    "runtime/android_selector_draw/src/com/project7/localmanager/SelectorPolicy.java": "39aef7e2e2521887023ef86f2bb4a36063eedd1beff873287e1e81a774fe2b2e",
+    "runtime/android_dynamic_draw/compile_stubs/com/project7/localmanager/DynamicApiStubs.java": "28e517bb3a00429d55b292bf875ddd6f96a88a70844e08e208528a6ef7cbb210",
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventAdmission.java": "675dd349f1a32b32fe41064799b8325bf63a6dccd6bb3eea9b4af55ac1ddadb8",
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventCatalog.java": "e72fb52701f9e6ba45b8b8e79e5adcd114409f2e034a097d50686875513d0a9d",
+    "runtime/android_request_events/src/com/project7/localmanager/RequestEventGateway.java": "3fc5aaec681e29c1919282f08a576eaf357060f0d0322bb74ca8f8baa0edc4ba",
+    "runtime/android_request_events/compile_stubs/com/project7/localmanager/GatewayApiStubs.java": "293ce8f32a61a0350aca3fff4fa9bbfd726110f91852b786d04a51216ba4769d",
+    "runtime/android_request_events/compile_stubs/com/project7/localmanager/LocalEventEngine.java": "05a2b48da1893b76b27198c4580a18ee1d32bce568a2e836bd37957a36f7fcf2",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamAccess.java": "651aced761f0b60545c0a35f26e4f53c9b28f88a0d9da3f99cd481a13cb1b7a8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCatalog.java": "480f186c42ba6e9a44dd572477b45548d9bf60af86b9e5d72968c5af09f31880",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCoordinator.java": "c30e16b42d7ff547b291536727768df61aa6cb0fd7cc5ae4ea7809b1c9407bc8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamEconomyPolicy.java": "aa806c144479f563a2cd141f274a5b3d82ef07642e8dd006b358ab5bd93a7c6b",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolCandidates.java": "c954ed045c3eb554dc89f844eeecf1155e233138e89a1debdd70664097ca67c0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolDelta.java": "129ffb778483ac3e529ef77564b37203a213d1b35f5c6bcfa66fffd5df80884f",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolFailure.java": "3980a8eae071edef9ede4318972eaff311cbfe37608b861161a95e2b3cca72a0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolGatewayHooks.java": "edac07a696d36e30fafc719671a747744bb3eb8e768519c02c66e8729cf14f45",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolReply.java": "639d772f6159de9db32272db1181b57ad1c77a11ca4171fd23a40adde71de7f9",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamProgressDelta.java": "db1b292e28f2ee56ef946d8b24a579d0cc0bec1cda84b999b2dfc5368b55bc4d",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamRequestGateway.java": "aba73ec0deb1e7b6815e9db6dd991408fc1b81e920f620d06ad688588c95df92",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamState.java": "1937356a4ef0c9e869e7a5b722785077a17c4fcb8bc7dc3d8e7941dd41e96398",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamStorage.java": "a32b53e2f854218b4da56a6dd492ce75fedce302e04c43295c4ca75cbb8e8544",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "8770ae1bfcb416c77c7d2a7e0283979887459314ee3cf505fb1f4ae507ac88dc",
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/BsonLite.java": "79d20df9c15d83a009495ee6e6ef291611854f083bfe34f06d7add77128895f7",
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/EngineApiStubs.java": "12703b700f2a5677d37c1ac3ba970d4dc97c75624b671261df1373fa346faad3",
+    "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java": "e11a6bb5598d74d4329937a03b56996518c0408b905da5fa31e1a5e9718c1563",
+    "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekPolicy.java": "4c6cfa7a35c7f552113444ade5dcf19edcefb4b81048e63fafeb45ed721cfd94",
+    "runtime/android_week_reset/compile_stubs/com/project7/localmanager/WeekResetApiStubs.java": "04c8f330236cef90f49234c73f7ce880724c6e19dd0fd713646775db3e858c85",
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopCatalog.java": "2bc9510fade4875f47893b11221ed18c7d91e6589ed61e005633aef495457166",
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopGateway.java": "d4a760cf871da2cccd41d502f05003595d11ee66e568fa2cd56efa4019d0e3dd",
+    "runtime/android_baiye_shop/src/com/project7/localmanager/BaiyeShopPolicy.java": "661fc87166ab170d978edcc5045b77b8613e6fe26121e4adff2a7d4c27f90b8a",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeCatalog.java": "caf73a8c6c08c2b600965c6d0de7863da90b728fea3413241190b312a5b8052e",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragmentRules.java": "23a000a3719eca4915e84f1d4eeae0b93ed44a2feafeaeeb924f4358781e0f29",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeFragments.java": "01ed6932c9478eda64188261f8ef28a40324c7e12d0c05a437ca79166d49d968",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeGateway.java": "d2388ed4cb0a0951a8bf7e21c31b25974158979fb970145f4fbebd4913026f14",
+    "runtime/android_baiye_transactions/src/com/project7/localmanager/BaiyeTransactions.java": "13e6a9ff2ac01cc0c0291b57beb3548e3ef73c195f0438be5097653630f88ae0",
+    "runtime/android_story_basics/src/com/project7/localmanager/StoryBasicsGateway.java": "3a8403032f69293b200fdbb58f65e31046f4e4e4d9225876eae7a6f5a677c1c0",
+    "runtime/android_baiye_shop/compile_stubs/com/project7/localmanager/BaiyeShopApiStubs.java": "2cb6670b5d74c6b1f854aaf3d3a0622ff728088eac43e3be2cdf3bcd2a5a9b12",
+    "runtime/android_mechanism_gateway/src/com/project7/localmanager/OfflineMechanismGateway.java": "601f0976b3c1eacd72604dbd59adce6b0d3b02691f4c59c4056246aa259e712e",
+    "runtime/android_mechanism_gateway/compile_stubs/com/project7/localmanager/MechanismApiStubs.java": "3388795de8452cf4bedd0ba87758aafae84967c9702a66c2b3037f22969f81f8"
+  },
+  "stage_inventory": "analysis/project7/dynamic-ui-story-integration-prepare-v3/project7-inputs-ncua9bzi/stage/build-inputs.json",
+  "compile_inventory": "analysis/project7/dynamic-ui-story-integration-prepare-v3/project7-inputs-ncua9bzi/compiled/compile-inputs.json",
+  "read_only_preflight": {
+    "path": "analysis/project7/dynamic-ui-story-integration-prepare-v3/read-only-preflight-result.json",
+    "status": "PASS",
+    "sha256": "4295e78d561900a6c1056d11f407d9ce7a57adb7fed9fa1e021866f3174e07bb",
+    "output_exists": false
+  },
+  "original_manager_source_abi": {
+    "path": "analysis/project7/actual-manager-source-abi-dynamic-ui-story-v2/result.json",
+    "status": "PASS",
+    "classes": 196,
+    "manager_sha256": "248375abc553e42def8906ad43e4364e81bba13df694dbb355c61ebfbde90ce4",
+    "metadata_exposure": "Exactly five previously reviewed synthetic bridges only; no body/visibility changes or runtime stubs"
+  },
+  "python_startup_hook": {
+    "format": "project7-python-startup-overlay-v1",
+    "output": "assets/project7_local.npk",
+    "base_sha256": "9284e0e00e18a04cb6169e5bbffbec3fd23037fa7dd19893fea3a3510ea1bb06",
+    "p7_input_sha256": "3e0d06ef611167c2e9917d87272eb143c3fb6d8118957be286e3809b19def061",
+    "output_sha256": "9813787b94178858c76f5473c5fc26715397aec51f705ac251ee62ece0260345",
+    "entries": 21,
+    "init_fid": "acb9b80e",
+    "loader_sha256": "5f8281d2f49c839b47e3f4227784c59bc498a94f95757d2d92937231d0e1109d",
+    "hook_source_sha256": "f997cbe8b5e43d66832b0044730b2325127f2b4e509df16838374839bc6f788e",
+    "tutorial_source_sha256": "135d3fffa1fba42ddad416433ffc818c084da25042acfa34c19e4fefcca3424e",
+    "tutorial_completion_embedded": true,
+    "tutorial_completion_source_sha256": "d730ae6fcb5d3586ea38e78af035962b6fa97d4f80a26a75076616f63443aee6",
+    "collection_source_sha256": "09ded75a02ed034b8ce00ab1ba9f443cb1e7cd37f2d4303a957090cc8f6ac482",
+    "collection_policy_sha256": "453340b4f36c5de867d2288ef2e4afc70561c62098ee5fd60d1ddbd74d506fb9",
+    "collection_visibility_embedded": true,
+    "draw_ui_source_sha256": "c6ad7a45ac64b7a73f49e72143d302cae00d1799d62dfdcb53432dd0da899547",
+    "draw_ui_embedded": true,
+    "history_ui_policy_embedded": true,
+    "history_ui_catalog_sha256": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "history_ui_policy_sha256": "941a1d689af942b4be393d584dfce958ffec3868a96a679b79e08d4086588799",
+    "friend_ui_embedded": true,
+    "friend_ui_source_sha256": "d279d5f08fab2363be8514a71b7acb9255b4fde359f6934152a99f6030f93fdd",
+    "selector_ui_embedded": true,
+    "selector_ui_source_sha256": "317d50a834f453a6261f34939098b2bd4eb78c35c95d7c0ac911a84825245b7d",
+    "selector_ui_catalog_sha256": "40a42441c3e55a179c931a4cb5e70a4e6e94e0913f4ef1eb654354a72341b6d7",
+    "selector_ui_policy_sha256": "56fa68017308f2114bda9d63eb769428cba0eefd4290bd515dd801d1810b84dc",
+    "dynamic_ui_embedded": true,
+    "dynamic_ui_source_sha256": "001dbd3829b757a3eddeaa957bfc1ac70d3f1bc986f274542c3c6d4423c5c888",
+    "dynamic_ui_policy_sha256": "d7f7eac49c94cf9bb6f866ffba0e711efed0dce1813d427789b94797d2011889",
+    "dynamic_ui_catalog_sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+    "dynamic_ui_base_sha256": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "dynamic_ui_public_ready_ids": [
+      485
+    ],
+    "furniture_ui_embedded": true,
+    "furniture_ui_source_sha256": "1aa7ca886385e7abde3865353e2499510be1fe8f947c8cc270c012eba56d3efc",
+    "furniture_ui_catalog_sha256": "dd85b09e9f3094a2c5a9f72a3300e04ad85e63b9730c6cdd8ab2a32b54ba4a2d",
+    "furniture_ui_policy_sha256": "8b44a2ef9e061db25ba70f1d62b91fb68fc989e478d5d01e5b2917908e29ff2b",
+    "original_init_start_preserved": true,
+    "other_init_constants_unchanged": true,
+    "original_p7_entries_unchanged": [
+      {
+        "fid": "09cba36f",
+        "payload_sha256": "d8be814e68482ae009a3e7bec7530b217717fde83aad46237627ead5e6cb3316"
+      },
+      {
+        "fid": "35e8062b",
+        "payload_sha256": "cd75d9d1be2c7672588283032ae99d7a9145bcc3a2feef6809d696dbf6344f82"
+      },
+      {
+        "fid": "4062a8b1",
+        "payload_sha256": "608ad14181795a8adf5222ecf3af026866be96ba37bcf9c9f20b7816a533e93b"
+      },
+      {
+        "fid": "430ab550",
+        "payload_sha256": "944f6472e9664220ba6b4a0ddc3888cc7948df0d8c8942ad844bc4f8af424cdb"
+      },
+      {
+        "fid": "492493df",
+        "payload_sha256": "4315199570323909502c2d17f9a6ea0903e433b033d313ecd0c13d6840f52b7f"
+      },
+      {
+        "fid": "4f4fe78f",
+        "payload_sha256": "c703887ed62d4261a4e28a161daf3018d3f1c59c537aa12391e90e55438ce0f7"
+      },
+      {
+        "fid": "51d6dd27",
+        "payload_sha256": "3adb08e03fddbe6c3d477c65c6c0f418a1c385bb2780cd95da2b01174fccc66c"
+      },
+      {
+        "fid": "5d9f33a4",
+        "payload_sha256": "4060f9ca7597ba490155141fd9b30502de27fa5b3c7a7d10eedfc42550c9e620"
+      },
+      {
+        "fid": "6f1d6608",
+        "payload_sha256": "5fdaf513fa111b2163be4fc707e8750b1dcd2de674c174b008b8b957c00a22c0"
+      },
+      {
+        "fid": "7339651c",
+        "payload_sha256": "f22194807eca89a4ccd8d886744fa93ac18d87ac1abbd35ac660f14a8a5981d0"
+      },
+      {
+        "fid": "8a11fb28",
+        "payload_sha256": "580c1bf14f72f4787a4a1526d510da494d8ff36051e44a6ab79d9d9df16ad05f"
+      },
+      {
+        "fid": "9129bad0",
+        "payload_sha256": "47531f0501964cd882967ed23d7cfaf32ce2261bbe3134332ffbe20124761f02"
+      },
+      {
+        "fid": "9a1c2801",
+        "payload_sha256": "c54c9d474fbb131afabe68430edf516714307c805d9d7c0f75741899ca33c8ce"
+      },
+      {
+        "fid": "bdaaf63f",
+        "payload_sha256": "39bbae69d83448469fbaa3a53b2433b526bcaa278a1bd505ca7810ed815c55d4"
+      },
+      {
+        "fid": "be879fa7",
+        "payload_sha256": "2f44a0996aec3ce296c959f3a20f2620bb694be6e4f0ee04cf05122dc59a2820"
+      },
+      {
+        "fid": "c0c67e79",
+        "payload_sha256": "eca9dd83b85cac9c154dd29e6b83e79053512f5da57c1624b7e95da639e87eff"
+      },
+      {
+        "fid": "c2763701",
+        "payload_sha256": "707a3549a0ac20b6ac3be388c8bda9941b88540d9123bf8f6b7752e45a27630d"
+      },
+      {
+        "fid": "cb5eea07",
+        "payload_sha256": "93064d68822202ac17fcc296996f6f62c617237f792e7436f525665157bc3f65"
+      },
+      {
+        "fid": "d748f3bf",
+        "payload_sha256": "74c1bb1d9fe51f3a7be8fec51014b6b60e2d16c07db88014f446cf61dbf7347b"
+      },
+      {
+        "fid": "f2e4f66a",
+        "payload_sha256": "0b55b35b63497379a78ecd07003f3faff012ff8c43f248ba5ea6e29c1c412771"
+      }
+    ],
+    "xdis_marshal27_rotor_roundtrip": true,
+    "game_opcodes_executed": false,
+    "native_reader_verified": false,
+    "opaque_modified_entry_checksums_verified": false
+  },
+  "embedded_source_count": 10,
+  "public_history_ready_count": 386,
+  "public_dynamic_ready_ids": [
+    485
+  ],
+  "backend_expansion_candidate_policy_count": 46,
+  "feature_asset_hashes": {
+    "assets/offline/request-events.tsv": "7088dabb1a5b84609f8b23154992660d6239389be0d54316549d2dfa94d7c475",
+    "assets/project7_baiye/catalog-v1.tsv": "0c2a8199eb0ff9ed2d678fc29128a95e267af94642af471f7050c5d0565e4141",
+    "assets/project7_baiye/fragments-v1.tsv": "61425f912e2bd5fc613aebc75ab43819b801e0b6a608afd37230bb7a37d4d5f1",
+    "assets/project7_baiye_shop/catalog-v1.tsv": "ae6523fd78136fa7a1ef893911ca191ff764a1fe7866d9101b62a518216a0501",
+    "assets/project7_draw_policy/catalog-v2.tsv": "e250ace8d74eaf87769a709532e5a4e1ae69eb2d1acfedf520b79e0323136319",
+    "assets/project7_dream/catalog-v1.tsv": "b0c44413ecaad293b622933f8ece4b3199dfd6de7f63c64b4cc3655bea2ef8c1",
+    "assets/project7_dynamic/catalog-v1.json.gz": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+    "assets/project7_history/catalog-v3.tsv": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "assets/project7_history/furniture-v1.tsv": "dd85b09e9f3094a2c5a9f72a3300e04ad85e63b9730c6cdd8ab2a32b54ba4a2d",
+    "assets/project7_selector/catalog-v1.tsv": "40a42441c3e55a179c931a4cb5e70a4e6e94e0913f4ef1eb654354a72341b6d7",
+    "assets/project7_week_reset/catalog-v1.tsv": "dc43ebe5d922443100f3aa8ec55151ecd5f94b6c8ed85b780d3248338d3d3b4a"
+  },
+  "finite_ui_checks": {
+    "availability_scope": 4,
+    "original_draw_consumers": 51,
+    "dynamic_original_consumers": 30,
+    "startup_and_loader": 25,
+    "source_export_closure": 7
+  },
+  "integrated_scope": [
+    "Fixed manager reliable sequence/connection-scope forwarding; old handlers delegate without premature seen mutation",
+    "Dynamic485 original detail/charge/jiaozhi/blessing tooltip UI; only485 added to public list",
+    "Source-bound shared dynamic backend expansion; not all46 public UI enabled",
+    "StoryBasics getShareLink completes original wait with explicit offline-unavailable result",
+    "StoryBasics readDailyWish persists only std.dwr through original Store and original syncDailyWish"
+  ],
+  "evidence": [
+    "reports/project7-dynamic-ui-implementation.json",
+    "reports/project7-dynamic485-ui-shared-closure.json",
+    "reports/terra-p7-shared-csb-closure.json",
+    "reports/project7-dynamic-expansion-implementation.json",
+    "reports/project7-story-basics-implementation.json",
+    "reports/project7-reliable-scope-implementation.json"
+  ],
+  "excluded_work": [
+    "Wish/UP independent source in development; not prepared/installed by this snapshot",
+    "Remaining dynamic family UI",
+    "Remaining route and event mission-data/retry closure",
+    "D8 failure repair, source archive final export, actual APK and native acceptance"
+  ],
+  "apk_built": false,
+  "native_verified": false,
+  "d8_run": false,
+  "emulator_or_game_operated": false,
+  "all_pool_mechanisms_complete": false,
+  "all_mainline_routes_accepted": false,
+  "goal_complete": false,
+  "tooling_source_hashes": {
+    "tools/project7_script_hook.py": "c185cfde8c98db8ef79d5d5bae36cebc63602a48c753ca45d6d7548a3736402d",
+    "tools/project7_feature_assets.py": "61ed46a409776c48a55cc7c0d971eb7d79b816898393843dd28440d8c2269e45",
+    "tools/project7_build_inputs.py": "66e6df3f854f3e8e856ff60c7a0fa60b8bf154454921993eee0db3b98172edf0",
+    "tools/project7_compile.py": "a40b0798f9a16c317248a181e75808dec16b6f880a25eba292b30ba8fdbb065e",
+    "tools/build_project7_android.py": "3f482a9dae3b512e208f35b61938894f42affe74dbb149d1a627a5fe5a3a9865",
+    "tools/project7_feature_hooks.py": "60e0af1cd4f4897389aeca39d23ac12b938794ec2107b319a903349dbf2f28de"
+  }
+}

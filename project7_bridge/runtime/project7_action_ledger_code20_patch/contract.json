@@ -1,0 +1,233 @@
+{
+  "atomicity": {
+    "claim": "no cross-file atomicity is claimed",
+    "crash_a": "profile baseline committed but Progress completion lost -> event not completed -> false/unmet, never passed",
+    "crash_b": "Progress completion committed but profile baseline lost -> completed event without baseline -> invalid/fail closed",
+    "profile": "ledger, action cost, baseline and week generation ride in the one atomic profile write (tmp/fsync/Os.rename)",
+    "progress": "separate atomic file; never authoritative for code20"
+  },
+  "base_candidate": {
+    "bytes": 1162828,
+    "classes": 649,
+    "path": "analysis/project7/story-condition-codes-v1/classes7.dex",
+    "role": "hook input; 31/45/46/49 and every old branch preserved",
+    "sha256": "b012f019387db916846ee0531ba6518e1b84271db5fdf356e7af6bd1adbfcf53",
+    "supported": 39
+  },
+  "bindings": {
+    "LocalConstructionEngine.apply": "entry: setActionReceipt(reliable request payload)",
+    "LocalEconomyEngine.finish": "before spendActions: setBattleReceipt(profile, stage) using the existing q7BattleReceipts stage local",
+    "LocalEconomyEngine.rest": "before spendActions: setRestReceipt(dayKey) using the existing q7Rest week:day local",
+    "LocalEconomyEngine.spendActions": [
+      "only the accepted branch; after iput Result.remainingActions the original cost argument is still p2",
+      "takeReceipt() consumes the caller id; record(Result.profile,cost,id) rewrites the same Result.profile bytes",
+      "reject path (cost<0 or cost>regular+sand) throws before record; no net city.av diff is used"
+    ],
+    "LocalEventEngine.complete": "after completedEvents.add/eventDays write: pending(event); no Progress-as-authority baseline",
+    "LocalProfileStore.updateEconomy": "entry clearReceipt() so an early-return operation cannot leak a receipt id",
+    "LocalProfileStore.writeAtomic": "entry pendingApply(profile bytes); success after Os.rename pendingDone(); baseline lands in atomic profile file 1",
+    "LocalStoryConditions": {
+      "clinit": [
+        "array size const/16 v3,39 becomes 40",
+        "append Integer.valueOf(20) at index 39 immediately before Arrays.asList",
+        "the original 35 entries and the 31/45/46/49 appends stay byte-identical"
+      ],
+      "matchesValue": [
+        "existing prologue and profile-null guard unchanged",
+        "insert if code==20 goto code20 block before the existing 31/45/46/49 checks",
+        "code20 block: LocalActionLedger.condition20(value,profile,progress)Z; return result",
+        "all non-20 codes fall through to the original const/16 v6,54 branch chain"
+      ]
+    },
+    "LocalWeekEngine.resetProfile": "before return: week(profile) keeps spent, generation+1, clears baselines/receipts"
+  },
+  "candidate": {
+    "base_asset": "runtime/project7_event_auto_trigger_candidate/trigger-extra-v1.tsv",
+    "base_rows": 222,
+    "code10_composite": {
+      "code": 10,
+      "event": 1000105,
+      "fully_usable": false,
+      "non_patrol": "LocalStoryConditions.evaluate(10,...) remains unsupported",
+      "usable_scope": "real patrol context (patrolAreas=6, clientOperations=2, selected hero 6)"
+    },
+    "code20_asset": "runtime/project7_action_ledger_integration_candidate/trigger-extra-code20-v1.tsv",
+    "code20_asset_sha256": "a898aea3ebaa3605bc6b6fcc1a2fd9c3eb2064f7c3bd4c1ac6eea4a8ac795c7a",
+    "code20_rows": 17,
+    "combined_rows": 255,
+    "condition_asset": "runtime/project7_event_auto_trigger_condition_candidate/trigger-extra-conditions-v1.tsv",
+    "condition_rows": 16,
+    "engine_gated_condition_rows": 1,
+    "fully_usable_condition_rows": 15,
+    "published_to_prepare": false
+  },
+  "format": "project7-action-ledger-code20-seam-v1",
+  "helper": {
+    "class_dex": "one class converted by bundled dex2jar jar2dex (com.android.dx), merged into the 650-class DEX; not D8",
+    "class_sha256": "336fe5696f992dd093616307b624c8eeaac4b3f9a1d43e43a604a70709721a06",
+    "methods": [
+      "record",
+      "baseline",
+      "week",
+      "fact",
+      "condition20",
+      "pending",
+      "pendingApply",
+      "pendingDone",
+      "setActionReceipt",
+      "setBattleReceipt",
+      "setRestReceipt",
+      "takeReceipt",
+      "clearReceipt"
+    ],
+    "source": "analysis/project7/action-ledger-code20-v1/src/com/project7/localmanager/LocalActionLedger.java",
+    "source_sha256": "d8dcfb6bae4ef4045a823ee0c99910b2a313ca63b8c22b7cb2b8a2494c2d6e05"
+  },
+  "hook": {
+    "invocation": "Project7ActionLedgerHook <b012 dex> <one-class ledger dex> <unused output dex>",
+    "sha256": "8da6350c239aaa5e5bfb66ccace0aef3cb68653f1769f4c87cf12294d9fc4531",
+    "source": "tools/Project7ActionLedgerHook.java"
+  },
+  "host": {
+    "checks": 3789,
+    "sha256": "fdb1792e4f2bb394c07d5651ca792206733e694fafd51b080d1e092f64772ff4",
+    "source": "analysis/project7/action-ledger-code20-v1/host/com/project7/localmanager/ActionLedgerHost.java",
+    "what": [
+      "commit exact cost (av-only, sandglass overflow, patrol reservation)",
+      "failure / overspend leaves profile and ledger unchanged",
+      "retry and duplicate receipt no-op; receipt conflict invalidates while the action commits",
+      "reload from disk keeps the fact",
+      "crash A profile-only -> unmet; crash B progress-only -> invalid",
+      "real week transition keeps spent, advances generation, drops facts",
+      "old save / foreign / malformed / stale / malformed receipt -> invalid",
+      "pending staged by real LocalEventEngine.complete and applied by pendingApply",
+      "16 condition rows + 17 code20 rows parse; 1000105 code10 stays engine-gated",
+      "1000105 real patrol positive/negative/wrong-area/non-patrol boundary"
+    ]
+  },
+  "manager": {
+    "frames_jar": {
+      "classes": 650,
+      "path": "analysis/project7/action-ledger-code20-v1/manager-translated-frames.jar",
+      "reproducible": true,
+      "sha256": "1bfdb147697d0ffc0c2339ca881433d571a724471cfc3f49571b94d46969bba7"
+    },
+    "translated_jar": {
+      "classes": 650,
+      "note": "d2j dex2jar writes wall-clock ZIP timestamps; no d2j translation stubs",
+      "path": "analysis/project7/action-ledger-code20-v1/manager-translated.jar",
+      "reproducible": false,
+      "sha256": "aed931718eb4467d11f7d7ffc77147dc6e42ce2afc99f27c1ad755e78f53b0a8"
+    }
+  },
+  "no_prepare_no_d8_no_apk_no_native": true,
+  "ordering": "A transaction cannot satisfy its own code20 threshold: completion stores the current spent, the action cost is recorded after trigger selection; the next accepted transaction sees it. No same-transaction refund is invented.",
+  "patch": {
+    "bytes": 1022628,
+    "codec": "xor-zlib-delta-v1",
+    "path": "runtime/project7_action_ledger_code20_patch/seams.xor-zlib",
+    "sha256": "873f4be0161585df71c8f7caaa356aa4ad585ba1400bbf6998d94e16b6ef69d2"
+  },
+  "preservation": {
+    "expected_changed": [
+      "LocalStoryConditions",
+      "LocalEconomyEngine",
+      "LocalConstructionEngine",
+      "LocalEventEngine",
+      "LocalProfileStore",
+      "LocalWeekEngine"
+    ],
+    "lsc_normalized_diff": {
+      "added_lines": 11,
+      "old_branch_lines_changed": 0,
+      "removed": [
+        "    const/16 v3, 39"
+      ],
+      "removed_lines": 1
+    },
+    "old_code_differential": {
+      "against": "analysis/project7/story-condition-codes-v1/manager-translated-frames.jar",
+      "cases": 1069,
+      "identical": true
+    },
+    "other_classes": "648 of the 649 base classes are text-identical after d2j-dex2smali"
+  },
+  "residual": {
+    "code10_global": "not enabled in SUPPORTED; only the engine patrol path consumes 1000105",
+    "code20_rows": "provider-gated: consumed only when a valid ledger baseline exists; otherwise invalid/blocked",
+    "content_release_false_blocked": 247,
+    "cross_user_scope": "pending applies on the next atomic profile write of the same request thread; the gateway handles one profile per request thread",
+    "multi_write_request": "pendingDone fires on the first successful atomic profile write; if the same request writes the profile again from the pre-baseline byte[], the baseline is dropped and code20 stays unknown (fail closed)",
+    "no_cross_file_atomicity": true,
+    "no_d8_no_apk_no_native": true,
+    "official_server_order": "unknown; local policy only",
+    "receipt_identity": "construction uses payload hash + kind, battle uses week:stage, rest uses week:day; a same-id different-cost collision invalidates the ledger (fail closed) while the action still commits",
+    "thread_scope": "pending baselines and receipt ids are ThreadLocal; a completion/spend crossing threads drops the fact (fail closed), never a wrong fact"
+  },
+  "scope": "Independent Java code20 ledger/provider on the b012 31/45/46/49 candidate. New candidate DEX/frame/patch, prepare-only 222+16+code20 integration candidate, real manager host. v44 stage/freeze, COC Hook, menu10/menu12, D8/APK/native and published prepare are not touched.",
+  "source": {
+    "bytes": 1161220,
+    "path": "analysis/project7/story-city-integration-prepare-v44/project7-inputs-kah2kqvz/stage/classes7.dex",
+    "role": "frozen v44 manager; only the patch delta source",
+    "sha256": "fee369231e8924923f774cdbda4961f91b6ab87cee237b249cff8229b535f1c6"
+  },
+  "supported": {
+    "added": [
+      31,
+      45,
+      46,
+      49,
+      20
+    ],
+    "gated_note": "code 10 remains outside SUPPORTED; only LocalEventEngine patrolAreas/clientOps context evaluates it",
+    "gated_unchanged": [
+      10
+    ],
+    "new_count": 40,
+    "old": [
+      5,
+      6,
+      7,
+      12,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      48,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "old_count": 35
+  },
+  "target": {
+    "bytes": 1169596,
+    "classes": 650,
+    "path": "analysis/project7/action-ledger-code20-v1/classes7.dex",
+    "sha256": "9f9b1fb5fea038dcb31f82e8766b68c0f356444a2591f82998952d46b9f8dcc0",
+    "supported": 40
+  }
+}

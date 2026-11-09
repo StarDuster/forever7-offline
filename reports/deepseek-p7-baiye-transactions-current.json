@@ -1,0 +1,96 @@
+{
+ "format": "deepseek-p7-baiye-transactions-current-v1",
+ "generated": "2026-11-04",
+ "scope": "Baiye memory/soul/equipment/shop; static only",
+ "snapshot": "reports/project7-feature-integration-161-class-snapshot.json",
+ "items": [
+  {
+   "id": "memoryCrystalExchangeSuipian",
+   "status": "existing_stock",
+   "entry": "CommonMember.py:452-455",
+   "p7": "LocalMemoryExchangeEngine.apply via resource whitelist",
+   "reply": "replyMemoryCrystalExchangeSuipian{ii,sp}",
+   "lock": "client lock+callback; failure carrier",
+   "gap": "none; acceptance only"
+  },
+  {
+   "id": "requestExchangeSuipianWithItem",
+   "status": "missing",
+   "entry": "LuckyDrawMember.py:1606-1612",
+   "p7": "no manager dispatch; empty carrier",
+   "reply": "none; client expects replyExchangeSuipianWithItem",
+   "lock": "unlock, silent",
+   "gap": "typed negative first; business needs chouka_hero_file/rsn"
+  },
+  {
+   "id": "invExchangeHeroFragmentAsk",
+   "status": "missing",
+   "entry": "InvMember.py:175-180",
+   "p7": "no dispatch; no _cbid_ fallback returns",
+   "reply": "none",
+   "lock": "no callback/lock",
+   "gap": "reply r:false safe branch"
+  },
+  {
+   "id": "commonItemFusionAsk",
+   "status": "missing",
+   "entry": "InvMember.py:236-239",
+   "p7": "no dispatch; empty carrier",
+   "reply": "none",
+   "lock": "unlock, silent",
+   "gap": "4:1 faithful fusion; fixed fusion rows"
+  },
+  {
+   "id": "treasure_operations",
+   "status": "existing_stock",
+   "entry": "HeroMgrMember.py:1521-1566",
+   "p7": "LocalTreasureOperationEngine",
+   "reply": "decompose/smelt/compose Reply",
+   "lock": "reliable+callback",
+   "gap": "decompose UI reachability unverified"
+  },
+  {
+   "id": "buyCardMallItem",
+   "status": "existing_stock",
+   "entry": "LuckyDrawMember.py:655-687",
+   "p7": "special/resource/basic; memoryShop/commerce/AccountFeatures",
+   "reply": "replyBuyCardMallItem + done",
+   "lock": "client lock+callback; carrier",
+   "gap": "1934 hardcoded rewards mismatch pending"
+  },
+  {
+   "id": "summoncoinExchange",
+   "status": "existing_stock",
+   "entry": "LuckyDrawMember.py:927-942",
+   "p7": "LocalAccountFeatures.apply",
+   "reply": "summoncoinExchangeReply{r,i}",
+   "lock": "client lock+callback",
+   "gap": "reply r ignored; only true"
+  },
+  {
+   "id": "yuanbaoExchangeCrystal",
+   "status": "existing_stock",
+   "entry": "CommonMember.py:442-449",
+   "p7": "handleBasicRpc->updateCommerce->LocalCommerceEngine.exchange",
+   "reply": "yuanbaoExchangeCrystalReply{yn,cn}",
+   "lock": "no client lock/callback; showMessageStr only",
+   "gap": "no negative typed reply"
+  },
+  {
+   "id": "missing_stores_8_157_158_478_480_540_595_617",
+   "status": "missing_data",
+   "entry": "card_main.py:238-350",
+   "p7": "commerce product null reject",
+   "reply": "buyCardMallItem false",
+   "lock": "existing carrier",
+   "gap": "commerce @shop rows and item/giftCoin cost parsing"
+  }
+ ],
+ "extension_coverage": "0/4 Baiye transactions in runtime/android_core_rpc; stock manager covers existing items",
+ "not_proven": [
+  "APK/ART/native",
+  "stage classes7 byte equivalence",
+  "resource/basic duplicate order",
+  "requestExchangeSuipianWithItem server business semantics"
+ ]
+}

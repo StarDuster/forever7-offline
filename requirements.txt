@@ -1,0 +1,7 @@
+androguard==4.1.4
+lz4==4.4.5
+xdis==6.1.8
+uncompyle6==3.9.3
+capstone==5.0.9
+pyelftools==0.33
+pymongo==4.19.0

@@ -1,0 +1,23 @@
+{
+  "added_methods": [],
+  "changed_methods": [
+    "LocalWeekEngine.<clinit>",
+    "LocalGatewayServer.handleWeekRpc"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-event-reset-week-seams-v1",
+  "patch": {
+    "bytes": 1005947,
+    "sha256": "38fa1ad5afe2f772b9fe0e2a8019b4626361c392631f796cc9c0b5c5d1fda66c"
+  },
+  "scope": "Shared METHODS extension and guarded original effects closure before the original Week transaction. Original stock branches/instructions retained after argument relocation. Helpers and white-entry flow require separate verification.",
+  "source": {
+    "bytes": 1157916,
+    "sha256": "523aa97f00b098694437f88d46821a3c9fbbfb60c5ed78213c2b16ccd976170b"
+  },
+  "target": {
+    "bytes": 1158180,
+    "sha256": "b461f49531efd2ab7fb09eb71e22ade0085e92f7567d5fddcff1c534fc68b257"
+  }
+}

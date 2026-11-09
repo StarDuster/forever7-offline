@@ -1,0 +1,286 @@
+{
+  "status": "SOURCE_FROZEN_BACKEND_FINITE_HOST_PASS_MAIN_UI_NOT_CONNECTED",
+  "supported_backend_ids": [
+    5,
+    119,
+    126,
+    143,
+    154,
+    164,
+    397,
+    426,
+    445
+  ],
+  "public_ui_ready_ids_added": [],
+  "new_wish_java_sources": 14,
+  "new_wish_production_class_count": 20,
+  "new_wish_production_classes": [
+    "com/project7/localmanager/WishChoosePolicy.class",
+    "com/project7/localmanager/SharedUpState.class",
+    "com/project7/localmanager/MultiWishState$Group.class",
+    "com/project7/localmanager/MultiWishResolver.class",
+    "com/project7/localmanager/WishProbability$Fraction.class",
+    "com/project7/localmanager/WishAnimationPolicy.class",
+    "com/project7/localmanager/WishMechanism.class",
+    "com/project7/localmanager/WishCatalog.class",
+    "com/project7/localmanager/MultiWishResolver$Decision.class",
+    "com/project7/localmanager/WishChoosePolicy$Rejected.class",
+    "com/project7/localmanager/TreasureWishResolver.class",
+    "com/project7/localmanager/WishDrawPolicy.class",
+    "com/project7/localmanager/MultiWishSpec.class",
+    "com/project7/localmanager/UpResolver.class",
+    "com/project7/localmanager/TreasureWishResolver$Decision.class",
+    "com/project7/localmanager/UpResolver$Path.class",
+    "com/project7/localmanager/WishProbability.class",
+    "com/project7/localmanager/MultiWishState.class",
+    "com/project7/localmanager/WishGateway.class",
+    "com/project7/localmanager/WishSource.class"
+  ],
+  "history_selector_dynamic_wish_host_class_count": 50,
+  "existing_dynamic_new_class": "DynamicDrawPolicy$Extension.class",
+  "source_files": {
+    "runtime/android_wish_draw/compile_stubs/com/project7/localmanager/WishApiStubs.java": {
+      "bytes": 7385,
+      "sha256": "edcd22e3aeec044713bb6251d1dd587165d6b6d5e0b4b4ef32d5c90355f3c5ee"
+    },
+    "runtime/android_wish_draw/host_tests/android/content/res/AssetManager.java": {
+      "bytes": 1618,
+      "sha256": "f8b69b78391e67711613aa04792197aece9a19a0d10ed26c8a868da3063741b2"
+    },
+    "runtime/android_wish_draw/host_tests/android/system/Os.java": {
+      "bytes": 826,
+      "sha256": "8ee6faadb2bd747ed123c0cad9c39ee042c0e2fd88308194543366c96495ff44"
+    },
+    "runtime/android_wish_draw/host_tests/com/project7/localmanager/WishChooseHost.java": {
+      "bytes": 22057,
+      "sha256": "cc0b51ceaaee05b7cdc73e37ba5c9756b2d173ae06f3ba1cba8bd27797129652"
+    },
+    "runtime/android_wish_draw/host_tests/com/project7/localmanager/WishCompatibilityHost.java": {
+      "bytes": 940,
+      "sha256": "367b870a874f8636cc74811366ac9a72164bd0b20bce4be9a40402d2e4169fce"
+    },
+    "runtime/android_wish_draw/host_tests/com/project7/localmanager/WishGroupHost.java": {
+      "bytes": 11389,
+      "sha256": "0129b5b3fb110408ee718d351e9bb4950878aa4cfd18fd3fe618c72fb86c2d29"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/MultiWishResolver.java": {
+      "bytes": 5315,
+      "sha256": "508cb43128a56a2302b56a764ee05e487f987ba9da3b206055aee827c589436a"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/MultiWishSpec.java": {
+      "bytes": 2107,
+      "sha256": "4f573daa6345951f4da6178155430dd50cc65f69a623e90d5224b2d6799c4901"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/MultiWishState.java": {
+      "bytes": 3899,
+      "sha256": "88346948c116fd1a22ead11376b64703e55063e45e7e2d4d7d315d11d134819e"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/SharedUpState.java": {
+      "bytes": 2065,
+      "sha256": "cd7308e9ef29cf20c13e11de9970339603b134ffb4b2184164c48e93adc6221f"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/TreasureWishResolver.java": {
+      "bytes": 3188,
+      "sha256": "b93de6ea8189901481e1ca2900fe5273dba4d9b5cc08ba90bb5ebf7e35cd084c"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/UpResolver.java": {
+      "bytes": 2536,
+      "sha256": "0de7aa644ec5a86148209de2147ceb5051c8a6f34e71a5c0c9d8983879ed2af5"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishAnimationPolicy.java": {
+      "bytes": 2033,
+      "sha256": "f4357a61e53dba474772dc3123989fb259971f070105df9c5f0d5cc3eb0bcdda"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishCatalog.java": {
+      "bytes": 2659,
+      "sha256": "427193fd7c78c1f4e0211d2b04be6683d78fe5bab95e6661f583e1e293d2110d"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishChoosePolicy.java": {
+      "bytes": 6745,
+      "sha256": "988209cfb8bd9279623eda59077e44ad2574884f9588f1f3cfbf5854dd8be54d"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishDrawPolicy.java": {
+      "bytes": 13927,
+      "sha256": "099370480dfcb8179948c99c3669077b39c87836bdb9257648c640f86d024b17"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishGateway.java": {
+      "bytes": 9913,
+      "sha256": "a1742eef258066274465d4c6adec3d9a4e713fcb05b51ebe81a9029615713763"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishMechanism.java": {
+      "bytes": 4202,
+      "sha256": "5e7f5f9623351a918d62b69fa3a849640355cacff89d096da178f341418c3dc3"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishProbability.java": {
+      "bytes": 2562,
+      "sha256": "1b32173b30d837cf3454b9aecd85716f165c8f606613071eb183a2857b63d7dc"
+    },
+    "runtime/android_wish_draw/src/com/project7/localmanager/WishSource.java": {
+      "bytes": 2564,
+      "sha256": "9b66d81f547c35f2c85d8c623ffbfd663ee6d0c0657caf74ac329fb39d76f985"
+    },
+    "runtime/android_wish_draw/verify.py": {
+      "bytes": 7026,
+      "sha256": "38967809cde5feb6d870bbd4259e45ec7d6be2d3c0ed6c4f28054260ecb8b544"
+    },
+    "tools/project7_wish_catalog.py": {
+      "bytes": 6263,
+      "sha256": "ab1a2050cf3e9d4193f460781d310a9b11c2dbff477bf783e4325defd73eb9be"
+    },
+    "runtime/project7_wish_catalog/catalog-v1.json": {
+      "bytes": 1019145,
+      "sha256": "4abad0f105f6b2088632369e5ff86040791640c9724deb85d75c57660a168c91"
+    },
+    "runtime/project7_wish_catalog/contract-v1.json": {
+      "bytes": 1456,
+      "sha256": "b02237e95724ddffcea4f3d7beb9675f917fae3f4127683cd542767dfbe9f8a1"
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java": {
+      "bytes": 27701,
+      "sha256": "448c3969f3337029b9db1d84b02f33ba06cb6900ff7e4eb2e08d911c28db7f24"
+    },
+    "runtime/android_wish_draw/host_tests/reliable_producer.py": {
+      "bytes": 1606,
+      "sha256": "16f66103b4a51cc8bdefef137bf583e04d72bcb5515a2e1dba0f4948a4198ae1"
+    }
+  },
+  "host_proof": "analysis/project7/wish-host-rq13c60u",
+  "host_manager_sha256": "1be1a7e09c5a2e42d31f9deff54c1d942657fca695c1a996579eefecf365e6fa",
+  "abi_proof": {
+    "checked": 98,
+    "mismatches": []
+  },
+  "runtime_api_stubs": false,
+  "asset": {
+    "source": "runtime/project7_wish_catalog/catalog-v1.json",
+    "apk_path": "assets/project7_wish/catalog-v1.json",
+    "bytes": 1019145,
+    "sha256": "4abad0f105f6b2088632369e5ff86040791640c9724deb85d75c57660a168c91",
+    "contract_sha256": "b02237e95724ddffcea4f3d7beb9675f917fae3f4127683cd542767dfbe9f8a1",
+    "wish_rows": 143,
+    "pool5_wish_rows": 129,
+    "choose_rows": 117,
+    "fee_rows": 6,
+    "data_only_artifact": true
+  },
+  "producer": "tools/project7_wish_catalog.py",
+  "unchanged_raw_dynamic_sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+  "compatibility": {
+    "old194_binary_oracle": "empty and partial485 pending resume/repeat/all equal; only generated UUID and original grant-created timestamp normalized",
+    "new_decoder_installed_during_old_regressions": true,
+    "old46": "original Store family/default/shape/free-ticket regression passed",
+    "selector_static380_normal_stock484": "passed",
+    "proof_logs": [
+      "regression-current.log",
+      "regression-family.log",
+      "regression-selector.log"
+    ]
+  },
+  "policies": {
+    "draw_payment": "history-free-v1: nine archives group/single/all free, normal1/stock484 unchanged",
+    "choose_payment": "original yuanbao only, 100/200/300/300/500/500 then500; not free diamonds/crystals",
+    "gift": "history-source-gift-daily-cap-v1: at most one actual per6 source reward per pool per stock day",
+    "treasure": "wish-treasure-miss-reset-v1: mix p wish + (1-p) complete base; real target source resets, original bare reward stays bare",
+    "group": "wish-group-first-acquisition-v1: real first ownership/last memory completes source wish row; existing ownership coordinates f/a without award",
+    "safety": "safe90 fixed A is an explicit offline interpretation",
+    "ordinal": "wish-group-ordinal-residual-v1: safe90 > wish channel > residual original ordinal O or base; original hidden precedence unproven",
+    "replacement": "owned-subset-normal-replacement-v1: pre-primary ownership, most-specific source RR refs; includes any original O normal ref",
+    "up": "shared-up-failure-seed-v1: one count_type1 canonical f across three pools, exact original1percent subset normalization,180 hard; original iuc seed interpretation explicit offline",
+    "animation": "original setWishGroupAnimPlayed persists only a union subset f, no primary/charge/grant; retains acquisition order",
+    "duplicate": "ack-only-seen-resend-v1: no second unsequenced reply; shared seen remains same connection only."
+  },
+  "gateway": {
+    "prepare": "WishGateway.prepare(Context):void throws IOException",
+    "direct": "handleDirect(LocalGatewayServer,OutputStream,byte[],byte[],byte[],String,Progress,LocalEventEngine):boolean throws IOException",
+    "request": "handleRequest(LocalGatewayServer,OutputStream,byte[],String,byte[],Integer,String,Progress,LocalEventEngine):boolean throws IOException",
+    "sequenced": "handleSequencedRequest(LocalGatewayServer,OutputStream,byte[],String,byte[],Integer,String,Progress,LocalEventEngine,Integer,Set<Integer>):boolean throws IOException",
+    "seq_scope": "setChooseTreasure alone consumes same connection seen; unknown methods do not; animation is idempotent union and does not touch seen",
+    "duplicate": "Caller has already sent original reliable ACK; seen duplicate returns handled with no business typed frame or callback. Unique logical result owns unlock; lost result requires connection recovery, never fake negative.",
+    "unknown_commit": "original same-owner exact-image runner; ambiguous throws IOException, never fake negative",
+    "callbacks": "explicit callback Integer <=0 rejected before mutation; ordinary animation malformed _cbid_ zero-write rejected",
+    "prepare_profile": "public static byte[] prepareProfile(byte[] before) throws IOException: pure seed+projection, never advance/grant",
+    "prepare_stopped_profile": "public static void prepareStoppedProfile(Object exactStore,String account,int uid,BooleanSupplier cancelled) throws IOException"
+  },
+  "integration": {
+    "prepare_order": [
+      "CoreDrawPolicy",
+      "HistoryDrawPolicy",
+      "SelectorPolicy",
+      "DynamicDrawPolicy",
+      "WishGateway (inside shared prepare)"
+    ],
+    "before": "any resource catalog/store.resources construction",
+    "compile_group": "wish-draw after baiye-transactions, before mechanism-gateway; CP Android32 + own manager API stubs + already merged real production classes",
+    "no_analysis_compile_dependency": true,
+    "compile_stubs": "runtime/android_wish_draw/compile_stubs/com/project7/localmanager/WishApiStubs.java",
+    "dispatcher": "Root owns shared direct8/request9/sequenced11 glue; no new per-request DEX seam",
+    "scope_binding": "public WishChoosePolicy.bindArchiveScope(originalStore,account,wishId) returns stock Result; no invented client RPC, preserves miss steps/chosen target/global fee count, refuses pending",
+    "ui_boundaries": [
+      "pool5 archive UI must use same active source wish_id (default1), not expired wall-clock search",
+      "first group reveal transaction coordinates existing ownership into f/a; UI before first reveal must project same real ownership",
+      "nine new UI ready policies not published here"
+    ]
+  },
+  "finite_covered": [
+    "all nine original Store new group/single/all and replay semantics",
+    "pool5 source probabilities5/6/11/12 steps and bare display/grant separation",
+    "pool5 duplicate source exclusive via actual inventory and original fragment10 grant",
+    "source fee ladder, same/default/pending/insufficient/invalid cb negatives, seq modified params, prewrite/postrename/socket/unknown commit",
+    "UP exact probability mass,hard180, shared canonical/foreign iuc, real last-memory acquisition does not reset UP",
+    "five group safe90, S reset independent A, real ownership extra, JZ thresholds4/5/6, failed write/retry no duplicate receipt",
+    "original typed choose and group metadata.call consumers, authority sync before draw reply",
+    "old485 actual binary oracle and old46/selector/static/stock regression with new decoder installed",
+    "same live profile draws across all three UP pools advance one canonical f without seed drift; already-owned true UP source still resets",
+    "actual original ReliableRpcMember initial send + pre-ACK reSendRpc packets replayed into gateway: one charge, one logical typed result, duplicate emits no typed/callback; real ACK cancels subsequent resend"
+  ],
+  "limits": [
+    "No production shared dispatcher/Main/UI wiring proof for Wish yet",
+    "No private reliable handler composition proof with Root final11 adapter yet",
+    "No native/UI rendering acceptance",
+    "No cross-connection seq exactly-once or client-ACK guarantee",
+    "No D8/APK/signing/install/game/emulator/device activity"
+  ],
+  "proof_files": {
+    "analysis/project7/wish-host-rq13c60u/consumer.log": "f13d254864cb867d3dde32f02e2aa239fdcea63277f12357238da8f0f5b7b145",
+    "analysis/project7/wish-host-rq13c60u/groups.log": "b5eec110614e5ea351ce5065e29885b4ba794aa3e0e3183488fc2622999e7ecc",
+    "analysis/project7/wish-host-rq13c60u/old485.log": "02e1837768d6e34d3845174be1a0a566241b3677c4601a0fc2201492c0101c06",
+    "analysis/project7/wish-host-rq13c60u/regression-current.log": "fd58848930130d6b4f6537dd0e39827b6060a508a414ade2f08889d0ce450d40",
+    "analysis/project7/wish-host-rq13c60u/regression-family.log": "54b4dde43b59e549ccad91b634494030f7b89158980c04f8e71cb7f942ecdce8",
+    "analysis/project7/wish-host-rq13c60u/regression-selector.log": "192dc491e4b485710c9bd9b1b28eb5f8a2eaf2261bcd0a99957ac70197174573",
+    "analysis/project7/wish-host-rq13c60u/reliable-producer.log": "a61ed8f8e4417b91f6de3fb48ed13a60357ce28cd9bfd2e26cf6036eb64a9a4b",
+    "analysis/project7/wish-host-rq13c60u/stdout.log": "a1158c97c2e148b8b3ff65f95b5edcc9514a835c8db7a50d3c7cc870ca4fc08d",
+    "analysis/project7/wish-host-rq13c60u/result.json": "59fa5d9e607001a9b1c2d95ce7b9e5cf2c1f5b5243a3dc5bbb804a9a52eb5b05",
+    "analysis/project7/wish-host-rq13c60u/abi-result.json": "070ea68c3674a2a92a9da54299d397884a0d0ac4105d425be7fcbb40104ccd3b",
+    "analysis/project7/wish-host-rq13c60u/reliable-producer.json": "8cab26b654e94a85ee467e0652145af585845645e65a90eed5c4366c153c10fc"
+  },
+  "historical_proofs": [
+    {
+      "path": "analysis/project7/wish-host-ptaq2w5m",
+      "superseded_duplicate_reply_contract": "Pre-ACK original resend can produce two unsequenced typed replies; original duplicate-reject contract withdrawn."
+    },
+    {
+      "path": "analysis/project7/wish-host-i0zm_r_8",
+      "scope": "ACK-only duplicate fix before stopped startup seed API"
+    }
+  ],
+  "startup_seed": {
+    "order": "FullCollection.initialize commits first, then stopped Wish seed; two original-owner commits, not one combined atomic transaction",
+    "ready": "StableIdentityBootstrap does final snapshot validation/READY only after both return",
+    "fields_only": [
+      "root.q7WishSharedUp",
+      "ldd.iuc"
+    ],
+    "locks": "caller SAVE_ACCESS + requireStopped; exact LocalProfileStore monitor -> original PROFILE_LOCK",
+    "storage": "same canonical original profilesDirectory/account.bson; original readAll/writeAtomic, identity uid/account/an, cancellation, CAS and exact readback",
+    "idempotence": "old raw iuc[1] interpreted once as failures; afterseed writes canonical and projected c without a draw; repeated seed has zero writer calls",
+    "host": "actual stock GatewayService static running/block/SAVE_ACCESS guards; Android service/notification/intent/configuration are type-link seams only, no service lifecycle executed",
+    "faults": [
+      "no SAVE_ACCESS rejected",
+      "wrong uid/cancel rejected",
+      "pre-rename unchanged",
+      "postrename exact-image accepted",
+      "restart retry idempotent"
+    ],
+    "ui_contract": "successful startup compose means login iuc is new projected c; UI must not guess unseeded legacy value"
+  }
+}

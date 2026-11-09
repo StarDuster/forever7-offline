@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "status": "analysis_only_explicit_offline_repair_proposal",
+  "unchanged_frozen_pool": 485,
+  "blessing": {
+    "pools": [
+      282,
+      283,
+      288
+    ],
+    "policy": "source-memory-closure-blessing-v1",
+    "target_hero": 122,
+    "file_num": 3,
+    "raw_items": [
+      11831,
+      11832,
+      11833
+    ],
+    "resolved_items": [
+      11830,
+      11831,
+      11832
+    ],
+    "source_11833": "type19 ordinary cube, never memoryFrag",
+    "trigger": "original blessing active, target unowned, real target memory primary",
+    "selection": "retain missing original piece; repeated piece chooses uniformly among missing pieces",
+    "base_graph_unchanged": true,
+    "official_hidden_algorithm_claim": false
+  },
+  "archive_scope": {
+    "282": 960015600,
+    "283": 960015600,
+    "288": 1591167600,
+    "key": [
+      "pool_id",
+      "raw_epoch",
+      "catalog_hash",
+      "policy_version"
+    ],
+    "placeholder_epoch_is_historical_date": false
+  },
+  "missing_defaults": [
+    {
+      "pool": 42,
+      "missing_normal": 5657,
+      "ordinal": 12
+    },
+    {
+      "pool": 52,
+      "missing_normal": 5981,
+      "ordinal": 12
+    },
+    {
+      "pool": 62,
+      "missing_normal": 6499,
+      "ordinal": 12
+    },
+    {
+      "pool": 72,
+      "missing_normal": 6767,
+      "ordinal": 12
+    },
+    {
+      "pool": 81,
+      "missing_normal": 6968,
+      "ordinal": 12
+    },
+    {
+      "pool": 89,
+      "missing_normal": 7366,
+      "ordinal": 12
+    },
+    {
+      "pool": 107,
+      "missing_normal": 7657,
+      "ordinal": 12
+    }
+  ],
+  "normal_evidence": {
+    "rows": 5242,
+    "marshal_sha256": "936b936c59212bba1eaffd910505354b8913f85ba38401d3463a65195a7e4c32",
+    "all_seven_absent": true,
+    "apk_decompiled_sha256": "3b4081e40148f15e7ac4dfb91850aa4d9e86c3cfe3a10976e4861211003fff2d",
+    "apk_ast_integer_dictkeys_absent": true,
+    "raw_apk_provenance_pending": true
+  },
+  "default_options": {
+    "recommended": "archive-missing-default-base-v1: ordinal12 uses own exact base distribution; explicitly no restored S/A guarantee",
+    "strict_every_primary_base_alternative": "B: retain all primary base draws and add real extra guarantee reward; higher output disclosed, typed extra consumer required",
+    "threshold_officially_proven": false,
+    "same_id_random_substitution": false,
+    "repeat_every_12_inferred": false,
+    "previous_A_B_status": "optional future guarantee policy, not current implementation requirement"
+  },
+  "required_small_evidence": [
+    "raw APK normal provenance",
+    "existing ordinal lifecycle and six-draw bell producer",
+    "fixed gzip all55 inclusion and old485 decoder retention"
+  ],
+  "production_modified": false,
+  "execution_performed": false,
+  "pending_compatibility": {
+    "existing485": "global asset845e.../POLICY/entropy",
+    "preferred": "retain fixed raw asset if all55 raw rows already bundled; extend family eligibility, keep485 resolver unchanged",
+    "asset_change": "keep exact known v1 decoder/resolver/source and dispatch old pending by old tag",
+    "revealed": "return original persisted result",
+    "unrevealed": "old entropy plus old resolver, no new-policy recomputation",
+    "ready_requires": [
+      "real coupon",
+      "extra rewards",
+      "charge",
+      "costs",
+      "typed replies",
+      "old pending resume"
+    ]
+  }
+}

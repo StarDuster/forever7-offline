@@ -1,0 +1,160 @@
+{
+  "schema": "project7-dynamic-data-slot-implementation-v1",
+  "status": "phase-A-data-slot-and-pure-reducer-pass; phase-B-original-Result-Store-not-implemented",
+  "runtime_ready_ids": [],
+  "source_pins": {
+    "chouka_info": "b0c2d54fabf49da649a1102d65e3417acfd9d25e94fb91ff603ebfd7f5eecc32",
+    "chouka_leiji_reward_index": "7fcecd1fc0ef1169249f365b24a4422622b0ed614bb1ceb6c93561a45806bec8",
+    "chouka_leiji_reward": "01245f95726f807eca4f3519ddebab39b0120d974d1ab75eff14bcf6e9181a72",
+    "chouka_jiaozhi": "d460c1c0c21338b663b8634a8d4d3f5cba5a99803717cba3222a13139e30f574",
+    "reward_random": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+    "reward_common": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29",
+    "item_data": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+    "hero_treasure_generate": "771ceb6415660c9b9650b458f5b988ffb48c4cbf1344d059723a8affbd92b6b6",
+    "rule_info_data": "e62704f6169a8aac3b969a14ecfbb4ad0803638bdcf589ef150ab17319570832"
+  },
+  "files": {
+    "tools/project7_dynamic_catalog.py": {
+      "size": 9022,
+      "sha256": "dfb69963008890cef1a4d004148e8634ddb0fb06576f39ff6e7a435fb1b7b904"
+    },
+    "tests/test_project7_dynamic_catalog.py": {
+      "size": 3273,
+      "sha256": "3511a1301a20c13c4e3711000ee737e0fb309e6605629341a93ee4ffbe2285ed"
+    },
+    "runtime/project7_dynamic_catalog/catalog-v1.json.gz": {
+      "size": 69029,
+      "sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e"
+    },
+    "runtime/project7_dynamic_catalog/contract.json": {
+      "size": 1164,
+      "sha256": "f1eb9e7d1110ed6b288537e6d32370d96cdc42f995c04e39bea2aaa3f46fa209"
+    },
+    "runtime/android_dynamic_draw/host_tests/DynamicTransitionHost.java": {
+      "size": 2833,
+      "sha256": "6a10e4f9e7ede97b81bef000709d08436493570ecf468541ba0bbb3347f45d45"
+    },
+    "runtime/android_dynamic_draw/host_tests/DynamicSlotPlanHost.java": {
+      "size": 1293,
+      "sha256": "348a832d66d77b13da0bc32cd1719b90f7e75264cc1f3f55b1330ee763cf1ab7"
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java": {
+      "size": 2027,
+      "sha256": "8153178711e66bcc14f27ae92e9d4744ed5b6329aac32e5ae8b79315320eddd1"
+    },
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java": {
+      "size": 5861,
+      "sha256": "a3b3c0dd70f68378f6a7912d9f1c7353dd3030b9c08aeecfe5cc8d4a66bc7305"
+    },
+    "runtime/android_dynamic_draw/verify_host.py": {
+      "size": 1740,
+      "sha256": "7136a248aa7ab3b863b3cea93ab584ae99d124abe19d8817b8b2066de44615f5"
+    },
+    "runtime/android_dynamic_draw/host_tests/verify_slot_projection.py": {
+      "size": 3163,
+      "sha256": "4dcce3d66bbb0ca380963056660676cd2a0c180d2755a5f7638f676381b8e028"
+    }
+  },
+  "asset_sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+  "contract_sha256": "f1eb9e7d1110ed6b288537e6d32370d96cdc42f995c04e39bea2aaa3f46fa209",
+  "counts": {
+    "pools": 55,
+    "charge_pools": 35,
+    "jiaozhi_pools": 28,
+    "extra_pools": 42,
+    "common": 303,
+    "random": 144,
+    "item_metadata": 144,
+    "designs": 26,
+    "base_leaves": 1177
+  },
+  "data_anomalies": [
+    {
+      "pool": 282,
+      "missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    },
+    {
+      "pool": 283,
+      "missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    },
+    {
+      "pool": 288,
+      "missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    }
+  ],
+  "tests": {
+    "python": 9,
+    "result": "PASS",
+    "host_report": "reports/project7-dynamic-preflight-host-v1.json",
+    "scope": "real public fixed-data oracle and selected original640 scene functions; Java pure plan/reducer only"
+  },
+  "approved_proposed_runtime_api": [
+    "DynamicDrawPolicy.makeFile(LocalResourceCatalog,LocalResourceCatalog.Pool,byte[],Random):byte[]",
+    "DynamicDrawPolicy.reveal(LocalResourceEngine.Result,LocalResourceCatalog,byte[]):byte[]",
+    "DynamicDrawPolicy.stateForSave(byte[],int):byte[]"
+  ],
+  "existing_shared_modified": false,
+  "slot_contract": {
+    "public_closed": {
+      "index": "0..5",
+      "is_open": false,
+      "hero": [],
+      "hero_file": 0,
+      "item": [],
+      "treasure": [],
+      "sp_card": false
+    },
+    "server_plan": [
+      "policy",
+      "catalogHash",
+      "pool",
+      "epoch",
+      "slot",
+      "reservedOrdinal",
+      "entropy"
+    ],
+    "actual_draw_counters_advanced_on_group": false,
+    "resolve_only_at_first_reveal": true,
+    "old_untagged_pending": "exact original delegation, no upgrade/reroll",
+    "projection_evidence": "reports/project7-dynamic-preflight-host-v1.json original-slot-projection (5 checks)",
+    "normalization_static": "original normalizeCard returns unchanged when q7Kind missing; unopened plan must omit q7Kind until pre-resolve"
+  },
+  "remaining": [
+    "production catalog immutable parse and Context prepare",
+    "full primary→stock reveal→charge→jiaozhi→blessing→extra same Result settlement",
+    "original Store rollback/reload/order finite host",
+    "lossless jzc/rc UI predicate and opaque jzr/iuc sync preserving unknown pairs",
+    "actual single/all typed reply consumers and archived-time local UI policy",
+    "no main integration yet"
+  ],
+  "policies": {
+    "FIFO": "versioned offline FIFO; source does not prove original server stacking",
+    "blessing_missing_piece": "uniform only among actual missing hfp pieces, not base reward IDs",
+    "rc": "targetHero→0/1 UI positive predicate only; not FIFO count",
+    "jzr": "preserve opaque pairs, never invent threshold receipt keys",
+    "extra": "first ownership including final piece; no retroactive award",
+    "charge": "actual primary only; charge hero+3 points but no extra actual draw"
+  },
+  "limits": [
+    "no native render/ART/game/device proof",
+    "no D8/APK/sign/install",
+    "no probability sampling",
+    "not all55 executable",
+    "no stock BSON mutation yet"
+  ]
+}

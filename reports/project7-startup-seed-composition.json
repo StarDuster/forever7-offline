@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "manager_sha256": "254af3229089dbd6dd4eb647b0b711184d54551d30f118e0d98b76fed04e5462",
+  "compiled_inventory_sha256": "8e9fb68dad62e578474809d8c69e881d80add105834d67690782da6a56121ba6",
+  "source_sha256": "05ec94a3824fe04ee185366dc2aedc3ed0c77465d8d3602aad625c1dc936d8e6",
+  "runtime_classpath": "analysis/project7/wish-host-rq13c60u/platform:analysis/project7/trial-retry-hook-v1/manager-translated-frames.jar:toolchains/json-20240303.jar:analysis/project7/trial-seed-full-prepare-v1/project7-inputs-nejac7xh/compiled/production-classes:analysis/project7/wish-host-rq13c60u/tests",
+  "runtime_api_stubs": false,
+  "scope": "Actual Main production postProfile callback with real collection engines/Store/stopped guards and synthetic profile/platform seams; injected seed failure after collection durable; resume zero regrant, unchanged receipt/opaque, repeat byte identity. Does not execute full bootstrap final validator/READY/listeners.",
+  "commands": [
+    [
+      "toolchains/java/jdk-17.0.21+9/Contents/Home/bin/javac",
+      "--release",
+      "8",
+      "-cp",
+      "analysis/project7/wish-host-rq13c60u/platform:analysis/project7/trial-retry-hook-v1/manager-translated-frames.jar:toolchains/json-20240303.jar:analysis/project7/trial-seed-full-prepare-v1/project7-inputs-nejac7xh/compiled/production-classes:analysis/project7/wish-host-rq13c60u/tests",
+      "-d",
+      "analysis/project7/startup-seed-composed-host-v1/classes",
+      "analysis/project7/startup-seed-composed-host-v1/StartupSeedHost.java"
+    ],
+    [
+      "toolchains/java/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-Xverify:all",
+      "-Xmx768m",
+      "-Dp7.baiye.catalog=runtime/project7_baiye_catalog/catalog-v1.tsv",
+      "-Dp7.baiye.fragments=runtime/project7_baiye_catalog/fragments-v1.tsv",
+      "-cp",
+      "analysis/project7/wish-host-rq13c60u/platform:analysis/project7/trial-retry-hook-v1/manager-translated-frames.jar:toolchains/json-20240303.jar:analysis/project7/trial-seed-full-prepare-v1/project7-inputs-nejac7xh/compiled/production-classes:analysis/project7/wish-host-rq13c60u/tests:analysis/project7/startup-seed-composed-host-v1/classes",
+      "com.project7.localmanager.StartupSeedHost",
+      "analysis/project7/trial-seed-full-prepare-v1/project7-inputs-nejac7xh/stage/assets"
+    ]
+  ],
+  "apk_built": false,
+  "evidence": "analysis/project7/startup-seed-composed-host-v1/result.json",
+  "full_bootstrap_final_validator_and_READY_executed": false,
+  "source_snapshot": "reports/project7-trial-seed-integration-snapshot.json"
+}

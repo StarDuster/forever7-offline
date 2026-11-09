@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "policy": "p7-ui-retirement-v1",
+  "source_projection": "reviewed producer contract, not independent marshal decoding",
+  "producer_contract_sha256": "26a0ec4c974dbb0a50a453ebead81ae98fb6357d653f9c02827baa4ea7a33cea",
+  "roots": [
+    {
+      "root": 1,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "root": 5,
+      "classification": "retire-alias",
+      "implemented": true,
+      "observer": "BBS.notify_show owner -> original notify_close; retire actual root5, never4",
+      "reason": null,
+      "source_chain": [
+        5
+      ]
+    },
+    {
+      "root": 10,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        10
+      ]
+    },
+    {
+      "root": 20,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original accepted aid1/build2 same nonoverlapping request + synchronized original slot",
+      "reason": null,
+      "source_chain": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "root": 24,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "same exact original accepted construction; retire actual root24, never unstarted20/27",
+      "reason": null,
+      "source_chain": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "root": 30,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original startEventReply(e1011,r nonzero) and actual original processing insertion",
+      "reason": null,
+      "source_chain": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "root": 74,
+      "classification": "missing-catalog",
+      "implemented": false,
+      "observer": "server-started UI-only dismissal",
+      "reason": "absent/unreachable: no original catalog step, original begin returns false; corrupt pending diagnosed, never finished",
+      "source_chain": [
+        74
+      ]
+    },
+    {
+      "root": 90,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original replyLuckyDrawFile(rt=True)",
+      "reason": null,
+      "source_chain": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "root": 93,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        93
+      ]
+    },
+    {
+      "root": 120,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        120,
+        121
+      ]
+    },
+    {
+      "root": 150,
+      "classification": "scripted-continuation",
+      "implemented": true,
+      "observer": "original finishNewbee -> original externalGuide1045 admission, no event completion",
+      "reason": null,
+      "source_chain": [
+        150
+      ]
+    },
+    {
+      "root": 151,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "same Avatar current cityData.useCanteen or typed cd.uc True, no cross-day cache",
+      "reason": null,
+      "source_chain": [
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ]
+    },
+    {
+      "root": 160,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        160,
+        368,
+        369,
+        370,
+        371
+      ]
+    },
+    {
+      "root": 211,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "actual sorted index4 TV target -> original successful add_furniture_data binds generated entity key independent of later sort -> same current scheme/id/entity -> original needresult succ True",
+      "reason": null,
+      "source_chain": [
+        211,
+        270,
+        214,
+        271,
+        215,
+        216,
+        217
+      ]
+    },
+    {
+      "root": 230,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original calcCrystalReply nonempty rewards",
+      "reason": null,
+      "source_chain": [
+        230,
+        280,
+        231,
+        232
+      ]
+    },
+    {
+      "root": 240,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original activeSkillReply sk1101 lv>0",
+      "reason": null,
+      "source_chain": [
+        240,
+        241,
+        281,
+        242,
+        282,
+        243,
+        283,
+        244,
+        245
+      ]
+    },
+    {
+      "root": 250,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "original furniture single draw rs True plus original t/ct/rwd",
+      "reason": null,
+      "source_chain": [
+        250,
+        272,
+        251
+      ]
+    },
+    {
+      "root": 253,
+      "classification": "after-accepted-action",
+      "implemented": true,
+      "observer": "actual original close ENDED -> animation callback before fn branch; same panel/UI/layer generation",
+      "reason": null,
+      "source_chain": [
+        253
+      ]
+    },
+    {
+      "root": 260,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        260
+      ]
+    },
+    {
+      "root": 284,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290
+      ]
+    },
+    {
+      "root": 292,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        292,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290
+      ]
+    },
+    {
+      "root": 302,
+      "classification": "dismiss",
+      "implemented": true,
+      "observer": "server-started UI-only dismissal",
+      "reason": null,
+      "source_chain": [
+        302,
+        373,
+        374,
+        375
+      ]
+    }
+  ],
+  "implemented_count": 21,
+  "unimplemented_count": 0,
+  "production_install": "install() after tutorial bypass before Member caches; install_panels() after furniture/friend/selector and before live Avatar",
+  "integration_status": "awaiting root startup integration",
+  "absent_unreachable_count": 1,
+  "limits": [
+    "21 policy roots handled; not completion of their underlying business or whole-game acceptance",
+    "B action roots wait for actual positive original business consumer; no business synthesized",
+    "74 absent/unreachable is not a completed tutorial",
+    "network enqueue/local fn is not durable server ACK; original reliable retransmission and server owner unchanged"
+  ]
+}

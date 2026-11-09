@@ -1,0 +1,59 @@
+{
+  "format": "project7-field-opcode-fix-v1",
+  "source": {
+    "bytes": 1173868,
+    "sha256": "6555e75c0a8432f78422408c0327a3d8b4593eef420bcd0bb74eb5c911665d51"
+  },
+  "target": {
+    "bytes": 1173868,
+    "sha256": "11303a98f9a4420d4ceecc6e19ed6a453fdf1c873d16b83e55774ff385261b0d"
+  },
+  "patch": {
+    "bytes": 1230,
+    "sha256": "8d32eb40d77ff6c149aabf7a420e2dd2f77a2128c24fe19d9cbb5d6bd9426110"
+  },
+  "scope": "minimal post-chain repair: only 9 boolean field get/put opcodes in LocalGatewayServer.q7StoryCityCocBegin/q7StoryCityCocFinish",
+  "changes": [
+    {
+      "method": "q7StoryCityCocBegin",
+      "field": "StoryCityCocPolicy$Admission.allowed",
+      "from": "iget",
+      "to": "iget-boolean"
+    },
+    {
+      "method": "q7StoryCityCocBegin",
+      "field": "StoryCityCocPolicy$Settlement.accepted",
+      "from": "iget",
+      "to": "iget-boolean"
+    },
+    {
+      "method": "q7StoryCityCocBegin",
+      "field": "LocalEconomyEngine$Result.accepted",
+      "from": "iput",
+      "to": "iput-boolean",
+      "occurrences": 2
+    },
+    {
+      "method": "q7StoryCityCocFinish",
+      "field": "StoryCityCocPolicy$Admission.allowed",
+      "from": "iget",
+      "to": "iget-boolean"
+    },
+    {
+      "method": "q7StoryCityCocFinish",
+      "field": "LocalEconomyEngine$Result.accepted",
+      "from": "iput",
+      "to": "iput-boolean",
+      "occurrences": 3
+    },
+    {
+      "method": "q7StoryCityCocFinish",
+      "field": "LocalEconomyEngine$Result.replay",
+      "from": "iput",
+      "to": "iput-boolean",
+      "occurrences": 1
+    }
+  ],
+  "art_basis": "dex2oat VerifyError at [0x3C]: expected boolean ... found Integer in get",
+  "no_d8_apk_native": true
+}

@@ -1,0 +1,178 @@
+package com.project7.localmanager;
+import android.content.Context;
+import java.io.*;
+import java.security.*;
+import java.util.*;
+/** Generic historical base/default rules. Original stock BSON transaction owns all state. */
+public final class HistoryDrawPolicy {
+    public static final String POLICY="history-free-v1";
+    public static final String GIFT_POLICY="history-source-gift-daily-cap-v1";
+    public static final String ORDINAL_POLICY="history-ordinal-reserve-on-group-v1";
+    public static final String ASSET="project7_history/catalog-v3.tsv";
+    public static final String SHA256="b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16";
+    private static final String V2_SHA256="debbda4a6910947a0843774261971f17d217b120c6bd470ef8572bae53f043b0";
+    private static final String LEGACY_SHA256="73fff055e25966ab39960ae65f3ec72589a285e020476045910ccd15a974e669";
+    private static volatile HistoryCatalog snapshot;
+    private static final Map<LocalResourceCatalog.Pool,HistoryCatalog.Spec> owned=Collections.synchronizedMap(new WeakHashMap<LocalResourceCatalog.Pool,HistoryCatalog.Spec>());
+    private static final String MARK="q7HistoryVersion",POOL="q7HistoryPool",HASH="q7HistoryHash",ORD="q7HistoryOrdinal",END="q7HistoryEnd",NEXT="q7HistoryNextOrdinal";
+    private HistoryDrawPolicy(){}
+    private static RuntimeException failure(Exception e){if(e instanceof IllegalArgumentException)return (IllegalArgumentException)e;if(e instanceof ArithmeticException)return (ArithmeticException)e;return new IllegalArgumentException("历史抽卡数据校验未通过，本次请求未提交。",e);}
+    private static void interrupted()throws InterruptedIOException{if(Thread.currentThread().isInterrupted())throw new InterruptedIOException("History CANCELLED");}
+    public static void prepare(Context context)throws Exception{try(InputStream in=context.getAssets().open(ASSET)){prepareStream(in);}HistoryFurniturePolicy.prepare(context);}
+    static void prepareStream(InputStream in)throws Exception{
+        interrupted();ByteArrayOutputStream out=new ByteArrayOutputStream();byte[] buffer=new byte[8192];int n;
+        while((n=in.read(buffer))!=-1){interrupted();HistoryCatalog.need(n>0&&out.size()+n<=2*1024*1024,"READ_LIMIT");out.write(buffer,0,n);}
+        byte[] data=out.toByteArray(),digest=MessageDigest.getInstance("SHA-256").digest(data);StringBuilder hash=new StringBuilder();for(byte b:digest)hash.append(String.format(Locale.ROOT,"%02x",b&255));
+        HistoryCatalog.need(hash.toString().equals(SHA256),"ASSET_SHA");HistoryCatalog parsed=HistoryCatalog.parse(data);interrupted();snapshot=parsed;
+    }
+    static HistoryCatalog dynamicCatalog()throws IOException{return ready();}
+    static boolean dynamicOwns(LocalResourceCatalog.Pool pool){return owned.containsKey(pool);}
+    static byte[] dynamicGift(LocalResourceEngine.Result result,LocalResourceCatalog catalog,HistoryBson.Value card,byte[] output)throws Exception{return applyGift(result,catalog,card,output);}
+    private static HistoryCatalog ready()throws IOException{HistoryCatalog c=snapshot;HistoryCatalog.need(c!=null,"NOT_PREPARED");return c;}
+    public static void augmentCatalog(LocalResourceCatalog catalog)throws Exception {
+        try {
+            HistoryCatalog c=ready();SelectorPolicy.validateCatalog(catalog);Map<Integer,LocalResourceCatalog.Pool> additions=new LinkedHashMap<>();Map<LocalResourceCatalog.Pool,HistoryCatalog.Spec> identities=new IdentityHashMap<>();
+            synchronized(catalog){
+                for(HistoryCatalog.Spec spec:c.specs.values()){
+                    interrupted();if(catalog.pools.containsKey(spec.id))continue; // preserve original and repeated augmentation
+                    if(DynamicDrawPolicy.archiveStatic(spec.id))DynamicDrawPolicy.validateArchive(catalog,spec,c);
+                    if(spec.enabled||DynamicDrawPolicy.archiveStatic(spec.id)){if(spec.gift!=0)HistoryCatalog.need(spec.giftCoin==LocalResourceEngine.currencyItem("giftCoin")||catalog.items.containsKey(spec.giftCoin),"MISSING_GIFT_TARGET");List<HistoryCatalog.Edge> refs=new ArrayList<>(spec.base.edges);refs.addAll(spec.defaults.values());for(HistoryCatalog.Edge ref:refs)for(HistoryCatalog.Edge edge:c.random.get(ref.target).edges){HistoryCatalog.Leaf leaf=c.leaves.get(edge.target);if(SelectorPolicy.selector(leaf))SelectorPolicy.validateSource(spec.id,leaf);else leaf.validate(catalog);}}
+                    LocalResourceCatalog.Pool pool=new LocalResourceCatalog.Pool(spec.id,spec.epoch,spec.ticket,SelectorPolicy.supports(spec.id)?SelectorPolicy.candidates(spec.id,4):Collections.<Integer>emptyList(),SelectorPolicy.supports(spec.id)?SelectorPolicy.candidates(spec.id,3):Collections.<Integer>emptyList(),Collections.<LocalResourceCatalog.Drop>emptyList());
+                    if(SelectorPolicy.supports(spec.id))SelectorPolicy.bind(pool);
+                    additions.put(spec.id,pool);identities.put(pool,spec);
+                }
+                interrupted();catalog.pools.putAll(additions);owned.putAll(identities); // original ctor publishes only after successful return
+            }
+        }catch(Exception e){throw failure(e);}
+    }
+    private static int integer(HistoryBson.Value doc,String key,int fallback)throws IOException{HistoryBson.Value value=doc.get(key);return value==null?fallback:value.integer();}
+    private static boolean history(HistoryBson.Value card)throws IOException{
+        HistoryBson.Value v=card.get(MARK);if(v==null)return false;
+        HistoryCatalog.need(v.integer()==1,"TAG_VERSION");int t=HistoryBson.integer(card,POOL);HistoryCatalog.need(t>0&&t!=1&&t!=354&&t!=484,"TAG_POOL");
+        HistoryCatalog.need((HistoryBson.required(card,HASH).string().equals(SHA256)||HistoryBson.required(card,HASH).string().equals(LEGACY_SHA256)||HistoryBson.required(card,HASH).string().equals(V2_SHA256)),"TAG_HASH");
+        HistoryCatalog.need(HistoryBson.required(card,"q7HistoryPolicy").string().equals(POLICY),"TAG_POLICY");
+        HistoryCatalog.need(HistoryBson.required(card,"q7HistoryOrdinalPolicy").string().equals(ORDINAL_POLICY),"TAG_ORDINAL_POLICY");return true;
+    }
+    private static boolean hasHistory(byte[] state,int t)throws IOException{
+        HistoryBson.Value file=HistoryBson.parse(state).get("q7File");if(file==null)return false;
+        for(HistoryBson.Value card:file.values())if(history(card)){HistoryCatalog.need(HistoryBson.integer(card,POOL)==t,"STORED_SCOPE_MISMATCH");return true;}
+        return false;
+    }
+    public static boolean requiresStockChoice(LocalResourceCatalog.Pool pool,byte[] state,int t){
+        // This original guard predicate is outside an IAE-protected invoke range.
+        // It must remain total/no-throw. Admission is enforced in the protected
+        // factory before any candidate exists; this scope's spend is always free.
+        return pool!=null&&(owned.get(pool)==null||SelectorPolicy.requiresChoice(pool,state,t));
+    }
+    public static void spend(LocalResourceEngine.Result result,int amount,LocalResourceCatalog.Pool pool,int t){
+        if(t==1)return; // normal type1 is free for new group, single card, all-open and left; original grant/state stays
+        try {
+            HistoryCatalog.Spec spec=pool==null?null:owned.get(pool);
+            if(t!=1&&t!=354&&t!=484&&((spec!=null&&spec.id==t)||hasHistory(LocalDrawEngine.state(result.profile,t),t)))return;
+        }catch(Exception e){throw failure(e);}
+        LocalDrawEngine.q7OriginalSpend(result,amount,pool,t);
+    }
+    private static byte[] settlement(){return BsonLite.document(new Object[]{"activityReward",BsonLite.document(new Object[]{"hero",Collections.emptyList(),"item",Collections.emptyList(),"treasure",Collections.emptyList(),"fragment",Collections.emptyList(),"treasure_trans",Collections.emptyList()})});}
+    public static byte[] makeFile(LocalResourceCatalog catalog,LocalResourceCatalog.Pool pool,byte[] state,Random random){
+        HistoryCatalog.Spec spec=owned.get(pool);if(spec==null)return LocalDrawEngine.makeActivityFile(catalog,pool,state,random);
+        try {
+            interrupted();if(DynamicDrawPolicy.supports(spec.id))return DynamicDrawPolicy.makeFile(catalog,pool,state,random);HistoryCatalog.need(spec.enabled||DynamicDrawPolicy.archiveStatic(spec.id),"POOL_NOT_RUNTIME_READY");if(SelectorPolicy.supports(spec.id))SelectorPolicy.validateChoice(spec.id,state);HistoryCatalog c=ready();HistoryBson.Value s=HistoryBson.parse(state);
+            int ct=integer(s,"ct",0);HistoryCatalog.need(ct>=0&&ct<Integer.MAX_VALUE,"CT_OVERFLOW");int base=Math.max(integer(s,NEXT,ct+1),ct+1);
+            HistoryCatalog.need(base>=1&&base<=Integer.MAX_VALUE-6,"ORDINAL_OVERFLOW");int end=base+6;byte[] file=BsonLite.EMPTY_DOCUMENT;
+            for(int i=0;i<6;i++){
+                interrupted();int ordinal=base+i;HistoryCatalog.Edge chosen=spec.defaults.get(ordinal);if(chosen==null)chosen=spec.base.pick(random);
+                HistoryCatalog.Edge edge=c.random.get(chosen.target).pick(random);HistoryCatalog.Leaf source=c.leaves.get(edge.target);SelectorPolicy.Resolved resolved=SelectorPolicy.resolve(catalog,spec.id,state,source);HistoryCatalog.Leaf leaf=resolved.leaf;leaf.validate(catalog);
+                List<Integer> heroes=(leaf.kind.equals("hero")||leaf.kind.equals("memory"))?Collections.singletonList(leaf.id):Collections.<Integer>emptyList();
+                byte[] card=BsonLite.document(new Object[]{"index",i,"is_open",false,"get_hero",false,"hero",heroes,"hero_file",leaf.piece,"hero_frag",BsonLite.EMPTY_DOCUMENT,"item",Collections.emptyList(),"treasure",Collections.emptyList(),"q7Kind",leaf.kind,"q7Id",leaf.id,"q7Count",leaf.count,"q7Quality",leaf.quality,"q7Wire",2,"other_reward",settlement(),MARK,1,POOL,spec.id,HASH,SHA256,"q7HistoryPolicy",POLICY,"q7HistoryOrdinalPolicy",ORDINAL_POLICY,"q7HistoryEpoch",spec.epoch,ORD,ordinal,END,end,"q7HistoryNormalRow",chosen.source,"q7HistoryRandomId",chosen.target,"q7HistoryCommonId",leaf.common,"q7HistoryGiftPolicy",GIFT_POLICY,"q7HistoryGiftMode",spec.gift,"q7HistoryGiftCoin",spec.giftCoin,"q7HistoryGiftNum",spec.giftNum,"q7HistoryGiftAt",spec.giftAt,"q7HistoryGiftPerDay",spec.giftPerDay});
+                byte[] design=leaf.design();if(design!=null)card=BsonLite.withProfileDocument(card,"q7Design",design);card=resolved.tag(card);
+                if(DynamicCatalog.MISSING_DEFAULTS.containsKey(spec.id)&&DynamicDrawPolicy.archiveStatic(spec.id)){card=BsonLite.withProfileString(card,"q7HistoryArchivePolicy","archive-missing-default-base-v1");card=BsonLite.withProfileInt(card,"q7HistoryMissingDefaultNormal",DynamicCatalog.MISSING_DEFAULTS.get(spec.id));}
+                if(DynamicCatalog.SIX_SLOT_ARCHIVE.contains(spec.id))card=BsonLite.withProfileString(card,"q7HistoryArchiveShapePolicy","current640-six-slot-archive-v1");
+                if(DynamicCatalog.FREE_TICKET_ARCHIVE.contains(spec.id))card=BsonLite.withProfileString(card,"q7HistoryArchivePaymentPolicy",POLICY);
+                file=BsonLite.withProfileDocument(file,Integer.toString(i),card);
+            }
+            return file;
+        }catch(Exception e){throw failure(e);}
+    }
+    public static byte[] stateForSave(byte[] state,int t){
+        try {
+            state=DynamicDrawPolicy.stateForSave(state,t);
+            if(!hasHistory(state,t))return CoreDrawPolicy.stateForSave(state,t);
+            interrupted();HistoryBson.Value s=HistoryBson.parse(state),file=HistoryBson.required(s,"q7File");HistoryCatalog.need(file.fields.size()==6,"GROUP_SIZE");int base=0,end=0,epoch=0;String hash=null;int[] giftSpec=null;
+            for(int i=0;i<6;i++){
+                HistoryBson.Value card=HistoryBson.required(file,Integer.toString(i));HistoryCatalog.need(history(card)&&HistoryBson.integer(card,POOL)==t&&HistoryBson.integer(card,"index")==i,"GROUP_SCOPE");
+                int ordinal=HistoryBson.integer(card,ORD),cursor=HistoryBson.integer(card,END),e=HistoryBson.integer(card,"q7HistoryEpoch");String h=HistoryBson.required(card,HASH).string();
+                int[] gift=new int[]{integer(card,"q7HistoryGiftMode",0),integer(card,"q7HistoryGiftCoin",0),integer(card,"q7HistoryGiftNum",0),integer(card,"q7HistoryGiftAt",0),integer(card,"q7HistoryGiftPerDay",0)};
+                if(i==0){base=ordinal;end=cursor;epoch=e;hash=h;giftSpec=gift;HistoryCatalog.need(base>=1&&base<=Integer.MAX_VALUE-6&&end==base+6,"RESERVATION");}
+                HistoryCatalog.need(Arrays.equals(giftSpec,gift),"MIXED_GIFT_RULES");
+                HistoryCatalog.need(ordinal==base+i&&cursor==end&&e==epoch&&h.equals(hash),"MIXED_GROUP");
+            }
+            int old=integer(s,NEXT,1);HistoryCatalog.need(old>=1,"CURSOR");state=BsonLite.withProfileInt(state,NEXT,Math.max(old,end));return mergeGiftReceipts(state,file,t);
+        }catch(Exception e){throw failure(e);}
+    }
+    private static final String GDAY="q7HistoryGiftDay",GUSED="q7HistoryGiftUsed",GCT="q7HistoryGiftReceiptCt";
+    private static int usedToday(HistoryBson.Value state,int t,String day,int cap)throws IOException {
+        int used=0;HistoryBson.Value priorDay=state.get(GDAY);
+        if(priorDay!=null&&priorDay.string().equals(day))used=integer(state,GUSED,0);
+        HistoryCatalog.need(used>=0&&used<=cap,"GIFT_USED");
+        HistoryBson.Value file=state.get("q7File");int ct=integer(state,"ct",0);
+        if(file!=null)for(HistoryBson.Value card:file.values()){
+            if(card.get(GCT)==null)continue;
+            HistoryCatalog.need(history(card)&&HistoryBson.integer(card,POOL)==t,"GIFT_SCOPE");
+            int receiptCt=HistoryBson.integer(card,GCT),n=HistoryBson.integer(card,GUSED);
+            HistoryCatalog.need(receiptCt>0&&receiptCt<=ct&&n>=0&&n<=cap,"GIFT_RECEIPT");
+            if(HistoryBson.required(card,GDAY).string().equals(day))used=Math.max(used,n);
+        }
+        return used;
+    }
+    private static byte[] applyGift(LocalResourceEngine.Result result,LocalResourceCatalog catalog,HistoryBson.Value card,byte[] output)throws Exception {
+        int mode=integer(card,"q7HistoryGiftMode",0);if(mode==0)return output;
+        HistoryCatalog.need(mode==1&&HistoryBson.required(card,"q7HistoryGiftPolicy").string().equals(GIFT_POLICY),"GIFT_POLICY");
+        int t=HistoryBson.integer(card,POOL),coin=HistoryBson.integer(card,"q7HistoryGiftCoin"),count=HistoryBson.integer(card,"q7HistoryGiftNum"),at=HistoryBson.integer(card,"q7HistoryGiftAt"),cap=HistoryBson.integer(card,"q7HistoryGiftPerDay");
+        HistoryCatalog.need(coin>0&&count>0&&count<=1000000&&at>0&&cap>0&&cap<=1000000,"GIFT_SPEC");
+        HistoryBson.Value state=HistoryBson.parse(LocalDrawEngine.state(result.profile,t));int next=Math.addExact(integer(state,"ct",0),1);
+        String day=LocalDrawDailyEngine.day(LocalStoryEnvironment.now());int used=usedToday(state,t,day,cap);
+        if(next%at==0&&used<cap){
+            int before=result.itemRewards.size();String kind=coin==LocalResourceEngine.currencyItem("giftCoin")?"giftCoin":"item";
+            LocalResourceEngine.grant(result,catalog,kind,coin,count,1);
+            HistoryCatalog.need(result.itemRewards.size()==before+1,"GIFT_ACTUAL_LEDGER");
+            List<Integer> actual=result.itemRewards.get(before);HistoryCatalog.need(actual.size()==2&&actual.get(0)==coin&&actual.get(1)==count,"GIFT_ACTUAL_AMOUNT");
+            if(kind.equals("giftCoin"))output=BsonLite.withProfileInt(output,"gift",actual.get(1));
+            else {
+                HistoryBson.Value otherValue=HistoryBson.parse(output).get("other_reward");byte[] other=otherValue==null?BsonLite.EMPTY_DOCUMENT:otherValue.bytes;
+                HistoryBson.Value existing=HistoryBson.parse(other).get("item");HistoryCatalog.need(existing==null||existing.fields.isEmpty(),"GIFT_EXTRA_MERGE_REQUIRED");
+                other=BsonLite.withProfileArray(other,"item",Collections.singletonList(new ArrayList<Integer>(actual)));
+                output=BsonLite.withProfileDocument(output,"other_reward",other);
+            }
+            used=Math.addExact(used,1);
+        }
+        output=BsonLite.withProfileString(output,GDAY,day);output=BsonLite.withProfileInt(output,GUSED,used);return BsonLite.withProfileInt(output,GCT,next);
+    }
+    private static byte[] mergeGiftReceipts(byte[] state,HistoryBson.Value file,int t)throws IOException {
+        HistoryBson.Value s=HistoryBson.parse(state);int old=integer(s,GCT,0),current=integer(s,"ct",0);HistoryBson.Value latest=null;int seq=old;Set<Integer> seen=new HashSet<>();
+        for(HistoryBson.Value card:file.values()){
+            if(card.get(GCT)==null)continue;int n=HistoryBson.integer(card,GCT);
+            HistoryCatalog.need(history(card)&&HistoryBson.integer(card,POOL)==t&&n>0&&n<=current&&seen.add(n),"GIFT_RECEIPT_SEQUENCE");
+            if(n>seq){seq=n;latest=card;}
+        }
+        if(latest==null)return state;
+        String day=HistoryBson.required(latest,GDAY).string();int used=HistoryBson.integer(latest,GUSED),cap=HistoryBson.integer(latest,"q7HistoryGiftPerDay");
+        HistoryCatalog.need(day.matches("[0-9]{4}-[0-9]{2}-[0-9]{2}")&&used>=0&&used<=cap,"GIFT_RECEIPT_VALUE");
+        state=BsonLite.withProfileString(state,GDAY,day);state=BsonLite.withProfileInt(state,GUSED,used);return BsonLite.withProfileInt(state,GCT,seq);
+    }
+    public static byte[] reveal(LocalResourceEngine.Result result,LocalResourceCatalog catalog,byte[] card){
+        try {
+            HistoryBson.Value parsed=HistoryBson.parse(card);if(DynamicDrawPolicy.marked(card))return DynamicDrawPolicy.reveal(result,catalog,card);if(!history(parsed))return CoreDrawPolicy.reveal(result,catalog,card);
+            if(HistoryBson.required(parsed,"is_open").bool())return card;interrupted();
+            String kind=HistoryBson.required(parsed,"q7Kind").string();
+            HistoryBson.Value designValue=parsed.get("q7Design");if(designValue!=null)HistoryCatalog.need(designValue.type==3,"DESIGN_DOCUMENT");
+            new HistoryCatalog.Leaf(HistoryBson.integer(parsed,"q7HistoryCommonId"),kind,HistoryBson.integer(parsed,"q7Id"),HistoryBson.integer(parsed,"q7Count"),HistoryBson.integer(parsed,"q7Quality"),HistoryBson.integer(parsed,"hero_file"),designValue==null?null:designValue.bytes).validate(catalog);
+            boolean currency=kind.equals("money")||kind.equals("summonCoin");
+            int before=currency?integer(HistoryBson.parse(result.profile),kind,0):0;
+            HistoryCatalog.need(!kind.equals("pendant"),"PENDANT_REQUIRES_FURNITURE_FAMILY");
+            byte[] output=LocalDrawEngine.reveal(result,catalog,card); // original primary grant chain exactly once
+            if(kind.equals("skin"))output=BsonLite.withProfileArray(output,"item",Collections.singletonList(Arrays.asList(HistoryBson.integer(HistoryBson.parse(designValue.bytes),"i"),HistoryBson.integer(parsed,"q7Count"))));
+            if(currency){int after=integer(HistoryBson.parse(result.profile),kind,0),count=HistoryBson.integer(parsed,"q7Count");HistoryCatalog.need((long)after-before==count&&count>0,"CURRENCY_DELTA");int item=LocalResourceEngine.currencyItem(kind);HistoryCatalog.need(item>0,"CURRENCY_MAPPING");output=BsonLite.withProfileArray(output,"item",Collections.singletonList(Arrays.asList(item,count)));}
+            return applyGift(result,catalog,parsed,output);
+        }catch(Exception e){throw failure(e);}
+    }
+}

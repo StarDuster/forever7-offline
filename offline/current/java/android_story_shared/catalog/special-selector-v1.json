@@ -1,0 +1,190 @@
+{
+ "dalvira": {
+  "cineLockHeroes": [
+   36
+  ],
+  "event": 4203,
+  "eventDay": 3,
+  "heroDay": 5,
+  "heroEvent": 6189,
+  "menu": 12,
+  "routes": [
+   "13",
+   "13-1",
+   "13-2",
+   "13-3",
+   "13-4"
+  ]
+ },
+ "event1140": {
+  "areaFight": [
+   6
+  ],
+  "areaSpecialStage": {
+   "6": 11
+  },
+  "completeEnterMainPanel": true,
+  "eventType": 1,
+  "id": 1140,
+  "release": true
+ },
+ "mission_sha256": {
+  "320": "51e49a9d21961570ad1fc0d9bba231d825f2b007b29eee56c475e5f312ed905a"
+ },
+ "missions": {
+  "320": {
+   "angle": 315,
+   "auto_hide": [
+    "g58_ck01_db04_01_397"
+   ],
+   "battle_stage_num": 1,
+   "boss": 510301,
+   "ch": 6,
+   "dataSource": "alanhaiwan",
+   "desc": "地下车库的深处，发现幻境的源头",
+   "end_position": [
+    560,
+    0,
+    248
+   ],
+   "fatigue": 5,
+   "force_recommend": 5,
+   "hero_appear_mode": 1,
+   "id": 320,
+   "ignoreAOI": 1,
+   "inherit_mission": 5105,
+   "init_events": [
+    837,
+    869
+   ],
+   "job": [
+    2,
+    3,
+    6
+   ],
+   "least_hero_num": 1,
+   "limit_time": 1800,
+   "mapName": "tingchechang2",
+   "map_path": [
+    "scene/pve/g58_ck_01_pve.scn"
+   ],
+   "max_hero_num": 3,
+   "monsters": [
+    510302,
+    99803,
+    99810,
+    99814,
+    99801
+   ],
+   "music": "music/mus_boss/boss3",
+   "name": "寻找幻境源头",
+   "nextstagenums": [
+    3101,
+    4101
+   ],
+   "odds": [
+    [
+     50,
+     9001,
+     1006
+    ],
+    [
+     20,
+     9002,
+     1005
+    ]
+   ],
+   "overFatigue": 25,
+   "pre_load": [
+    30010
+   ],
+   "prize": 1,
+   "release": 1,
+   "require": "击败制造幻境的鬼面",
+   "sound": "amb_juqingfx/amb/tingchejian/tingchejian",
+   "successEvent": [
+    1132
+   ],
+   "system_type": 1,
+   "target_chase": 28,
+   "type": 3,
+   "va": 2,
+   "x0": -6109,
+   "x1": 5813,
+   "xchange": "56,1007",
+   "y0": -2984,
+   "y1": 2860,
+   "yazhi_available": 1,
+   "yazhi_factor": 1.22666666667,
+   "yushe": 1
+  }
+ },
+ "schema": "project7-menu-shared-v1",
+ "scope": "menu10 selector11 and menu12 WenziCity state initialization; not a general mission catalog",
+ "selector": {
+  "key": [
+   6,
+   0,
+   "10-6",
+   11
+  ],
+  "row": {
+   "chapter": 6,
+   "route": "10-6",
+   "section": {
+    "0": [
+     320
+    ],
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": []
+   },
+   "specialStage": 11,
+   "status": 0
+  },
+  "section_policy": "first-unfinished-in-original-section-order",
+  "sections_nonempty": [
+   [
+    320
+   ]
+  ]
+ },
+ "source": {
+  "chapter_mission_data": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+  "event_content": "analysis/decompiled/event_content.py",
+  "manager_event_graph": "analysis/project7/manager/assets/event_graph.tsv",
+  "mission": "analysis/original-py-640/com/data/cdata/mission.py",
+  "sha256": {
+   "chapter_mission_data": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962",
+   "event_content": "5d8568a9b34512088d7827a6029f21acca2e2b4922acd9d5ae6b304aebcde8e3",
+   "manager_event_graph": "7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba",
+   "mission": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  }
+ },
+ "wenzi": {
+  "area": 3,
+  "areaFree": [
+   3
+  ],
+  "cooperationHistory": {
+   "baselineExcluded": true,
+   "completedDay": 0,
+   "eventCompletions": 1
+  },
+  "event": 1129,
+  "receipt": {
+   "keys": [
+    "version",
+    "week",
+    "cycle"
+   ],
+   "version": 1
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "format": "project7-dream-public-v1",
+  "policy": "dream-three-patrol-offline-v1",
+  "original_marshal_sha256": {
+    "story_dream": "17734bb2f674650a791d8ea2e78b133acdb2b4f10a246ae3216b375eeabb353c",
+    "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7"
+  },
+  "asset_sha256": "b0c44413ecaad293b622933f8ece4b3199dfd6de7f63c64b4cc3655bea2ef8c1",
+  "story_rows": 7,
+  "sentinel_rows": 47,
+  "event_rows": 59,
+  "source_semantics": "Literal dream_id exact string tuple only; not a grant of patrol/event authority. Conditions retained as original strings for original evaluator."
+}

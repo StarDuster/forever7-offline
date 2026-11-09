@@ -1,0 +1,4 @@
+package android.content.res;
+import java.io.*;
+/** HOST ONLY fixed public assets. */
+public final class AssetManager {private final File root;public AssetManager(File root){this.root=root;}public InputStream open(String name)throws IOException{if(name.equals("project7_week_reset/catalog-v1.tsv"))return new FileInputStream(System.getProperty("p7.reset.catalog"));String overlay=System.getProperty("p7.reset.support.assets");if(overlay!=null&&(name.equals("resources.tsv")||name.equals("project7_history/catalog-v2.tsv")||name.equals("project7_history/furniture-v1.tsv")||name.equals("project7_draw_policy/catalog-v2.tsv")))return new FileInputStream(new File(overlay,name));if(!name.matches("[a-z_]+\\.tsv")&&!name.equals("new_player.bson")&&!name.equals("local_notice.txt")&&!name.matches("client_[a-z_]+\\.py"))throw new IOException("Not fixed public asset");return new FileInputStream(new File(root,name));}}

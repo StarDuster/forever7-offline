@@ -1,0 +1,226 @@
+{
+  "asset": "catalog-v1.json.gz",
+  "asset_sha256": "d7328eb0789098e2d420e6e3a85851ce133f555b7620b532001656ca8fba5483",
+  "asset_size": 29144,
+  "chapters_tsv_sha256": "7328239f99a6a0cdbdc989974118f3511d60fa6d6ef7dde432229cfb545fc774",
+  "counts": {
+    "area_rows": 182,
+    "chapter_keys": 619,
+    "classes": {
+      "existing-city-owner": 1,
+      "existing-dedicated-primitive": 9,
+      "shared-table-driven-chapter": 13,
+      "unknown-normal-city-candidate": 9
+    },
+    "current_scope_menus": [
+      25
+    ],
+    "economy": {
+      "existing_explicit_m_scenes": 25,
+      "g_rows": 151,
+      "m_rows": 173,
+      "missing_after": 0,
+      "missing_before": 148,
+      "scenes": 173
+    },
+    "effect_rows": 100,
+    "menu25_chapter_keys": 46,
+    "menu25_current_catalog_overlap": 39,
+    "menus": 32,
+    "menus_with_chapters": 19,
+    "menus_with_partial_branch_coverage": 16,
+    "menus_without_chapters": 13,
+    "non27_chapter_keys": 573,
+    "original_entry_supported": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      9,
+      11,
+      13,
+      32
+    ],
+    "scenes": 453,
+    "shared_c_rows": {
+      "a_rows": 172,
+      "area1_menus": [
+        4
+      ],
+      "area1_rows": 6,
+      "area1_scenes": [
+        22010,
+        22011,
+        22012
+      ],
+      "generic_c_rows": 472,
+      "rows_total": 473,
+      "selector11_descriptor_rows": 1
+    },
+    "unclaimed_by_route": {
+      "-1": 15,
+      "23-5": 7,
+      "24-1": 2,
+      "24-2": 1,
+      "24-3": 1,
+      "24-4": 1,
+      "24-5": 2
+    },
+    "unclaimed_chapter_keys": 29,
+    "unclaimed_routes": [
+      "-1",
+      "23-5",
+      "24-1",
+      "24-2",
+      "24-3",
+      "24-4",
+      "24-5"
+    ]
+  },
+  "economy_candidate": {
+    "action_cost_distribution": {
+      "2": 173
+    },
+    "admission_note": "LocalEconomyEngine.begin/finish guard missions.containsKey(scene); absent M skips the mission economy branch and is not a proven hang, but it bypasses mission cost/admission; candidate rows close the 148-scene gap and still require real Gateway finish/cost verification",
+    "area1_contract": {
+      "22010": {
+        "ch": 1,
+        "cond": [],
+        "cond_event": 5053,
+        "fatigue": 5,
+        "least_hero_num": 1,
+        "max_hero_num": 3,
+        "overFatigue": 25,
+        "successEvent": [],
+        "system_type": 1,
+        "va": 2
+      },
+      "22011": {
+        "ch": 1,
+        "cond": [
+          22010
+        ],
+        "cond_event": null,
+        "fatigue": 5,
+        "least_hero_num": 1,
+        "max_hero_num": 3,
+        "overFatigue": 25,
+        "successEvent": [],
+        "system_type": 1,
+        "va": 2
+      },
+      "22012": {
+        "ch": 1,
+        "cond": [
+          22011
+        ],
+        "cond_event": null,
+        "fatigue": 5,
+        "least_hero_num": 1,
+        "max_hero_num": 3,
+        "overFatigue": 25,
+        "successEvent": [
+          10006
+        ],
+        "system_type": 1,
+        "va": 2
+      }
+    },
+    "asset": "shared-c-economy.tsv",
+    "existing_explicit_m_scenes": 25,
+    "existing_m_rows_checked": 25,
+    "existing_m_rows_match_source": true,
+    "g_rows": 151,
+    "m_rows": 173,
+    "missing_after": 0,
+    "missing_before": 148,
+    "policy": "shared-13-uniform-original-mission-economy-v1",
+    "scenes": 173,
+    "sha256": "2de68a9d052ac04c9aaa61ff968afb6cae578ce279b395c5b7734d0f837f807c"
+  },
+  "entry_enablement": false,
+  "expanded_sha256": "bf9a13b4b22ebc3f941f6d5b5c2e60f9ab58867d591e71323bc3d67cbf72ad60",
+  "expanded_size": 348829,
+  "fixed_asset_pins": {
+    "const_py": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a",
+    "economy_base": "46ece8bf692c0446c95e8a56d3ab514ef7f90e65dde1f0c48e2c29177a56b19d",
+    "economy_extra": "22ecd8625063e4d75165c928e2b3443c37f1a64dfa6d6ac0268e6e23be2ea529",
+    "economy_review": "03c1645a4c6cd126be73edf813bfdca076a1e40e916ee2cc5b976a1918b65b02",
+    "entry_policy_dis": "d153de71b6612b17608a7489c4ddca490109c5b6a683e5a1adeca82b6442ea56",
+    "event_graph": "7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba",
+    "story_city_catalog": "af2328b97372c27fd392b5b399d03daa17fa73acdd35d2b1ad5b0a8f07218069",
+    "story_mission_catalog": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+    "weeks": "dbb0a5d64492e18243a332c93c4a855f5572661922bd26b870b48a96b8ffaa55"
+  },
+  "menus_tsv_sha256": "21c7853b8fd501634cab28cdde3304660007d55634c52719efad553b225f28c8",
+  "policy": "data candidate only; live selector/COC/source unchanged; no D8/APK/native",
+  "ready_ids": [],
+  "schema": "project7-mainline32-data-candidate-v1",
+  "scope_menus": [],
+  "shared_c_economy_sha256": "2de68a9d052ac04c9aaa61ff968afb6cae578ce279b395c5b7734d0f837f807c",
+  "shared_c_rows": {
+    "a_rows": 172,
+    "area1_menus": [
+      4
+    ],
+    "area1_note": "original LocalCityProgress.dis:223 consumeVictory rejects area<2 with fixed -2 action; verify real Gateway finish against the original 640 cost contract before import, do not remove the guard parser-only",
+    "area1_rows": 6,
+    "area1_scenes": [
+      22010,
+      22011,
+      22012
+    ],
+    "asset": "shared-c-rows.tsv",
+    "generic_c_rows": 472,
+    "key_order": [
+      "area",
+      "status",
+      "route",
+      "specialStage"
+    ],
+    "menus": [
+      4,
+      9,
+      17,
+      19,
+      20,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "note": "generic C/A rows only; selector11 key [6,0,10-6,11] stays a four-token descriptor and is not flattened",
+    "policy": "shared-13-normal-c-row-candidate-v1",
+    "rows_total": 473,
+    "selector11_descriptor_rows": 1,
+    "selector11_keys": [
+      [
+        6,
+        0,
+        "10-6",
+        11
+      ]
+    ],
+    "selector11_note": "menu10 spans route10-6; a single family is not a complete reachability graph",
+    "selector11_owner_menu": 10,
+    "selector11_route": "10-6",
+    "sha256": "a9f1f6e7bc2ad08591ebe1b86c9f47f930285added1c058242cd3dd5308fbcae"
+  },
+  "shared_c_rows_sha256": "a9f1f6e7bc2ad08591ebe1b86c9f47f930285added1c058242cd3dd5308fbcae",
+  "source_pins": {
+    "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+    "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+    "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+    "mainline_mutex": "703e64835f5235d6c2d79fd5b7b1513b44f99eebbfcb0a2c1582efee4f9bd350",
+    "mainline_score_info": "dbab43659cd8a4c2983bc3ae46b340465b51b7b227c472523e4ac7d89a79ccff",
+    "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+    "story_route": "53f3161471d82c9abe562c41982b51f5d01a1651400d3c6fd58433b2629614b1",
+    "story_target": "db10e54c07f8f446b10cd5a9c1e357849fe065f0f6a5c306c689547171d9db0d"
+  }
+}

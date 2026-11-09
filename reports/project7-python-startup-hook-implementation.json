@@ -1,0 +1,22 @@
+{
+  "format": "project7-python-startup-hook-implementation-v1",
+  "status": "finite_host_and_script_container_roundtrip_passed_not_native_accepted",
+  "host_test_count": 11,
+  "host_tests": "passed",
+  "host_command": ".venv/bin/python -m unittest discover -s tests -p test_project7_startup_hook.py -v",
+  "sources_sha256": {
+    "runtime/project7_startup_hook.py": "517abb285e56bd3cf780a4a2ce81934e9329f537b9c70e64fad6e6359ffd86ed",
+    "runtime/offline_tutorials.py": "135d3fffa1fba42ddad416433ffc818c084da25042acfa34c19e4fefcca3424e",
+    "tools/project7_script_hook.py": "5dd721939bb43495f9f00195b24a92c4ae39d97f59d2ccc0b2006f7fcda61c71",
+    "tests/test_project7_startup_hook.py": "6e1d2d8b58610e3e6e6f46b3fa6ece2431bf962c1c778b7498b0f4f55d8c1b06"
+  },
+  "packaging_report": "reports/project7-python-startup-overlay-verification.json",
+  "original_game_opcodes_executed": false,
+  "device_emulator_apk_d8": false,
+  "builder_wired": false,
+  "repair_host_stop_bridge_implemented": false,
+  "native_reader_opaque_checksums_verified": false,
+  "tutorial_policy": "isolated existing source; fixed nonsecret logger; Member cache and real ClientAvatar raw function guards",
+  "resource_policy": "original verify/activate/query/clean_info retained; INDEX640; frozen metadata; terminal repair failure",
+  "login_policy": "replace existing notify_setting scheduler only; one700ms per activation; stale identity/visible/mask/state/attempt guards"
+}

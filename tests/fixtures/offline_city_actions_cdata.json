@@ -1,0 +1,5277 @@
+{
+  "source": "Restricted static original cdata literals, no game code executed",
+  "sha256": {
+    "city_building": "cfc53fee7a2530726eb1f264326a19956aff88277bc627771f23e5443f25ba5b",
+    "city_development": "5079ec3b4b3b6d1cd1cb1c8f90a070698ae6c6828e76487cf7bbf913fef7d7fe",
+    "city_upgrade": "2871ec60f7c2adc642e0274eb7f4b5f00e5ba3ae3f8f91e11096f034d0904550",
+    "city_patrol": "512a300b2fa16c366094be180dbf44907f652ad0e7536d1cc1ae357bbf3d84bb",
+    "hero": "5fd8f55649e12030a76ec34d50fcf10b414fc07cb8055437177be8ecf29f771e"
+  },
+  "tables": {
+    "building": {
+      "$f7type": "dict",
+      "items": [
+        [
+          1,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 1,
+            "research_val": 5,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "每日行动力回复。",
+            "desc": "每日行动力回复。",
+            "research_require": 0,
+            "name": "中央庭基地",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "每日行动力回复。",
+            "force_val": 5,
+            "init": 1,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 5,
+            "type": 4
+          }
+        ],
+        [
+          2,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "",
+            "desc": "对异界作战工程厅，基础的#I4a.pngI#提升设施。",
+            "research_require": 0,
+            "name": "工程厅",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 5,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 1
+          }
+        ],
+        [
+          3,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  2,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            "cr": 14,
+            "tips_desc": "该区域所有增加#I4a.pngI#建筑额外#I4a.pngI#+1。",
+            "desc": "该区域所有增加#I4a.pngI#建筑额外#I4a.pngI#+1。",
+            "research_require": 0,
+            "name": "区立工程大厦",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "该区域所有增加#I4a.pngI#建筑额外#I4a.pngI#+1。",
+            "force_val": 5,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 1
+          }
+        ],
+        [
+          4,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 14,
+            "tips_desc": "",
+            "desc": "高级的#I4a.pngI#提升设施。",
+            "research_require": 35,
+            "name": "大型工程厅",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 10,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 1
+          }
+        ],
+        [
+          5,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "该区域产出#I4a.pngI#额外增加50%。",
+            "desc": "该区域产出#I4a.pngI#额外增加50%。",
+            "research_require": 60,
+            "name": "市立工程大厦",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "该区域产出#I4a.pngI#额外增加50%。",
+            "force_val": 15,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 1
+          }
+        ],
+        [
+          6,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "每拥有一个神器使，#I4a.pngI#+1。最大增加30点。",
+            "desc": "每拥有一个神器使，#I4a.pngI#+1；最大增加30点。",
+            "research_require": 30,
+            "name": "黑门监测站",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "每拥有一个神器使，#I4a.pngI#+1；最大增加30点。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 1
+          }
+        ],
+        [
+          7,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 5,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "",
+            "desc": "城市发展研究所，基础的#I5a.pngI#提升设施。",
+            "research_require": 0,
+            "name": "研究所",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          8,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 5,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  9,
+                  4
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            "cr": 14,
+            "tips_desc": "该区域所有增加#I5a.pngI#建筑额外#I5a.pngI#+1。",
+            "desc": "该区域所有增加#I5a.pngI#建筑额外#I5a.pngI#+1。",
+            "research_require": 0,
+            "name": "区立研究中心",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "该区域所有增加#I5a.pngI#建筑额外#I5a.pngI#+1。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          9,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 10,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 14,
+            "tips_desc": "",
+            "desc": "高级的#I5a.pngI#提升设施。",
+            "research_require": 35,
+            "name": "大型研究所",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          10,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 15,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "该区域产出#I5a.pngI#增加50%。",
+            "desc": "该区域产出#I5a.pngI#增加50%。",
+            "research_require": 60,
+            "name": "市立研究中心",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "该区域产出#I5a.pngI#增加50%。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          11,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "每拥有一个神器使，#I5a.pngI#+1。最大增加30点。",
+            "desc": "每拥有一个神器使，#I5a.pngI#+1；最大增加30点。",
+            "research_require": 30,
+            "name": "公共图书馆",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "每拥有一个神器使，#I5a.pngI#+1；最大增加30点。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          12,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "",
+            "desc": "中央庭直属情报局，基础的#I6a.pngI#提升设施。",
+            "research_require": 0,
+            "name": "情报局",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 5,
+            "type": 3
+          }
+        ],
+        [
+          13,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  12,
+                  4
+                ],
+                [
+                  14,
+                  4
+                ]
+              ]
+            },
+            "cr": 14,
+            "tips_desc": "该区域所有增加#I6a.pngI#建筑额外#I6a.pngI#+1。",
+            "desc": "该区域所有增加#I6a.pngI#建筑额外#I6a.pngI#+1。",
+            "research_require": 0,
+            "name": "区立情报局",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "该区域所有增加#I6a.pngI#建筑额外#I6a.pngI#+1。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 5,
+            "type": 3
+          }
+        ],
+        [
+          14,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 14,
+            "tips_desc": "",
+            "desc": "高级的#I6a.pngI#提升设施。",
+            "research_require": 35,
+            "name": "大型情报局",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 10,
+            "type": 3
+          }
+        ],
+        [
+          15,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "该区域产出#I6a.pngI#增加50%。",
+            "desc": "该区域产出#I6a.pngI#增加50%。",
+            "research_require": 60,
+            "name": "市立情报局",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "该区域产出#I6a.pngI#增加50%。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 15,
+            "type": 3
+          }
+        ],
+        [
+          16,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "每拥有一个神器使，#I6a.pngI#+1。最大增加30点。",
+            "desc": "每拥有一个神器使，#I6a.pngI#+1；最大增加30点。",
+            "research_require": 30,
+            "name": "情报中心",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "每拥有一个神器使，#I6a.pngI#+1；最大增加30点。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 3
+          }
+        ],
+        [
+          17,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "所有男性神器使的属性提升。",
+            "desc": "所有男性神器使的属性提升。",
+            "research_require": 30,
+            "name": "男道馆",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "所有男性神器使的属性提升。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 1,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          18,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 0,
+            "tips_desc": "所有女性神器使的属性提升。",
+            "desc": "所有女性神器使的属性提升。",
+            "research_require": 0,
+            "name": "女道馆",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "所有女性神器使的属性提升。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 1,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          19,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "每场区域战斗中，自动复活第一次死亡的神器使。",
+            "desc": "每场区域战斗中，自动复活第一次死亡的神器使。",
+            "research_require": 80,
+            "name": "急救中心",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "每场区域战斗中，自动复活第一次死亡的神器使。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          20,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "下一次建设的#I5a.pngI#要求降低25点，建设后销毁。",
+            "desc": "下一次建设的#I5a.pngI#要求降低25点，建设后销毁。",
+            "research_require": 0,
+            "name": "地下研究所",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "下一次建设的#I5a.pngI#要求降低25点，建设后销毁。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 2
+          }
+        ],
+        [
+          21,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 0,
+            "tips_desc": "在本区域巡查时，消耗的行动力仅为1点。",
+            "desc": "在本区域巡查时，消耗的行动力仅为1点。",
+            "research_require": 0,
+            "name": "地铁站",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "在本区域巡查时，消耗的行动力仅为1点。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 1,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          22,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "在本区域巡查时，疲劳值将自动恢复，巡查后销毁。",
+            "desc": "在本区域巡查时，疲劳值将自动恢复，巡查后销毁。",
+            "research_require": 30,
+            "name": "烟花祭",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "在本区域巡查时，疲劳值将自动恢复，巡查后销毁。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          23,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "在本区域巡查时，男性神器使的好感度额外提升1。",
+            "desc": "在本区域巡查时，男性神器使的好感度额外提升1。",
+            "research_require": 30,
+            "name": "歌舞伎町",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "在本区域巡查时，男性神器使的好感度额外提升1。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          24,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "在本区域巡查时，女性神器使的好感度额外提升1。",
+            "desc": "在本区域巡查时，女性神器使的好感度额外提升1。",
+            "research_require": 30,
+            "name": "购物中心",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "在本区域巡查时，女性神器使的好感度额外提升1。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          25,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 5,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "通往奇迹的方舟。",
+            "desc": "通往奇迹的方舟。",
+            "research_require": 50,
+            "name": "方舟",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "通往奇迹的方舟。",
+            "force_val": 5,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          26,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "巡查时，初始#I1a.pngI#增加3（作用全城）。",
+            "desc": "巡查时，初始#I1a.pngI#增加3（作用全城）。",
+            "research_require": 15,
+            "name": "地铁枢纽",
+            "mc": 0,
+            "ml": 4,
+            "build_desc": "巡查时，初始#I1a.pngI#增加3（作用全城）。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          27,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "开发时，初始#I3a.pngI#增加3（作用全城）。",
+            "desc": "开发时，初始#I3a.pngI#增加3（作用全城）。",
+            "research_require": 15,
+            "name": "规划所",
+            "mc": 0,
+            "ml": 4,
+            "build_desc": "开发时，初始#I3a.pngI#增加3（作用全城）。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          28,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 10,
+            "tips_desc": "建设时，初始#I2a.pngI#增加3（作用全城）。",
+            "desc": "建设时，初始#I2a.pngI#增加3（作用全城）。",
+            "research_require": 15,
+            "name": "起重机",
+            "mc": 0,
+            "ml": 4,
+            "build_desc": "建设时，初始#I2a.pngI#增加3（作用全城）。",
+            "force_val": 0,
+            "init": 1,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          29,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 20,
+            "tips_desc": "能够潜入深海的特殊潜艇，暂时不知道有什么用",
+            "desc": "能够潜入深海的特殊潜艇，暂时不知道有什么用",
+            "research_require": 30,
+            "name": "深海潜艇",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "能够潜入深海的特殊潜艇，暂时不知道有什么用",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          30,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 20,
+            "tips_desc": "似乎可以用来囚禁大型魔兽，暂时不知道有什么用",
+            "desc": "似乎可以用来囚禁大型魔兽，暂时不知道有什么用",
+            "research_require": 30,
+            "name": "强电流拘束装置",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "似乎可以用来囚禁大型魔兽，暂时不知道有什么用",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          31,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 20,
+            "tips_desc": "制冷力max！暂时不知道有什么用",
+            "desc": "制冷力max！暂时不知道有什么用",
+            "research_require": 30,
+            "name": "急速风箱",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "制冷力max！暂时不知道有什么用",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          32,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 22,
+            "tips_desc": "在交界都市创建通往异次元的通道",
+            "desc": "在交界都市创建通往异次元的通道",
+            "research_require": 30,
+            "name": "时光亭",
+            "mc": 0,
+            "ml": 0,
+            "build_desc": "在交界都市创建通往异次元的通道",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          33,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {},
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "培育特殊药草的园子，没有防护就进入的话非常危险。",
+            "desc": "培育特殊药草的园子，没有防护就进入的话非常危险。",
+            "research_require": 80,
+            "name": "药草园",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "培育特殊药草的园子，没有防护就进入的话非常危险。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 1,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          34,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 0,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 0,
+            "area_building_require": {},
+            "cr": 0,
+            "tips_desc": "蕴藏着神秘力量的上古五行大阵",
+            "desc": "蕴藏着神秘力量的上古五行大阵，修建在东方古街",
+            "research_require": 0,
+            "name": "五行大阵·火",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "蕴藏着神秘力量的上古五行大阵",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          35,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "蕴藏着神秘力量的上古五行大阵",
+            "desc": "蕴藏着神秘力量的上古五行大阵，只能在高校学园修建",
+            "research_require": 0,
+            "name": "五行大阵·金",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "蕴藏着神秘力量的上古五行大阵",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          36,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "蕴藏着神秘力量的上古五行大阵",
+            "desc": "蕴藏着神秘力量的上古五行大阵，只能在海湾侧城修建",
+            "research_require": 80,
+            "name": "五行大阵·木",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "蕴藏着神秘力量的上古五行大阵",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          37,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "蕴藏着神秘力量的上古五行大阵",
+            "desc": "蕴藏着神秘力量的上古五行大阵，只能在研究所修建",
+            "research_require": 30,
+            "name": "五行大阵·水",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "蕴藏着神秘力量的上古五行大阵",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          38,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "蕴藏着神秘力量的上古五行大阵",
+            "desc": "蕴藏着神秘力量的上古五行大阵，只能在旧城区修建",
+            "research_require": 150,
+            "name": "五行大阵·土",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "蕴藏着神秘力量的上古五行大阵",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          39,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 5,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "通往奇迹的方舟。",
+            "desc": "通往奇迹的方舟。",
+            "research_require": 80,
+            "name": "方舟",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "通往奇迹的方舟。",
+            "force_val": 5,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          40,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 10,
+            "name": "方舟屏障·一",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          41,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 20,
+            "name": "方舟屏障·二",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          42,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 40,
+            "name": "方舟屏障·三",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          43,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  1
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 60,
+            "name": "方舟屏障·四",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          44,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  1
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 90,
+            "name": "方舟屏障·五",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          45,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  1
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 100,
+            "name": "方舟屏障·六",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          46,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 120,
+            "name": "方舟屏障·七",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ],
+        [
+          47,
+          {
+            "pre": {
+              "$f7type": "tuple",
+              "items": []
+            },
+            "ac": 2,
+            "clientBan": 0,
+            "research_val": 0,
+            "al": {
+              "$f7type": "dict",
+              "items": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  0
+                ],
+                [
+                  4,
+                  0
+                ],
+                [
+                  5,
+                  0
+                ],
+                [
+                  6,
+                  0
+                ],
+                [
+                  7,
+                  0
+                ],
+                [
+                  8,
+                  0
+                ]
+              ]
+            },
+            "fc": 5,
+            "area_building_require": {},
+            "cr": 30,
+            "tips_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "desc": "特殊剧情使用",
+            "research_require": 0,
+            "name": "方舟屏障·零",
+            "mc": 0,
+            "ml": 1,
+            "build_desc": "内含安托涅瓦方舟碎片的特殊建筑，据说能够压抑黑核的力量。",
+            "force_val": 0,
+            "init": 0,
+            "can_remove": 0,
+            "ban": 0,
+            "dev_val": 0,
+            "type": 4
+          }
+        ]
+      ]
+    },
+    "development": {
+      "$f7type": "dict",
+      "items": [
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              3
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              7
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              3
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              1
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              8
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              6
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              8
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              8
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              8
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              4
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              1
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              2
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              6
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              4
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              1
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              7
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              5
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              5
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              8
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              2
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              4
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              7
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              3
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              1
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              6
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              4
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              3
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              5
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              2
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              6
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              2
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              7
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              3
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              1
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              1
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              7
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              4
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              2
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              6
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              6
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              2
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              1
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              6
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              5
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              4
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              7
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              5
+            ]
+          },
+          {
+            "name": "旧城区",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              3
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              7
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              8
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              3
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              2
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              6
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              5
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              5
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              7
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              3
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              6
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 3
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              2
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              2
+            ]
+          },
+          {
+            "name": "海底研究所",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              1
+            ]
+          },
+          {
+            "name": "海湾侧城",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              1
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              8
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              8
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              8
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 5
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              3
+            ]
+          },
+          {
+            "name": "中央城区",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              7
+            ]
+          },
+          {
+            "name": "中央庭",
+            "level_require": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              5
+            ]
+          },
+          {
+            "name": "大漩涡",
+            "level_require": 2
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              4
+            ]
+          },
+          {
+            "name": "东方古街",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              4
+            ]
+          },
+          {
+            "name": "高校学园",
+            "level_require": 1
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              4
+            ]
+          },
+          {
+            "name": "港湾区",
+            "level_require": 1
+          }
+        ]
+      ]
+    },
+    "upgrade": {
+      "$f7type": "dict",
+      "items": [
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "旧城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "中央庭",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "海湾侧城",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "高校学园",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "港湾区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "海底研究所",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "中央庭",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "东方古街",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "港湾区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "中央城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "大漩涡",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "中央庭",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "旧城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "高校学园",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "中央城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "海湾侧城",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "海底研究所",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "东方古街",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "东方古街",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "高校学园",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "港湾区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "大漩涡",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "高校学园",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "大漩涡",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "海底研究所",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "旧城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "中央庭",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "东方古街",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "港湾区",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "中央城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "海湾侧城",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "中央庭",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "高校学园",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "中央城区",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "海湾侧城",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "海底研究所",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "旧城区",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "东方古街",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "港湾区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "大漩涡",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              1
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 50,
+            "name": "海湾侧城",
+            "fatigue": 0,
+            "action_consume": 0,
+            "lead_require": 0
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              4
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 200,
+            "name": "旧城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 22
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              3
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 150,
+            "name": "中央城区",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 14
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              5
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 250,
+            "name": "大漩涡",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 30
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              2
+            ]
+          },
+          {
+            "money_consume": 0,
+            "money_output": 100,
+            "name": "海底研究所",
+            "fatigue": 5,
+            "action_consume": 2,
+            "lead_require": 10
+          }
+        ]
+      ]
+    },
+    "patrol": {
+      "$f7type": "dict",
+      "items": [
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "旧城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央庭",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海湾侧城",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "高校学园",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "港湾区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海底研究所",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央庭",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "东方古街",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "港湾区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "大漩涡",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央庭",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "旧城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "高校学园",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海湾侧城",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海底研究所",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "东方古街",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "东方古街",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "高校学园",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "港湾区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "大漩涡",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "高校学园",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "大漩涡",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海底研究所",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "旧城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央庭",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "东方古街",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "港湾区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海湾侧城",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              1,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央庭",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              2,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "高校学园",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海湾侧城",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海底研究所",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "旧城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              3,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "东方古街",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              8,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "港湾区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "大漩涡",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              6,
+              1
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海湾侧城",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              7,
+              4
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "旧城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              4,
+              3
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "中央城区",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              9,
+              5
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "大漩涡",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ],
+        [
+          {
+            "$f7type": "tuple",
+            "items": [
+              5,
+              2
+            ]
+          },
+          {
+            "ir8": 30,
+            "ir9": 36,
+            "ir": 42,
+            "name": "海底研究所",
+            "ir1": 10,
+            "ir10": 42,
+            "action_consume": 2,
+            "ir4": 14,
+            "ir5": 14,
+            "ir6": 22,
+            "ir7": 22,
+            "fatigue": 5,
+            "ir3": 10,
+            "ir2": 10,
+            "favor_reward": 4
+          }
+        ]
+      ]
+    },
+    "hero": {
+      "$f7type": "dict",
+      "items": [
+        [
+          7,
+          {
+            "leadershipValue": 4,
+            "constructValue": 4,
+            "insightValue": 7,
+            "gender": 2
+          }
+        ],
+        [
+          8,
+          {
+            "leadershipValue": 4,
+            "constructValue": 7,
+            "insightValue": 4,
+            "gender": 1
+          }
+        ],
+        [
+          24,
+          {
+            "constructValue": 6,
+            "insightValue": 7,
+            "gender": 2,
+            "leadershipValue": 6
+          }
+        ]
+      ]
+    }
+  },
+  "gender_values": {
+    "MALE": 1,
+    "FEMALE": 2,
+    "NIETHER": 3,
+    "BOTH": 4
+  },
+  "const_sha256": "7183a7977bc2686fffd6fa28fd0ed6b7ef99e186bbd0e67c51a4bc186e5a7f52"
+}

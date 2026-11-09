@@ -1,0 +1,20 @@
+{
+  "format": "project7-coc-wrapper-entry-v1",
+  "source": {
+    "bytes": 1173868,
+    "sha256": "11303a98f9a4420d4ceecc6e19ed6a453fdf1c873d16b83e55774ff385261b0d"
+  },
+  "target": {
+    "bytes": 1173960,
+    "sha256": "541fed533d5e8ae0e3828405138bfb811fd2e95e6572d98122220b9a94940d29"
+  },
+  "patch": {
+    "bytes": 1003296,
+    "sha256": "691f246b9c0b500723b74a13206c10feddd994ed162d5dce0c49af48c7fff3d8"
+  },
+  "changes": [
+    "q7StoryCityCocBegin/q7StoryCityCocFinish unwrap exact FailureSafeProfileProvider before LocalProfileStore check",
+    "fallback keeps original wrapper provider for updateEconomy"
+  ],
+  "no_fake_success": true
+}

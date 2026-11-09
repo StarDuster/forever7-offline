@@ -1,0 +1,344 @@
+{
+ "consumers": {
+  "admission": "LocalCityProgress/StoryCityPolicy.partyAllowed -> StoryMissionBridge.partyAllowed",
+  "effects": "original event effect owner: areaFight[6] then areaSpecialStage{6:11}; StoryMenuShared.cityEffect1140 is the packaged mirror",
+  "entry": "StoryCityPolicy.supports -> StoryMenuEntryData.ready + original LocalWeekEngine canEnter/entry477 (LocalStoryEntryPolicy.SUPPORTED unchanged)",
+  "query": "LocalCityProgress.stages -> StoryCityPolicy.stages -> StoryMissionBridge.stages (selector11 descriptor)",
+  "settlement": "LocalEconomyEngine finish -> LocalCityProgress.consumeVictory",
+  "success": "original cityOutcome successEvent 1132 after the real battle320 trace"
+ },
+ "entry": {
+  "allowlist": "LocalStoryEntryPolicy.SUPPORTED",
+  "open": true,
+  "preconditions": [
+   "original entry event 477 with route10-6 and requires 28/29/30 remains owned by LocalWeekEngine.canEnter and week/cycle reset",
+   "actual original 1140 startEvent completion writes areaFight[6] and areaSpecialStage{6:11} through the event-effect owner",
+   "actual Gateway query/admission/loss/retry/win/replay for selector11 mission320 with va2, fatigue5 and overFatigue25 semantics",
+   "actual original 1132 consumer offer -> dialog/UI -> areaFree[6] and the real 1133 -> 1134/1135/1136 successor trace",
+   "menu12 stays disabled; LocalStoryEntryPolicy.SUPPORTED stays unchanged"
+  ],
+  "reason": "menu10 scoped entry ready; original Week gate still requires entry477/endings28-30/week-cycle and menu12 remains disabled"
+ },
+ "gaps": {
+  "entry": "menu10 uses the scoped StoryMenuEntryData/StoryCityPolicy readiness predicate; LocalStoryEntryPolicy.SUPPORTED is unchanged and menu12 stays disabled",
+  "manager_catalog": "LocalEventCatalog/event_graph.tsv express areaFight but not areaSpecialStage",
+  "next_stages": "mission320 nextstagenums 3101/4101 have no P7 consumer",
+  "post_commit_hook": "menu10 uses Source <StoryCityPolicy/StoryMenu10Policy> host wiring; no non-COC Store hook writes areaFight/areaSpecialStage into a city-effects owner"
+ },
+ "inventory": {
+  "added_here": [
+   "chapter_selector (6,0,10-6,11)",
+   "mission320 full row",
+   "event1129 route source row",
+   "event1132 success consumer row",
+   "event1140 selector occurrence row",
+   "event1141 terminal gate row",
+   "economy.tsv 320 stage cost row",
+   "city_data area6 config row"
+  ],
+  "manager_event_graph_1140_areaFight": [
+   6
+  ],
+  "manager_event_graph_1140_areaSpecialStage": null,
+  "not_added": [
+   "mission3101/4101 successor rows have no P7 consumer",
+   "no plot/dialog text is authored here"
+  ],
+  "p7_city_catalog_area6_chapters": [
+   "27-1"
+  ],
+  "p7_city_catalog_effect1132": false,
+  "p7_city_catalog_effect1140": false,
+  "p7_mission_catalog_area6_chapter_rows": 68,
+  "p7_mission_catalog_mission320": false
+ },
+ "menu": 10,
+ "rows": {
+  "chapter_selector": {
+   "key": [
+    6,
+    0,
+    "10-6",
+    11
+   ],
+   "row": {
+    "chapter": 6,
+    "route": "10-6",
+    "section": {
+     "0": [
+      320
+     ],
+     "1": [],
+     "2": [],
+     "3": [],
+     "4": [],
+     "5": [],
+     "6": [],
+     "7": [],
+     "8": [],
+     "9": []
+    },
+    "specialStage": 11,
+    "status": 0
+   },
+   "sections_nonempty": [
+    [
+     320
+    ]
+   ]
+  },
+  "city_area": {
+   "6": {
+    "area_require": {
+     "-1": [
+      5
+     ],
+     "23": [
+      4,
+      5
+     ],
+     "25": [
+      0
+     ],
+     "26": [
+      3,
+      4
+     ],
+     "27": [
+      10000
+     ],
+     "30-1": [
+      7
+     ],
+     "30-2": [
+      7
+     ],
+     "32": [
+      0
+     ],
+     "33": [
+      3
+     ],
+     "6": [
+      5
+     ]
+    },
+    "id": 6,
+    "name": "海湾侧城",
+    "show_build": 1,
+    "show_patrol": 1,
+    "show_upgrade": 1
+   }
+  },
+  "economy": {
+   "tsv": "M\t320\t2\t5\t25\t5\t1\t3\t1"
+  },
+  "events": {
+   "1129": {
+    "areaFree": [
+     3
+    ],
+    "city_attention": 3,
+    "completeConds": {
+     "dialog": [
+      1129
+     ]
+    },
+    "completeEnterMainPanel": false,
+    "dialog": 1129,
+    "emergencyEvent": false,
+    "enterStoryRoute": "10-6",
+    "eventType": 1,
+    "isAutoTriggerEvent": false,
+    "isLeaveEmergencyEvent": false,
+    "name": "合作达成·第三步",
+    "notepadId": [
+     10132
+    ],
+    "priority": 5,
+    "release": true,
+    "repeatable": false
+   },
+   "1132": {
+    "areaFree": [
+     6
+    ],
+    "completeConds": {
+     "dialog": [
+      1132
+     ]
+    },
+    "completeEnterMainPanel": false,
+    "dialog": 1132,
+    "emergencyEvent": false,
+    "eventType": 1,
+    "events": [
+     1133
+    ],
+    "isAutoTriggerEvent": false,
+    "isLeaveEmergencyEvent": false,
+    "name": "幻境尽头",
+    "priority": 5,
+    "release": true,
+    "repeatable": false,
+    "rewards": [
+     3160
+    ],
+    "ui": [
+     "settlement_fullscreen",
+     "notify_area_event",
+     "6"
+    ]
+   },
+   "1140": {
+    "areaFight": [
+     6
+    ],
+    "areaSpecialStage": {
+     "6": 11
+    },
+    "completeConds": {},
+    "completeEnterMainPanel": true,
+    "emergencyEvent": false,
+    "eventType": 1,
+    "isAutoTriggerEvent": false,
+    "isLeaveEmergencyEvent": false,
+    "name": "阿岚线·接受社群消息",
+    "priority": 5,
+    "release": true,
+    "repeatable": false
+   },
+   "1141": {
+    "autoStart": 1,
+    "completeConds": {},
+    "completeEnterMainPanel": false,
+    "emergencyEvent": false,
+    "eventType": 1,
+    "isAutoTriggerEvent": true,
+    "isLeaveEmergencyEvent": false,
+    "name": "阿岚线·社群消息发送",
+    "priority": 1,
+    "release": true,
+    "repeatable": false,
+    "socialMsgId": [
+     75
+    ]
+   }
+  },
+  "mission_sha256": {
+   "320": "51e49a9d21961570ad1fc0d9bba231d825f2b007b29eee56c475e5f312ed905a"
+  },
+  "missions": {
+   "320": {
+    "angle": 315,
+    "auto_hide": [
+     "g58_ck01_db04_01_397"
+    ],
+    "battle_stage_num": 1,
+    "boss": 510301,
+    "ch": 6,
+    "dataSource": "alanhaiwan",
+    "desc": "地下车库的深处，发现幻境的源头",
+    "end_position": [
+     560,
+     0,
+     248
+    ],
+    "fatigue": 5,
+    "force_recommend": 5,
+    "hero_appear_mode": 1,
+    "id": 320,
+    "ignoreAOI": 1,
+    "inherit_mission": 5105,
+    "init_events": [
+     837,
+     869
+    ],
+    "job": [
+     2,
+     3,
+     6
+    ],
+    "least_hero_num": 1,
+    "limit_time": 1800,
+    "mapName": "tingchechang2",
+    "map_path": [
+     "scene/pve/g58_ck_01_pve.scn"
+    ],
+    "max_hero_num": 3,
+    "monsters": [
+     510302,
+     99803,
+     99810,
+     99814,
+     99801
+    ],
+    "music": "music/mus_boss/boss3",
+    "name": "寻找幻境源头",
+    "nextstagenums": [
+     3101,
+     4101
+    ],
+    "odds": [
+     [
+      50,
+      9001,
+      1006
+     ],
+     [
+      20,
+      9002,
+      1005
+     ]
+    ],
+    "overFatigue": 25,
+    "pre_load": [
+     30010
+    ],
+    "prize": 1,
+    "release": 1,
+    "require": "击败制造幻境的鬼面",
+    "sound": "amb_juqingfx/amb/tingchejian/tingchejian",
+    "successEvent": [
+     1132
+    ],
+    "system_type": 1,
+    "target_chase": 28,
+    "type": 3,
+    "va": 2,
+    "x0": -6109,
+    "x1": 5813,
+    "xchange": "56,1007",
+    "y0": -2984,
+    "y1": 2860,
+    "yazhi_available": 1,
+    "yazhi_factor": 1.22666666667,
+    "yushe": 1
+   }
+  },
+  "stage": {
+   "area": 6,
+   "mission": 320,
+   "route": "10-6",
+   "selector": 11
+  }
+ },
+ "schema": "project7-menu10-entry-v1",
+ "scope": "menu10 non-27 data closure and closed entry capability; menu12 excluded",
+ "source": {
+  "paths": {
+   "chapter_mission_data": "analysis/original-py-640/com/data/cdata/chapter_mission_data.py",
+   "city_data": "analysis/original-py-640/com/data/cdata/city_data.py",
+   "economy_tsv": "analysis/project7/manager/assets/economy.tsv",
+   "event_content": "analysis/decompiled/event_content.py",
+   "mission": "analysis/original-py-640/com/data/cdata/mission.py"
+  },
+  "sha256": {
+   "chapter_mission_data": "a965dabf273a907dec776c9740b3e065d0d55ccd7c88a1108a2fa76d4dcda962",
+   "city_data": "b9dbd298f4814d6969ffe712ded05c824ed32305b5edcc970dfa7aa7428fc3a8",
+   "economy_tsv": "46ece8bf692c0446c95e8a56d3ab514ef7f90e65dde1f0c48e2c29177a56b19d",
+   "event_content": "5d8568a9b34512088d7827a6029f21acca2e2b4922acd9d5ae6b304aebcde8e3",
+   "mission": "587150a74e3beb356e29695598f3b84ac6765d1665110e220441b77553765429"
+  }
+ }
+}

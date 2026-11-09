@@ -1,0 +1,57 @@
+{
+ "schema": "deepseek-regression-pattern-ui-v1",
+ "baseline": "main_p7 + legacy separated",
+ "confirmed": 0,
+ "protected": 5,
+ "insufficient": 2,
+ "source_hashes": {
+  "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java": "fe101630b2be89050ceb9871086ba0a6b70958f48bb5975a50a12277afd79963",
+  "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "861a0d364d4cce6ec04d0f25ea34765a9f8d6a5a06da448635805a44697d19cf",
+  "runtime/project7_startup_hook.py": "65f7bfa3d9dce9f687ae5bb67a72b0194c21753705ba3004a842752d301477b9",
+  "runtime/android_story_city/src/com/project7/localmanager/StoryCityPolicy.java": "b96707933369e0e62155a72261c8f8826b54f0ef8003188ea00b7b6ab469d254",
+  "runtime/android_story_city/verify.py": "8c72f9c31c91745d636b39dc6e5e346fb023c013fe35441a5c555d9aeafaf512"
+ },
+ "findings": [
+  {
+   "id": "UI-1",
+   "pattern": "stale reply / lock generation",
+   "classification": "protected",
+   "anchors": [
+    "runtime/project7_wish_ui.py:149-213",
+    "runtime/offline_transport.py:6-92",
+    "runtime/local_gateway.py:1199-1336"
+   ]
+  },
+  {
+   "id": "UI-2",
+   "pattern": "early/late Avatar install",
+   "classification": "protected",
+   "anchors": [
+    "runtime/project7_wish_ui.py:561-608",
+    "runtime/project7_startup_hook.py:286-343"
+   ]
+  },
+  {
+   "id": "UI-3",
+   "pattern": "same-connection old attempt",
+   "classification": "insufficient",
+   "note": "no attempt token; do not synthesize"
+  },
+  {
+   "id": "UI-4",
+   "pattern": "second clean reinstall",
+   "classification": "insufficient",
+   "note": "production repatch gated off"
+  },
+  {
+   "id": "UI-5",
+   "pattern": "preview/animation reentry",
+   "classification": "protected",
+   "anchors": [
+    "runtime/project7_wish_ui.py:214-261"
+   ]
+  }
+ ],
+ "surface": "finite scanned UI/owner surface; not whole-library",
+ "main_vs_legacy": "project7_wish_ui/transport and Android Java are Main; offline_transport/local_gateway lines are legacy reference"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "policy": "voucher-one-stock-memory-v1",
+  "offline_policy": "consume one owned source voucher, no extra24 fee; not official hidden server proof",
+  "source_item_data_sha256": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+  "source_hero_file_sha256": "3acfd4335b3a8b0e7e32c051712c2e172c553c20155c8faf89503641238725a0",
+  "catalog_sha256": "61425f912e2bd5fc613aebc75ab43819b801e0b6a608afd37230bb7a37d4d5f1",
+  "heroes": 138,
+  "selectors": 17,
+  "named_vouchers": 4
+}

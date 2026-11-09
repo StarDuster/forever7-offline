@@ -1,0 +1,2006 @@
+{
+  "scope": "read-only static and deterministic data comparison, no production change or native execution",
+  "pools": [
+    {
+      "pool": 16,
+      "epoch_utc": 1531897200,
+      "target_hero": 71,
+      "extra_common_id": 9208,
+      "common": {
+        "design_treasure": 91,
+        "id": 9208,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 91,
+      "treasure_id": 1279,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          394
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        9168
+      ],
+      "memory_common_ids": [
+        9172,
+        9173,
+        9174
+      ],
+      "rule_index": 106,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 17,
+      "epoch_utc": 1533106800,
+      "target_hero": 70,
+      "extra_common_id": 9209,
+      "common": {
+        "design_treasure": 92,
+        "id": 9209,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 92,
+      "treasure_id": 1281,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          385
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        9170
+      ],
+      "memory_common_ids": [
+        9177,
+        9178,
+        9179
+      ],
+      "rule_index": 108,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 32,
+      "epoch_utc": 1536735900,
+      "target_hero": 78,
+      "extra_common_id": 40278,
+      "common": {
+        "design_treasure": 107,
+        "id": 40278,
+        "tradeType": 3,
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 107,
+      "treasure_id": 1287,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          416
+        ],
+        "attr": [
+          {
+            "v": 107.0,
+            "n": "a35"
+          },
+          {
+            "v": 15.0,
+            "n": "f34"
+          },
+          {
+            "v": 6.0,
+            "n": "t8"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        40272
+      ],
+      "memory_common_ids": [
+        40267,
+        40268,
+        40269
+      ],
+      "rule_index": 125,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 37,
+      "epoch_utc": 1539154800,
+      "target_hero": 82,
+      "extra_common_id": 41127,
+      "common": {
+        "id": 41127,
+        "tradeType": 3,
+        "treasure": [
+          1288
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1288,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        41132
+      ],
+      "memory_common_ids": [
+        41129,
+        41130,
+        41131
+      ],
+      "rule_index": 131,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 47,
+      "epoch_utc": 1541574300,
+      "target_hero": 74,
+      "extra_common_id": 41353,
+      "common": {
+        "design_treasure": 126,
+        "id": 41353,
+        "tradeType": 3,
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 126,
+      "treasure_id": 1291,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          442
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t12"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        41347
+      ],
+      "memory_common_ids": [
+        41348,
+        41349,
+        41350
+      ],
+      "rule_index": 140,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 57,
+      "epoch_utc": 1543993200,
+      "target_hero": 86,
+      "extra_common_id": 42037,
+      "common": {
+        "id": 42037,
+        "tradeType": 3,
+        "treasure": [
+          1296
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1296,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        42031
+      ],
+      "memory_common_ids": [
+        42032,
+        42033,
+        42034
+      ],
+      "rule_index": 149,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 67,
+      "epoch_utc": 1546412400,
+      "target_hero": 90,
+      "extra_common_id": 42520,
+      "common": {
+        "design_treasure": 147,
+        "id": 42520,
+        "tradeType": 3,
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 147,
+      "treasure_id": 1303,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          486
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        42516
+      ],
+      "memory_common_ids": [
+        42513,
+        42514,
+        42515
+      ],
+      "rule_index": 167,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 88,
+      "epoch_utc": 1550646000,
+      "target_hero": 80,
+      "extra_common_id": 43237,
+      "common": {
+        "id": 43237,
+        "tradeType": 3,
+        "treasure": [
+          1304
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1304,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        43231
+      ],
+      "memory_common_ids": [
+        43232,
+        43233,
+        43234
+      ],
+      "rule_index": 196,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 101,
+      "epoch_utc": 1553065200,
+      "target_hero": 91,
+      "extra_common_id": 44170,
+      "common": {
+        "design_treasure": 172,
+        "id": 44170,
+        "tradeType": 3,
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 172,
+      "treasure_id": 1306,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          497
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        44159
+      ],
+      "memory_common_ids": [
+        44160,
+        44161,
+        44162
+      ],
+      "rule_index": 205,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 175,
+      "epoch_utc": 1568185200,
+      "target_hero": 61,
+      "extra_common_id": 5731,
+      "common": {
+        "design_treasure": 21,
+        "id": 5731,
+        "tradeType": 3,
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 21,
+      "treasure_id": 1228,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          180
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t12"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        5832
+      ],
+      "memory_common_ids": [
+        5828,
+        5829,
+        5830
+      ],
+      "rule_index": 303,
+      "rule_mentions_jiaozhi": false,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": false,
+      "rule_first_acquisition_first_only": true,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 187,
+      "epoch_utc": 1570604400,
+      "target_hero": 108,
+      "extra_common_id": 48159,
+      "common": {
+        "design_treasure": 251,
+        "id": 48159,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 251,
+      "treasure_id": 1324,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          641
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        48148
+      ],
+      "memory_common_ids": [
+        48149,
+        48150,
+        48151
+      ],
+      "rule_index": 316,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 203,
+      "epoch_utc": 1573023600,
+      "target_hero": 110,
+      "extra_common_id": 48628,
+      "common": {
+        "design_treasure": 263,
+        "id": 48628,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 263,
+      "treasure_id": 1326,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          650
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        48555
+      ],
+      "memory_common_ids": [
+        48556,
+        48557,
+        48558
+      ],
+      "rule_index": 330,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 210,
+      "epoch_utc": 1575442800,
+      "target_hero": 99,
+      "extra_common_id": 49525,
+      "common": {
+        "design_treasure": 271,
+        "id": 49525,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 271,
+      "treasure_id": 1314,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          599
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        49507
+      ],
+      "memory_common_ids": [
+        49508,
+        49509,
+        49510
+      ],
+      "rule_index": 338,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 222,
+      "epoch_utc": 1578467100,
+      "target_hero": 112,
+      "extra_common_id": 50385,
+      "common": {
+        "design_treasure": 282,
+        "id": 50385,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 282,
+      "treasure_id": 1330,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          666
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t13"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        50367
+      ],
+      "memory_common_ids": [
+        50368,
+        50369,
+        50370
+      ],
+      "rule_index": 363,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 241,
+      "epoch_utc": 1580886300,
+      "target_hero": 114,
+      "extra_common_id": 50581,
+      "common": {
+        "design_treasure": 293,
+        "id": 50581,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 293,
+      "treasure_id": 1336,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          676
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t12"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        50563
+      ],
+      "memory_common_ids": [
+        50564,
+        50565,
+        50566
+      ],
+      "rule_index": 372,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 253,
+      "epoch_utc": 1583910000,
+      "target_hero": 116,
+      "extra_common_id": 51307,
+      "common": {
+        "design_treasure": 303,
+        "id": 51307,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 303,
+      "treasure_id": 1337,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          693
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t10"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1582834528.576493,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        51289
+      ],
+      "memory_common_ids": [
+        51290,
+        51291,
+        51292
+      ],
+      "rule_index": 399,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 260,
+      "epoch_utc": 1586329500,
+      "target_hero": 119,
+      "extra_common_id": 52712,
+      "common": {
+        "design_treasure": 308,
+        "id": 52712,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 308,
+      "treasure_id": 1339,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          706
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t9"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1585182139.171724,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        52694
+      ],
+      "memory_common_ids": [
+        52695,
+        52696,
+        52697
+      ],
+      "rule_index": 409,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 270,
+      "epoch_utc": 1588748700,
+      "target_hero": 121,
+      "extra_common_id": 53429,
+      "common": {
+        "design_treasure": 319,
+        "id": 53429,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 319,
+      "treasure_id": 1342,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          706
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t7"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1586773403.53125,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        53411
+      ],
+      "memory_common_ids": [
+        53412,
+        53413,
+        53414
+      ],
+      "rule_index": 419,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 282,
+      "epoch_utc": 960015600,
+      "target_hero": 122,
+      "extra_common_id": 54378,
+      "common": {
+        "id": 54378,
+        "tradeType": 3,
+        "treasure": [
+          1345
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1345,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        54284
+      ],
+      "memory_common_ids": [
+        54272,
+        54273,
+        54274
+      ],
+      "rule_index": 437,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 283,
+      "epoch_utc": 960015600,
+      "target_hero": 122,
+      "extra_common_id": 54378,
+      "common": {
+        "id": 54378,
+        "tradeType": 3,
+        "treasure": [
+          1345
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1345,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        54284
+      ],
+      "memory_common_ids": [
+        54272,
+        54273,
+        54274
+      ],
+      "rule_index": 438,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 12,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 288,
+      "epoch_utc": 1591167600,
+      "target_hero": 122,
+      "extra_common_id": 54378,
+      "common": {
+        "id": 54378,
+        "tradeType": 3,
+        "treasure": [
+          1345
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1345,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        54284
+      ],
+      "memory_common_ids": [
+        54272,
+        54273,
+        54274
+      ],
+      "rule_index": 438,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 19,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 295,
+      "epoch_utc": 1593587100,
+      "target_hero": 123,
+      "extra_common_id": 54715,
+      "common": {
+        "design_treasure": 332,
+        "id": 54715,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 332,
+      "treasure_id": 1346,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          745
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t7"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1591830640.3243,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        54697
+      ],
+      "memory_common_ids": [
+        54698,
+        54699,
+        54700
+      ],
+      "rule_index": 454,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 311,
+      "epoch_utc": 1596611100,
+      "target_hero": 127,
+      "extra_common_id": 55078,
+      "common": {
+        "design_treasure": 341,
+        "id": 55078,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 341,
+      "treasure_id": 1350,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          751
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a36"
+          },
+          {
+            "v": 15.0,
+            "n": "f30"
+          },
+          {
+            "v": 6.0,
+            "n": "t10"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1595481539.165174,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        55060
+      ],
+      "memory_common_ids": [
+        55061,
+        55062,
+        55063
+      ],
+      "rule_index": 481,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 323,
+      "epoch_utc": 1599030300,
+      "target_hero": 130,
+      "extra_common_id": 55619,
+      "common": {
+        "design_treasure": 350,
+        "id": 55619,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 350,
+      "treasure_id": 1354,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          766
+        ],
+        "attr": [
+          {
+            "v": 107.0,
+            "n": "a35"
+          },
+          {
+            "v": 15.0,
+            "n": "f34"
+          },
+          {
+            "v": 6.0,
+            "n": "t8"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1597078291.590379,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        55601
+      ],
+      "memory_common_ids": [
+        55602,
+        55603,
+        55604
+      ],
+      "rule_index": 496,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 341,
+      "epoch_utc": 1603263900,
+      "target_hero": 133,
+      "extra_common_id": 56116,
+      "common": {
+        "design_treasure": 357,
+        "id": 56116,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 357,
+      "treasure_id": 1357,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          781
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t12"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1601973372.8551009,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        56098
+      ],
+      "memory_common_ids": [
+        56099,
+        56100,
+        56101
+      ],
+      "rule_index": 516,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 363,
+      "epoch_utc": 1606892700,
+      "target_hero": 135,
+      "extra_common_id": 56643,
+      "common": {
+        "design_treasure": 366,
+        "id": 56643,
+        "tradeType": 3,
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": 366,
+      "treasure_id": 1361,
+      "quality": 3,
+      "count": 1,
+      "design_tr": {
+        "rt": [
+          0,
+          0
+        ],
+        "ft": [
+          796
+        ],
+        "attr": [
+          {
+            "v": 91.0,
+            "n": "a37"
+          },
+          {
+            "v": 15.0,
+            "n": "f31"
+          },
+          {
+            "v": 6.0,
+            "n": "t10"
+          }
+        ],
+        "rr": [
+          0,
+          0
+        ],
+        "cl": 3,
+        "cct": 1607891488.3840141,
+        "st": 0,
+        "r": 1,
+        "ha": 0,
+        "cost": 4
+      },
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        56625
+      ],
+      "memory_common_ids": [
+        56626,
+        56627,
+        56628
+      ],
+      "rule_index": 545,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 382,
+      "epoch_utc": 1610521200,
+      "target_hero": 138,
+      "extra_common_id": 57622,
+      "common": {
+        "id": 57622,
+        "tradeType": 3,
+        "treasure": [
+          1365
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1365,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        57693
+      ],
+      "memory_common_ids": [
+        57632,
+        57633,
+        57634
+      ],
+      "rule_index": 567,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 425,
+      "epoch_utc": 1617778800,
+      "target_hero": 122,
+      "extra_common_id": 54378,
+      "common": {
+        "id": 54378,
+        "tradeType": 3,
+        "treasure": [
+          1345
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1345,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        54284
+      ],
+      "memory_common_ids": [
+        54272,
+        54273,
+        54274
+      ],
+      "rule_index": 614,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 15,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 433,
+      "epoch_utc": 1618988400,
+      "target_hero": 143,
+      "extra_common_id": 60798,
+      "common": {
+        "id": 60798,
+        "tradeType": 3,
+        "treasure": [
+          1368
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1368,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        60794
+      ],
+      "memory_common_ids": [
+        59590,
+        59591,
+        59592
+      ],
+      "rule_index": 625,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 440,
+      "epoch_utc": 1626246000,
+      "target_hero": 144,
+      "extra_common_id": 60775,
+      "common": {
+        "id": 60775,
+        "tradeType": 3,
+        "treasure": [
+          1370
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1370,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        60799
+      ],
+      "memory_common_ids": [
+        60788,
+        60789,
+        60790
+      ],
+      "rule_index": 624,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 13,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 485,
+      "epoch_utc": 1631084400,
+      "target_hero": 147,
+      "extra_common_id": 62496,
+      "common": {
+        "id": 62496,
+        "tradeType": 3,
+        "treasure": [
+          1375
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1375,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        62891
+      ],
+      "memory_common_ids": [
+        62555,
+        62556,
+        62557
+      ],
+      "rule_index": 656,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 17,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 486,
+      "epoch_utc": 1637132400,
+      "target_hero": 149,
+      "extra_common_id": 62495,
+      "common": {
+        "id": 62495,
+        "tradeType": 3,
+        "treasure": [
+          1377
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1377,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        62893
+      ],
+      "memory_common_ids": [
+        62842,
+        62843,
+        62844
+      ],
+      "rule_index": 655,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 17,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 487,
+      "epoch_utc": 1644390000,
+      "target_hero": 152,
+      "extra_common_id": 62497,
+      "common": {
+        "id": 62497,
+        "tradeType": 3,
+        "treasure": [
+          1380
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1380,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        62895
+      ],
+      "memory_common_ids": [
+        62884,
+        62885,
+        62886
+      ],
+      "rule_index": 657,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 17,
+      "default_rows_checked": 8
+    },
+    {
+      "pool": 491,
+      "epoch_utc": 1654066800,
+      "target_hero": 151,
+      "extra_common_id": 62565,
+      "common": {
+        "id": 62565,
+        "tradeType": 3,
+        "treasure": [
+          1379
+        ],
+        "treasureLevel": [
+          3
+        ],
+        "treasureNum": [
+          1
+        ]
+      },
+      "design_id": null,
+      "treasure_id": 1379,
+      "quality": 3,
+      "count": 1,
+      "design_tr": null,
+      "hero_in_stock": true,
+      "treasure_in_stock": true,
+      "direct_hero_common_ids": [
+        63138
+      ],
+      "memory_common_ids": [
+        63053,
+        63054,
+        63055
+      ],
+      "rule_index": 658,
+      "rule_mentions_jiaozhi": true,
+      "rule_mentions_charge": true,
+      "rule_mentions_blessing": true,
+      "rule_first_acquisition_first_only": false,
+      "base_rows_checked": 17,
+      "default_rows_checked": 8
+    }
+  ],
+  "weight_projection_audit": {
+    "base_count": 465,
+    "default_count": 272,
+    "unique_random_ids": 157,
+    "random_edges": 5119,
+    "base_default_random_multisets_equal": true,
+    "proposed_policy_changes_weights": false,
+    "limits": "source equality proves projection of listed positive paths only, not full original server dynamic behavior"
+  },
+  "data_summary": {
+    "design_rows": 20,
+    "plain_treasure_rows": 14,
+    "unique_extra_common": 31,
+    "explicit_level_three": 29,
+    "class_three_all": true,
+    "stock_item_quality_and_hero_all_present": true,
+    "rules_with_jiaozhi": 24,
+    "rules_with_charge": 34
+  },
+  "evidence": {
+    "pool175_rule303": "#f4#s46#cffffff「轮回世界的交织·轮回」#c9093a3#f3#s12#r #r——————————————————————————————————————————————————————————————————————————#r #r#f3#s24#cd1d5e71、活动时间：2019年8月28日7:00至2019年9月11日7:00。#s06#r #s24#r2、本次“轮回世界的交织·轮回”限定召唤中，会额外出现牧濑红莉栖（S级）、以及椎名真由理（A级）两位神器使；#s06#r #s24#r3、参与“轮回世界的交织·轮回”限定召唤，每6次召唤可获得一个辉光管·轮回，辉光管·轮回可在活动商店中兑换包括命运石之门联动角色突破影装、专属影装升级资格、限时稀有影装等物品，也可1:1兑换为猫铃铛在常规商店中使用；#s06#r #s24#r4、在限定召唤中，若没有牧濑红莉栖，则首次获得牧濑红莉栖时，将赠送对应神器使的紫色专属影装，再次获得时不再赠送；#s06#r #s24#r5、本次限定召唤的概率UP是指，与其他同等级的神器使相比，拥有更高的出现概率（各等级出现概率与通常记忆隙间的概率相同）。#s06#r #s24#r6、本次限定召唤中，在命运隙间中每次召唤可提供1次充能计数，充能计数达到指定数量时，可领取对应的奖励，奖励将在满足条件时直接获取。#s06#r #s24#r7、在前一次“轮回世界的交织”活动中结束时，被自动回收的牧濑红莉栖与椎名真由理记忆片段将开放换回功能，在进度面板中点击对应神器使，可花费与回收时等量的通用灵魂碎片换回指定的记忆片段，不可使用神器使专属碎片，即125个灵魂碎片换回1个牧濑红莉栖记忆片段，80个灵魂碎片换回1个椎名真由理记忆片段，指定的记忆片段若已通过本次活动抽取到的，则不会被重复换回。#s06#r #s24#r8、9月11日活动结束的更新维护后，处于进度中的牧濑红莉栖记忆碎片将按1:125比例转化为灵魂碎片，椎名真由理记忆碎片将按1:80比例转化为灵魂碎片。未使用的命运券·轮回将按1:50000比例转化为金币。辉光管·轮回和相应的联动活动商店将额外开放约两周的时间（具体时间以活动结束后下一次维护公告为准）。当联动活动商店关闭时，没有使用的辉光管·轮回将1:1转化为猫铃铛自动发送到邮箱中。",
+    "condition_policy": "Per revealed target with get_hero=true, primary grant transition absent->owned, give one mapped reward for this first acquisition; applies both direct hero and last fragment, not duplicate; first-only inference for other 33 pools. Not applied to non-draw grant.",
+    "reply": "other_reward.activityReward.treasure from actual grant ledger, using [item,quality,count,[UUID]]; preserve other_reward.item and existing activityReward fields; updateItems emitted by stock grant",
+    "unknown": "original service timing, direct vs completed fragment, non-draw grants, rules outside 175, duplicate/concurrency, original random treasure attributes and activity mechanisms"
+  },
+  "sha256": {
+    "analysis/android640-scripts/com/data/cdata/rule_info_data.marshal": "e62704f6169a8aac3b969a14ecfbb4ad0803638bdcf589ef150ab17319570832",
+    "analysis/project7/manager/assets/resources.tsv": "0e4b3789f8c13945926ab90cf0f4ed5f797b6d426c7227a543e98cdd3af7813d",
+    "runtime/project7_history_catalog/catalog-v3.tsv": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "tools/project7_draw_history_ir/data/history-v1/history-ir.json.gz": "8c88ffd6632c4cd6c8ea681b76901771d2a7c8daa35399c0cd5f945cc1947568",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": "be0603b0f656c6be536349b0e907fe6876abff262d621a6f9a73d023f375aa0c",
+    "analysis/project7/manager/com.project7.localmanager.LocalDrawEngine.dis": "8bb50cb7b7fea3f894c4da6b574500354dba8e89e25eadb72d77d4d9047d3e47",
+    "analysis/project7/manager/com.project7.localmanager.LocalResourceEngine.dis": "1ba409f0c98c573e06b42a8c9d7ca76aa8452370791f12fd961bc6577ce5a561"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "added_methods": [
+    "LocalCityProgress.q7OriginalArea",
+    "LocalCityProgress.q7OriginalMapStages",
+    "LocalCityProgress.q7OriginalStages",
+    "LocalCityProgress.q7OriginalStatus",
+    "LocalCityProgress.q7OriginalConsumeVictory"
+  ],
+  "changed_methods": [
+    "LocalCityProgress.area",
+    "LocalCityProgress.mapStages(Progress,int,byte[])",
+    "LocalCityProgress.stages(Progress,int,byte[])",
+    "LocalCityProgress.status(Progress,int,byte[])",
+    "LocalCityProgress.consumeVictory",
+    "LocalGatewayServer.handleCombatAdmission"
+  ],
+  "classes": 649,
+  "defined_methods": 3710,
+  "format": "project7-story-mission-seams-v1",
+  "patch": {
+    "bytes": 997159,
+    "sha256": "5bc4550bf6ece09b9f271b5319d0a8437ce925a0a73aa266a41a78f33843484e"
+  },
+  "scope": "Five same-signature wrappers with complete original bodies retained under synthetic names. One admission predicate ANDs source-bound partyAllowed with original accumulated validity; ACK/cache/failure/branch/exception paths preserved. chapterScene and no-profile overloads unchanged. Bridge/data prepare and actual original Store verification required; no route/native completion claim.",
+  "source": {
+    "bytes": 1158280,
+    "sha256": "9506b09dc71f90e257ad99c371bb396d411e885a8dbc2dcc17a2d2e824aadd7b"
+  },
+  "target": {
+    "bytes": 1158744,
+    "sha256": "9339898c6f7f6b3950ef06731b8e18d68fe6b84b5838670a792c4601527a371b"
+  }
+}

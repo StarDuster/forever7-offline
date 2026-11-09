@@ -1,0 +1,682 @@
+{
+  "source": "Original Android640 event_content, event_condition, reward_common literal marshal tables; set literal constructor whitelisted statically, no game code executed",
+  "content": {
+    "1000": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u9192\u6765",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1000
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "notepadId": [
+        10044
+      ],
+      "dialog": 1000,
+      "isEmergencyEvent": true,
+      "release": true,
+      "isLeaveEmergencyEvent": false
+    },
+    "1006": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u5947\u602a\u7684\u540d\u5b57",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1006
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1006,
+      "release": true,
+      "events": [
+        1015,
+        1016,
+        1017
+      ],
+      "isEmergencyEvent": true
+    },
+    "1015": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u5173\u4e8e\u4ea4\u754c\u90fd\u5e02",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1015
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1015,
+      "release": true,
+      "events": [
+        1018
+      ],
+      "isEmergencyEvent": true
+    },
+    "1016": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u5173\u4e8e\u4e2d\u592e\u5ead",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1016
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1016,
+      "release": true,
+      "events": [
+        1018
+      ],
+      "isEmergencyEvent": true
+    },
+    "1017": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u5173\u4e8e\u6218\u672f\u7ec8\u7aef",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1017
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1017,
+      "release": true,
+      "events": [
+        1018
+      ],
+      "isEmergencyEvent": true
+    },
+    "1018": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u8fd8\u6709\u522b\u7684\u95ee\u9898\u5417",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1018
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1018,
+      "release": true,
+      "events": [
+        1015,
+        1016,
+        1017,
+        1019
+      ],
+      "isEmergencyEvent": true
+    },
+    "1019": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u6ca1\u6709\u95ee\u9898\u4e86",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1019
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1019,
+      "release": true,
+      "events": [
+        8
+      ],
+      "isEmergencyEvent": true
+    },
+    "8": {
+      "newbee": 1,
+      "emergencyEvent": true,
+      "name": "\u5f00\u59cb\u5427",
+      "completeEnterMainPanel": false,
+      "isAutoTriggerEvent": false,
+      "completeConds": {},
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": true,
+      "autoStart": 1,
+      "release": true,
+      "isEmergencyEvent": true
+    },
+    "1001": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "rewards": [
+        37
+      ],
+      "name": "\u5f97\u5230\u6218\u672f\u7ec8\u7aef",
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1001
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1001,
+      "release": true
+    },
+    "1002": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u53c2\u89c2\u4e2d\u592e\u5ead",
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1002
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1002,
+      "release": true,
+      "events": [
+        1004
+      ]
+    },
+    "1004": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u8fd9\u91cc\u662f\u4e2d\u592e\u5ead",
+      "areaFight": [
+        1
+      ],
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1004
+        ]
+      },
+      "completeEnterMainPanel": false,
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1004,
+      "release": true,
+      "events": [
+        1021
+      ]
+    },
+    "20030": {
+      "emergencyEvent": false,
+      "name": "\u5f71\u88c5\u6307\u5f15",
+      "completeEnterMainPanel": false,
+      "eventType": 2,
+      "isAutoTriggerEvent": false,
+      "completeConds": {},
+      "priority": 5,
+      "repeatable": false,
+      "client_event": 1,
+      "isLeaveEmergencyEvent": false,
+      "release": true
+    },
+    "1021": {
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "name": "\u00e5\u0089\u008d\u00e5\u00be\u0080\u00e7\u0099\u00bd\u00e5\u00a4\u009c\u00e9\u00a6\u0086",
+      "newbee": 1,
+      "priority": 5,
+      "emergencyEvent": false,
+      "repeatable": false,
+      "completeConds": {
+        "dialog": [
+          1021
+        ]
+      },
+      "isAutoTriggerEvent": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1021,
+      "release": true,
+      "newbee_event": 90
+    },
+    "1038": {
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "name": "\u00e6\u00a0\u0091\u00e5\u0085\u0088\u00e7\u0094\u009f\u00e4\u00b9\u008c\u00e9\u00b9\u00ad",
+      "newbee": 1,
+      "priority": 5,
+      "emergencyEvent": false,
+      "repeatable": false,
+      "completeConds": {
+        "dialog": [
+          1038
+        ]
+      },
+      "isAutoTriggerEvent": true,
+      "mutexEvent": [
+        1039,
+        1040
+      ],
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1038,
+      "release": true
+    },
+    "1039": {
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "name": "\u00e5\u00b0\u008f\u00e8\u00ad\u00a6\u00e5\u00af\u009f\u00e5\u00a6\u00ae\u00e7\u00bb\u00b4",
+      "newbee": 1,
+      "priority": 5,
+      "emergencyEvent": false,
+      "repeatable": false,
+      "completeConds": {
+        "dialog": [
+          1039
+        ]
+      },
+      "isAutoTriggerEvent": true,
+      "mutexEvent": [
+        1038,
+        1040
+      ],
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1039,
+      "release": true
+    },
+    "1040": {
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "name": "\u00e5\u009c\u00a3\u00e5\u00a5\u00b3\u00e4\u00bc\u00bd\u00e6\u00a2\u00a8\u00e8\u0080\u00b6",
+      "newbee": 1,
+      "priority": 5,
+      "emergencyEvent": false,
+      "repeatable": false,
+      "completeConds": {
+        "dialog": [
+          1040
+        ]
+      },
+      "isAutoTriggerEvent": true,
+      "mutexEvent": [
+        1038,
+        1039
+      ],
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1040,
+      "release": true
+    },
+    "1043": {
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "name": "\u00e5\u0085\u00b3\u00e5\u008d\u00a1\u00e6\u008c\u0087\u00e5\u00bc\u0095",
+      "newbee": 1,
+      "priority": 5,
+      "emergencyEvent": false,
+      "repeatable": true,
+      "completeConds": {
+        "battle": [
+          101
+        ]
+      },
+      "isAutoTriggerEvent": true,
+      "isLeaveEmergencyEvent": false,
+      "release": true,
+      "contentFinishBattle": [
+        101
+      ],
+      "newbee_event": 10
+    },
+    "10000": {
+      "emergencyEvent": false,
+      "name": "\u4e2d\u592e\u5ead\u89e3\u653e",
+      "completeEnterMainPanel": false,
+      "eventType": 2,
+      "isAutoTriggerEvent": true,
+      "completeConds": {},
+      "priority": 5,
+      "mutexEvent": [
+        1060,
+        3017,
+        7195
+      ],
+      "repeatable": false,
+      "ui": [
+        "settlement_fullscreen",
+        "notify_area_event",
+        "1",
+        "2"
+      ],
+      "isLeaveEmergencyEvent": false,
+      "autoStart": 1,
+      "release": true
+    },
+    "1007": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u96f7\u5207\u5c14\u7684\u89e3\u8bf4",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1007
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1007,
+      "release": true,
+      "events": [
+        1008,
+        1041
+      ]
+    },
+    "1008": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u6211\u613f\u610f",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1008
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1008,
+      "release": true,
+      "events": [
+        1009
+      ]
+    },
+    "1041": {
+      "emergencyEvent": false,
+      "name": "\u53e6\u5916\u7684\u9009\u62e9",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1041
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1041,
+      "release": true,
+      "events": [
+        1008
+      ]
+    },
+    "1009": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u4e2d\u592e\u5ead\u7684\u9ed1\u6838\u00b7\u4e00",
+      "completeEnterMainPanel": true,
+      "eventType": 1,
+      "isAutoTriggerEvent": false,
+      "completeConds": {
+        "dialog": [
+          1009
+        ]
+      },
+      "changeBlackcore": {
+        "1": 1
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1009,
+      "release": true
+    },
+    "1022": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "name": "\u4e2d\u592e\u5ead\u7684\u9ed1\u6838\u00b7\u4e8c",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "isAutoTriggerEvent": true,
+      "completeConds": {
+        "dialog": [
+          1022
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1022,
+      "release": true,
+      "events": [
+        1010
+      ]
+    },
+    "1010": {
+      "newbee": 1,
+      "emergencyEvent": false,
+      "isAutoTriggerEvent": false,
+      "name": "\u5de1\u67e5\u7684\u91cd\u8981\u6027",
+      "completeEnterMainPanel": false,
+      "eventType": 1,
+      "newbee_event": 30,
+      "completeConds": {
+        "dialog": [
+          1010
+        ]
+      },
+      "priority": 5,
+      "repeatable": false,
+      "isLeaveEmergencyEvent": false,
+      "dialog": 1010,
+      "release": true
+    }
+  },
+  "triggers": {
+    "1000": {
+      "release": true,
+      "ctid": 38,
+      "name": "\u9192\u6765",
+      "conds": {
+        "16": "[0,0]",
+        "1": "set([6])",
+        "4": "[0,0]",
+        "101": "1"
+      }
+    },
+    "1006": {
+      "release": true,
+      "ctid": 43,
+      "name": "\u5947\u602a\u7684\u540d\u5b57",
+      "conds": {
+        "16": "[0,0]",
+        "1": "set([1000])",
+        "4": "[0,0]",
+        "101": "1"
+      }
+    },
+    "1001": {
+      "release": true,
+      "ctid": 39,
+      "name": "\u5f97\u5230\u6218\u672f\u7ec8\u7aef",
+      "conds": {
+        "16": "[0,0]",
+        "1": "set([8])",
+        "4": "[0,0]",
+        "101": "0"
+      }
+    },
+    "1002": {
+      "release": true,
+      "ctid": 40,
+      "name": "\u53c2\u89c2\u4e2d\u592e\u5ead",
+      "conds": {
+        "16": "[0,0]",
+        "1": "set([1001])",
+        "4": "[0,0]",
+        "101": "0"
+      }
+    },
+    "1038": {
+      "release": true,
+      "ctid": 57,
+      "name": "\u6811\u5148\u751f\u4e4c\u9e6d",
+      "conds": {
+        "1": "set([1021])",
+        "4": "[0,0]",
+        "101": "0",
+        "8": "{1: (1,)}",
+        "11": "set([1039,1040])",
+        "16": "[0,0]",
+        "24": "set([8])"
+      }
+    },
+    "1039": {
+      "release": true,
+      "ctid": 58,
+      "name": "\u5c0f\u8b66\u5bdf\u59ae\u7ef4",
+      "conds": {
+        "1": "set([1021])",
+        "4": "[0,0]",
+        "101": "0",
+        "8": "{1: (1,)}",
+        "11": "set([1038,1040])",
+        "16": "[0,0]",
+        "24": "set([7])"
+      }
+    },
+    "1040": {
+      "release": true,
+      "ctid": 59,
+      "name": "\u5723\u5973\u4f3d\u68a8\u8036",
+      "conds": {
+        "1": "set([1021])",
+        "4": "[0,0]",
+        "101": "0",
+        "8": "{1: (1,)}",
+        "11": "set([1038,1039])",
+        "16": "[0,0]",
+        "24": "set([37])"
+      }
+    },
+    "1043": {
+      "release": true,
+      "ctid": 60,
+      "name": "\u5173\u5361\u6307\u5f15",
+      "conds": {
+        "8": "{1: (1,)}",
+        "16": "[0,0]",
+        "4": "[0,0]",
+        "101": "0",
+        "17": "set([1038,1039,1040])"
+      }
+    },
+    "10000": {
+      "release": true,
+      "ctid": 2068,
+      "name": "\u4e2d\u592e\u5ead\u89e3\u653e",
+      "conds": {
+        "9": "set([101])",
+        "11": "set([3017,1060,7195])",
+        "101": "0"
+      }
+    },
+    "1007": {
+      "release": true,
+      "ctid": 44,
+      "name": "\u96f7\u5207\u5c14\u7684\u89e3\u8bf4",
+      "conds": {
+        "8": "{1: (0,)}",
+        "1": "set([10000])",
+        "101": "0",
+        "16": "[0,0]"
+      }
+    },
+    "1022": {
+      "release": true,
+      "ctid": 49,
+      "name": "\u4e2d\u592e\u5ead\u7684\u9ed1\u6838\u00b7\u4e8c",
+      "conds": {
+        "16": "[0,0]",
+        "1": "set([1009])",
+        "4": "[0,0]",
+        "101": "0"
+      }
+    }
+  },
+  "rewards": {
+    "37": {
+      "award_pool": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "tradeType": 3,
+      "hero": [
+        24
+      ],
+      "id": 37
+    }
+  },
+  "postbattle_missions": {
+    "101": {
+      "id": 101,
+      "ch": 1,
+      "nextstagenums": [
+        1101
+      ],
+      "release": 1
+    },
+    "1101": {
+      "id": 1101,
+      "ch": 2,
+      "nextstagenums": [
+        1102,
+        23001,
+        23004,
+        23007,
+        389
+      ],
+      "release": 1
+    }
+  }
+}

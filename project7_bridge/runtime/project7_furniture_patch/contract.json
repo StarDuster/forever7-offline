@@ -1,0 +1,26 @@
+{
+  "added_methods": [
+    "LocalHomeEngine.q7OriginalChoose",
+    "LocalHomeEngine.q7OriginalSkinCopies"
+  ],
+  "changed_methods": [
+    "LocalHomeEngine.apply",
+    "LocalHomeEngine.draw"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-history-furniture-seams-v1",
+  "patch": {
+    "bytes": 995038,
+    "sha256": "3d1b51be23987f24ba00405cf098f047e4509e022f2941c8b0098e03e50679af"
+  },
+  "scope": "Reviewed generic mechanisms; original rewards/sequence-cache flow preserved. Finite original-engine proof is separate from Android/native acceptance.",
+  "source": {
+    "bytes": 1156292,
+    "sha256": "075edbaaf62c1d777c1982850fad4b68db518eae9e75ec4e50fc80a7ab7d0863"
+  },
+  "target": {
+    "bytes": 1156824,
+    "sha256": "5e0e6220e63e04fda492608f34ff16230d010b2f8641fd37a7e4aa7fce80eb19"
+  }
+}

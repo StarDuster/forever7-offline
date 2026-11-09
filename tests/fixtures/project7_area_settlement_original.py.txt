@@ -1,0 +1,601 @@
+# uncompyle6 version 3.9.3
+# Python bytecode version base 2.7
+# Decompiled from: Python 3.12.11 (main, Oct  7 2025, 15:53:48) [Clang 20.1.4 ]
+# Embedded file name: cocos\panels\settlement_fullscreen.py
+import gg, math, world, math3d, cocosui as cc, cocos.ui_utils as ui_utils, cocos.ui_panel as ui_panel, com.const as const, com.data.cdata.city_data as CITY_DATA, com.data.cdata.hero_info as HeroInfoDataMod, com.data.cdata.skin as SKIN_DATA, cutils.chelpers as chelpers, com.data.cdata.item_data as ITEM_DATA, game_scene.skin_play_scene as skin_play_scene
+SFX_FILE = {'area_fight': {'-1': (
+                       'fx/scene/zhujiemian/zjm_area_02_start.sfx', 'area_b', (True, 0))}, 
+   'area_cr': {'-1': (
+                    'fx/scene/zhujiemian/zjm_area_06.sfx', 'head', (False, 1.0))}}
+for branch in const.StoryRouteType.SET_XILO:
+    SFX_FILE['area_cr'][branch] = (
+     'fx/scene/zhujiemian/zjm_area_03_end.sfx', 'head', (False, 1.0))
+
+SFX_FILE_REMINISCENCE = {'fx/scene/zhujiemian/zjm_area_02_start.sfx': 'fx/scene/zhujiemian/zjm_area_02_star_reminiscence.sfx'}
+
+class Panel(ui_panel.UIPanel):
+    DELAY_CLOSE = 2500
+    ZOOM_TIME = 700
+    CITY_CR_SCALE = {1: 1, 
+       2: 1.1, 
+       3: 1.3, 
+       4: 1.3, 
+       5: 1, 
+       6: 1.2, 
+       7: 1.5, 
+       8: 1.4}
+    UI_SOUND = {'area_open': 'zhucheng/ui_jiesuojiefang', 
+       'area_fight': 'zhucheng/ui_jiesuojiaozhan', 
+       'area_cr': 'zone_xiluo'}
+    HERO_IMG_PATH = 'cocos/image/hero/skill_dazhao/%d.png'
+    IMG_SHADER = None
+    IMG_MASK = 'cocos/image/cg/settlement_hero.png'
+
+    def on_init(self):
+        self.focus_area_id = 0
+        self.area_op_queue = []
+        self.area_op_queue_idx = 0
+        self.cb = None
+        self.event_handlers = {'on_cg_share_close': (self.on_cg_share_close)}
+        return
+
+    def on_load(self):
+        self.image_shader = gg.ui.shaders.settlement_hero().instance(mask=Panel.IMG_MASK)
+        self.main = self['main']
+        self._node.addTouchEventListener(self.on_click)
+        self.city_name = self['main.area_name']
+        self.city_intro = self['main.area_inro'].data
+        self.city_intro.set_visible(False)
+        self.titles = set([5, 6, 7, 8, 9, 10, 11, 5, 12, 13])
+        self.anims = {}
+        self.anims['area_open'] = gg.ui.actions.settlement_fullscreen.area_open
+        self.anims['area_open_close'] = gg.ui.actions.settlement_fullscreen.area_open_close
+        self.panels = {}
+        self.panels['hero_new'] = 'settlement_fullscreen_hero'
+        self.panels['hero_share'] = 'settlement_fullscreen_hero'
+        self.panels['hero_anim'] = 'settlement_fullscreen_hero'
+        self.panels['fashion'] = 'settlement_fullscreen_hero'
+        self.panels['memory'] = 'settlement_fullscreen_hero'
+        self.panels['skin'] = 'settlement_fullscreen_hero'
+        self.panels['awake_skin'] = 'settlement_fullscreen_hero'
+        self.panels['cg'] = 'settlement_fullscreen_cg'
+        self.panels['cg_new'] = 'settlement_fullscreen_cg'
+        self.panels['area_fight'] = 'settlement_fullscreen_area_open'
+        self.panels['furniture'] = 'settlement_fullscreen_diancangjiaju'
+        self.nodes = {}
+        self.nodes['hero_new'] = []
+        self.nodes['hero_share'] = []
+        self.nodes['hero_anim'] = []
+        self.nodes['skin'] = []
+        self.nodes['fashion'] = []
+        self.nodes['memory'] = []
+        self.nodes['cg'] = []
+        self.nodes['cg_new'] = []
+        self.nodes['area_fight'] = []
+        self.nodes['area_open'] = []
+        self.nodes['area_open_close'] = []
+        self.nodes['furniture'] = []
+        self.img = self['main.img']
+        self.hero_img = self['main.hero']
+        self.hero_shadow = self['main.hero_shaow']
+        self.fight_cover = False
+        gg.ui.actions.settlement_fullscreen.bg_open.load()
+        gg.ui.actions.settlement_fullscreen.bg_close.load()
+        gg.ui.actions.settlement_fullscreen.area_open.load()
+        gg.ui.actions.settlement_fullscreen.area_open_close.load()
+        gg.ui.actions.settlement_fullscreen.loop.load()
+        gg.ui.actions.settlement_fullscreen.hero_open.load()
+        gg.ui.actions.settlement_fullscreen.hero_close.load()
+        self.open_anim = None
+        self.close_anim = None
+        return
+
+    def on_destroy(self):
+        self.image_shader.destroy()
+        return
+
+    def on_click(self, sender, event):
+        if event != cc.ccui.TOUCH_EVENT_ENDED:
+            return
+        self._close_panel()
+        return
+
+    def _close_panel(self):
+        if not self.valid:
+            return
+        else:
+            if self.cover:
+                return
+            if self.fight_cover:
+                return
+            gg.audio_mgr.ui_sound('tongyong/ui_dianji')
+            if self.focus_area_id:
+                self.process_area_op_end()
+                return
+            gg.ui.actions.settlement_fullscreen.loop.stop()
+            gg.ui.actions.settlement_fullscreen.bg_close.start()
+            self._node.runAction(cc.cc.FadeOut.create(0.2))
+            self.hero_img.setVisible(False)
+            self.hero_shadow.setVisible(False)
+            panel = getattr(gg.ui.panels, self.panels[self.stype])
+            if panel:
+                hide_func = getattr(panel, 'notify_hide', None)
+                if hide_func:
+                    hide_func()
+            if self.close_anim:
+                self.close_anim.start()
+            gg.ui.panels.settlement_info.notify_hide()
+            self.cover = True
+            gg.exec_delay(500, self.settlement_ended)
+            return
+
+    def on_dialogue_start(self, event):
+        return
+
+    def settlement_ended(self):
+        print 'settlement_ended ======================================'
+        self.proc_event_handler(const.GameEvent.ONE_SETTLEMENT_END, self.stype)
+        self.destroy_self_layer()
+        gg.ui.proc_settlement()
+        if self.cb:
+            self.cb()
+            self.cb = None
+        if gg.avatar:
+            gg.avatar.newbeeData.checkAllNewbee()
+        gg.logic.enable_event('settlement_fullscreen')
+        scene = gg.city_container.get_scene_by_key(const.SCENE_NEW_DANCHI_ROOM)
+        if scene and scene == gg.city_container.get_current_scene() and not scene.is_furniture_lianchou:
+            gg.city_container.pop_scene()
+            if gg.ui.panels.city:
+
+                def _cb():
+                    if gg.ui.panels.city:
+                        gg.ui.panels.city.on_btn_danchi_click(None, cc.ccui.TOUCH_EVENT_ENDED)
+                    return
+
+                gg.exec_delay(100, _cb)
+        return
+
+    def notify_settlement(self, stype, *args, **kwargs):
+        gg.logic.disable_event('settlement_fullscreen')
+        self.build_highest()
+        self.cover = True
+        self.modal = True
+        self.stype = stype
+        self._node.setTouchEnabled(False)
+        gg.audio_mgr.ui_sound('zhucheng/ui_jiesuocg')
+        panel = getattr(gg.ui.panels, self.panels[stype])
+        self.main.setVisible(stype in self.titles)
+        panels = [panel, gg.ui.panels.settlement_info]
+        self.add_highest(*panels)
+        panel.notify_show(*args, **kwargs)
+        gg.ui.panels.settlement_info.notify_show(stype, *args, **kwargs)
+        for panel in panels:
+            panel.cover = True
+
+        self.open_anim = None
+        self.close_anim = None
+        if stype in ('hero_new', 'hero_share', 'hero_anim'):
+            self.open_anim = gg.ui.actions.settlement_fullscreen.hero_open
+            self.close_anim = gg.ui.actions.settlement_fullscreen.hero_close
+            self.hero_img.loadTexture(Panel.HERO_IMG_PATH % args[0])
+            self.hero_shadow.loadTexture(Panel.HERO_IMG_PATH % args[0])
+            self.hero_img.getVirtualRenderer().getSprite().setGLProgramState(self.image_shader.shader)
+            self.hero_shadow.getVirtualRenderer().getSprite().setGLProgramState(self.image_shader.shader)
+        elif stype in ('skin', ):
+            self.open_anim = gg.ui.actions.settlement_fullscreen.hero_open
+            self.close_anim = gg.ui.actions.settlement_fullscreen.hero_close
+            self.hero_img.loadTexture(Panel.HERO_IMG_PATH % SKIN_DATA.data[kwargs['skin']]['painting'])
+            self.hero_shadow.loadTexture(Panel.HERO_IMG_PATH % SKIN_DATA.data[kwargs['skin']]['painting'])
+            self.hero_img.getVirtualRenderer().getSprite().setGLProgramState(self.image_shader.shader)
+            self.hero_shadow.getVirtualRenderer().getSprite().setGLProgramState(self.image_shader.shader)
+        elif stype in ('awake_skin', ):
+            pass
+        gg.ui.actions.settlement_fullscreen.bg_open.start(gg.ui.actions.settlement_fullscreen.loop.start)
+        if self.open_anim:
+            self.open_anim.start()
+
+        def _delay_close():
+            self.cover = False
+            for panel in panels:
+                panel.cover = False
+
+            self._node.setTouchEnabled(True)
+            return
+
+        gg.exec_delay(Panel.DELAY_CLOSE, _delay_close)
+        return
+
+    def notify_reward(self, rtype, result, cb=None):
+        for hero in result.get('hero', []):
+            self.notify_hero_new(hero)
+
+        for cg in result.get('cg', []):
+            self.notify_cg_new(cg)
+
+        for skinId in result.get('skinIds', []):
+            if 0 == gg.avatar.luckyDrawData.skip_show_dict.get(skinId, 0) or not gg.avatar.luckyDrawData.skip_flag:
+                self.notify_skin_new(skinId, show_new_skin_message=result.get('show_new_skin_message', True))
+            gg.avatar.luckyDrawData.addSkinShowCount(skinId)
+
+        for skinItem, num in result.get('skin', []):
+            skinId = ITEM_DATA.data[skinItem]['skin']
+            if 0 == gg.avatar.luckyDrawData.skip_show_dict.get(skinId, 0) or not gg.avatar.luckyDrawData.skip_flag:
+                self.notify_skin_new(ITEM_DATA.data[skinItem]['skin'], show_new_skin_message=result.get('show_new_skin_message', True))
+            gg.avatar.luckyDrawData.addSkinShowCount(skinId)
+
+        memoryFrag = result.get('memoryFrag', [])
+        for total_info in memoryFrag:
+            for info in total_info:
+                hero_id = info.get('hero_id')
+                frag = info.get('frag')
+                exchange = info.get('exchange', False)
+                get_hero = info.get('get_hero', False)
+                if hero_id and (frag or exchange):
+                    self.notify_hero_suipian(hero_id, frag, exchange, get_hero)
+
+        if cb:
+            self.cb = cb
+        return
+
+    def notify_area_event(self, event, *areas, **kwargs):
+        opens = []
+        fights = []
+        self.cb = kwargs.get('cb', None)
+        if not const.DEBUG_OFFLINE:
+            for area in areas:
+                area = int(area)
+                info = gg.avatar.cityData.get_area_info(area)
+                if not info or not info['st']:
+                    continue
+                if info['st'][0] == const.CityStatus.FREE:
+                    opens.append(area)
+                else:
+                    fights.append(area)
+
+            if opens:
+                self.notify_area_open(opens)
+            if fights:
+                fights.sort()
+                self.notify_area_fight(fights)
+        return
+
+    def on_cg_share_close(self):
+        if self.stype == 'hero_share':
+            self._close_panel()
+        return
+
+    def notify_hero_new(self, hero, cb=None):
+        if hero == 24 and gg.avatar.weeknumData.weeknum <= 0:
+            gg.avatar.writeNewPlayerCheckpointSALog('10 get hero')
+        self.cb = cb
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'hero_new', hero, True)
+        self.check_gonglue_cache_result(hero)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_skin_new(self, skin_id, dye_scheme=None, cb=None, share_cb=None, dec=0, dye_time=None, artifact_info=(False, 0), wenlu_dye=False, show_new_skin_message=True, wear_dec=None, awake_stage=0, skin_obj=None):
+
+        def _wrap(cb, skin_id, show_new_skin_message):
+            if not show_new_skin_message:
+                if cb:
+                    cb()
+                return
+            hero_id = SKIN_DATA.data[skin_id]['hero']
+            if gg.avatar.heroMgrData.getHero(hero_id) is None:
+                gg.ui.panels.common_confirm.notify_get(SKIN_DATA.data[skin_id].get('not_have_desc', '由于尚未获得神器使，时装将暂时保存在衣橱中#在获得神器使后可以正常使用。'), cb=cb)
+            return
+
+        self.cb = lambda cb=cb, skin_id=skin_id, show_new_skin_message=show_new_skin_message: _wrap(cb, skin_id, show_new_skin_message)
+        model_id = SKIN_DATA.data[skin_id].get('model_id', 0)
+        is_play = skin_play_scene.Scene.is_skin_play(model_id)
+        if is_play:
+            stype = 'skin_play' if dye_scheme is None else 'ranse'
+            gg.ui.panels.settlement_fullscreen_fashion.raw_notify_skin_play(skin_id, skin_obj=skin_obj, cb=self.cb, share_cb=None, dec=dec, artifact_info=artifact_info, awake_stage=awake_stage, wear_dec=wear_dec, stype=stype)
+            self.cb = None
+            return
+        else:
+            gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'skin', SKIN_DATA.data[skin_id]['hero'], None, skin=skin_id, dye=dye_scheme, share_cb=share_cb, dec=dec, dye_time=dye_time, artifact_info=artifact_info, wenlu_dye=wenlu_dye, wear_dec=wear_dec, awake_stage=awake_stage)
+            gg.ui.proc_settlement()
+            return
+
+    def notify_hero_suipian(self, hero, suipian, exchange=False, get_hero=False, cur_progress=0, cb=None):
+        self.cb = cb
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'memory', hero, True, suipian, exchange, get_hero, cur_progress)
+        gg.ui.proc_settlement()
+        if get_hero:
+            gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'hero_new', hero, True)
+            self.check_gonglue_cache_result(hero)
+        return
+
+    def check_gonglue_cache_result(self, hero, top=False):
+        if hasattr(gg.avatar, 'gonglue_cache_result'):
+            cache_data = gg.avatar.gonglue_cache_result
+            if cache_data and hero in cache_data[0]:
+                gg.ui.panels.settlement_clear.notify_heroes_clear(top=top, *cache_data)
+                gg.avatar.gonglue_cache_result = None
+        return
+
+    def notify_hero_share(self, hero, cb=None):
+        self.cb = cb
+        gg.ui.add_settlement_top('settlement_fullscreen', 'notify_settlement', 'hero_share', hero, True, share=True)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_hero_awake_skin(self, hero_id, review=False, cb=None):
+        self.cb = cb
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'awake_skin', hero_id, False, awake_skin=True, awake_review=review)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_hero_awake_skin_scene(self, hero_id, review=False):
+        gg.ui.add_settlement('settlement_fullscreen', 'settlement_awake_skin', hero_id, review)
+        gg.ui.proc_settlement()
+        return
+
+    def settlement_awake_skin(self, hero_id, review=False):
+        import game_scene.awake_show as awake_show
+        scene = awake_show.Scene(map_id=const.SCENE_AWAKE, main_ui=None)
+        gg.city_container.add_scene(const.SCENE_AWAKE, scene)
+        scene.set_ext_info({'hero_id': hero_id, 'review': review})
+        gg.city_container.switch_simple_scene(const.SCENE_AWAKE)
+        gg.audio_mgr.ui_sound('tongyong/ui_patadianji')
+        return
+
+    def notify_hero_anim(self, hero, anim, cb=None):
+        self.cb = cb
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'hero_anim', hero, False, anim=anim)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_area_open(self, areas):
+        if gg.ui.panels.battle_stage.valid:
+            gg.ui.panels.battle_stage.visible_self_layer(False)
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement_area_open', 'area_open', areas)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_area_fight(self, areas):
+        if const.StoryRouteConst.ZHOUNIAN2_WEEK_REFRESH_EVENTID in gg.avatar.eventTriggerData.completedEvents:
+            return
+        if gg.avatar.storyData.change_week:
+            return
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement_area_fight', 'area_fight', areas)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_area_cr(self, areas):
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement_area_fight', 'area_cr', areas)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_cg(self, cg):
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'cg', cg)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_cg_new(self, cg):
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'cg_new', cg)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_player_upgrade(self, exp_dict):
+        gg.ui.add_settlement('settlement_player_upgrade', 'notify_show', exp_dict.get('ol'), exp_dict.get('cl'))
+        gg.ui.proc_settlement()
+        return
+
+    def notify_player_upgrade_exp(self, exp_dict):
+        gg.ui.add_settlement('settlement_player_upgrade', 'notify_exp', exp_dict.get('exp'), exp_dict.get('oe'), exp_dict.get('ol'), exp_dict.get('ce'), exp_dict.get('cl'), exp_dict.get('buff', False))
+        gg.ui.proc_settlement()
+        return
+
+    def notify_achievementList(self, aidList, top=False):
+        if not top:
+            for aid in aidList:
+                gg.ui.add_settlement('settlement_emoji_accomplish', 'notify_show', aid)
+
+        else:
+            for aid in reversed(aidList):
+                gg.ui.add_settlement_top('settlement_emoji_accomplish', 'notify_show', aid)
+
+        gg.ui.proc_settlement()
+        return
+
+    def notify_sudden_event(self, sudden_event):
+        gg.ui.add_settlement('city_specialevent', 'notify_show', sudden_event)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_combat_money_item_exp(self, type, result, cb):
+        gg.ui.add_settlement('settlement_customspass', 'notify_show', type, result, cb)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_furniture(self, furniture_id, cb=None):
+        self.cb = cb
+        gg.ui.add_settlement('settlement_fullscreen', 'notify_settlement', 'furniture', furniture_id)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_samsara_jiesuan(self, scene_id, rewards_show):
+        gg.ui.add_settlement('samsara_jiesuan', 'notify_show', scene_id, rewards_show)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_erzhounian_jiesuan(self, scene_id, rewards_show, **kwargs):
+        gg.ui.add_settlement('samsara_jiesuan', 'notify_erzhounian_show', scene_id, rewards_show, **kwargs)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_winter_market_show(self, scene_id, rewards_show, **kwargs):
+        gg.ui.add_settlement('samsara_jiesuan', 'notify_winter_market_show', scene_id, rewards_show, **kwargs)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_bigfam_victory_tisheng(self, cache, cb):
+        gg.ui.add_settlement('bigfam_victory_tisheng', 'notify_show', cache, cb)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_bigfam_victory_tongguo(self, cache, cb):
+        gg.ui.add_settlement('bigfam_victory_tongguo', 'notify_show', cache, cb)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_wanshendian_battle_jiesuan(self, maze_type, cache):
+        gg.ui.add_settlement('wanshendian_battle_jiesuan', 'notify_show', maze_type, cache)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_wanshendian_battle_saodang(self):
+        gg.ui.add_settlement('wanshendian_battle_saodang', 'notify_show')
+        gg.ui.proc_settlement()
+        return
+
+    def notify_prison_show(self, scene_id):
+        gg.ui.add_settlement('samsara_jiesuan', 'notify_prison_show', scene_id)
+        gg.ui.proc_settlement()
+        return
+
+    def notify_settlement_area_open(self, stype, areas):
+        gg.logic.disable_event('settlement_fullscreen')
+        self.build_highest()
+        self.cover = True
+        self.modal = True
+        self.stype = stype
+        self._node.setCascadeOpacityEnabled(False)
+        self._node.setOpacity(0)
+        self.img.setOpacity(0)
+        for area in areas:
+            self.area_op_queue.append((stype, area))
+
+        self.process_area_op_begin()
+        return
+
+    def notify_settlement_a195_open(self, *args, **kwargs):
+        gg.ui.add_settlement('settlement_fullscreen_a195_bosshp', 'notify_a195_show', *args, **kwargs)
+        gg.ui.proc_settlement()
+        return
+
+    def process_area_op_begin(self):
+        op, area = self.area_op_queue[self.area_op_queue_idx]
+        self.area_op_queue_idx += 1
+
+        def _cancel_cover():
+            self.cover = False
+            return
+
+        def _cb(op, area):
+            if op in self.anims:
+                self.anims[op].start()
+            gg.exec_delay(400, _cancel_cover)
+            if op == 'area_open':
+                self.city_intro.set_visible(True)
+                self.city_intro.set_string(CITY_DATA.data[area]['desc'])
+            if op in Panel.UI_SOUND:
+                gg.audio_mgr.ui_sound(Panel.UI_SOUND[self.stype])
+            return
+
+        if op == 'area_open':
+            self.city_name.setString(CITY_DATA.data[area]['name'])
+        self.anim_in(area, (lambda op=op, area=area: _cb(op, area)))
+        return
+
+    def process_area_op_end(self):
+
+        def _cb():
+            if self.area_op_queue_idx < len(self.area_op_queue):
+                self.process_area_op_begin()
+            else:
+                self.focus_area_id = 0
+                gg.exec_delay(250, self.settlement_ended)
+            return
+
+        if self.area_op_queue_idx > 0:
+            op, area = self.area_op_queue[self.area_op_queue_idx - 1]
+            if op == 'area_open':
+                self.city_intro.disappear()
+            close_op = op + '_close'
+            if close_op in self.anims:
+                self.anims[close_op].start()
+        self.anim_out(_cb)
+        return
+
+    def anim_in(self, area_id, cb=None):
+        gg.ui.panels.city.notify_settlement_zoomin('area_open', area_id, cb)
+        self.focus_area_id = area_id
+        return
+
+    def anim_out(self, cb=None, isclear=False):
+        self.cover = True
+        isclear = gg.ui.has_settlement()
+        gg.ui.panels.city.notify_settlement_zoomout(cb, isclear)
+        return
+
+    def notify_settlement_area_fight(self, stype, areas):
+        gg.logic.disable_event('settlement_fullscreen')
+        gg.ui.panels.city.visible_functional(False)
+        self.build_highest()
+        self.city_attention(areas)
+        self.stype = stype
+        self._node.setCascadeOpacityEnabled(False)
+        self._node.setOpacity(0)
+        self.img.setOpacity(0)
+        self.fight_cover = True
+        if stype in self.anims:
+            self.anims[stype].start()
+        if stype in self.panels:
+            panel = getattr(gg.ui.panels, self.panels[stype])
+            self.add_highest(panel)
+            panel.notify_show(areas)
+        return
+
+    def city_attention(self, areas):
+        index = 0
+        self.cover = True
+
+        def _delay_city_focus(areas, index):
+            gg.city.city_focus(areas[index], (lambda areas=areas, index=index: _cb(areas, index)))
+            return
+
+        def _sfx_end_cb(areas, key, flag, index):
+            area_id = areas[index]
+            gg.avatar.cityData.update_city_sfx_visible(area_id)
+            index += 1
+            if index < len(areas):
+                gg.exec_delay(150, (lambda areas=areas, index=index: _delay_city_focus(areas, index)))
+            else:
+                self.fight_cover = False
+                gg.ui.panels.city.visible_functional(True)
+                self.settlement_ended()
+            return
+
+        def _sfx_load_cb(sfx, user_data, current_task, areas, key, index):
+            gg.exec_delay(sfx.life_span * 1000 - 150, (lambda areas=areas, key=key, flag=True, index=index: _sfx_end_cb(areas, key, flag, index)))
+            if self.stype in Panel.UI_SOUND:
+                gg.audio_mgr.ui_sound(Panel.UI_SOUND[self.stype])
+            return
+
+        def _cb(areas, index):
+            area_id = areas[index]
+            sfx_info = SFX_FILE[self.stype].get(gg.avatar.storyData.route, SFX_FILE[self.stype]['-1'])
+            sfx_file, socket_name, scale_info = sfx_info
+            if area_id == const.XUANWO_AREA_ID:
+                socket_name = 'root'
+            if gg.avatar.storyData.cityTheme == const.CityTheme.REMINISCENCE:
+                sfx_file = SFX_FILE_REMINISCENCE.get(sfx_file, sfx_file)
+            using_model_scale, model_socket_scale = scale_info
+            if using_model_scale:
+                model_scale = gg.city.area_models[area_id].scale.x
+                model_socket_scale = model_scale * gg.city.area_models[area_id].get_socket_matrix(socket_name, world.SPACE_TYPE_LOCAL).scale.x
+            else:
+                model_socket_scale = Panel.CITY_CR_SCALE.get(area_id, 1.0)
+            gg.sfx_mgr.play_sfx_at_model_socket(sfx_file, None, gg.city.area_models[area_id], socket_name, cb=(lambda sfx, user_data, current_task, areas=areas, key=(const.CityStatus.FIGHT, False), index=index: _sfx_load_cb(sfx, user_data, current_task, areas, key, index)), scale=model_socket_scale, ignore_distance=True)
+            return
+
+        if areas:
+            gg.city.city_focus(areas[0], (lambda areas=areas, index=index: _cb(areas, index)))
+        return
+
+
+return

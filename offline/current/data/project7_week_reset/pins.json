@@ -1,0 +1,69 @@
+{
+  "format": "project7-event-reset-public-v1",
+  "policy": "event-reset-source-white-v1",
+  "original_marshal_sha256": {
+    "reset_week_event": "67ae08ed2c999e314aa7551bc48c17d3501f450b7f0349e84bb4d44bf6c62da6",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+    "event_condition": "1ab7a968ebc01bccfa9419172ed92e91d9d491aa7288d616f2c8181de5389ec1"
+  },
+  "asset_sha256": "dc43ebe5d922443100f3aa8ec55151ecd5f94b6c8ed85b780d3248338d3d3b4a",
+  "rows": [
+    {
+      "event": 1267,
+      "white": 1245,
+      "released": true,
+      "white_trigger_conditions": {
+        "16": "[3,)",
+        "11": "set([1030,1066,1323,1355,418,1374,1398])",
+        "4": "[0,0]",
+        "101": "1"
+      },
+      "white_dialogues": [
+        1245
+      ]
+    },
+    {
+      "event": 1320,
+      "white": 1323,
+      "released": true,
+      "white_trigger_conditions": {
+        "16": "[4,)",
+        "11": "set([1030,1066,1245,1355,418,1374,1398])",
+        "4": "[0,0]",
+        "101": "1"
+      },
+      "white_dialogues": [
+        1323
+      ]
+    },
+    {
+      "event": 1354,
+      "white": 1355,
+      "released": true,
+      "white_trigger_conditions": {
+        "16": "[2,)",
+        "11": "set([1030,1066,1323,1245,418,1374,1398])",
+        "4": "[0,0]",
+        "101": "1"
+      },
+      "white_dialogues": [
+        1355
+      ]
+    },
+    {
+      "event": 1365,
+      "white": 1374,
+      "released": false,
+      "white_trigger_conditions": {
+        "16": "[4,)",
+        "11": "set([1030,1066,1245,1355,418,1398])",
+        "4": "[0,0]",
+        "101": "1"
+      },
+      "white_dialogues": [
+        1374
+      ]
+    }
+  ],
+  "semantics": "Explicit offline choice uses the source white_screen_id as original resetProgress entrance. Authorization uses actual server completion, release and current source epoch; does not re-run finished trigger conditions, invent a 417 gate or interpret condition4 as week. Original dialog/start/trace still required. Hidden official reset semantics are not claimed."
+}

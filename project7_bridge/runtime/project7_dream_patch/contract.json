@@ -1,0 +1,25 @@
+{
+  "added_methods": [],
+  "changed_methods": [
+    "LocalGatewayServer.handleReliableRpc",
+    "LocalGatewayServer.handleServiceRpc",
+    "LocalProfileStore.updateEconomy",
+    "LocalGatewayServer.handleCalendar"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-dream-mechanism-seams-v1",
+  "patch": {
+    "bytes": 1007638,
+    "sha256": "2eaecc51ad40f866cfd67b57290150941cb80afe61c2c94e85073aabe8f62188"
+  },
+  "scope": "Reviewed generic mechanisms; original rewards/sequence-cache flow preserved. Finite original-engine proof is separate from Android/native acceptance.",
+  "source": {
+    "bytes": 1156824,
+    "sha256": "5e0e6220e63e04fda492608f34ff16230d010b2f8641fd37a7e4aa7fce80eb19"
+  },
+  "target": {
+    "bytes": 1157260,
+    "sha256": "74e2a7bdc71b1b1d1f3989fe44dc27d47cad433ecd0eccf9168d1d288efb744c"
+  }
+}

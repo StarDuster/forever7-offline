@@ -1,0 +1,209 @@
+{
+  "format": "forever7-offline-inventory-v23-acceptance-v1",
+  "date": "2026-11-08",
+  "status": "PASS",
+  "base_acceptance": "reports/offline-acceptance-v1.json",
+  "target": "Official original APK plus source build command produces one installable offline APK",
+  "apk": {
+    "path": "builds/forever7-offline-inventory-v23-20261108.apk",
+    "bytes": 1296637864,
+    "sha256": "4bdf08e9201c5b0fb025e0d547ee4b9fb080ee8747f6a6a9d16a0ad60a8b0453",
+    "signature_v2_v3": true,
+    "zipalign16k": true,
+    "certificate_sha256": "52893d575ae8e51b860ed744d6b5c36db3a2928d96100b0b6ac711630bbbee6b"
+  },
+  "original_sha256": "12e57f77059f7f3964585f3a615410f3f9625101d885883cd4de4397f490c503",
+  "component_sha256": "ccbde188251c68eb23a4af1d0b6aef1946236d527d2a70f30058277e5a7b7a0d",
+  "implementation": {
+    "entry": "Original Settings, inventory editor",
+    "operations": [
+      "search official item name or ID",
+      "set or add ordinary stack quantity",
+      "set or add currency",
+      "create independent treasure instances in original quality mapping"
+    ],
+    "original_resource_path": "LocalResourceEngine.grant / LocalGiftEngine.consume / LocalCommerceEngine.spend; original LocalProfileStore and atomic writer",
+    "no_second_profile_store": true,
+    "profile_and_operation_receipt_atomic": true,
+    "durable_replay_zero_writes": true,
+    "postcommit_uncertain_retains_pending": true,
+    "ordinary_delete_uses_original_ObjectId_tombstones": true,
+    "catalog_nonce_and_ui_epoch_reject_stale_responses": true
+  },
+  "original_ux": {
+    "button_skin": "Clone stock Settings btn_policy with original callback isolated",
+    "font": "cocos/res/hkytw5.ttf",
+    "item_icons": "ITEM_DATA.icon -> cocos/image/item/common; original memory fragment special mapping",
+    "treasure_quality": [
+      "green",
+      "blue",
+      "purple",
+      "gold",
+      "orange"
+    ],
+    "layout": "left categories/search/results; right item/current quantity/mode/quantity/action"
+  },
+  "bounds": {
+    "input_max": 1000000,
+    "treasure_per_request_max": 100,
+    "batch_max": 64,
+    "durable_operation_receipts_max": 4096,
+    "profile_byte_budget": 8388608
+  },
+  "independent_apk": {
+    "status": "PASS",
+    "apk_sha256": "4bdf08e9201c5b0fb025e0d547ee4b9fb080ee8747f6a6a9d16a0ad60a8b0453",
+    "changed_zip_entries": [
+      "assets/offline/project7-resource-binding.json",
+      "assets/project7_local.npk",
+      "classes6.dex",
+      "META-INF/FOREVER7.SF",
+      "META-INF/FOREVER7.RSA",
+      "META-INF/MANIFEST.MF"
+    ],
+    "added_own_classes": [
+      "Lcom/project7/localmanager/BaiyeTransactions$Outcome;",
+      "Lcom/project7/localmanager/BaiyeTransactions$Replay;",
+      "Lcom/project7/localmanager/BaiyeTransactions$Verifier;",
+      "Lcom/project7/localmanager/InventoryEditorGateway$0;",
+      "Lcom/project7/localmanager/InventoryEditorGateway$1;",
+      "Lcom/project7/localmanager/InventoryEditorGateway$2;",
+      "Lcom/project7/localmanager/InventoryEditorGateway$InventoryIndex;",
+      "Lcom/project7/localmanager/InventoryEditorGateway$Rejected;",
+      "Lcom/project7/localmanager/InventoryEditorGateway;"
+    ],
+    "changed_own_classes": [
+      "Lcom/forever7/offline/Project7BundledResources;",
+      "Lcom/project7/localmanager/BaiyeTransactions;",
+      "Lcom/project7/localmanager/OfflineMechanismGateway;"
+    ],
+    "all_other_own_classes_unchanged": true,
+    "classes7_unchanged": true,
+    "field_opcodes_match_types": true,
+    "coc_wrapper_guard": true,
+    "npk_entries": 21,
+    "only_changed_npk_fid": "acb9b80e",
+    "only_init_loader_string_changed": true,
+    "actual_embedded_inventory_ui_sha256": "1a1dace6f3e2705021903e39b0178343620aa62fac9c40353a6720f1ca937097",
+    "actual_embedded_startup_baseline_sha256": "23589c0af07af61bd906ca306709d3ef71bbe266c3e9c71fc81bf27d568a655a",
+    "signature_v2_v3_same_identity": true,
+    "zipalign16k": true,
+    "actual_entry_sha256": {
+      "classes6.dex": "465f06fa36f07fcdbee4158c37d233329674609653314a72ad5e4b63d31e19d4",
+      "classes7.dex": "0b4c41a5461840fb7bdb02529732a2c6849d604893b6a9390b9a9404618d0eb4",
+      "assets/project7_local.npk": "feddaba84296e6c5a8c38b60181977991ed0f5828e32b446f2d0e5463f836042"
+    },
+    "final_host_cache": "analysis/project7/root-inventory-v23-r9-final-host-20261108"
+  },
+  "actual_dex_host": {
+    "status": "PASS",
+    "actual_apk_dex6_sha256": "465f06fa36f07fcdbee4158c37d233329674609653314a72ad5e4b63d31e19d4",
+    "actual_apk_dex7_sha256": "0b4c41a5461840fb7bdb02529732a2c6849d604893b6a9390b9a9404618d0eb4",
+    "production_source_recompiled_for_runtime": false,
+    "runtime_origin": "classes6 from actual candidate DEX through dex2jar/ASM frames; classes7 fixed current0b4; no compile-only API in runtime",
+    "checks": {
+      "actual-editor": "PERF_CATALOG_1925_ITEMS_140_HEROES_MS=54/31\nPASS inventory editor: set/add/currency/treasure/catalog; callback-insensitive exact replay; conflict/cap/busy rejection; empty-battle/completed-week; stock receipt recovery; original Store image",
+      "actual-postcommit": "ROOT_INVENTORY_POSTCOMMIT_RECOVERY_PASS commits=1 retryWrites=0 projectionRepaired=true noFalseFailure=true",
+      "actual-uncertain": "ROOT_INVENTORY_UNCERTAIN_RECOVERY_PASS writes=1 firstReadFailed=true secondReadRecovered=true engineRepaired=true",
+      "actual-legacy-fusion": "PASS original Store fusion4:1, actual consume/grant/replies, repeated/concurrent/overflow/failure/aftercommit/reliable-negative",
+      "actual-legacy-fragments": "PASS real stock memory partial/duplicate/last/owned conversion; source eligibility, one-voucher/no24, hfp sync, original atomic faults, no draw state mutation"
+    },
+    "original_baiye_consumers_pass": true
+  },
+  "independent_astra_ui_audit": {
+    "status": "PASS",
+    "auditor": "Astra",
+    "ui_sha256": "1a1dace6f3e2705021903e39b0178343620aa62fac9c40353a6720f1ca937097",
+    "gateway_sha256": "468ce7ed5933f35cc32d1c896071dc5ce59619c99b00ce2161b1f6b8a3a2d8c9",
+    "reproduced_interleavings_pass": 6,
+    "cases": [
+      "category-switch old-row rejection",
+      "reopen category consistency",
+      "old-panel callback vs current same-key quantity",
+      "stale nonce has no in-flight side effects",
+      "lost reply explicit retry sends fresh nonce",
+      "preserved-selection refresh permits exactly one next edit"
+    ],
+    "no_file_changes_by_auditor": true
+  },
+  "portable_client_tests": {
+    "ui_host": "PASS",
+    "unit_tests": 8,
+    "status": "PASS"
+  },
+  "native": {
+    "status": "PASS",
+    "actual_final_apk_tested": true,
+    "environment": "Android11 ARM64; 2560MiB; 3 cores; HVF; host GPU; persistent AVD disk",
+    "network_wifi_and_mobile_disabled": true,
+    "settings_stock_button_skin_visible_and_functional": true,
+    "original_full_common_item_icons_visible": true,
+    "single_result_top_aligned_and_selection_inside_row": true,
+    "rapid_category_switch_and_latest_query_consistent": true,
+    "set_current_quantity_seed_and_add_one_seed": true,
+    "item24_set_sequence": [
+      63,
+      64,
+      65
+    ],
+    "item24_add_sequence": [
+      65,
+      66
+    ],
+    "summonCoin_add_sequence": [
+      13,
+      14
+    ],
+    "treasure1001_create_sequence": [
+      8,
+      9
+    ],
+    "created_treasure_quality": 3,
+    "repeat_edit_without_reselection": true,
+    "close_reopen_category_consistent": true,
+    "cold_restart_auto_login_city_and_editor": true,
+    "post_restart_original_profile_comparison": {
+      "identity_preserved": true,
+      "heroes": 140,
+      "skins": 494,
+      "treasure_pairs": 1900,
+      "old_treasure_instances_unchanged": true,
+      "equipped_container_exact": true,
+      "new_treasure_instances": 4,
+      "soul_fragments": 66,
+      "summonCoin": 14,
+      "weeknum_preserved": true,
+      "editor_receipts": 17
+    },
+    "restored_test_state": {
+      "original_internal_files_bytes_and_owner_mode_exact": true,
+      "original_inventory_restored": true,
+      "pending_operation_files": 0,
+      "guest_network_restored": true,
+      "app_stopped": true
+    },
+    "restore_baseline": {
+      "soul_fragments": 60,
+      "summonCoin": 9,
+      "new_treasure_instances": 0,
+      "editor_receipts": 0
+    },
+    "owned_emulator_stopped": true,
+    "awake_guard_stopped": true,
+    "fatal_app_exceptions": 0,
+    "inventory_ui_trace_frames": 0,
+    "disconnects_during_successful_validation": 0,
+    "emulator_host_issue": {
+      "first_run": "Host GPU ColorBuffer error terminated emulator with signal11 after opening-video skip",
+      "recovery": "Same installed APK and persistent disk, hidden host GPU window; all editing and cold restart passed",
+      "production_changes_for_issue": false
+    }
+  },
+  "source_delivery": {
+    "runtime_tools_data_match_actual_tested_build_required": true,
+    "source_excludes_original_material_private_save_key_toolchain": true,
+    "fixed_component_separate_from_source": true,
+    "pixel_material_worktree_patch_preserved_and_excluded": true
+  },
+  "verified_at": "2026-11-07T22:23:17.509703+00:00"
+}

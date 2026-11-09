@@ -1,0 +1,57 @@
+{
+  "format": "project7-reliable-scope-implementation-v1",
+  "state": "source_and_fixed_delta_integrated_no_apk",
+  "source_dex_sha256": "bcffb77c8370f640ac6c9728855ba738b78029deacf8dd41fe1e3aa957df5515",
+  "target_dex_sha256": "9506b09dc71f90e257ad99c371bb396d411e885a8dbc2dcc17a2d2e824aadd7b",
+  "framed_manager_sha256": "248375abc553e42def8906ad43e4364e81bba13df694dbb355c61ebfbde90ce4",
+  "scope": "Original authenticated reliable dispatcher forwards seq and per-connection seen to11-argument bridge. Bridge currently delegates old9-argument dispatch without touching seen; wish implementation remains separate unfinished work.",
+  "changed_dex_methods": [
+    "LocalGatewayServer.handleReliableRpc"
+  ],
+  "defined_methods": 3705,
+  "manager_classes": 649,
+  "registers": 58,
+  "verification": {
+    "actual_dex_control_flow_tests": {
+      "passed": 4,
+      "checks": "only one body changed; original instructions, all branch targets and try/catch ranges retained; ACK/seen gate retained; scratch register paths redefine before use"
+    },
+    "fixed_delta_chain_tests": {
+      "passed": 5,
+      "checks": "exact pins, wrong base/reapplication/tamper refusal and existing families unchanged"
+    },
+    "dex2jar": {
+      "returncode": 0
+    },
+    "frame_recomputation": {
+      "returncode": 0,
+      "classes": 649
+    },
+    "new_bridge_actual_manager_abi_compile": {
+      "returncode": 0,
+      "classpath": "new framed manager + previous frozen production classes + Android32; only the bridge compiled, not a new complete stage"
+    },
+    "source_export_tests_at_initial_run": {
+      "passed": 4,
+      "failed": 1,
+      "failure": "production dependency scanner classifies existing selector producer function-local runtime/tools imports as third-party. No selector source changes in this work; needs actual consumer/maintenance boundary repair, not evidence suppression."
+    },
+    "source_export_current": {
+      "passed": 7,
+      "failed": 0,
+      "evidence": "reports/project7-source-closure-repair.json"
+    }
+  },
+  "not_verified": [
+    "Current complete original-only prepare/preflight",
+    "Wish/UP business implementation or duplicate billing behavior",
+    "D8/APK/Android ART/native client"
+  ],
+  "no_d8_apk_game": true,
+  "production_sha256": {
+    "tools/Project7ReliableScopeHook.java": "5eb2c16116fdce88e573aba3b468175a3ef27b33ce27bd461748a485bb371d2c",
+    "tools/project7_feature_hooks.py": "60e0af1cd4f4897389aeca39d23ac12b938794ec2107b319a903349dbf2f28de",
+    "runtime/android_mechanism_gateway/src/com/project7/localmanager/OfflineMechanismGateway.java": "2fb5809cae77000916979f56975e29e7a47b62d4fafd834b8e75bb15e1a64956"
+  },
+  "independent_review": "reports/astra-p7-reliable-scope-review.md"
+}

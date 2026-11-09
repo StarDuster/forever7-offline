@@ -1,0 +1,22 @@
+{
+  "format": "project7-action-ledger-init-seam-v2",
+  "source": {
+    "path": "analysis/project7/story-city-integration-prepare-v47/project7-inputs-wo0epajl/stage/classes7.dex",
+    "bytes": 1169596,
+    "sha256": "9f9b1fb5fea038dcb31f82e8766b68c0f356444a2591f82998952d46b9f8dcc0"
+  },
+  "target": {
+    "path": "analysis/project7/action-ledger-code20-v2/classes7.dex",
+    "bytes": 1173868,
+    "sha256": "6555e75c0a8432f78422408c0327a3d8b4593eef420bcd0bb74eb5c911665d51",
+    "classes": 650
+  },
+  "patch": {
+    "path": "runtime/project7_action_ledger_init_patch/seams.xor-zlib",
+    "bytes": 1025799,
+    "sha256": "a487a3173c3291eb819990560f1827bb40667cc57e94164c2099c784c208ae03",
+    "codec": "xor-zlib-delta-v1"
+  },
+  "policy": "new-save init vs old unknown; repeat baseline; receipt op/seq; pending binding",
+  "no_d8_apk_native": true
+}

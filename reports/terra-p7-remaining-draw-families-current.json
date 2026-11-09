@@ -1,0 +1,1182 @@
+{
+  "scope": "static only; no native/game/emulator/DEX/APK/network/private save",
+  "counts": {
+    "metadata": 440,
+    "ready": 385,
+    "not_ready": 55
+  },
+  "inputs_sha256": {
+    "runtime/project7_history_catalog/catalog-v3.tsv": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+    "runtime/project7_history_catalog/contract-v3.json": "dfcf7bb42817eb887ab3075dbe3fb853d2065c71df851b952c60875150cc50b7",
+    "tools/project7_draw_history_ir/data/history-v1/history-ir.json.gz": "8c88ffd6632c4cd6c8ea681b76901771d2a7c8daa35399c0cd5f945cc1947568",
+    "tools/project7_history_catalog.py": "17382cabe625497d4e4ab30ce3cd9c7e91ddfc799b143bd8a48f2e5cef629573",
+    "analysis/original-py-640/entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996",
+    "analysis/original-py-640/entity/avatar_attrs/LuckyDrawData.py": "fb45be303751e65cd9f455d0fec5c32637116195e1aff4f6e7059824d77ea45c",
+    "analysis/project7/manager/com.project7.localmanager.LocalDrawEngine.dis": "8bb50cb7b7fea3f894c4da6b574500354dba8e89e25eadb72d77d4d9047d3e47"
+  },
+  "groups": {
+    "六槽形状未证": [
+      2,
+      3,
+      4
+    ],
+    "wish_sort": [
+      5
+    ],
+    "get_hero_extra_reward": [
+      16,
+      17,
+      32,
+      37,
+      47,
+      57,
+      67,
+      88,
+      101,
+      175,
+      187,
+      203,
+      210,
+      222,
+      241,
+      253,
+      260,
+      270,
+      282,
+      283,
+      288,
+      295,
+      311,
+      323,
+      341,
+      363,
+      382,
+      425,
+      433,
+      440,
+      485,
+      486,
+      487,
+      491
+    ],
+    "缺失默认行": [
+      42,
+      52,
+      62,
+      72,
+      81,
+      89,
+      107
+    ],
+    "get_hero_extra_reward、wish_sort": [
+      119
+    ],
+    "get_hero_extra_reward、replace_reward、wish_sort": [
+      126,
+      143,
+      154,
+      164
+    ],
+    "consume_without_normal": [
+      362,
+      488
+    ],
+    "get_hero_extra_reward、inc_up_cnt_type、is_up、is_up_open、up_m、up_n、up_r、up_x": [
+      397,
+      426,
+      445
+    ]
+  },
+  "pools": [
+    {
+      "wire_t": 2,
+      "reason": [
+        "six_slot_shape_unverified"
+      ],
+      "tags": [],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 29,
+        "memory": 34,
+        "item": 12
+      },
+      "epoch_utc": 1455087900
+    },
+    {
+      "wire_t": 3,
+      "reason": [
+        "six_slot_shape_unverified"
+      ],
+      "tags": [],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 27,
+        "memory": 29,
+        "item": 12
+      },
+      "epoch_utc": 1455087900
+    },
+    {
+      "wire_t": 4,
+      "reason": [
+        "six_slot_shape_unverified"
+      ],
+      "tags": [],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "memory": 26,
+        "hero": 26,
+        "item": 12
+      },
+      "epoch_utc": 1455087900
+    },
+    {
+      "wire_t": 5,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 708,
+        "item": 142,
+        "summonCoin": 1
+      },
+      "epoch_utc": 2062393500
+    },
+    {
+      "wire_t": 16,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 29,
+        "memory": 34,
+        "item": 12
+      },
+      "epoch_utc": 1531897200
+    },
+    {
+      "wire_t": 17,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 29,
+        "memory": 34,
+        "item": 12
+      },
+      "epoch_utc": 1533106800
+    },
+    {
+      "wire_t": 32,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 31,
+        "memory": 39,
+        "item": 12
+      },
+      "epoch_utc": 1536735900
+    },
+    {
+      "wire_t": 37,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 31,
+        "memory": 39,
+        "item": 12
+      },
+      "epoch_utc": 1539154800
+    },
+    {
+      "wire_t": 42,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:5657"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1540364700
+    },
+    {
+      "wire_t": 47,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 31,
+        "memory": 39,
+        "item": 12
+      },
+      "epoch_utc": 1541574300
+    },
+    {
+      "wire_t": 52,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:5981"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1542783600
+    },
+    {
+      "wire_t": 57,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 33,
+        "memory": 44,
+        "item": 12
+      },
+      "epoch_utc": 1543993200
+    },
+    {
+      "wire_t": 62,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:6499"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1545202800
+    },
+    {
+      "wire_t": 67,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 35,
+        "memory": 49,
+        "item": 12
+      },
+      "epoch_utc": 1546412400
+    },
+    {
+      "wire_t": 72,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:6767"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1547622000
+    },
+    {
+      "wire_t": 81,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:6968"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1548831600
+    },
+    {
+      "wire_t": 88,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 37,
+        "memory": 54,
+        "item": 12
+      },
+      "epoch_utc": 1550646000
+    },
+    {
+      "wire_t": 89,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:7366"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1551855600
+    },
+    {
+      "wire_t": 101,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 39,
+        "memory": 59,
+        "item": 12
+      },
+      "epoch_utc": 1553065200
+    },
+    {
+      "wire_t": 107,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [],
+      "issues": [
+        "missing_default_normal:7657"
+      ],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 85,
+        "hero": 56,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1554274800
+    },
+    {
+      "wire_t": 119,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1556089200
+    },
+    {
+      "wire_t": 126,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "replace_reward",
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1558508400
+    },
+    {
+      "wire_t": 143,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "replace_reward",
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1560927600
+    },
+    {
+      "wire_t": 154,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "replace_reward",
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1563346800
+    },
+    {
+      "wire_t": 164,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "replace_reward",
+        "wish_sort"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1565766000
+    },
+    {
+      "wire_t": 175,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 49,
+        "memory": 84,
+        "item": 12
+      },
+      "epoch_utc": 1568185200
+    },
+    {
+      "wire_t": 187,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 51,
+        "memory": 89,
+        "item": 12
+      },
+      "epoch_utc": 1570604400
+    },
+    {
+      "wire_t": 203,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 53,
+        "memory": 94,
+        "item": 12
+      },
+      "epoch_utc": 1573023600
+    },
+    {
+      "wire_t": 210,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 53,
+        "memory": 94,
+        "item": 12
+      },
+      "epoch_utc": 1575442800
+    },
+    {
+      "wire_t": 222,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 55,
+        "memory": 99,
+        "item": 12
+      },
+      "epoch_utc": 1578467100
+    },
+    {
+      "wire_t": 241,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 57,
+        "memory": 104,
+        "item": 12
+      },
+      "epoch_utc": 1580886300
+    },
+    {
+      "wire_t": 253,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 109,
+        "hero": 59,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1583910000
+    },
+    {
+      "wire_t": 260,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 61,
+        "memory": 114,
+        "item": 12
+      },
+      "epoch_utc": 1586329500
+    },
+    {
+      "wire_t": 270,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 63,
+        "memory": 119,
+        "item": 12
+      },
+      "epoch_utc": 1588748700
+    },
+    {
+      "wire_t": 282,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "summonCoin": 1,
+        "hero": 64,
+        "memory": 122,
+        "item": 12
+      },
+      "epoch_utc": 960015600
+    },
+    {
+      "wire_t": 283,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 504,
+        "memory": 127,
+        "hero": 66,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 960015600
+    },
+    {
+      "wire_t": 288,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 122,
+        "hero": 64,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1591167600
+    },
+    {
+      "wire_t": 295,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 129,
+        "hero": 67,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1593587100
+    },
+    {
+      "wire_t": 311,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 134,
+        "hero": 69,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1596611100
+    },
+    {
+      "wire_t": 323,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 134,
+        "hero": 69,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1599030300
+    },
+    {
+      "wire_t": 341,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 139,
+        "hero": 71,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1603263900
+    },
+    {
+      "wire_t": 362,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "consume_without_normal"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 129,
+        "hero": 67,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1608102000
+    },
+    {
+      "wire_t": 363,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 144,
+        "hero": 73,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1606892700
+    },
+    {
+      "wire_t": 382,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 149,
+        "hero": 75,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1610521200
+    },
+    {
+      "wire_t": 397,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "inc_up_cnt_type",
+        "is_up",
+        "is_up_open",
+        "up_m",
+        "up_n",
+        "up_r",
+        "up_x"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 396,
+        "memory": 184,
+        "hero": 54,
+        "item": 4
+      },
+      "epoch_utc": 1614150000
+    },
+    {
+      "wire_t": 425,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 187,
+        "hero": 90,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1617778800
+    },
+    {
+      "wire_t": 426,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "inc_up_cnt_type",
+        "is_up",
+        "is_up_open",
+        "up_m",
+        "up_n",
+        "up_r",
+        "up_x"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 396,
+        "memory": 184,
+        "hero": 54,
+        "item": 4
+      },
+      "epoch_utc": 1617778800
+    },
+    {
+      "wire_t": 433,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 159,
+        "hero": 79,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1618988400
+    },
+    {
+      "wire_t": 440,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 159,
+        "hero": 79,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1626246000
+    },
+    {
+      "wire_t": 445,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward",
+        "inc_up_cnt_type",
+        "is_up",
+        "is_up_open",
+        "up_m",
+        "up_n",
+        "up_r",
+        "up_x"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 396,
+        "memory": 184,
+        "hero": 54,
+        "item": 4
+      },
+      "epoch_utc": 1622617500
+    },
+    {
+      "wire_t": 485,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 179,
+        "hero": 87,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1631084400
+    },
+    {
+      "wire_t": 486,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 179,
+        "hero": 87,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1637132400
+    },
+    {
+      "wire_t": 487,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 179,
+        "hero": 87,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1644390000
+    },
+    {
+      "wire_t": 488,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "consume_without_normal"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1608102000
+    },
+    {
+      "wire_t": 491,
+      "reason": [
+        "candidate_or_policy_unresolved"
+      ],
+      "tags": [
+        "get_hero_extra_reward"
+      ],
+      "issues": [],
+      "positive_reachable_unique_leaf_kinds": {
+        "treasure": 602,
+        "memory": 184,
+        "hero": 89,
+        "summonCoin": 1,
+        "item": 12
+      },
+      "epoch_utc": 1654066800
+    }
+  ],
+  "limits": [
+    "positive leaf counts are unique referenced common IDs, not probabilities or granted counts",
+    "tags are conservative compiler metadata, not proof server used a field",
+    "original 640 server algorithm is unavailable",
+    "stock P7 and current adapter behavior only as identified in evidence; no native completion"
+  ],
+  "families": [
+    {
+      "name": "hero extra reward",
+      "consumer": "card_activity_base and activity_danchi_base display hero extra metadata; replyLuckyDrawCard consumes info and bonus fields",
+      "gap": "No server award rule established; inspect actual event mapping and atomic grant; do not automatically treat UI metadata as proven bonus."
+    },
+    {
+      "name": "increase up / jiaozhi",
+      "ids": [
+        397,
+        426,
+        445
+      ],
+      "consumer": "LuckyDrawData get_inc_up_prob/get_is_must_up; syncJiaozhiData updates iuc/jzc/jzr/rc; card reveal consumes jiaozhi",
+      "gap": "Preserve keyed shared counters, selection, reward and synchronization atomically; exact original server ordering/reset unknown."
+    },
+    {
+      "name": "treasure wish and selection",
+      "consumer": "setChooseTreasure {t,i} -> replySetChooseTreasure {r,t,i}; syncTreasureWishInfo and syncWishGroupInfo; card_yingzhuang and card_box",
+      "gap": "Dynamic tables/rotation, persisted step/group/selection and draw outcomes; no claim current adapters implement this chain."
+    },
+    {
+      "name": "skin and pendant",
+      "consumer": "reward item virtual metadata and standard reveal; skin scene is presentation, furniture is separate RPC",
+      "gap": "Six-card eligible source leaves and duplicates must be verified per pool; asset catalog support does not prove actual grant/UI; avoid assuming standalone skin RPC."
+    },
+    {
+      "name": "missing default normal",
+      "ids": [
+        42,
+        52,
+        62,
+        72,
+        81,
+        89,
+        107
+      ],
+      "gap": "Resolve absent normal IDs in matching version; never reinterpret as random reward IDs."
+    },
+    {
+      "name": "historical shape",
+      "ids": [
+        2,
+        3,
+        4
+      ],
+      "gap": "Original six-slot count absent: identify real consumer/format; no inferred six-slot."
+    },
+    {
+      "name": "consume without normal",
+      "ids": [
+        362,
+        488
+      ],
+      "consumer": "LuckyDrawData cost gates",
+      "gap": "Explicit free-history policy differs from original ticket-only semantics; confirm client path and cost handling."
+    },
+    {
+      "name": "wish_sort and replace_reward",
+      "ids": [
+        5,
+        119,
+        126,
+        143,
+        154,
+        164
+      ],
+      "gap": "wish_sort is presentation ordering in scanned client; replace_reward no matching client reader found; server-side effect unproven."
+    },
+    {
+      "name": "achievement daily free",
+      "consumer": "LocalAchievementFreeDraw.consume -> replyUseNewAchievementChouka",
+      "gap": "stock implements t1 only; broader applicability unproved."
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "scope": "485 fixed source static only; no game, emulator, D8, APK, private profile or native GUI verification",
+  "source_epoch_utc": 1631084400,
+  "chouka_info": {
+    "sort": 5,
+    "img_heroes": [
+      141,
+      147
+    ],
+    "drawCoin": 16668,
+    "poolType": 1,
+    "rule_index": 656,
+    "begin_time": [
+      2021,
+      8,
+      25,
+      7,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    "base_black": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "room_enter_index": -1,
+    "tabImgPath": "tab_activity_48.png",
+    "yiyongyou_flags": [
+      141,
+      147
+    ],
+    "show_level_lower_bound": 1,
+    "room_enter_content": "限时开启",
+    "img_desc": "限时开启，可获得神器使时鸩（S级）与席琳（A级）！",
+    "get_hero_extra_reward": [
+      [
+        147,
+        62496
+      ]
+    ],
+    "room_enter_type": 2,
+    "check_heroes": [
+      141,
+      147
+    ],
+    "room_title": "特殊隙间",
+    "times": 6,
+    "show_level_upper_bound": 110,
+    "ui_idxs": [
+      667,
+      668,
+      669,
+      670,
+      671,
+      672
+    ],
+    "rewardCoin": 16669,
+    "button_path": "gui_card_activity_5_btn_nor.png;gui_card_activity_5_btn_pre.png",
+    "jiaozhi_text1": "#cfe5f66每获得一次时鸩记忆片段，记忆交织上升1点",
+    "jiaozhi_text2": "#cfe5f66每获得一次时鸩神器使，记忆交织上升3点",
+    "isRecommend": 1,
+    "drawType": 485,
+    "end_time": [
+      2021,
+      9,
+      8,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "jiaozhi_rows": {
+    "(485, 136)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        23500
+      ],
+      "open_hero_file": 1,
+      "target_hero": 147,
+      "show_rewards": [
+        62945
+      ],
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 4,
+      "id": 136,
+      "drawType": 485
+    },
+    "(485, 137)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        23501,
+        17987
+      ],
+      "target_hero": 147,
+      "show_rewards": [
+        62946,
+        57687
+      ],
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 5,
+      "id": 137,
+      "drawType": 485
+    },
+    "(485, 138)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        23505
+      ],
+      "target_item": 16673,
+      "target_hero": 147,
+      "show_rewards": [
+        62950
+      ],
+      "open_hero_file": 1,
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 6,
+      "id": 138,
+      "drawType": 485
+    },
+    "(485, 134)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        17983
+      ],
+      "target_hero": 147,
+      "show_rewards": [
+        57683
+      ],
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 2,
+      "id": 134,
+      "drawType": 485
+    },
+    "(485, 135)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        17985
+      ],
+      "target_hero": 147,
+      "show_rewards": [
+        57685
+      ],
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 3,
+      "id": 135,
+      "drawType": 485
+    },
+    "(485, 133)": {
+      "hero_files": [
+        7593,
+        7594,
+        7595
+      ],
+      "rewards": [
+        17982
+      ],
+      "target_hero": 147,
+      "show_rewards": [
+        57682
+      ],
+      "end_time": [
+        2021,
+        9,
+        8,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "begin_time": [
+        2021,
+        8,
+        25,
+        7,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jiaozhi_count": 1,
+      "id": 133,
+      "drawType": 485
+    }
+  },
+  "charge_rows": {
+    "274": {
+      "drawType": 485,
+      "rewards": [
+        62945,
+        5844,
+        5845,
+        5846
+      ],
+      "id": 274,
+      "showrewards": [
+        62945,
+        5818
+      ],
+      "times": 12
+    },
+    "275": {
+      "drawType": 485,
+      "rewards": [
+        62946,
+        5847,
+        5848,
+        5849
+      ],
+      "id": 275,
+      "showrewards": [
+        62946,
+        5873
+      ],
+      "times": 36
+    },
+    "276": {
+      "drawType": 485,
+      "rewards": [
+        62897
+      ],
+      "id": 276,
+      "showrewards": [
+        62898
+      ],
+      "times": 90
+    },
+    "277": {
+      "drawType": 485,
+      "rewards": [
+        62891
+      ],
+      "id": 277,
+      "showrewards": [
+        62892
+      ],
+      "times": 180
+    }
+  },
+  "rotation_enabled": true,
+  "marshal_bytecode_findings": {
+    "on_jiaozhi_click": "if check_has_leichong then card_jiaozhi_2 else card_jiaozhi; py decompiler conditional expression is inaccurate",
+    "activity_base": "refresh_tips and set_jiaozhi return before body"
+  },
+  "scope_requirements": [
+    "explicit immutable 485 epoch 1631084400 capability bound to actual dynamic backend rules hash and ready state",
+    "scoped checkJiaozhiInTime only for matched 485 keys and original fixed epoch, do not modify global clock or cdata",
+    "scope CHOUKA_LEIJI_REWARD_DATA on consumers, fixed raw 485 rows 274-277 while delegating others; runtime rotation mapping can override source",
+    "retain actual jzc rc, ct and stock sync/callback behavior",
+    "native C_file.find_res_file and on-device CSB traversal not tested; never assert missing from host listings"
+  ],
+  "known_source_reads": {
+    "tab": "card_tab.py:195-218,406-456",
+    "time": "LuckyDrawMember.py:1258-1288,1737-1753",
+    "jz": "card_jiaozhi_2.py:157-181,194-272",
+    "charge": "card_jiaozhi_2.py:275-374; card_common/leichong_info_2.py:24-70",
+    "tips": "card_common/tips.py:70-105,111-173,316-347,365-431",
+    "result": "LuckyDrawMember.py:414-455,518-540,1723-1734,2042-2049",
+    "rotation": "runtime_mapping_table.py:128-158,404-445,580-590"
+  },
+  "sha256": {
+    "runtime/project7_draw_ui.py": "94b340711333acf598847a1ecf8c3dfecc8cc7ebb74a7d9697aa8723ff2b2234",
+    "runtime/project7_history_catalog/contract-v3.json": "dfcf7bb42817eb887ab3075dbe3fb853d2065c71df851b952c60875150cc50b7",
+    "analysis/android640-scripts/com/data/cdata/chouka_info.marshal": "b0c2d54fabf49da649a1102d65e3417acfd9d25e94fb91ff603ebfd7f5eecc32",
+    "analysis/android640-scripts/com/data/cdata/chouka_jiaozhi.marshal": "d460c1c0c21338b663b8634a8d4d3f5cba5a99803717cba3222a13139e30f574",
+    "analysis/android640-scripts/com/data/cdata/chouka_leiji_reward.marshal": "01245f95726f807eca4f3519ddebab39b0120d974d1ab75eff14bcf6e9181a72",
+    "analysis/android640-scripts/cocos/panels/card_tab.marshal": "4b996287b965f57391d67f688d780bb07330fda22ebfb34872c90aa083b5a0c9",
+    "analysis/android640-scripts/cocos/panels/card_box.marshal": "d58f62b565b18d79d9bdfe82e4d9391da3026816f53a10c6f836b1b6932e3496",
+    "analysis/android640-scripts/cocos/panels/card_activity_base.marshal": "5c78d0f5b0592005742f11e6f936374ecbca3b97048f2030f42fd74d18ffc871",
+    "analysis/android640-scripts/cocos/panels/card_jiaozhi_2.marshal": "4a570a5433e9fc94ea8e5d9bfb5808515d91abbbf17743ed15184f240bec08b1",
+    "analysis/android640-scripts/cocos/comps/card_common/tips.marshal": "af005140e370840c00eb0ab3b3101cb99c6b8b17063d154f6946c1c0c38e0d2c",
+    "analysis/android640-scripts/cocos/comps/card_common/jiaozhi_info.marshal": "aefc99df61de00afaa2854ea72e79792002c4e7cc326775558fbe7d659ce20a6",
+    "analysis/android640-scripts/cocos/comps/card_common/leichong_info_2.marshal": "c4fd86aac12f8dda7d01e455a8343efa565a894391dd78c24bd25f6ed05f00df",
+    "analysis/original-py-640/com/utils/runtime_mapping_table.py": "16ceb8bb00ce67194a074c1c0a04d2ac262193e70efff688e25b1a34c72e3d0e",
+    "analysis/original-py-640/entity/avatar_members/LuckyDrawMember.py": "e0c4be74388514cc13c97a7a22e29b9bc7110630a53aca165ac7cea12d24d996"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "project7-story-city-v1",
+  "asset_sha256": "af2328b97372c27fd392b5b399d03daa17fa73acdd35d2b1ad5b0a8f07218069",
+  "asset_size": 9001,
+  "expanded_sha256": "32d20dc25a0559c91df91b009f5d04a8d4752f848ae9f0860a17a998f154ab77",
+  "source_pins": {
+    "city_data": "155ebc4d9c63c15fa921b8b3753617ef6c1d4cde2604a72263798e46c7aa775f",
+    "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+    "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+    "mainline_score_info": "dbab43659cd8a4c2983bc3ae46b340465b51b7b227c472523e4ac7d89a79ccff",
+    "coc_area_link_data": "ef14e11a29bce26f5d96bf440245437ee870f5a133e42e05e3acf1a1171e4889",
+    "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+    "mission_hero_attr": "25647eaa103bb23bc22c27910e1f119e7ed2f169f52ac440dee69f573a60cc8b"
+  },
+  "base_graph_sha256": "7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba",
+  "base_chapter_sha256": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+  "scope_menus": [
+    25
+  ],
+  "areas": 13,
+  "chapters": 46,
+  "missions": 25,
+  "effects": 17,
+  "ready_ids": [],
+  "suppression_baseline_sha256": "f77f4c691408bfa41ed1685e9813a02441e4ca87fa0c77ef67d277e0ff705777",
+  "suppression_extra_sha256": "958688e27cfbec4b897508d04612e6cce49fe82d917af727a3fe3bbfc43272cd",
+  "suppression_extended_sha256": "574d8c7e63a4ce648705b3f4d1cfbfced9e30fbf9cfd513cb09138290812bc86",
+  "coc_mission_hero": {
+    "hero": 135,
+    "scenes": [
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488
+    ],
+    "rows": 7,
+    "policy": "source-coc-route-27-1-v1"
+  }
+}

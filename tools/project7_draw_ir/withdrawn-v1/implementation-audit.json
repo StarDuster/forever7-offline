@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "scope": "readonly static official640 projection and hierarchical t1 bundle selector; no engine/build integration",
+  "tests": {
+    "host_unit_tests": 14,
+    "passed": true,
+    "real_reproduction_three_files_byte_identical": true,
+    "independent_AST_equal_tables": [
+      "chouka_normal",
+      "chouka_default",
+      "reward_common"
+    ]
+  },
+  "counts": {
+    "normal": 5242,
+    "default": 1558,
+    "random": 22214,
+    "common": 31903,
+    "t1_random": 20,
+    "t1_common": 917,
+    "t1_explicit_overrides": 8
+  },
+  "rank_base_mass": {
+    "design_treasure": [
+      3,
+      5000
+    ],
+    "fragment_rank_3": [
+      2,
+      25
+    ],
+    "fragment_rank_4": [
+      27,
+      400
+    ],
+    "summoncoin": [
+      3,
+      200
+    ],
+    "treasure": [
+      593,
+      1250
+    ],
+    "whole_hero_rank_1": [
+      43,
+      200
+    ],
+    "whole_hero_rank_2": [
+      13,
+      100
+    ],
+    "whole_hero_rank_3": [
+      3,
+      200
+    ],
+    "whole_hero_rank_4": [
+      1,
+      400
+    ]
+  },
+  "files": {
+    "tools/project7_draw_ir/produce.py": {
+      "size": 2811,
+      "sha256": "ba172db9320274c6b3fdd625303378b4d03de7ffcd9d1f9fcd835c018d93a89d"
+    },
+    "tools/project7_draw_ir/__init__.py": {
+      "size": 5236,
+      "sha256": "6888ee3a09fe5791cd04d835276a2129f670d7dbf676373641402575cdef4926"
+    },
+    "tools/project7_draw_ir/literal_marshal.py": {
+      "size": 3152,
+      "sha256": "f37cb89e82d7bf91302c342385abc6ddcd864964b6992730a015ca02b81cccae"
+    },
+    "tools/project7_draw_ir/audit_classes.py": {
+      "size": 3771,
+      "sha256": "5c4679c8fae712f3e5a32ec17c69a1cbc29a7f515e4953dfdd54c0080e32a749"
+    },
+    "tools/project7_draw_ir/README.md": {
+      "size": 3107,
+      "sha256": "2f3cd9934989b96b7c66cdb7d7d9343fe188368ea1525ddd55bd6738a6bf6856"
+    },
+    "tools/project7_draw_ir/consumer.py": {
+      "size": 1496,
+      "sha256": "210db86a1cd7019ec94e53f1888daf66d8753eca1b2d1c1877e20e075c8e6533"
+    },
+    "tools/project7_draw_ir/__main__.py": {
+      "size": 1341,
+      "sha256": "ec99badc504a34c97dc949eba72caf98e7d9f707287269f717b9127fb725fe91"
+    },
+    "tools/project7_draw_ir/closure.py": {
+      "size": 5149,
+      "sha256": "c354917d66a9e5de747dd975dbd3c32734ffe36a4ef9c7362378516e11634a6a"
+    },
+    "tools/project7_draw_ir/data/audit-v1.json": {
+      "size": 979,
+      "sha256": "15d8341398e3cc968fb98d931e2e9798395b807e82f7b1aa90b8b609b7a7473d"
+    },
+    "tools/project7_draw_ir/data/outer-ir-v1.json": {
+      "size": 1228621,
+      "sha256": "e8e1e7c47e822c90f003b9f311bec7ae858bfa8b51e9af7582cac4dbd4d0ad22"
+    },
+    "tools/project7_draw_ir/data/closure-v1/rank-audit.json": {
+      "size": 14300,
+      "sha256": "9b1167d90cbd2f917512530523a0d649101cbd287c5169ea2b21e2948b655273"
+    },
+    "tools/project7_draw_ir/data/closure-v1/public-source-tables.json": {
+      "size": 9751965,
+      "sha256": "05831c90e4bf0b1f45d07a4d063aa9d380dee549478a70eac13cde546595d2a3"
+    },
+    "tools/project7_draw_ir/data/closure-v1/rank-audit-v2.json": {
+      "size": 14556,
+      "sha256": "1f28866684936dae8e45e135dbe77e5883993fdd9c0d89710f1f0d66c98cd83d"
+    },
+    "tools/project7_draw_ir/data/closure-v1/contract.json": {
+      "size": 1319,
+      "sha256": "a4e90bbfb25878e3a46a715d6b2036376effe51703e35268f8d6c5607c491636"
+    },
+    "tools/project7_draw_ir/data/closure-v1/t1-reward-ir.json": {
+      "size": 217091,
+      "sha256": "4bda88dad6c743cca95f2e80081c3e1432249a6e27f119980f42a0d9f6b6adf6"
+    }
+  },
+  "remaining": [
+    "Ordinal lifecycle/reset/advance and stateful guarantees unproven",
+    "Stock engine adapter/grant/reply wiring not implemented",
+    "Unsupported reward grant fields must fail rather than become success",
+    "No VM/device/APK/D8/signing/game or probability-sampling run"
+  ]
+}

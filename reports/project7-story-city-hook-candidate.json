@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "INDEPENDENT_CORE_CANDIDATE_STATIC_AND_TRANSLATION_PASS_NOT_MAIN_ENABLED",
+  "source": {
+    "bytes": 1159096,
+    "sha256": "7f13c24a613676ee520bf6ed2590a6bf33788cb6955c92f3e9f446dee89c0d82"
+  },
+  "target": {
+    "bytes": 1159364,
+    "sha256": "208b47f5987eb476645775b46d81afa7338350560397dc151b8763e85cfe7ec1"
+  },
+  "patch": {
+    "bytes": 1004447,
+    "sha256": "6756c22461f24292322407282aa47582e28310ee425795dbbddcb00bda234bb5"
+  },
+  "framed_jar": {
+    "path": "analysis/project7/story-city-hook-v1/manager-translated-frames.jar",
+    "sha256": "ade6df097e24be3a7514157f2999cd4e32975a26251a817ffc19b869637412e9",
+    "classes": 649
+  },
+  "defined_methods": 3713,
+  "added_methods": [
+    "LocalStoryEntryPolicy.q7OriginalSupports",
+    "BsonLite.q7OriginalAllAreaInfoReplyDocument"
+  ],
+  "changed_methods": [
+    "Lcom/project7/localmanager/LocalGatewayServer;handleCombatAdmission(Ljava/io/OutputStream; [B Ljava/lang/String; Lcom/project7/localmanager/LocalTutorialStore$Progress; Lcom/project7/localmanager/LocalEventEngine; Ljava/util/Set; Ljava/util/Set; I [B)V",
+    "Lcom/project7/localmanager/LocalChapterCityEngine;locked([B I)Z",
+    "Lcom/project7/localmanager/LocalChapterCityEngine;state([B I)Ljava/lang/Integer;",
+    "Lcom/project7/localmanager/LocalStoryRuleRegistry$$ExternalSyntheticLambda4;apply(Lcom/project7/localmanager/LocalResourceEngine$Result; Lcom/project7/localmanager/LocalEventCatalog; Lcom/project7/localmanager/LocalTutorialStore$Progress;)V",
+    "Lcom/project7/localmanager/LocalStoryEntryPolicy;supports(I)Z",
+    "Lcom/project7/localmanager/BsonLite;allAreaInfoReplyDocument(Z Lcom/project7/localmanager/LocalTutorialStore$Progress; [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;area(I)I",
+    "Lcom/project7/localmanager/LocalCityProgress;consumeVictory(Lcom/project7/localmanager/LocalTutorialStore$Progress; [B I I)Z",
+    "Lcom/project7/localmanager/LocalCityProgress;mapStages(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;stages(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)[B",
+    "Lcom/project7/localmanager/LocalCityProgress;status(Lcom/project7/localmanager/LocalTutorialStore$Progress; I [B)I",
+    "Lcom/project7/localmanager/LocalWeekEngine;resetProfile([B Lcom/project7/localmanager/LocalTutorialStore$Progress; I Lcom/project7/localmanager/LocalWeekCatalog;)[B"
+  ],
+  "evidence": "analysis/project7/story-city-hook-v1",
+  "source_hashes": {
+    "tools/Project7StoryCityHook.java": "32c26dad1b7925bdd4d160b62d9a6a95c9d05b7cfb44daea8b41e3b045f294d7",
+    "tests/test_project7_story_city_hook.py": "83e5e6381ebd0117e8bedf10cf86759f44cf04f462df32e080217eb2791cdfba",
+    "runtime/project7_story_city_patch/contract.json": "cc86757bbafc6b6dbada56b670b6a0b3b338d611840fca42cd70bd7b8aeb4e4f",
+    "runtime/project7_story_city_patch/seams.xor-zlib": "6756c22461f24292322407282aa47582e28310ee425795dbbddcb00bda234bb5"
+  },
+  "abi_confirmed_with": "sol_project7_fixed_component",
+  "refresh_callsite": "LocalStoryRuleRegistry$$ExternalSyntheticLambda4.apply(Result,EventCatalog,Progress)V invoke-static v1,v2,v3; sole ChapterCity.refresh caller. Service.effects unchanged.",
+  "register_constraints": {
+    "ChapterCity.state": "static regs3 ins2; v1,v2 parameters,v0 scratch; prefix6 instructions",
+    "ChapterCity.locked": "static regs4 ins2; v2,v3 parameters,v0 scratch; prefix6 instructions",
+    "Week.resetProfile": "private static ([B,Progress,I,WeekCatalog)[B regs38 ins4; sole return-object v0; insert2instructions before original return",
+    "supports": "new sameflags wrapper regs2 ins1; incomingv1 -> helper; retained q7OriginalSupports flags|synthetic",
+    "allAreaInfoReplyDocument": "selected3arg only; wrapper regs4 ins3; incomingv1,v2,v3 -> helper; retained exact original q7OriginalAllAreaInfoReplyDocument flags|synthetic"
+  },
+  "tests": [
+    "7 actual DEX structural/definition/field/class/access/CFG/exception/bridge tests PASS",
+    "producer rebuilt after target pin; second fixed-source output byte-identical",
+    "source/target/payload SHA and bounded xor-zlib roundtrip PASS",
+    "dex2jar translation completed without error; FrameFix recomputed649 classes"
+  ],
+  "limitations": [
+    "No helper behavior/actual Store consumer proof here; Sol2 received pinned framed candidate for that separate work",
+    "No Main/PINS/shared build edits; helper must be packaged/prepared separately",
+    "Gateway query-only range/resolver not included",
+    "No D8/APK/emulator/game/native execution",
+    "Framed JAR is host oracle, not production Android bytecode"
+  ]
+}

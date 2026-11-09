@@ -1,0 +1,459 @@
+{
+  "schema": "project7-mainline32-production-promotion-v1",
+  "generated_by": "tools/project7_mainline32_production.py --write",
+  "status": "production-exact-key",
+  "production_assets": {
+    "runtime/project7_story_mission_catalog/catalog-v1.tsv": {
+      "sha256": "d81437791c78dfc309a6db2b96412d3c7ffe141e88b5492256b1fc77db8a8864",
+      "bytes": 23192
+    },
+    "runtime/project7_story_mission_catalog/economy-extra.tsv": {
+      "sha256": "c9fcb94b6e84751a525b53cd9b8af876243ef68a6f25b05f0511b8baa2600a90",
+      "bytes": 6094
+    },
+    "runtime/project7_story_mission_catalog/pins.json": {
+      "sha256": "693f5ad1ed8026f267fa10060b0025e1ea82994b3a7455702ff442440cedfdc7",
+      "bytes": 4235
+    },
+    "runtime/project7_story_mission_catalog/promotion-v1.json": {
+      "sha256": "0398445868de00c6573ba3b619bd4a40ffc6731097cbd2b186cc7f17510e3c78",
+      "bytes": 10420
+    }
+  },
+  "candidate": {
+    "root": "reports/root-mainline32-key-correction-verification.json",
+    "root_sha256": "20f8c1a0233e74793c88d3265ab2a2a17b72547bd5dcd76f1fbf48a1289b38ce",
+    "root_result": "PASS",
+    "claimed_rows": 619,
+    "unclaimed_source_count": 29,
+    "candidate_contract": "runtime/project7_mainline32_data_candidate/contract-v1.json",
+    "candidate_contract_sha256": "c68b0396af4e8af5a56d038daf1f43fbc380afff8badabda25aaf8fff67f8493",
+    "candidate_asset": "runtime/project7_mainline32_data_candidate/catalog-v1.json.gz",
+    "candidate_asset_sha256": "d7328eb0789098e2d420e6e3a85851ce133f555b7620b532001656ca8fba5483",
+    "candidate_expanded_sha256": "bf9a13b4b22ebc3f941f6d5b5c2e60f9ab58867d591e71323bc3d67cbf72ad60"
+  },
+  "counts": {
+    "catalog": {
+      "C": 511,
+      "A": 178,
+      "T": 5,
+      "route27_C": 39,
+      "route27_A": 18,
+      "generic_C_added": 472,
+      "generic_A_added": 160,
+      "selector11_descriptors": 1,
+      "success_rows": 64,
+      "success_scenes": 64,
+      "success_events": 62
+    },
+    "economy": {
+      "extra_m_rows": 166,
+      "extra_g_rows": 155,
+      "total_m_scenes": 296,
+      "total_g_scenes": 217,
+      "candidate_m_covered": 173,
+      "candidate_g_covered": 151,
+      "extra_added_rows": 287,
+      "preserved_extra_rows": 34
+    },
+    "candidate": {
+      "area_rows": 182,
+      "chapter_keys": 619,
+      "classes": {
+        "existing-city-owner": 1,
+        "existing-dedicated-primitive": 9,
+        "shared-table-driven-chapter": 13,
+        "unknown-normal-city-candidate": 9
+      },
+      "current_scope_menus": [
+        25
+      ],
+      "economy": {
+        "existing_explicit_m_scenes": 25,
+        "g_rows": 151,
+        "m_rows": 173,
+        "missing_after": 0,
+        "missing_before": 148,
+        "scenes": 173
+      },
+      "effect_rows": 100,
+      "menu25_chapter_keys": 46,
+      "menu25_current_catalog_overlap": 39,
+      "menus": 32,
+      "menus_with_chapters": 19,
+      "menus_with_partial_branch_coverage": 16,
+      "menus_without_chapters": 13,
+      "non27_chapter_keys": 573,
+      "original_entry_supported": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        11,
+        13,
+        32
+      ],
+      "scenes": 453,
+      "shared_c_rows": {
+        "a_rows": 172,
+        "area1_menus": [
+          4
+        ],
+        "area1_rows": 6,
+        "area1_scenes": [
+          22010,
+          22011,
+          22012
+        ],
+        "generic_c_rows": 472,
+        "rows_total": 473,
+        "selector11_descriptor_rows": 1
+      },
+      "unclaimed_by_route": {
+        "-1": 15,
+        "23-5": 7,
+        "24-1": 2,
+        "24-2": 1,
+        "24-3": 1,
+        "24-4": 1,
+        "24-5": 2
+      },
+      "unclaimed_chapter_keys": 29,
+      "unclaimed_routes": [
+        "-1",
+        "23-5",
+        "24-1",
+        "24-2",
+        "24-3",
+        "24-4",
+        "24-5"
+      ]
+    }
+  },
+  "preserved": {
+    "route27_rows": true,
+    "non_27_data": true,
+    "special_selector": true,
+    "entry_enablement": false,
+    "ready_ids": [],
+    "scope_menus": []
+  },
+  "special_selector": {
+    "asset": "runtime/android_story_shared/catalog/special-selector-v1.json",
+    "sha256": "5b9d6b01f7fd77ed63f1f301b39ef31db4d7b8fb644383aa28aadcec000404aa",
+    "key": [
+      6,
+      0,
+      "10-6",
+      11
+    ],
+    "flattened": false,
+    "default_minus_one_fallback": "original LocalCityProgress path on Bridge miss"
+  },
+  "success_outcomes": {
+    "policy": "batch original mission successEvent projection; current exact-route owner only; existing dedicated owners unchanged",
+    "scenes": {
+      "320": [
+        1132
+      ],
+      "1114": [
+        20058
+      ],
+      "1115": [
+        20059
+      ],
+      "1116": [
+        20060
+      ],
+      "1117": [
+        20061
+      ],
+      "1118": [
+        20062
+      ],
+      "1119": [
+        20063
+      ],
+      "1120": [
+        20058
+      ],
+      "1130": [
+        20091
+      ],
+      "1131": [
+        20092
+      ],
+      "1132": [
+        20093
+      ],
+      "1133": [
+        20094
+      ],
+      "1134": [
+        20095
+      ],
+      "2113": [
+        30096
+      ],
+      "2114": [
+        30097
+      ],
+      "2115": [
+        30100
+      ],
+      "2116": [
+        30101
+      ],
+      "2117": [
+        30102
+      ],
+      "2119": [
+        30096
+      ],
+      "3115": [
+        40070
+      ],
+      "3116": [
+        40071
+      ],
+      "3117": [
+        40072
+      ],
+      "3118": [
+        40075
+      ],
+      "3119": [
+        40076
+      ],
+      "4114": [
+        60084
+      ],
+      "4115": [
+        60086
+      ],
+      "4116": [
+        60087
+      ],
+      "4126": [
+        60091
+      ],
+      "4127": [
+        60092
+      ],
+      "4128": [
+        60094
+      ],
+      "4141": [
+        60099
+      ],
+      "4142": [
+        60100
+      ],
+      "4143": [
+        60101
+      ],
+      "5113": [
+        50067
+      ],
+      "5114": [
+        50068
+      ],
+      "5115": [
+        50069
+      ],
+      "5116": [
+        50070
+      ],
+      "5117": [
+        50071
+      ],
+      "5118": [
+        50073
+      ],
+      "6113": [
+        70067
+      ],
+      "6114": [
+        70068
+      ],
+      "6115": [
+        70069
+      ],
+      "6116": [
+        70072
+      ],
+      "6117": [
+        70073
+      ],
+      "6118": [
+        70075
+      ],
+      "7113": [
+        80050
+      ],
+      "7114": [
+        80051
+      ],
+      "7115": [
+        80054
+      ],
+      "7116": [
+        80056
+      ],
+      "7117": [
+        80057
+      ],
+      "7118": [
+        80059
+      ],
+      "22003": [
+        40039
+      ],
+      "22006": [
+        30041
+      ],
+      "22009": [
+        20036
+      ],
+      "22012": [
+        10006
+      ],
+      "23001": [
+        50030
+      ],
+      "23002": [
+        50031
+      ],
+      "23003": [
+        50032
+      ],
+      "23004": [
+        70033
+      ],
+      "23005": [
+        70034
+      ],
+      "23006": [
+        70035
+      ],
+      "23007": [
+        80020
+      ],
+      "23008": [
+        80021
+      ],
+      "23009": [
+        80022
+      ]
+    },
+    "examples": {
+      "1114": [
+        20058
+      ],
+      "22012": [
+        10006
+      ],
+      "320": [
+        1132
+      ]
+    }
+  },
+  "economy_conflicts": [
+    {
+      "key": [
+        "G",
+        320
+      ],
+      "candidate": "G\t320\t0\t5104",
+      "preserved_base": "G\t320\t0",
+      "policy": "existing original economy row wins; no duplicate/override appended"
+    }
+  ],
+  "gaps": [
+    {
+      "kind": "consumer",
+      "id": "generic-combat-render-non-chapter",
+      "detail": "chapter_mission_data has no proven client-side scene selection consumer; Bridge exact keys feed Gateway area/stages/admission only, client battle render/native completion remains outside this data promotion"
+    },
+    {
+      "kind": "consumer",
+      "id": "economy-gate-base-preserved",
+      "detail": "existing base economy G 320 row (no gate) differs from inherited source cond 5104; original asset is preserved to avoid overriding shipped rows"
+    },
+    {
+      "kind": "consumer",
+      "id": "area1-guard-reject",
+      "detail": "the fixed a767 frame's q7OriginalConsumeVictory rejects area<2 at offset17 (if_icmplt -> false) and the host asserts that rejection. The full handleCombatOfflineFinish entry settles/advances area1 via LocalEconomyEngine.finish plus the Gateway battle trace, not via the consumeVictory guard. No guard was removed or relaxed."
+    },
+    {
+      "kind": "consumer",
+      "id": "economy-gate-cross-route",
+      "detail": "inherited G gates may reference scenes outside the promoted chapter set or a cond_event outside completedEvents; the economy engine then blocks admission instead of inventing progress. Representative chains seeded 20007 where the source gate requires it."
+    },
+    {
+      "kind": "data",
+      "id": "unclaimed-29-keys",
+      "detail": "29 original chapter keys remain unclaimed: route -1 (15), 23-5 (7), 24-1..24-5 (7); no menu mapping is invented"
+    },
+    {
+      "kind": "consumer",
+      "id": "success-offer-trigger",
+      "detail": "batch S rows are offered on the current exact route only. The host proves the first pushEvents frame after handleCombatOfflineFinish and reload carry 10006/20058, loss emits nothing, duplicate finish is inert, same-week route switch claims only when the route owns the scene, new-week reset emits nothing, and a completed mutex peer suppresses."
+    },
+    {
+      "kind": "data",
+      "id": "selector11-descriptor-external",
+      "detail": "row [6,0,10-6,11] stays the four-token special-selector-v1 descriptor, not a C row; menu10 selector/COC source is unchanged"
+    }
+  ],
+  "commands": [
+    {
+      "command": ".venv/bin/python tools/project7_mainline32_production.py --write",
+      "exit": 0,
+      "role": "source-verify candidate and append exact-key C/A/S production rows"
+    },
+    {
+      "command": ".venv/bin/python tools/project7_mainline32_production.py --check",
+      "exit": 0,
+      "role": "verify production asset hashes, bridge-load invariants, preserved rows"
+    },
+    {
+      "command": ".venv/bin/python tools/project7_mainline32_data_candidate.py --check",
+      "exit": 0,
+      "role": "historical candidate remains reproducible from frozen production base"
+    },
+    {
+      "command": ".venv/bin/python runtime/android_story_missions/verify.py",
+      "exit": 0,
+      "role": "real Main Gateway/Store/Engine host: 60 checks"
+    }
+  ],
+  "verification": {
+    "host": "com.project7.localmanager.StoryMainline32Host",
+    "checks": 110,
+    "manager": "analysis/project7/story-city-coc-gateway-v36/manager-translated-frames.jar",
+    "assets": "analysis/project7/story-city-integration-prepare-v41/project7-inputs-7ptsklbq/stage/assets (245 packaged classes)",
+    "proven": [
+      "exact-key C/A load",
+      "area/status/stages query",
+      "default -1 and unknown route delegate",
+      "Store begin/loss/win/replay",
+      "mission economy va=2 spend",
+      "selector11 token preserved",
+      "area1 consumeVictory guard rejects; full offline finish first push/reload/loss/duplicate/route-week-mutex",
+      "22012 success 10006 offered on real win",
+      "1114 success 20058 offered on real win, not loss",
+      "1115 cross-route gate still blocks"
+    ],
+    "limit": "synthetic profile/progress only; no native battle/D8/APK. New-week relogin uses a reset battle set; persistence of a stale battle set across week rollover remains unreconciled."
+  },
+  "still_candidate": {
+    "difficulty": "all 32 menus",
+    "unclaimed_keys": 29,
+    "entry_enablement": false,
+    "scope_menus": [],
+    "ready_ids": []
+  }
+}

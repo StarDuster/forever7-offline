@@ -1,0 +1,67 @@
+{
+  "status": "backend-source-frozen-public-ui-not-integrated",
+  "backend_candidate_count": 46,
+  "inventory": {
+    "production_classes": 29,
+    "dynamic_classes": 14,
+    "source_hashes": {
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicCatalog.java": "552164cf6cc9406d7dfd9690cb595c7a0d2c7ff2d7aa4c7c437e9ef7dd0df0e4",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java": "4a590e8a394ed30f735efa2d2ee357646714b90832f668f9365cf41c9664a713",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java": "ab7eead4d63955eb629ef2796cb77f635f3be60e7151e5bab7d2fa6fd7110a67",
+      "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java": "67c2d38eeeb3e3eafa6f6104b8431fc97afb4ef0db33a00ee3c7c3cc6b732228",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryBson.java": "e2dfc69f457dc9dd8488f2810ec97a7a9d2dc26789dd0c678c2fe11c97cf83b1",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryCatalog.java": "dfeaccbcf59542b49d50e59f6229e4ffcd3f52dbf793cfd5a6e0426ba5cc1561",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": "e976e935cb32e09bb995b44e222f6037824aae9d6461ff5095145c3cd06e2bf8",
+      "runtime/android_history_draw/src/com/project7/localmanager/HistoryFurniturePolicy.java": "29207ccd6a2860982a7281dbb437eff8af29c0afed324657ccbf298ea2806d28",
+      "runtime/android_selector_draw/src/com/project7/localmanager/SelectorPolicy.java": "39aef7e2e2521887023ef86f2bb4a36063eedd1beff873287e1e81a774fe2b2e"
+    }
+  },
+  "source_sha256": {
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicSlotPlan.java": "ab7eead4d63955eb629ef2796cb77f635f3be60e7151e5bab7d2fa6fd7110a67",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicDrawPolicy.java": "4a590e8a394ed30f735efa2d2ee357646714b90832f668f9365cf41c9664a713",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicTransition.java": "67c2d38eeeb3e3eafa6f6104b8431fc97afb4ef0db33a00ee3c7c3cc6b732228",
+    "runtime/android_dynamic_draw/src/com/project7/localmanager/DynamicCatalog.java": "552164cf6cc9406d7dfd9690cb595c7a0d2c7ff2d7aa4c7c437e9ef7dd0df0e4",
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": "e976e935cb32e09bb995b44e222f6037824aae9d6461ff5095145c3cd06e2bf8",
+    "runtime/android_dynamic_draw/compile_stubs/com/project7/localmanager/DynamicApiStubs.java": "28e517bb3a00429d55b292bf875ddd6f96a88a70844e08e208528a6ef7cbb210",
+    "tools/project7_dynamic_expansion.py": "395b75343bb531d4de2497c2847a7b389525f999c4a7edecf6e2cc974f091196",
+    "runtime/project7_dynamic_catalog/expansion-policy-v1.json": "04c2881148468bb2d93f6d5fed15b6db88b0684d53c2c94bcf36048269f872cb"
+  },
+  "unchanged_raw_asset_sha256": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+  "proofs": {
+    "reports/project7-dynamic-family-final.json": "eca949430ce9b1ba87adea0e773c96f69f3a0111ae70e8c2129133838608c97b",
+    "reports/project7-dynamic485-upgrade-compat-final.json": "e05ecc5f642e6b6460486ff950158a04f3f22b77a8c4b5ea4e73e2b452a2d6c8",
+    "reports/project7-dynamic485-final.json": "b9eaa1b74248a5dc12d719536e8225376c971a18badad57decf60d4e5dafbb85",
+    "reports/project7-dynamic-family-selector-regression-final.json": "b5a8c0ae643da69a086a8b083947d2f6a022bffcf6e5b6a350be01767664afba",
+    "reports/project7-dynamic-family-reducer-final.json": "85826dd26a3110d321647ddee0534494cd04e401521f3ab26db8f82d7a2dc922"
+  },
+  "closed_ids": [
+    5,
+    119,
+    126,
+    143,
+    154,
+    164,
+    397,
+    426,
+    445
+  ],
+  "offline_policies": [
+    "dynamic-charge-extra-offline-v2",
+    "archive-missing-default-base-v1",
+    "current640-six-slot-archive-v1",
+    "history-free-v1"
+  ],
+  "compatibility": "485 original policy/decoder/entropy unchanged; exact old194 binaries compared on empty/partial pending. Only generated UUIDs and original grant-created timestamps normalized. Raw pending file resume is byte-identical.",
+  "integration": [
+    "No new DEX seam or shared dispatcher change. Existing History/Dynamic methods retain ABI; backendReadyIds() exposes immutable eligibility projection.",
+    "Compile History+Selector+Dynamic together with DynamicApiStubs; never package API stubs. Four existing synthetic bridge declarations now match actual public static ABI.",
+    "Add source-bound expansion producer/JSON to source inventory if consumed; raw845e asset unchanged. Public ready policy must be updated separately and verified against actual consumers.",
+    "362/488 fee proof uses host-only ready-policy injection, not current production UI publication."
+  ],
+  "limits": [
+    "No wish/UP implementation.",
+    "No claim about original hidden server probabilities or missing ordinal12 S guarantee.",
+    "No D8/APK/signing/device/game/native/render validation.",
+    "Finite original consumer functions and JVM Store evidence do not constitute full UI acceptance."
+  ]
+}

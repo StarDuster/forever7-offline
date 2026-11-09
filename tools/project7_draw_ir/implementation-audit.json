@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "scope": "ordinary t1 verified outer projection, not all historical default semantics",
+  "artifact": {
+    "path": "tools/project7_draw_ir/data/outer-ir-v2.json",
+    "sha256": "f2543aed80d3ca6e7029811c4797a32f1466d36d4da6cb2c3230a0a9485249eb",
+    "size": 5274
+  },
+  "positive_base_rows": 13,
+  "base_unique_common": 868,
+  "random_pools": 15,
+  "common_bundles": 888,
+  "ordinal_overrides": 8,
+  "unique_override_normal_rows": 7,
+  "withdrawn_archive": "withdrawn-v1/",
+  "authoritative_implementation_report": "reports/project7-core-draw-policy-implementation.json"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "component": "vendor/project7/component-v2.10.1.zip",
+  "sha256": "ccbde188251c68eb23a4af1d0b6aef1946236d527d2a70f30058277e5a7b7a0d",
+  "bytes": 57258978,
+  "minimum_android_api": 26,
+  "manager_version": "2.10.1",
+  "game_patch_version": "1.6.1-p7",
+  "official_original_apk_sha256": "12e57f77059f7f3964585f3a615410f3f9625101d885883cd4de4397f490c503",
+  "official_script_index": 640,
+  "official_script_sha256": "9284e0e00e18a04cb6169e5bbffbec3fd23037fa7dd19893fea3a3510ea1bb06",
+  "manager_dex_entry": "classes7.dex",
+  "own_initializer_dex_entry": "classes6.dex",
+  "consumer_needs_project7_apks": false,
+  "scope": "pinned vendor component plus official-base delta; no original APK or full script archive included",
+  "build_inputs_tool": "project7_bridge/tools/project7_build_inputs.py"
+}

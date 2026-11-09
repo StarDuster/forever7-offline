@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "actual_manager_sha256": "af930ec43effa7ee491d5dd391e4ff338a7e540f25c7bed43f4a9fb54a002e78",
+  "patched_private_dispatch": true,
+  "build": "analysis/project7/event-reset-week-host-rg_s00yv",
+  "android32_compile": true,
+  "runtime_no_compile_stubs": true,
+  "abi": {
+    "members_with_constructors_checked": 36,
+    "descriptor_visibility_static_final_mismatches": []
+  },
+  "source_sha256": {
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/BsonLite.java": "79d20df9c15d83a009495ee6e6ef291611854f083bfe34f06d7add77128895f7",
+    "runtime/android_dream_mode/compile_stubs/com/project7/localmanager/EngineApiStubs.java": "12703b700f2a5677d37c1ac3ba970d4dc97c75624b671261df1373fa346faad3",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamAccess.java": "651aced761f0b60545c0a35f26e4f53c9b28f88a0d9da3f99cd481a13cb1b7a8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCatalog.java": "480f186c42ba6e9a44dd572477b45548d9bf60af86b9e5d72968c5af09f31880",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamCoordinator.java": "c30e16b42d7ff547b291536727768df61aa6cb0fd7cc5ae4ea7809b1c9407bc8",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamEconomyPolicy.java": "aa806c144479f563a2cd141f274a5b3d82ef07642e8dd006b358ab5bd93a7c6b",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolCandidates.java": "c954ed045c3eb554dc89f844eeecf1155e233138e89a1debdd70664097ca67c0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolDelta.java": "129ffb778483ac3e529ef77564b37203a213d1b35f5c6bcfa66fffd5df80884f",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolFailure.java": "3980a8eae071edef9ede4318972eaff311cbfe37608b861161a95e2b3cca72a0",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolGatewayHooks.java": "edac07a696d36e30fafc719671a747744bb3eb8e768519c02c66e8729cf14f45",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamPatrolReply.java": "639d772f6159de9db32272db1181b57ad1c77a11ca4171fd23a40adde71de7f9",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamProgressDelta.java": "db1b292e28f2ee56ef946d8b24a579d0cc0bec1cda84b999b2dfc5368b55bc4d",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamRequestGateway.java": "aba73ec0deb1e7b6815e9db6dd991408fc1b81e920f620d06ad688588c95df92",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamState.java": "1937356a4ef0c9e869e7a5b722785077a17c4fcb8bc7dc3d8e7941dd41e96398",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamStorage.java": "a32b53e2f854218b4da56a6dd492ce75fedce302e04c43295c4ca75cbb8e8544",
+    "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "8770ae1bfcb416c77c7d2a7e0283979887459314ee3cf505fb1f4ae507ac88dc",
+    "runtime/android_week_reset/compile_stubs/com/project7/localmanager/WeekResetApiStubs.java": "04c8f330236cef90f49234c73f7ce880724c6e19dd0fd713646775db3e858c85",
+    "runtime/android_week_reset/host_tests/android/content/res/AssetManager.java": "72282106d80293ded718ba39d5127e644c15e6f67defbc8a83811fdf8673546e",
+    "runtime/android_week_reset/host_tests/android/system/Os.java": "6179a6a4ff5ecbc0165e63de0bc06122b84d721dbf9099887f954578b5047b04",
+    "runtime/android_week_reset/host_tests/com/project7/localmanager/EventResetWeekGatewayHost.java": "af8b485b9f3cb7d145e9606a9e7d4afa2838e005e57acc5d87f38d9300f1eaa4",
+    "runtime/android_week_reset/host_tests/com/project7/localmanager/EventResetWeekHost.java": "f4f8b2483bfd4bdf8145efcd887fca8463f275e20a247d5da8391f17b83d13b8",
+    "runtime/android_week_reset/host_tests/consumer.py": "e88ff9f8b2a7356cf96cb8f57e30bf6120fe7f1832904c913854053d1fecbb7f",
+    "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java": "e11a6bb5598d74d4329937a03b56996518c0408b905da5fa31e1a5e9718c1563",
+    "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekPolicy.java": "4c6cfa7a35c7f552113444ade5dcf19edcefb4b81048e63fafeb45ed721cfd94",
+    "runtime/android_week_reset/verify.py": "513f22468f996aa8d0fb946f91585ad2416bf8ec4d3d92f86209cf6b566b9ca2"
+  },
+  "catalog_sha256": "dc43ebe5d922443100f3aa8ec55151ecd5f94b6c8ed85b780d3248338d3d3b4a",
+  "checks": [
+    "pure METHODS before asset prepare",
+    "all enabled bindings plus disabled/missing/invalid/busy guards",
+    "original reset primitives and writer/Week.recover, no black-letter consumption",
+    "awaiting-only idempotent reply; completed/processing old packet no reset",
+    "v1/policy/hash/event/white/sourceCommit/menu metadata replay faults rejected",
+    "unique original resetEvents/entrances menu, original temporary rt and legal successor route effects",
+    "actual original effects closure/ACK completes for three sources",
+    "closure flag/residual ledger/IO refusal preserves old facts",
+    "ordinary null engine and pending/null engine/template boundary",
+    "profile commit then Properties failure fresh Store/Week recovery same id",
+    "actual original producer/reset reply/avatar payload/emergency callback finite consumer"
+  ],
+  "limits": [
+    "offline event continuation policy, not original server recovery",
+    "authoritative completed facts seeded in finite host fixture; no whole-plot reachability claim",
+    "closure-incomplete guard test injects the original ThreadLocal flag on publication, not a synthetic >8-rules engine claim",
+    "selected original functions, rendering/entity creation/network boundaries explicit",
+    "wire only e cannot disambiguate extremely late packets after a genuine new same-event completion",
+    "no D8/APK/device/game/ART acceptance"
+  ],
+  "production_classes": 4,
+  "offline_authorization": "published audited source row + original resetEvents match + authoritative completed fact + original effects/ACK/busy guards; continuation menu is unique reverse entrance, unrelated Ask ed/supports gates unchanged",
+  "original_followup_routes": {
+    "1245": "20-1",
+    "1323": "21-1",
+    "1355": "23-1"
+  },
+  "original_menu_ids": {
+    "1245": 19,
+    "1323": 20,
+    "1355": 22
+  },
+  "no_source_change_after_proof": true
+}

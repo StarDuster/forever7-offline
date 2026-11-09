@@ -1,0 +1,220 @@
+{
+  "format": "project7-original-translated-engine-collection-host-proof-v1",
+  "status": "pass_real_original_translated_manager_engine_on_host_JVM_not_Android_native",
+  "inputs": {
+    "framed_manager_jar": {
+      "path": "analysis/project7/host-original-engine/manager-translated-frames.jar",
+      "bytes": 1119259,
+      "sha256": "723440ecca7b479a9e1f1233222bbff92bfbf41dda18cdcd38d37a4d7ccaa685"
+    },
+    "original_manager_dex": {
+      "path": "analysis/project7/fixed-component-v2-stage/classes7.dex",
+      "bytes": 1145624,
+      "sha256": "087656832b8150984c81c997c7c1f3966da22902c5226b0f6ef2f3e71d602325"
+    },
+    "official_org_json": {
+      "path": "toolchains/json-20240303.jar",
+      "bytes": 78332,
+      "sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed"
+    },
+    "extended_resources": {
+      "path": "analysis/project7/extended-catalog-proof/resources.tsv",
+      "bytes": 1170491,
+      "sha256": "5e716bd9a34cfd678af9aba6385ba3fae92d4b17486ee480f76bd95320268e99"
+    },
+    "full_targets": {
+      "path": "runtime/project7_catalog/target-manifest.json",
+      "bytes": 734294,
+      "sha256": "7e3849b6ed316b7cdc2ef9f103b90e0bc8e20f9b5da70ab3b585fbd72c0da62d"
+    }
+  },
+  "manager_class_count": 649,
+  "normal_jvm_verifier": {
+    "option": "-Xverify:all",
+    "verification_disabled": false,
+    "conversion": "Parent supplied dex2jar2.4 translated649 classes plus ASM computed stackmap/max metadata; no DAD source rewrite. Parent owns conversion/frame provenance report.",
+    "business_class_origin_assertion": "BsonLite/LocalResourceEngine/LocalLevelAdmin/LocalCollectionEngine/LocalSharedLiberateEngine/LocalResourceCatalog/LocalFeatureCatalog/LocalProfileStore all assert codeSource manager-translated-frames.jar."
+  },
+  "execution_scope": {
+    "original_BsonLite_executed": true,
+    "original_catalog_parser_executed": true,
+    "original_profiles_features_merge_executed": true,
+    "original_shared_normalize_executed": true,
+    "original_hero_helper_skin_engines_executed": true,
+    "original_treasure_grant_1900_executed": true,
+    "original_private_readAll_writeAtomic_executed": true,
+    "new_frozen_StockBridge_Validator_transact_executed": true,
+    "Android_ART_or_device": false,
+    "game_or_client_python_or_native_C_file_executed": false,
+    "Android_SDK_jar_at_runtime": false,
+    "user_BSON_or_templates_read": false,
+    "network": false,
+    "APK_assembly_build_install": false
+  },
+  "platform_seams": {
+    "android.content.Context": "Only getApplicationContext/getFilesDir/getAssets; maps a brand-new synthetic private temp directory. Not original Android Context.",
+    "android.content.res.AssetManager": "open maps only fixed public TSV metadata or known target JSON/catalog; rejects all BSON templates/accounts and other paths.",
+    "android.system.Os.rename": "Explicit host NIO ATOMIC_MOVE seam called by real private writeAtomic after original FileOutputStream/getFD.sync. Does not prove Android Os/native storage semantics.",
+    "android.system.ErrnoException": "Type-only exception linkage for original writer catch metadata; no Android operation.",
+    "StableIdentityBootstrap": "Compile-only interface/Identity/Stores type definitions, never used as original identity/account implementation; real manager LocalProfileStore comes from framed jar, not stub.",
+    "Storage.stopped": "Explicit host lifecycle gate, not real GatewayService/SAVE_ACCESS concurrency evidence."
+  },
+  "baseline": {
+    "source": "Original BsonLite.document constructs an entirely synthetic minimal whole profile; its private generic replaceElement injects one synthetic unknown BSON Int64 scalar. No hero/skin/item document is hand-built by the harness. All instances are produced by original granters.",
+    "initial_bytes": 217,
+    "synthetic_account_only": true,
+    "actual_profile_temporaries_removed": true,
+    "unknown_int64_and_nested_values_preserved": true,
+    "fixture_correction": "Original document(Object...) does not accept Java Long; initial fixture was corrected using original generic raw BSON element replacement. This is not a production engine/source modification."
+  },
+  "results": {
+    "heroes": 140,
+    "skins": 494,
+    "treasurePairs": 1900,
+    "firstOriginalGrants": 1900,
+    "firstPrivateWrites": 1,
+    "initialBytes": 217,
+    "finalBytes": 475501,
+    "cumulativeInputBytes": 543186885,
+    "cumulativeOutputBytes": 543567045,
+    "firstMillis": 1714,
+    "faultCases": 3,
+    "repeatOriginalGrants": 0,
+    "repairOriginalGrants": 1
+  },
+  "validated": {
+    "exact_hero_ids": 140,
+    "exact_skin_variants": 494,
+    "exact_treasure_id_quality_pairs": 1900,
+    "first_atomic_profile_commits": 1,
+    "repeat_missing_grants": 0,
+    "repeat_atomic_writes": 0,
+    "repeat_candidate_bytes_identical": true,
+    "same_receipt_one_missing_pair_repair_original_grants": 1,
+    "unknown_types_values_and_UUID_references_preserved": true,
+    "typed_original_defaults_and_attribute_minima_checked": true,
+    "original_shared_group_rules_checked": true
+  },
+  "actual_original_engine_fault_tests": [
+    {
+      "case": "fault after first actual original treasure grant",
+      "result": "authoritative original file bytes unchanged; no private writeAtomic call"
+    },
+    {
+      "case": "fault at host rename seam after original private writer fsync",
+      "result": "old authoritative file unchanged; only sibling .tmp remains; subsequent retry removes owned temporary and commits full original-engine candidate"
+    },
+    {
+      "case": "interruption after a forced new original private writeAtomic",
+      "result": "full receipt-bearing candidate remains; next invocation revalidates targets, no new grants or writes"
+    }
+  ],
+  "runtime_result": {
+    "command": [
+      "toolchains/java/jdk-17.0.21+9/Contents/Home/bin/java",
+      "-Xverify:all",
+      "-Xmx768m",
+      "-cp",
+      "analysis/project7/host-original-engine/collection-proof-v1/platform-seam-classes:analysis/project7/host-original-engine/manager-translated-frames.jar:toolchains/json-20240303.jar:analysis/project7/host-original-engine/collection-proof-v1/identity-type-only:analysis/project7/host-original-engine/collection-proof-v1/production-classes:analysis/project7/host-original-engine/collection-proof-v1/harness-classes-attempt3",
+      "com.project7.localmanager.RealCollectionHost",
+      "analysis/project7/fixed-component-v2-stage/assets",
+      "analysis/project7/extended-catalog-proof/resources.tsv",
+      "runtime/project7_catalog/target-manifest.json"
+    ],
+    "elapsed_seconds": 3.6552596669644117,
+    "returncode": 0,
+    "stdout": "REAL_TRANSLATED_ENGINE_PASS heroes=140 skins=494 treasurePairs=1900 firstOriginalGrants=1900 firstPrivateWrites=1 initialBytes=217 finalBytes=475501 cumulativeInputBytes=543186885 cumulativeOutputBytes=543567045 firstMillis=1714 faultCases=3 repeatOriginalGrants=0 repairOriginalGrants=1\nPLATFORM_SEAMS Context,AssetManager,Os.rename only; Stub! Android methods not used. -Xverify:all; no ART/device/game/native acceptance.\nPUBLIC_ASSETS_OPENED [achievements.tsv, city_services.tsv, features.tsv, growth.tsv, home.tsv, intelligence.tsv, personal.tsv, suppression.tsv, treasure.tsv, white_night.tsv]\n",
+    "stderr": "",
+    "original_jar_sha256": "723440ecca7b479a9e1f1233222bbff92bfbf41dda18cdcd38d37a4d7ccaa685",
+    "official_json_jar_sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed",
+    "no_android_jar_in_runtime": true,
+    "platform_seams": [
+      "Context",
+      "AssetManager",
+      "Os.rename",
+      "ErrnoException type-only"
+    ],
+    "all_production_sources_match_frozen_hash": true
+  },
+  "public_assets_opened": [
+    "achievements.tsv",
+    "city_services.tsv",
+    "features.tsv",
+    "growth.tsv",
+    "home.tsv",
+    "intelligence.tsv",
+    "personal.tsv",
+    "suppression.tsv",
+    "treasure.tsv",
+    "white_night.tsv"
+  ],
+  "performance_limits": "Host original translated-engine time is evidence for this JVM fixture only, not mobile ART/native IO or phone startup budget. 1900 separate full-BSON original grants remain O(N^2); measured input/output argument bytes omit additional internal copies.",
+  "initial_linkage_failure": "First run required android.system.ErrnoException catch-type linkage; adding a type-only host seam resolved it. No -noverify or verifier disable used.",
+  "frozen_implementation_report": "reports/project7-full-collection-initializer-implementation.json",
+  "frozen_production_source_unchanged": true,
+  "separate_synthetic_proof": "Earlier runtime/android_collection/verify_host.py26 synthetic fault cases remain labeled synthetic, not retrospectively promoted to original-engine tests.",
+  "reproduce": ".venv/bin/python analysis/project7/host-original-engine/collection-proof-v1/reproduce.py --output NEW_OUTPUT_DIRECTORY",
+  "harness_sources": {
+    "analysis/project7/host-original-engine/collection-proof-v1/reproduce.py": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/reproduce.py",
+      "bytes": 3523,
+      "sha256": "29a60815fddf98241b27669a7cd6f515b5b1512b99f635a6a2b4002765291df1"
+    },
+    "analysis/project7/host-original-engine/collection-proof-v1/src/com/project7/localmanager/RealCollectionHost.java": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/src/com/project7/localmanager/RealCollectionHost.java",
+      "bytes": 9341,
+      "sha256": "a71d88d42678e0bf04bc87c59d12a8cf2e6cc88482ab7c3b71a7616f6358ad4d"
+    },
+    "analysis/project7/host-original-engine/collection-proof-v1/seams/android/content/Context.java": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/seams/android/content/Context.java",
+      "bytes": 495,
+      "sha256": "c63202127bfa1f751f71393edac0cd8f8627a444c611b13b0b3cac1f737c1531"
+    },
+    "analysis/project7/host-original-engine/collection-proof-v1/seams/android/content/res/AssetManager.java": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/seams/android/content/res/AssetManager.java",
+      "bytes": 888,
+      "sha256": "60d0e9408729e3018d7c0b27a1bf7a4cd65053cb8e9f314f60c608619322ef1b"
+    },
+    "analysis/project7/host-original-engine/collection-proof-v1/seams/android/system/ErrnoException.java": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/seams/android/system/ErrnoException.java",
+      "bytes": 256,
+      "sha256": "6c49ff537e1c03acf49c3ed0d6005d3457c4178911e52b9166a0cdc37f5b6685"
+    },
+    "analysis/project7/host-original-engine/collection-proof-v1/seams/android/system/Os.java": {
+      "path": "analysis/project7/host-original-engine/collection-proof-v1/seams/android/system/Os.java",
+      "bytes": 557,
+      "sha256": "baab1db09007d559a2f70256209d3f8526aa761dc432ce8fca81eeeaad015ea2"
+    }
+  },
+  "limitations": [
+    "Does not execute FullCollectionInitializer.initialize Android Context/SAVE_ACCESS hook, original GatewayService lifecycle or original identity registration. It executes its exact frozen StockBridge/Validator/transact core with explicit platform/lifecycle seams.",
+    "Does not prove Android class loading/DEX verification, native C_file resource acceptance, game UI/models/dyes, gameplay or device persistence.",
+    "Translated original-business bytecode and normal JVM verification are stronger evidence than a synthetic engine, but not a substitute for prohibited device/ART acceptance."
+  ],
+  "independent_fresh_reproduction": {
+    "path": "analysis/project7/host-original-engine/collection-proof-v1-reproduction/result.json",
+    "bytes": 2176,
+    "sha256": "4d5c7a521b964ce6d40cf397023ce82f3712b7854a2948e72b92d21ce57b393b",
+    "result": {
+      "command": [
+        "toolchains/java/jdk-17.0.21+9/Contents/Home/bin/java",
+        "-Xverify:all",
+        "-Xmx768m",
+        "-cp",
+        "analysis/project7/host-original-engine/collection-proof-v1-reproduction/platform-seams:analysis/project7/host-original-engine/manager-translated-frames.jar:toolchains/json-20240303.jar:analysis/project7/host-original-engine/collection-proof-v1-reproduction/identity-type-only:analysis/project7/host-original-engine/collection-proof-v1-reproduction/production:analysis/project7/host-original-engine/collection-proof-v1-reproduction/harness",
+        "com.project7.localmanager.RealCollectionHost",
+        "analysis/project7/fixed-component-v2-stage/assets",
+        "analysis/project7/extended-catalog-proof/resources.tsv",
+        "runtime/project7_catalog/target-manifest.json"
+      ],
+      "wall_seconds": 3.3113738750107586,
+      "stdout": "REAL_TRANSLATED_ENGINE_PASS heroes=140 skins=494 treasurePairs=1900 firstOriginalGrants=1900 firstPrivateWrites=1 initialBytes=217 finalBytes=475501 cumulativeInputBytes=543186885 cumulativeOutputBytes=543567045 firstMillis=1358 faultCases=3 repeatOriginalGrants=0 repairOriginalGrants=1\nPLATFORM_SEAMS Context,AssetManager,Os.rename only; Stub! Android methods not used. -Xverify:all; no ART/device/game/native acceptance.\nPUBLIC_ASSETS_OPENED [achievements.tsv, city_services.tsv, features.tsv, growth.tsv, home.tsv, intelligence.tsv, personal.tsv, suppression.tsv, treasure.tsv, white_night.tsv]\n",
+      "stderr": "",
+      "android_sdk_runtime": false,
+      "frozen_production_source_match": true,
+      "original_jar_sha256": "723440ecca7b479a9e1f1233222bbff92bfbf41dda18cdcd38d37a4d7ccaa685",
+      "official_json_jar_sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed"
+    }
+  },
+  "fresh_reproducer_tested": true
+}

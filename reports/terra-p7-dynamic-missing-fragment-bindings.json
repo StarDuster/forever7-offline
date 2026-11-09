@@ -1,0 +1,1476 @@
+{
+  "scope": "static original 640 literals, project fixed IR and client source only; no server/native execution",
+  "pools": [
+    {
+      "pool": 282,
+      "epoch_utc": 960015600,
+      "info": {
+        "sort": 5,
+        "img_heroes": [
+          122
+        ],
+        "ckbg": "g58_ck_yjt_hd_405",
+        "drawCoin": 11824,
+        "poolType": 1,
+        "rule_index": 437,
+        "begin_time": [
+          2000,
+          5,
+          20,
+          7,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "yijieti": 1,
+        "base_black": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "room_enter_index": -3,
+        "tabImgPath": "tab_activity_29.png",
+        "end_time": [
+          2000,
+          6,
+          3,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "show_level_lower_bound": 1,
+        "room_enter_content": "限时开启",
+        "img_desc": "限时开启，可获得异界体神器使安托涅瓦（S级）！",
+        "preview_heroes": [
+          [
+            122,
+            122
+          ]
+        ],
+        "get_hero_extra_reward": [
+          [
+            122,
+            54378
+          ]
+        ],
+        "drawType": 282,
+        "room_enter_type": 2,
+        "check_heroes": [
+          122
+        ],
+        "room_title": "异界隙间",
+        "times": 6,
+        "ui_idxs": [
+          128,
+          129
+        ],
+        "rewardCoin": 11825,
+        "button_path": "gui_card_activity_5_btn_nor.png;gui_card_activity_5_btn_pre.png",
+        "jiaozhi_text1": "#cfe5f66每获得一次'[%暗使]'安托涅瓦记忆片段，记忆交织上升1点",
+        "jiaozhi_text2": "#cfe5f66每获得一次'%[暗使]'安托涅瓦神器使，记忆交织上升3点",
+        "isRecommend": 1,
+        "show_level_upper_bound": 110,
+        "yiyongyou_flags": [
+          122
+        ]
+      },
+      "jiaozhi_rows": [
+        {
+          "key": [
+            282,
+            61
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14865
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54275
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 1,
+            "id": 61,
+            "drawType": 282
+          }
+        },
+        {
+          "key": [
+            282,
+            62
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14866
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54276
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 2,
+            "id": 62,
+            "drawType": 282
+          }
+        },
+        {
+          "key": [
+            282,
+            63
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14867
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54277
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 3,
+            "id": 63,
+            "drawType": 282
+          }
+        },
+        {
+          "key": [
+            282,
+            64
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14868
+            ],
+            "open_hero_file": 1,
+            "target_hero": 122,
+            "show_rewards": [
+              54278
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 4,
+            "id": 64,
+            "drawType": 282
+          }
+        },
+        {
+          "key": [
+            282,
+            65
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14869,
+              14870
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54279,
+              54280
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 5,
+            "id": 65,
+            "drawType": 282
+          }
+        },
+        {
+          "key": [
+            282,
+            66
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14871
+            ],
+            "target_item": 3946,
+            "target_hero": 122,
+            "show_rewards": [
+              54281
+            ],
+            "open_hero_file": 1,
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 6,
+            "id": 66,
+            "drawType": 282
+          }
+        }
+      ],
+      "target_positive_refs": [
+        {
+          "random_id": 14860,
+          "common_id": 54284,
+          "weight": [
+            69,
+            1
+          ],
+          "common_raw": {
+            "hero": [
+              122
+            ],
+            "id": 54284,
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14862,
+          "common_id": 54272,
+          "weight": [
+            368,
+            1
+          ],
+          "common_raw": {
+            "id": 54272,
+            "items": [
+              11830
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14862,
+          "common_id": 54273,
+          "weight": [
+            368,
+            1
+          ],
+          "common_raw": {
+            "id": 54273,
+            "items": [
+              11831
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14862,
+          "common_id": 54274,
+          "weight": [
+            368,
+            1
+          ],
+          "common_raw": {
+            "id": 54274,
+            "items": [
+              11832
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        }
+      ],
+      "catalog_missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    },
+    {
+      "pool": 283,
+      "epoch_utc": 960015600,
+      "info": {
+        "sort": 5,
+        "img_heroes": [
+          122
+        ],
+        "ckbg": "g58_ck_yjt_hd_405",
+        "drawCoin": 11824,
+        "poolType": 1,
+        "rule_index": 438,
+        "begin_time": [
+          2000,
+          5,
+          20,
+          7,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "yijieti": 1,
+        "base_black": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "room_enter_index": -3,
+        "tabImgPath": "tab_activity_29.png",
+        "end_time": [
+          2000,
+          6,
+          3,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "show_level_lower_bound": 1,
+        "room_enter_content": "限时开启",
+        "img_desc": "限时开启，可获得异界体神器使安托涅瓦（S级）！",
+        "preview_heroes": [
+          [
+            122,
+            122
+          ]
+        ],
+        "get_hero_extra_reward": [
+          [
+            122,
+            54378
+          ]
+        ],
+        "drawType": 283,
+        "room_enter_type": 2,
+        "check_heroes": [
+          122
+        ],
+        "room_title": "异界隙间",
+        "times": 6,
+        "ui_idxs": [
+          128,
+          129
+        ],
+        "rewardCoin": 11825,
+        "button_path": "gui_card_activity_5_btn_nor.png;gui_card_activity_5_btn_pre.png",
+        "jiaozhi_text1": "#cfe5f66每获得一次「暗使」安托涅瓦记忆片段，记忆交织上升1点",
+        "jiaozhi_text2": "#cfe5f66每获得一次「暗使」安托涅瓦神器使，记忆交织上升3点",
+        "isRecommend": 1,
+        "show_level_upper_bound": 110,
+        "yiyongyou_flags": [
+          122
+        ]
+      },
+      "jiaozhi_rows": [
+        {
+          "key": [
+            283,
+            67
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14865
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54275
+            ],
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 1,
+            "id": 67,
+            "drawType": 283
+          }
+        },
+        {
+          "key": [
+            283,
+            68
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14866
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54276
+            ],
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 2,
+            "id": 68,
+            "drawType": 283
+          }
+        },
+        {
+          "key": [
+            283,
+            69
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14867
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54277
+            ],
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 3,
+            "id": 69,
+            "drawType": 283
+          }
+        },
+        {
+          "key": [
+            283,
+            70
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14868
+            ],
+            "open_hero_file": 1,
+            "target_hero": 122,
+            "show_rewards": [
+              54278
+            ],
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 4,
+            "id": 70,
+            "drawType": 283
+          }
+        },
+        {
+          "key": [
+            283,
+            71
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14869,
+              14870
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54279,
+              54280
+            ],
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 5,
+            "id": 71,
+            "drawType": 283
+          }
+        },
+        {
+          "key": [
+            283,
+            72
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14871
+            ],
+            "target_item": 3946,
+            "target_hero": 122,
+            "show_rewards": [
+              54281
+            ],
+            "open_hero_file": 1,
+            "end_time": [
+              2020,
+              6,
+              10,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 6,
+            "id": 72,
+            "drawType": 283
+          }
+        }
+      ],
+      "target_positive_refs": [
+        {
+          "random_id": 14968,
+          "common_id": 54284,
+          "weight": [
+            138,
+            1
+          ],
+          "common_raw": {
+            "hero": [
+              122
+            ],
+            "id": 54284,
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14970,
+          "common_id": 54272,
+          "weight": [
+            138,
+            1
+          ],
+          "common_raw": {
+            "id": 54272,
+            "items": [
+              11830
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14970,
+          "common_id": 54273,
+          "weight": [
+            138,
+            1
+          ],
+          "common_raw": {
+            "id": 54273,
+            "items": [
+              11831
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 14970,
+          "common_id": 54274,
+          "weight": [
+            138,
+            1
+          ],
+          "common_raw": {
+            "id": 54274,
+            "items": [
+              11832
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        }
+      ],
+      "catalog_missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    },
+    {
+      "pool": 288,
+      "epoch_utc": 1591167600,
+      "info": {
+        "sort": 5,
+        "img_heroes": [
+          122
+        ],
+        "ckbg": "g58_ck_yjt_hd_405",
+        "drawCoin": 11824,
+        "poolType": 1,
+        "rule_index": 438,
+        "begin_time": [
+          2020,
+          5,
+          20,
+          7,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "yijieti": 1,
+        "base_black": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "room_enter_index": -3,
+        "tabImgPath": "tab_activity_29.png",
+        "end_time": [
+          2020,
+          6,
+          3,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "show_level_lower_bound": 1,
+        "room_enter_content": "限时开启",
+        "img_desc": "限时开启，可获得异界体神器使安托涅瓦（S级）！",
+        "preview_heroes": [
+          [
+            122,
+            122
+          ]
+        ],
+        "get_hero_extra_reward": [
+          [
+            122,
+            54378
+          ]
+        ],
+        "drawType": 288,
+        "room_enter_type": 2,
+        "check_heroes": [
+          122
+        ],
+        "room_title": "异界隙间",
+        "times": 6,
+        "ui_idxs": [
+          128,
+          129
+        ],
+        "rewardCoin": 11825,
+        "button_path": "gui_card_activity_5_btn_nor.png;gui_card_activity_5_btn_pre.png",
+        "jiaozhi_text1": "#cfe5f66每获得一次「暗使」安托涅瓦记忆片段，记忆交织上升1点",
+        "jiaozhi_text2": "#cfe5f66每获得一次「暗使」安托涅瓦神器使，记忆交织上升3点",
+        "isRecommend": 1,
+        "show_level_upper_bound": 110,
+        "yiyongyou_flags": [
+          122
+        ]
+      },
+      "jiaozhi_rows": [
+        {
+          "key": [
+            288,
+            73
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14865
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54275
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 1,
+            "id": 73,
+            "drawType": 288
+          }
+        },
+        {
+          "key": [
+            288,
+            74
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14866
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54276
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 2,
+            "id": 74,
+            "drawType": 288
+          }
+        },
+        {
+          "key": [
+            288,
+            75
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14867
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54277
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 3,
+            "id": 75,
+            "drawType": 288
+          }
+        },
+        {
+          "key": [
+            288,
+            76
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14868
+            ],
+            "open_hero_file": 1,
+            "target_hero": 122,
+            "show_rewards": [
+              54278
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 4,
+            "id": 76,
+            "drawType": 288
+          }
+        },
+        {
+          "key": [
+            288,
+            77
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14869,
+              14870
+            ],
+            "target_hero": 122,
+            "show_rewards": [
+              54279,
+              54280
+            ],
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 5,
+            "id": 77,
+            "drawType": 288
+          }
+        },
+        {
+          "key": [
+            288,
+            78
+          ],
+          "raw": {
+            "hero_files": [
+              11831,
+              11832,
+              11833
+            ],
+            "rewards": [
+              14871
+            ],
+            "target_item": 3946,
+            "target_hero": 122,
+            "show_rewards": [
+              54281
+            ],
+            "open_hero_file": 1,
+            "end_time": [
+              2020,
+              6,
+              3,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "begin_time": [
+              2020,
+              5,
+              20,
+              7,
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "jiaozhi_count": 6,
+            "id": 78,
+            "drawType": 288
+          }
+        }
+      ],
+      "target_positive_refs": [
+        {
+          "random_id": 15153,
+          "common_id": 54284,
+          "weight": [
+            1,
+            1
+          ],
+          "common_raw": {
+            "hero": [
+              122
+            ],
+            "id": 54284,
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 15158,
+          "common_id": 54272,
+          "weight": [
+            1,
+            1
+          ],
+          "common_raw": {
+            "id": 54272,
+            "items": [
+              11830
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 15158,
+          "common_id": 54273,
+          "weight": [
+            1,
+            1
+          ],
+          "common_raw": {
+            "id": 54273,
+            "items": [
+              11831
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        },
+        {
+          "random_id": 15158,
+          "common_id": 54274,
+          "weight": [
+            1,
+            1
+          ],
+          "common_raw": {
+            "id": 54274,
+            "items": [
+              11832
+            ],
+            "itemsNum": [
+              1
+            ],
+            "tradeType": 3
+          }
+        }
+      ],
+      "catalog_missing": [
+        "runtime-pre-and-post-settlement",
+        "stock-reply-order-and-ui-sync",
+        "jiaozhi-hero-file-source-binding",
+        "candidate_or_policy_unresolved"
+      ]
+    }
+  ],
+  "hero_122_chouka_hero_file": {
+    "not_in_item": 1,
+    "exchange": 125,
+    "jj_hero_exchange": 3,
+    "filesource_1": "通过白夜馆“异界隙间”寻获",
+    "filesource_2": "通过白夜馆“异界隙间”寻获",
+    "filesource_3": "通过白夜馆“异界隙间”寻获",
+    "id": 122,
+    "filecontent_1": "仍然是中央庭的女王，利用方舟的力量，在不同的时空中自由地穿梭。",
+    "hero_exchange": 380,
+    "filecontent_3": "在世界完全崩塌以后觉醒的自救者，她知悉一切，却又带来更多的未知。",
+    "filecontent_2": "性格坚定到近乎固执，为了「安托涅瓦」的信念，能够忍受任何痛苦。",
+    "sp_hero_exchange": 5,
+    "yjt_hero_exchange": [
+      11823,
+      9,
+      3
+    ],
+    "inPool": [
+      288,
+      425
+    ],
+    "hero_meet": "已经不是初次见面了吧，“你”和“我”。",
+    "source": "作为“安托涅瓦”人生的另一个可能性，能够摆脱既定命运的自己。在“异界隙间”与她相遇吧。",
+    "file_num": 3
+  },
+  "source_hero_files_items": {
+    "11831": {
+      "sort_level": 1,
+      "tradeType": 3,
+      "star": 4,
+      "name": "暗使·安托涅瓦记忆片段2",
+      "virtual_sub_type": 8,
+      "memoryFrag": [
+        122,
+        2
+      ],
+      "subtype": 8,
+      "wrap": 1,
+      "release": true,
+      "desc": "暗使·安托涅瓦的记忆片段",
+      "type": 8,
+      "id": 11831,
+      "icon": "10042"
+    },
+    "11832": {
+      "sort_level": 1,
+      "tradeType": 3,
+      "star": 4,
+      "name": "暗使·安托涅瓦记忆片段3",
+      "virtual_sub_type": 8,
+      "memoryFrag": [
+        122,
+        3
+      ],
+      "subtype": 8,
+      "wrap": 1,
+      "release": true,
+      "desc": "暗使·安托涅瓦的记忆片段",
+      "type": 8,
+      "id": 11832,
+      "icon": "10042"
+    },
+    "11833": {
+      "sort_level": 82,
+      "sync_cbg": 1,
+      "tradeType": 3,
+      "star": 3,
+      "name": "暗使·安托涅瓦魔方",
+      "type": 19,
+      "release": true,
+      "ui_class": 4,
+      "wrap": 10000,
+      "heroid": 122,
+      "desc": "适用于暗使·安托涅瓦的能力突破。当暗使·安托涅瓦的解放阶段达到五阶后，获得的每2个暗使·安托涅瓦魔方将转化为1个虚数魔方。",
+      "use_type": 19,
+      "id": 11833,
+      "icon": "10111"
+    }
+  },
+  "all_item_122_memoryFrag": {
+    "11830": {
+      "sort_level": 1,
+      "tradeType": 3,
+      "star": 4,
+      "name": "暗使·安托涅瓦记忆片段1",
+      "virtual_sub_type": 8,
+      "memoryFrag": [
+        122,
+        1
+      ],
+      "subtype": 8,
+      "wrap": 1,
+      "release": true,
+      "desc": "暗使·安托涅瓦的记忆片段",
+      "type": 8,
+      "id": 11830,
+      "icon": "10042"
+    },
+    "11831": {
+      "sort_level": 1,
+      "tradeType": 3,
+      "star": 4,
+      "name": "暗使·安托涅瓦记忆片段2",
+      "virtual_sub_type": 8,
+      "memoryFrag": [
+        122,
+        2
+      ],
+      "subtype": 8,
+      "wrap": 1,
+      "release": true,
+      "desc": "暗使·安托涅瓦的记忆片段",
+      "type": 8,
+      "id": 11831,
+      "icon": "10042"
+    },
+    "11832": {
+      "sort_level": 1,
+      "tradeType": 3,
+      "star": 4,
+      "name": "暗使·安托涅瓦记忆片段3",
+      "virtual_sub_type": 8,
+      "memoryFrag": [
+        122,
+        3
+      ],
+      "subtype": 8,
+      "wrap": 1,
+      "release": true,
+      "desc": "暗使·安托涅瓦的记忆片段",
+      "type": 8,
+      "id": 11832,
+      "icon": "10042"
+    }
+  },
+  "rules": {
+    "437": {
+      "num": 437,
+      "rule_info": "#f4#s46#cffffff「浮世的方舟」#c9093a3#f3#s12#r #r——————————————————————————————————————————————————————————————————————————#r #r#f3#s24#cd1d5e71、活动时间：2020年5月20日维护后至2020年6月3日7:00。#s06#r #s24#r2、本次“浮世的方舟”限定召唤中，会额外出现异界体·安托涅瓦（S级）神器使；#s06#r #s24#r3、参与“浮世的方舟”限定召唤，可使用方舟券或欧泊进行召唤，每6次召唤可获得一个浮世之证，活动期间使用浮世之证进化指定专属影装将享有折扣，5月20日7:00浮世之证回收后，指定专属影装进化将恢复至10猫铃铛价格；#s06#r #s24#r4、本次限定召唤的概率UP是指，与其他同等级的神器使相比，拥有更高的出现概率（各等级出现概率与通常记忆隙间的概率相同）。#s06#r #s24#r5、本次限定召唤将同时开启记忆交织与累计充能奖励。#s06#r #s24#r6、记忆交织功能为：获取完整异界体·安托涅瓦神器使将获得3点交织点数，获得异界体·安托涅瓦神器使记忆片段将获得1点交织点数，交织点数累计到不同数量可获得对应奖励，奖励包括记忆结晶与异界体·安托涅瓦专属饰品「待定」。#s06#r #s24#r7、记忆祝福：交织点数累计达到4以及6时将激活记忆祝福效果，此时若还未获得异界体·安托涅瓦神器使，则下一次再次获得异界体·安托涅瓦记忆片段时，必将获得不重复的异界体·安托涅瓦记忆片段，若已获得异界体·安托涅瓦神器使，则该效果自动失效。#s06#r #s24#r8、本次限定召唤中，在异界隙间中每次召唤可提供1次充能计数，充能计数达到指定数量时，可领取对应的奖励，奖励将在满足条件时直接获取。此外，获得充能奖励赠送的异界体·安托涅瓦神器使时，也会增加3点交织点数。#s06#r #s24#r9、5月6日限定召唤结束的更新维护后，未使用的方舟券将按1:50000比例转化为金币。浮世之证和相应的活动商店将额外开放约两周的时间（具体时间以活动结束后下一次维护公告为准）。当活动商店关闭时，没有使用的浮世之证将1:1转化为猫铃铛自动发送到邮箱中。#s06#r #s24#r10、早川百咏与摩卡在活动期间仅会出现在特殊隙间中，不会出现在记忆隙间、羁绊链结与友情链结中。#s06#r #s24"
+    },
+    "438": {
+      "num": 438,
+      "rule_info": "#f4#s46#cffffff「浮世的方舟」#c9093a3#f3#s12#r #r——————————————————————————————————————————————————————————————————————————#r #r#f3#s24#cd1d5e71、活动时间：2020年5月20日维护后至2020年6月3日7:00。#s06#r #s24#r2、本次“浮世的方舟”限定召唤中，会额外出现异界神器使：暗使·安托涅瓦；#s06#r #s24#r3、本次限定召唤中，十玖（S级）、维恩（A级）神器使与其他同等级的神器使相比，出现概率更高。#s06#r #s24#r4、参与“浮世的方舟”限定召唤，可使用方舟券或欧泊进行召唤，每6次召唤可获得一个浮世之证，活动期间使用浮世之证进化指定专属影装将享有折扣，6月17日7:00浮世之证回收后，指定专属影装进化将恢复至10猫铃铛价格；#s06#r #s24#r5、本次限定召唤将同时开启记忆交织与累计充能奖励。#s06#r #s24#r6、记忆交织功能为：获取完整暗使·安托涅瓦神器使将获得3点交织点数，获得暗使·安托涅瓦神器使记忆片段将获得1点交织点数，交织点数累计到不同数量可获得对应奖励，奖励包括记忆结晶与暗使·安托涅瓦专属饰品「万象琉璃」。#s06#r #s24#r7、记忆祝福：交织点数累计达到4以及6时将激活记忆祝福效果，此时若还未获得暗使·安托涅瓦神器使，则下一次再次获得暗使·安托涅瓦记忆片段时，必将获得不重复的暗使·安托涅瓦记忆片段，若已获得暗使·安托涅瓦神器使，则该效果自动失效。#s06#r #s24#r8、本次限定召唤中，在异界隙间中每次召唤可提供1次充能计数，充能计数达到指定数量时，可领取对应的奖励，奖励将在满足条件时直接获取。此外，获得充能奖励赠送的暗使·安托涅瓦神器使时，也会增加3点交织点数。#s06#r #s24#r9、6月3日限定召唤结束的更新维护后，未使用的方舟券将按1:50000比例转化为金币。浮世之证和相应的活动商店将额外开放约两周的时间（具体时间以活动结束后下一次维护公告为准）。当活动商店关闭时，没有使用的浮世之证将1:1转化为猫铃铛自动发送到邮箱中。#s06#r #s24#r10、暗使·安托涅瓦在活动期间仅会出现在异界隙间中，不会出现在记忆隙间、羁绊链结与友情链结中。#s06#r #s24 #r—————————————————————————————————————#r #r 异界隙间概率公示：#s06#r #s24#r 抽出道具                             概率 #s06#r #s24#r 金色影装                             1.00% #s06#r #s24#r 紫色影装                             2.50% #s06#r #s24#r 蓝色影装                             5.00% #s06#r #s24#r 紫色稀有影装                       6.00% #s06#r #s24#r 蓝色稀有影装                      11.00% #s06#r #s24#r 绿色稀有影装                      22.00% #s06#r #s24#r 异界神器使                          0.10% #s06#r #s24#r S级神器使                           0.15% #s06#r #s24#r A级神器使                           1.50% #s06#r #s24#r 异界神器使记忆片段              2.50% #s06#r #s24#r S级神器使记忆片段               4.25% #s06#r #s24#r A级神器使记忆片段               8.00% #s06#r #s24#r B级神器使                          13.00% #s06#r #s24#r C级神器使                          21.50% #s06#r #s24#r 欧泊*8                                1.50% #s06#r #s24"
+    }
+  },
+  "conclusions": {
+    "domain": "items 11831 and 11832 are virtual memory fragments; 11833 is type19 hero 122 cube, not memoryFrag",
+    "known_target_fragments": "11830/11831/11832 encode hero122 ordinal1/2/3; direct target commons 54272/54273/54274 reachable in all 3 pool positive paths",
+    "uncertain": "no 640 client functional reader of chouka_jiaozhi.hero_files found; original server meaning, whether typo or intentional, and missing-file replacement algorithm unknown",
+    "policy": "keep explicit missing; any corrected set must be an explicit alternate offline policy and preserve raw field, not assert historical fidelity",
+    "epoch": "raw info year 2000 for 282 and 283 while jiaozhi rows 2020; runtime rotation mapping can alter chouka_info, identity/period must be independently bound"
+  },
+  "sha256": {
+    "analysis/android640-scripts/com/data/cdata/chouka_jiaozhi.marshal": "d460c1c0c21338b663b8634a8d4d3f5cba5a99803717cba3222a13139e30f574",
+    "analysis/android640-scripts/com/data/cdata/chouka_hero_file.marshal": "3acfd4335b3a8b0e7e32c051712c2e172c553c20155c8faf89503641238725a0",
+    "analysis/android640-scripts/com/data/cdata/item_data.marshal": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6",
+    "analysis/android640-scripts/com/data/cdata/chouka_info.marshal": "b0c2d54fabf49da649a1102d65e3417acfd9d25e94fb91ff603ebfd7f5eecc32",
+    "analysis/android640-scripts/com/data/cdata/rule_info_data.marshal": "e62704f6169a8aac3b969a14ecfbb4ad0803638bdcf589ef150ab17319570832",
+    "analysis/android640-scripts/com/data/cdata/reward_common.marshal": "e6433f6a6d521fa57fb98a3d49c3f5194f9c5268ecaf24e114b70e9e89114c29",
+    "analysis/android640-scripts/com/data/cdata/reward_random.marshal": "8680b7d5a5e1befa9011647317c88fdaf63aff80889c36ed44f249678cd46262",
+    "runtime/project7_dynamic_catalog/catalog-v1.json.gz": "845e146b5fd19fc119ff79ebee6671755c35cfad9a41743003e1898e987b7c5e",
+    "runtime/project7_dynamic_catalog/contract.json": "f1eb9e7d1110ed6b288537e6d32370d96cdc42f995c04e39bea2aaa3f46fa209",
+    "tools/project7_dynamic_catalog.py": "dfb69963008890cef1a4d004148e8634ddb0fb06576f39ff6e7a435fb1b7b904",
+    "analysis/original-py-640/cocos/comps/common_frame/item.py": "1bdc5f0e459cd123c15086d498aca6ac9de213ee00c0150a1d0648fff35e3cf7",
+    "analysis/original-py-640/cocos/comps/card_common/jiaozhi_info.py": "e269f0c7e3088fbc10f9b7e95026b503d4d8563a2efb69c8b2f204903b56f2e5",
+    "analysis/original-py-640/cocos/panels/card_open.py": "7d5b44b4a6cf76d7e950e10ef9f9636f8641fc784ccff80d7d43d1410f307311",
+    "analysis/original-py-640/com/utils/runtime_mapping_table.py": "16ceb8bb00ce67194a074c1c0a04d2ac262193e70efff688e25b1a34c72e3d0e"
+  }
+}

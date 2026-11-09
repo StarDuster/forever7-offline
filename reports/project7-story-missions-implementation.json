@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "status": "SOURCE_AND_FINITE_ORIGINAL_HOST_PASS",
+  "evidence": "analysis/project7/story-missions-host-294yrghp",
+  "original_manager_sha256": "248375abc553e42def8906ad43e4364e81bba13df694dbb355c61ebfbde90ce4",
+  "hooked_manager_sha256": "1653006b9cc2aff1403479e06cf98653cd84d1cc362e07fef4246a884b3c5f4d",
+  "source_hashes": {
+    "runtime/android_story_missions/verify.py": "d6705fd55c723eb9652b95d214c587628a103aec1809ab09ace8b4a7001f4392",
+    "runtime/android_story_missions/host_tests/consumer.py": "84a67df16c22901b08a8712a579c891a05f58529007adf1f9bb2cec502fd445b",
+    "runtime/android_story_missions/src/com/project7/localmanager/StoryMissionBridge.java": "3fbd870a6ec8dc0f9dfad1cb32e3e36b3f89d6f2681c13093b4a0bc24b4f09b0",
+    "runtime/android_story_missions/compile_stubs/com/project7/localmanager/StoryMissionApiStubs.java": "2ed45b53bba2fb58aa8c41a38e8fa0667d769a0163df3d97d1fe928a3ae481ce",
+    "runtime/android_story_missions/host_tests/com/project7/localmanager/TrialProjector.java": "8ad563390fb2070950443d197fb1cf32c7d6b8ebc0b9fea988b2b9b3edfa3b51",
+    "runtime/android_story_missions/host_tests/com/project7/localmanager/StoryMissionStoreHost.java": "f0a2c39b6f16e2e32c6881739ac7558a359abf72004aca81af08ffbfc5b0eca0",
+    "runtime/android_story_missions/host_tests/com/project7/localmanager/StoryMissionHost.java": "1852d44d5a175d869e05807c0d02030dd7f4fc57d7afff3fcebe6763189315ac",
+    "runtime/project7_story_mission_catalog/suppression-extra.tsv": "80ae9aa4824b766d332d15bc40f0d5d0c871b874ac0cf12af929e9fe2176e3c7",
+    "runtime/project7_story_mission_catalog/source_calculator.py": "5038fdf68ecf3126f279d91e6f63e90c227e8b41cca6a98b53d8142484b24172",
+    "runtime/project7_story_mission_catalog/catalog-v1.tsv": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+    "runtime/project7_story_mission_catalog/economy-extra.tsv": "22ecd8625063e4d75165c928e2b3443c37f1a64dfa6d6ac0268e6e23be2ea529",
+    "runtime/project7_story_mission_catalog/public-source-v1.json": "978c01161797d6a60fcfbbdce96b21c08f4725d5e6be48c52dfc517c63fae92e",
+    "runtime/project7_story_mission_catalog/pins.json": "bc73ff87bd8ee0de94add8ea03abf05a6d8f23241b3dac96dfc52973f5465b9e",
+    "tools/project7_story_mission_catalog.py": "6a0baefeab050e2bc280989d768931123891bc81533ed5631659a8672d692bac"
+  },
+  "catalog": {
+    "schema": 1,
+    "calculator_source_pins": {
+      "com/utils/utils.py": "785c780cc186d1c0389a072964c860cc7c67b87355b572701320832b6814e2e4",
+      "com/const.py": "926483f82a397faeb9002ba504e08461d7f36dc4dbb669d0789710a392909b0a",
+      "entity/avatar_attrs/HeroMgrData.py": "bea27d2c5046d6cccc61cc7328e0981c67460becc91fbc30decb2aaf482e2667",
+      "entity/avatar_attrs/ItemData.py": "d82143b40435a10cc582e74495005e7a744a1a1d958de5bd3b3d7548b5c94652"
+    },
+    "source_pins": {
+      "mission": "2019aab0289ffdac6aacde82b21cd283ef0c8d8afb6bb264d087e8cde262390f",
+      "mission_hero_attr": "25647eaa103bb23bc22c27910e1f119e7ed2f169f52ac440dee69f573a60cc8b",
+      "chapter_mission_data": "c637bbf1665c8118b238c702145a22df0ceaf860bdf80595edbcf0d20882cdb4",
+      "event_content": "0ddb80bbe56259a2f54acdb7accef49ad390240b0cac504ba1375a3c8976afe7",
+      "hero_treasure_generate": "771ceb6415660c9b9650b458f5b988ffb48c4cbf1344d059723a8affbd92b6b6",
+      "hero": "5fd8f55649e12030a76ec34d50fcf10b414fc07cb8055437177be8ecf29f771e",
+      "hero_star_attr": "5e6d5f65e63eb78ebad63e6a33dbd4342be4169ed13b45e592daa2f3dacf5939",
+      "monster": "cb19b6dfa9866154c59f25862ed842db788a22342ef00556ecd91b70ff2a565c",
+      "refresh_monster_wenzixiandaerweila1": "3d44c62c2d1d5e8a5df8670f29e454d02e90551092d504fcfa922ec1b5409a3e",
+      "refresh_monster_wenzixiandaerweila2": "335d27c10a671ad58f41d56e547b4c84840cfd656688b2cce7f0321cd7d60488",
+      "refresh_monster_jdtushuguan1": "ebc6f483a1fe44f33719c4704b084012fc923377771b3ebaaf23391d3f2ad3ff",
+      "refresh_monster_jdtushuguan2": "4bd9875720bd95bad9997b3cacb3c477088503d78b792c4c01e996194d995072",
+      "refresh_monster_jdtushuguan3": "6e7919f54c3c8de1c73eb41df8aeb04ed1005eafafb7d2bc7a06ee093bccaabe",
+      "hero_star_skill": "3268222d5ca09861328f63839220a7c435d275cecf25f750b5fc9684b3b6c617",
+      "hero_artifact_attr": "5e243bc078319107e0b6e3a4d2131abc78161a5212d25e6cefb3b0b41a2965bf",
+      "hero_artifact_allot_lv_point_data": "2f5e1d9d7035df518df2ec23ac0ad14566771826a4f952500032e07e2cb3ae99",
+      "artifact_increase": "32487f74787e7fae76fda357f70ffbd2bbddfc96cfe9a60db93584e9ed97a0c9",
+      "liberate_tupo": "d07a150ed64269dfa3d7cae29eaf90e0c12b52c8791a9b334f0a5e918eda2efd",
+      "liberate_lv": "19a14a76c164f2f81d1bf3d01137896673151ef6e727be62bbd7252ce035f963",
+      "hero_treasure": "670c26a82b7632845550b50ed5c28c78401210412efaca21980612c4f9e89c9a",
+      "hero_treasure_third_attr": "558afe24faa91c58ea25f05182227841de5e2b2ec18824e575a4ef6747ce312c",
+      "treasure_exclusive": "d99dcecb7f7c12796a9d367ca8b07f94adbe0f84cfba51c7056e696903d6ab6a",
+      "hero_treasure_suit": "93a4fe06d8d5e40b94b71da587946fb90e05f1f8dc71f17284317fca4f96f905",
+      "item_data": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6"
+    },
+    "manager_sha256": "248375abc553e42def8906ad43e4364e81bba13df694dbb355c61ebfbde90ce4",
+    "baseline_assets": {
+      "economy.tsv": "46ece8bf692c0446c95e8a56d3ab514ef7f90e65dde1f0c48e2c29177a56b19d",
+      "suppression.tsv": "f77f4c691408bfa41ed1685e9813a02441e4ca87fa0c77ef67d277e0ff705777",
+      "combat_skills.tsv": "23cce9e71b0dcb8b0093f65875df6e37bb8dbe347d4180eeed89918f6c503759",
+      "combat_attrs.tsv": "842720d7978251e5cfd80553ca74d64d1fe92599515f9ef0c21378b688e5d10c",
+      "growth.tsv": "91674e9f6f7efc1b9e230d0aa99af0e97557b1f4b50eaa860c3a4d5c3cbc4457",
+      "home.tsv": "31a92814706216b03e558eaf63b89245d399bdfd799ad58ffd9b4ff416d36995"
+    },
+    "outputs": {
+      "catalog-v1.tsv": "5f456b8d257c02f2b430aafcb36102ab240771f9e6d8fec4e3a67a79b23ede5a",
+      "economy-extra.tsv": "22ecd8625063e4d75165c928e2b3443c37f1a64dfa6d6ac0268e6e23be2ea529",
+      "suppression-extra.tsv": "80ae9aa4824b766d332d15bc40f0d5d0c871b874ac0cf12af929e9fe2176e3c7",
+      "public-source-v1.json": "978c01161797d6a60fcfbbdce96b21c08f4725d5e6be48c52dfc517c63fae92e"
+    },
+    "chapters": 39,
+    "missions": 18,
+    "trials": 5,
+    "host_build": "analysis/project7/story-catalog-evzuuebm",
+    "policy": "exact-route-normal-v1; no implicit route creation; retry_times source metadata only; no retry terminal policy"
+  },
+  "production_seams": {
+    "class": "com.project7.localmanager.StoryMissionBridge",
+    "methods": [
+      "prepare(Context):void",
+      "area(int):int",
+      "mapStages(Progress,int,byte[]):byte[]",
+      "stages(Progress,int,byte[]):byte[]",
+      "status(Progress,int,byte[]):int",
+      "consumeVictory(Progress,byte[],int,int):boolean",
+      "partyAllowed(byte[]):boolean"
+    ],
+    "original_bodies": "Root q7OriginalArea/MapStages/Stages/Status/ConsumeVictory; untouched original dispatch except source admission AND gate"
+  },
+  "host_checks": [
+    "39 exact chapter keys source-projected; area5 six-stage original Store/gateway sequence exercised",
+    "source M/G closure adds 18 missing mission rows; 4129 inherits4101 but source C progression goes4130 not4102",
+    "five released customized TRUNK mission templates, 315/316 level60;426..428 level100/15 equipment entries incl duplicates",
+    "original640 Hero/Artifact/Item calculator bodies reproduce existing418/10 MH attributes within1e-12, skills/exclusive exact, tricks set exact",
+    "actual original BsonLite fixed MH actor bytes identical owned/unowned; source MC/SM levels checked",
+    "actual Gateway default unowned14 accepted t2 with pending; wrong supportedhero2, emptyh, wrongarea rejected original t0",
+    "original640 typed consumer unlocks/fails t0 and hands correctt2 to original battle callback",
+    "original Store real finite loss does not progress/trace/money reward; no pending finish denied",
+    "six original Store begin/finish wins produce original postcommit traces;60096 unavailable before4134 and available/completed after true finite4134 win",
+    "next-scene and duplicate settlement negative; original locked gate and pre-prepare/unmatched delegation"
+  ],
+  "limits": [
+    "synthetic public profile/processing and finite battle results; no native combat or full-route acceptance",
+    "base27 original producer not proven; production never writes rt27; existing @route27-x source can resolve exact keys",
+    "chapter3/8 rows are source data; their end-to-end routes were not exercised",
+    "retry_times3 retained metadata; original first-loss outcome/retry behavior unchanged pending explicit policy",
+    "P7 original level-based rewardPools/drop engine retained; source mission odds/rewardPool preserved as evidence, not silently mapped to extra rewards",
+    "trial-equipment-at-actor-level-v1: detached gear uses original generator treasure_exp and actor source level; not an assertion of hidden official server implementation",
+    "fixed MH actor independence proven; full combat_data skin selection remains original P7 behavior",
+    "original Store normalizer adds defaults on initial access; post-normalization negative byte equality asserted",
+    "no D8/APK/emulator/device; shared Main/feature_hooks untouched by this agent"
+  ],
+  "apk_built": false,
+  "native_verified": false
+}

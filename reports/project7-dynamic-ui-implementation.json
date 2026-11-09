@@ -1,0 +1,146 @@
+{
+  "schema": "project7-dynamic-ui-implementation-v1",
+  "status": "source-frozen-bounded-resource-and-consumer-gate-passed",
+  "scope": [
+    485
+  ],
+  "public_ui_ready_ids": [],
+  "api": "install(policy_text, history_avatar_type=exact_draw_class, friend_owner=exact_friend_install_return)",
+  "producer": "tools.project7_dynamic_ui_policy.ui_policy(directory=None); canonical(policy); CLI --output NEW_PATH",
+  "policy": {
+    "schema": "project7-dynamic-ui-v1",
+    "size": 3524,
+    "sha256": "d7f7eac49c94cf9bb6f866ffba0e711efed0dce1813d427789b94797d2011889",
+    "keys": [
+      "schema",
+      "backend_sha256",
+      "base_sha256",
+      "pools",
+      "epochs",
+      "info",
+      "charge",
+      "jiaozhi",
+      "required_assets",
+      "optional_poster",
+      "public_ready_claim",
+      "policy"
+    ],
+    "required_asset_count": 13
+  },
+  "tests": {
+    "command": ".venv/bin/python -m unittest tests.test_project7_dynamic_ui -q",
+    "passed": 30,
+    "log": "analysis/project7/dynamic-ui-tests-final-v2.log",
+    "original_functions": "Full source functions extracted without importing game modules; actual checkMultiClick and full original genCommonReward; inert native/widget seams are not native execution.",
+    "coinstallation": "Actual draw+friend+selector installers, repeat-install and owner identity; furniture/tutorial not coinstalled in this harness.",
+    "coverage": [
+      "fixed charge274-277 and six JZ rows",
+      "source genCommonReward item and pendant shapes",
+      "Avatar/Data/UI/lock epoch/panel/init/rotation invalidation",
+      "original BEGIN retain and owner-bound END cleanup",
+      "repeated END; same sender new BEGIN with stale bound END; overlap refusal",
+      "global tables/time/Data/ct and RPC lock remain unchanged",
+      "69 literal paths,17 bounded loop paths,4 action names against six true CocoLoader trees",
+      "producer independent directory and Python2 ASCII grammar",
+      "original on_memorybless→complete original common_property.notify_show with fixed public item10387 and hero147",
+      "one-layer actual common_frame/common_property pack targets and bounded star/elements subtree closure"
+    ]
+  },
+  "click_lease": {
+    "policy": "single-retained-gesture-fifo-refuse-overlap-v1",
+    "cleanup": "Only captured old UI/sender/panel/token retained on BEGIN; stale END cannot enter business or clear new UI multi_click/RPC lock.",
+    "boundary": "Native enum has no unique touch ID. Held old callbacks are token-bound; an old enum forged/reordered through a newly installed callback cannot be uniquely identified. Overlapping BEGIN is refused."
+  },
+  "resources": {
+    "public_members_verified": 14,
+    "tree_files_verified": 10,
+    "gate_passed": true,
+    "gate_scope": "bounded485 source paths+component targets+finite original tooltip; no native scalar/render proof",
+    "remaining": [],
+    "source_evidence": "reports/project7-dynamic485-ui-shared-closure.json",
+    "tooltip": "Original full on_memorybless and notify_show bodies executed; native RichText, geometry and DialougeRtParser explicitly substituted at native boundary, not represented as original rendering.",
+    "required_asset_additions": [
+      "cocos/common_icon.csb",
+      "cocos/hero_herolist_common.csb",
+      "cocos/res/hkytw5.ttf"
+    ],
+    "pack_closure": "common_property element→common_icon.elements; common_frame item→hero_herolist_common.star/starlv and same-pack head_little; these target subtrees have no further pack placeholders.",
+    "ascii_probe": "Superseded by true CocoLoader trees."
+  },
+  "main_chain": "Root owns embedding/admission. Independent existing-pending fixture does not prove Main public admission. Bounded structural and original consumer gates are now satisfied for485; native rendering remains unverified.",
+  "unchanged": [
+    "No global clock/cdata/Data/ch/ct mutation",
+    "No new RPC or second profile owner",
+    "No edits to frozen Core/selector/friend/tutorial implementations",
+    "No APK,D8,device,VM,native rendering"
+  ],
+  "limits": [
+    "Widget scalar types/coordinates and native loading/render/click not validated",
+    "Furniture/tutorial all-owner coinstallation is not exercised by this independent harness",
+    "Late installation after panels/native callbacks already exist is not a supported lifecycle; install before login/panel creation",
+    "No first-show cold adoption proof when both component init/load ran before Avatar"
+  ],
+  "files": [
+    {
+      "path": "runtime/project7_dynamic_ui.py",
+      "size": 24856,
+      "sha256": "001dbd3829b757a3eddeaa957bfc1ac70d3f1bc986f274542c3c6d4423c5c888"
+    },
+    {
+      "path": "tools/project7_dynamic_ui_policy.py",
+      "size": 2571,
+      "sha256": "130265d2bc1e2ad84e99acb32ee36f885e10a26904259b59518ad07c550f5f59"
+    },
+    {
+      "path": "tests/test_project7_dynamic_ui.py",
+      "size": 28024,
+      "sha256": "db9184e081ac0bda728c1207b01630a410d69f099602442910dd4e8397e72d33"
+    },
+    {
+      "path": "reports/project7-dynamic485-ui-resource-evidence.json",
+      "size": 5227,
+      "sha256": "fd95aa72d2e10b4eab1250780e8280770eb039a044d3bab2932441f756b209ac"
+    },
+    {
+      "path": "reports/project7-dynamic485-ui-structure-evidence.json",
+      "size": 14146,
+      "sha256": "2a6619dd21953f829141268a77e663d8983b9a272e3ae65606c620e85d923388"
+    },
+    {
+      "path": "reports/terra-p7-legacy-csb-reader-contract.json",
+      "size": 171211,
+      "sha256": "a07585dc5ff20e026fc04f80ac96bd17e50708017d036be12f0f8d0d8e8988d2"
+    },
+    {
+      "path": "reports/terra-p7-gen-common-reward-contract.json",
+      "size": 9041,
+      "sha256": "6d37842579965b71ba434393eb0bbab6298ee7a539b14044b17d32dc1493cca9"
+    },
+    {
+      "path": "analysis/project7/dynamic-ui-policy-v2.json",
+      "size": 3524,
+      "sha256": "d7f7eac49c94cf9bb6f866ffba0e711efed0dce1813d427789b94797d2011889"
+    },
+    {
+      "path": "analysis/project7/dynamic-ui-tests-final-v2.log",
+      "size": 99,
+      "sha256": "bb64ae7286ed0bd40b5c31a5d26db5f52cfa9cf65d047591b002c6a4dba781a5"
+    },
+    {
+      "path": "reports/project7-dynamic485-ui-shared-closure.json",
+      "size": 127812,
+      "sha256": "286df561dd1d25eedf5cd085470b6d597a8e38c764c23804421a1b5c57cc5903"
+    },
+    {
+      "path": "reports/terra-p7-shared-csb-closure.json",
+      "size": 122097,
+      "sha256": "9330c2488a5bc1b7535f9c3a763788a4664da8cee027ee6836264fd0c3dcbe8e"
+    },
+    {
+      "path": "tools/legacy_csb_reader.py",
+      "size": 3302,
+      "sha256": "ef68ecec3a134e2abb83d24767196359b5f1684cc7780ff6fe804083ce4acf37"
+    }
+  ],
+  "public_ready_scope": "Root may separately enable485; this independent report does not change Main policy."
+}

@@ -1,0 +1,214 @@
+{
+  "schema": "project7-selector-backend-implementation-v1",
+  "status": "frozen-selector-source-and-finite-host-pass-await-root-integration",
+  "inputs": {
+    "reports/project7-selector-ui-host-fixtures.json": {
+      "sha256": "d425c11594925469b246552d2272500f25ae7478adf9840a04e66482f6cd1f6d",
+      "size": 1202
+    },
+    "runtime/android_history_draw/src/com/project7/localmanager/HistoryDrawPolicy.java": {
+      "sha256": "be0603b0f656c6be536349b0e907fe6876abff262d621a6f9a73d023f375aa0c",
+      "size": 17775
+    },
+    "runtime/android_selector_draw/compile_stubs/com/project7/localmanager/SelectorApiStubs.java": {
+      "sha256": "ebcf578ade41c2290d16913a07805e2e8d57dde38589399fc70a0aa20f6c5bee",
+      "size": 5722
+    },
+    "runtime/android_selector_draw/host_tests/android/content/Context.java": {
+      "sha256": "83395fdfe091242655be39b6393f628c4a92979609c641edc213d9af70d8eb17",
+      "size": 508
+    },
+    "runtime/android_selector_draw/host_tests/android/content/res/AssetManager.java": {
+      "sha256": "3bf76ffcf360ebd6b9396d236698bd890271356bd21a607b163ee1bac5059fc7",
+      "size": 1409
+    },
+    "runtime/android_selector_draw/host_tests/android/system/ErrnoException.java": {
+      "sha256": "6c49ff537e1c03acf49c3ed0d6005d3457c4178911e52b9166a0cdc37f5b6685",
+      "size": 256
+    },
+    "runtime/android_selector_draw/host_tests/android/system/Os.java": {
+      "sha256": "baab1db09007d559a2f70256209d3f8526aa761dc432ce8fca81eeeaad015ea2",
+      "size": 557
+    },
+    "runtime/android_selector_draw/host_tests/android/util/Log.java": {
+      "sha256": "748ecc1b0512f176aeb998e8019e2e141a54683ae7a25e769700b581b0445dbe",
+      "size": 300
+    },
+    "runtime/android_selector_draw/host_tests/com/project7/localmanager/SelectorEngineHost.java": {
+      "sha256": "1da3dc92f1009a1300d8f68ddc77932f8ec7a317a1243a9563cdd8f77a0a657d",
+      "size": 21051
+    },
+    "runtime/android_selector_draw/host_tests/consumers.py": {
+      "sha256": "598e37273c8f903cff5391ccb38b7ecf22c1efa6100db030376e61a3cbe3cb05",
+      "size": 4170
+    },
+    "runtime/android_selector_draw/src/com/project7/localmanager/SelectorPolicy.java": {
+      "sha256": "39aef7e2e2521887023ef86f2bb4a36063eedd1beff873287e1e81a774fe2b2e",
+      "size": 10023
+    },
+    "runtime/android_selector_draw/verify_host.py": {
+      "sha256": "52344cfec3fcde1c08239b2e2e5e0f4b7d8b21c590d67201c9ec356c70913cc4",
+      "size": 3896
+    },
+    "runtime/project7_history_catalog/catalog-v3.tsv": {
+      "sha256": "b439ab44280a959cab8836595b65489fee3fd8482609ed3caa55477a66fd5c16",
+      "size": 551557
+    },
+    "runtime/project7_history_catalog/contract-v3.json": {
+      "sha256": "dfcf7bb42817eb887ab3075dbe3fb853d2065c71df851b952c60875150cc50b7",
+      "size": 383280
+    },
+    "runtime/project7_selector_catalog/catalog-v1.tsv": {
+      "sha256": "40a42441c3e55a179c931a4cb5e70a4e6e94e0913f4ef1eb654354a72341b6d7",
+      "size": 817
+    },
+    "runtime/project7_selector_catalog/contract.json": {
+      "sha256": "43059e981492ca5a41e4545520a3e90ca74378e194242aca15dd65e7e40f6d72",
+      "size": 18739
+    },
+    "runtime/project7_selector_ui.py": {
+      "sha256": "317d50a834f453a6261f34939098b2bd4eb78c35c95d7c0ac911a84825245b7d",
+      "size": 24317
+    },
+    "tests/test_project7_selector_catalog.py": {
+      "sha256": "91ce99ebad2daf7297b7fcb085b394a2df6a0cd6d1624b3c167402d303e11885",
+      "size": 4176
+    },
+    "tests/test_project7_selector_ui.py": {
+      "sha256": "9f268699888a826629761ff419a95a512fabc426b888be93c105f6e64e5f7b56",
+      "size": 18739
+    },
+    "tools/project7_history_catalog.py": {
+      "sha256": "17382cabe625497d4e4ab30ce3cd9c7e91ddfc799b143bd8a48f2e5cef629573",
+      "size": 13973
+    },
+    "tools/project7_selector_catalog.py": {
+      "sha256": "c2bb5a5aefbb07669345eeabf1f63ba7f390c0b2f37a15c7a71f7276c90e3f5c",
+      "size": 9527
+    }
+  },
+  "java_api": {
+    "prepare": "SelectorPolicy.prepare(Context):void",
+    "choose": "SelectorPolicy.choose(byte[],LocalResourceCatalog,byte[],int):LocalResourceEngine.Result",
+    "compile": "History + Selector production sources in same javac group; separate reviewed original API superset, never runtime stubs",
+    "prepare_order": "Core/History parse may run first; Selector.prepare must precede any LocalResourceCatalog construction",
+    "choose_caller_hook": "Root produced selector-hook-v1; unique same-shape caller replacement. Main integration not yet verified."
+  },
+  "catalog_v3_ready": 385,
+  "existing380_distributions": "all B/O/R and all other rows unchanged; only5 P readiness flags +35 L unsupported→selector",
+  "candidate_policy": "fixed640-shared-selector-roster-v1; S67/91/121 A83/92/103, not historical rotation reconstruction;484 candidates unchanged",
+  "source_tests": 8,
+  "host_report": "reports/project7-selector-history-backend-host.json",
+  "host_manager_sha256": "af930ec43effa7ee491d5dd391e4ff338a7e540f25c7bed43f4a9fb54a002e78",
+  "host_scope": "actual current stock applyCurrent/factory/reveal/Store with new own classes; choose epoch wrapper called directly until Root replaces unique original caller",
+  "old_pending": "known73fff(v1)/debb(v2) synthetic archived-schema fixtures through new Store resume retain old outcomes, provenance and hash; no reroll or retag",
+  "limits": [
+    "Root final loader/Main/assets integration is separate and not claimed here",
+    "Selected original UI functions use explicit host widget/transport probes; no native scene/model/animation acceptance",
+    "Fixed640 fallback roster is transparent offline policy, not historical rotation reconstruction",
+    "Known old v1/v2 pending proof uses synthetic archived-schema groups; no private saves accessed",
+    "No D8/APK/sign/install/device/game run"
+  ],
+  "host_checks": 747,
+  "original_consumer_checks": 5,
+  "latest_patched_manager": {
+    "path": "analysis/project7/selector-hook-v1/manager-translated-frames.jar",
+    "sha256": "1be1a7e09c5a2e42d31f9deff54c1d942657fca695c1a996579eefecf365e6fa",
+    "engine_section_checks": 767,
+    "engine_section": "PASS -Xverify:all; actual Store epoch migration, invalid-choice rollback and atomic fault on all5 included",
+    "overall_verifier": "PASS",
+    "output_report_written": true,
+    "original_consumer_checks": 5,
+    "report": "reports/project7-selector-patched-engine-host-v2.json",
+    "report_sha256": "ca7832a4b95f9618704c8c50b55f178e55f763a37e5866092b3eee14630de34d"
+  },
+  "selector_ui": {
+    "source": "runtime/project7_selector_ui.py",
+    "tests": 25,
+    "test_result": "PASS",
+    "test_command": ".venv/bin/python -m unittest discover -s tests -p test_project7_selector_ui.py",
+    "api": "install(policy_text, history_avatar_type=None)",
+    "policy_projection_api": "tools.project7_selector_catalog.ui_policy()",
+    "canonical_policy_sha256": "56fa68017308f2114bda9d63eb769428cba0eefd4290bd515dd801d1810b84dc",
+    "policy_fields": [
+      "schema",
+      "asset_sha256",
+      "policy",
+      "ready_ids",
+      "s",
+      "a",
+      "epochs"
+    ],
+    "changed_runtime_classes": [
+      "ClientAvatar.setChooseHeroes/replySetChooseHeroes",
+      "card_tab.Panel.on_init/on_open_choose_click",
+      "card_hero_choose.Panel.notify_show/notify_close; scoped instance button callbacks",
+      "LuckyDrawData.LuckyDrawData.getChooseHeroes only5/check=True"
+    ],
+    "verified_scope": [
+      "original popup UIConfig/UILogic and A/S order, fixed roster independent of owned heroes",
+      "actual original reliable send/cache and _runRpc dispatch into same RPC schema plus original reply body",
+      "five actual backend typed success/failure fixtures release setChooseHero without inventing callback",
+      "coinstall with frozen draw/friend; no frozen source edits",
+      "pool/Avatar/Data/lock epoch/panel identity changes reject delayed confirmation",
+      "per-request refcount lease, duplicate reply suppression, old UI wait uses captured scheduler+hide-only cleanup",
+      "stock484 request and nonselector popup logic restoration",
+      "old reliable resend scope cannot act on new Avatar; definite transport AttributeError releases UI lease while original retry cache remains owner",
+      "fresh original-schema RpcMethod metadata.call routes into identical bounded state.reply dispatch; all five success/false/reset-lock/new-Avatar cases and original484 metadata delegate pass"
+    ],
+    "not_integrated": [
+      "Root loader/feature asset/UI policy embedding final integration acceptance",
+      "Main final source prepare/preflight for selector",
+      "real native popup/rendering/animation"
+    ],
+    "dst_getter": {
+      "target": "entity.avatar_attrs.LuckyDrawData.LuckyDrawData.getChooseHeroes",
+      "scope": "only five ready_ids with check=True; all others including484/check=False delegate original",
+      "implementation": "original getter body with local EpochTime only; canonical source end_time validated against fixed policy epoch using bundled calendar.timegm; no global time/ch mutation",
+      "tested": "five valid/stale stamps under +3600 DST mktime offset; clock object and all choice fields unchanged; original activity can_play_loop gates correctly",
+      "standard_module_source": {
+        "path": "analysis/original-py-640/lib/calendar.py",
+        "sha256": "603b54985b61aa84e37fdf36fc799984bf47080e6827c0c77e538d2fc9d9e876"
+      }
+    },
+    "metadata_dispatch_fix": {
+      "cause": "copied original rpcmethod.func bypassed owner/lease dispatch",
+      "implementation": "fresh same RpcMethod type/rpctype/argtypes/pub; typed body enters state.reply; no self-call or protocol change",
+      "result": "PASS 25 tests; original outer _runRpc and native metadata.call both covered",
+      "java_and_assets_changed": false
+    }
+  },
+  "frozen": true,
+  "consumer_fixture_fix": {
+    "hero_metadata": "actual public original640 hero.py literal",
+    "item_metadata": "pinned bundled history IR item_data via lossless literal codec, not failed decompiled item_data.py",
+    "item_ir_contract_sha256": "e82923fd40899cc5bd98b51e1a056aefe2c1378d3f9782d6d1aeb8c25b1b66a9",
+    "hero_source_sha256": "12eb1bf71a023e221b1d90f6f66883440e27db9481e58a48d13fa7f3ed830fbf",
+    "business_code_changed_for_fixture": false
+  },
+  "source_marshal_pins": {
+    "chouka_info": "b0c2d54fabf49da649a1102d65e3417acfd9d25e94fb91ff603ebfd7f5eecc32",
+    "hero": "5fd8f55649e12030a76ec34d50fcf10b414fc07cb8055437177be8ecf29f771e",
+    "hero_self_choose_info": "664378ac922d2f0b288d8f70530ab92303de9f080d4e463dbbd9cda066c4aeb6",
+    "item_data": "b498b2fc3f850d416fba2c7c9fb3930ddee680f30cd0d6eb5fb6f59c3ca114b6"
+  },
+  "public_install_contract": {
+    "java_prepare": "SelectorPolicy.prepare(Context), after History parse but before first LocalResourceCatalog ctor",
+    "java_choose_hook": "SelectorPolicy.choose(byte[],LocalResourceCatalog,byte[],int):LocalResourceEngine.Result",
+    "ui_install": "install(policy_text, history_avatar_type=None); pass exact loaded draw._HistoryAvatar class",
+    "ui_policy_producer": "tools.project7_selector_catalog.ui_policy(directory=DEFAULT)",
+    "ui_policy_fields": [
+      "schema",
+      "asset_sha256",
+      "policy",
+      "ready_ids",
+      "s",
+      "a",
+      "epochs"
+    ],
+    "ui_policy_canonical_sha256": "56fa68017308f2114bda9d63eb769428cba0eefd4290bd515dd801d1810b84dc",
+    "loader_order": "draw -> furniture -> friend -> selector -> login",
+    "runtime_asset": "project7_selector/catalog-v1.tsv (817B SHA40a424...) and project7_history/catalog-v3.tsv (551557B SHAb439ab...)",
+    "compile": "History and Selector sources same javac group; API stubs compile-only"
+  }
+}

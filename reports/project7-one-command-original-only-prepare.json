@@ -1,0 +1,23 @@
+{
+  "format": "project7-original-only-cli-prepare-v1",
+  "status": "passed_static_preparation_and_javac_not_apk_or_native",
+  "command": ".venv/bin/python tools/build_offline_project.py originals/forever7-netease-83.apk --backend project7 --prepare-only --offline --build-dir analysis/project7/one-command-original-only-v2 --java-home toolchains/java/jdk-17.0.21+9/Contents/Home",
+  "initial_work_dir_had_no_script_cache": true,
+  "preseeded_official640_or_project7_apk": false,
+  "external_game_input": "Supported official original APK only",
+  "script_source": "runtime/project7_official_baseline/official640-entry-patch.zip",
+  "network_used": false,
+  "original_unchanged": true,
+  "stage": "analysis/project7/one-command-original-only-v2/project7-inputs-0tk6tplz/stage",
+  "compiled": "analysis/project7/one-command-original-only-v2/project7-inputs-0tk6tplz/compiled",
+  "production_classes": 102,
+  "compile_only_api_jar": {
+    "path": "compile-api.jar",
+    "bytes": 11943,
+    "sha256": "6ac025d37221ec385627008926541f85a9c20fba4f02a0fb5d9557fc05f17e4a",
+    "use": "D8 classpath only, NEVER program input or APK"
+  },
+  "source_hashes_after_cli_match": true,
+  "no_apk_created": true,
+  "goal_complete": false
+}

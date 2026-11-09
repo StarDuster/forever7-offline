@@ -1,0 +1,19 @@
+# project7 story-city puzzle room 4 event-graph increment (append-only)
+# base event_graph.tsv sha256: 7a0f781c0a84b2fc46b1f71b0dcc6f85e80b4047ba415e8af25a08e97f11c9ba
+# source rows already pinned in base: event 3437 line 2555, trigger 3437 line 11499,
+# event 3444 line 2562, mutex 3444 line 14881, event 3455 line 2573, mutex 3455 line 14886,
+# effect 3444 line 17160; existing puzzle rooms 1..3 lines 24281-24283 and clues 1..16 lines 24284-24299.
+# puzzle_room sha256: 03c4cbbeb686abc956565f552ad57113e083d38f9a0e6e5589c6ba6e53fe9812
+# puzzle_room_clue sha256: ab6a6e7ff5daf8380216d3bbe45897b6ced36db803eba0e8c14b0d18b52a647e
+# puzzle_room_camera sha256: 17dabc4084df225d28e26ca6fd50e9767d6dee3c683f9309cc25b8e0c48f7b1e
+# storyroute_tip sha256: b9dc0588f1bdc64a1937b41c8c771c54fc369cc3e20357d63c22b02f1850748f
+# client-only metadata has no LocalEventCatalog column (parser skips '#'):
+# route 27-2 tip day=5 check_type=1 check_paras=3444
+# cameras 9..13 = jtwj_01,jtwj_03,jtwj_04,jtwj_05,jtwj_02 (puzzle_room_camera room_id 4)
+# clue 17..21 camera_name = jtwj_02,jtwj_03,jtwj_04,jtwj_01,jtwj_05
+@puzzleRoom	3437	4	3444	3455	27-2	17,18,19,20,21
+@puzzleClue	17	4	0
+@puzzleClue	18	4	0
+@puzzleClue	19	4	0
+@puzzleClue	20	4	0
+@puzzleClue	21	4	0

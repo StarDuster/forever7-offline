@@ -1,0 +1,28 @@
+{
+ "schema": "deepseek-regression-pattern-transaction-v1",
+ "confirmed": [
+  "M1_main_week_scope_pending",
+  "M2_template_denial_order",
+  "L1_legacy_week_discard"
+ ],
+ "protected": [
+  "wish_ack_seq",
+  "baiye_repeat",
+  "unknown_commit_split",
+  "receipt_week_identity"
+ ],
+ "insufficient": [
+  "giveup_formation"
+ ],
+ "source_fixes": [
+  "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java"
+ ],
+ "source_hashes": {
+  "runtime/android_week_reset/src/com/project7/localmanager/EventResetWeekGateway.java": "d04a3f7b7d3b855be6068b24dfbc8e29e754fcff048aa9dbf77108c186092fec",
+  "runtime/android_dream_mode/src/com/project7/localmanager/DreamWeekPolicy.java": "325d93cefcf6864053aae00cd64ce61377e5f13ccfe37c6ebfdbcc88489a769d",
+  "runtime/project7_startup_hook.py": "670e082df51c0426c2c2e31399208ab904f3e47623a757f224d38f0b3bd60481",
+  "runtime/android_story_city/src/com/project7/localmanager/StoryCityPolicy.java": "b96707933369e0e62155a72261c8f8826b54f0ef8003188ea00b7b6ab469d254",
+  "runtime/android_story_city/verify.py": "8c72f9c31c91745d636b39dc6e5e346fb023c013fe35441a5c555d9aeafaf512"
+ },
+ "terra_host": "old beforeWeek=true cleared q7StoryPending/changed weekCommit; new source beforeWeek=false preserved pending; Store-lock guard added; engine=null+pending and 5 scope Store update verified profile/Progress/weekCommit unchanged (limited host, not dual-thread/native)"
+}

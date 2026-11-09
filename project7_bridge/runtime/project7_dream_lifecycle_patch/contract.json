@@ -1,0 +1,24 @@
+{
+  "added_methods": [],
+  "changed_methods": [
+    "LocalGatewayServer.handleWeekRpc",
+    "LocalGatewayServer.handleReliableRpc",
+    "LocalProfileStore.updateServices"
+  ],
+  "classes": 649,
+  "defined_methods": 3705,
+  "format": "project7-dream-lifecycle-seams-v1",
+  "patch": {
+    "bytes": 1005990,
+    "sha256": "2007405fe554d9dcbdb2789260c32a9e5aa4ee522143fa3577e2d85892d93a37"
+  },
+  "scope": "Original Week transaction and reliable sequence-cache/non-null claim tail retained; rejected claim exits before success cache. Actual helper/consumer evidence required separately.",
+  "source": {
+    "bytes": 1157260,
+    "sha256": "74e2a7bdc71b1b1d1f3989fe44dc27d47cad433ecd0eccf9168d1d288efb744c"
+  },
+  "target": {
+    "bytes": 1157916,
+    "sha256": "523aa97f00b098694437f88d46821a3c9fbbfb60c5ed78213c2b16ccd976170b"
+  }
+}
